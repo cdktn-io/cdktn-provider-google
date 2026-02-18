@@ -311,7 +311,7 @@ func ImportFrom(id *string, provider TerraformProvider)
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -572,7 +572,7 @@ func ResetTimeouts()
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ContainerAttachedCluster resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a ContainerAttachedCluster resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -644,7 +644,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerattache
 containerattachedcluster.ContainerAttachedCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a ContainerAttachedCluster resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ContainerAttachedCluster resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.generateConfigForImport.parameter.scope"></a>
 
@@ -674,7 +674,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ContainerAttachedCluster to import is found.
 
@@ -685,24 +685,24 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.authorization">Authorization</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference">ContainerAttachedClusterAuthorizationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.binaryAuthorization">BinaryAuthorization</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterBinaryAuthorizationOutputReference">ContainerAttachedClusterBinaryAuthorizationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.clusterRegion">ClusterRegion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.effectiveAnnotations">EffectiveAnnotations</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.effectiveAnnotations">EffectiveAnnotations</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.errors">Errors</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsList">ContainerAttachedClusterErrorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.fleet">Fleet</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterFleetOutputReference">ContainerAttachedClusterFleetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.kubernetesVersion">KubernetesVersion</a></code> | <code>*string</code> | *No description.* |
@@ -710,7 +710,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.monitoringConfig">MonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigOutputReference">ContainerAttachedClusterMonitoringConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.oidcConfig">OidcConfig</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference">ContainerAttachedClusterOidcConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.proxyConfig">ProxyConfig</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigOutputReference">ContainerAttachedClusterProxyConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.reconciling">Reconciling</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.reconciling">Reconciling</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.securityPostureConfig">SecurityPostureConfig</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterSecurityPostureConfigOutputReference">ContainerAttachedClusterSecurityPostureConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.state">State</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedCluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterTimeoutsOutputReference">ContainerAttachedClusterTimeoutsOutputReference</a></code> | *No description.* |
@@ -765,7 +765,7 @@ The tree node.
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
@@ -815,7 +815,7 @@ func TerraformResourceType() *string
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -855,7 +855,7 @@ func DependsOn() *[]*string
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
@@ -865,7 +865,7 @@ func ForEach() ITerraformIterator
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -875,7 +875,7 @@ func Lifecycle() TerraformResourceLifecycle
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -935,7 +935,7 @@ func CreateTime() *string
 func EffectiveAnnotations() StringMap
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
 
 ---
 
@@ -1015,7 +1015,7 @@ func ProxyConfig() ContainerAttachedClusterProxyConfigOutputReference
 func Reconciling() IResolvable
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
@@ -1477,10 +1477,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerattache
 &containerattachedcluster.ContainerAttachedClusterConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Distribution: *string,
 	Fleet: github.com/cdktn-io/cdktn-provider-google-go/google/v17.containerAttachedCluster.ContainerAttachedClusterFleet,
@@ -1509,10 +1509,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/containerattache
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.distribution">Distribution</a></code> | <code>*string</code> | The Kubernetes distribution of the underlying attached cluster. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterConfig.property.fleet">Fleet</a></code> | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterFleet">ContainerAttachedClusterFleet</a></code> | fleet block. |
@@ -1561,7 +1561,7 @@ Count interface{}
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
@@ -1571,7 +1571,7 @@ DependsOn *[]ITerraformDependable
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
@@ -1581,7 +1581,7 @@ ForEach ITerraformIterator
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1591,7 +1591,7 @@ Lifecycle TerraformResourceLifecycle
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -2308,14 +2308,14 @@ containerattachedcluster.NewContainerAttachedClusterAuthorizationOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2487,7 +2487,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterAuthorizationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -2615,14 +2615,14 @@ containerattachedcluster.NewContainerAttachedClusterBinaryAuthorizationOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2793,7 +2793,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterBinaryAuthorizationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -2893,7 +2893,7 @@ containerattachedcluster.NewContainerAttachedClusterErrorsList(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2901,7 +2901,7 @@ containerattachedcluster.NewContainerAttachedClusterErrorsList(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2967,7 +2967,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -3042,7 +3042,7 @@ containerattachedcluster.NewContainerAttachedClusterErrorsOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3051,7 +3051,7 @@ containerattachedcluster.NewContainerAttachedClusterErrorsOutputReference(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3237,7 +3237,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterErrorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -3320,14 +3320,14 @@ containerattachedcluster.NewContainerAttachedClusterFleetOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterFleetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterFleetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterFleetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterFleetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3497,7 +3497,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterFleetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -3602,14 +3602,14 @@ containerattachedcluster.NewContainerAttachedClusterLoggingConfigComponentConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3780,7 +3780,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigComponentConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -3880,14 +3880,14 @@ containerattachedcluster.NewContainerAttachedClusterLoggingConfigOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4059,7 +4059,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -4171,14 +4171,14 @@ containerattachedcluster.NewContainerAttachedClusterMonitoringConfigManagedProme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4349,7 +4349,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigManagedPrometheusConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -4449,14 +4449,14 @@ containerattachedcluster.NewContainerAttachedClusterMonitoringConfigOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4628,7 +4628,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterMonitoringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -4740,14 +4740,14 @@ containerattachedcluster.NewContainerAttachedClusterOidcConfigOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4918,7 +4918,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterOidcConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -5040,14 +5040,14 @@ containerattachedcluster.NewContainerAttachedClusterProxyConfigKubernetesSecretO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigKubernetesSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigKubernetesSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigKubernetesSecretOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigKubernetesSecretOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5217,7 +5217,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigKubernetesSecretOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -5333,14 +5333,14 @@ containerattachedcluster.NewContainerAttachedClusterProxyConfigOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5512,7 +5512,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterProxyConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -5624,14 +5624,14 @@ containerattachedcluster.NewContainerAttachedClusterSecurityPostureConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5801,7 +5801,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterSecurityPostureConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -5895,14 +5895,14 @@ containerattachedcluster.NewContainerAttachedClusterTimeoutsOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6075,7 +6075,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -6231,7 +6231,7 @@ containerattachedcluster.NewContainerAttachedClusterWorkloadIdentityConfigList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6239,7 +6239,7 @@ containerattachedcluster.NewContainerAttachedClusterWorkloadIdentityConfigList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6305,7 +6305,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -6380,7 +6380,7 @@ containerattachedcluster.NewContainerAttachedClusterWorkloadIdentityConfigOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6389,7 +6389,7 @@ containerattachedcluster.NewContainerAttachedClusterWorkloadIdentityConfigOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6575,7 +6575,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerAttachedCluster.ContainerAttachedClusterWorkloadIdentityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 

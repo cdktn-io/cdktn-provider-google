@@ -290,7 +290,7 @@ public resetProject(): void
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleContainerCluster resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DataGoogleContainerCluster resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -362,7 +362,7 @@ import { dataGoogleContainerCluster } from '@cdktn/provider-google'
 dataGoogleContainerCluster.DataGoogleContainerCluster.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DataGoogleContainerCluster resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataGoogleContainerCluster resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.generateConfigForImport.parameter.scope"></a>
 
@@ -392,7 +392,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataGoogleContainerCluster to import is found.
 
@@ -403,19 +403,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.addonsConfig">addonsConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList">DataGoogleContainerClusterAddonsConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.allowNetAdmin">allowNetAdmin</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.allowNetAdmin">allowNetAdmin</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.anonymousAuthenticationConfig">anonymousAuthenticationConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigList">DataGoogleContainerClusterAnonymousAuthenticationConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.authenticatorGroupsConfig">authenticatorGroupsConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigList">DataGoogleContainerClusterAuthenticatorGroupsConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.binaryAuthorization">binaryAuthorization</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList">DataGoogleContainerClusterBinaryAuthorizationList</a></code> | *No description.* |
@@ -428,22 +428,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.datapathProvider">datapathProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.defaultMaxPodsPerNode">defaultMaxPodsPerNode</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.defaultSnatStatus">defaultSnatStatus</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList">DataGoogleContainerClusterDefaultSnatStatusList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.deletionProtection">deletionProtection</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.deletionProtection">deletionProtection</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.disableL4LbFirewallReconciliation">disableL4LbFirewallReconciliation</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.disableL4LbFirewallReconciliation">disableL4LbFirewallReconciliation</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.dnsConfig">dnsConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList">DataGoogleContainerClusterDnsConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableAutopilot">enableAutopilot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableCiliumClusterwideNetworkPolicy">enableCiliumClusterwideNetworkPolicy</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableFqdnNetworkPolicy">enableFqdnNetworkPolicy</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableIntranodeVisibility">enableIntranodeVisibility</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableAutopilot">enableAutopilot</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableCiliumClusterwideNetworkPolicy">enableCiliumClusterwideNetworkPolicy</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableFqdnNetworkPolicy">enableFqdnNetworkPolicy</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableIntranodeVisibility">enableIntranodeVisibility</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableK8SBetaApis">enableK8SBetaApis</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList">DataGoogleContainerClusterEnableK8SBetaApisList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableKubernetesAlpha">enableKubernetesAlpha</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableL4IlbSubsetting">enableL4IlbSubsetting</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableLegacyAbac">enableLegacyAbac</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableMultiNetworking">enableMultiNetworking</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableShieldedNodes">enableShieldedNodes</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableTpu">enableTpu</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableKubernetesAlpha">enableKubernetesAlpha</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableL4IlbSubsetting">enableL4IlbSubsetting</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableLegacyAbac">enableLegacyAbac</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableMultiNetworking">enableMultiNetworking</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableShieldedNodes">enableShieldedNodes</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enableTpu">enableTpu</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.enterpriseConfig">enterpriseConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList">DataGoogleContainerClusterEnterpriseConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.fleet">fleet</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetList">DataGoogleContainerClusterFleetList</a></code> | *No description.* |
@@ -481,8 +481,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.privateIpv6GoogleAccess">privateIpv6GoogleAccess</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.rbacBindingConfig">rbacBindingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList">DataGoogleContainerClusterRbacBindingConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.releaseChannel">releaseChannel</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList">DataGoogleContainerClusterReleaseChannelList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.removeDefaultNodePool">removeDefaultNodePool</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.resourceLabels">resourceLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.removeDefaultNodePool">removeDefaultNodePool</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.resourceLabels">resourceLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.resourceUsageExportConfig">resourceUsageExportConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigList">DataGoogleContainerClusterResourceUsageExportConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.secretManagerConfig">secretManagerConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList">DataGoogleContainerClusterSecretManagerConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.securityPostureConfig">securityPostureConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigList">DataGoogleContainerClusterSecurityPostureConfigList</a></code> | *No description.* |
@@ -490,7 +490,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.serviceExternalIpsConfig">serviceExternalIpsConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigList">DataGoogleContainerClusterServiceExternalIpsConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.servicesIpv4Cidr">servicesIpv4Cidr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.tpuIpv4CidrBlock">tpuIpv4CidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.userManagedKeysConfig">userManagedKeysConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigList">DataGoogleContainerClusterUserManagedKeysConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerCluster.property.verticalPodAutoscaling">verticalPodAutoscaling</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList">DataGoogleContainerClusterVerticalPodAutoscalingList</a></code> | *No description.* |
@@ -524,7 +524,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -574,7 +574,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -584,7 +584,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -604,7 +604,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -614,7 +614,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -624,7 +624,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -644,7 +644,7 @@ public readonly addonsConfig: DataGoogleContainerClusterAddonsConfigList;
 public readonly allowNetAdmin: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -774,7 +774,7 @@ public readonly defaultSnatStatus: DataGoogleContainerClusterDefaultSnatStatusLi
 public readonly deletionProtection: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -794,7 +794,7 @@ public readonly description: string;
 public readonly disableL4LbFirewallReconciliation: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -814,7 +814,7 @@ public readonly dnsConfig: DataGoogleContainerClusterDnsConfigList;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -824,7 +824,7 @@ public readonly effectiveLabels: StringMap;
 public readonly enableAutopilot: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -834,7 +834,7 @@ public readonly enableAutopilot: IResolvable;
 public readonly enableCiliumClusterwideNetworkPolicy: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -844,7 +844,7 @@ public readonly enableCiliumClusterwideNetworkPolicy: IResolvable;
 public readonly enableFqdnNetworkPolicy: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -854,7 +854,7 @@ public readonly enableFqdnNetworkPolicy: IResolvable;
 public readonly enableIntranodeVisibility: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -874,7 +874,7 @@ public readonly enableK8SBetaApis: DataGoogleContainerClusterEnableK8SBetaApisLi
 public readonly enableKubernetesAlpha: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -884,7 +884,7 @@ public readonly enableKubernetesAlpha: IResolvable;
 public readonly enableL4IlbSubsetting: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -894,7 +894,7 @@ public readonly enableL4IlbSubsetting: IResolvable;
 public readonly enableLegacyAbac: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -904,7 +904,7 @@ public readonly enableLegacyAbac: IResolvable;
 public readonly enableMultiNetworking: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -914,7 +914,7 @@ public readonly enableMultiNetworking: IResolvable;
 public readonly enableShieldedNodes: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -924,7 +924,7 @@ public readonly enableShieldedNodes: IResolvable;
 public readonly enableTpu: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly releaseChannel: DataGoogleContainerClusterReleaseChannelList;
 public readonly removeDefaultNodePool: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1314,7 +1314,7 @@ public readonly removeDefaultNodePool: IResolvable;
 public readonly resourceLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly subnetwork: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1882,13 +1882,13 @@ const dataGoogleContainerClusterConfig: dataGoogleContainerCluster.DataGoogleCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.name">name</a></code> | <code>string</code> | The name of the cluster, unique within the project and location. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_cluster#id DataGoogleContainerCluster#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfig.property.location">location</a></code> | <code>string</code> | The location (region or zone) in which the cluster master will be created, as well as the default node location. |
@@ -1902,7 +1902,7 @@ const dataGoogleContainerClusterConfig: dataGoogleContainerCluster.DataGoogleCon
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1912,7 +1912,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1922,7 +1922,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1932,7 +1932,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1942,7 +1942,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1952,7 +1952,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1962,7 +1962,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -3559,7 +3559,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3567,7 +3567,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3633,7 +3633,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3708,7 +3708,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3717,7 +3717,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3903,7 +3903,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3924,7 +3924,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.property.loadBalancerType">loadBalancerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigCloudrunConfig">DataGoogleContainerClusterAddonsConfigCloudrunConfig</a></code> | *No description.* |
 
@@ -3960,7 +3960,7 @@ public readonly fqn: string;
 public readonly disabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -3997,7 +3997,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4005,7 +4005,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConne
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4071,7 +4071,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4146,7 +4146,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4155,7 +4155,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConne
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4341,7 +4341,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4362,7 +4362,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigConfigConnectorConfig">DataGoogleContainerClusterAddonsConfigConfigConnectorConfig</a></code> | *No description.* |
 
 ---
@@ -4397,7 +4397,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -4424,7 +4424,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4432,7 +4432,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4498,7 +4498,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4573,7 +4573,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4582,7 +4582,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4768,7 +4768,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4789,7 +4789,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigDnsCacheConfig">DataGoogleContainerClusterAddonsConfigDnsCacheConfig</a></code> | *No description.* |
 
 ---
@@ -4824,7 +4824,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -4851,7 +4851,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersiste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4859,7 +4859,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersiste
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4925,7 +4925,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5000,7 +5000,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersiste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5009,7 +5009,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersiste
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5195,7 +5195,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5216,7 +5216,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig">DataGoogleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -5251,7 +5251,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -5278,7 +5278,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5286,7 +5286,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5352,7 +5352,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5427,7 +5427,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5436,7 +5436,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5622,7 +5622,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5643,7 +5643,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig">DataGoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -5678,7 +5678,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -5705,7 +5705,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5713,7 +5713,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiD
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5779,7 +5779,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5854,7 +5854,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5863,7 +5863,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiD
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6049,7 +6049,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6070,7 +6070,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfig">DataGoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -6105,7 +6105,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -6132,7 +6132,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6140,7 +6140,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAg
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6206,7 +6206,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6281,7 +6281,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6290,7 +6290,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAg
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6476,7 +6476,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6497,7 +6497,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfig">DataGoogleContainerClusterAddonsConfigGkeBackupAgentConfig</a></code> | *No description.* |
 
 ---
@@ -6532,7 +6532,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -6559,7 +6559,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6567,7 +6567,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6633,7 +6633,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6708,7 +6708,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6717,7 +6717,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6903,7 +6903,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6924,7 +6924,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscaling">DataGoogleContainerClusterAddonsConfigHorizontalPodAutoscaling</a></code> | *No description.* |
 
 ---
@@ -6959,7 +6959,7 @@ public readonly fqn: string;
 public readonly disabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -6986,7 +6986,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6994,7 +6994,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBal
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7060,7 +7060,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7135,7 +7135,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7144,7 +7144,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBal
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7330,7 +7330,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7351,7 +7351,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigHttpLoadBalancing">DataGoogleContainerClusterAddonsConfigHttpLoadBalancing</a></code> | *No description.* |
 
 ---
@@ -7386,7 +7386,7 @@ public readonly fqn: string;
 public readonly disabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -7413,7 +7413,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7421,7 +7421,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7487,7 +7487,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7562,7 +7562,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7570,7 +7570,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7636,7 +7636,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7711,7 +7711,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7720,7 +7720,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7906,7 +7906,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7927,8 +7927,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enableLegacyLustrePort">enableLegacyLustrePort</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enableLegacyLustrePort">enableLegacyLustrePort</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfig">DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -7963,7 +7963,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -7973,7 +7973,7 @@ public readonly enabled: IResolvable;
 public readonly enableLegacyLustrePort: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -8000,7 +8000,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPoli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8008,7 +8008,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPoli
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8074,7 +8074,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8149,7 +8149,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPoli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8158,7 +8158,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPoli
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8344,7 +8344,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8365,7 +8365,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigNetworkPolicyConfig">DataGoogleContainerClusterAddonsConfigNetworkPolicyConfig</a></code> | *No description.* |
 
 ---
@@ -8400,7 +8400,7 @@ public readonly fqn: string;
 public readonly disabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -8427,7 +8427,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8436,7 +8436,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8622,7 +8622,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8848,7 +8848,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelsto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8856,7 +8856,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelsto
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8922,7 +8922,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8997,7 +8997,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelsto
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9006,7 +9006,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelsto
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9192,7 +9192,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9213,7 +9213,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfig">DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -9248,7 +9248,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -9275,7 +9275,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9283,7 +9283,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9349,7 +9349,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9424,7 +9424,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9433,7 +9433,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9619,7 +9619,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9640,7 +9640,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.rayClusterLoggingConfig">rayClusterLoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList">DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.rayClusterMonitoringConfig">rayClusterMonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList">DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfig">DataGoogleContainerClusterAddonsConfigRayOperatorConfig</a></code> | *No description.* |
@@ -9677,7 +9677,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -9724,7 +9724,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9732,7 +9732,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9798,7 +9798,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9873,7 +9873,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9882,7 +9882,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10068,7 +10068,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10089,7 +10089,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig">DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig</a></code> | *No description.* |
 
 ---
@@ -10124,7 +10124,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10151,7 +10151,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10159,7 +10159,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10225,7 +10225,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10300,7 +10300,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10309,7 +10309,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperator
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10495,7 +10495,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10516,7 +10516,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig">DataGoogleContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig</a></code> | *No description.* |
 
 ---
@@ -10551,7 +10551,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10578,7 +10578,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10586,7 +10586,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaC
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10652,7 +10652,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10727,7 +10727,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10736,7 +10736,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaC
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10922,7 +10922,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10943,7 +10943,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAddonsConfigStatefulHaConfig">DataGoogleContainerClusterAddonsConfigStatefulHaConfig</a></code> | *No description.* |
 
 ---
@@ -10978,7 +10978,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -11005,7 +11005,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthentication
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11013,7 +11013,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthentication
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11079,7 +11079,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11154,7 +11154,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthentication
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11163,7 +11163,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthentication
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11349,7 +11349,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAnonymousAuthenticationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11432,7 +11432,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11440,7 +11440,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11506,7 +11506,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11581,7 +11581,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11590,7 +11590,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11776,7 +11776,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterAuthenticatorGroupsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11859,7 +11859,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11867,7 +11867,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11933,7 +11933,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12008,7 +12008,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12017,7 +12017,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12203,7 +12203,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12224,7 +12224,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.property.evaluationMode">evaluationMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorizationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterBinaryAuthorization">DataGoogleContainerClusterBinaryAuthorization</a></code> | *No description.* |
 
@@ -12260,7 +12260,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -12297,7 +12297,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12305,7 +12305,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12371,7 +12371,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12446,7 +12446,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12454,7 +12454,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12520,7 +12520,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12595,7 +12595,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12604,7 +12604,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12790,7 +12790,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12811,8 +12811,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.upgradeOptions">upgradeOptions</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList">DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement">DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement</a></code> | *No description.* |
 
@@ -12848,7 +12848,7 @@ public readonly fqn: string;
 public readonly autoRepair: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -12858,7 +12858,7 @@ public readonly autoRepair: IResolvable;
 public readonly autoUpgrade: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -12895,7 +12895,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12903,7 +12903,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12969,7 +12969,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13044,7 +13044,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13053,7 +13053,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13239,7 +13239,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13333,7 +13333,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13342,7 +13342,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13528,7 +13528,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13710,7 +13710,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13718,7 +13718,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13784,7 +13784,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13859,7 +13859,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13868,7 +13868,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14054,7 +14054,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14075,8 +14075,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig">DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -14111,7 +14111,7 @@ public readonly fqn: string;
 public readonly enableIntegrityMonitoring: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -14121,7 +14121,7 @@ public readonly enableIntegrityMonitoring: IResolvable;
 public readonly enableSecureBoot: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -14148,7 +14148,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14156,7 +14156,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14222,7 +14222,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14297,7 +14297,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14306,7 +14306,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14492,7 +14492,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14586,7 +14586,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14594,7 +14594,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14660,7 +14660,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14735,7 +14735,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14744,7 +14744,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14930,7 +14930,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15035,7 +15035,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15043,7 +15043,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15109,7 +15109,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15184,7 +15184,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15193,7 +15193,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15379,7 +15379,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15495,7 +15495,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15503,7 +15503,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15569,7 +15569,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15644,7 +15644,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15653,7 +15653,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15839,7 +15839,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15863,7 +15863,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.property.autoProvisioningDefaults">autoProvisioningDefaults</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList">DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.property.autoProvisioningLocations">autoProvisioningLocations</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.property.autoscalingProfile">autoscalingProfile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.property.resourceLimits">resourceLimits</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList">DataGoogleContainerClusterClusterAutoscalingResourceLimitsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscaling">DataGoogleContainerClusterClusterAutoscaling</a></code> | *No description.* |
 
@@ -15929,7 +15929,7 @@ public readonly autoscalingProfile: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -15966,7 +15966,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15974,7 +15974,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16040,7 +16040,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16115,7 +16115,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16124,7 +16124,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16310,7 +16310,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16415,7 +16415,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16423,7 +16423,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16489,7 +16489,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16564,7 +16564,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16573,7 +16573,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16759,7 +16759,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16781,7 +16781,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterConfidentialNodes">DataGoogleContainerClusterConfidentialNodes</a></code> | *No description.* |
 
 ---
@@ -16826,7 +16826,7 @@ public readonly confidentialInstanceType: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -16853,7 +16853,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16861,7 +16861,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16927,7 +16927,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17002,7 +17002,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17011,7 +17011,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17197,7 +17197,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17218,7 +17218,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.allowExternalTraffic">allowExternalTraffic</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.allowExternalTraffic">allowExternalTraffic</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig">DataGoogleContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig</a></code> | *No description.* |
 
@@ -17254,7 +17254,7 @@ public readonly fqn: string;
 public readonly allowExternalTraffic: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -17291,7 +17291,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17299,7 +17299,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17365,7 +17365,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17440,7 +17440,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17449,7 +17449,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17635,7 +17635,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17656,7 +17656,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig">DataGoogleContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig</a></code> | *No description.* |
 
 ---
@@ -17691,7 +17691,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -17718,7 +17718,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17726,7 +17726,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17792,7 +17792,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17867,7 +17867,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17876,7 +17876,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18062,7 +18062,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterControlPlaneEndpointsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18156,7 +18156,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18164,7 +18164,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18230,7 +18230,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18305,7 +18305,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18314,7 +18314,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18500,7 +18500,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18521,7 +18521,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterCostManagementConfig">DataGoogleContainerClusterCostManagementConfig</a></code> | *No description.* |
 
 ---
@@ -18556,7 +18556,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -18583,7 +18583,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18591,7 +18591,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18657,7 +18657,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18732,7 +18732,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18741,7 +18741,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18927,7 +18927,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDatabaseEncryptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19021,7 +19021,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19029,7 +19029,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19095,7 +19095,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19170,7 +19170,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19179,7 +19179,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19365,7 +19365,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19386,7 +19386,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDefaultSnatStatus">DataGoogleContainerClusterDefaultSnatStatus</a></code> | *No description.* |
 
 ---
@@ -19421,7 +19421,7 @@ public readonly fqn: string;
 public readonly disabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -19448,7 +19448,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19456,7 +19456,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19522,7 +19522,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19597,7 +19597,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19606,7 +19606,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19792,7 +19792,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterDnsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19908,7 +19908,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19916,7 +19916,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19982,7 +19982,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20057,7 +20057,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20066,7 +20066,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20252,7 +20252,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnableK8SBetaApisOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20335,7 +20335,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20343,7 +20343,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20409,7 +20409,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20484,7 +20484,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20493,7 +20493,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20679,7 +20679,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterEnterpriseConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20773,7 +20773,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterFleetList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20781,7 +20781,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterFleetList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20847,7 +20847,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20922,7 +20922,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20931,7 +20931,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21117,7 +21117,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21141,7 +21141,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.property.membership">membership</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.property.membershipId">membershipId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.property.membershipLocation">membershipLocation</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.property.preRegistered">preRegistered</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.property.preRegistered">preRegistered</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterFleet">DataGoogleContainerClusterFleet</a></code> | *No description.* |
 
@@ -21207,7 +21207,7 @@ public readonly membershipLocation: string;
 public readonly preRegistered: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -21244,7 +21244,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21252,7 +21252,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21318,7 +21318,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21393,7 +21393,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21402,7 +21402,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21588,7 +21588,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGatewayApiConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21671,7 +21671,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21679,7 +21679,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21745,7 +21745,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21820,7 +21820,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21829,7 +21829,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22015,7 +22015,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterGkeAutoUpgradeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22098,7 +22098,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22106,7 +22106,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22172,7 +22172,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22247,7 +22247,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22256,7 +22256,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22442,7 +22442,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22463,7 +22463,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIdentityServiceConfig">DataGoogleContainerClusterIdentityServiceConfig</a></code> | *No description.* |
 
 ---
@@ -22498,7 +22498,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -22525,7 +22525,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22533,7 +22533,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22599,7 +22599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22674,7 +22674,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22683,7 +22683,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22869,7 +22869,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22963,7 +22963,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22971,7 +22971,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23037,7 +23037,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23112,7 +23112,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23121,7 +23121,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAddit
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23307,7 +23307,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23390,7 +23390,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23398,7 +23398,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23464,7 +23464,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23539,7 +23539,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23548,7 +23548,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23734,7 +23734,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23894,7 +23894,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23902,7 +23902,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23968,7 +23968,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24043,7 +24043,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24052,7 +24052,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24238,7 +24238,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24259,7 +24259,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig">DataGoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig</a></code> | *No description.* |
 
 ---
@@ -24294,7 +24294,7 @@ public readonly fqn: string;
 public readonly disabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -24321,7 +24321,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24329,7 +24329,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24395,7 +24395,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24470,7 +24470,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24479,7 +24479,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24665,7 +24665,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24748,7 +24748,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24756,7 +24756,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyM
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24822,7 +24822,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24897,7 +24897,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24906,7 +24906,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyM
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25092,7 +25092,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25186,7 +25186,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25194,7 +25194,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25260,7 +25260,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25335,7 +25335,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25343,7 +25343,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25409,7 +25409,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25484,7 +25484,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25493,7 +25493,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25679,7 +25679,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25762,7 +25762,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25770,7 +25770,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25836,7 +25836,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25911,7 +25911,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25920,7 +25920,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMainte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26106,7 +26106,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26222,7 +26222,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26231,7 +26231,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26417,7 +26417,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26522,7 +26522,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26530,7 +26530,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26596,7 +26596,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26671,7 +26671,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26680,7 +26680,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26866,7 +26866,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMaintenancePolicyRecurringWindowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26971,7 +26971,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertifi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26979,7 +26979,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertifi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27045,7 +27045,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27120,7 +27120,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertifi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27129,7 +27129,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertifi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27315,7 +27315,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27336,7 +27336,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.property.issueClientCertificate">issueClientCertificate</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.property.issueClientCertificate">issueClientCertificate</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthClientCertificateConfig">DataGoogleContainerClusterMasterAuthClientCertificateConfig</a></code> | *No description.* |
 
 ---
@@ -27371,7 +27371,7 @@ public readonly fqn: string;
 public readonly issueClientCertificate: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -27398,7 +27398,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27406,7 +27406,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27472,7 +27472,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27547,7 +27547,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27555,7 +27555,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27621,7 +27621,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27696,7 +27696,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27705,7 +27705,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27891,7 +27891,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27985,7 +27985,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27993,7 +27993,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28059,7 +28059,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28134,7 +28134,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28143,7 +28143,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetwork
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28329,7 +28329,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28351,8 +28351,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.cidrBlocks">cidrBlocks</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList">DataGoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.gcpPublicCidrsAccessEnabled">gcpPublicCidrsAccessEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.privateEndpointEnforcementEnabled">privateEndpointEnforcementEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.gcpPublicCidrsAccessEnabled">gcpPublicCidrsAccessEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.privateEndpointEnforcementEnabled">privateEndpointEnforcementEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthorizedNetworksConfig">DataGoogleContainerClusterMasterAuthorizedNetworksConfig</a></code> | *No description.* |
 
 ---
@@ -28397,7 +28397,7 @@ public readonly cidrBlocks: DataGoogleContainerClusterMasterAuthorizedNetworksCo
 public readonly gcpPublicCidrsAccessEnabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -28407,7 +28407,7 @@ public readonly gcpPublicCidrsAccessEnabled: IResolvable;
 public readonly privateEndpointEnforcementEnabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -28434,7 +28434,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28443,7 +28443,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28629,7 +28629,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMasterAuthOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28745,7 +28745,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28753,7 +28753,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28819,7 +28819,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28894,7 +28894,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28903,7 +28903,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29089,7 +29089,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29110,7 +29110,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.property.enableCertificates">enableCertificates</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.property.enableCertificates">enableCertificates</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificatesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMeshCertificates">DataGoogleContainerClusterMeshCertificates</a></code> | *No description.* |
 
 ---
@@ -29145,7 +29145,7 @@ public readonly fqn: string;
 public readonly enableCertificates: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -29172,7 +29172,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29180,7 +29180,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvance
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29246,7 +29246,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29321,7 +29321,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29330,7 +29330,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvance
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29516,7 +29516,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29537,8 +29537,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableMetrics">enableMetrics</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableRelay">enableRelay</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableMetrics">enableMetrics</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableRelay">enableRelay</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig">DataGoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig</a></code> | *No description.* |
 
 ---
@@ -29573,7 +29573,7 @@ public readonly fqn: string;
 public readonly enableMetrics: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -29583,7 +29583,7 @@ public readonly enableMetrics: IResolvable;
 public readonly enableRelay: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -29610,7 +29610,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29618,7 +29618,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29684,7 +29684,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29759,7 +29759,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29767,7 +29767,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29833,7 +29833,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29908,7 +29908,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29917,7 +29917,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30103,7 +30103,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30186,7 +30186,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30194,7 +30194,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30260,7 +30260,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30335,7 +30335,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -30344,7 +30344,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManaged
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30530,7 +30530,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30552,7 +30552,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.autoMonitoringConfig">autoMonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList">DataGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigManagedPrometheus">DataGoogleContainerClusterMonitoringConfigManagedPrometheus</a></code> | *No description.* |
 
 ---
@@ -30597,7 +30597,7 @@ public readonly autoMonitoringConfig: DataGoogleContainerClusterMonitoringConfig
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -30624,7 +30624,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -30633,7 +30633,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30819,7 +30819,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterMonitoringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30924,7 +30924,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30932,7 +30932,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30998,7 +30998,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31073,7 +31073,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31082,7 +31082,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31268,7 +31268,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPerformanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31351,7 +31351,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31359,7 +31359,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31425,7 +31425,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31500,7 +31500,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31509,7 +31509,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31695,7 +31695,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31716,7 +31716,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.property.provider">provider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNetworkPolicy">DataGoogleContainerClusterNetworkPolicy</a></code> | *No description.* |
 
@@ -31752,7 +31752,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -31789,7 +31789,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31797,7 +31797,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31863,7 +31863,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31938,7 +31938,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31947,7 +31947,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32133,7 +32133,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32154,7 +32154,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.performanceMonitoringUnit">performanceMonitoringUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.threadsPerCore">threadsPerCore</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigAdvancedMachineFeatures">DataGoogleContainerClusterNodeConfigAdvancedMachineFeatures</a></code> | *No description.* |
@@ -32191,7 +32191,7 @@ public readonly fqn: string;
 public readonly enableNestedVirtualization: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -32238,7 +32238,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -32246,7 +32246,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32312,7 +32312,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32387,7 +32387,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -32396,7 +32396,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32582,7 +32582,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigBootDiskOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32698,7 +32698,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialN
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -32706,7 +32706,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialN
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32772,7 +32772,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32847,7 +32847,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialN
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -32856,7 +32856,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialN
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33042,7 +33042,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33064,7 +33064,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigConfidentialNodes">DataGoogleContainerClusterNodeConfigConfidentialNodes</a></code> | *No description.* |
 
 ---
@@ -33109,7 +33109,7 @@ public readonly confidentialInstanceType: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -33136,7 +33136,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -33144,7 +33144,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33210,7 +33210,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33285,7 +33285,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -33294,7 +33294,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33480,7 +33480,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33563,7 +33563,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -33571,7 +33571,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33637,7 +33637,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33712,7 +33712,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -33721,7 +33721,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33907,7 +33907,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33990,7 +33990,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -33998,7 +33998,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34064,7 +34064,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34139,7 +34139,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -34148,7 +34148,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34334,7 +34334,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34428,7 +34428,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -34436,7 +34436,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34502,7 +34502,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34577,7 +34577,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -34586,7 +34586,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34772,7 +34772,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34794,7 +34794,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList">DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig">DataGoogleContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig</a></code> | *No description.* |
 
 ---
@@ -34839,7 +34839,7 @@ public readonly certificateAuthorityDomainConfig: DataGoogleContainerClusterNode
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -34866,7 +34866,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -34874,7 +34874,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTain
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34940,7 +34940,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35015,7 +35015,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -35024,7 +35024,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTain
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35210,7 +35210,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35315,7 +35315,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -35323,7 +35323,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35389,7 +35389,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35464,7 +35464,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -35473,7 +35473,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35659,7 +35659,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35753,7 +35753,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -35761,7 +35761,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35827,7 +35827,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35902,7 +35902,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -35911,7 +35911,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36097,7 +36097,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36118,7 +36118,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocket">DataGoogleContainerClusterNodeConfigFastSocket</a></code> | *No description.* |
 
 ---
@@ -36153,7 +36153,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -36180,7 +36180,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -36188,7 +36188,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36254,7 +36254,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36329,7 +36329,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -36338,7 +36338,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36524,7 +36524,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36545,7 +36545,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfig">DataGoogleContainerClusterNodeConfigGcfsConfig</a></code> | *No description.* |
 
 ---
@@ -36580,7 +36580,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -36607,7 +36607,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -36615,7 +36615,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36681,7 +36681,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36756,7 +36756,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -36765,7 +36765,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36951,7 +36951,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37034,7 +37034,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -37042,7 +37042,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37108,7 +37108,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37183,7 +37183,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -37192,7 +37192,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37378,7 +37378,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37472,7 +37472,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -37480,7 +37480,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37546,7 +37546,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37621,7 +37621,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -37630,7 +37630,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAccelera
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37816,7 +37816,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37943,7 +37943,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -37951,7 +37951,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38017,7 +38017,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38092,7 +38092,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38101,7 +38101,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38287,7 +38287,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38308,7 +38308,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnic">DataGoogleContainerClusterNodeConfigGvnic</a></code> | *No description.* |
 
 ---
@@ -38343,7 +38343,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -38370,7 +38370,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -38378,7 +38378,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenan
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38444,7 +38444,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38519,7 +38519,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38528,7 +38528,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenan
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38714,7 +38714,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38797,7 +38797,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -38805,7 +38805,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38871,7 +38871,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38946,7 +38946,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38955,7 +38955,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39141,7 +39141,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39279,7 +39279,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -39287,7 +39287,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39353,7 +39353,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39428,7 +39428,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -39437,7 +39437,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39623,7 +39623,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39761,7 +39761,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -39769,7 +39769,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39835,7 +39835,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39910,7 +39910,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -39919,7 +39919,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40105,7 +40105,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40243,7 +40243,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -40251,7 +40251,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40317,7 +40317,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40392,7 +40392,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -40401,7 +40401,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40587,7 +40587,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40611,7 +40611,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.containerLogMaxFiles">containerLogMaxFiles</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.containerLogMaxSize">containerLogMaxSize</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.evictionMaxPodGracePeriodSeconds">evictionMaxPodGracePeriodSeconds</a></code> | <code>number</code> | *No description.* |
@@ -40625,7 +40625,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.insecureKubeletReadonlyPortEnabled">insecureKubeletReadonlyPortEnabled</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.maxParallelImagePulls">maxParallelImagePulls</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.podPidsLimit">podPidsLimit</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfig">DataGoogleContainerClusterNodeConfigKubeletConfig</a></code> | *No description.* |
 
 ---
@@ -40690,7 +40690,7 @@ public readonly containerLogMaxSize: string;
 public readonly cpuCfsQuota: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -40830,7 +40830,7 @@ public readonly podPidsLimit: number;
 public readonly singleProcessOomKill: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -40857,7 +40857,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -40865,7 +40865,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40931,7 +40931,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41006,7 +41006,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -41015,7 +41015,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41201,7 +41201,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41295,7 +41295,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -41303,7 +41303,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41369,7 +41369,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41444,7 +41444,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -41453,7 +41453,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41639,7 +41639,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41662,7 +41662,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.cgroupMode">cgroupMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.hugepagesConfig">hugepagesConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList">DataGoogleContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.sysctls">sysctls</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.sysctls">sysctls</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.transparentHugepageDefrag">transparentHugepageDefrag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.transparentHugepageEnabled">transparentHugepageEnabled</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfig">DataGoogleContainerClusterNodeConfigLinuxNodeConfig</a></code> | *No description.* |
@@ -41719,7 +41719,7 @@ public readonly hugepagesConfig: DataGoogleContainerClusterNodeConfigLinuxNodeCo
 public readonly sysctls: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -41766,7 +41766,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -41774,7 +41774,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41840,7 +41840,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41915,7 +41915,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdB
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -41923,7 +41923,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdB
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41989,7 +41989,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -42064,7 +42064,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdB
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -42073,7 +42073,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdB
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -42259,7 +42259,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -42342,7 +42342,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -42351,7 +42351,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -42537,7 +42537,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -42566,17 +42566,17 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.diskType">diskType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.effectiveTaints">effectiveTaints</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEffectiveTaintsList">DataGoogleContainerClusterNodeConfigEffectiveTaintsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfig">ephemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList">DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.fastSocket">fastSocket</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigFastSocketList">DataGoogleContainerClusterNodeConfigFastSocketList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.gcfsConfig">gcfsConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGcfsConfigList">DataGoogleContainerClusterNodeConfigGcfsConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.guestAccelerator">guestAccelerator</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGuestAcceleratorList">DataGoogleContainerClusterNodeConfigGuestAcceleratorList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.gvnic">gvnic</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigGvnicList">DataGoogleContainerClusterNodeConfigGvnicList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.hostMaintenancePolicy">hostMaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList">DataGoogleContainerClusterNodeConfigHostMaintenancePolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.imageType">imageType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.kubeletConfig">kubeletConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigKubeletConfigList">DataGoogleContainerClusterNodeConfigKubeletConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.labels">labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.labels">labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.linuxNodeConfig">linuxNodeConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLinuxNodeConfigList">DataGoogleContainerClusterNodeConfigLinuxNodeConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.localNvmeSsdBlockConfig">localNvmeSsdBlockConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList">DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | *No description.* |
@@ -42584,19 +42584,19 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.loggingVariant">loggingVariant</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.machineType">machineType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.maxRunDuration">maxRunDuration</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.metadata">metadata</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.metadata">metadata</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.nodeGroup">nodeGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.oauthScopes">oauthScopes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList">DataGoogleContainerClusterNodeConfigReservationAffinityList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.resourceLabels">resourceLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.resourceLabels">resourceLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.secondaryBootDisks">secondaryBootDisks</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksList">DataGoogleContainerClusterNodeConfigSecondaryBootDisksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList">DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.soleTenantConfig">soleTenantConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigList">DataGoogleContainerClusterNodeConfigSoleTenantConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.spot">spot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.spot">spot</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.storagePools">storagePools</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigOutputReference.property.taint">taint</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList">DataGoogleContainerClusterNodeConfigTaintList</a></code> | *No description.* |
@@ -42716,7 +42716,7 @@ public readonly effectiveTaints: DataGoogleContainerClusterNodeConfigEffectiveTa
 public readonly enableConfidentialStorage: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -42746,7 +42746,7 @@ public readonly fastSocket: DataGoogleContainerClusterNodeConfigFastSocketList;
 public readonly flexStart: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -42816,7 +42816,7 @@ public readonly kubeletConfig: DataGoogleContainerClusterNodeConfigKubeletConfig
 public readonly labels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -42896,7 +42896,7 @@ public readonly maxRunDuration: string;
 public readonly metadata: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -42936,7 +42936,7 @@ public readonly oauthScopes: string[];
 public readonly preemptible: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -42956,7 +42956,7 @@ public readonly reservationAffinity: DataGoogleContainerClusterNodeConfigReserva
 public readonly resourceLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -42966,7 +42966,7 @@ public readonly resourceLabels: StringMap;
 public readonly resourceManagerTags: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -43016,7 +43016,7 @@ public readonly soleTenantConfig: DataGoogleContainerClusterNodeConfigSoleTenant
 public readonly spot: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -43093,7 +43093,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -43101,7 +43101,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -43167,7 +43167,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -43242,7 +43242,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -43251,7 +43251,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -43437,7 +43437,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigReservationAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -43542,7 +43542,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBoot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -43550,7 +43550,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBoot
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -43616,7 +43616,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -43691,7 +43691,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBoot
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -43700,7 +43700,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBoot
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -43886,7 +43886,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSecondaryBootDisksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -43980,7 +43980,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInsta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -43988,7 +43988,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInsta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44054,7 +44054,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -44129,7 +44129,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInsta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -44138,7 +44138,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInsta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44324,7 +44324,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -44345,8 +44345,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigShieldedInstanceConfig">DataGoogleContainerClusterNodeConfigShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -44381,7 +44381,7 @@ public readonly fqn: string;
 public readonly enableIntegrityMonitoring: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -44391,7 +44391,7 @@ public readonly enableIntegrityMonitoring: IResolvable;
 public readonly enableSecureBoot: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -44418,7 +44418,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -44426,7 +44426,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44492,7 +44492,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -44567,7 +44567,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -44575,7 +44575,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44641,7 +44641,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -44716,7 +44716,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -44725,7 +44725,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44911,7 +44911,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -45016,7 +45016,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -45025,7 +45025,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -45211,7 +45211,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigSoleTenantConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -45305,7 +45305,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -45313,7 +45313,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -45379,7 +45379,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -45454,7 +45454,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -45463,7 +45463,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -45649,7 +45649,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigTaintOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -45754,7 +45754,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -45762,7 +45762,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -45828,7 +45828,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -45903,7 +45903,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -45912,7 +45912,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -46098,7 +46098,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWindowsNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -46181,7 +46181,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetad
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -46189,7 +46189,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetad
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -46255,7 +46255,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -46330,7 +46330,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetad
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -46339,7 +46339,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetad
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -46525,7 +46525,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -46608,7 +46608,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinux
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -46616,7 +46616,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinux
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -46682,7 +46682,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -46757,7 +46757,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinux
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -46766,7 +46766,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinux
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -46952,7 +46952,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47035,7 +47035,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -47043,7 +47043,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47109,7 +47109,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47184,7 +47184,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetwo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -47192,7 +47192,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetwo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47258,7 +47258,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47333,7 +47333,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetwo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -47342,7 +47342,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetwo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47528,7 +47528,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47611,7 +47611,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeK
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -47619,7 +47619,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeK
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47685,7 +47685,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47760,7 +47760,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeK
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -47769,7 +47769,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeK
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47955,7 +47955,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48038,7 +48038,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -48047,7 +48047,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48233,7 +48233,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48257,7 +48257,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.property.linuxNodeConfig">linuxNodeConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList">DataGoogleContainerClusterNodePoolAutoConfigLinuxNodeConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.property.networkTags">networkTags</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList">DataGoogleContainerClusterNodePoolAutoConfigNetworkTagsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.property.nodeKubeletConfig">nodeKubeletConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList">DataGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoConfig">DataGoogleContainerClusterNodePoolAutoConfig</a></code> | *No description.* |
 
 ---
@@ -48322,7 +48322,7 @@ public readonly nodeKubeletConfig: DataGoogleContainerClusterNodePoolAutoConfigN
 public readonly resourceManagerTags: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -48349,7 +48349,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -48357,7 +48357,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48423,7 +48423,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48498,7 +48498,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -48507,7 +48507,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48693,7 +48693,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48820,7 +48820,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -48828,7 +48828,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48894,7 +48894,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48969,7 +48969,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -48977,7 +48977,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49043,7 +49043,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49118,7 +49118,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -49127,7 +49127,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49313,7 +49313,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49396,7 +49396,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -49404,7 +49404,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49470,7 +49470,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49545,7 +49545,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -49554,7 +49554,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49740,7 +49740,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49823,7 +49823,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -49831,7 +49831,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49897,7 +49897,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49972,7 +49972,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -49981,7 +49981,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -50167,7 +50167,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -50261,7 +50261,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -50269,7 +50269,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -50335,7 +50335,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -50410,7 +50410,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -50419,7 +50419,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -50605,7 +50605,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -50627,7 +50627,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList">DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig">DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig</a></code> | *No description.* |
 
 ---
@@ -50672,7 +50672,7 @@ public readonly certificateAuthorityDomainConfig: DataGoogleContainerClusterNode
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -50699,7 +50699,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -50707,7 +50707,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -50773,7 +50773,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -50848,7 +50848,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -50857,7 +50857,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51043,7 +51043,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51064,7 +51064,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig">DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig</a></code> | *No description.* |
 
 ---
@@ -51099,7 +51099,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -51126,7 +51126,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -51134,7 +51134,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51200,7 +51200,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51275,7 +51275,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -51284,7 +51284,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeCon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51470,7 +51470,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51586,7 +51586,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -51595,7 +51595,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51781,7 +51781,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolDefaultsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51864,7 +51864,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -51872,7 +51872,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51938,7 +51938,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52013,7 +52013,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -52021,7 +52021,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52087,7 +52087,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52162,7 +52162,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -52171,7 +52171,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52357,7 +52357,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52378,8 +52378,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagementOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolManagement">DataGoogleContainerClusterNodePoolManagement</a></code> | *No description.* |
 
 ---
@@ -52414,7 +52414,7 @@ public readonly fqn: string;
 public readonly autoRepair: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -52424,7 +52424,7 @@ public readonly autoRepair: IResolvable;
 public readonly autoUpgrade: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -52451,7 +52451,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -52459,7 +52459,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52525,7 +52525,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52600,7 +52600,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -52609,7 +52609,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52795,7 +52795,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52889,7 +52889,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -52897,7 +52897,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52963,7 +52963,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53038,7 +53038,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -53047,7 +53047,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAd
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53233,7 +53233,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53338,7 +53338,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -53346,7 +53346,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53412,7 +53412,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53487,7 +53487,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -53495,7 +53495,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53561,7 +53561,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53636,7 +53636,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -53645,7 +53645,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53831,7 +53831,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53914,7 +53914,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -53923,7 +53923,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54109,7 +54109,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54132,8 +54132,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.additionalNodeNetworkConfigs">additionalNodeNetworkConfigs</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList">DataGoogleContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.additionalPodNetworkConfigs">additionalPodNetworkConfigs</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList">DataGoogleContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.createPodRange">createPodRange</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.createPodRange">createPodRange</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.networkPerformanceConfig">networkPerformanceConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList">DataGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.podCidrOverprovisionConfig">podCidrOverprovisionConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList">DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigOutputReference.property.podIpv4CidrBlock">podIpv4CidrBlock</a></code> | <code>string</code> | *No description.* |
@@ -54193,7 +54193,7 @@ public readonly additionalPodNetworkConfigs: DataGoogleContainerClusterNodePoolN
 public readonly createPodRange: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -54203,7 +54203,7 @@ public readonly createPodRange: IResolvable;
 public readonly enablePrivateNodes: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -54280,7 +54280,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -54288,7 +54288,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54354,7 +54354,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54429,7 +54429,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -54438,7 +54438,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54624,7 +54624,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54645,7 +54645,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig">DataGoogleContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig</a></code> | *No description.* |
 
 ---
@@ -54680,7 +54680,7 @@ public readonly fqn: string;
 public readonly disabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -54707,7 +54707,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -54715,7 +54715,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvan
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54781,7 +54781,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54856,7 +54856,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -54865,7 +54865,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvan
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -55051,7 +55051,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -55072,7 +55072,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.performanceMonitoringUnit">performanceMonitoringUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.threadsPerCore">threadsPerCore</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures">DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures</a></code> | *No description.* |
@@ -55109,7 +55109,7 @@ public readonly fqn: string;
 public readonly enableNestedVirtualization: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -55156,7 +55156,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -55164,7 +55164,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootD
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -55230,7 +55230,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -55305,7 +55305,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -55314,7 +55314,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootD
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -55500,7 +55500,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -55616,7 +55616,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -55624,7 +55624,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -55690,7 +55690,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -55765,7 +55765,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -55774,7 +55774,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -55960,7 +55960,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -55982,7 +55982,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodes">DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodes</a></code> | *No description.* |
 
 ---
@@ -56027,7 +56027,7 @@ public readonly confidentialInstanceType: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -56054,7 +56054,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -56062,7 +56062,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56128,7 +56128,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -56203,7 +56203,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -56212,7 +56212,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56398,7 +56398,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -56481,7 +56481,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -56489,7 +56489,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56555,7 +56555,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -56630,7 +56630,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -56639,7 +56639,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56825,7 +56825,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -56908,7 +56908,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -56916,7 +56916,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56982,7 +56982,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57057,7 +57057,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -57066,7 +57066,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57252,7 +57252,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57346,7 +57346,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -57354,7 +57354,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57420,7 +57420,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57495,7 +57495,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -57504,7 +57504,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigConta
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57690,7 +57690,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57712,7 +57712,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList">DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig">DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig</a></code> | *No description.* |
 
 ---
@@ -57757,7 +57757,7 @@ public readonly certificateAuthorityDomainConfig: DataGoogleContainerClusterNode
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -57784,7 +57784,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -57792,7 +57792,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffec
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57858,7 +57858,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57933,7 +57933,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -57942,7 +57942,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffec
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58128,7 +58128,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58233,7 +58233,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -58241,7 +58241,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58307,7 +58307,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58382,7 +58382,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -58391,7 +58391,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58577,7 +58577,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58671,7 +58671,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -58679,7 +58679,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastS
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58745,7 +58745,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58820,7 +58820,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -58829,7 +58829,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastS
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59015,7 +59015,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59036,7 +59036,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocket">DataGoogleContainerClusterNodePoolNodeConfigFastSocket</a></code> | *No description.* |
 
 ---
@@ -59071,7 +59071,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -59098,7 +59098,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -59106,7 +59106,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsC
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59172,7 +59172,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59247,7 +59247,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -59256,7 +59256,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsC
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59442,7 +59442,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59463,7 +59463,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfig">DataGoogleContainerClusterNodePoolNodeConfigGcfsConfig</a></code> | *No description.* |
 
 ---
@@ -59498,7 +59498,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -59525,7 +59525,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -59533,7 +59533,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59599,7 +59599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59674,7 +59674,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -59683,7 +59683,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59869,7 +59869,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59952,7 +59952,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -59960,7 +59960,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60026,7 +60026,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60101,7 +60101,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -60110,7 +60110,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60296,7 +60296,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60390,7 +60390,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -60398,7 +60398,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60464,7 +60464,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60539,7 +60539,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -60548,7 +60548,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuest
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60734,7 +60734,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60861,7 +60861,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -60869,7 +60869,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnic
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60935,7 +60935,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61010,7 +61010,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -61019,7 +61019,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnic
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -61205,7 +61205,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61226,7 +61226,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnic">DataGoogleContainerClusterNodePoolNodeConfigGvnic</a></code> | *No description.* |
 
 ---
@@ -61261,7 +61261,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -61288,7 +61288,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -61296,7 +61296,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostM
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -61362,7 +61362,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61437,7 +61437,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -61446,7 +61446,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostM
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -61632,7 +61632,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61715,7 +61715,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -61723,7 +61723,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -61789,7 +61789,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61864,7 +61864,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -61873,7 +61873,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -62059,7 +62059,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -62197,7 +62197,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -62205,7 +62205,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -62271,7 +62271,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -62346,7 +62346,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -62355,7 +62355,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -62541,7 +62541,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -62679,7 +62679,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -62687,7 +62687,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -62753,7 +62753,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -62828,7 +62828,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -62837,7 +62837,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -63023,7 +63023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -63161,7 +63161,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -63169,7 +63169,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -63235,7 +63235,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -63310,7 +63310,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -63319,7 +63319,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -63505,7 +63505,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -63529,7 +63529,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.containerLogMaxFiles">containerLogMaxFiles</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.containerLogMaxSize">containerLogMaxSize</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.evictionMaxPodGracePeriodSeconds">evictionMaxPodGracePeriodSeconds</a></code> | <code>number</code> | *No description.* |
@@ -63543,7 +63543,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.insecureKubeletReadonlyPortEnabled">insecureKubeletReadonlyPortEnabled</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.maxParallelImagePulls">maxParallelImagePulls</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.podPidsLimit">podPidsLimit</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfig">DataGoogleContainerClusterNodePoolNodeConfigKubeletConfig</a></code> | *No description.* |
 
 ---
@@ -63608,7 +63608,7 @@ public readonly containerLogMaxSize: string;
 public readonly cpuCfsQuota: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -63748,7 +63748,7 @@ public readonly podPidsLimit: number;
 public readonly singleProcessOomKill: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -63775,7 +63775,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -63783,7 +63783,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -63849,7 +63849,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -63924,7 +63924,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -63933,7 +63933,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64119,7 +64119,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64213,7 +64213,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -64221,7 +64221,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64287,7 +64287,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64362,7 +64362,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -64371,7 +64371,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinux
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64557,7 +64557,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64580,7 +64580,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.cgroupMode">cgroupMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.hugepagesConfig">hugepagesConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList">DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.sysctls">sysctls</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.sysctls">sysctls</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.transparentHugepageDefrag">transparentHugepageDefrag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.transparentHugepageEnabled">transparentHugepageEnabled</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig">DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig</a></code> | *No description.* |
@@ -64637,7 +64637,7 @@ public readonly hugepagesConfig: DataGoogleContainerClusterNodePoolNodeConfigLin
 public readonly sysctls: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -64684,7 +64684,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -64692,7 +64692,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64758,7 +64758,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64833,7 +64833,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -64841,7 +64841,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocal
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64907,7 +64907,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64982,7 +64982,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -64991,7 +64991,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocal
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -65177,7 +65177,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -65260,7 +65260,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -65269,7 +65269,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -65455,7 +65455,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -65484,17 +65484,17 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.diskType">diskType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.effectiveTaints">effectiveTaints</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList">DataGoogleContainerClusterNodePoolNodeConfigEffectiveTaintsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfig">ephemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList">DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.fastSocket">fastSocket</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigFastSocketList">DataGoogleContainerClusterNodePoolNodeConfigFastSocketList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.gcfsConfig">gcfsConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList">DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.guestAccelerator">guestAccelerator</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList">DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.gvnic">gvnic</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigGvnicList">DataGoogleContainerClusterNodePoolNodeConfigGvnicList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.hostMaintenancePolicy">hostMaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList">DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.imageType">imageType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.kubeletConfig">kubeletConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList">DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.labels">labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.labels">labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.linuxNodeConfig">linuxNodeConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList">DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.localNvmeSsdBlockConfig">localNvmeSsdBlockConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList">DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | *No description.* |
@@ -65502,19 +65502,19 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.loggingVariant">loggingVariant</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.machineType">machineType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.maxRunDuration">maxRunDuration</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.metadata">metadata</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.metadata">metadata</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.nodeGroup">nodeGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.oauthScopes">oauthScopes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList">DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.resourceLabels">resourceLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.resourceLabels">resourceLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.secondaryBootDisks">secondaryBootDisks</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList">DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList">DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.soleTenantConfig">soleTenantConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList">DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.spot">spot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.spot">spot</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.storagePools">storagePools</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigOutputReference.property.taint">taint</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintList">DataGoogleContainerClusterNodePoolNodeConfigTaintList</a></code> | *No description.* |
@@ -65634,7 +65634,7 @@ public readonly effectiveTaints: DataGoogleContainerClusterNodePoolNodeConfigEff
 public readonly enableConfidentialStorage: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -65664,7 +65664,7 @@ public readonly fastSocket: DataGoogleContainerClusterNodePoolNodeConfigFastSock
 public readonly flexStart: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -65734,7 +65734,7 @@ public readonly kubeletConfig: DataGoogleContainerClusterNodePoolNodeConfigKubel
 public readonly labels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -65814,7 +65814,7 @@ public readonly maxRunDuration: string;
 public readonly metadata: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -65854,7 +65854,7 @@ public readonly oauthScopes: string[];
 public readonly preemptible: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -65874,7 +65874,7 @@ public readonly reservationAffinity: DataGoogleContainerClusterNodePoolNodeConfi
 public readonly resourceLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -65884,7 +65884,7 @@ public readonly resourceLabels: StringMap;
 public readonly resourceManagerTags: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -65934,7 +65934,7 @@ public readonly soleTenantConfig: DataGoogleContainerClusterNodePoolNodeConfigSo
 public readonly spot: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -66011,7 +66011,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReser
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -66019,7 +66019,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReser
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -66085,7 +66085,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -66160,7 +66160,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReser
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -66169,7 +66169,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReser
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -66355,7 +66355,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -66460,7 +66460,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -66468,7 +66468,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -66534,7 +66534,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -66609,7 +66609,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -66618,7 +66618,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecon
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -66804,7 +66804,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -66898,7 +66898,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShiel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -66906,7 +66906,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShiel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -66972,7 +66972,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67047,7 +67047,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShiel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -67056,7 +67056,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShiel
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67242,7 +67242,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67263,8 +67263,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfig">DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -67299,7 +67299,7 @@ public readonly fqn: string;
 public readonly enableIntegrityMonitoring: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -67309,7 +67309,7 @@ public readonly enableIntegrityMonitoring: IResolvable;
 public readonly enableSecureBoot: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -67336,7 +67336,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -67344,7 +67344,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67410,7 +67410,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67485,7 +67485,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -67493,7 +67493,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67559,7 +67559,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67634,7 +67634,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -67643,7 +67643,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67829,7 +67829,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67934,7 +67934,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -67943,7 +67943,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68129,7 +68129,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -68223,7 +68223,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -68231,7 +68231,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaint
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68297,7 +68297,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -68372,7 +68372,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -68381,7 +68381,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaint
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68567,7 +68567,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigTaintOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -68672,7 +68672,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -68680,7 +68680,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68746,7 +68746,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -68821,7 +68821,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -68830,7 +68830,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -69016,7 +69016,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -69099,7 +69099,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -69107,7 +69107,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkl
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -69173,7 +69173,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -69248,7 +69248,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -69257,7 +69257,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkl
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -69443,7 +69443,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -69526,7 +69526,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -69535,7 +69535,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -69721,7 +69721,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -69969,7 +69969,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -69977,7 +69977,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicy
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70043,7 +70043,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70118,7 +70118,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -70127,7 +70127,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicy
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70313,7 +70313,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70418,7 +70418,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvision
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -70426,7 +70426,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvision
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70492,7 +70492,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70567,7 +70567,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvision
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -70576,7 +70576,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvision
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70762,7 +70762,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70783,7 +70783,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioningOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolQueuedProvisioning">DataGoogleContainerClusterNodePoolQueuedProvisioning</a></code> | *No description.* |
 
 ---
@@ -70818,7 +70818,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -70845,7 +70845,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -70853,7 +70853,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70919,7 +70919,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70994,7 +70994,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -71003,7 +71003,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -71189,7 +71189,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -71283,7 +71283,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -71291,7 +71291,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -71357,7 +71357,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -71432,7 +71432,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -71441,7 +71441,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -71627,7 +71627,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -71732,7 +71732,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -71740,7 +71740,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -71806,7 +71806,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -71881,7 +71881,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -71890,7 +71890,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettings
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72076,7 +72076,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolUpgradeSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -72192,7 +72192,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -72200,7 +72200,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72266,7 +72266,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -72341,7 +72341,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -72350,7 +72350,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72536,7 +72536,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -72619,7 +72619,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -72627,7 +72627,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72693,7 +72693,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -72768,7 +72768,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -72777,7 +72777,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72963,7 +72963,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73046,7 +73046,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -73054,7 +73054,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73120,7 +73120,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73195,7 +73195,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -73204,7 +73204,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73390,7 +73390,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73411,7 +73411,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubFilterList">DataGoogleContainerClusterNotificationConfigPubsubFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.property.topic">topic</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterNotificationConfigPubsub">DataGoogleContainerClusterNotificationConfigPubsub</a></code> | *No description.* |
@@ -73448,7 +73448,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -73495,7 +73495,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -73503,7 +73503,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73569,7 +73569,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73644,7 +73644,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -73653,7 +73653,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73839,7 +73839,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPodAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73922,7 +73922,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -73930,7 +73930,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73996,7 +73996,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74071,7 +74071,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -74079,7 +74079,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74145,7 +74145,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74220,7 +74220,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -74229,7 +74229,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74415,7 +74415,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74436,7 +74436,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfig">DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfig</a></code> | *No description.* |
 
 ---
@@ -74471,7 +74471,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -74498,7 +74498,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -74507,7 +74507,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74693,7 +74693,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74714,8 +74714,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateEndpoint">enablePrivateEndpoint</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateEndpoint">enablePrivateEndpoint</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.masterGlobalAccessConfig">masterGlobalAccessConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList">DataGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.masterIpv4CidrBlock">masterIpv4CidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterPrivateClusterConfigOutputReference.property.peeringName">peeringName</a></code> | <code>string</code> | *No description.* |
@@ -74756,7 +74756,7 @@ public readonly fqn: string;
 public readonly enablePrivateEndpoint: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -74766,7 +74766,7 @@ public readonly enablePrivateEndpoint: IResolvable;
 public readonly enablePrivateNodes: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -74853,7 +74853,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -74861,7 +74861,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74927,7 +74927,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75002,7 +75002,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -75011,7 +75011,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -75197,7 +75197,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75218,8 +75218,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemAuthenticated">enableInsecureBindingSystemAuthenticated</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemUnauthenticated">enableInsecureBindingSystemUnauthenticated</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemAuthenticated">enableInsecureBindingSystemAuthenticated</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemUnauthenticated">enableInsecureBindingSystemUnauthenticated</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterRbacBindingConfig">DataGoogleContainerClusterRbacBindingConfig</a></code> | *No description.* |
 
 ---
@@ -75254,7 +75254,7 @@ public readonly fqn: string;
 public readonly enableInsecureBindingSystemAuthenticated: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -75264,7 +75264,7 @@ public readonly enableInsecureBindingSystemAuthenticated: IResolvable;
 public readonly enableInsecureBindingSystemUnauthenticated: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -75291,7 +75291,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -75299,7 +75299,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -75365,7 +75365,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75440,7 +75440,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -75449,7 +75449,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -75635,7 +75635,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterReleaseChannelOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75718,7 +75718,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -75726,7 +75726,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -75792,7 +75792,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75867,7 +75867,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -75876,7 +75876,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76062,7 +76062,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -76145,7 +76145,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -76153,7 +76153,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76219,7 +76219,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -76294,7 +76294,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -76303,7 +76303,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76489,7 +76489,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -76511,8 +76511,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.bigqueryDestination">bigqueryDestination</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList">DataGoogleContainerClusterResourceUsageExportConfigBigqueryDestinationList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.enableNetworkEgressMetering">enableNetworkEgressMetering</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.enableResourceConsumptionMetering">enableResourceConsumptionMetering</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.enableNetworkEgressMetering">enableNetworkEgressMetering</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.enableResourceConsumptionMetering">enableResourceConsumptionMetering</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterResourceUsageExportConfig">DataGoogleContainerClusterResourceUsageExportConfig</a></code> | *No description.* |
 
 ---
@@ -76557,7 +76557,7 @@ public readonly bigqueryDestination: DataGoogleContainerClusterResourceUsageExpo
 public readonly enableNetworkEgressMetering: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -76567,7 +76567,7 @@ public readonly enableNetworkEgressMetering: IResolvable;
 public readonly enableResourceConsumptionMetering: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -76594,7 +76594,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -76602,7 +76602,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76668,7 +76668,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -76743,7 +76743,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -76752,7 +76752,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76938,7 +76938,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -76959,7 +76959,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecretManagerConfig">DataGoogleContainerClusterSecretManagerConfig</a></code> | *No description.* |
 
 ---
@@ -76994,7 +76994,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -77021,7 +77021,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -77029,7 +77029,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -77095,7 +77095,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -77170,7 +77170,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -77179,7 +77179,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -77365,7 +77365,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterSecurityPostureConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -77459,7 +77459,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -77467,7 +77467,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -77533,7 +77533,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -77608,7 +77608,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -77617,7 +77617,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -77803,7 +77803,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -77824,7 +77824,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterServiceExternalIpsConfig">DataGoogleContainerClusterServiceExternalIpsConfig</a></code> | *No description.* |
 
 ---
@@ -77859,7 +77859,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -77886,7 +77886,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -77894,7 +77894,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -77960,7 +77960,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -78035,7 +78035,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -78044,7 +78044,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -78230,7 +78230,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterUserManagedKeysConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -78390,7 +78390,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -78398,7 +78398,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -78464,7 +78464,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -78539,7 +78539,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -78548,7 +78548,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -78734,7 +78734,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -78755,7 +78755,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterVerticalPodAutoscaling">DataGoogleContainerClusterVerticalPodAutoscaling</a></code> | *No description.* |
 
 ---
@@ -78790,7 +78790,7 @@ public readonly fqn: string;
 public readonly enabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -78817,7 +78817,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -78825,7 +78825,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -78891,7 +78891,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -78966,7 +78966,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -78975,7 +78975,7 @@ new dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -79161,7 +79161,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleContainerCluster.DataGoogleContainerClusterWorkloadIdentityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

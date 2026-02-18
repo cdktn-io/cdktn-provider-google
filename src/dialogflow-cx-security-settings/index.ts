@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxSecuritySettingsConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxSecuritySettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * [DLP](https://cloud.google.com/dlp/docs) deidentify template name. Use this template to define de-identification configuration for the content. If empty, Dialogflow replaces sensitive info with [redacted] text.
   * Note: deidentifyTemplate must be located in the same region as the SecuritySettings.
@@ -126,7 +126,7 @@ export interface DialogflowCxSecuritySettingsAudioExportSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_security_settings#enable_audio_redaction DialogflowCxSecuritySettings#enable_audio_redaction}
   */
-  readonly enableAudioRedaction?: boolean | cdktf.IResolvable;
+  readonly enableAudioRedaction?: boolean | cdktn.IResolvable;
   /**
   * Cloud Storage bucket to export audio record to. Setting this field would grant the Storage Object Creator role to the Dialogflow Service Agent. API caller that tries to modify this field should have the permission of storage.buckets.setIamPolicy.
   *
@@ -136,45 +136,45 @@ export interface DialogflowCxSecuritySettingsAudioExportSettings {
 }
 
 export function dialogflowCxSecuritySettingsAudioExportSettingsToTerraform(struct?: DialogflowCxSecuritySettingsAudioExportSettingsOutputReference | DialogflowCxSecuritySettingsAudioExportSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audio_export_pattern: cdktf.stringToTerraform(struct!.audioExportPattern),
-    audio_format: cdktf.stringToTerraform(struct!.audioFormat),
-    enable_audio_redaction: cdktf.booleanToTerraform(struct!.enableAudioRedaction),
-    gcs_bucket: cdktf.stringToTerraform(struct!.gcsBucket),
+    audio_export_pattern: cdktn.stringToTerraform(struct!.audioExportPattern),
+    audio_format: cdktn.stringToTerraform(struct!.audioFormat),
+    enable_audio_redaction: cdktn.booleanToTerraform(struct!.enableAudioRedaction),
+    gcs_bucket: cdktn.stringToTerraform(struct!.gcsBucket),
   }
 }
 
 
 export function dialogflowCxSecuritySettingsAudioExportSettingsToHclTerraform(struct?: DialogflowCxSecuritySettingsAudioExportSettingsOutputReference | DialogflowCxSecuritySettingsAudioExportSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audio_export_pattern: {
-      value: cdktf.stringToHclTerraform(struct!.audioExportPattern),
+      value: cdktn.stringToHclTerraform(struct!.audioExportPattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     audio_format: {
-      value: cdktf.stringToHclTerraform(struct!.audioFormat),
+      value: cdktn.stringToHclTerraform(struct!.audioFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enable_audio_redaction: {
-      value: cdktf.booleanToHclTerraform(struct!.enableAudioRedaction),
+      value: cdktn.booleanToHclTerraform(struct!.enableAudioRedaction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     gcs_bucket: {
-      value: cdktf.stringToHclTerraform(struct!.gcsBucket),
+      value: cdktn.stringToHclTerraform(struct!.gcsBucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -185,14 +185,14 @@ export function dialogflowCxSecuritySettingsAudioExportSettingsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxSecuritySettingsAudioExportSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxSecuritySettingsAudioExportSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -268,11 +268,11 @@ export class DialogflowCxSecuritySettingsAudioExportSettingsOutputReference exte
   }
 
   // enable_audio_redaction - computed: false, optional: true, required: false
-  private _enableAudioRedaction?: boolean | cdktf.IResolvable; 
+  private _enableAudioRedaction?: boolean | cdktn.IResolvable; 
   public get enableAudioRedaction() {
     return this.getBooleanAttribute('enable_audio_redaction');
   }
-  public set enableAudioRedaction(value: boolean | cdktf.IResolvable) {
+  public set enableAudioRedaction(value: boolean | cdktn.IResolvable) {
     this._enableAudioRedaction = value;
   }
   public resetEnableAudioRedaction() {
@@ -305,28 +305,28 @@ export interface DialogflowCxSecuritySettingsInsightsExportSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_security_settings#enable_insights_export DialogflowCxSecuritySettings#enable_insights_export}
   */
-  readonly enableInsightsExport: boolean | cdktf.IResolvable;
+  readonly enableInsightsExport: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowCxSecuritySettingsInsightsExportSettingsToTerraform(struct?: DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference | DialogflowCxSecuritySettingsInsightsExportSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_insights_export: cdktf.booleanToTerraform(struct!.enableInsightsExport),
+    enable_insights_export: cdktn.booleanToTerraform(struct!.enableInsightsExport),
   }
 }
 
 
 export function dialogflowCxSecuritySettingsInsightsExportSettingsToHclTerraform(struct?: DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference | DialogflowCxSecuritySettingsInsightsExportSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_insights_export: {
-      value: cdktf.booleanToHclTerraform(struct!.enableInsightsExport),
+      value: cdktn.booleanToHclTerraform(struct!.enableInsightsExport),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -337,14 +337,14 @@ export function dialogflowCxSecuritySettingsInsightsExportSettingsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -370,11 +370,11 @@ export class DialogflowCxSecuritySettingsInsightsExportSettingsOutputReference e
   }
 
   // enable_insights_export - computed: false, optional: false, required: true
-  private _enableInsightsExport?: boolean | cdktf.IResolvable; 
+  private _enableInsightsExport?: boolean | cdktn.IResolvable; 
   public get enableInsightsExport() {
     return this.getBooleanAttribute('enable_insights_export');
   }
-  public set enableInsightsExport(value: boolean | cdktf.IResolvable) {
+  public set enableInsightsExport(value: boolean | cdktn.IResolvable) {
     this._enableInsightsExport = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -397,39 +397,39 @@ export interface DialogflowCxSecuritySettingsTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxSecuritySettingsTimeoutsToTerraform(struct?: DialogflowCxSecuritySettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxSecuritySettingsTimeoutsToTerraform(struct?: DialogflowCxSecuritySettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxSecuritySettingsTimeoutsToHclTerraform(struct?: DialogflowCxSecuritySettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxSecuritySettingsTimeoutsToHclTerraform(struct?: DialogflowCxSecuritySettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -440,19 +440,19 @@ export function dialogflowCxSecuritySettingsTimeoutsToHclTerraform(struct?: Dial
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxSecuritySettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxSecuritySettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxSecuritySettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxSecuritySettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -473,7 +473,7 @@ export class DialogflowCxSecuritySettingsTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxSecuritySettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxSecuritySettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -481,7 +481,7 @@ export class DialogflowCxSecuritySettingsTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -546,7 +546,7 @@ export class DialogflowCxSecuritySettingsTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_security_settings google_dialogflow_cx_security_settings}
 */
-export class DialogflowCxSecuritySettings extends cdktf.TerraformResource {
+export class DialogflowCxSecuritySettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -557,14 +557,14 @@ export class DialogflowCxSecuritySettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxSecuritySettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxSecuritySettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxSecuritySettings to import
   * @param importFromId The id of the existing DialogflowCxSecuritySettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_security_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxSecuritySettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_security_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_security_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -843,17 +843,17 @@ export class DialogflowCxSecuritySettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deidentify_template: cdktf.stringToTerraform(this._deidentifyTemplate),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      inspect_template: cdktf.stringToTerraform(this._inspectTemplate),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      purge_data_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._purgeDataTypes),
-      redaction_scope: cdktf.stringToTerraform(this._redactionScope),
-      redaction_strategy: cdktf.stringToTerraform(this._redactionStrategy),
-      retention_strategy: cdktf.stringToTerraform(this._retentionStrategy),
-      retention_window_days: cdktf.numberToTerraform(this._retentionWindowDays),
+      deidentify_template: cdktn.stringToTerraform(this._deidentifyTemplate),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      inspect_template: cdktn.stringToTerraform(this._inspectTemplate),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      purge_data_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._purgeDataTypes),
+      redaction_scope: cdktn.stringToTerraform(this._redactionScope),
+      redaction_strategy: cdktn.stringToTerraform(this._redactionStrategy),
+      retention_strategy: cdktn.stringToTerraform(this._retentionStrategy),
+      retention_window_days: cdktn.numberToTerraform(this._retentionWindowDays),
       audio_export_settings: dialogflowCxSecuritySettingsAudioExportSettingsToTerraform(this._audioExportSettings.internalValue),
       insights_export_settings: dialogflowCxSecuritySettingsInsightsExportSettingsToTerraform(this._insightsExportSettings.internalValue),
       timeouts: dialogflowCxSecuritySettingsTimeoutsToTerraform(this._timeouts.internalValue),
@@ -863,67 +863,67 @@ export class DialogflowCxSecuritySettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deidentify_template: {
-        value: cdktf.stringToHclTerraform(this._deidentifyTemplate),
+        value: cdktn.stringToHclTerraform(this._deidentifyTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inspect_template: {
-        value: cdktf.stringToHclTerraform(this._inspectTemplate),
+        value: cdktn.stringToHclTerraform(this._inspectTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       purge_data_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._purgeDataTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._purgeDataTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       redaction_scope: {
-        value: cdktf.stringToHclTerraform(this._redactionScope),
+        value: cdktn.stringToHclTerraform(this._redactionScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redaction_strategy: {
-        value: cdktf.stringToHclTerraform(this._redactionStrategy),
+        value: cdktn.stringToHclTerraform(this._redactionStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_strategy: {
-        value: cdktf.stringToHclTerraform(this._retentionStrategy),
+        value: cdktn.stringToHclTerraform(this._retentionStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_window_days: {
-        value: cdktf.numberToHclTerraform(this._retentionWindowDays),
+        value: cdktn.numberToHclTerraform(this._retentionWindowDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

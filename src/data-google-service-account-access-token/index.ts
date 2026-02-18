@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleServiceAccountAccessTokenConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleServiceAccountAccessTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_access_token#delegates DataGoogleServiceAccountAccessToken#delegates}
   */
@@ -40,7 +40,7 @@ export interface DataGoogleServiceAccountAccessTokenConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_access_token google_service_account_access_token}
 */
-export class DataGoogleServiceAccountAccessToken extends cdktf.TerraformDataSource {
+export class DataGoogleServiceAccountAccessToken extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DataGoogleServiceAccountAccessToken extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleServiceAccountAccessToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleServiceAccountAccessToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleServiceAccountAccessToken to import
   * @param importFromId The id of the existing DataGoogleServiceAccountAccessToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_access_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleServiceAccountAccessToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_service_account_access_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_service_account_access_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,7 +107,7 @@ export class DataGoogleServiceAccountAccessToken extends cdktf.TerraformDataSour
   // delegates - computed: false, optional: true, required: false
   private _delegates?: string[]; 
   public get delegates() {
-    return cdktf.Fn.tolist(this.getListAttribute('delegates'));
+    return cdktn.Fn.tolist(this.getListAttribute('delegates'));
   }
   public set delegates(value: string[]) {
     this._delegates = value;
@@ -155,7 +155,7 @@ export class DataGoogleServiceAccountAccessToken extends cdktf.TerraformDataSour
   // scopes - computed: false, optional: false, required: true
   private _scopes?: string[]; 
   public get scopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('scopes'));
   }
   public set scopes(value: string[]) {
     this._scopes = value;
@@ -184,42 +184,42 @@ export class DataGoogleServiceAccountAccessToken extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delegates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegates),
-      id: cdktf.stringToTerraform(this._id),
-      lifetime: cdktf.stringToTerraform(this._lifetime),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
-      target_service_account: cdktf.stringToTerraform(this._targetServiceAccount),
+      delegates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegates),
+      id: cdktn.stringToTerraform(this._id),
+      lifetime: cdktn.stringToTerraform(this._lifetime),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      target_service_account: cdktn.stringToTerraform(this._targetServiceAccount),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delegates: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegates),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._delegates),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lifetime: {
-        value: cdktf.stringToHclTerraform(this._lifetime),
+        value: cdktn.stringToHclTerraform(this._lifetime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       target_service_account: {
-        value: cdktf.stringToHclTerraform(this._targetServiceAccount),
+        value: cdktn.stringToHclTerraform(this._targetServiceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

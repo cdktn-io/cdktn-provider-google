@@ -315,7 +315,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscription.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -445,7 +445,7 @@ public putMessageTransforms(value: IResolvable | PubsubSubscriptionMessageTransf
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscription.putMessageTransforms.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
 
 ---
 
@@ -594,7 +594,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a PubsubSubscription resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a PubsubSubscription resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -666,7 +666,7 @@ import { pubsubSubscription } from '@cdktn/provider-google'
 pubsubSubscription.PubsubSubscription.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a PubsubSubscription resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a PubsubSubscription resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscription.generateConfigForImport.parameter.scope"></a>
 
@@ -696,7 +696,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscription.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the PubsubSubscription to import is found.
 
@@ -707,58 +707,58 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.bigqueryConfig">bigqueryConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference">PubsubSubscriptionBigqueryConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.cloudStorageConfig">cloudStorageConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference">PubsubSubscriptionCloudStorageConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.deadLetterPolicy">deadLetterPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference">PubsubSubscriptionDeadLetterPolicyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.expirationPolicy">expirationPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference">PubsubSubscriptionExpirationPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.messageTransforms">messageTransforms</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList">PubsubSubscriptionMessageTransformsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.pushConfig">pushConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference">PubsubSubscriptionPushConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference">PubsubSubscriptionRetryPolicyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference">PubsubSubscriptionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.ackDeadlineSecondsInput">ackDeadlineSecondsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.bigqueryConfigInput">bigqueryConfigInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig">PubsubSubscriptionBigqueryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.cloudStorageConfigInput">cloudStorageConfigInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfig">PubsubSubscriptionCloudStorageConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.deadLetterPolicyInput">deadLetterPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicy">PubsubSubscriptionDeadLetterPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableExactlyOnceDeliveryInput">enableExactlyOnceDeliveryInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableMessageOrderingInput">enableMessageOrderingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableExactlyOnceDeliveryInput">enableExactlyOnceDeliveryInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableMessageOrderingInput">enableMessageOrderingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.expirationPolicyInput">expirationPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicy">PubsubSubscriptionExpirationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.messageRetentionDurationInput">messageRetentionDurationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.messageTransformsInput">messageTransformsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.messageTransformsInput">messageTransformsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.pushConfigInput">pushConfigInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfig">PubsubSubscriptionPushConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.retainAckedMessagesInput">retainAckedMessagesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.retainAckedMessagesInput">retainAckedMessagesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.retryPolicyInput">retryPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicy">PubsubSubscriptionRetryPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.topicInput">topicInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.ackDeadlineSeconds">ackDeadlineSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableExactlyOnceDelivery">enableExactlyOnceDelivery</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableMessageOrdering">enableMessageOrdering</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableExactlyOnceDelivery">enableExactlyOnceDelivery</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.enableMessageOrdering">enableMessageOrdering</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.filter">filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.messageRetentionDuration">messageRetentionDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.retainAckedMessages">retainAckedMessages</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.retainAckedMessages">retainAckedMessages</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscription.property.topic">topic</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -781,7 +781,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -831,7 +831,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -841,7 +841,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -851,7 +851,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -871,7 +871,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -881,7 +881,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -891,7 +891,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -901,7 +901,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -941,7 +941,7 @@ public readonly deadLetterPolicy: PubsubSubscriptionDeadLetterPolicyOutputRefere
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -991,7 +991,7 @@ public readonly retryPolicy: PubsubSubscriptionRetryPolicyOutputReference;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1051,7 +1051,7 @@ public readonly deadLetterPolicyInput: PubsubSubscriptionDeadLetterPolicy;
 public readonly enableExactlyOnceDeliveryInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly enableExactlyOnceDeliveryInput: boolean | IResolvable;
 public readonly enableMessageOrderingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly messageRetentionDurationInput: string;
 public readonly messageTransformsInput: IResolvable | PubsubSubscriptionMessageTransforms[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
 
 ---
 
@@ -1161,7 +1161,7 @@ public readonly pushConfigInput: PubsubSubscriptionPushConfig;
 public readonly retainAckedMessagesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1181,7 +1181,7 @@ public readonly retryPolicyInput: PubsubSubscriptionRetryPolicy;
 public readonly timeoutsInput: IResolvable | PubsubSubscriptionTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a>
 
 ---
 
@@ -1211,7 +1211,7 @@ public readonly ackDeadlineSeconds: number;
 public readonly enableExactlyOnceDelivery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1221,7 +1221,7 @@ public readonly enableExactlyOnceDelivery: boolean | IResolvable;
 public readonly enableMessageOrdering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1291,7 +1291,7 @@ public readonly project: string;
 public readonly retainAckedMessages: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1340,11 +1340,11 @@ const pubsubSubscriptionBigqueryConfig: pubsubSubscription.PubsubSubscriptionBig
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.table">table</a></code> | <code>string</code> | The name of the table to which to write data, of the form {projectId}.{datasetId}.{tableId}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.dropUnknownFields">dropUnknownFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true and use_topic_schema or use_table_schema is true, any fields that are a part of the topic schema or message schema that are not part of the BigQuery table schema are dropped when writing to BigQuery. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.dropUnknownFields">dropUnknownFields</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true and use_topic_schema or use_table_schema is true, any fields that are a part of the topic schema or message schema that are not part of the BigQuery table schema are dropped when writing to BigQuery. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | The service account to use to write to BigQuery. If not specified, the Pub/Sub [service agent](https://cloud.google.com/iam/docs/service-agents), service-{project_number}@gcp-sa-pubsub.iam.gserviceaccount.com, is used. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.useTableSchema">useTableSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, use the BigQuery table's schema as the columns to write to in BigQuery. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, use the topic's schema as the columns to write to in BigQuery, if it exists. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, write the subscription name, messageId, publishTime, attributes, and orderingKey to additional columns in the table. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.useTableSchema">useTableSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, use the BigQuery table's schema as the columns to write to in BigQuery. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, use the topic's schema as the columns to write to in BigQuery, if it exists. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, write the subscription name, messageId, publishTime, attributes, and orderingKey to additional columns in the table. |
 
 ---
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly dropUnknownFields: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true and use_topic_schema or use_table_schema is true, any fields that are a part of the topic schema or message schema that are not part of the BigQuery table schema are dropped when writing to BigQuery.
 
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useTableSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, use the BigQuery table's schema as the columns to write to in BigQuery.
 
@@ -1416,7 +1416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useTopicSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, use the topic's schema as the columns to write to in BigQuery, if it exists.
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly writeMetadata: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, write the subscription name, messageId, publishTime, attributes, and orderingKey to additional columns in the table.
 
@@ -1619,8 +1619,8 @@ const pubsubSubscriptionCloudStorageConfigAvroConfig: pubsubSubscription.PubsubS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, the output Cloud Storage file will be serialized using the topic schema, if it exists. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, write the subscription name, messageId, publishTime, attributes, and orderingKey as additional fields in the output. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, the output Cloud Storage file will be serialized using the topic schema, if it exists. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, write the subscription name, messageId, publishTime, attributes, and orderingKey as additional fields in the output. |
 
 ---
 
@@ -1630,7 +1630,7 @@ const pubsubSubscriptionCloudStorageConfigAvroConfig: pubsubSubscription.PubsubS
 public readonly useTopicSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, the output Cloud Storage file will be serialized using the topic schema, if it exists.
 
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly writeMetadata: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, write the subscription name, messageId, publishTime, attributes, and orderingKey as additional fields in the output.
 
@@ -1666,30 +1666,30 @@ const pubsubSubscriptionConfig: pubsubSubscription.PubsubSubscriptionConfig = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.name">name</a></code> | <code>string</code> | Name of the subscription. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.topic">topic</a></code> | <code>string</code> | A reference to a Topic resource, of the form projects/{project}/topics/{{name}} (as in the id property of a google_pubsub_topic), or just a topic name if the topic is in the same project as the subscription. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.ackDeadlineSeconds">ackDeadlineSeconds</a></code> | <code>number</code> | This value is the maximum time after a subscriber receives a message before the subscriber should acknowledge the message. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.bigqueryConfig">bigqueryConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig">PubsubSubscriptionBigqueryConfig</a></code> | bigquery_config block. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.cloudStorageConfig">cloudStorageConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfig">PubsubSubscriptionCloudStorageConfig</a></code> | cloud_storage_config block. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.deadLetterPolicy">deadLetterPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicy">PubsubSubscriptionDeadLetterPolicy</a></code> | dead_letter_policy block. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.enableExactlyOnceDelivery">enableExactlyOnceDelivery</a></code> | <code>boolean \| cdktf.IResolvable</code> | If 'true', Pub/Sub provides the following guarantees for the delivery of a message with a given value of messageId on this Subscriptions':  - The message sent to a subscriber is guaranteed not to be resent before the message's acknowledgement deadline expires. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.enableMessageOrdering">enableMessageOrdering</a></code> | <code>boolean \| cdktf.IResolvable</code> | If 'true', messages published with the same orderingKey in PubsubMessage will be delivered to the subscribers in the order in which they are received by the Pub/Sub system. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.enableExactlyOnceDelivery">enableExactlyOnceDelivery</a></code> | <code>boolean \| cdktn.IResolvable</code> | If 'true', Pub/Sub provides the following guarantees for the delivery of a message with a given value of messageId on this Subscriptions':  - The message sent to a subscriber is guaranteed not to be resent before the message's acknowledgement deadline expires. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.enableMessageOrdering">enableMessageOrdering</a></code> | <code>boolean \| cdktn.IResolvable</code> | If 'true', messages published with the same orderingKey in PubsubMessage will be delivered to the subscribers in the order in which they are received by the Pub/Sub system. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.expirationPolicy">expirationPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicy">PubsubSubscriptionExpirationPolicy</a></code> | expiration_policy block. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.filter">filter</a></code> | <code>string</code> | The subscription only delivers the messages that match the filter. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#id PubsubSubscription#id}. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | A set of key/value label pairs to assign to this Subscription. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.messageRetentionDuration">messageRetentionDuration</a></code> | <code>string</code> | How long to retain unacknowledged messages in the subscription's backlog, from the moment a message is published. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.messageTransforms">messageTransforms</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]</code> | message_transforms block. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.messageTransforms">messageTransforms</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]</code> | message_transforms block. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#project PubsubSubscription#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.pushConfig">pushConfig</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfig">PubsubSubscriptionPushConfig</a></code> | push_config block. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.retainAckedMessages">retainAckedMessages</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether to retain acknowledged messages. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.retainAckedMessages">retainAckedMessages</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether to retain acknowledged messages. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicy">PubsubSubscriptionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a></code> | timeouts block. |
 
@@ -1701,7 +1701,7 @@ const pubsubSubscriptionConfig: pubsubSubscription.PubsubSubscriptionConfig = { 
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1711,7 +1711,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1721,7 +1721,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1731,7 +1731,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1741,7 +1741,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1751,7 +1751,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1761,7 +1761,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1873,7 +1873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableExactlyOnceDelivery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If 'true', Pub/Sub provides the following guarantees for the delivery of a message with a given value of messageId on this Subscriptions':  - The message sent to a subscriber is guaranteed not to be resent before the message's acknowledgement deadline expires.
 
@@ -1892,7 +1892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableMessageOrdering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If 'true', messages published with the same orderingKey in PubsubMessage will be delivered to the subscribers in the order in which they are received by the Pub/Sub system.
 
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly messageTransforms: IResolvable | PubsubSubscriptionMessageTransforms[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
 
 message_transforms block.
 
@@ -2036,7 +2036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly retainAckedMessages: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates whether to retain acknowledged messages.
 
@@ -2195,7 +2195,7 @@ const pubsubSubscriptionMessageTransforms: pubsubSubscription.PubsubSubscription
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether or not to use this transform. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether or not to use this transform. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms.property.javascriptUdf">javascriptUdf</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdf">PubsubSubscriptionMessageTransformsJavascriptUdf</a></code> | javascript_udf block. |
 
 ---
@@ -2206,7 +2206,7 @@ const pubsubSubscriptionMessageTransforms: pubsubSubscription.PubsubSubscription
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether or not to use this transform.
 
@@ -2392,7 +2392,7 @@ const pubsubSubscriptionPushConfigNoWrapper: pubsubSubscription.PubsubSubscripti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapper.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, writes the Pub/Sub message metadata to 'x-goog-pubsub-<KEY>:<VAL>' headers of the HTTP request. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapper.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, writes the Pub/Sub message metadata to 'x-goog-pubsub-<KEY>:<VAL>' headers of the HTTP request. |
 
 ---
 
@@ -2402,7 +2402,7 @@ const pubsubSubscriptionPushConfigNoWrapper: pubsubSubscription.PubsubSubscripti
 public readonly writeMetadata: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, writes the Pub/Sub message metadata to 'x-goog-pubsub-<KEY>:<VAL>' headers of the HTTP request.
 
@@ -2594,14 +2594,14 @@ new pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2776,7 +2776,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2827,18 +2827,18 @@ public resetWriteMetadata(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.dropUnknownFieldsInput">dropUnknownFieldsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.dropUnknownFieldsInput">dropUnknownFieldsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.serviceAccountEmailInput">serviceAccountEmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTableSchemaInput">useTableSchemaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTopicSchemaInput">useTopicSchemaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.writeMetadataInput">writeMetadataInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.dropUnknownFields">dropUnknownFields</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTableSchemaInput">useTableSchemaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTopicSchemaInput">useTopicSchemaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.writeMetadataInput">writeMetadataInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.dropUnknownFields">dropUnknownFields</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTableSchema">useTableSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTableSchema">useTableSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionBigqueryConfig">PubsubSubscriptionBigqueryConfig</a></code> | *No description.* |
 
 ---
@@ -2873,7 +2873,7 @@ public readonly fqn: string;
 public readonly dropUnknownFieldsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2903,7 +2903,7 @@ public readonly tableInput: string;
 public readonly useTableSchemaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2913,7 +2913,7 @@ public readonly useTableSchemaInput: boolean | IResolvable;
 public readonly useTopicSchemaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2923,7 +2923,7 @@ public readonly useTopicSchemaInput: boolean | IResolvable;
 public readonly writeMetadataInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2933,7 +2933,7 @@ public readonly writeMetadataInput: boolean | IResolvable;
 public readonly dropUnknownFields: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2963,7 +2963,7 @@ public readonly table: string;
 public readonly useTableSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2973,7 +2973,7 @@ public readonly useTableSchema: boolean | IResolvable;
 public readonly useTopicSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2983,7 +2983,7 @@ public readonly useTopicSchema: boolean | IResolvable;
 public readonly writeMetadata: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3010,14 +3010,14 @@ new pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3189,7 +3189,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3222,10 +3222,10 @@ public resetWriteMetadata(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.useTopicSchemaInput">useTopicSchemaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.writeMetadataInput">writeMetadataInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.useTopicSchemaInput">useTopicSchemaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.writeMetadataInput">writeMetadataInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.useTopicSchema">useTopicSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigAvroConfig">PubsubSubscriptionCloudStorageConfigAvroConfig</a></code> | *No description.* |
 
 ---
@@ -3260,7 +3260,7 @@ public readonly fqn: string;
 public readonly useTopicSchemaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3270,7 +3270,7 @@ public readonly useTopicSchemaInput: boolean | IResolvable;
 public readonly writeMetadataInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3280,7 +3280,7 @@ public readonly writeMetadataInput: boolean | IResolvable;
 public readonly useTopicSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3290,7 +3290,7 @@ public readonly useTopicSchema: boolean | IResolvable;
 public readonly writeMetadata: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3317,14 +3317,14 @@ new pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3503,7 +3503,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionCloudStorageConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3844,14 +3844,14 @@ new pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4023,7 +4023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionDeadLetterPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4151,14 +4151,14 @@ new pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4328,7 +4328,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionExpirationPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4422,14 +4422,14 @@ new pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4599,7 +4599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4715,7 +4715,7 @@ new pubsubSubscription.PubsubSubscriptionMessageTransformsList(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4723,7 +4723,7 @@ new pubsubSubscription.PubsubSubscriptionMessageTransformsList(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4789,7 +4789,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4824,7 +4824,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]</code> | *No description.* |
 
 ---
 
@@ -4858,7 +4858,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | PubsubSubscriptionMessageTransforms[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>[]
 
 ---
 
@@ -4875,7 +4875,7 @@ new pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4884,7 +4884,7 @@ new pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5073,7 +5073,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5119,10 +5119,10 @@ public resetJavascriptUdf(): void
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.javascriptUdf">javascriptUdf</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference">PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.javascriptUdfInput">javascriptUdfInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsJavascriptUdf">PubsubSubscriptionMessageTransformsJavascriptUdf</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a></code> | *No description.* |
 
 ---
 
@@ -5166,7 +5166,7 @@ public readonly javascriptUdf: PubsubSubscriptionMessageTransformsJavascriptUdfO
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5186,7 +5186,7 @@ public readonly javascriptUdfInput: PubsubSubscriptionMessageTransformsJavascrip
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5196,7 +5196,7 @@ public readonly disabled: boolean | IResolvable;
 public readonly internalValue: IResolvable | PubsubSubscriptionMessageTransforms;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransforms">PubsubSubscriptionMessageTransforms</a>
 
 ---
 
@@ -5213,14 +5213,14 @@ new pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5390,7 +5390,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5411,8 +5411,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.property.writeMetadataInput">writeMetadataInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.property.writeMetadataInput">writeMetadataInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.property.writeMetadata">writeMetadata</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapperOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigNoWrapper">PubsubSubscriptionPushConfigNoWrapper</a></code> | *No description.* |
 
 ---
@@ -5447,7 +5447,7 @@ public readonly fqn: string;
 public readonly writeMetadataInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5457,7 +5457,7 @@ public readonly writeMetadataInput: boolean | IResolvable;
 public readonly writeMetadata: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5484,14 +5484,14 @@ new pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5662,7 +5662,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOidcTokenOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5784,14 +5784,14 @@ new pubsubSubscription.PubsubSubscriptionPushConfigOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5966,7 +5966,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionPushConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6168,14 +6168,14 @@ new pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6347,7 +6347,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionRetryPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6475,14 +6475,14 @@ new pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6655,7 +6655,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6700,7 +6700,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6794,7 +6794,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | PubsubSubscriptionTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionTimeouts">PubsubSubscriptionTimeouts</a>
 
 ---
 

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxIntentConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxIntentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Human readable description for better understanding an intent like its scope, content, result etc. Maximum character limit: 140 characters.
   *
@@ -39,7 +39,7 @@ export interface DialogflowCxIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#is_default_negative_intent DialogflowCxIntent#is_default_negative_intent}
   */
-  readonly isDefaultNegativeIntent?: boolean | cdktf.IResolvable;
+  readonly isDefaultNegativeIntent?: boolean | cdktn.IResolvable;
   /**
   * Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically.
   * The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources.
@@ -48,7 +48,7 @@ export interface DialogflowCxIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#is_default_welcome_intent DialogflowCxIntent#is_default_welcome_intent}
   */
-  readonly isDefaultWelcomeIntent?: boolean | cdktf.IResolvable;
+  readonly isDefaultWelcomeIntent?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether this is a fallback intent. Currently only default fallback intent is allowed in the agent, which is added upon agent creation.
   * Adding training phrases to fallback intent is useful in the case of requests that are mistakenly matched, since training phrases assigned to fallback intents act as negative examples that triggers no-match event.
@@ -56,7 +56,7 @@ export interface DialogflowCxIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#is_fallback DialogflowCxIntent#is_fallback}
   */
-  readonly isFallback?: boolean | cdktf.IResolvable;
+  readonly isFallback?: boolean | cdktn.IResolvable;
   /**
   * The key/value metadata to label an intent. Labels can contain lowercase letters, digits and the symbols '-' and '_'. International characters are allowed, including letters from unicase alphabets. Keys must start with a letter. Keys and values can be no longer than 63 characters and no more than 128 bytes.
   * Prefix "sys-" is reserved for Dialogflow defined labels. Currently allowed Dialogflow defined labels include: * sys-head * sys-contextual The above labels do not require value. "sys-head" means the intent is a head intent. "sys.contextual" means the intent is a contextual intent.
@@ -97,7 +97,7 @@ export interface DialogflowCxIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#parameters DialogflowCxIntent#parameters}
   */
-  readonly parameters?: DialogflowCxIntentParameters[] | cdktf.IResolvable;
+  readonly parameters?: DialogflowCxIntentParameters[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -109,7 +109,7 @@ export interface DialogflowCxIntentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#training_phrases DialogflowCxIntent#training_phrases}
   */
-  readonly trainingPhrases?: DialogflowCxIntentTrainingPhrases[] | cdktf.IResolvable;
+  readonly trainingPhrases?: DialogflowCxIntentTrainingPhrases[] | cdktn.IResolvable;
 }
 export interface DialogflowCxIntentParameters {
   /**
@@ -133,56 +133,56 @@ export interface DialogflowCxIntentParameters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#is_list DialogflowCxIntent#is_list}
   */
-  readonly isList?: boolean | cdktf.IResolvable;
+  readonly isList?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the parameter content should be redacted in log. If redaction is enabled, the parameter content will be replaced by parameter name during logging.
   * Note: the parameter content is subject to redaction if either parameter level redaction or entity type level redaction is enabled.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#redact DialogflowCxIntent#redact}
   */
-  readonly redact?: boolean | cdktf.IResolvable;
+  readonly redact?: boolean | cdktn.IResolvable;
 }
 
-export function dialogflowCxIntentParametersToTerraform(struct?: DialogflowCxIntentParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentParametersToTerraform(struct?: DialogflowCxIntentParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entity_type: cdktf.stringToTerraform(struct!.entityType),
-    id: cdktf.stringToTerraform(struct!.id),
-    is_list: cdktf.booleanToTerraform(struct!.isList),
-    redact: cdktf.booleanToTerraform(struct!.redact),
+    entity_type: cdktn.stringToTerraform(struct!.entityType),
+    id: cdktn.stringToTerraform(struct!.id),
+    is_list: cdktn.booleanToTerraform(struct!.isList),
+    redact: cdktn.booleanToTerraform(struct!.redact),
   }
 }
 
 
-export function dialogflowCxIntentParametersToHclTerraform(struct?: DialogflowCxIntentParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentParametersToHclTerraform(struct?: DialogflowCxIntentParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entity_type: {
-      value: cdktf.stringToHclTerraform(struct!.entityType),
+      value: cdktn.stringToHclTerraform(struct!.entityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_list: {
-      value: cdktf.booleanToHclTerraform(struct!.isList),
+      value: cdktn.booleanToHclTerraform(struct!.isList),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     redact: {
-      value: cdktf.booleanToHclTerraform(struct!.redact),
+      value: cdktn.booleanToHclTerraform(struct!.redact),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -193,9 +193,9 @@ export function dialogflowCxIntentParametersToHclTerraform(struct?: DialogflowCx
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxIntentParametersOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxIntentParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -203,11 +203,11 @@ export class DialogflowCxIntentParametersOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxIntentParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxIntentParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -232,7 +232,7 @@ export class DialogflowCxIntentParametersOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxIntentParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxIntentParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -241,7 +241,7 @@ export class DialogflowCxIntentParametersOutputReference extends cdktf.ComplexOb
       this._isList = undefined;
       this._redact = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -282,11 +282,11 @@ export class DialogflowCxIntentParametersOutputReference extends cdktf.ComplexOb
   }
 
   // is_list - computed: false, optional: true, required: false
-  private _isList?: boolean | cdktf.IResolvable; 
+  private _isList?: boolean | cdktn.IResolvable; 
   public get isList() {
     return this.getBooleanAttribute('is_list');
   }
-  public set isList(value: boolean | cdktf.IResolvable) {
+  public set isList(value: boolean | cdktn.IResolvable) {
     this._isList = value;
   }
   public resetIsList() {
@@ -298,11 +298,11 @@ export class DialogflowCxIntentParametersOutputReference extends cdktf.ComplexOb
   }
 
   // redact - computed: false, optional: true, required: false
-  private _redact?: boolean | cdktf.IResolvable; 
+  private _redact?: boolean | cdktn.IResolvable; 
   public get redact() {
     return this.getBooleanAttribute('redact');
   }
-  public set redact(value: boolean | cdktf.IResolvable) {
+  public set redact(value: boolean | cdktn.IResolvable) {
     this._redact = value;
   }
   public resetRedact() {
@@ -314,15 +314,15 @@ export class DialogflowCxIntentParametersOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DialogflowCxIntentParametersList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxIntentParameters[] | cdktf.IResolvable
+export class DialogflowCxIntentParametersList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxIntentParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -348,39 +348,39 @@ export interface DialogflowCxIntentTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxIntentTimeoutsToTerraform(struct?: DialogflowCxIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentTimeoutsToTerraform(struct?: DialogflowCxIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxIntentTimeoutsToHclTerraform(struct?: DialogflowCxIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentTimeoutsToHclTerraform(struct?: DialogflowCxIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -391,19 +391,19 @@ export function dialogflowCxIntentTimeoutsToHclTerraform(struct?: DialogflowCxIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxIntentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxIntentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxIntentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxIntentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -424,7 +424,7 @@ export class DialogflowCxIntentTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxIntentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxIntentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -432,7 +432,7 @@ export class DialogflowCxIntentTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -508,32 +508,32 @@ export interface DialogflowCxIntentTrainingPhrasesParts {
   readonly text: string;
 }
 
-export function dialogflowCxIntentTrainingPhrasesPartsToTerraform(struct?: DialogflowCxIntentTrainingPhrasesParts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentTrainingPhrasesPartsToTerraform(struct?: DialogflowCxIntentTrainingPhrasesParts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_id: cdktf.stringToTerraform(struct!.parameterId),
-    text: cdktf.stringToTerraform(struct!.text),
+    parameter_id: cdktn.stringToTerraform(struct!.parameterId),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
-export function dialogflowCxIntentTrainingPhrasesPartsToHclTerraform(struct?: DialogflowCxIntentTrainingPhrasesParts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentTrainingPhrasesPartsToHclTerraform(struct?: DialogflowCxIntentTrainingPhrasesParts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_id: {
-      value: cdktf.stringToHclTerraform(struct!.parameterId),
+      value: cdktn.stringToHclTerraform(struct!.parameterId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -544,9 +544,9 @@ export function dialogflowCxIntentTrainingPhrasesPartsToHclTerraform(struct?: Di
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxIntentTrainingPhrasesPartsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxIntentTrainingPhrasesPartsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -554,11 +554,11 @@ export class DialogflowCxIntentTrainingPhrasesPartsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxIntentTrainingPhrasesParts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxIntentTrainingPhrasesParts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -575,14 +575,14 @@ export class DialogflowCxIntentTrainingPhrasesPartsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxIntentTrainingPhrasesParts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxIntentTrainingPhrasesParts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameterId = undefined;
       this._text = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -624,15 +624,15 @@ export class DialogflowCxIntentTrainingPhrasesPartsOutputReference extends cdktf
   }
 }
 
-export class DialogflowCxIntentTrainingPhrasesPartsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxIntentTrainingPhrasesParts[] | cdktf.IResolvable
+export class DialogflowCxIntentTrainingPhrasesPartsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxIntentTrainingPhrasesParts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -655,35 +655,35 @@ export interface DialogflowCxIntentTrainingPhrases {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#parts DialogflowCxIntent#parts}
   */
-  readonly parts: DialogflowCxIntentTrainingPhrasesParts[] | cdktf.IResolvable;
+  readonly parts: DialogflowCxIntentTrainingPhrasesParts[] | cdktn.IResolvable;
 }
 
-export function dialogflowCxIntentTrainingPhrasesToTerraform(struct?: DialogflowCxIntentTrainingPhrases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentTrainingPhrasesToTerraform(struct?: DialogflowCxIntentTrainingPhrases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repeat_count: cdktf.numberToTerraform(struct!.repeatCount),
-    parts: cdktf.listMapper(dialogflowCxIntentTrainingPhrasesPartsToTerraform, true)(struct!.parts),
+    repeat_count: cdktn.numberToTerraform(struct!.repeatCount),
+    parts: cdktn.listMapper(dialogflowCxIntentTrainingPhrasesPartsToTerraform, true)(struct!.parts),
   }
 }
 
 
-export function dialogflowCxIntentTrainingPhrasesToHclTerraform(struct?: DialogflowCxIntentTrainingPhrases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxIntentTrainingPhrasesToHclTerraform(struct?: DialogflowCxIntentTrainingPhrases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repeat_count: {
-      value: cdktf.numberToHclTerraform(struct!.repeatCount),
+      value: cdktn.numberToHclTerraform(struct!.repeatCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     parts: {
-      value: cdktf.listMapperHcl(dialogflowCxIntentTrainingPhrasesPartsToHclTerraform, true)(struct!.parts),
+      value: cdktn.listMapperHcl(dialogflowCxIntentTrainingPhrasesPartsToHclTerraform, true)(struct!.parts),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxIntentTrainingPhrasesPartsList",
@@ -694,9 +694,9 @@ export function dialogflowCxIntentTrainingPhrasesToHclTerraform(struct?: Dialogf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxIntentTrainingPhrasesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxIntentTrainingPhrasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -704,11 +704,11 @@ export class DialogflowCxIntentTrainingPhrasesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxIntentTrainingPhrases | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxIntentTrainingPhrases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -725,14 +725,14 @@ export class DialogflowCxIntentTrainingPhrasesOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxIntentTrainingPhrases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxIntentTrainingPhrases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._repeatCount = undefined;
       this._parts.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -770,7 +770,7 @@ export class DialogflowCxIntentTrainingPhrasesOutputReference extends cdktf.Comp
   public get parts() {
     return this._parts;
   }
-  public putParts(value: DialogflowCxIntentTrainingPhrasesParts[] | cdktf.IResolvable) {
+  public putParts(value: DialogflowCxIntentTrainingPhrasesParts[] | cdktn.IResolvable) {
     this._parts.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -779,15 +779,15 @@ export class DialogflowCxIntentTrainingPhrasesOutputReference extends cdktf.Comp
   }
 }
 
-export class DialogflowCxIntentTrainingPhrasesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxIntentTrainingPhrases[] | cdktf.IResolvable
+export class DialogflowCxIntentTrainingPhrasesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxIntentTrainingPhrases[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -802,7 +802,7 @@ export class DialogflowCxIntentTrainingPhrasesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent google_dialogflow_cx_intent}
 */
-export class DialogflowCxIntent extends cdktf.TerraformResource {
+export class DialogflowCxIntent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -813,14 +813,14 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxIntent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxIntent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxIntent to import
   * @param importFromId The id of the existing DialogflowCxIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxIntent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_intent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_intent", importId: importFromId, provider });
       }
 
   // ===========
@@ -899,7 +899,7 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -921,11 +921,11 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // is_default_negative_intent - computed: false, optional: true, required: false
-  private _isDefaultNegativeIntent?: boolean | cdktf.IResolvable; 
+  private _isDefaultNegativeIntent?: boolean | cdktn.IResolvable; 
   public get isDefaultNegativeIntent() {
     return this.getBooleanAttribute('is_default_negative_intent');
   }
-  public set isDefaultNegativeIntent(value: boolean | cdktf.IResolvable) {
+  public set isDefaultNegativeIntent(value: boolean | cdktn.IResolvable) {
     this._isDefaultNegativeIntent = value;
   }
   public resetIsDefaultNegativeIntent() {
@@ -937,11 +937,11 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // is_default_welcome_intent - computed: false, optional: true, required: false
-  private _isDefaultWelcomeIntent?: boolean | cdktf.IResolvable; 
+  private _isDefaultWelcomeIntent?: boolean | cdktn.IResolvable; 
   public get isDefaultWelcomeIntent() {
     return this.getBooleanAttribute('is_default_welcome_intent');
   }
-  public set isDefaultWelcomeIntent(value: boolean | cdktf.IResolvable) {
+  public set isDefaultWelcomeIntent(value: boolean | cdktn.IResolvable) {
     this._isDefaultWelcomeIntent = value;
   }
   public resetIsDefaultWelcomeIntent() {
@@ -953,11 +953,11 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // is_fallback - computed: false, optional: true, required: false
-  private _isFallback?: boolean | cdktf.IResolvable; 
+  private _isFallback?: boolean | cdktn.IResolvable; 
   public get isFallback() {
     return this.getBooleanAttribute('is_fallback');
   }
-  public set isFallback(value: boolean | cdktf.IResolvable) {
+  public set isFallback(value: boolean | cdktn.IResolvable) {
     this._isFallback = value;
   }
   public resetIsFallback() {
@@ -1038,7 +1038,7 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1048,7 +1048,7 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: DialogflowCxIntentParameters[] | cdktf.IResolvable) {
+  public putParameters(value: DialogflowCxIntentParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -1080,7 +1080,7 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
   public get trainingPhrases() {
     return this._trainingPhrases;
   }
-  public putTrainingPhrases(value: DialogflowCxIntentTrainingPhrases[] | cdktf.IResolvable) {
+  public putTrainingPhrases(value: DialogflowCxIntentTrainingPhrases[] | cdktn.IResolvable) {
     this._trainingPhrases.internalValue = value;
   }
   public resetTrainingPhrases() {
@@ -1097,86 +1097,86 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      is_default_negative_intent: cdktf.booleanToTerraform(this._isDefaultNegativeIntent),
-      is_default_welcome_intent: cdktf.booleanToTerraform(this._isDefaultWelcomeIntent),
-      is_fallback: cdktf.booleanToTerraform(this._isFallback),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      parent: cdktf.stringToTerraform(this._parent),
-      priority: cdktf.numberToTerraform(this._priority),
-      parameters: cdktf.listMapper(dialogflowCxIntentParametersToTerraform, true)(this._parameters.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      is_default_negative_intent: cdktn.booleanToTerraform(this._isDefaultNegativeIntent),
+      is_default_welcome_intent: cdktn.booleanToTerraform(this._isDefaultWelcomeIntent),
+      is_fallback: cdktn.booleanToTerraform(this._isFallback),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      parent: cdktn.stringToTerraform(this._parent),
+      priority: cdktn.numberToTerraform(this._priority),
+      parameters: cdktn.listMapper(dialogflowCxIntentParametersToTerraform, true)(this._parameters.internalValue),
       timeouts: dialogflowCxIntentTimeoutsToTerraform(this._timeouts.internalValue),
-      training_phrases: cdktf.listMapper(dialogflowCxIntentTrainingPhrasesToTerraform, true)(this._trainingPhrases.internalValue),
+      training_phrases: cdktn.listMapper(dialogflowCxIntentTrainingPhrasesToTerraform, true)(this._trainingPhrases.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_default_negative_intent: {
-        value: cdktf.booleanToHclTerraform(this._isDefaultNegativeIntent),
+        value: cdktn.booleanToHclTerraform(this._isDefaultNegativeIntent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_default_welcome_intent: {
-        value: cdktf.booleanToHclTerraform(this._isDefaultWelcomeIntent),
+        value: cdktn.booleanToHclTerraform(this._isDefaultWelcomeIntent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_fallback: {
-        value: cdktf.booleanToHclTerraform(this._isFallback),
+        value: cdktn.booleanToHclTerraform(this._isFallback),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       parameters: {
-        value: cdktf.listMapperHcl(dialogflowCxIntentParametersToHclTerraform, true)(this._parameters.internalValue),
+        value: cdktn.listMapperHcl(dialogflowCxIntentParametersToHclTerraform, true)(this._parameters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowCxIntentParametersList",
@@ -1188,7 +1188,7 @@ export class DialogflowCxIntent extends cdktf.TerraformResource {
         storageClassType: "DialogflowCxIntentTimeouts",
       },
       training_phrases: {
-        value: cdktf.listMapperHcl(dialogflowCxIntentTrainingPhrasesToHclTerraform, true)(this._trainingPhrases.internalValue),
+        value: cdktn.listMapperHcl(dialogflowCxIntentTrainingPhrasesToHclTerraform, true)(this._trainingPhrases.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowCxIntentTrainingPhrasesList",

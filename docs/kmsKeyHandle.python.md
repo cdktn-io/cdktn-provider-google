@@ -34,13 +34,13 @@ kmsKeyHandle.KmsKeyHandle(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the KeyHandle. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name for the KeyHandle. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.resourceTypeSelector">resource_type_selector</a></code> | <code>str</code> | Selector of the resource type where we want to protect resources. For example, 'storage.googleapis.com/Bucket'. |
@@ -70,43 +70,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -445,7 +445,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -578,7 +578,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a KmsKeyHandle resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a KmsKeyHandle resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -661,7 +661,7 @@ kmsKeyHandle.KmsKeyHandle.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a KmsKeyHandle resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a KmsKeyHandle resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.generateConfigForImport.parameter.scope"></a>
 
@@ -691,7 +691,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the KmsKeyHandle to import is found.
 
@@ -702,19 +702,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.kmsKey">kms_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference">KmsKeyHandleTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -722,7 +722,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.resourceTypeSelectorInput">resource_type_selector_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandle.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -749,7 +749,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -799,7 +799,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -809,7 +809,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -819,7 +819,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -839,7 +839,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -849,7 +849,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -859,7 +859,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -869,7 +869,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -949,7 +949,7 @@ resource_type_selector_input: str
 timeouts_input: IResolvable | KmsKeyHandleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a>
 
 ---
 
@@ -1051,13 +1051,13 @@ kmsKeyHandle.KmsKeyHandleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.location">location</a></code> | <code>str</code> | The location for the KeyHandle. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.name">name</a></code> | <code>str</code> | The resource name for the KeyHandle. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleConfig.property.resourceTypeSelector">resource_type_selector</a></code> | <code>str</code> | Selector of the resource type where we want to protect resources. For example, 'storage.googleapis.com/Bucket'. |
@@ -1073,7 +1073,7 @@ kmsKeyHandle.KmsKeyHandleConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1083,7 +1083,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1093,7 +1093,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1103,7 +1103,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1113,7 +1113,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1123,7 +1123,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1133,7 +1133,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1283,14 +1283,14 @@ kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1484,7 +1484,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1521,7 +1521,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1595,7 +1595,7 @@ delete: str
 internal_value: IResolvable | KmsKeyHandleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsKeyHandle.KmsKeyHandleTimeouts">KmsKeyHandleTimeouts</a>
 
 ---
 

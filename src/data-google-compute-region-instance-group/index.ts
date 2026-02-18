@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleComputeRegionInstanceGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleComputeRegionInstanceGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_region_instance_group#id DataGoogleComputeRegionInstanceGroup#id}
   *
@@ -40,8 +40,8 @@ export interface DataGoogleComputeRegionInstanceGroupInstancesNamedPorts {
 }
 
 export function dataGoogleComputeRegionInstanceGroupInstancesNamedPortsToTerraform(struct?: DataGoogleComputeRegionInstanceGroupInstancesNamedPorts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -50,8 +50,8 @@ export function dataGoogleComputeRegionInstanceGroupInstancesNamedPortsToTerrafo
 
 
 export function dataGoogleComputeRegionInstanceGroupInstancesNamedPortsToHclTerraform(struct?: DataGoogleComputeRegionInstanceGroupInstancesNamedPorts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -59,7 +59,7 @@ export function dataGoogleComputeRegionInstanceGroupInstancesNamedPortsToHclTerr
   return attrs;
 }
 
-export class DataGoogleComputeRegionInstanceGroupInstancesNamedPortsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleComputeRegionInstanceGroupInstancesNamedPortsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -68,7 +68,7 @@ export class DataGoogleComputeRegionInstanceGroupInstancesNamedPortsOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -98,14 +98,14 @@ export class DataGoogleComputeRegionInstanceGroupInstancesNamedPortsOutputRefere
   }
 }
 
-export class DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList extends cdktf.ComplexList {
+export class DataGoogleComputeRegionInstanceGroupInstancesNamedPortsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -120,8 +120,8 @@ export interface DataGoogleComputeRegionInstanceGroupInstances {
 }
 
 export function dataGoogleComputeRegionInstanceGroupInstancesToTerraform(struct?: DataGoogleComputeRegionInstanceGroupInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -130,8 +130,8 @@ export function dataGoogleComputeRegionInstanceGroupInstancesToTerraform(struct?
 
 
 export function dataGoogleComputeRegionInstanceGroupInstancesToHclTerraform(struct?: DataGoogleComputeRegionInstanceGroupInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -139,7 +139,7 @@ export function dataGoogleComputeRegionInstanceGroupInstancesToHclTerraform(stru
   return attrs;
 }
 
-export class DataGoogleComputeRegionInstanceGroupInstancesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleComputeRegionInstanceGroupInstancesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -148,7 +148,7 @@ export class DataGoogleComputeRegionInstanceGroupInstancesOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -184,14 +184,14 @@ export class DataGoogleComputeRegionInstanceGroupInstancesOutputReference extend
   }
 }
 
-export class DataGoogleComputeRegionInstanceGroupInstancesList extends cdktf.ComplexList {
+export class DataGoogleComputeRegionInstanceGroupInstancesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,7 +206,7 @@ export class DataGoogleComputeRegionInstanceGroupInstancesList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_region_instance_group google_compute_region_instance_group}
 */
-export class DataGoogleComputeRegionInstanceGroup extends cdktf.TerraformDataSource {
+export class DataGoogleComputeRegionInstanceGroup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -217,14 +217,14 @@ export class DataGoogleComputeRegionInstanceGroup extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleComputeRegionInstanceGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleComputeRegionInstanceGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeRegionInstanceGroup to import
   * @param importFromId The id of the existing DataGoogleComputeRegionInstanceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_region_instance_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeRegionInstanceGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_instance_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_instance_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -362,42 +362,42 @@ export class DataGoogleComputeRegionInstanceGroup extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      self_link: cdktf.stringToTerraform(this._selfLink),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      self_link: cdktn.stringToTerraform(this._selfLink),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       self_link: {
-        value: cdktf.stringToHclTerraform(this._selfLink),
+        value: cdktn.stringToHclTerraform(this._selfLink),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

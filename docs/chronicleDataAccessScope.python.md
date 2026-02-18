@@ -38,19 +38,19 @@ chronicleDataAccessScope.ChronicleDataAccessScope(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.dataAccessScopeId">data_access_scope_id</a></code> | <code>str</code> | Required. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.instance">instance</a></code> | <code>str</code> | The unique identifier for the Chronicle instance, which is the same as the customer ID. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the resource. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.allowAll">allow_all</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.allowedDataAccessLabels">allowed_data_access_labels</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | allowed_data_access_labels block. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.deniedDataAccessLabels">denied_data_access_labels</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | denied_data_access_labels block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.allowAll">allow_all</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.allowedDataAccessLabels">allowed_data_access_labels</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | allowed_data_access_labels block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.deniedDataAccessLabels">denied_data_access_labels</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | denied_data_access_labels block. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.description">description</a></code> | <code>str</code> | Optional. A description of the data access scope for a human reader. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}. |
@@ -78,43 +78,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allow_all`<sup>Optional</sup> <a name="allow_all" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.allowAll"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allowed_data_access_labels`<sup>Optional</sup> <a name="allowed_data_access_labels" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.allowedDataAccessLabels"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
 
 allowed_data_access_labels block.
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `denied_data_access_labels`<sup>Optional</sup> <a name="denied_data_access_labels" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.Initializer.parameter.deniedDataAccessLabels"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
 
 denied_data_access_labels block.
 
@@ -514,7 +514,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -607,7 +607,7 @@ def put_allowed_data_access_labels(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.putAllowedDataAccessLabels.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
 
 ---
 
@@ -621,7 +621,7 @@ def put_denied_data_access_labels(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.putDeniedDataAccessLabels.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
 
 ---
 
@@ -708,7 +708,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ChronicleDataAccessScope resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ChronicleDataAccessScope resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -791,7 +791,7 @@ chronicleDataAccessScope.ChronicleDataAccessScope.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ChronicleDataAccessScope resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ChronicleDataAccessScope resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.generateConfigForImport.parameter.scope"></a>
 
@@ -821,7 +821,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ChronicleDataAccessScope to import is found.
 
@@ -832,19 +832,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowedDataAccessLabels">allowed_data_access_labels</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList">ChronicleDataAccessScopeAllowedDataAccessLabelsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.author">author</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
@@ -854,17 +854,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference">ChronicleDataAccessScopeTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowAllInput">allow_all_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowedDataAccessLabelsInput">allowed_data_access_labels_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowAllInput">allow_all_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowedDataAccessLabelsInput">allowed_data_access_labels_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.dataAccessScopeIdInput">data_access_scope_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deniedDataAccessLabelsInput">denied_data_access_labels_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.deniedDataAccessLabelsInput">denied_data_access_labels_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowAll">allow_all</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.allowAll">allow_all</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.dataAccessScopeId">data_access_scope_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScope.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -892,7 +892,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -942,7 +942,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -952,7 +952,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -962,7 +962,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -982,7 +982,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -992,7 +992,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1002,7 +1002,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1012,7 +1012,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1112,7 +1112,7 @@ update_time: str
 allow_all_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1122,7 +1122,7 @@ allow_all_input: bool | IResolvable
 allowed_data_access_labels_input: IResolvable | typing.List[ChronicleDataAccessScopeAllowedDataAccessLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
 
 ---
 
@@ -1142,7 +1142,7 @@ data_access_scope_id_input: str
 denied_data_access_labels_input: IResolvable | typing.List[ChronicleDataAccessScopeDeniedDataAccessLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
 
 ---
 
@@ -1202,7 +1202,7 @@ project_input: str
 timeouts_input: IResolvable | ChronicleDataAccessScopeTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a>
 
 ---
 
@@ -1212,7 +1212,7 @@ timeouts_input: IResolvable | ChronicleDataAccessScopeTimeouts
 allow_all: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1464,19 +1464,19 @@ chronicleDataAccessScope.ChronicleDataAccessScopeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.dataAccessScopeId">data_access_scope_id</a></code> | <code>str</code> | Required. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.instance">instance</a></code> | <code>str</code> | The unique identifier for the Chronicle instance, which is the same as the customer ID. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.location">location</a></code> | <code>str</code> | The location of the resource. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.allowAll">allow_all</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.allowedDataAccessLabels">allowed_data_access_labels</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | allowed_data_access_labels block. |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.deniedDataAccessLabels">denied_data_access_labels</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | denied_data_access_labels block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.allowAll">allow_all</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.allowedDataAccessLabels">allowed_data_access_labels</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | allowed_data_access_labels block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.deniedDataAccessLabels">denied_data_access_labels</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | denied_data_access_labels block. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.description">description</a></code> | <code>str</code> | Optional. A description of the data access scope for a human reader. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#id ChronicleDataAccessScope#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_data_access_scope#project ChronicleDataAccessScope#project}. |
@@ -1490,7 +1490,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1500,7 +1500,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1510,7 +1510,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1520,7 +1520,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1530,7 +1530,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1540,7 +1540,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1550,7 +1550,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1608,7 +1608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 allow_all: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -1631,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 allowed_data_access_labels: IResolvable | typing.List[ChronicleDataAccessScopeAllowedDataAccessLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
 
 allowed_data_access_labels block.
 
@@ -1645,7 +1645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 denied_data_access_labels: IResolvable | typing.List[ChronicleDataAccessScopeDeniedDataAccessLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
 
 denied_data_access_labels block.
 
@@ -1921,14 +1921,14 @@ chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2121,7 +2121,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsIngestionLabelOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2247,7 +2247,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2255,7 +2255,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2325,7 +2325,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2362,7 +2362,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]</code> | *No description.* |
 
 ---
 
@@ -2396,7 +2396,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ChronicleDataAccessScopeAllowedDataAccessLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>]
 
 ---
 
@@ -2418,7 +2418,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2427,7 +2427,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputRe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2640,7 +2640,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2727,7 +2727,7 @@ def reset_log_type() -> None
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.property.assetNamespace">asset_namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.property.dataAccessLabel">data_access_label</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.property.logType">log_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a></code> | *No description.* |
 
 ---
 
@@ -2851,7 +2851,7 @@ log_type: str
 internal_value: IResolvable | ChronicleDataAccessScopeAllowedDataAccessLabels
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeAllowedDataAccessLabels">ChronicleDataAccessScopeAllowedDataAccessLabels</a>
 
 ---
 
@@ -2871,14 +2871,14 @@ chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestion
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3071,7 +3071,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsIngestionLabelOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3197,7 +3197,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3205,7 +3205,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3275,7 +3275,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3312,7 +3312,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]</code> | *No description.* |
 
 ---
 
@@ -3346,7 +3346,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ChronicleDataAccessScopeDeniedDataAccessLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>]
 
 ---
 
@@ -3368,7 +3368,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3377,7 +3377,7 @@ chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3590,7 +3590,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3677,7 +3677,7 @@ def reset_log_type() -> None
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.property.assetNamespace">asset_namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.property.dataAccessLabel">data_access_label</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.property.logType">log_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a></code> | *No description.* |
 
 ---
 
@@ -3801,7 +3801,7 @@ log_type: str
 internal_value: IResolvable | ChronicleDataAccessScopeDeniedDataAccessLabels
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeDeniedDataAccessLabels">ChronicleDataAccessScopeDeniedDataAccessLabels</a>
 
 ---
 
@@ -3821,14 +3821,14 @@ chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4023,7 +4023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4068,7 +4068,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4162,7 +4162,7 @@ update: str
 internal_value: IResolvable | ChronicleDataAccessScopeTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleDataAccessScope.ChronicleDataAccessScopeTimeouts">ChronicleDataAccessScopeTimeouts</a>
 
 ---
 

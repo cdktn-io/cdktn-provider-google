@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoggingBillingAccountSinkConfig extends cdktf.TerraformMetaArguments {
+export interface LoggingBillingAccountSinkConfig extends cdktn.TerraformMetaArguments {
   /**
   * The billing account exported to the sink.
   *
@@ -35,7 +35,7 @@ export interface LoggingBillingAccountSinkConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The filter to apply when exporting logs. Only log entries that match the filter are exported.
   *
@@ -66,7 +66,7 @@ export interface LoggingBillingAccountSinkConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
   */
-  readonly exclusions?: LoggingBillingAccountSinkExclusions[] | cdktf.IResolvable;
+  readonly exclusions?: LoggingBillingAccountSinkExclusions[] | cdktn.IResolvable;
 }
 export interface LoggingBillingAccountSinkBigqueryOptions {
   /**
@@ -74,28 +74,28 @@ export interface LoggingBillingAccountSinkBigqueryOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_sink#use_partitioned_tables LoggingBillingAccountSink#use_partitioned_tables}
   */
-  readonly usePartitionedTables: boolean | cdktf.IResolvable;
+  readonly usePartitionedTables: boolean | cdktn.IResolvable;
 }
 
 export function loggingBillingAccountSinkBigqueryOptionsToTerraform(struct?: LoggingBillingAccountSinkBigqueryOptionsOutputReference | LoggingBillingAccountSinkBigqueryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    use_partitioned_tables: cdktf.booleanToTerraform(struct!.usePartitionedTables),
+    use_partitioned_tables: cdktn.booleanToTerraform(struct!.usePartitionedTables),
   }
 }
 
 
 export function loggingBillingAccountSinkBigqueryOptionsToHclTerraform(struct?: LoggingBillingAccountSinkBigqueryOptionsOutputReference | LoggingBillingAccountSinkBigqueryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     use_partitioned_tables: {
-      value: cdktf.booleanToHclTerraform(struct!.usePartitionedTables),
+      value: cdktn.booleanToHclTerraform(struct!.usePartitionedTables),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -106,14 +106,14 @@ export function loggingBillingAccountSinkBigqueryOptionsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingBillingAccountSinkBigqueryOptionsOutputReference extends cdktf.ComplexObject {
+export class LoggingBillingAccountSinkBigqueryOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -139,11 +139,11 @@ export class LoggingBillingAccountSinkBigqueryOptionsOutputReference extends cdk
   }
 
   // use_partitioned_tables - computed: false, optional: false, required: true
-  private _usePartitionedTables?: boolean | cdktf.IResolvable; 
+  private _usePartitionedTables?: boolean | cdktn.IResolvable; 
   public get usePartitionedTables() {
     return this.getBooleanAttribute('use_partitioned_tables');
   }
-  public set usePartitionedTables(value: boolean | cdktf.IResolvable) {
+  public set usePartitionedTables(value: boolean | cdktn.IResolvable) {
     this._usePartitionedTables = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -163,7 +163,7 @@ export interface LoggingBillingAccountSinkExclusions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * An advanced logs filter that matches the log entries to be excluded. By using the sample function, you can exclude less than 100% of the matching log entries
   *
@@ -178,46 +178,46 @@ export interface LoggingBillingAccountSinkExclusions {
   readonly name: string;
 }
 
-export function loggingBillingAccountSinkExclusionsToTerraform(struct?: LoggingBillingAccountSinkExclusions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingBillingAccountSinkExclusionsToTerraform(struct?: LoggingBillingAccountSinkExclusions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    filter: cdktf.stringToTerraform(struct!.filter),
-    name: cdktf.stringToTerraform(struct!.name),
+    description: cdktn.stringToTerraform(struct!.description),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function loggingBillingAccountSinkExclusionsToHclTerraform(struct?: LoggingBillingAccountSinkExclusions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingBillingAccountSinkExclusionsToHclTerraform(struct?: LoggingBillingAccountSinkExclusions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -228,9 +228,9 @@ export function loggingBillingAccountSinkExclusionsToHclTerraform(struct?: Loggi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingBillingAccountSinkExclusionsOutputReference extends cdktf.ComplexObject {
+export class LoggingBillingAccountSinkExclusionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -238,11 +238,11 @@ export class LoggingBillingAccountSinkExclusionsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoggingBillingAccountSinkExclusions | cdktf.IResolvable | undefined {
+  public get internalValue(): LoggingBillingAccountSinkExclusions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -267,7 +267,7 @@ export class LoggingBillingAccountSinkExclusionsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoggingBillingAccountSinkExclusions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoggingBillingAccountSinkExclusions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -276,7 +276,7 @@ export class LoggingBillingAccountSinkExclusionsOutputReference extends cdktf.Co
       this._filter = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,11 +307,11 @@ export class LoggingBillingAccountSinkExclusionsOutputReference extends cdktf.Co
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -349,15 +349,15 @@ export class LoggingBillingAccountSinkExclusionsOutputReference extends cdktf.Co
   }
 }
 
-export class LoggingBillingAccountSinkExclusionsList extends cdktf.ComplexList {
-  public internalValue? : LoggingBillingAccountSinkExclusions[] | cdktf.IResolvable
+export class LoggingBillingAccountSinkExclusionsList extends cdktn.ComplexList {
+  public internalValue? : LoggingBillingAccountSinkExclusions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -372,7 +372,7 @@ export class LoggingBillingAccountSinkExclusionsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}
 */
-export class LoggingBillingAccountSink extends cdktf.TerraformResource {
+export class LoggingBillingAccountSink extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -383,14 +383,14 @@ export class LoggingBillingAccountSink extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoggingBillingAccountSink resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoggingBillingAccountSink resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingBillingAccountSink to import
   * @param importFromId The id of the existing LoggingBillingAccountSink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_sink#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingBillingAccountSink to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_billing_account_sink", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_billing_account_sink", importId: importFromId, provider });
       }
 
   // ===========
@@ -478,11 +478,11 @@ export class LoggingBillingAccountSink extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -564,7 +564,7 @@ export class LoggingBillingAccountSink extends cdktf.TerraformResource {
   public get exclusions() {
     return this._exclusions;
   }
-  public putExclusions(value: LoggingBillingAccountSinkExclusions[] | cdktf.IResolvable) {
+  public putExclusions(value: LoggingBillingAccountSinkExclusions[] | cdktn.IResolvable) {
     this._exclusions.internalValue = value;
   }
   public resetExclusions() {
@@ -581,58 +581,58 @@ export class LoggingBillingAccountSink extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_account: cdktf.stringToTerraform(this._billingAccount),
-      description: cdktf.stringToTerraform(this._description),
-      destination: cdktf.stringToTerraform(this._destination),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      billing_account: cdktn.stringToTerraform(this._billingAccount),
+      description: cdktn.stringToTerraform(this._description),
+      destination: cdktn.stringToTerraform(this._destination),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       bigquery_options: loggingBillingAccountSinkBigqueryOptionsToTerraform(this._bigqueryOptions.internalValue),
-      exclusions: cdktf.listMapper(loggingBillingAccountSinkExclusionsToTerraform, true)(this._exclusions.internalValue),
+      exclusions: cdktn.listMapper(loggingBillingAccountSinkExclusionsToTerraform, true)(this._exclusions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_account: {
-        value: cdktf.stringToHclTerraform(this._billingAccount),
+        value: cdktn.stringToHclTerraform(this._billingAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination: {
-        value: cdktf.stringToHclTerraform(this._destination),
+        value: cdktn.stringToHclTerraform(this._destination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -644,7 +644,7 @@ export class LoggingBillingAccountSink extends cdktf.TerraformResource {
         storageClassType: "LoggingBillingAccountSinkBigqueryOptionsList",
       },
       exclusions: {
-        value: cdktf.listMapperHcl(loggingBillingAccountSinkExclusionsToHclTerraform, true)(this._exclusions.internalValue),
+        value: cdktn.listMapperHcl(loggingBillingAccountSinkExclusionsToHclTerraform, true)(this._exclusions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LoggingBillingAccountSinkExclusionsList",

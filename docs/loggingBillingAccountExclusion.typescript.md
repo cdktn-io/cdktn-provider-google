@@ -293,7 +293,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -392,7 +392,7 @@ public resetId(): void
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a LoggingBillingAccountExclusion resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a LoggingBillingAccountExclusion resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -464,7 +464,7 @@ import { loggingBillingAccountExclusion } from '@cdktn/provider-google'
 loggingBillingAccountExclusion.LoggingBillingAccountExclusion.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a LoggingBillingAccountExclusion resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a LoggingBillingAccountExclusion resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.generateConfigForImport.parameter.scope"></a>
 
@@ -494,7 +494,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the LoggingBillingAccountExclusion to import is found.
 
@@ -505,28 +505,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.billingAccountInput">billingAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.billingAccount">billingAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.filter">filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusion.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -551,7 +551,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -601,7 +601,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -611,7 +611,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -621,7 +621,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -641,7 +641,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -651,7 +651,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -661,7 +661,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -671,7 +671,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -701,7 +701,7 @@ public readonly descriptionInput: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -761,7 +761,7 @@ public readonly description: string;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -829,18 +829,18 @@ const loggingBillingAccountExclusionConfig: loggingBillingAccountExclusion.Loggi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.billingAccount">billingAccount</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_exclusion#billing_account LoggingBillingAccountExclusion#billing_account}. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.filter">filter</a></code> | <code>string</code> | The filter to apply when excluding logs. Only log entries that match the filter are excluded. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.name">name</a></code> | <code>string</code> | The name of the logging exclusion. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.description">description</a></code> | <code>string</code> | A human-readable description. |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this exclusion rule should be disabled or not. This defaults to false. |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this exclusion rule should be disabled or not. This defaults to false. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountExclusion.LoggingBillingAccountExclusionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_billing_account_exclusion#id LoggingBillingAccountExclusion#id}. |
 
 ---
@@ -851,7 +851,7 @@ const loggingBillingAccountExclusionConfig: loggingBillingAccountExclusion.Loggi
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -861,7 +861,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -871,7 +871,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -881,7 +881,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -891,7 +891,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -901,7 +901,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -911,7 +911,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -975,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether this exclusion rule should be disabled or not. This defaults to false.
 

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetappVolumeReplicationConfig extends cdktf.TerraformMetaArguments {
+export interface NetappVolumeReplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * A destination volume is created as part of replication creation. The destination volume will not became
   * under Terraform management unless you import it manually. If you delete the replication, this volume
@@ -23,7 +23,7 @@ export interface NetappVolumeReplicationConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication#delete_destination_volume NetappVolumeReplication#delete_destination_volume}
   */
-  readonly deleteDestinationVolume?: boolean | cdktf.IResolvable;
+  readonly deleteDestinationVolume?: boolean | cdktn.IResolvable;
   /**
   * An description of this resource.
   *
@@ -38,7 +38,7 @@ export interface NetappVolumeReplicationConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication#force_stopping NetappVolumeReplication#force_stopping}
   */
-  readonly forceStopping?: boolean | cdktf.IResolvable;
+  readonly forceStopping?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication#id NetappVolumeReplication#id}
   *
@@ -80,7 +80,7 @@ export interface NetappVolumeReplicationConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication#replication_enabled NetappVolumeReplication#replication_enabled}
   */
-  readonly replicationEnabled?: boolean | cdktf.IResolvable;
+  readonly replicationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the replication interval. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"]
   *
@@ -100,7 +100,7 @@ export interface NetappVolumeReplicationConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication#wait_for_mirror NetappVolumeReplication#wait_for_mirror}
   */
-  readonly waitForMirror?: boolean | cdktf.IResolvable;
+  readonly waitForMirror?: boolean | cdktn.IResolvable;
   /**
   * destination_volume_parameters block
   *
@@ -118,8 +118,8 @@ export interface NetappVolumeReplicationHybridPeeringDetails {
 }
 
 export function netappVolumeReplicationHybridPeeringDetailsToTerraform(struct?: NetappVolumeReplicationHybridPeeringDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -128,8 +128,8 @@ export function netappVolumeReplicationHybridPeeringDetailsToTerraform(struct?: 
 
 
 export function netappVolumeReplicationHybridPeeringDetailsToHclTerraform(struct?: NetappVolumeReplicationHybridPeeringDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -137,7 +137,7 @@ export function netappVolumeReplicationHybridPeeringDetailsToHclTerraform(struct
   return attrs;
 }
 
-export class NetappVolumeReplicationHybridPeeringDetailsOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeReplicationHybridPeeringDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -146,7 +146,7 @@ export class NetappVolumeReplicationHybridPeeringDetailsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -201,14 +201,14 @@ export class NetappVolumeReplicationHybridPeeringDetailsOutputReference extends 
   }
 }
 
-export class NetappVolumeReplicationHybridPeeringDetailsList extends cdktf.ComplexList {
+export class NetappVolumeReplicationHybridPeeringDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -223,8 +223,8 @@ export interface NetappVolumeReplicationTransferStats {
 }
 
 export function netappVolumeReplicationTransferStatsToTerraform(struct?: NetappVolumeReplicationTransferStats): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -233,8 +233,8 @@ export function netappVolumeReplicationTransferStatsToTerraform(struct?: NetappV
 
 
 export function netappVolumeReplicationTransferStatsToHclTerraform(struct?: NetappVolumeReplicationTransferStats): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -242,7 +242,7 @@ export function netappVolumeReplicationTransferStatsToHclTerraform(struct?: Neta
   return attrs;
 }
 
-export class NetappVolumeReplicationTransferStatsOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeReplicationTransferStatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -251,7 +251,7 @@ export class NetappVolumeReplicationTransferStatsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -311,14 +311,14 @@ export class NetappVolumeReplicationTransferStatsOutputReference extends cdktf.C
   }
 }
 
-export class NetappVolumeReplicationTransferStatsList extends cdktf.ComplexList {
+export class NetappVolumeReplicationTransferStatsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -346,31 +346,31 @@ export interface NetappVolumeReplicationDestinationVolumeParametersTieringPolicy
 }
 
 export function netappVolumeReplicationDestinationVolumeParametersTieringPolicyToTerraform(struct?: NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference | NetappVolumeReplicationDestinationVolumeParametersTieringPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cooling_threshold_days: cdktf.numberToTerraform(struct!.coolingThresholdDays),
-    tier_action: cdktf.stringToTerraform(struct!.tierAction),
+    cooling_threshold_days: cdktn.numberToTerraform(struct!.coolingThresholdDays),
+    tier_action: cdktn.stringToTerraform(struct!.tierAction),
   }
 }
 
 
 export function netappVolumeReplicationDestinationVolumeParametersTieringPolicyToHclTerraform(struct?: NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference | NetappVolumeReplicationDestinationVolumeParametersTieringPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cooling_threshold_days: {
-      value: cdktf.numberToHclTerraform(struct!.coolingThresholdDays),
+      value: cdktn.numberToHclTerraform(struct!.coolingThresholdDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tier_action: {
-      value: cdktf.stringToHclTerraform(struct!.tierAction),
+      value: cdktn.stringToHclTerraform(struct!.tierAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -381,14 +381,14 @@ export function netappVolumeReplicationDestinationVolumeParametersTieringPolicyT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -485,46 +485,46 @@ export interface NetappVolumeReplicationDestinationVolumeParameters {
 }
 
 export function netappVolumeReplicationDestinationVolumeParametersToTerraform(struct?: NetappVolumeReplicationDestinationVolumeParametersOutputReference | NetappVolumeReplicationDestinationVolumeParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    share_name: cdktf.stringToTerraform(struct!.shareName),
-    storage_pool: cdktf.stringToTerraform(struct!.storagePool),
-    volume_id: cdktf.stringToTerraform(struct!.volumeId),
+    description: cdktn.stringToTerraform(struct!.description),
+    share_name: cdktn.stringToTerraform(struct!.shareName),
+    storage_pool: cdktn.stringToTerraform(struct!.storagePool),
+    volume_id: cdktn.stringToTerraform(struct!.volumeId),
     tiering_policy: netappVolumeReplicationDestinationVolumeParametersTieringPolicyToTerraform(struct!.tieringPolicy),
   }
 }
 
 
 export function netappVolumeReplicationDestinationVolumeParametersToHclTerraform(struct?: NetappVolumeReplicationDestinationVolumeParametersOutputReference | NetappVolumeReplicationDestinationVolumeParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     share_name: {
-      value: cdktf.stringToHclTerraform(struct!.shareName),
+      value: cdktn.stringToHclTerraform(struct!.shareName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_pool: {
-      value: cdktf.stringToHclTerraform(struct!.storagePool),
+      value: cdktn.stringToHclTerraform(struct!.storagePool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_id: {
-      value: cdktf.stringToHclTerraform(struct!.volumeId),
+      value: cdktn.stringToHclTerraform(struct!.volumeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -541,14 +541,14 @@ export function netappVolumeReplicationDestinationVolumeParametersToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeReplicationDestinationVolumeParametersOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeReplicationDestinationVolumeParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -689,39 +689,39 @@ export interface NetappVolumeReplicationTimeouts {
   readonly update?: string;
 }
 
-export function netappVolumeReplicationTimeoutsToTerraform(struct?: NetappVolumeReplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeReplicationTimeoutsToTerraform(struct?: NetappVolumeReplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function netappVolumeReplicationTimeoutsToHclTerraform(struct?: NetappVolumeReplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeReplicationTimeoutsToHclTerraform(struct?: NetappVolumeReplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -732,19 +732,19 @@ export function netappVolumeReplicationTimeoutsToHclTerraform(struct?: NetappVol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeReplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeReplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetappVolumeReplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappVolumeReplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -765,7 +765,7 @@ export class NetappVolumeReplicationTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappVolumeReplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappVolumeReplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -773,7 +773,7 @@ export class NetappVolumeReplicationTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -838,7 +838,7 @@ export class NetappVolumeReplicationTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication google_netapp_volume_replication}
 */
-export class NetappVolumeReplication extends cdktf.TerraformResource {
+export class NetappVolumeReplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -849,14 +849,14 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetappVolumeReplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetappVolumeReplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappVolumeReplication to import
   * @param importFromId The id of the existing NetappVolumeReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappVolumeReplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_netapp_volume_replication", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_netapp_volume_replication", importId: importFromId, provider });
       }
 
   // ===========
@@ -912,11 +912,11 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
   }
 
   // delete_destination_volume - computed: false, optional: true, required: false
-  private _deleteDestinationVolume?: boolean | cdktf.IResolvable; 
+  private _deleteDestinationVolume?: boolean | cdktn.IResolvable; 
   public get deleteDestinationVolume() {
     return this.getBooleanAttribute('delete_destination_volume');
   }
-  public set deleteDestinationVolume(value: boolean | cdktf.IResolvable) {
+  public set deleteDestinationVolume(value: boolean | cdktn.IResolvable) {
     this._deleteDestinationVolume = value;
   }
   public resetDeleteDestinationVolume() {
@@ -949,17 +949,17 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // force_stopping - computed: false, optional: true, required: false
-  private _forceStopping?: boolean | cdktf.IResolvable; 
+  private _forceStopping?: boolean | cdktn.IResolvable; 
   public get forceStopping() {
     return this.getBooleanAttribute('force_stopping');
   }
-  public set forceStopping(value: boolean | cdktf.IResolvable) {
+  public set forceStopping(value: boolean | cdktn.IResolvable) {
     this._forceStopping = value;
   }
   public resetForceStopping() {
@@ -1066,11 +1066,11 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
   }
 
   // replication_enabled - computed: false, optional: true, required: false
-  private _replicationEnabled?: boolean | cdktf.IResolvable; 
+  private _replicationEnabled?: boolean | cdktn.IResolvable; 
   public get replicationEnabled() {
     return this.getBooleanAttribute('replication_enabled');
   }
-  public set replicationEnabled(value: boolean | cdktf.IResolvable) {
+  public set replicationEnabled(value: boolean | cdktn.IResolvable) {
     this._replicationEnabled = value;
   }
   public resetReplicationEnabled() {
@@ -1115,7 +1115,7 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1140,11 +1140,11 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
   }
 
   // wait_for_mirror - computed: false, optional: true, required: false
-  private _waitForMirror?: boolean | cdktf.IResolvable; 
+  private _waitForMirror?: boolean | cdktn.IResolvable; 
   public get waitForMirror() {
     return this.getBooleanAttribute('wait_for_mirror');
   }
-  public set waitForMirror(value: boolean | cdktf.IResolvable) {
+  public set waitForMirror(value: boolean | cdktn.IResolvable) {
     this._waitForMirror = value;
   }
   public resetWaitForMirror() {
@@ -1193,18 +1193,18 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delete_destination_volume: cdktf.booleanToTerraform(this._deleteDestinationVolume),
-      description: cdktf.stringToTerraform(this._description),
-      force_stopping: cdktf.booleanToTerraform(this._forceStopping),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      replication_enabled: cdktf.booleanToTerraform(this._replicationEnabled),
-      replication_schedule: cdktf.stringToTerraform(this._replicationSchedule),
-      volume_name: cdktf.stringToTerraform(this._volumeName),
-      wait_for_mirror: cdktf.booleanToTerraform(this._waitForMirror),
+      delete_destination_volume: cdktn.booleanToTerraform(this._deleteDestinationVolume),
+      description: cdktn.stringToTerraform(this._description),
+      force_stopping: cdktn.booleanToTerraform(this._forceStopping),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      replication_enabled: cdktn.booleanToTerraform(this._replicationEnabled),
+      replication_schedule: cdktn.stringToTerraform(this._replicationSchedule),
+      volume_name: cdktn.stringToTerraform(this._volumeName),
+      wait_for_mirror: cdktn.booleanToTerraform(this._waitForMirror),
       destination_volume_parameters: netappVolumeReplicationDestinationVolumeParametersToTerraform(this._destinationVolumeParameters.internalValue),
       timeouts: netappVolumeReplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1213,73 +1213,73 @@ export class NetappVolumeReplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delete_destination_volume: {
-        value: cdktf.booleanToHclTerraform(this._deleteDestinationVolume),
+        value: cdktn.booleanToHclTerraform(this._deleteDestinationVolume),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_stopping: {
-        value: cdktf.booleanToHclTerraform(this._forceStopping),
+        value: cdktn.booleanToHclTerraform(this._forceStopping),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._replicationEnabled),
+        value: cdktn.booleanToHclTerraform(this._replicationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       replication_schedule: {
-        value: cdktf.stringToHclTerraform(this._replicationSchedule),
+        value: cdktn.stringToHclTerraform(this._replicationSchedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume_name: {
-        value: cdktf.stringToHclTerraform(this._volumeName),
+        value: cdktn.stringToHclTerraform(this._volumeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wait_for_mirror: {
-        value: cdktf.booleanToHclTerraform(this._waitForMirror),
+        value: cdktn.booleanToHclTerraform(this._waitForMirror),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

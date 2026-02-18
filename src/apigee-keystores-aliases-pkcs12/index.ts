@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeKeystoresAliasesPkcs12Config extends cdktf.TerraformMetaArguments {
+export interface ApigeeKeystoresAliasesPkcs12Config extends cdktn.TerraformMetaArguments {
   /**
   * Alias Name
   *
@@ -72,8 +72,8 @@ export interface ApigeeKeystoresAliasesPkcs12CertsInfoCertInfo {
 }
 
 export function apigeeKeystoresAliasesPkcs12CertsInfoCertInfoToTerraform(struct?: ApigeeKeystoresAliasesPkcs12CertsInfoCertInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -82,8 +82,8 @@ export function apigeeKeystoresAliasesPkcs12CertsInfoCertInfoToTerraform(struct?
 
 
 export function apigeeKeystoresAliasesPkcs12CertsInfoCertInfoToHclTerraform(struct?: ApigeeKeystoresAliasesPkcs12CertsInfoCertInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -91,7 +91,7 @@ export function apigeeKeystoresAliasesPkcs12CertsInfoCertInfoToHclTerraform(stru
   return attrs;
 }
 
-export class ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference extends cdktf.ComplexObject {
+export class ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -100,7 +100,7 @@ export class ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -175,14 +175,14 @@ export class ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference extend
   }
 }
 
-export class ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList extends cdktf.ComplexList {
+export class ApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -197,8 +197,8 @@ export interface ApigeeKeystoresAliasesPkcs12CertsInfo {
 }
 
 export function apigeeKeystoresAliasesPkcs12CertsInfoToTerraform(struct?: ApigeeKeystoresAliasesPkcs12CertsInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -207,8 +207,8 @@ export function apigeeKeystoresAliasesPkcs12CertsInfoToTerraform(struct?: Apigee
 
 
 export function apigeeKeystoresAliasesPkcs12CertsInfoToHclTerraform(struct?: ApigeeKeystoresAliasesPkcs12CertsInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -216,7 +216,7 @@ export function apigeeKeystoresAliasesPkcs12CertsInfoToHclTerraform(struct?: Api
   return attrs;
 }
 
-export class ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference extends cdktf.ComplexObject {
+export class ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -225,7 +225,7 @@ export class ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -251,14 +251,14 @@ export class ApigeeKeystoresAliasesPkcs12CertsInfoOutputReference extends cdktf.
   }
 }
 
-export class ApigeeKeystoresAliasesPkcs12CertsInfoList extends cdktf.ComplexList {
+export class ApigeeKeystoresAliasesPkcs12CertsInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -280,32 +280,32 @@ export interface ApigeeKeystoresAliasesPkcs12Timeouts {
   readonly delete?: string;
 }
 
-export function apigeeKeystoresAliasesPkcs12TimeoutsToTerraform(struct?: ApigeeKeystoresAliasesPkcs12Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeKeystoresAliasesPkcs12TimeoutsToTerraform(struct?: ApigeeKeystoresAliasesPkcs12Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function apigeeKeystoresAliasesPkcs12TimeoutsToHclTerraform(struct?: ApigeeKeystoresAliasesPkcs12Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeKeystoresAliasesPkcs12TimeoutsToHclTerraform(struct?: ApigeeKeystoresAliasesPkcs12Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -316,19 +316,19 @@ export function apigeeKeystoresAliasesPkcs12TimeoutsToHclTerraform(struct?: Apig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeKeystoresAliasesPkcs12Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeKeystoresAliasesPkcs12Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -345,14 +345,14 @@ export class ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeKeystoresAliasesPkcs12Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeKeystoresAliasesPkcs12Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -400,7 +400,7 @@ export class ApigeeKeystoresAliasesPkcs12TimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12}
 */
-export class ApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource {
+export class ApigeeKeystoresAliasesPkcs12 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -411,14 +411,14 @@ export class ApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeKeystoresAliasesPkcs12 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeKeystoresAliasesPkcs12 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeKeystoresAliasesPkcs12 to import
   * @param importFromId The id of the existing ApigeeKeystoresAliasesPkcs12 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_pkcs12#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeKeystoresAliasesPkcs12 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_keystores_aliases_pkcs12", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_keystores_aliases_pkcs12", importId: importFromId, provider });
       }
 
   // ===========
@@ -606,14 +606,14 @@ export class ApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias: cdktf.stringToTerraform(this._alias),
-      environment: cdktf.stringToTerraform(this._environment),
-      file: cdktf.stringToTerraform(this._file),
-      filehash: cdktf.stringToTerraform(this._filehash),
-      id: cdktf.stringToTerraform(this._id),
-      keystore: cdktf.stringToTerraform(this._keystore),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      password: cdktf.stringToTerraform(this._password),
+      alias: cdktn.stringToTerraform(this._alias),
+      environment: cdktn.stringToTerraform(this._environment),
+      file: cdktn.stringToTerraform(this._file),
+      filehash: cdktn.stringToTerraform(this._filehash),
+      id: cdktn.stringToTerraform(this._id),
+      keystore: cdktn.stringToTerraform(this._keystore),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      password: cdktn.stringToTerraform(this._password),
       timeouts: apigeeKeystoresAliasesPkcs12TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -621,49 +621,49 @@ export class ApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file: {
-        value: cdktf.stringToHclTerraform(this._file),
+        value: cdktn.stringToHclTerraform(this._file),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filehash: {
-        value: cdktf.stringToHclTerraform(this._filehash),
+        value: cdktn.stringToHclTerraform(this._filehash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       keystore: {
-        value: cdktf.stringToHclTerraform(this._keystore),
+        value: cdktn.stringToHclTerraform(this._keystore),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -53,36 +53,36 @@ computeInstanceGroupManager.ComputeInstanceGroupManager(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.baseInstanceName">base_instance_name</a></code> | <code>str</code> | The base instance name to use for instances in this group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the instance group manager. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.version">version</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | version block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.version">version</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | version block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.allInstancesConfig">all_instances_config</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfig">ComputeInstanceGroupManagerAllInstancesConfig</a></code> | all_instances_config block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.autoHealingPolicies">auto_healing_policies</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPolicies">ComputeInstanceGroupManagerAutoHealingPolicies</a></code> | auto_healing_policies block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional textual description of the instance group manager. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#id ComputeInstanceGroupManager#id}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.instanceLifecyclePolicy">instance_lifecycle_policy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy">ComputeInstanceGroupManagerInstanceLifecyclePolicy</a></code> | instance_lifecycle_policy block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.listManagedInstancesResults">list_managed_instances_results</a></code> | <code>str</code> | Pagination behavior of the listManagedInstances API method for this managed instance group. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.namedPort">named_port</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | named_port block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.namedPort">named_port</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | named_port block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.resourcePolicies">resource_policies</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePolicies">ComputeInstanceGroupManagerResourcePolicies</a></code> | resource_policies block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.standbyPolicy">standby_policy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicy">ComputeInstanceGroupManagerStandbyPolicy</a></code> | standby_policy block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulDisk">stateful_disk</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | stateful_disk block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulExternalIp">stateful_external_ip</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | stateful_external_ip block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulInternalIp">stateful_internal_ip</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | stateful_internal_ip block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulDisk">stateful_disk</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | stateful_disk block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulExternalIp">stateful_external_ip</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | stateful_external_ip block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulInternalIp">stateful_internal_ip</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | stateful_internal_ip block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.targetPools">target_pools</a></code> | <code>typing.List[str]</code> | The full URL of all target pools to which new instances in the group are added. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.targetSize">target_size</a></code> | <code>typing.Union[int, float]</code> | The target number of running instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.targetStoppedSize">target_stopped_size</a></code> | <code>typing.Union[int, float]</code> | The target number of stopped instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.targetSuspendedSize">target_suspended_size</a></code> | <code>typing.Union[int, float]</code> | The target number of suspended instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.updatePolicy">update_policy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicy">ComputeInstanceGroupManagerUpdatePolicy</a></code> | update_policy block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.waitForInstances">wait_for_instances</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to wait for all instances to be created/updated before returning. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.waitForInstances">wait_for_instances</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to wait for all instances to be created/updated before returning. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.waitForInstancesStatus">wait_for_instances_status</a></code> | <code>str</code> | When used with wait_for_instances specifies the status to wait for. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.zone">zone</a></code> | <code>str</code> | The zone that instances in this group should be created in. |
 
@@ -108,43 +108,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.version"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
 
 version block.
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `named_port`<sup>Optional</sup> <a name="named_port" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.namedPort"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
 
 named_port block.
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `stateful_disk`<sup>Optional</sup> <a name="stateful_disk" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulDisk"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
 
 stateful_disk block.
 
@@ -299,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `stateful_external_ip`<sup>Optional</sup> <a name="stateful_external_ip" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulExternalIp"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
 
 stateful_external_ip block.
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `stateful_internal_ip`<sup>Optional</sup> <a name="stateful_internal_ip" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.statefulInternalIp"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
 
 stateful_internal_ip block.
 
@@ -383,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `wait_for_instances`<sup>Optional</sup> <a name="wait_for_instances" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer.parameter.waitForInstances"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to wait for all instances to be created/updated before returning.
 
@@ -721,7 +721,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -907,7 +907,7 @@ def put_named_port(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putNamedPort.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
 
 ---
 
@@ -974,7 +974,7 @@ def put_stateful_disk(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putStatefulDisk.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
 
 ---
 
@@ -988,7 +988,7 @@ def put_stateful_external_ip(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putStatefulExternalIp.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
 
 ---
 
@@ -1002,7 +1002,7 @@ def put_stateful_internal_ip(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putStatefulInternalIp.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
 
 ---
 
@@ -1155,7 +1155,7 @@ def put_version(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putVersion.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
 
 ---
 
@@ -1298,7 +1298,7 @@ def reset_zone() -> None
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeInstanceGroupManager resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ComputeInstanceGroupManager resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1381,7 +1381,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManager.generate_config_for_impo
 )
 ```
 
-Generates CDKTF code for importing a ComputeInstanceGroupManager resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeInstanceGroupManager resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.generateConfigForImport.parameter.scope"></a>
 
@@ -1411,7 +1411,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeInstanceGroupManager to import is found.
 
@@ -1422,19 +1422,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.allInstancesConfig">all_instances_config</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference">ComputeInstanceGroupManagerAllInstancesConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.autoHealingPolicies">auto_healing_policies</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference">ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.creationTimestamp">creation_timestamp</a></code> | <code>str</code> | *No description.* |
@@ -1461,22 +1461,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.instanceLifecyclePolicyInput">instance_lifecycle_policy_input</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy">ComputeInstanceGroupManagerInstanceLifecyclePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.listManagedInstancesResultsInput">list_managed_instances_results_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.namedPortInput">named_port_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.namedPortInput">named_port_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.resourcePoliciesInput">resource_policies_input</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePolicies">ComputeInstanceGroupManagerResourcePolicies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.standbyPolicyInput">standby_policy_input</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicy">ComputeInstanceGroupManagerStandbyPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulDiskInput">stateful_disk_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulExternalIpInput">stateful_external_ip_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulInternalIpInput">stateful_internal_ip_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulDiskInput">stateful_disk_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulExternalIpInput">stateful_external_ip_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulInternalIpInput">stateful_internal_ip_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetPoolsInput">target_pools_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSizeInput">target_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetStoppedSizeInput">target_stopped_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSuspendedSizeInput">target_suspended_size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.updatePolicyInput">update_policy_input</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicy">ComputeInstanceGroupManagerUpdatePolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.versionInput">version_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.waitForInstancesInput">wait_for_instances_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.versionInput">version_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.waitForInstancesInput">wait_for_instances_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.waitForInstancesStatusInput">wait_for_instances_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.baseInstanceName">base_instance_name</a></code> | <code>str</code> | *No description.* |
@@ -1489,7 +1489,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSize">target_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetStoppedSize">target_stopped_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSuspendedSize">target_suspended_size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.waitForInstances">wait_for_instances</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.waitForInstances">wait_for_instances</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.waitForInstancesStatus">wait_for_instances_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.zone">zone</a></code> | <code>str</code> | *No description.* |
 
@@ -1513,7 +1513,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1563,7 +1563,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1573,7 +1573,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1583,7 +1583,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1603,7 +1603,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1613,7 +1613,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1623,7 +1623,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1633,7 +1633,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1903,7 +1903,7 @@ list_managed_instances_results_input: str
 named_port_input: IResolvable | typing.List[ComputeInstanceGroupManagerNamedPort]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
 
 ---
 
@@ -1953,7 +1953,7 @@ standby_policy_input: ComputeInstanceGroupManagerStandbyPolicy
 stateful_disk_input: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulDisk]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
 
 ---
 
@@ -1963,7 +1963,7 @@ stateful_disk_input: IResolvable | typing.List[ComputeInstanceGroupManagerStatef
 stateful_external_ip_input: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulExternalIp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
 
 ---
 
@@ -1973,7 +1973,7 @@ stateful_external_ip_input: IResolvable | typing.List[ComputeInstanceGroupManage
 stateful_internal_ip_input: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulInternalIp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
 
 ---
 
@@ -2023,7 +2023,7 @@ target_suspended_size_input: typing.Union[int, float]
 timeouts_input: IResolvable | ComputeInstanceGroupManagerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a>
 
 ---
 
@@ -2043,7 +2043,7 @@ update_policy_input: ComputeInstanceGroupManagerUpdatePolicy
 version_input: IResolvable | typing.List[ComputeInstanceGroupManagerVersion]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
 
 ---
 
@@ -2053,7 +2053,7 @@ version_input: IResolvable | typing.List[ComputeInstanceGroupManagerVersion]
 wait_for_instances_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2183,7 +2183,7 @@ target_suspended_size: typing.Union[int, float]
 wait_for_instances: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2378,36 +2378,36 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.baseInstanceName">base_instance_name</a></code> | <code>str</code> | The base instance name to use for instances in this group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.name">name</a></code> | <code>str</code> | The name of the instance group manager. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.version">version</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | version block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.version">version</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | version block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.allInstancesConfig">all_instances_config</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfig">ComputeInstanceGroupManagerAllInstancesConfig</a></code> | all_instances_config block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.autoHealingPolicies">auto_healing_policies</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPolicies">ComputeInstanceGroupManagerAutoHealingPolicies</a></code> | auto_healing_policies block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.description">description</a></code> | <code>str</code> | An optional textual description of the instance group manager. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#id ComputeInstanceGroupManager#id}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.instanceLifecyclePolicy">instance_lifecycle_policy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy">ComputeInstanceGroupManagerInstanceLifecyclePolicy</a></code> | instance_lifecycle_policy block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.listManagedInstancesResults">list_managed_instances_results</a></code> | <code>str</code> | Pagination behavior of the listManagedInstances API method for this managed instance group. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.namedPort">named_port</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | named_port block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.namedPort">named_port</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | named_port block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.resourcePolicies">resource_policies</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePolicies">ComputeInstanceGroupManagerResourcePolicies</a></code> | resource_policies block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.standbyPolicy">standby_policy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicy">ComputeInstanceGroupManagerStandbyPolicy</a></code> | standby_policy block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.statefulDisk">stateful_disk</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | stateful_disk block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.statefulExternalIp">stateful_external_ip</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | stateful_external_ip block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.statefulInternalIp">stateful_internal_ip</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | stateful_internal_ip block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.statefulDisk">stateful_disk</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | stateful_disk block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.statefulExternalIp">stateful_external_ip</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | stateful_external_ip block. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.statefulInternalIp">stateful_internal_ip</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | stateful_internal_ip block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetPools">target_pools</a></code> | <code>typing.List[str]</code> | The full URL of all target pools to which new instances in the group are added. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetSize">target_size</a></code> | <code>typing.Union[int, float]</code> | The target number of running instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetStoppedSize">target_stopped_size</a></code> | <code>typing.Union[int, float]</code> | The target number of stopped instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetSuspendedSize">target_suspended_size</a></code> | <code>typing.Union[int, float]</code> | The target number of suspended instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.updatePolicy">update_policy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicy">ComputeInstanceGroupManagerUpdatePolicy</a></code> | update_policy block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.waitForInstances">wait_for_instances</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to wait for all instances to be created/updated before returning. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.waitForInstances">wait_for_instances</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to wait for all instances to be created/updated before returning. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.waitForInstancesStatus">wait_for_instances_status</a></code> | <code>str</code> | When used with wait_for_instances specifies the status to wait for. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.zone">zone</a></code> | <code>str</code> | The zone that instances in this group should be created in. |
 
@@ -2419,7 +2419,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2429,7 +2429,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2439,7 +2439,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2449,7 +2449,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2459,7 +2459,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2469,7 +2469,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2479,7 +2479,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 version: IResolvable | typing.List[ComputeInstanceGroupManagerVersion]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
 
 version block.
 
@@ -2622,7 +2622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 named_port: IResolvable | typing.List[ComputeInstanceGroupManagerNamedPort]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
 
 named_port block.
 
@@ -2680,7 +2680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 stateful_disk: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulDisk]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
 
 stateful_disk block.
 
@@ -2694,7 +2694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 stateful_external_ip: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulExternalIp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
 
 stateful_external_ip block.
 
@@ -2708,7 +2708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 stateful_internal_ip: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulInternalIp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
 
 stateful_internal_ip block.
 
@@ -2810,7 +2810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 wait_for_instances: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to wait for all instances to be created/updated before returning.
 
@@ -3604,14 +3604,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3805,7 +3805,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3936,14 +3936,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4135,7 +4135,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4254,14 +4254,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4455,7 +4455,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4587,7 +4587,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4595,7 +4595,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4665,7 +4665,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4702,7 +4702,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]</code> | *No description.* |
 
 ---
 
@@ -4736,7 +4736,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeInstanceGroupManagerNamedPort]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>]
 
 ---
 
@@ -4758,7 +4758,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4767,7 +4767,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4975,7 +4975,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5000,7 +5000,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a></code> | *No description.* |
 
 ---
 
@@ -5074,7 +5074,7 @@ port: typing.Union[int, float]
 internal_value: IResolvable | ComputeInstanceGroupManagerNamedPort
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort">ComputeInstanceGroupManagerNamedPort</a>
 
 ---
 
@@ -5094,14 +5094,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5294,7 +5294,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5397,14 +5397,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5598,7 +5598,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5730,7 +5730,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5738,7 +5738,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5808,7 +5808,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5845,7 +5845,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]</code> | *No description.* |
 
 ---
 
@@ -5879,7 +5879,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulDisk]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>]
 
 ---
 
@@ -5901,7 +5901,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5910,7 +5910,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReferen
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6119,7 +6119,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6150,7 +6150,7 @@ def reset_delete_rule() -> None
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.property.deviceNameInput">device_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.property.deleteRule">delete_rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.property.deviceName">device_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a></code> | *No description.* |
 
 ---
 
@@ -6224,7 +6224,7 @@ device_name: str
 internal_value: IResolvable | ComputeInstanceGroupManagerStatefulDisk
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk">ComputeInstanceGroupManagerStatefulDisk</a>
 
 ---
 
@@ -6245,7 +6245,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6253,7 +6253,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6323,7 +6323,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6360,7 +6360,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]</code> | *No description.* |
 
 ---
 
@@ -6394,7 +6394,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulExternalIp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>]
 
 ---
 
@@ -6416,7 +6416,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6425,7 +6425,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputR
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6635,7 +6635,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6672,7 +6672,7 @@ def reset_interface_name() -> None
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.property.interfaceNameInput">interface_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.property.deleteRule">delete_rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.property.interfaceName">interface_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a></code> | *No description.* |
 
 ---
 
@@ -6746,7 +6746,7 @@ interface_name: str
 internal_value: IResolvable | ComputeInstanceGroupManagerStatefulExternalIp
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp">ComputeInstanceGroupManagerStatefulExternalIp</a>
 
 ---
 
@@ -6767,7 +6767,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6775,7 +6775,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6845,7 +6845,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6882,7 +6882,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]</code> | *No description.* |
 
 ---
 
@@ -6916,7 +6916,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeInstanceGroupManagerStatefulInternalIp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>]
 
 ---
 
@@ -6938,7 +6938,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6947,7 +6947,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputR
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7157,7 +7157,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7194,7 +7194,7 @@ def reset_interface_name() -> None
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.property.interfaceNameInput">interface_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.property.deleteRule">delete_rule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.property.interfaceName">interface_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a></code> | *No description.* |
 
 ---
 
@@ -7268,7 +7268,7 @@ interface_name: str
 internal_value: IResolvable | ComputeInstanceGroupManagerStatefulInternalIp
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp">ComputeInstanceGroupManagerStatefulInternalIp</a>
 
 ---
 
@@ -7289,7 +7289,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7297,7 +7297,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigL
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7367,7 +7367,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7449,7 +7449,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7458,7 +7458,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigO
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7666,7 +7666,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7688,7 +7688,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.property.currentRevision">current_revision</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.property.effective">effective</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.property.effective">effective</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfig">ComputeInstanceGroupManagerStatusAllInstancesConfig</a></code> | *No description.* |
 
 ---
@@ -7733,7 +7733,7 @@ current_revision: str
 effective: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -7764,7 +7764,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7772,7 +7772,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7842,7 +7842,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7924,7 +7924,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7933,7 +7933,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8141,7 +8141,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8163,7 +8163,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.allInstancesConfig">all_instances_config</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList">ComputeInstanceGroupManagerStatusAllInstancesConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.isStable">is_stable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.isStable">is_stable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.stateful">stateful</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList">ComputeInstanceGroupManagerStatusStatefulList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.versionTarget">version_target</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList">ComputeInstanceGroupManagerStatusVersionTargetList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatus">ComputeInstanceGroupManagerStatus</a></code> | *No description.* |
@@ -8210,7 +8210,7 @@ all_instances_config: ComputeInstanceGroupManagerStatusAllInstancesConfigList
 is_stable: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -8261,7 +8261,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8269,7 +8269,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8339,7 +8339,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8421,7 +8421,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8430,7 +8430,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputRefer
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8638,7 +8638,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8659,7 +8659,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.property.hasStatefulConfig">has_stateful_config</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.property.hasStatefulConfig">has_stateful_config</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.property.perInstanceConfigs">per_instance_configs</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList">ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStateful">ComputeInstanceGroupManagerStatusStateful</a></code> | *No description.* |
 
@@ -8695,7 +8695,7 @@ fqn: str
 has_stateful_config: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -8736,7 +8736,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8744,7 +8744,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstance
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8814,7 +8814,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8896,7 +8896,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8905,7 +8905,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstance
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9113,7 +9113,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9134,7 +9134,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.property.allEffective">all_effective</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.property.allEffective">all_effective</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs">ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs</a></code> | *No description.* |
 
 ---
@@ -9169,7 +9169,7 @@ fqn: str
 all_effective: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -9200,7 +9200,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9208,7 +9208,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9278,7 +9278,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9360,7 +9360,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9369,7 +9369,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutput
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9577,7 +9577,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9598,7 +9598,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.property.isReached">is_reached</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.property.isReached">is_reached</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTarget">ComputeInstanceGroupManagerStatusVersionTarget</a></code> | *No description.* |
 
 ---
@@ -9633,7 +9633,7 @@ fqn: str
 is_reached: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -9663,14 +9663,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9865,7 +9865,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9910,7 +9910,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -10004,7 +10004,7 @@ update: str
 internal_value: IResolvable | ComputeInstanceGroupManagerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a>
 
 ---
 
@@ -10024,14 +10024,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10229,7 +10229,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10517,7 +10517,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10525,7 +10525,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10595,7 +10595,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10632,7 +10632,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]</code> | *No description.* |
 
 ---
 
@@ -10666,7 +10666,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeInstanceGroupManagerVersion]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>]
 
 ---
 
@@ -10688,7 +10688,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10697,7 +10697,7 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10908,7 +10908,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10978,7 +10978,7 @@ def reset_target_size() -> None
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.property.targetSizeInput">target_size_input</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSize">ComputeInstanceGroupManagerVersionTargetSize</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.property.instanceTemplate">instance_template</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a></code> | *No description.* |
 
 ---
 
@@ -11072,7 +11072,7 @@ name: str
 internal_value: IResolvable | ComputeInstanceGroupManagerVersion
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion">ComputeInstanceGroupManagerVersion</a>
 
 ---
 
@@ -11092,14 +11092,14 @@ computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11293,7 +11293,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataLossPreventionJobTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface DataLossPreventionJobTriggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the job trigger.
   *
@@ -69,7 +69,7 @@ export interface DataLossPreventionJobTriggerConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#triggers DataLossPreventionJobTrigger#triggers}
   */
-  readonly triggers: DataLossPreventionJobTriggerTriggers[] | cdktf.IResolvable;
+  readonly triggers: DataLossPreventionJobTriggerTriggers[] | cdktn.IResolvable;
 }
 export interface DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfig {
   /**
@@ -93,38 +93,38 @@ export interface DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransfor
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfigToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfigOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deidentify_template: cdktf.stringToTerraform(struct!.deidentifyTemplate),
-    image_redact_template: cdktf.stringToTerraform(struct!.imageRedactTemplate),
-    structured_deidentify_template: cdktf.stringToTerraform(struct!.structuredDeidentifyTemplate),
+    deidentify_template: cdktn.stringToTerraform(struct!.deidentifyTemplate),
+    image_redact_template: cdktn.stringToTerraform(struct!.imageRedactTemplate),
+    structured_deidentify_template: cdktn.stringToTerraform(struct!.structuredDeidentifyTemplate),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfigToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfigOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deidentify_template: {
-      value: cdktf.stringToHclTerraform(struct!.deidentifyTemplate),
+      value: cdktn.stringToHclTerraform(struct!.deidentifyTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_redact_template: {
-      value: cdktf.stringToHclTerraform(struct!.imageRedactTemplate),
+      value: cdktn.stringToHclTerraform(struct!.imageRedactTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     structured_deidentify_template: {
-      value: cdktf.stringToHclTerraform(struct!.structuredDeidentifyTemplate),
+      value: cdktn.stringToHclTerraform(struct!.structuredDeidentifyTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,14 +135,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfigOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -251,38 +251,38 @@ export interface DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransfor
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataset_id: cdktf.stringToTerraform(struct!.datasetId),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    table_id: cdktf.stringToTerraform(struct!.tableId),
+    dataset_id: cdktn.stringToTerraform(struct!.datasetId),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    table_id: cdktn.stringToTerraform(struct!.tableId),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataset_id: {
-      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      value: cdktn.stringToHclTerraform(struct!.datasetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_id: {
-      value: cdktf.stringToHclTerraform(struct!.tableId),
+      value: cdktn.stringToHclTerraform(struct!.tableId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -293,14 +293,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -389,8 +389,8 @@ export interface DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransfor
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -400,8 +400,8 @@ export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransform
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -417,14 +417,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -502,13 +502,13 @@ export interface DataLossPreventionJobTriggerInspectJobActionsDeidentify {
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentify): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_storage_output: cdktf.stringToTerraform(struct!.cloudStorageOutput),
-    file_types_to_transform: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileTypesToTransform),
+    cloud_storage_output: cdktn.stringToTerraform(struct!.cloudStorageOutput),
+    file_types_to_transform: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileTypesToTransform),
     transformation_config: dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfigToTerraform(struct!.transformationConfig),
     transformation_details_storage_config: dataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigToTerraform(struct!.transformationDetailsStorageConfig),
   }
@@ -516,19 +516,19 @@ export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyToTerrafo
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsDeidentifyOutputReference | DataLossPreventionJobTriggerInspectJobActionsDeidentify): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_storage_output: {
-      value: cdktf.stringToHclTerraform(struct!.cloudStorageOutput),
+      value: cdktn.stringToHclTerraform(struct!.cloudStorageOutput),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     file_types_to_transform: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileTypesToTransform),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileTypesToTransform),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -551,14 +551,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsDeidentifyToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsDeidentifyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -666,8 +666,8 @@ export interface DataLossPreventionJobTriggerInspectJobActionsJobNotificationEma
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsOutputReference | DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -676,8 +676,8 @@ export function dataLossPreventionJobTriggerInspectJobActionsJobNotificationEmai
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsOutputReference | DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -685,14 +685,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsJobNotificationEmai
   return attrs;
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -721,24 +721,24 @@ export interface DataLossPreventionJobTriggerInspectJobActionsPubSub {
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsPubSubToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference | DataLossPreventionJobTriggerInspectJobActionsPubSub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    topic: cdktf.stringToTerraform(struct!.topic),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsPubSubToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference | DataLossPreventionJobTriggerInspectJobActionsPubSub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -749,14 +749,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsPubSubToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -798,8 +798,8 @@ export interface DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToC
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference | DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -808,8 +808,8 @@ export function dataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCl
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference | DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -817,14 +817,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCl
   return attrs;
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -847,8 +847,8 @@ export interface DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCs
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference | DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -857,8 +857,8 @@ export function dataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsc
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference | DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -866,14 +866,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsc
   return attrs;
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -896,8 +896,8 @@ export interface DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriv
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference | DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -906,8 +906,8 @@ export function dataLossPreventionJobTriggerInspectJobActionsPublishToStackdrive
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference | DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -915,14 +915,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsPublishToStackdrive
   return attrs;
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -964,38 +964,38 @@ export interface DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutput
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference | DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataset_id: cdktf.stringToTerraform(struct!.datasetId),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    table_id: cdktf.stringToTerraform(struct!.tableId),
+    dataset_id: cdktn.stringToTerraform(struct!.datasetId),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    table_id: cdktn.stringToTerraform(struct!.tableId),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference | DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataset_id: {
-      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      value: cdktn.stringToHclTerraform(struct!.datasetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_id: {
-      value: cdktf.stringToHclTerraform(struct!.tableId),
+      value: cdktn.stringToHclTerraform(struct!.tableId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1006,14 +1006,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1115,25 +1115,25 @@ export interface DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutput
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference | DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    output_schema: cdktf.stringToTerraform(struct!.outputSchema),
+    output_schema: cdktn.stringToTerraform(struct!.outputSchema),
     table: dataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTableToTerraform(struct!.table),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference | DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     output_schema: {
-      value: cdktf.stringToHclTerraform(struct!.outputSchema),
+      value: cdktn.stringToHclTerraform(struct!.outputSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1150,14 +1150,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1227,8 +1227,8 @@ export interface DataLossPreventionJobTriggerInspectJobActionsSaveFindings {
 }
 
 export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference | DataLossPreventionJobTriggerInspectJobActionsSaveFindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1238,8 +1238,8 @@ export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsToTerra
 
 
 export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference | DataLossPreventionJobTriggerInspectJobActionsSaveFindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1255,14 +1255,14 @@ export function dataLossPreventionJobTriggerInspectJobActionsSaveFindingsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1345,9 +1345,9 @@ export interface DataLossPreventionJobTriggerInspectJobActions {
   readonly saveFindings?: DataLossPreventionJobTriggerInspectJobActionsSaveFindings;
 }
 
-export function dataLossPreventionJobTriggerInspectJobActionsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobActionsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1362,9 +1362,9 @@ export function dataLossPreventionJobTriggerInspectJobActionsToTerraform(struct?
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobActionsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobActionsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1416,9 +1416,9 @@ export function dataLossPreventionJobTriggerInspectJobActionsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1426,11 +1426,11 @@ export class DataLossPreventionJobTriggerInspectJobActionsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobActions | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1467,7 +1467,7 @@ export class DataLossPreventionJobTriggerInspectJobActionsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1479,7 +1479,7 @@ export class DataLossPreventionJobTriggerInspectJobActionsOutputReference extend
       this._publishToStackdriver.internalValue = undefined;
       this._saveFindings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1609,15 +1609,15 @@ export class DataLossPreventionJobTriggerInspectJobActionsOutputReference extend
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobActionsList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobActions[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobActionsList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1638,24 +1638,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePathToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePathOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePathToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePathOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1666,14 +1666,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePathOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1722,24 +1722,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    words: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.words),
+    words: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.words),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     words: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.words),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.words),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1750,14 +1750,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1811,8 +1811,8 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1823,8 +1823,8 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1846,14 +1846,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1926,24 +1926,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScoreToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    score: cdktf.stringToTerraform(struct!.score),
+    score: cdktn.stringToTerraform(struct!.score),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScoreToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     score: {
-      value: cdktf.stringToHclTerraform(struct!.score),
+      value: cdktn.stringToHclTerraform(struct!.score),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1954,14 +1954,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2022,32 +2022,32 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
     sensitivity_score: dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScoreToTerraform(struct!.sensitivityScore),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2064,14 +2064,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2170,31 +2170,31 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_indexes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.groupIndexes),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
+    group_indexes: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.groupIndexes),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_indexes: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.groupIndexes),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.groupIndexes),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2205,14 +2205,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2282,24 +2282,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    score: cdktf.stringToTerraform(struct!.score),
+    score: cdktn.stringToTerraform(struct!.score),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     score: {
-      value: cdktf.stringToHclTerraform(struct!.score),
+      value: cdktn.stringToHclTerraform(struct!.score),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2310,14 +2310,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2366,24 +2366,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredTypeToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredTypeToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2394,14 +2394,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredTypeOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2448,8 +2448,8 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateTypeToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2458,8 +2458,8 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateTypeToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2467,14 +2467,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return attrs;
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateTypeOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2545,14 +2545,14 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTy
   readonly surrogateType?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateType;
 }
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclusion_type: cdktf.stringToTerraform(struct!.exclusionType),
-    likelihood: cdktf.stringToTerraform(struct!.likelihood),
+    exclusion_type: cdktn.stringToTerraform(struct!.exclusionType),
+    likelihood: cdktn.stringToTerraform(struct!.likelihood),
     dictionary: dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryToTerraform(struct!.dictionary),
     info_type: dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeToTerraform(struct!.infoType),
     regex: dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegexToTerraform(struct!.regex),
@@ -2563,20 +2563,20 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclusion_type: {
-      value: cdktf.stringToHclTerraform(struct!.exclusionType),
+      value: cdktn.stringToHclTerraform(struct!.exclusionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     likelihood: {
-      value: cdktf.stringToHclTerraform(struct!.likelihood),
+      value: cdktn.stringToHclTerraform(struct!.likelihood),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2623,9 +2623,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTyp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2633,11 +2633,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2678,7 +2678,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2691,7 +2691,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesO
       this._storedType.internalValue = undefined;
       this._surrogateType.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2835,15 +2835,15 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesO
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2864,24 +2864,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSen
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScoreToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    score: cdktf.stringToTerraform(struct!.score),
+    score: cdktn.stringToTerraform(struct!.score),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScoreToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     score: {
-      value: cdktf.stringToHclTerraform(struct!.score),
+      value: cdktn.stringToHclTerraform(struct!.score),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2892,14 +2892,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSens
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScoreOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2959,33 +2959,33 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes {
   readonly sensitivityScore?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScore;
 }
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
     sensitivity_score: dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScoreToTerraform(struct!.sensitivityScore),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3002,9 +3002,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3012,11 +3012,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3037,7 +3037,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3045,7 +3045,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputR
       this._version = undefined;
       this._sensitivityScore.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3104,15 +3104,15 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesOutputR
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3133,24 +3133,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFin
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    score: cdktf.stringToTerraform(struct!.score),
+    score: cdktn.stringToTerraform(struct!.score),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     score: {
-      value: cdktf.stringToHclTerraform(struct!.score),
+      value: cdktn.stringToHclTerraform(struct!.score),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3161,14 +3161,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFind
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3229,32 +3229,32 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFin
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
     sensitivity_score: dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScoreToTerraform(struct!.sensitivityScore),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3271,14 +3271,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFind
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3375,26 +3375,26 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFin
   readonly infoType?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType;
 }
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_findings: cdktf.numberToTerraform(struct!.maxFindings),
+    max_findings: cdktn.numberToTerraform(struct!.maxFindings),
     info_type: dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeToTerraform(struct!.infoType),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_findings: {
-      value: cdktf.numberToHclTerraform(struct!.maxFindings),
+      value: cdktn.numberToHclTerraform(struct!.maxFindings),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3411,9 +3411,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFind
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3421,11 +3421,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFinding
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3442,14 +3442,14 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFinding
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._maxFindings = undefined;
       this._infoType.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3494,15 +3494,15 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFinding
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3531,42 +3531,42 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigLimits {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#max_findings_per_info_type DataLossPreventionJobTrigger#max_findings_per_info_type}
   */
-  readonly maxFindingsPerInfoType?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable;
+  readonly maxFindingsPerInfoType?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType[] | cdktn.IResolvable;
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_findings_per_item: cdktf.numberToTerraform(struct!.maxFindingsPerItem),
-    max_findings_per_request: cdktf.numberToTerraform(struct!.maxFindingsPerRequest),
-    max_findings_per_info_type: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToTerraform, true)(struct!.maxFindingsPerInfoType),
+    max_findings_per_item: cdktn.numberToTerraform(struct!.maxFindingsPerItem),
+    max_findings_per_request: cdktn.numberToTerraform(struct!.maxFindingsPerRequest),
+    max_findings_per_info_type: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToTerraform, true)(struct!.maxFindingsPerInfoType),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_findings_per_item: {
-      value: cdktf.numberToHclTerraform(struct!.maxFindingsPerItem),
+      value: cdktn.numberToHclTerraform(struct!.maxFindingsPerItem),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_findings_per_request: {
-      value: cdktf.numberToHclTerraform(struct!.maxFindingsPerRequest),
+      value: cdktn.numberToHclTerraform(struct!.maxFindingsPerRequest),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_findings_per_info_type: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToHclTerraform, true)(struct!.maxFindingsPerInfoType),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeToHclTerraform, true)(struct!.maxFindingsPerInfoType),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeList",
@@ -3577,14 +3577,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigLimitsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3658,7 +3658,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutputRefe
   public get maxFindingsPerInfoType() {
     return this._maxFindingsPerInfoType;
   }
-  public putMaxFindingsPerInfoType(value: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable) {
+  public putMaxFindingsPerInfoType(value: DataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType[] | cdktn.IResolvable) {
     this._maxFindingsPerInfoType.internalValue = value;
   }
   public resetMaxFindingsPerInfoType() {
@@ -3679,24 +3679,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoT
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    score: cdktf.stringToTerraform(struct!.score),
+    score: cdktn.stringToTerraform(struct!.score),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     score: {
-      value: cdktf.stringToHclTerraform(struct!.score),
+      value: cdktn.stringToHclTerraform(struct!.score),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3707,14 +3707,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3774,33 +3774,33 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoT
   readonly sensitivityScore?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore;
 }
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
     sensitivity_score: dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScoreToTerraform(struct!.sensitivityScore),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3817,9 +3817,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3827,11 +3827,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3852,7 +3852,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3860,7 +3860,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes
       this._version = undefined;
       this._sensitivityScore.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3919,15 +3919,15 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3948,24 +3948,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3976,14 +3976,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4032,24 +4032,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    words: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.words),
+    words: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.words),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     words: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.words),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.words),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4060,14 +4060,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4121,8 +4121,8 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4133,8 +4133,8 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4156,14 +4156,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4244,31 +4244,31 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_indexes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.groupIndexes),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
+    group_indexes: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.groupIndexes),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_indexes: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.groupIndexes),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.groupIndexes),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4279,14 +4279,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4365,31 +4365,31 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    window_after: cdktf.numberToTerraform(struct!.windowAfter),
-    window_before: cdktf.numberToTerraform(struct!.windowBefore),
+    window_after: cdktn.numberToTerraform(struct!.windowAfter),
+    window_before: cdktn.numberToTerraform(struct!.windowBefore),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     window_after: {
-      value: cdktf.numberToHclTerraform(struct!.windowAfter),
+      value: cdktn.numberToHclTerraform(struct!.windowAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     window_before: {
-      value: cdktf.numberToHclTerraform(struct!.windowBefore),
+      value: cdktn.numberToHclTerraform(struct!.windowBefore),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4400,14 +4400,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4486,8 +4486,8 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4498,8 +4498,8 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4521,14 +4521,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4601,24 +4601,24 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    score: cdktf.stringToTerraform(struct!.score),
+    score: cdktn.stringToTerraform(struct!.score),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     score: {
-      value: cdktf.stringToHclTerraform(struct!.score),
+      value: cdktn.stringToHclTerraform(struct!.score),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4629,14 +4629,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4696,33 +4696,33 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
   readonly sensitivityScore?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore;
 }
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
     sensitivity_score: dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScoreToTerraform(struct!.sensitivityScore),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4739,9 +4739,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4749,11 +4749,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExcl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4774,7 +4774,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExcl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4782,7 +4782,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExcl
       this._version = undefined;
       this._sensitivityScore.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4841,15 +4841,15 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExcl
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4866,28 +4866,28 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#info_types DataLossPreventionJobTrigger#info_types}
   */
-  readonly infoTypes: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable;
+  readonly infoTypes: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktn.IResolvable;
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    info_types: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToTerraform, true)(struct!.infoTypes),
+    info_types: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToTerraform, true)(struct!.infoTypes),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     info_types: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToHclTerraform, true)(struct!.infoTypes),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToHclTerraform, true)(struct!.infoTypes),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList",
@@ -4898,14 +4898,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4935,7 +4935,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExcl
   public get infoTypes() {
     return this._infoTypes;
   }
-  public putInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable) {
+  public putInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktn.IResolvable) {
     this._infoTypes.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4960,31 +4960,31 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegexToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_indexes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.groupIndexes),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
+    group_indexes: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.groupIndexes),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegexToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_indexes: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.groupIndexes),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.groupIndexes),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4995,14 +4995,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegexOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5096,12 +5096,12 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    matching_type: cdktf.stringToTerraform(struct!.matchingType),
+    matching_type: cdktn.stringToTerraform(struct!.matchingType),
     dictionary: dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryToTerraform(struct!.dictionary),
     exclude_by_hotword: dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordToTerraform(struct!.excludeByHotword),
     exclude_info_types: dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesToTerraform(struct!.excludeInfoTypes),
@@ -5111,13 +5111,13 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     matching_type: {
-      value: cdktf.stringToHclTerraform(struct!.matchingType),
+      value: cdktn.stringToHclTerraform(struct!.matchingType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5152,14 +5152,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5303,31 +5303,31 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_indexes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.groupIndexes),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
+    group_indexes: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.groupIndexes),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_indexes: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.groupIndexes),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.groupIndexes),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5338,14 +5338,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5429,31 +5429,31 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fixed_likelihood: cdktf.stringToTerraform(struct!.fixedLikelihood),
-    relative_likelihood: cdktf.numberToTerraform(struct!.relativeLikelihood),
+    fixed_likelihood: cdktn.stringToTerraform(struct!.fixedLikelihood),
+    relative_likelihood: cdktn.numberToTerraform(struct!.relativeLikelihood),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fixed_likelihood: {
-      value: cdktf.stringToHclTerraform(struct!.fixedLikelihood),
+      value: cdktn.stringToHclTerraform(struct!.fixedLikelihood),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     relative_likelihood: {
-      value: cdktf.numberToHclTerraform(struct!.relativeLikelihood),
+      value: cdktn.numberToHclTerraform(struct!.relativeLikelihood),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5464,14 +5464,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5550,31 +5550,31 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximityToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximityOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    window_after: cdktf.numberToTerraform(struct!.windowAfter),
-    window_before: cdktf.numberToTerraform(struct!.windowBefore),
+    window_after: cdktn.numberToTerraform(struct!.windowAfter),
+    window_before: cdktn.numberToTerraform(struct!.windowBefore),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximityToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximityOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     window_after: {
-      value: cdktf.numberToHclTerraform(struct!.windowAfter),
+      value: cdktn.numberToHclTerraform(struct!.windowAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     window_before: {
-      value: cdktf.numberToHclTerraform(struct!.windowBefore),
+      value: cdktn.numberToHclTerraform(struct!.windowBefore),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5585,14 +5585,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximityOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5677,8 +5677,8 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5690,8 +5690,8 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesH
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5719,14 +5719,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5826,9 +5826,9 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules
   readonly hotwordRule?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRule;
 }
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -5838,9 +5838,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesT
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -5862,9 +5862,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5872,11 +5872,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5893,14 +5893,14 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._exclusionRule.internalValue = undefined;
       this._hotwordRule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5945,15 +5945,15 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesOutp
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5970,41 +5970,41 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#info_types DataLossPreventionJobTrigger#info_types}
   */
-  readonly infoTypes?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes[] | cdktf.IResolvable;
+  readonly infoTypes?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes[] | cdktn.IResolvable;
   /**
   * rules block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#rules DataLossPreventionJobTrigger#rules}
   */
-  readonly rules: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules[] | cdktf.IResolvable;
+  readonly rules: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules[] | cdktn.IResolvable;
 }
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    info_types: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToTerraform, true)(struct!.infoTypes),
-    rules: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToTerraform, true)(struct!.rules),
+    info_types: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToTerraform, true)(struct!.infoTypes),
+    rules: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToTerraform, true)(struct!.rules),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     info_types: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToHclTerraform, true)(struct!.infoTypes),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesToHclTerraform, true)(struct!.infoTypes),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesList",
     },
     rules: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToHclTerraform, true)(struct!.rules),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesToHclTerraform, true)(struct!.rules),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesList",
@@ -6015,9 +6015,9 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6025,11 +6025,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6046,14 +6046,14 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._infoTypes.internalValue = undefined;
       this._rules.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6070,7 +6070,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputRef
   public get infoTypes() {
     return this._infoTypes;
   }
-  public putInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes[] | cdktf.IResolvable) {
+  public putInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes[] | cdktn.IResolvable) {
     this._infoTypes.internalValue = value;
   }
   public resetInfoTypes() {
@@ -6086,7 +6086,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputRef
   public get rules() {
     return this._rules;
   }
-  public putRules(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules[] | cdktf.IResolvable) {
+  public putRules(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -6095,15 +6095,15 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetOutputRef
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6120,13 +6120,13 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#exclude_info_types DataLossPreventionJobTrigger#exclude_info_types}
   */
-  readonly excludeInfoTypes?: boolean | cdktf.IResolvable;
+  readonly excludeInfoTypes?: boolean | cdktn.IResolvable;
   /**
   * When true, a contextual quote from the data that triggered a finding is included in the response.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#include_quote DataLossPreventionJobTrigger#include_quote}
   */
-  readonly includeQuote?: boolean | cdktf.IResolvable;
+  readonly includeQuote?: boolean | cdktn.IResolvable;
   /**
   * Only returns findings equal or above this threshold. See https://cloud.google.com/dlp/docs/likelihood for more info Default value: "POSSIBLE" Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
   *
@@ -6138,13 +6138,13 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#custom_info_types DataLossPreventionJobTrigger#custom_info_types}
   */
-  readonly customInfoTypes?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes[] | cdktf.IResolvable;
+  readonly customInfoTypes?: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes[] | cdktn.IResolvable;
   /**
   * info_types block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#info_types DataLossPreventionJobTrigger#info_types}
   */
-  readonly infoTypes?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes[] | cdktf.IResolvable;
+  readonly infoTypes?: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes[] | cdktn.IResolvable;
   /**
   * limits block
   *
@@ -6156,58 +6156,58 @@ export interface DataLossPreventionJobTriggerInspectJobInspectConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#rule_set DataLossPreventionJobTrigger#rule_set}
   */
-  readonly ruleSet?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet[] | cdktf.IResolvable;
+  readonly ruleSet?: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet[] | cdktn.IResolvable;
 }
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigToTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_info_types: cdktf.booleanToTerraform(struct!.excludeInfoTypes),
-    include_quote: cdktf.booleanToTerraform(struct!.includeQuote),
-    min_likelihood: cdktf.stringToTerraform(struct!.minLikelihood),
-    custom_info_types: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToTerraform, true)(struct!.customInfoTypes),
-    info_types: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToTerraform, true)(struct!.infoTypes),
+    exclude_info_types: cdktn.booleanToTerraform(struct!.excludeInfoTypes),
+    include_quote: cdktn.booleanToTerraform(struct!.includeQuote),
+    min_likelihood: cdktn.stringToTerraform(struct!.minLikelihood),
+    custom_info_types: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToTerraform, true)(struct!.customInfoTypes),
+    info_types: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToTerraform, true)(struct!.infoTypes),
     limits: dataLossPreventionJobTriggerInspectJobInspectConfigLimitsToTerraform(struct!.limits),
-    rule_set: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToTerraform, true)(struct!.ruleSet),
+    rule_set: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToTerraform, true)(struct!.ruleSet),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobInspectConfigToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference | DataLossPreventionJobTriggerInspectJobInspectConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_info_types: {
-      value: cdktf.booleanToHclTerraform(struct!.excludeInfoTypes),
+      value: cdktn.booleanToHclTerraform(struct!.excludeInfoTypes),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_quote: {
-      value: cdktf.booleanToHclTerraform(struct!.includeQuote),
+      value: cdktn.booleanToHclTerraform(struct!.includeQuote),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     min_likelihood: {
-      value: cdktf.stringToHclTerraform(struct!.minLikelihood),
+      value: cdktn.stringToHclTerraform(struct!.minLikelihood),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_info_types: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToHclTerraform, true)(struct!.customInfoTypes),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesToHclTerraform, true)(struct!.customInfoTypes),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesList",
     },
     info_types: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToHclTerraform, true)(struct!.infoTypes),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesToHclTerraform, true)(struct!.infoTypes),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesList",
@@ -6219,7 +6219,7 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigToHclTerrafor
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigLimitsList",
     },
     rule_set: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToHclTerraform, true)(struct!.ruleSet),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobInspectConfigRuleSetToHclTerraform, true)(struct!.ruleSet),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobInspectConfigRuleSetList",
@@ -6230,14 +6230,14 @@ export function dataLossPreventionJobTriggerInspectJobInspectConfigToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6299,11 +6299,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference 
   }
 
   // exclude_info_types - computed: false, optional: true, required: false
-  private _excludeInfoTypes?: boolean | cdktf.IResolvable; 
+  private _excludeInfoTypes?: boolean | cdktn.IResolvable; 
   public get excludeInfoTypes() {
     return this.getBooleanAttribute('exclude_info_types');
   }
-  public set excludeInfoTypes(value: boolean | cdktf.IResolvable) {
+  public set excludeInfoTypes(value: boolean | cdktn.IResolvable) {
     this._excludeInfoTypes = value;
   }
   public resetExcludeInfoTypes() {
@@ -6315,11 +6315,11 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference 
   }
 
   // include_quote - computed: false, optional: true, required: false
-  private _includeQuote?: boolean | cdktf.IResolvable; 
+  private _includeQuote?: boolean | cdktn.IResolvable; 
   public get includeQuote() {
     return this.getBooleanAttribute('include_quote');
   }
-  public set includeQuote(value: boolean | cdktf.IResolvable) {
+  public set includeQuote(value: boolean | cdktn.IResolvable) {
     this._includeQuote = value;
   }
   public resetIncludeQuote() {
@@ -6351,7 +6351,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference 
   public get customInfoTypes() {
     return this._customInfoTypes;
   }
-  public putCustomInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes[] | cdktf.IResolvable) {
+  public putCustomInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes[] | cdktn.IResolvable) {
     this._customInfoTypes.internalValue = value;
   }
   public resetCustomInfoTypes() {
@@ -6367,7 +6367,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference 
   public get infoTypes() {
     return this._infoTypes;
   }
-  public putInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes[] | cdktf.IResolvable) {
+  public putInfoTypes(value: DataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes[] | cdktn.IResolvable) {
     this._infoTypes.internalValue = value;
   }
   public resetInfoTypes() {
@@ -6399,7 +6399,7 @@ export class DataLossPreventionJobTriggerInspectJobInspectConfigOutputReference 
   public get ruleSet() {
     return this._ruleSet;
   }
-  public putRuleSet(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet[] | cdktf.IResolvable) {
+  public putRuleSet(value: DataLossPreventionJobTriggerInspectJobInspectConfigRuleSet[] | cdktn.IResolvable) {
     this._ruleSet.internalValue = value;
   }
   public resetRuleSet() {
@@ -6419,25 +6419,25 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOpti
   readonly name: string;
 }
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6448,9 +6448,9 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6458,11 +6458,11 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsE
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6475,13 +6475,13 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsE
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6506,15 +6506,15 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsE
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6534,25 +6534,25 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOpti
   readonly name: string;
 }
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6563,9 +6563,9 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6573,11 +6573,11 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6590,13 +6590,13 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsI
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6621,15 +6621,15 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsI
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6649,25 +6649,25 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOpti
   readonly name: string;
 }
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6678,9 +6678,9 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6688,11 +6688,11 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6705,13 +6705,13 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsI
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6736,15 +6736,15 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsI
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6777,38 +6777,38 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOpti
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataset_id: cdktf.stringToTerraform(struct!.datasetId),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    table_id: cdktf.stringToTerraform(struct!.tableId),
+    dataset_id: cdktn.stringToTerraform(struct!.datasetId),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    table_id: cdktn.stringToTerraform(struct!.tableId),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataset_id: {
-      value: cdktf.stringToHclTerraform(struct!.datasetId),
+      value: cdktn.stringToHclTerraform(struct!.datasetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_id: {
-      value: cdktf.stringToHclTerraform(struct!.tableId),
+      value: cdktn.stringToHclTerraform(struct!.tableId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6819,14 +6819,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6932,19 +6932,19 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOpti
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#excluded_fields DataLossPreventionJobTrigger#excluded_fields}
   */
-  readonly excludedFields?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields[] | cdktf.IResolvable;
+  readonly excludedFields?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields[] | cdktn.IResolvable;
   /**
   * identifying_fields block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#identifying_fields DataLossPreventionJobTrigger#identifying_fields}
   */
-  readonly identifyingFields?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktf.IResolvable;
+  readonly identifyingFields?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktn.IResolvable;
   /**
   * included_fields block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#included_fields DataLossPreventionJobTrigger#included_fields}
   */
-  readonly includedFields?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields[] | cdktf.IResolvable;
+  readonly includedFields?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields[] | cdktn.IResolvable;
   /**
   * table_reference block
   *
@@ -6954,60 +6954,60 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOpti
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rows_limit: cdktf.numberToTerraform(struct!.rowsLimit),
-    rows_limit_percent: cdktf.numberToTerraform(struct!.rowsLimitPercent),
-    sample_method: cdktf.stringToTerraform(struct!.sampleMethod),
-    excluded_fields: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToTerraform, true)(struct!.excludedFields),
-    identifying_fields: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToTerraform, true)(struct!.identifyingFields),
-    included_fields: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToTerraform, true)(struct!.includedFields),
+    rows_limit: cdktn.numberToTerraform(struct!.rowsLimit),
+    rows_limit_percent: cdktn.numberToTerraform(struct!.rowsLimitPercent),
+    sample_method: cdktn.stringToTerraform(struct!.sampleMethod),
+    excluded_fields: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToTerraform, true)(struct!.excludedFields),
+    identifying_fields: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToTerraform, true)(struct!.identifyingFields),
+    included_fields: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToTerraform, true)(struct!.includedFields),
     table_reference: dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceToTerraform(struct!.tableReference),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rows_limit: {
-      value: cdktf.numberToHclTerraform(struct!.rowsLimit),
+      value: cdktn.numberToHclTerraform(struct!.rowsLimit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rows_limit_percent: {
-      value: cdktf.numberToHclTerraform(struct!.rowsLimitPercent),
+      value: cdktn.numberToHclTerraform(struct!.rowsLimitPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sample_method: {
-      value: cdktf.stringToHclTerraform(struct!.sampleMethod),
+      value: cdktn.stringToHclTerraform(struct!.sampleMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     excluded_fields: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToHclTerraform, true)(struct!.excludedFields),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsToHclTerraform, true)(struct!.excludedFields),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFieldsList",
     },
     identifying_fields: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToHclTerraform, true)(struct!.identifyingFields),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToHclTerraform, true)(struct!.identifyingFields),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList",
     },
     included_fields: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToHclTerraform, true)(struct!.includedFields),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsToHclTerraform, true)(struct!.includedFields),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFieldsList",
@@ -7024,14 +7024,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7145,7 +7145,7 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsO
   public get excludedFields() {
     return this._excludedFields;
   }
-  public putExcludedFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields[] | cdktf.IResolvable) {
+  public putExcludedFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields[] | cdktn.IResolvable) {
     this._excludedFields.internalValue = value;
   }
   public resetExcludedFields() {
@@ -7161,7 +7161,7 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsO
   public get identifyingFields() {
     return this._identifyingFields;
   }
-  public putIdentifyingFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktf.IResolvable) {
+  public putIdentifyingFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktn.IResolvable) {
     this._identifyingFields.internalValue = value;
   }
   public resetIdentifyingFields() {
@@ -7177,7 +7177,7 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsO
   public get includedFields() {
     return this._includedFields;
   }
-  public putIncludedFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields[] | cdktf.IResolvable) {
+  public putIncludedFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields[] | cdktn.IResolvable) {
     this._includedFields.internalValue = value;
   }
   public resetIncludedFields() {
@@ -7227,38 +7227,38 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorage
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    exclude_regex: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeRegex),
-    include_regex: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeRegex),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    exclude_regex: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeRegex),
+    include_regex: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeRegex),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclude_regex: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeRegex),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeRegex),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include_regex: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeRegex),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeRegex),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -7269,14 +7269,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7379,25 +7379,25 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorage
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    url: cdktf.stringToTerraform(struct!.url),
+    url: cdktn.stringToTerraform(struct!.url),
     regex_file_set: dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSetToTerraform(struct!.regexFileSet),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7414,14 +7414,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7530,53 +7530,53 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorage
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bytes_limit_per_file: cdktf.numberToTerraform(struct!.bytesLimitPerFile),
-    bytes_limit_per_file_percent: cdktf.numberToTerraform(struct!.bytesLimitPerFilePercent),
-    file_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileTypes),
-    files_limit_percent: cdktf.numberToTerraform(struct!.filesLimitPercent),
-    sample_method: cdktf.stringToTerraform(struct!.sampleMethod),
+    bytes_limit_per_file: cdktn.numberToTerraform(struct!.bytesLimitPerFile),
+    bytes_limit_per_file_percent: cdktn.numberToTerraform(struct!.bytesLimitPerFilePercent),
+    file_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileTypes),
+    files_limit_percent: cdktn.numberToTerraform(struct!.filesLimitPercent),
+    sample_method: cdktn.stringToTerraform(struct!.sampleMethod),
     file_set: dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetToTerraform(struct!.fileSet),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bytes_limit_per_file: {
-      value: cdktf.numberToHclTerraform(struct!.bytesLimitPerFile),
+      value: cdktn.numberToHclTerraform(struct!.bytesLimitPerFile),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     bytes_limit_per_file_percent: {
-      value: cdktf.numberToHclTerraform(struct!.bytesLimitPerFilePercent),
+      value: cdktn.numberToHclTerraform(struct!.bytesLimitPerFilePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     file_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     files_limit_percent: {
-      value: cdktf.numberToHclTerraform(struct!.filesLimitPercent),
+      value: cdktn.numberToHclTerraform(struct!.filesLimitPercent),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sample_method: {
-      value: cdktf.stringToHclTerraform(struct!.sampleMethod),
+      value: cdktn.stringToHclTerraform(struct!.sampleMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7593,14 +7593,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7758,24 +7758,24 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpt
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKind): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKind): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7786,14 +7786,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKindOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7847,31 +7847,31 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpt
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    namespace_id: cdktn.stringToTerraform(struct!.namespaceId),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace_id: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      value: cdktn.stringToHclTerraform(struct!.namespaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7882,14 +7882,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7965,8 +7965,8 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpt
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7977,8 +7977,8 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpti
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -8000,14 +8000,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOpti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8073,25 +8073,25 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigHybridOption
   readonly name: string;
 }
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8102,9 +8102,9 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8112,11 +8112,11 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTab
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8129,13 +8129,13 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTab
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8160,15 +8160,15 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTab
   }
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8185,28 +8185,28 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigHybridOption
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#identifying_fields DataLossPreventionJobTrigger#identifying_fields}
   */
-  readonly identifyingFields?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields[] | cdktf.IResolvable;
+  readonly identifyingFields?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields[] | cdktn.IResolvable;
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identifying_fields: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToTerraform, true)(struct!.identifyingFields),
+    identifying_fields: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToTerraform, true)(struct!.identifyingFields),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identifying_fields: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToHclTerraform, true)(struct!.identifyingFields),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsToHclTerraform, true)(struct!.identifyingFields),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFieldsList",
@@ -8217,14 +8217,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8254,7 +8254,7 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTab
   public get identifyingFields() {
     return this._identifyingFields;
   }
-  public putIdentifyingFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields[] | cdktf.IResolvable) {
+  public putIdentifyingFields(value: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields[] | cdktn.IResolvable) {
     this._identifyingFields.internalValue = value;
   }
   public resetIdentifyingFields() {
@@ -8308,39 +8308,39 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigHybridOption
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    required_finding_label_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requiredFindingLabelKeys),
+    description: cdktn.stringToTerraform(struct!.description),
+    labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.labels),
+    required_finding_label_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requiredFindingLabelKeys),
     table_options: dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsToTerraform(struct!.tableOptions),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.labels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.labels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     required_finding_label_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requiredFindingLabelKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requiredFindingLabelKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8357,14 +8357,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8488,24 +8488,24 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConf
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampField): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampField): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8516,14 +8516,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8570,7 +8570,7 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#enable_auto_population_of_timespan_config DataLossPreventionJobTrigger#enable_auto_population_of_timespan_config}
   */
-  readonly enableAutoPopulationOfTimespanConfig?: boolean | cdktf.IResolvable;
+  readonly enableAutoPopulationOfTimespanConfig?: boolean | cdktn.IResolvable;
   /**
   * Exclude files, tables, or rows newer than this value. If not set, no upper time limit is applied.
   *
@@ -8592,39 +8592,39 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConf
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_auto_population_of_timespan_config: cdktf.booleanToTerraform(struct!.enableAutoPopulationOfTimespanConfig),
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    enable_auto_population_of_timespan_config: cdktn.booleanToTerraform(struct!.enableAutoPopulationOfTimespanConfig),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
     timestamp_field: dataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampFieldToTerraform(struct!.timestampField),
   }
 }
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_auto_population_of_timespan_config: {
-      value: cdktf.booleanToHclTerraform(struct!.enableAutoPopulationOfTimespanConfig),
+      value: cdktn.booleanToHclTerraform(struct!.enableAutoPopulationOfTimespanConfig),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8641,14 +8641,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8692,11 +8692,11 @@ export class DataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOu
   }
 
   // enable_auto_population_of_timespan_config - computed: false, optional: true, required: false
-  private _enableAutoPopulationOfTimespanConfig?: boolean | cdktf.IResolvable; 
+  private _enableAutoPopulationOfTimespanConfig?: boolean | cdktn.IResolvable; 
   public get enableAutoPopulationOfTimespanConfig() {
     return this.getBooleanAttribute('enable_auto_population_of_timespan_config');
   }
-  public set enableAutoPopulationOfTimespanConfig(value: boolean | cdktf.IResolvable) {
+  public set enableAutoPopulationOfTimespanConfig(value: boolean | cdktn.IResolvable) {
     this._enableAutoPopulationOfTimespanConfig = value;
   }
   public resetEnableAutoPopulationOfTimespanConfig() {
@@ -8789,8 +8789,8 @@ export interface DataLossPreventionJobTriggerInspectJobStorageConfig {
 }
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigToTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -8804,8 +8804,8 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigToTerraform(s
 
 
 export function dataLossPreventionJobTriggerInspectJobStorageConfigToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference | DataLossPreventionJobTriggerInspectJobStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -8845,14 +8845,14 @@ export function dataLossPreventionJobTriggerInspectJobStorageConfigToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobStorageConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8993,7 +8993,7 @@ export interface DataLossPreventionJobTriggerInspectJob {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#actions DataLossPreventionJobTrigger#actions}
   */
-  readonly actions?: DataLossPreventionJobTriggerInspectJobActions[] | cdktf.IResolvable;
+  readonly actions?: DataLossPreventionJobTriggerInspectJobActions[] | cdktn.IResolvable;
   /**
   * inspect_config block
   *
@@ -9009,13 +9009,13 @@ export interface DataLossPreventionJobTriggerInspectJob {
 }
 
 export function dataLossPreventionJobTriggerInspectJobToTerraform(struct?: DataLossPreventionJobTriggerInspectJobOutputReference | DataLossPreventionJobTriggerInspectJob): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inspect_template_name: cdktf.stringToTerraform(struct!.inspectTemplateName),
-    actions: cdktf.listMapper(dataLossPreventionJobTriggerInspectJobActionsToTerraform, true)(struct!.actions),
+    inspect_template_name: cdktn.stringToTerraform(struct!.inspectTemplateName),
+    actions: cdktn.listMapper(dataLossPreventionJobTriggerInspectJobActionsToTerraform, true)(struct!.actions),
     inspect_config: dataLossPreventionJobTriggerInspectJobInspectConfigToTerraform(struct!.inspectConfig),
     storage_config: dataLossPreventionJobTriggerInspectJobStorageConfigToTerraform(struct!.storageConfig),
   }
@@ -9023,19 +9023,19 @@ export function dataLossPreventionJobTriggerInspectJobToTerraform(struct?: DataL
 
 
 export function dataLossPreventionJobTriggerInspectJobToHclTerraform(struct?: DataLossPreventionJobTriggerInspectJobOutputReference | DataLossPreventionJobTriggerInspectJob): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inspect_template_name: {
-      value: cdktf.stringToHclTerraform(struct!.inspectTemplateName),
+      value: cdktn.stringToHclTerraform(struct!.inspectTemplateName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     actions: {
-      value: cdktf.listMapperHcl(dataLossPreventionJobTriggerInspectJobActionsToHclTerraform, true)(struct!.actions),
+      value: cdktn.listMapperHcl(dataLossPreventionJobTriggerInspectJobActionsToHclTerraform, true)(struct!.actions),
       isBlock: true,
       type: "list",
       storageClassType: "DataLossPreventionJobTriggerInspectJobActionsList",
@@ -9058,14 +9058,14 @@ export function dataLossPreventionJobTriggerInspectJobToHclTerraform(struct?: Da
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerInspectJobOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerInspectJobOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9129,7 +9129,7 @@ export class DataLossPreventionJobTriggerInspectJobOutputReference extends cdktf
   public get actions() {
     return this._actions;
   }
-  public putActions(value: DataLossPreventionJobTriggerInspectJobActions[] | cdktf.IResolvable) {
+  public putActions(value: DataLossPreventionJobTriggerInspectJobActions[] | cdktn.IResolvable) {
     this._actions.internalValue = value;
   }
   public resetActions() {
@@ -9184,39 +9184,39 @@ export interface DataLossPreventionJobTriggerTimeouts {
   readonly update?: string;
 }
 
-export function dataLossPreventionJobTriggerTimeoutsToTerraform(struct?: DataLossPreventionJobTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerTimeoutsToTerraform(struct?: DataLossPreventionJobTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataLossPreventionJobTriggerTimeoutsToHclTerraform(struct?: DataLossPreventionJobTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerTimeoutsToHclTerraform(struct?: DataLossPreventionJobTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9227,19 +9227,19 @@ export function dataLossPreventionJobTriggerTimeoutsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9260,7 +9260,7 @@ export class DataLossPreventionJobTriggerTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9268,7 +9268,7 @@ export class DataLossPreventionJobTriggerTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9333,8 +9333,8 @@ export interface DataLossPreventionJobTriggerTriggersManual {
 }
 
 export function dataLossPreventionJobTriggerTriggersManualToTerraform(struct?: DataLossPreventionJobTriggerTriggersManualOutputReference | DataLossPreventionJobTriggerTriggersManual): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -9343,8 +9343,8 @@ export function dataLossPreventionJobTriggerTriggersManualToTerraform(struct?: D
 
 
 export function dataLossPreventionJobTriggerTriggersManualToHclTerraform(struct?: DataLossPreventionJobTriggerTriggersManualOutputReference | DataLossPreventionJobTriggerTriggersManual): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -9352,14 +9352,14 @@ export function dataLossPreventionJobTriggerTriggersManualToHclTerraform(struct?
   return attrs;
 }
 
-export class DataLossPreventionJobTriggerTriggersManualOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerTriggersManualOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9394,24 +9394,24 @@ export interface DataLossPreventionJobTriggerTriggersSchedule {
 }
 
 export function dataLossPreventionJobTriggerTriggersScheduleToTerraform(struct?: DataLossPreventionJobTriggerTriggersScheduleOutputReference | DataLossPreventionJobTriggerTriggersSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recurrence_period_duration: cdktf.stringToTerraform(struct!.recurrencePeriodDuration),
+    recurrence_period_duration: cdktn.stringToTerraform(struct!.recurrencePeriodDuration),
   }
 }
 
 
 export function dataLossPreventionJobTriggerTriggersScheduleToHclTerraform(struct?: DataLossPreventionJobTriggerTriggersScheduleOutputReference | DataLossPreventionJobTriggerTriggersSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     recurrence_period_duration: {
-      value: cdktf.stringToHclTerraform(struct!.recurrencePeriodDuration),
+      value: cdktn.stringToHclTerraform(struct!.recurrencePeriodDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9422,14 +9422,14 @@ export function dataLossPreventionJobTriggerTriggersScheduleToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerTriggersScheduleOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerTriggersScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9485,9 +9485,9 @@ export interface DataLossPreventionJobTriggerTriggers {
   readonly schedule?: DataLossPreventionJobTriggerTriggersSchedule;
 }
 
-export function dataLossPreventionJobTriggerTriggersToTerraform(struct?: DataLossPreventionJobTriggerTriggers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerTriggersToTerraform(struct?: DataLossPreventionJobTriggerTriggers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -9497,9 +9497,9 @@ export function dataLossPreventionJobTriggerTriggersToTerraform(struct?: DataLos
 }
 
 
-export function dataLossPreventionJobTriggerTriggersToHclTerraform(struct?: DataLossPreventionJobTriggerTriggers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataLossPreventionJobTriggerTriggersToHclTerraform(struct?: DataLossPreventionJobTriggerTriggers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -9521,9 +9521,9 @@ export function dataLossPreventionJobTriggerTriggersToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataLossPreventionJobTriggerTriggersOutputReference extends cdktf.ComplexObject {
+export class DataLossPreventionJobTriggerTriggersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9531,11 +9531,11 @@ export class DataLossPreventionJobTriggerTriggersOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataLossPreventionJobTriggerTriggers | cdktf.IResolvable | undefined {
+  public get internalValue(): DataLossPreventionJobTriggerTriggers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9552,14 +9552,14 @@ export class DataLossPreventionJobTriggerTriggersOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataLossPreventionJobTriggerTriggers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataLossPreventionJobTriggerTriggers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._manual.internalValue = undefined;
       this._schedule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9604,15 +9604,15 @@ export class DataLossPreventionJobTriggerTriggersOutputReference extends cdktf.C
   }
 }
 
-export class DataLossPreventionJobTriggerTriggersList extends cdktf.ComplexList {
-  public internalValue? : DataLossPreventionJobTriggerTriggers[] | cdktf.IResolvable
+export class DataLossPreventionJobTriggerTriggersList extends cdktn.ComplexList {
+  public internalValue? : DataLossPreventionJobTriggerTriggers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9627,7 +9627,7 @@ export class DataLossPreventionJobTriggerTriggersList extends cdktf.ComplexList 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger google_data_loss_prevention_job_trigger}
 */
-export class DataLossPreventionJobTrigger extends cdktf.TerraformResource {
+export class DataLossPreventionJobTrigger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -9638,14 +9638,14 @@ export class DataLossPreventionJobTrigger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataLossPreventionJobTrigger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataLossPreventionJobTrigger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataLossPreventionJobTrigger to import
   * @param importFromId The id of the existing DataLossPreventionJobTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_loss_prevention_job_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataLossPreventionJobTrigger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_data_loss_prevention_job_trigger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_data_loss_prevention_job_trigger", importId: importFromId, provider });
       }
 
   // ===========
@@ -9840,7 +9840,7 @@ export class DataLossPreventionJobTrigger extends cdktf.TerraformResource {
   public get triggers() {
     return this._triggers;
   }
-  public putTriggers(value: DataLossPreventionJobTriggerTriggers[] | cdktf.IResolvable) {
+  public putTriggers(value: DataLossPreventionJobTriggerTriggers[] | cdktn.IResolvable) {
     this._triggers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -9854,52 +9854,52 @@ export class DataLossPreventionJobTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      status: cdktf.stringToTerraform(this._status),
-      trigger_id: cdktf.stringToTerraform(this._triggerId),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      status: cdktn.stringToTerraform(this._status),
+      trigger_id: cdktn.stringToTerraform(this._triggerId),
       inspect_job: dataLossPreventionJobTriggerInspectJobToTerraform(this._inspectJob.internalValue),
       timeouts: dataLossPreventionJobTriggerTimeoutsToTerraform(this._timeouts.internalValue),
-      triggers: cdktf.listMapper(dataLossPreventionJobTriggerTriggersToTerraform, true)(this._triggers.internalValue),
+      triggers: cdktn.listMapper(dataLossPreventionJobTriggerTriggersToTerraform, true)(this._triggers.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trigger_id: {
-        value: cdktf.stringToHclTerraform(this._triggerId),
+        value: cdktn.stringToHclTerraform(this._triggerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -9917,7 +9917,7 @@ export class DataLossPreventionJobTrigger extends cdktf.TerraformResource {
         storageClassType: "DataLossPreventionJobTriggerTimeouts",
       },
       triggers: {
-        value: cdktf.listMapperHcl(dataLossPreventionJobTriggerTriggersToHclTerraform, true)(this._triggers.internalValue),
+        value: cdktn.listMapperHcl(dataLossPreventionJobTriggerTriggersToHclTerraform, true)(this._triggers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataLossPreventionJobTriggerTriggersList",

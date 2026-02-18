@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeHaVpnGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeHaVpnGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of this resource.
   *
@@ -88,7 +88,7 @@ export interface ComputeHaVpnGatewayConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_ha_vpn_gateway#vpn_interfaces ComputeHaVpnGateway#vpn_interfaces}
   */
-  readonly vpnInterfaces?: ComputeHaVpnGatewayVpnInterfaces[] | cdktf.IResolvable;
+  readonly vpnInterfaces?: ComputeHaVpnGatewayVpnInterfaces[] | cdktn.IResolvable;
 }
 export interface ComputeHaVpnGatewayTimeouts {
   /**
@@ -105,39 +105,39 @@ export interface ComputeHaVpnGatewayTimeouts {
   readonly update?: string;
 }
 
-export function computeHaVpnGatewayTimeoutsToTerraform(struct?: ComputeHaVpnGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeHaVpnGatewayTimeoutsToTerraform(struct?: ComputeHaVpnGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeHaVpnGatewayTimeoutsToHclTerraform(struct?: ComputeHaVpnGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeHaVpnGatewayTimeoutsToHclTerraform(struct?: ComputeHaVpnGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -148,19 +148,19 @@ export function computeHaVpnGatewayTimeoutsToHclTerraform(struct?: ComputeHaVpnG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeHaVpnGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeHaVpnGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeHaVpnGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeHaVpnGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -181,7 +181,7 @@ export class ComputeHaVpnGatewayTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeHaVpnGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeHaVpnGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -189,7 +189,7 @@ export class ComputeHaVpnGatewayTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -274,32 +274,32 @@ export interface ComputeHaVpnGatewayVpnInterfaces {
   readonly interconnectAttachment?: string;
 }
 
-export function computeHaVpnGatewayVpnInterfacesToTerraform(struct?: ComputeHaVpnGatewayVpnInterfaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeHaVpnGatewayVpnInterfacesToTerraform(struct?: ComputeHaVpnGatewayVpnInterfaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.numberToTerraform(struct!.id),
-    interconnect_attachment: cdktf.stringToTerraform(struct!.interconnectAttachment),
+    id: cdktn.numberToTerraform(struct!.id),
+    interconnect_attachment: cdktn.stringToTerraform(struct!.interconnectAttachment),
   }
 }
 
 
-export function computeHaVpnGatewayVpnInterfacesToHclTerraform(struct?: ComputeHaVpnGatewayVpnInterfaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeHaVpnGatewayVpnInterfacesToHclTerraform(struct?: ComputeHaVpnGatewayVpnInterfaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.numberToHclTerraform(struct!.id),
+      value: cdktn.numberToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interconnect_attachment: {
-      value: cdktf.stringToHclTerraform(struct!.interconnectAttachment),
+      value: cdktn.stringToHclTerraform(struct!.interconnectAttachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -310,9 +310,9 @@ export function computeHaVpnGatewayVpnInterfacesToHclTerraform(struct?: ComputeH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeHaVpnGatewayVpnInterfacesOutputReference extends cdktf.ComplexObject {
+export class ComputeHaVpnGatewayVpnInterfacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -320,11 +320,11 @@ export class ComputeHaVpnGatewayVpnInterfacesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeHaVpnGatewayVpnInterfaces | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeHaVpnGatewayVpnInterfaces | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -341,14 +341,14 @@ export class ComputeHaVpnGatewayVpnInterfacesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeHaVpnGatewayVpnInterfaces | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeHaVpnGatewayVpnInterfaces | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._interconnectAttachment = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -398,15 +398,15 @@ export class ComputeHaVpnGatewayVpnInterfacesOutputReference extends cdktf.Compl
   }
 }
 
-export class ComputeHaVpnGatewayVpnInterfacesList extends cdktf.ComplexList {
-  public internalValue? : ComputeHaVpnGatewayVpnInterfaces[] | cdktf.IResolvable
+export class ComputeHaVpnGatewayVpnInterfacesList extends cdktn.ComplexList {
+  public internalValue? : ComputeHaVpnGatewayVpnInterfaces[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -421,7 +421,7 @@ export class ComputeHaVpnGatewayVpnInterfacesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_ha_vpn_gateway google_compute_ha_vpn_gateway}
 */
-export class ComputeHaVpnGateway extends cdktf.TerraformResource {
+export class ComputeHaVpnGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -432,14 +432,14 @@ export class ComputeHaVpnGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeHaVpnGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeHaVpnGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeHaVpnGateway to import
   * @param importFromId The id of the existing ComputeHaVpnGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_ha_vpn_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeHaVpnGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_ha_vpn_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_ha_vpn_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -503,7 +503,7 @@ export class ComputeHaVpnGateway extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -641,7 +641,7 @@ export class ComputeHaVpnGateway extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -667,7 +667,7 @@ export class ComputeHaVpnGateway extends cdktf.TerraformResource {
   public get vpnInterfaces() {
     return this._vpnInterfaces;
   }
-  public putVpnInterfaces(value: ComputeHaVpnGatewayVpnInterfaces[] | cdktf.IResolvable) {
+  public putVpnInterfaces(value: ComputeHaVpnGatewayVpnInterfaces[] | cdktn.IResolvable) {
     this._vpnInterfaces.internalValue = value;
   }
   public resetVpnInterfaces() {
@@ -684,72 +684,72 @@ export class ComputeHaVpnGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      gateway_ip_version: cdktf.stringToTerraform(this._gatewayIpVersion),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      stack_type: cdktf.stringToTerraform(this._stackType),
+      description: cdktn.stringToTerraform(this._description),
+      gateway_ip_version: cdktn.stringToTerraform(this._gatewayIpVersion),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      stack_type: cdktn.stringToTerraform(this._stackType),
       timeouts: computeHaVpnGatewayTimeoutsToTerraform(this._timeouts.internalValue),
-      vpn_interfaces: cdktf.listMapper(computeHaVpnGatewayVpnInterfacesToTerraform, true)(this._vpnInterfaces.internalValue),
+      vpn_interfaces: cdktn.listMapper(computeHaVpnGatewayVpnInterfacesToTerraform, true)(this._vpnInterfaces.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_ip_version: {
-        value: cdktf.stringToHclTerraform(this._gatewayIpVersion),
+        value: cdktn.stringToHclTerraform(this._gatewayIpVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stack_type: {
-        value: cdktf.stringToHclTerraform(this._stackType),
+        value: cdktn.stringToHclTerraform(this._stackType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -761,7 +761,7 @@ export class ComputeHaVpnGateway extends cdktf.TerraformResource {
         storageClassType: "ComputeHaVpnGatewayTimeouts",
       },
       vpn_interfaces: {
-        value: cdktf.listMapperHcl(computeHaVpnGatewayVpnInterfacesToHclTerraform, true)(this._vpnInterfaces.internalValue),
+        value: cdktn.listMapperHcl(computeHaVpnGatewayVpnInterfacesToHclTerraform, true)(this._vpnInterfaces.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeHaVpnGatewayVpnInterfacesList",

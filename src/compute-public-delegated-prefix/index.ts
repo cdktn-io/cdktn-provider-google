@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputePublicDelegatedPrefixConfig extends cdktf.TerraformMetaArguments {
+export interface ComputePublicDelegatedPrefixConfig extends cdktn.TerraformMetaArguments {
   /**
   * The allocatable prefix length supported by this public delegated prefix. This field is optional and cannot be set for prefixes in DELEGATION mode. It cannot be set for IPv4 prefixes either, and it always defaults to 32.
   *
@@ -42,7 +42,7 @@ export interface ComputePublicDelegatedPrefixConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_delegated_prefix#is_live_migration ComputePublicDelegatedPrefix#is_live_migration}
   */
-  readonly isLiveMigration?: boolean | cdktf.IResolvable;
+  readonly isLiveMigration?: boolean | cdktn.IResolvable;
   /**
   * Specifies the mode of this IPv6 PDP. MODE must be one of: DELEGATION,
   * EXTERNAL_IPV6_FORWARDING_RULE_CREATION and EXTERNAL_IPV6_SUBNETWORK_CREATION. Possible values: ["DELEGATION", "EXTERNAL_IPV6_FORWARDING_RULE_CREATION", "EXTERNAL_IPV6_SUBNETWORK_CREATION"]
@@ -95,32 +95,32 @@ export interface ComputePublicDelegatedPrefixTimeouts {
   readonly delete?: string;
 }
 
-export function computePublicDelegatedPrefixTimeoutsToTerraform(struct?: ComputePublicDelegatedPrefixTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computePublicDelegatedPrefixTimeoutsToTerraform(struct?: ComputePublicDelegatedPrefixTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function computePublicDelegatedPrefixTimeoutsToHclTerraform(struct?: ComputePublicDelegatedPrefixTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computePublicDelegatedPrefixTimeoutsToHclTerraform(struct?: ComputePublicDelegatedPrefixTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function computePublicDelegatedPrefixTimeoutsToHclTerraform(struct?: Comp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputePublicDelegatedPrefixTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputePublicDelegatedPrefixTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputePublicDelegatedPrefixTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputePublicDelegatedPrefixTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,14 +160,14 @@ export class ComputePublicDelegatedPrefixTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputePublicDelegatedPrefixTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputePublicDelegatedPrefixTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,7 +215,7 @@ export class ComputePublicDelegatedPrefixTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_delegated_prefix google_compute_public_delegated_prefix}
 */
-export class ComputePublicDelegatedPrefix extends cdktf.TerraformResource {
+export class ComputePublicDelegatedPrefix extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -226,14 +226,14 @@ export class ComputePublicDelegatedPrefix extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputePublicDelegatedPrefix resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputePublicDelegatedPrefix resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputePublicDelegatedPrefix to import
   * @param importFromId The id of the existing ComputePublicDelegatedPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_delegated_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputePublicDelegatedPrefix to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_public_delegated_prefix", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_public_delegated_prefix", importId: importFromId, provider });
       }
 
   // ===========
@@ -342,11 +342,11 @@ export class ComputePublicDelegatedPrefix extends cdktf.TerraformResource {
   }
 
   // is_live_migration - computed: false, optional: true, required: false
-  private _isLiveMigration?: boolean | cdktf.IResolvable; 
+  private _isLiveMigration?: boolean | cdktn.IResolvable; 
   public get isLiveMigration() {
     return this.getBooleanAttribute('is_live_migration');
   }
-  public set isLiveMigration(value: boolean | cdktf.IResolvable) {
+  public set isLiveMigration(value: boolean | cdktn.IResolvable) {
     this._isLiveMigration = value;
   }
   public resetIsLiveMigration() {
@@ -455,16 +455,16 @@ export class ComputePublicDelegatedPrefix extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocatable_prefix_length: cdktf.numberToTerraform(this._allocatablePrefixLength),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      ip_cidr_range: cdktf.stringToTerraform(this._ipCidrRange),
-      is_live_migration: cdktf.booleanToTerraform(this._isLiveMigration),
-      mode: cdktf.stringToTerraform(this._mode),
-      name: cdktf.stringToTerraform(this._name),
-      parent_prefix: cdktf.stringToTerraform(this._parentPrefix),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
+      allocatable_prefix_length: cdktn.numberToTerraform(this._allocatablePrefixLength),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      ip_cidr_range: cdktn.stringToTerraform(this._ipCidrRange),
+      is_live_migration: cdktn.booleanToTerraform(this._isLiveMigration),
+      mode: cdktn.stringToTerraform(this._mode),
+      name: cdktn.stringToTerraform(this._name),
+      parent_prefix: cdktn.stringToTerraform(this._parentPrefix),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
       timeouts: computePublicDelegatedPrefixTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -472,61 +472,61 @@ export class ComputePublicDelegatedPrefix extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocatable_prefix_length: {
-        value: cdktf.numberToHclTerraform(this._allocatablePrefixLength),
+        value: cdktn.numberToHclTerraform(this._allocatablePrefixLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_cidr_range: {
-        value: cdktf.stringToHclTerraform(this._ipCidrRange),
+        value: cdktn.stringToHclTerraform(this._ipCidrRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_live_migration: {
-        value: cdktf.booleanToHclTerraform(this._isLiveMigration),
+        value: cdktn.booleanToHclTerraform(this._isLiveMigration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_prefix: {
-        value: cdktf.stringToHclTerraform(this._parentPrefix),
+        value: cdktn.stringToHclTerraform(this._parentPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

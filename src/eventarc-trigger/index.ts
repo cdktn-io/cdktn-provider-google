@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EventarcTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface EventarcTriggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. The name of the channel associated with the trigger in 'projects/{project}/locations/{location}/channels/{channel}' format. You must provide a channel to receive events from Eventarc SaaS partners.
   *
@@ -73,7 +73,7 @@ export interface EventarcTriggerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#matching_criteria EventarcTrigger#matching_criteria}
   */
-  readonly matchingCriteria: EventarcTriggerMatchingCriteria[] | cdktf.IResolvable;
+  readonly matchingCriteria: EventarcTriggerMatchingCriteria[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -109,38 +109,38 @@ export interface EventarcTriggerDestinationCloudRunService {
 }
 
 export function eventarcTriggerDestinationCloudRunServiceToTerraform(struct?: EventarcTriggerDestinationCloudRunServiceOutputReference | EventarcTriggerDestinationCloudRunService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    region: cdktf.stringToTerraform(struct!.region),
-    service: cdktf.stringToTerraform(struct!.service),
+    path: cdktn.stringToTerraform(struct!.path),
+    region: cdktn.stringToTerraform(struct!.region),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function eventarcTriggerDestinationCloudRunServiceToHclTerraform(struct?: EventarcTriggerDestinationCloudRunServiceOutputReference | EventarcTriggerDestinationCloudRunService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -151,14 +151,14 @@ export function eventarcTriggerDestinationCloudRunServiceToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerDestinationCloudRunServiceOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerDestinationCloudRunServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -274,52 +274,52 @@ export interface EventarcTriggerDestinationGke {
 }
 
 export function eventarcTriggerDestinationGkeToTerraform(struct?: EventarcTriggerDestinationGkeOutputReference | EventarcTriggerDestinationGke): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster: cdktf.stringToTerraform(struct!.cluster),
-    location: cdktf.stringToTerraform(struct!.location),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    path: cdktf.stringToTerraform(struct!.path),
-    service: cdktf.stringToTerraform(struct!.service),
+    cluster: cdktn.stringToTerraform(struct!.cluster),
+    location: cdktn.stringToTerraform(struct!.location),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    path: cdktn.stringToTerraform(struct!.path),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
 export function eventarcTriggerDestinationGkeToHclTerraform(struct?: EventarcTriggerDestinationGkeOutputReference | EventarcTriggerDestinationGke): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster: {
-      value: cdktf.stringToHclTerraform(struct!.cluster),
+      value: cdktn.stringToHclTerraform(struct!.cluster),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -330,14 +330,14 @@ export function eventarcTriggerDestinationGkeToHclTerraform(struct?: EventarcTri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerDestinationGkeOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerDestinationGkeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -464,24 +464,24 @@ export interface EventarcTriggerDestinationHttpEndpoint {
 }
 
 export function eventarcTriggerDestinationHttpEndpointToTerraform(struct?: EventarcTriggerDestinationHttpEndpointOutputReference | EventarcTriggerDestinationHttpEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function eventarcTriggerDestinationHttpEndpointToHclTerraform(struct?: EventarcTriggerDestinationHttpEndpointOutputReference | EventarcTriggerDestinationHttpEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -492,14 +492,14 @@ export function eventarcTriggerDestinationHttpEndpointToHclTerraform(struct?: Ev
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerDestinationHttpEndpointOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerDestinationHttpEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -547,24 +547,24 @@ export interface EventarcTriggerDestinationNetworkConfig {
 }
 
 export function eventarcTriggerDestinationNetworkConfigToTerraform(struct?: EventarcTriggerDestinationNetworkConfigOutputReference | EventarcTriggerDestinationNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_attachment: cdktf.stringToTerraform(struct!.networkAttachment),
+    network_attachment: cdktn.stringToTerraform(struct!.networkAttachment),
   }
 }
 
 
 export function eventarcTriggerDestinationNetworkConfigToHclTerraform(struct?: EventarcTriggerDestinationNetworkConfigOutputReference | EventarcTriggerDestinationNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_attachment: {
-      value: cdktf.stringToHclTerraform(struct!.networkAttachment),
+      value: cdktn.stringToHclTerraform(struct!.networkAttachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -575,14 +575,14 @@ export function eventarcTriggerDestinationNetworkConfigToHclTerraform(struct?: E
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerDestinationNetworkConfigOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerDestinationNetworkConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -654,12 +654,12 @@ export interface EventarcTriggerDestination {
 }
 
 export function eventarcTriggerDestinationToTerraform(struct?: EventarcTriggerDestinationOutputReference | EventarcTriggerDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    workflow: cdktf.stringToTerraform(struct!.workflow),
+    workflow: cdktn.stringToTerraform(struct!.workflow),
     cloud_run_service: eventarcTriggerDestinationCloudRunServiceToTerraform(struct!.cloudRunService),
     gke: eventarcTriggerDestinationGkeToTerraform(struct!.gke),
     http_endpoint: eventarcTriggerDestinationHttpEndpointToTerraform(struct!.httpEndpoint),
@@ -669,13 +669,13 @@ export function eventarcTriggerDestinationToTerraform(struct?: EventarcTriggerDe
 
 
 export function eventarcTriggerDestinationToHclTerraform(struct?: EventarcTriggerDestinationOutputReference | EventarcTriggerDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     workflow: {
-      value: cdktf.stringToHclTerraform(struct!.workflow),
+      value: cdktn.stringToHclTerraform(struct!.workflow),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -710,14 +710,14 @@ export function eventarcTriggerDestinationToHclTerraform(struct?: EventarcTrigge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerDestinationOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -872,39 +872,39 @@ export interface EventarcTriggerMatchingCriteria {
   readonly value: string;
 }
 
-export function eventarcTriggerMatchingCriteriaToTerraform(struct?: EventarcTriggerMatchingCriteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventarcTriggerMatchingCriteriaToTerraform(struct?: EventarcTriggerMatchingCriteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute: cdktf.stringToTerraform(struct!.attribute),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    value: cdktf.stringToTerraform(struct!.value),
+    attribute: cdktn.stringToTerraform(struct!.attribute),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function eventarcTriggerMatchingCriteriaToHclTerraform(struct?: EventarcTriggerMatchingCriteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventarcTriggerMatchingCriteriaToHclTerraform(struct?: EventarcTriggerMatchingCriteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute: {
-      value: cdktf.stringToHclTerraform(struct!.attribute),
+      value: cdktn.stringToHclTerraform(struct!.attribute),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -915,9 +915,9 @@ export function eventarcTriggerMatchingCriteriaToHclTerraform(struct?: EventarcT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerMatchingCriteriaOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerMatchingCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -925,11 +925,11 @@ export class EventarcTriggerMatchingCriteriaOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EventarcTriggerMatchingCriteria | cdktf.IResolvable | undefined {
+  public get internalValue(): EventarcTriggerMatchingCriteria | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -950,7 +950,7 @@ export class EventarcTriggerMatchingCriteriaOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventarcTriggerMatchingCriteria | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventarcTriggerMatchingCriteria | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -958,7 +958,7 @@ export class EventarcTriggerMatchingCriteriaOutputReference extends cdktf.Comple
       this._operator = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1014,15 +1014,15 @@ export class EventarcTriggerMatchingCriteriaOutputReference extends cdktf.Comple
   }
 }
 
-export class EventarcTriggerMatchingCriteriaList extends cdktf.ComplexList {
-  public internalValue? : EventarcTriggerMatchingCriteria[] | cdktf.IResolvable
+export class EventarcTriggerMatchingCriteriaList extends cdktn.ComplexList {
+  public internalValue? : EventarcTriggerMatchingCriteria[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1048,39 +1048,39 @@ export interface EventarcTriggerTimeouts {
   readonly update?: string;
 }
 
-export function eventarcTriggerTimeoutsToTerraform(struct?: EventarcTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventarcTriggerTimeoutsToTerraform(struct?: EventarcTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function eventarcTriggerTimeoutsToHclTerraform(struct?: EventarcTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function eventarcTriggerTimeoutsToHclTerraform(struct?: EventarcTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1091,19 +1091,19 @@ export function eventarcTriggerTimeoutsToHclTerraform(struct?: EventarcTriggerTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EventarcTriggerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EventarcTriggerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1124,7 +1124,7 @@ export class EventarcTriggerTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EventarcTriggerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EventarcTriggerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1132,7 +1132,7 @@ export class EventarcTriggerTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1203,24 +1203,24 @@ export interface EventarcTriggerTransportPubsub {
 }
 
 export function eventarcTriggerTransportPubsubToTerraform(struct?: EventarcTriggerTransportPubsubOutputReference | EventarcTriggerTransportPubsub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    topic: cdktf.stringToTerraform(struct!.topic),
+    topic: cdktn.stringToTerraform(struct!.topic),
   }
 }
 
 
 export function eventarcTriggerTransportPubsubToHclTerraform(struct?: EventarcTriggerTransportPubsubOutputReference | EventarcTriggerTransportPubsub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1231,14 +1231,14 @@ export function eventarcTriggerTransportPubsubToHclTerraform(struct?: EventarcTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerTransportPubsubOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerTransportPubsubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1294,8 +1294,8 @@ export interface EventarcTriggerTransport {
 }
 
 export function eventarcTriggerTransportToTerraform(struct?: EventarcTriggerTransportOutputReference | EventarcTriggerTransport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1305,8 +1305,8 @@ export function eventarcTriggerTransportToTerraform(struct?: EventarcTriggerTran
 
 
 export function eventarcTriggerTransportToHclTerraform(struct?: EventarcTriggerTransportOutputReference | EventarcTriggerTransport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1322,14 +1322,14 @@ export function eventarcTriggerTransportToHclTerraform(struct?: EventarcTriggerT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EventarcTriggerTransportOutputReference extends cdktf.ComplexObject {
+export class EventarcTriggerTransportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1374,7 +1374,7 @@ export class EventarcTriggerTransportOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger google_eventarc_trigger}
 */
-export class EventarcTrigger extends cdktf.TerraformResource {
+export class EventarcTrigger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1385,14 +1385,14 @@ export class EventarcTrigger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EventarcTrigger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EventarcTrigger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventarcTrigger to import
   * @param importFromId The id of the existing EventarcTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventarcTrigger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_eventarc_trigger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_eventarc_trigger", importId: importFromId, provider });
       }
 
   // ===========
@@ -1457,7 +1457,7 @@ export class EventarcTrigger extends cdktf.TerraformResource {
   }
 
   // conditions - computed: true, optional: false, required: false
-  private _conditions = new cdktf.StringMap(this, "conditions");
+  private _conditions = new cdktn.StringMap(this, "conditions");
   public get conditions() {
     return this._conditions;
   }
@@ -1468,7 +1468,7 @@ export class EventarcTrigger extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1585,7 +1585,7 @@ export class EventarcTrigger extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1618,7 +1618,7 @@ export class EventarcTrigger extends cdktf.TerraformResource {
   public get matchingCriteria() {
     return this._matchingCriteria;
   }
-  public putMatchingCriteria(value: EventarcTriggerMatchingCriteria[] | cdktf.IResolvable) {
+  public putMatchingCriteria(value: EventarcTriggerMatchingCriteria[] | cdktn.IResolvable) {
     this._matchingCriteria.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1664,16 +1664,16 @@ export class EventarcTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel: cdktf.stringToTerraform(this._channel),
-      event_data_content_type: cdktf.stringToTerraform(this._eventDataContentType),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      service_account: cdktf.stringToTerraform(this._serviceAccount),
+      channel: cdktn.stringToTerraform(this._channel),
+      event_data_content_type: cdktn.stringToTerraform(this._eventDataContentType),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      service_account: cdktn.stringToTerraform(this._serviceAccount),
       destination: eventarcTriggerDestinationToTerraform(this._destination.internalValue),
-      matching_criteria: cdktf.listMapper(eventarcTriggerMatchingCriteriaToTerraform, true)(this._matchingCriteria.internalValue),
+      matching_criteria: cdktn.listMapper(eventarcTriggerMatchingCriteriaToTerraform, true)(this._matchingCriteria.internalValue),
       timeouts: eventarcTriggerTimeoutsToTerraform(this._timeouts.internalValue),
       transport: eventarcTriggerTransportToTerraform(this._transport.internalValue),
     };
@@ -1682,49 +1682,49 @@ export class EventarcTrigger extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       channel: {
-        value: cdktf.stringToHclTerraform(this._channel),
+        value: cdktn.stringToHclTerraform(this._channel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_data_content_type: {
-        value: cdktf.stringToHclTerraform(this._eventDataContentType),
+        value: cdktn.stringToHclTerraform(this._eventDataContentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account: {
-        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        value: cdktn.stringToHclTerraform(this._serviceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1736,7 +1736,7 @@ export class EventarcTrigger extends cdktf.TerraformResource {
         storageClassType: "EventarcTriggerDestinationList",
       },
       matching_criteria: {
-        value: cdktf.listMapperHcl(eventarcTriggerMatchingCriteriaToHclTerraform, true)(this._matchingCriteria.internalValue),
+        value: cdktn.listMapperHcl(eventarcTriggerMatchingCriteriaToHclTerraform, true)(this._matchingCriteria.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "EventarcTriggerMatchingCriteriaList",

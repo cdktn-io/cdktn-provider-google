@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleDataplexGlossaryIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleDataplexGlossaryIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataplex_glossary_iam_policy#glossary_id DataGoogleDataplexGlossaryIamPolicy#glossary_id}
   */
@@ -36,7 +36,7 @@ export interface DataGoogleDataplexGlossaryIamPolicyConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy}
 */
-export class DataGoogleDataplexGlossaryIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleDataplexGlossaryIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataGoogleDataplexGlossaryIamPolicy extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleDataplexGlossaryIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleDataplexGlossaryIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleDataplexGlossaryIamPolicy to import
   * @param importFromId The id of the existing DataGoogleDataplexGlossaryIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataplex_glossary_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleDataplexGlossaryIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataplex_glossary_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataplex_glossary_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -171,35 +171,35 @@ export class DataGoogleDataplexGlossaryIamPolicy extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      glossary_id: cdktf.stringToTerraform(this._glossaryId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      glossary_id: cdktn.stringToTerraform(this._glossaryId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       glossary_id: {
-        value: cdktf.stringToHclTerraform(this._glossaryId),
+        value: cdktn.stringToHclTerraform(this._glossaryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

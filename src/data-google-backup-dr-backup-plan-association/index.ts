@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleBackupDrBackupPlanAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleBackupDrBackupPlanAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The id of backupplan association
   *
@@ -40,8 +40,8 @@ export interface DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBacku
 }
 
 export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorToTerraform(struct?: DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -50,8 +50,8 @@ export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackup
 
 
 export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorToHclTerraform(struct?: DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -59,7 +59,7 @@ export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackup
   return attrs;
 }
 
-export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference extends cdktf.ComplexObject {
+export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -68,7 +68,7 @@ export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -98,14 +98,14 @@ export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErr
   }
 }
 
-export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorList extends cdktf.ComplexList {
+export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoLastBackupErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -120,8 +120,8 @@ export interface DataGoogleBackupDrBackupPlanAssociationRulesConfigInfo {
 }
 
 export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoToTerraform(struct?: DataGoogleBackupDrBackupPlanAssociationRulesConfigInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -130,8 +130,8 @@ export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoToTerrafor
 
 
 export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoToHclTerraform(struct?: DataGoogleBackupDrBackupPlanAssociationRulesConfigInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -139,7 +139,7 @@ export function dataGoogleBackupDrBackupPlanAssociationRulesConfigInfoToHclTerra
   return attrs;
 }
 
-export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoOutputReference extends cdktf.ComplexObject {
+export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -148,7 +148,7 @@ export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -184,14 +184,14 @@ export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoOutputReferen
   }
 }
 
-export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoList extends cdktf.ComplexList {
+export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,7 +206,7 @@ export class DataGoogleBackupDrBackupPlanAssociationRulesConfigInfoList extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan_association google_backup_dr_backup_plan_association}
 */
-export class DataGoogleBackupDrBackupPlanAssociation extends cdktf.TerraformDataSource {
+export class DataGoogleBackupDrBackupPlanAssociation extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -217,14 +217,14 @@ export class DataGoogleBackupDrBackupPlanAssociation extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleBackupDrBackupPlanAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleBackupDrBackupPlanAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBackupDrBackupPlanAssociation to import
   * @param importFromId The id of the existing DataGoogleBackupDrBackupPlanAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBackupDrBackupPlanAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_backup_plan_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_backup_plan_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -374,35 +374,35 @@ export class DataGoogleBackupDrBackupPlanAssociation extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_plan_association_id: cdktf.stringToTerraform(this._backupPlanAssociationId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      backup_plan_association_id: cdktn.stringToTerraform(this._backupPlanAssociationId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_plan_association_id: {
-        value: cdktf.stringToHclTerraform(this._backupPlanAssociationId),
+        value: cdktn.stringToHclTerraform(this._backupPlanAssociationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

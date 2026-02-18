@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivatecaCaPoolConfig extends cdktf.TerraformMetaArguments {
+export interface PrivatecaCaPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#id PrivatecaCaPool#id}
   *
@@ -80,41 +80,41 @@ export interface PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_config_based_issuance PrivatecaCaPool#allow_config_based_issuance}
   */
-  readonly allowConfigBasedIssuance: boolean | cdktf.IResolvable;
+  readonly allowConfigBasedIssuance: boolean | cdktn.IResolvable;
   /**
   * When true, allows callers to create Certificates by specifying a CSR.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_csr_based_issuance PrivatecaCaPool#allow_csr_based_issuance}
   */
-  readonly allowCsrBasedIssuance: boolean | cdktf.IResolvable;
+  readonly allowCsrBasedIssuance: boolean | cdktn.IResolvable;
 }
 
 export function privatecaCaPoolIssuancePolicyAllowedIssuanceModesToTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference | PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_config_based_issuance: cdktf.booleanToTerraform(struct!.allowConfigBasedIssuance),
-    allow_csr_based_issuance: cdktf.booleanToTerraform(struct!.allowCsrBasedIssuance),
+    allow_config_based_issuance: cdktn.booleanToTerraform(struct!.allowConfigBasedIssuance),
+    allow_csr_based_issuance: cdktn.booleanToTerraform(struct!.allowCsrBasedIssuance),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyAllowedIssuanceModesToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference | PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_config_based_issuance: {
-      value: cdktf.booleanToHclTerraform(struct!.allowConfigBasedIssuance),
+      value: cdktn.booleanToHclTerraform(struct!.allowConfigBasedIssuance),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_csr_based_issuance: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCsrBasedIssuance),
+      value: cdktn.booleanToHclTerraform(struct!.allowCsrBasedIssuance),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -125,14 +125,14 @@ export function privatecaCaPoolIssuancePolicyAllowedIssuanceModesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -164,11 +164,11 @@ export class PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference ex
   }
 
   // allow_config_based_issuance - computed: false, optional: false, required: true
-  private _allowConfigBasedIssuance?: boolean | cdktf.IResolvable; 
+  private _allowConfigBasedIssuance?: boolean | cdktn.IResolvable; 
   public get allowConfigBasedIssuance() {
     return this.getBooleanAttribute('allow_config_based_issuance');
   }
-  public set allowConfigBasedIssuance(value: boolean | cdktf.IResolvable) {
+  public set allowConfigBasedIssuance(value: boolean | cdktn.IResolvable) {
     this._allowConfigBasedIssuance = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -177,11 +177,11 @@ export class PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference ex
   }
 
   // allow_csr_based_issuance - computed: false, optional: false, required: true
-  private _allowCsrBasedIssuance?: boolean | cdktf.IResolvable; 
+  private _allowCsrBasedIssuance?: boolean | cdktn.IResolvable; 
   public get allowCsrBasedIssuance() {
     return this.getBooleanAttribute('allow_csr_based_issuance');
   }
-  public set allowCsrBasedIssuance(value: boolean | cdktf.IResolvable) {
+  public set allowCsrBasedIssuance(value: boolean | cdktn.IResolvable) {
     this._allowCsrBasedIssuance = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -199,24 +199,24 @@ export interface PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve {
 }
 
 export function privatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveToTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference | PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    signature_algorithm: cdktf.stringToTerraform(struct!.signatureAlgorithm),
+    signature_algorithm: cdktn.stringToTerraform(struct!.signatureAlgorithm),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference | PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     signature_algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.signatureAlgorithm),
+      value: cdktn.stringToHclTerraform(struct!.signatureAlgorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -227,14 +227,14 @@ export function privatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -290,31 +290,31 @@ export interface PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa {
 }
 
 export function privatecaCaPoolIssuancePolicyAllowedKeyTypesRsaToTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference | PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_modulus_size: cdktf.stringToTerraform(struct!.maxModulusSize),
-    min_modulus_size: cdktf.stringToTerraform(struct!.minModulusSize),
+    max_modulus_size: cdktn.stringToTerraform(struct!.maxModulusSize),
+    min_modulus_size: cdktn.stringToTerraform(struct!.minModulusSize),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyAllowedKeyTypesRsaToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference | PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_modulus_size: {
-      value: cdktf.stringToHclTerraform(struct!.maxModulusSize),
+      value: cdktn.stringToHclTerraform(struct!.maxModulusSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min_modulus_size: {
-      value: cdktf.stringToHclTerraform(struct!.minModulusSize),
+      value: cdktn.stringToHclTerraform(struct!.minModulusSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -325,14 +325,14 @@ export function privatecaCaPoolIssuancePolicyAllowedKeyTypesRsaToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -410,9 +410,9 @@ export interface PrivatecaCaPoolIssuancePolicyAllowedKeyTypes {
   readonly rsa?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa;
 }
 
-export function privatecaCaPoolIssuancePolicyAllowedKeyTypesToTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyAllowedKeyTypesToTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -422,9 +422,9 @@ export function privatecaCaPoolIssuancePolicyAllowedKeyTypesToTerraform(struct?:
 }
 
 
-export function privatecaCaPoolIssuancePolicyAllowedKeyTypesToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyAllowedKeyTypesToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -446,9 +446,9 @@ export function privatecaCaPoolIssuancePolicyAllowedKeyTypesToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -456,11 +456,11 @@ export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -477,14 +477,14 @@ export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ellipticCurve.internalValue = undefined;
       this._rsa.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -529,15 +529,15 @@ export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference extends
   }
 }
 
-export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList extends cdktf.ComplexList {
-  public internalValue? : PrivatecaCaPoolIssuancePolicyAllowedKeyTypes[] | cdktf.IResolvable
+export class PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList extends cdktn.ComplexList {
+  public internalValue? : PrivatecaCaPoolIssuancePolicyAllowedKeyTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -558,24 +558,24 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions
 }
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
+    object_id_path: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_id_path: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.objectIdPath),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.objectIdPath),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -586,14 +586,14 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -638,7 +638,7 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#critical PrivatecaCaPool#critical}
   */
-  readonly critical: boolean | cdktf.IResolvable;
+  readonly critical: boolean | cdktn.IResolvable;
   /**
   * The value of this X.509 extension. A base64-encoded string.
   *
@@ -653,33 +653,33 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions
   readonly objectId: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId;
 }
 
-export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    critical: cdktf.booleanToTerraform(struct!.critical),
-    value: cdktf.stringToTerraform(struct!.value),
+    critical: cdktn.booleanToTerraform(struct!.critical),
+    value: cdktn.stringToTerraform(struct!.value),
     object_id: privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectIdToTerraform(struct!.objectId),
   }
 }
 
 
-export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     critical: {
-      value: cdktf.booleanToHclTerraform(struct!.critical),
+      value: cdktn.booleanToHclTerraform(struct!.critical),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -696,9 +696,9 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -706,11 +706,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -731,7 +731,7 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -739,7 +739,7 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutp
       this._value = undefined;
       this._objectId.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -753,11 +753,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutp
   }
 
   // critical - computed: false, optional: false, required: true
-  private _critical?: boolean | cdktf.IResolvable; 
+  private _critical?: boolean | cdktn.IResolvable; 
   public get critical() {
     return this.getBooleanAttribute('critical');
   }
-  public set critical(value: boolean | cdktf.IResolvable) {
+  public set critical(value: boolean | cdktn.IResolvable) {
     this._critical = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -792,15 +792,15 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsOutp
   }
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList extends cdktf.ComplexList {
-  public internalValue? : PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions[] | cdktf.IResolvable
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList extends cdktn.ComplexList {
+  public internalValue? : PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -817,7 +817,7 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#is_ca PrivatecaCaPool#is_ca}
   */
-  readonly isCa?: boolean | cdktf.IResolvable;
+  readonly isCa?: boolean | cdktn.IResolvable;
   /**
   * Refers to the "path length constraint" in Basic Constraints extension. For a CA certificate, this value describes the depth of
   * subordinate CA certificates that are allowed. If this value is less than 0, the request will fail.
@@ -831,7 +831,7 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#non_ca PrivatecaCaPool#non_ca}
   */
-  readonly nonCa?: boolean | cdktf.IResolvable;
+  readonly nonCa?: boolean | cdktn.IResolvable;
   /**
   * When true, the "path length constraint" in Basic Constraints extension will be set to 0.
   * if both 'max_issuer_path_length' and 'zero_max_issuer_path_length' are unset,
@@ -839,49 +839,49 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#zero_max_issuer_path_length PrivatecaCaPool#zero_max_issuer_path_length}
   */
-  readonly zeroMaxIssuerPathLength?: boolean | cdktf.IResolvable;
+  readonly zeroMaxIssuerPathLength?: boolean | cdktn.IResolvable;
 }
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesCaOptionsToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_ca: cdktf.booleanToTerraform(struct!.isCa),
-    max_issuer_path_length: cdktf.numberToTerraform(struct!.maxIssuerPathLength),
-    non_ca: cdktf.booleanToTerraform(struct!.nonCa),
-    zero_max_issuer_path_length: cdktf.booleanToTerraform(struct!.zeroMaxIssuerPathLength),
+    is_ca: cdktn.booleanToTerraform(struct!.isCa),
+    max_issuer_path_length: cdktn.numberToTerraform(struct!.maxIssuerPathLength),
+    non_ca: cdktn.booleanToTerraform(struct!.nonCa),
+    zero_max_issuer_path_length: cdktn.booleanToTerraform(struct!.zeroMaxIssuerPathLength),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesCaOptionsToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_ca: {
-      value: cdktf.booleanToHclTerraform(struct!.isCa),
+      value: cdktn.booleanToHclTerraform(struct!.isCa),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_issuer_path_length: {
-      value: cdktf.numberToHclTerraform(struct!.maxIssuerPathLength),
+      value: cdktn.numberToHclTerraform(struct!.maxIssuerPathLength),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     non_ca: {
-      value: cdktf.booleanToHclTerraform(struct!.nonCa),
+      value: cdktn.booleanToHclTerraform(struct!.nonCa),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     zero_max_issuer_path_length: {
-      value: cdktf.booleanToHclTerraform(struct!.zeroMaxIssuerPathLength),
+      value: cdktn.booleanToHclTerraform(struct!.zeroMaxIssuerPathLength),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -892,14 +892,14 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesCaOptionsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -943,11 +943,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference
   }
 
   // is_ca - computed: false, optional: true, required: false
-  private _isCa?: boolean | cdktf.IResolvable; 
+  private _isCa?: boolean | cdktn.IResolvable; 
   public get isCa() {
     return this.getBooleanAttribute('is_ca');
   }
-  public set isCa(value: boolean | cdktf.IResolvable) {
+  public set isCa(value: boolean | cdktn.IResolvable) {
     this._isCa = value;
   }
   public resetIsCa() {
@@ -975,11 +975,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference
   }
 
   // non_ca - computed: false, optional: true, required: false
-  private _nonCa?: boolean | cdktf.IResolvable; 
+  private _nonCa?: boolean | cdktn.IResolvable; 
   public get nonCa() {
     return this.getBooleanAttribute('non_ca');
   }
-  public set nonCa(value: boolean | cdktf.IResolvable) {
+  public set nonCa(value: boolean | cdktn.IResolvable) {
     this._nonCa = value;
   }
   public resetNonCa() {
@@ -991,11 +991,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsOutputReference
   }
 
   // zero_max_issuer_path_length - computed: false, optional: true, required: false
-  private _zeroMaxIssuerPathLength?: boolean | cdktf.IResolvable; 
+  private _zeroMaxIssuerPathLength?: boolean | cdktn.IResolvable; 
   public get zeroMaxIssuerPathLength() {
     return this.getBooleanAttribute('zero_max_issuer_path_length');
   }
-  public set zeroMaxIssuerPathLength(value: boolean | cdktf.IResolvable) {
+  public set zeroMaxIssuerPathLength(value: boolean | cdktn.IResolvable) {
     this._zeroMaxIssuerPathLength = value;
   }
   public resetZeroMaxIssuerPathLength() {
@@ -1012,132 +1012,132 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#cert_sign PrivatecaCaPool#cert_sign}
   */
-  readonly certSign?: boolean | cdktf.IResolvable;
+  readonly certSign?: boolean | cdktn.IResolvable;
   /**
   * The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#content_commitment PrivatecaCaPool#content_commitment}
   */
-  readonly contentCommitment?: boolean | cdktf.IResolvable;
+  readonly contentCommitment?: boolean | cdktn.IResolvable;
   /**
   * The key may be used sign certificate revocation lists.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#crl_sign PrivatecaCaPool#crl_sign}
   */
-  readonly crlSign?: boolean | cdktf.IResolvable;
+  readonly crlSign?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to encipher data.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#data_encipherment PrivatecaCaPool#data_encipherment}
   */
-  readonly dataEncipherment?: boolean | cdktf.IResolvable;
+  readonly dataEncipherment?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to decipher only.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#decipher_only PrivatecaCaPool#decipher_only}
   */
-  readonly decipherOnly?: boolean | cdktf.IResolvable;
+  readonly decipherOnly?: boolean | cdktn.IResolvable;
   /**
   * The key may be used for digital signatures.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#digital_signature PrivatecaCaPool#digital_signature}
   */
-  readonly digitalSignature?: boolean | cdktf.IResolvable;
+  readonly digitalSignature?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to encipher only.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#encipher_only PrivatecaCaPool#encipher_only}
   */
-  readonly encipherOnly?: boolean | cdktf.IResolvable;
+  readonly encipherOnly?: boolean | cdktn.IResolvable;
   /**
   * The key may be used in a key agreement protocol.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#key_agreement PrivatecaCaPool#key_agreement}
   */
-  readonly keyAgreement?: boolean | cdktf.IResolvable;
+  readonly keyAgreement?: boolean | cdktn.IResolvable;
   /**
   * The key may be used to encipher other keys.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#key_encipherment PrivatecaCaPool#key_encipherment}
   */
-  readonly keyEncipherment?: boolean | cdktf.IResolvable;
+  readonly keyEncipherment?: boolean | cdktn.IResolvable;
 }
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert_sign: cdktf.booleanToTerraform(struct!.certSign),
-    content_commitment: cdktf.booleanToTerraform(struct!.contentCommitment),
-    crl_sign: cdktf.booleanToTerraform(struct!.crlSign),
-    data_encipherment: cdktf.booleanToTerraform(struct!.dataEncipherment),
-    decipher_only: cdktf.booleanToTerraform(struct!.decipherOnly),
-    digital_signature: cdktf.booleanToTerraform(struct!.digitalSignature),
-    encipher_only: cdktf.booleanToTerraform(struct!.encipherOnly),
-    key_agreement: cdktf.booleanToTerraform(struct!.keyAgreement),
-    key_encipherment: cdktf.booleanToTerraform(struct!.keyEncipherment),
+    cert_sign: cdktn.booleanToTerraform(struct!.certSign),
+    content_commitment: cdktn.booleanToTerraform(struct!.contentCommitment),
+    crl_sign: cdktn.booleanToTerraform(struct!.crlSign),
+    data_encipherment: cdktn.booleanToTerraform(struct!.dataEncipherment),
+    decipher_only: cdktn.booleanToTerraform(struct!.decipherOnly),
+    digital_signature: cdktn.booleanToTerraform(struct!.digitalSignature),
+    encipher_only: cdktn.booleanToTerraform(struct!.encipherOnly),
+    key_agreement: cdktn.booleanToTerraform(struct!.keyAgreement),
+    key_encipherment: cdktn.booleanToTerraform(struct!.keyEncipherment),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert_sign: {
-      value: cdktf.booleanToHclTerraform(struct!.certSign),
+      value: cdktn.booleanToHclTerraform(struct!.certSign),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     content_commitment: {
-      value: cdktf.booleanToHclTerraform(struct!.contentCommitment),
+      value: cdktn.booleanToHclTerraform(struct!.contentCommitment),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     crl_sign: {
-      value: cdktf.booleanToHclTerraform(struct!.crlSign),
+      value: cdktn.booleanToHclTerraform(struct!.crlSign),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     data_encipherment: {
-      value: cdktf.booleanToHclTerraform(struct!.dataEncipherment),
+      value: cdktn.booleanToHclTerraform(struct!.dataEncipherment),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     decipher_only: {
-      value: cdktf.booleanToHclTerraform(struct!.decipherOnly),
+      value: cdktn.booleanToHclTerraform(struct!.decipherOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     digital_signature: {
-      value: cdktf.booleanToHclTerraform(struct!.digitalSignature),
+      value: cdktn.booleanToHclTerraform(struct!.digitalSignature),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     encipher_only: {
-      value: cdktf.booleanToHclTerraform(struct!.encipherOnly),
+      value: cdktn.booleanToHclTerraform(struct!.encipherOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key_agreement: {
-      value: cdktf.booleanToHclTerraform(struct!.keyAgreement),
+      value: cdktn.booleanToHclTerraform(struct!.keyAgreement),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key_encipherment: {
-      value: cdktf.booleanToHclTerraform(struct!.keyEncipherment),
+      value: cdktn.booleanToHclTerraform(struct!.keyEncipherment),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1148,14 +1148,14 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1229,11 +1229,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // cert_sign - computed: false, optional: true, required: false
-  private _certSign?: boolean | cdktf.IResolvable; 
+  private _certSign?: boolean | cdktn.IResolvable; 
   public get certSign() {
     return this.getBooleanAttribute('cert_sign');
   }
-  public set certSign(value: boolean | cdktf.IResolvable) {
+  public set certSign(value: boolean | cdktn.IResolvable) {
     this._certSign = value;
   }
   public resetCertSign() {
@@ -1245,11 +1245,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // content_commitment - computed: false, optional: true, required: false
-  private _contentCommitment?: boolean | cdktf.IResolvable; 
+  private _contentCommitment?: boolean | cdktn.IResolvable; 
   public get contentCommitment() {
     return this.getBooleanAttribute('content_commitment');
   }
-  public set contentCommitment(value: boolean | cdktf.IResolvable) {
+  public set contentCommitment(value: boolean | cdktn.IResolvable) {
     this._contentCommitment = value;
   }
   public resetContentCommitment() {
@@ -1261,11 +1261,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // crl_sign - computed: false, optional: true, required: false
-  private _crlSign?: boolean | cdktf.IResolvable; 
+  private _crlSign?: boolean | cdktn.IResolvable; 
   public get crlSign() {
     return this.getBooleanAttribute('crl_sign');
   }
-  public set crlSign(value: boolean | cdktf.IResolvable) {
+  public set crlSign(value: boolean | cdktn.IResolvable) {
     this._crlSign = value;
   }
   public resetCrlSign() {
@@ -1277,11 +1277,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // data_encipherment - computed: false, optional: true, required: false
-  private _dataEncipherment?: boolean | cdktf.IResolvable; 
+  private _dataEncipherment?: boolean | cdktn.IResolvable; 
   public get dataEncipherment() {
     return this.getBooleanAttribute('data_encipherment');
   }
-  public set dataEncipherment(value: boolean | cdktf.IResolvable) {
+  public set dataEncipherment(value: boolean | cdktn.IResolvable) {
     this._dataEncipherment = value;
   }
   public resetDataEncipherment() {
@@ -1293,11 +1293,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // decipher_only - computed: false, optional: true, required: false
-  private _decipherOnly?: boolean | cdktf.IResolvable; 
+  private _decipherOnly?: boolean | cdktn.IResolvable; 
   public get decipherOnly() {
     return this.getBooleanAttribute('decipher_only');
   }
-  public set decipherOnly(value: boolean | cdktf.IResolvable) {
+  public set decipherOnly(value: boolean | cdktn.IResolvable) {
     this._decipherOnly = value;
   }
   public resetDecipherOnly() {
@@ -1309,11 +1309,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // digital_signature - computed: false, optional: true, required: false
-  private _digitalSignature?: boolean | cdktf.IResolvable; 
+  private _digitalSignature?: boolean | cdktn.IResolvable; 
   public get digitalSignature() {
     return this.getBooleanAttribute('digital_signature');
   }
-  public set digitalSignature(value: boolean | cdktf.IResolvable) {
+  public set digitalSignature(value: boolean | cdktn.IResolvable) {
     this._digitalSignature = value;
   }
   public resetDigitalSignature() {
@@ -1325,11 +1325,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // encipher_only - computed: false, optional: true, required: false
-  private _encipherOnly?: boolean | cdktf.IResolvable; 
+  private _encipherOnly?: boolean | cdktn.IResolvable; 
   public get encipherOnly() {
     return this.getBooleanAttribute('encipher_only');
   }
-  public set encipherOnly(value: boolean | cdktf.IResolvable) {
+  public set encipherOnly(value: boolean | cdktn.IResolvable) {
     this._encipherOnly = value;
   }
   public resetEncipherOnly() {
@@ -1341,11 +1341,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // key_agreement - computed: false, optional: true, required: false
-  private _keyAgreement?: boolean | cdktf.IResolvable; 
+  private _keyAgreement?: boolean | cdktn.IResolvable; 
   public get keyAgreement() {
     return this.getBooleanAttribute('key_agreement');
   }
-  public set keyAgreement(value: boolean | cdktf.IResolvable) {
+  public set keyAgreement(value: boolean | cdktn.IResolvable) {
     this._keyAgreement = value;
   }
   public resetKeyAgreement() {
@@ -1357,11 +1357,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageOutp
   }
 
   // key_encipherment - computed: false, optional: true, required: false
-  private _keyEncipherment?: boolean | cdktf.IResolvable; 
+  private _keyEncipherment?: boolean | cdktn.IResolvable; 
   public get keyEncipherment() {
     return this.getBooleanAttribute('key_encipherment');
   }
-  public set keyEncipherment(value: boolean | cdktf.IResolvable) {
+  public set keyEncipherment(value: boolean | cdktn.IResolvable) {
     this._keyEncipherment = value;
   }
   public resetKeyEncipherment() {
@@ -1378,93 +1378,93 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyU
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#client_auth PrivatecaCaPool#client_auth}
   */
-  readonly clientAuth?: boolean | cdktf.IResolvable;
+  readonly clientAuth?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#code_signing PrivatecaCaPool#code_signing}
   */
-  readonly codeSigning?: boolean | cdktf.IResolvable;
+  readonly codeSigning?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#email_protection PrivatecaCaPool#email_protection}
   */
-  readonly emailProtection?: boolean | cdktf.IResolvable;
+  readonly emailProtection?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#ocsp_signing PrivatecaCaPool#ocsp_signing}
   */
-  readonly ocspSigning?: boolean | cdktf.IResolvable;
+  readonly ocspSigning?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#server_auth PrivatecaCaPool#server_auth}
   */
-  readonly serverAuth?: boolean | cdktf.IResolvable;
+  readonly serverAuth?: boolean | cdktn.IResolvable;
   /**
   * Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time".
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#time_stamping PrivatecaCaPool#time_stamping}
   */
-  readonly timeStamping?: boolean | cdktf.IResolvable;
+  readonly timeStamping?: boolean | cdktn.IResolvable;
 }
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_auth: cdktf.booleanToTerraform(struct!.clientAuth),
-    code_signing: cdktf.booleanToTerraform(struct!.codeSigning),
-    email_protection: cdktf.booleanToTerraform(struct!.emailProtection),
-    ocsp_signing: cdktf.booleanToTerraform(struct!.ocspSigning),
-    server_auth: cdktf.booleanToTerraform(struct!.serverAuth),
-    time_stamping: cdktf.booleanToTerraform(struct!.timeStamping),
+    client_auth: cdktn.booleanToTerraform(struct!.clientAuth),
+    code_signing: cdktn.booleanToTerraform(struct!.codeSigning),
+    email_protection: cdktn.booleanToTerraform(struct!.emailProtection),
+    ocsp_signing: cdktn.booleanToTerraform(struct!.ocspSigning),
+    server_auth: cdktn.booleanToTerraform(struct!.serverAuth),
+    time_stamping: cdktn.booleanToTerraform(struct!.timeStamping),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_auth: {
-      value: cdktf.booleanToHclTerraform(struct!.clientAuth),
+      value: cdktn.booleanToHclTerraform(struct!.clientAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     code_signing: {
-      value: cdktf.booleanToHclTerraform(struct!.codeSigning),
+      value: cdktn.booleanToHclTerraform(struct!.codeSigning),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     email_protection: {
-      value: cdktf.booleanToHclTerraform(struct!.emailProtection),
+      value: cdktn.booleanToHclTerraform(struct!.emailProtection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ocsp_signing: {
-      value: cdktf.booleanToHclTerraform(struct!.ocspSigning),
+      value: cdktn.booleanToHclTerraform(struct!.ocspSigning),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     server_auth: {
-      value: cdktf.booleanToHclTerraform(struct!.serverAuth),
+      value: cdktn.booleanToHclTerraform(struct!.serverAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     time_stamping: {
-      value: cdktf.booleanToHclTerraform(struct!.timeStamping),
+      value: cdktn.booleanToHclTerraform(struct!.timeStamping),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1475,14 +1475,14 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1538,11 +1538,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
   }
 
   // client_auth - computed: false, optional: true, required: false
-  private _clientAuth?: boolean | cdktf.IResolvable; 
+  private _clientAuth?: boolean | cdktn.IResolvable; 
   public get clientAuth() {
     return this.getBooleanAttribute('client_auth');
   }
-  public set clientAuth(value: boolean | cdktf.IResolvable) {
+  public set clientAuth(value: boolean | cdktn.IResolvable) {
     this._clientAuth = value;
   }
   public resetClientAuth() {
@@ -1554,11 +1554,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
   }
 
   // code_signing - computed: false, optional: true, required: false
-  private _codeSigning?: boolean | cdktf.IResolvable; 
+  private _codeSigning?: boolean | cdktn.IResolvable; 
   public get codeSigning() {
     return this.getBooleanAttribute('code_signing');
   }
-  public set codeSigning(value: boolean | cdktf.IResolvable) {
+  public set codeSigning(value: boolean | cdktn.IResolvable) {
     this._codeSigning = value;
   }
   public resetCodeSigning() {
@@ -1570,11 +1570,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
   }
 
   // email_protection - computed: false, optional: true, required: false
-  private _emailProtection?: boolean | cdktf.IResolvable; 
+  private _emailProtection?: boolean | cdktn.IResolvable; 
   public get emailProtection() {
     return this.getBooleanAttribute('email_protection');
   }
-  public set emailProtection(value: boolean | cdktf.IResolvable) {
+  public set emailProtection(value: boolean | cdktn.IResolvable) {
     this._emailProtection = value;
   }
   public resetEmailProtection() {
@@ -1586,11 +1586,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
   }
 
   // ocsp_signing - computed: false, optional: true, required: false
-  private _ocspSigning?: boolean | cdktf.IResolvable; 
+  private _ocspSigning?: boolean | cdktn.IResolvable; 
   public get ocspSigning() {
     return this.getBooleanAttribute('ocsp_signing');
   }
-  public set ocspSigning(value: boolean | cdktf.IResolvable) {
+  public set ocspSigning(value: boolean | cdktn.IResolvable) {
     this._ocspSigning = value;
   }
   public resetOcspSigning() {
@@ -1602,11 +1602,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
   }
 
   // server_auth - computed: false, optional: true, required: false
-  private _serverAuth?: boolean | cdktf.IResolvable; 
+  private _serverAuth?: boolean | cdktn.IResolvable; 
   public get serverAuth() {
     return this.getBooleanAttribute('server_auth');
   }
-  public set serverAuth(value: boolean | cdktf.IResolvable) {
+  public set serverAuth(value: boolean | cdktn.IResolvable) {
     this._serverAuth = value;
   }
   public resetServerAuth() {
@@ -1618,11 +1618,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage
   }
 
   // time_stamping - computed: false, optional: true, required: false
-  private _timeStamping?: boolean | cdktf.IResolvable; 
+  private _timeStamping?: boolean | cdktn.IResolvable; 
   public get timeStamping() {
     return this.getBooleanAttribute('time_stamping');
   }
-  public set timeStamping(value: boolean | cdktf.IResolvable) {
+  public set timeStamping(value: boolean | cdktn.IResolvable) {
     this._timeStamping = value;
   }
   public resetTimeStamping() {
@@ -1642,25 +1642,25 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExten
   readonly objectIdPath: number[];
 }
 
-export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
+    object_id_path: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
 
-export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_id_path: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.objectIdPath),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.objectIdPath),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -1671,9 +1671,9 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtend
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1681,11 +1681,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedK
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1698,13 +1698,13 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedK
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._objectIdPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1729,15 +1729,15 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedK
   }
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList extends cdktf.ComplexList {
-  public internalValue? : PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages[] | cdktf.IResolvable
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList extends cdktn.ComplexList {
+  public internalValue? : PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1766,25 +1766,25 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#unknown_extended_key_usages PrivatecaCaPool#unknown_extended_key_usages}
   */
-  readonly unknownExtendedKeyUsages?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages[] | cdktf.IResolvable;
+  readonly unknownExtendedKeyUsages?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages[] | cdktn.IResolvable;
 }
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     base_key_usage: privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageToTerraform(struct!.baseKeyUsage),
     extended_key_usage: privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageToTerraform(struct!.extendedKeyUsage),
-    unknown_extended_key_usages: cdktf.listMapper(privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToTerraform, true)(struct!.unknownExtendedKeyUsages),
+    unknown_extended_key_usages: cdktn.listMapper(privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToTerraform, true)(struct!.unknownExtendedKeyUsages),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1801,7 +1801,7 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageToHclTerrafor
       storageClassType: "PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageList",
     },
     unknown_extended_key_usages: {
-      value: cdktf.listMapperHcl(privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToHclTerraform, true)(struct!.unknownExtendedKeyUsages),
+      value: cdktn.listMapperHcl(privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToHclTerraform, true)(struct!.unknownExtendedKeyUsages),
       isBlock: true,
       type: "list",
       storageClassType: "PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesList",
@@ -1812,14 +1812,14 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1887,7 +1887,7 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageOutputReference 
   public get unknownExtendedKeyUsages() {
     return this._unknownExtendedKeyUsages;
   }
-  public putUnknownExtendedKeyUsages(value: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages[] | cdktf.IResolvable) {
+  public putUnknownExtendedKeyUsages(value: PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsages[] | cdktn.IResolvable) {
     this._unknownExtendedKeyUsages.internalValue = value;
   }
   public resetUnknownExtendedKeyUsages() {
@@ -1904,7 +1904,7 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#critical PrivatecaCaPool#critical}
   */
-  readonly critical: boolean | cdktf.IResolvable;
+  readonly critical: boolean | cdktn.IResolvable;
   /**
   * Contains excluded DNS names. Any DNS name that can be
   * constructed by simply adding zero or more labels to
@@ -1980,80 +1980,80 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints {
 }
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    critical: cdktf.booleanToTerraform(struct!.critical),
-    excluded_dns_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedDnsNames),
-    excluded_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedEmailAddresses),
-    excluded_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedIpRanges),
-    excluded_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedUris),
-    permitted_dns_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permittedDnsNames),
-    permitted_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permittedEmailAddresses),
-    permitted_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permittedIpRanges),
-    permitted_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.permittedUris),
+    critical: cdktn.booleanToTerraform(struct!.critical),
+    excluded_dns_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedDnsNames),
+    excluded_email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedEmailAddresses),
+    excluded_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedIpRanges),
+    excluded_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedUris),
+    permitted_dns_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permittedDnsNames),
+    permitted_email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permittedEmailAddresses),
+    permitted_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permittedIpRanges),
+    permitted_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.permittedUris),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     critical: {
-      value: cdktf.booleanToHclTerraform(struct!.critical),
+      value: cdktn.booleanToHclTerraform(struct!.critical),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     excluded_dns_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedDnsNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedDnsNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_email_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedEmailAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedEmailAddresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_ip_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedIpRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedIpRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     excluded_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     permitted_dns_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permittedDnsNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permittedDnsNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     permitted_email_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permittedEmailAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permittedEmailAddresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     permitted_ip_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permittedIpRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permittedIpRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     permitted_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.permittedUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.permittedUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2064,14 +2064,14 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2145,11 +2145,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsOutputRef
   }
 
   // critical - computed: false, optional: false, required: true
-  private _critical?: boolean | cdktf.IResolvable; 
+  private _critical?: boolean | cdktn.IResolvable; 
   public get critical() {
     return this.getBooleanAttribute('critical');
   }
-  public set critical(value: boolean | cdktf.IResolvable) {
+  public set critical(value: boolean | cdktn.IResolvable) {
     this._critical = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2294,25 +2294,25 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds {
   readonly objectIdPath: number[];
 }
 
-export function privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
+    object_id_path: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
 
-export function privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     object_id_path: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.objectIdPath),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.objectIdPath),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -2323,9 +2323,9 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2333,11 +2333,11 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2350,13 +2350,13 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._objectIdPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2381,15 +2381,15 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference
   }
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList extends cdktf.ComplexList {
-  public internalValue? : PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds[] | cdktf.IResolvable
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList extends cdktn.ComplexList {
+  public internalValue? : PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2413,7 +2413,7 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValues {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#additional_extensions PrivatecaCaPool#additional_extensions}
   */
-  readonly additionalExtensions?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions[] | cdktf.IResolvable;
+  readonly additionalExtensions?: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions[] | cdktn.IResolvable;
   /**
   * ca_options block
   *
@@ -2437,39 +2437,39 @@ export interface PrivatecaCaPoolIssuancePolicyBaselineValues {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#policy_ids PrivatecaCaPool#policy_ids}
   */
-  readonly policyIds?: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds[] | cdktf.IResolvable;
+  readonly policyIds?: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds[] | cdktn.IResolvable;
 }
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesToTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aia_ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.aiaOcspServers),
-    additional_extensions: cdktf.listMapper(privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToTerraform, true)(struct!.additionalExtensions),
+    aia_ocsp_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.aiaOcspServers),
+    additional_extensions: cdktn.listMapper(privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToTerraform, true)(struct!.additionalExtensions),
     ca_options: privatecaCaPoolIssuancePolicyBaselineValuesCaOptionsToTerraform(struct!.caOptions),
     key_usage: privatecaCaPoolIssuancePolicyBaselineValuesKeyUsageToTerraform(struct!.keyUsage),
     name_constraints: privatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsToTerraform(struct!.nameConstraints),
-    policy_ids: cdktf.listMapper(privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToTerraform, true)(struct!.policyIds),
+    policy_ids: cdktn.listMapper(privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToTerraform, true)(struct!.policyIds),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyBaselineValuesToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference | PrivatecaCaPoolIssuancePolicyBaselineValues): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aia_ocsp_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.aiaOcspServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.aiaOcspServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     additional_extensions: {
-      value: cdktf.listMapperHcl(privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToHclTerraform, true)(struct!.additionalExtensions),
+      value: cdktn.listMapperHcl(privatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToHclTerraform, true)(struct!.additionalExtensions),
       isBlock: true,
       type: "list",
       storageClassType: "PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsList",
@@ -2493,7 +2493,7 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesToHclTerraform(struct
       storageClassType: "PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraintsList",
     },
     policy_ids: {
-      value: cdktf.listMapperHcl(privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToHclTerraform, true)(struct!.policyIds),
+      value: cdktn.listMapperHcl(privatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToHclTerraform, true)(struct!.policyIds),
       isBlock: true,
       type: "list",
       storageClassType: "PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsList",
@@ -2504,14 +2504,14 @@ export function privatecaCaPoolIssuancePolicyBaselineValuesToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2587,7 +2587,7 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference extends 
   public get additionalExtensions() {
     return this._additionalExtensions;
   }
-  public putAdditionalExtensions(value: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions[] | cdktf.IResolvable) {
+  public putAdditionalExtensions(value: PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensions[] | cdktn.IResolvable) {
     this._additionalExtensions.internalValue = value;
   }
   public resetAdditionalExtensions() {
@@ -2645,7 +2645,7 @@ export class PrivatecaCaPoolIssuancePolicyBaselineValuesOutputReference extends 
   public get policyIds() {
     return this._policyIds;
   }
-  public putPolicyIds(value: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds[] | cdktf.IResolvable) {
+  public putPolicyIds(value: PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds[] | cdktn.IResolvable) {
     this._policyIds.internalValue = value;
   }
   public resetPolicyIds() {
@@ -2684,45 +2684,45 @@ export interface PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression {
 }
 
 export function privatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionToTerraform(struct?: PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference | PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference | PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2733,14 +2733,14 @@ export function privatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2851,14 +2851,14 @@ export interface PrivatecaCaPoolIssuancePolicyIdentityConstraints {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_subject_alt_names_passthrough PrivatecaCaPool#allow_subject_alt_names_passthrough}
   */
-  readonly allowSubjectAltNamesPassthrough: boolean | cdktf.IResolvable;
+  readonly allowSubjectAltNamesPassthrough: boolean | cdktn.IResolvable;
   /**
   * If this is set, the Subject field may be copied from a certificate request into the signed certificate.
   * Otherwise, the requested Subject will be discarded.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_subject_passthrough PrivatecaCaPool#allow_subject_passthrough}
   */
-  readonly allowSubjectPassthrough: boolean | cdktf.IResolvable;
+  readonly allowSubjectPassthrough: boolean | cdktn.IResolvable;
   /**
   * cel_expression block
   *
@@ -2868,32 +2868,32 @@ export interface PrivatecaCaPoolIssuancePolicyIdentityConstraints {
 }
 
 export function privatecaCaPoolIssuancePolicyIdentityConstraintsToTerraform(struct?: PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference | PrivatecaCaPoolIssuancePolicyIdentityConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_subject_alt_names_passthrough: cdktf.booleanToTerraform(struct!.allowSubjectAltNamesPassthrough),
-    allow_subject_passthrough: cdktf.booleanToTerraform(struct!.allowSubjectPassthrough),
+    allow_subject_alt_names_passthrough: cdktn.booleanToTerraform(struct!.allowSubjectAltNamesPassthrough),
+    allow_subject_passthrough: cdktn.booleanToTerraform(struct!.allowSubjectPassthrough),
     cel_expression: privatecaCaPoolIssuancePolicyIdentityConstraintsCelExpressionToTerraform(struct!.celExpression),
   }
 }
 
 
 export function privatecaCaPoolIssuancePolicyIdentityConstraintsToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference | PrivatecaCaPoolIssuancePolicyIdentityConstraints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_subject_alt_names_passthrough: {
-      value: cdktf.booleanToHclTerraform(struct!.allowSubjectAltNamesPassthrough),
+      value: cdktn.booleanToHclTerraform(struct!.allowSubjectAltNamesPassthrough),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_subject_passthrough: {
-      value: cdktf.booleanToHclTerraform(struct!.allowSubjectPassthrough),
+      value: cdktn.booleanToHclTerraform(struct!.allowSubjectPassthrough),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2910,14 +2910,14 @@ export function privatecaCaPoolIssuancePolicyIdentityConstraintsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2955,11 +2955,11 @@ export class PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference ext
   }
 
   // allow_subject_alt_names_passthrough - computed: false, optional: false, required: true
-  private _allowSubjectAltNamesPassthrough?: boolean | cdktf.IResolvable; 
+  private _allowSubjectAltNamesPassthrough?: boolean | cdktn.IResolvable; 
   public get allowSubjectAltNamesPassthrough() {
     return this.getBooleanAttribute('allow_subject_alt_names_passthrough');
   }
-  public set allowSubjectAltNamesPassthrough(value: boolean | cdktf.IResolvable) {
+  public set allowSubjectAltNamesPassthrough(value: boolean | cdktn.IResolvable) {
     this._allowSubjectAltNamesPassthrough = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2968,11 +2968,11 @@ export class PrivatecaCaPoolIssuancePolicyIdentityConstraintsOutputReference ext
   }
 
   // allow_subject_passthrough - computed: false, optional: false, required: true
-  private _allowSubjectPassthrough?: boolean | cdktf.IResolvable; 
+  private _allowSubjectPassthrough?: boolean | cdktn.IResolvable; 
   public get allowSubjectPassthrough() {
     return this.getBooleanAttribute('allow_subject_passthrough');
   }
-  public set allowSubjectPassthrough(value: boolean | cdktf.IResolvable) {
+  public set allowSubjectPassthrough(value: boolean | cdktn.IResolvable) {
     this._allowSubjectPassthrough = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3025,7 +3025,7 @@ export interface PrivatecaCaPoolIssuancePolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allowed_key_types PrivatecaCaPool#allowed_key_types}
   */
-  readonly allowedKeyTypes?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes[] | cdktf.IResolvable;
+  readonly allowedKeyTypes?: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes[] | cdktn.IResolvable;
   /**
   * baseline_values block
   *
@@ -3041,15 +3041,15 @@ export interface PrivatecaCaPoolIssuancePolicy {
 }
 
 export function privatecaCaPoolIssuancePolicyToTerraform(struct?: PrivatecaCaPoolIssuancePolicyOutputReference | PrivatecaCaPoolIssuancePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backdate_duration: cdktf.stringToTerraform(struct!.backdateDuration),
-    maximum_lifetime: cdktf.stringToTerraform(struct!.maximumLifetime),
+    backdate_duration: cdktn.stringToTerraform(struct!.backdateDuration),
+    maximum_lifetime: cdktn.stringToTerraform(struct!.maximumLifetime),
     allowed_issuance_modes: privatecaCaPoolIssuancePolicyAllowedIssuanceModesToTerraform(struct!.allowedIssuanceModes),
-    allowed_key_types: cdktf.listMapper(privatecaCaPoolIssuancePolicyAllowedKeyTypesToTerraform, true)(struct!.allowedKeyTypes),
+    allowed_key_types: cdktn.listMapper(privatecaCaPoolIssuancePolicyAllowedKeyTypesToTerraform, true)(struct!.allowedKeyTypes),
     baseline_values: privatecaCaPoolIssuancePolicyBaselineValuesToTerraform(struct!.baselineValues),
     identity_constraints: privatecaCaPoolIssuancePolicyIdentityConstraintsToTerraform(struct!.identityConstraints),
   }
@@ -3057,19 +3057,19 @@ export function privatecaCaPoolIssuancePolicyToTerraform(struct?: PrivatecaCaPoo
 
 
 export function privatecaCaPoolIssuancePolicyToHclTerraform(struct?: PrivatecaCaPoolIssuancePolicyOutputReference | PrivatecaCaPoolIssuancePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backdate_duration: {
-      value: cdktf.stringToHclTerraform(struct!.backdateDuration),
+      value: cdktn.stringToHclTerraform(struct!.backdateDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     maximum_lifetime: {
-      value: cdktf.stringToHclTerraform(struct!.maximumLifetime),
+      value: cdktn.stringToHclTerraform(struct!.maximumLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3081,7 +3081,7 @@ export function privatecaCaPoolIssuancePolicyToHclTerraform(struct?: PrivatecaCa
       storageClassType: "PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesList",
     },
     allowed_key_types: {
-      value: cdktf.listMapperHcl(privatecaCaPoolIssuancePolicyAllowedKeyTypesToHclTerraform, true)(struct!.allowedKeyTypes),
+      value: cdktn.listMapperHcl(privatecaCaPoolIssuancePolicyAllowedKeyTypesToHclTerraform, true)(struct!.allowedKeyTypes),
       isBlock: true,
       type: "list",
       storageClassType: "PrivatecaCaPoolIssuancePolicyAllowedKeyTypesList",
@@ -3104,14 +3104,14 @@ export function privatecaCaPoolIssuancePolicyToHclTerraform(struct?: PrivatecaCa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolIssuancePolicyOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolIssuancePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3219,7 +3219,7 @@ export class PrivatecaCaPoolIssuancePolicyOutputReference extends cdktf.ComplexO
   public get allowedKeyTypes() {
     return this._allowedKeyTypes;
   }
-  public putAllowedKeyTypes(value: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes[] | cdktf.IResolvable) {
+  public putAllowedKeyTypes(value: PrivatecaCaPoolIssuancePolicyAllowedKeyTypes[] | cdktn.IResolvable) {
     this._allowedKeyTypes.internalValue = value;
   }
   public resetAllowedKeyTypes() {
@@ -3278,7 +3278,7 @@ export interface PrivatecaCaPoolPublishingOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#publish_ca_cert PrivatecaCaPool#publish_ca_cert}
   */
-  readonly publishCaCert: boolean | cdktf.IResolvable;
+  readonly publishCaCert: boolean | cdktn.IResolvable;
   /**
   * When true, publishes each CertificateAuthority's CRL and includes its URL in the "CRL Distribution Points" X.509 extension
   * in all issued Certificates. If this is false, CRLs will not be published and the corresponding X.509 extension will not
@@ -3287,42 +3287,42 @@ export interface PrivatecaCaPoolPublishingOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#publish_crl PrivatecaCaPool#publish_crl}
   */
-  readonly publishCrl: boolean | cdktf.IResolvable;
+  readonly publishCrl: boolean | cdktn.IResolvable;
 }
 
 export function privatecaCaPoolPublishingOptionsToTerraform(struct?: PrivatecaCaPoolPublishingOptionsOutputReference | PrivatecaCaPoolPublishingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encoding_format: cdktf.stringToTerraform(struct!.encodingFormat),
-    publish_ca_cert: cdktf.booleanToTerraform(struct!.publishCaCert),
-    publish_crl: cdktf.booleanToTerraform(struct!.publishCrl),
+    encoding_format: cdktn.stringToTerraform(struct!.encodingFormat),
+    publish_ca_cert: cdktn.booleanToTerraform(struct!.publishCaCert),
+    publish_crl: cdktn.booleanToTerraform(struct!.publishCrl),
   }
 }
 
 
 export function privatecaCaPoolPublishingOptionsToHclTerraform(struct?: PrivatecaCaPoolPublishingOptionsOutputReference | PrivatecaCaPoolPublishingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encoding_format: {
-      value: cdktf.stringToHclTerraform(struct!.encodingFormat),
+      value: cdktn.stringToHclTerraform(struct!.encodingFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publish_ca_cert: {
-      value: cdktf.booleanToHclTerraform(struct!.publishCaCert),
+      value: cdktn.booleanToHclTerraform(struct!.publishCaCert),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     publish_crl: {
-      value: cdktf.booleanToHclTerraform(struct!.publishCrl),
+      value: cdktn.booleanToHclTerraform(struct!.publishCrl),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3333,14 +3333,14 @@ export function privatecaCaPoolPublishingOptionsToHclTerraform(struct?: Privatec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolPublishingOptionsOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolPublishingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3394,11 +3394,11 @@ export class PrivatecaCaPoolPublishingOptionsOutputReference extends cdktf.Compl
   }
 
   // publish_ca_cert - computed: false, optional: false, required: true
-  private _publishCaCert?: boolean | cdktf.IResolvable; 
+  private _publishCaCert?: boolean | cdktn.IResolvable; 
   public get publishCaCert() {
     return this.getBooleanAttribute('publish_ca_cert');
   }
-  public set publishCaCert(value: boolean | cdktf.IResolvable) {
+  public set publishCaCert(value: boolean | cdktn.IResolvable) {
     this._publishCaCert = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3407,11 +3407,11 @@ export class PrivatecaCaPoolPublishingOptionsOutputReference extends cdktf.Compl
   }
 
   // publish_crl - computed: false, optional: false, required: true
-  private _publishCrl?: boolean | cdktf.IResolvable; 
+  private _publishCrl?: boolean | cdktn.IResolvable; 
   public get publishCrl() {
     return this.getBooleanAttribute('publish_crl');
   }
-  public set publishCrl(value: boolean | cdktf.IResolvable) {
+  public set publishCrl(value: boolean | cdktn.IResolvable) {
     this._publishCrl = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3434,39 +3434,39 @@ export interface PrivatecaCaPoolTimeouts {
   readonly update?: string;
 }
 
-export function privatecaCaPoolTimeoutsToTerraform(struct?: PrivatecaCaPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolTimeoutsToTerraform(struct?: PrivatecaCaPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privatecaCaPoolTimeoutsToHclTerraform(struct?: PrivatecaCaPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privatecaCaPoolTimeoutsToHclTerraform(struct?: PrivatecaCaPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3477,19 +3477,19 @@ export function privatecaCaPoolTimeoutsToHclTerraform(struct?: PrivatecaCaPoolTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivatecaCaPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivatecaCaPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivatecaCaPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivatecaCaPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3510,7 +3510,7 @@ export class PrivatecaCaPoolTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivatecaCaPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivatecaCaPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3518,7 +3518,7 @@ export class PrivatecaCaPoolTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3583,7 +3583,7 @@ export class PrivatecaCaPoolTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}
 */
-export class PrivatecaCaPool extends cdktf.TerraformResource {
+export class PrivatecaCaPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3594,14 +3594,14 @@ export class PrivatecaCaPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivatecaCaPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivatecaCaPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivatecaCaPool to import
   * @param importFromId The id of the existing PrivatecaCaPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivatecaCaPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_privateca_ca_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_privateca_ca_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -3647,7 +3647,7 @@ export class PrivatecaCaPool extends cdktf.TerraformResource {
   // ==========
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -3727,7 +3727,7 @@ export class PrivatecaCaPool extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -3799,12 +3799,12 @@ export class PrivatecaCaPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      tier: cdktf.stringToTerraform(this._tier),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      tier: cdktn.stringToTerraform(this._tier),
       issuance_policy: privatecaCaPoolIssuancePolicyToTerraform(this._issuancePolicy.internalValue),
       publishing_options: privatecaCaPoolPublishingOptionsToTerraform(this._publishingOptions.internalValue),
       timeouts: privatecaCaPoolTimeoutsToTerraform(this._timeouts.internalValue),
@@ -3814,37 +3814,37 @@ export class PrivatecaCaPool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

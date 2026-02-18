@@ -7,18 +7,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ArtifactRegistryRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface ArtifactRegistryRepositoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * If true, the cleanup pipeline is prevented from deleting versions in this
   * repository.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository#cleanup_policy_dry_run ArtifactRegistryRepository#cleanup_policy_dry_run}
   */
-  readonly cleanupPolicyDryRun?: boolean | cdktf.IResolvable;
+  readonly cleanupPolicyDryRun?: boolean | cdktn.IResolvable;
   /**
   * The user-provided description of the repository.
   *
@@ -97,7 +97,7 @@ export interface ArtifactRegistryRepositoryConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository#cleanup_policies ArtifactRegistryRepository#cleanup_policies}
   */
-  readonly cleanupPolicies?: ArtifactRegistryRepositoryCleanupPolicies[] | cdktf.IResolvable;
+  readonly cleanupPolicies?: ArtifactRegistryRepositoryCleanupPolicies[] | cdktn.IResolvable;
   /**
   * docker_config block
   *
@@ -175,59 +175,59 @@ export interface ArtifactRegistryRepositoryCleanupPoliciesCondition {
 }
 
 export function artifactRegistryRepositoryCleanupPoliciesConditionToTerraform(struct?: ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference | ArtifactRegistryRepositoryCleanupPoliciesCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    newer_than: cdktf.stringToTerraform(struct!.newerThan),
-    older_than: cdktf.stringToTerraform(struct!.olderThan),
-    package_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.packageNamePrefixes),
-    tag_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagPrefixes),
-    tag_state: cdktf.stringToTerraform(struct!.tagState),
-    version_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.versionNamePrefixes),
+    newer_than: cdktn.stringToTerraform(struct!.newerThan),
+    older_than: cdktn.stringToTerraform(struct!.olderThan),
+    package_name_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.packageNamePrefixes),
+    tag_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagPrefixes),
+    tag_state: cdktn.stringToTerraform(struct!.tagState),
+    version_name_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.versionNamePrefixes),
   }
 }
 
 
 export function artifactRegistryRepositoryCleanupPoliciesConditionToHclTerraform(struct?: ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference | ArtifactRegistryRepositoryCleanupPoliciesCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     newer_than: {
-      value: cdktf.stringToHclTerraform(struct!.newerThan),
+      value: cdktn.stringToHclTerraform(struct!.newerThan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     older_than: {
-      value: cdktf.stringToHclTerraform(struct!.olderThan),
+      value: cdktn.stringToHclTerraform(struct!.olderThan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     package_name_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packageNamePrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.packageNamePrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagPrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagPrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tag_state: {
-      value: cdktf.stringToHclTerraform(struct!.tagState),
+      value: cdktn.stringToHclTerraform(struct!.tagState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version_name_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.versionNamePrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.versionNamePrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -238,14 +238,14 @@ export function artifactRegistryRepositoryCleanupPoliciesConditionToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -412,31 +412,31 @@ export interface ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions {
 }
 
 export function artifactRegistryRepositoryCleanupPoliciesMostRecentVersionsToTerraform(struct?: ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference | ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    keep_count: cdktf.numberToTerraform(struct!.keepCount),
-    package_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.packageNamePrefixes),
+    keep_count: cdktn.numberToTerraform(struct!.keepCount),
+    package_name_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.packageNamePrefixes),
   }
 }
 
 
 export function artifactRegistryRepositoryCleanupPoliciesMostRecentVersionsToHclTerraform(struct?: ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference | ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     keep_count: {
-      value: cdktf.numberToHclTerraform(struct!.keepCount),
+      value: cdktn.numberToHclTerraform(struct!.keepCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     package_name_prefixes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packageNamePrefixes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.packageNamePrefixes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -447,14 +447,14 @@ export function artifactRegistryRepositoryCleanupPoliciesMostRecentVersionsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -545,34 +545,34 @@ export interface ArtifactRegistryRepositoryCleanupPolicies {
   readonly mostRecentVersions?: ArtifactRegistryRepositoryCleanupPoliciesMostRecentVersions;
 }
 
-export function artifactRegistryRepositoryCleanupPoliciesToTerraform(struct?: ArtifactRegistryRepositoryCleanupPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactRegistryRepositoryCleanupPoliciesToTerraform(struct?: ArtifactRegistryRepositoryCleanupPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    id: cdktf.stringToTerraform(struct!.id),
+    action: cdktn.stringToTerraform(struct!.action),
+    id: cdktn.stringToTerraform(struct!.id),
     condition: artifactRegistryRepositoryCleanupPoliciesConditionToTerraform(struct!.condition),
     most_recent_versions: artifactRegistryRepositoryCleanupPoliciesMostRecentVersionsToTerraform(struct!.mostRecentVersions),
   }
 }
 
 
-export function artifactRegistryRepositoryCleanupPoliciesToHclTerraform(struct?: ArtifactRegistryRepositoryCleanupPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactRegistryRepositoryCleanupPoliciesToHclTerraform(struct?: ArtifactRegistryRepositoryCleanupPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -595,9 +595,9 @@ export function artifactRegistryRepositoryCleanupPoliciesToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryCleanupPoliciesOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryCleanupPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -605,11 +605,11 @@ export class ArtifactRegistryRepositoryCleanupPoliciesOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArtifactRegistryRepositoryCleanupPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): ArtifactRegistryRepositoryCleanupPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -634,7 +634,7 @@ export class ArtifactRegistryRepositoryCleanupPoliciesOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArtifactRegistryRepositoryCleanupPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArtifactRegistryRepositoryCleanupPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -643,7 +643,7 @@ export class ArtifactRegistryRepositoryCleanupPoliciesOutputReference extends cd
       this._condition.internalValue = undefined;
       this._mostRecentVersions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -719,15 +719,15 @@ export class ArtifactRegistryRepositoryCleanupPoliciesOutputReference extends cd
   }
 }
 
-export class ArtifactRegistryRepositoryCleanupPoliciesList extends cdktf.ComplexList {
-  public internalValue? : ArtifactRegistryRepositoryCleanupPolicies[] | cdktf.IResolvable
+export class ArtifactRegistryRepositoryCleanupPoliciesList extends cdktn.ComplexList {
+  public internalValue? : ArtifactRegistryRepositoryCleanupPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -744,28 +744,28 @@ export interface ArtifactRegistryRepositoryDockerConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository#immutable_tags ArtifactRegistryRepository#immutable_tags}
   */
-  readonly immutableTags?: boolean | cdktf.IResolvable;
+  readonly immutableTags?: boolean | cdktn.IResolvable;
 }
 
 export function artifactRegistryRepositoryDockerConfigToTerraform(struct?: ArtifactRegistryRepositoryDockerConfigOutputReference | ArtifactRegistryRepositoryDockerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    immutable_tags: cdktf.booleanToTerraform(struct!.immutableTags),
+    immutable_tags: cdktn.booleanToTerraform(struct!.immutableTags),
   }
 }
 
 
 export function artifactRegistryRepositoryDockerConfigToHclTerraform(struct?: ArtifactRegistryRepositoryDockerConfigOutputReference | ArtifactRegistryRepositoryDockerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     immutable_tags: {
-      value: cdktf.booleanToHclTerraform(struct!.immutableTags),
+      value: cdktn.booleanToHclTerraform(struct!.immutableTags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -776,14 +776,14 @@ export function artifactRegistryRepositoryDockerConfigToHclTerraform(struct?: Ar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryDockerConfigOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryDockerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -809,11 +809,11 @@ export class ArtifactRegistryRepositoryDockerConfigOutputReference extends cdktf
   }
 
   // immutable_tags - computed: false, optional: true, required: false
-  private _immutableTags?: boolean | cdktf.IResolvable; 
+  private _immutableTags?: boolean | cdktn.IResolvable; 
   public get immutableTags() {
     return this.getBooleanAttribute('immutable_tags');
   }
-  public set immutableTags(value: boolean | cdktf.IResolvable) {
+  public set immutableTags(value: boolean | cdktn.IResolvable) {
     this._immutableTags = value;
   }
   public resetImmutableTags() {
@@ -831,7 +831,7 @@ export interface ArtifactRegistryRepositoryMavenConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository#allow_snapshot_overwrites ArtifactRegistryRepository#allow_snapshot_overwrites}
   */
-  readonly allowSnapshotOverwrites?: boolean | cdktf.IResolvable;
+  readonly allowSnapshotOverwrites?: boolean | cdktn.IResolvable;
   /**
   * Version policy defines the versions that the registry will accept. Default value: "VERSION_POLICY_UNSPECIFIED" Possible values: ["VERSION_POLICY_UNSPECIFIED", "RELEASE", "SNAPSHOT"]
   *
@@ -841,31 +841,31 @@ export interface ArtifactRegistryRepositoryMavenConfig {
 }
 
 export function artifactRegistryRepositoryMavenConfigToTerraform(struct?: ArtifactRegistryRepositoryMavenConfigOutputReference | ArtifactRegistryRepositoryMavenConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_snapshot_overwrites: cdktf.booleanToTerraform(struct!.allowSnapshotOverwrites),
-    version_policy: cdktf.stringToTerraform(struct!.versionPolicy),
+    allow_snapshot_overwrites: cdktn.booleanToTerraform(struct!.allowSnapshotOverwrites),
+    version_policy: cdktn.stringToTerraform(struct!.versionPolicy),
   }
 }
 
 
 export function artifactRegistryRepositoryMavenConfigToHclTerraform(struct?: ArtifactRegistryRepositoryMavenConfigOutputReference | ArtifactRegistryRepositoryMavenConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_snapshot_overwrites: {
-      value: cdktf.booleanToHclTerraform(struct!.allowSnapshotOverwrites),
+      value: cdktn.booleanToHclTerraform(struct!.allowSnapshotOverwrites),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     version_policy: {
-      value: cdktf.stringToHclTerraform(struct!.versionPolicy),
+      value: cdktn.stringToHclTerraform(struct!.versionPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -876,14 +876,14 @@ export function artifactRegistryRepositoryMavenConfigToHclTerraform(struct?: Art
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryMavenConfigOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryMavenConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -915,11 +915,11 @@ export class ArtifactRegistryRepositoryMavenConfigOutputReference extends cdktf.
   }
 
   // allow_snapshot_overwrites - computed: false, optional: true, required: false
-  private _allowSnapshotOverwrites?: boolean | cdktf.IResolvable; 
+  private _allowSnapshotOverwrites?: boolean | cdktn.IResolvable; 
   public get allowSnapshotOverwrites() {
     return this.getBooleanAttribute('allow_snapshot_overwrites');
   }
-  public set allowSnapshotOverwrites(value: boolean | cdktf.IResolvable) {
+  public set allowSnapshotOverwrites(value: boolean | cdktn.IResolvable) {
     this._allowSnapshotOverwrites = value;
   }
   public resetAllowSnapshotOverwrites() {
@@ -962,31 +962,31 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPu
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_base: cdktf.stringToTerraform(struct!.repositoryBase),
-    repository_path: cdktf.stringToTerraform(struct!.repositoryPath),
+    repository_base: cdktn.stringToTerraform(struct!.repositoryBase),
+    repository_path: cdktn.stringToTerraform(struct!.repositoryPath),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository_base: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryBase),
+      value: cdktn.stringToHclTerraform(struct!.repositoryBase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository_path: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryPath),
+      value: cdktn.stringToHclTerraform(struct!.repositoryPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -997,14 +997,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryPublicRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1071,8 +1071,8 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository {
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1082,8 +1082,8 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryToT
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1099,14 +1099,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1160,24 +1160,24 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositor
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1188,14 +1188,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigCommonRepository
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1243,24 +1243,24 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositor
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1271,14 +1271,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigDockerRepository
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1335,25 +1335,25 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositor
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+    public_repository: cdktn.stringToTerraform(struct!.publicRepository),
     custom_repository: artifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryCustomRepositoryToTerraform(struct!.customRepository),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_repository: {
-      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      value: cdktn.stringToHclTerraform(struct!.publicRepository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1370,14 +1370,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigDockerRepository
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1450,24 +1450,24 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1478,14 +1478,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1542,25 +1542,25 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+    public_repository: cdktn.stringToTerraform(struct!.publicRepository),
     custom_repository: artifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryToTerraform(struct!.customRepository),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_repository: {
-      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      value: cdktn.stringToHclTerraform(struct!.publicRepository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1577,14 +1577,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1657,24 +1657,24 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCu
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1685,14 +1685,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1749,25 +1749,25 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository {
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+    public_repository: cdktn.stringToTerraform(struct!.publicRepository),
     custom_repository: artifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryCustomRepositoryToTerraform(struct!.customRepository),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_repository: {
-      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      value: cdktn.stringToHclTerraform(struct!.publicRepository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1784,14 +1784,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1864,24 +1864,24 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositor
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1892,14 +1892,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigPythonRepository
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1956,25 +1956,25 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositor
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+    public_repository: cdktn.stringToTerraform(struct!.publicRepository),
     custom_repository: artifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryToTerraform(struct!.customRepository),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_repository: {
-      value: cdktf.stringToHclTerraform(struct!.publicRepository),
+      value: cdktn.stringToHclTerraform(struct!.publicRepository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1991,14 +1991,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigPythonRepository
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2079,31 +2079,31 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredent
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password_secret_version: cdktf.stringToTerraform(struct!.passwordSecretVersion),
-    username: cdktf.stringToTerraform(struct!.username),
+    password_secret_version: cdktn.stringToTerraform(struct!.passwordSecretVersion),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password_secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.passwordSecretVersion),
+      value: cdktn.stringToHclTerraform(struct!.passwordSecretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2114,14 +2114,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsUsernamePasswordCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2194,8 +2194,8 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredent
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2205,8 +2205,8 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredenti
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2222,14 +2222,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2286,31 +2286,31 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPu
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_base: cdktf.stringToTerraform(struct!.repositoryBase),
-    repository_path: cdktf.stringToTerraform(struct!.repositoryPath),
+    repository_base: cdktn.stringToTerraform(struct!.repositoryBase),
+    repository_path: cdktn.stringToTerraform(struct!.repositoryPath),
   }
 }
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository_base: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryBase),
+      value: cdktn.stringToHclTerraform(struct!.repositoryBase),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository_path: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryPath),
+      value: cdktn.stringToHclTerraform(struct!.repositoryPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2321,14 +2321,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryPublicRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2395,8 +2395,8 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository {
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2406,8 +2406,8 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryToT
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2423,14 +2423,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2484,7 +2484,7 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository#disable_upstream_validation ArtifactRegistryRepository#disable_upstream_validation}
   */
-  readonly disableUpstreamValidation?: boolean | cdktf.IResolvable;
+  readonly disableUpstreamValidation?: boolean | cdktn.IResolvable;
   /**
   * apt_repository block
   *
@@ -2536,13 +2536,13 @@ export interface ArtifactRegistryRepositoryRemoteRepositoryConfig {
 }
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigToTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    disable_upstream_validation: cdktf.booleanToTerraform(struct!.disableUpstreamValidation),
+    description: cdktn.stringToTerraform(struct!.description),
+    disable_upstream_validation: cdktn.booleanToTerraform(struct!.disableUpstreamValidation),
     apt_repository: artifactRegistryRepositoryRemoteRepositoryConfigAptRepositoryToTerraform(struct!.aptRepository),
     common_repository: artifactRegistryRepositoryRemoteRepositoryConfigCommonRepositoryToTerraform(struct!.commonRepository),
     docker_repository: artifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryToTerraform(struct!.dockerRepository),
@@ -2556,19 +2556,19 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigToTerraform(stru
 
 
 export function artifactRegistryRepositoryRemoteRepositoryConfigToHclTerraform(struct?: ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference | ArtifactRegistryRepositoryRemoteRepositoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disable_upstream_validation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableUpstreamValidation),
+      value: cdktn.booleanToHclTerraform(struct!.disableUpstreamValidation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2627,14 +2627,14 @@ export function artifactRegistryRepositoryRemoteRepositoryConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2730,11 +2730,11 @@ export class ArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference ext
   }
 
   // disable_upstream_validation - computed: false, optional: true, required: false
-  private _disableUpstreamValidation?: boolean | cdktf.IResolvable; 
+  private _disableUpstreamValidation?: boolean | cdktn.IResolvable; 
   public get disableUpstreamValidation() {
     return this.getBooleanAttribute('disable_upstream_validation');
   }
-  public set disableUpstreamValidation(value: boolean | cdktf.IResolvable) {
+  public set disableUpstreamValidation(value: boolean | cdktn.IResolvable) {
     this._disableUpstreamValidation = value;
   }
   public resetDisableUpstreamValidation() {
@@ -2888,39 +2888,39 @@ export interface ArtifactRegistryRepositoryTimeouts {
   readonly update?: string;
 }
 
-export function artifactRegistryRepositoryTimeoutsToTerraform(struct?: ArtifactRegistryRepositoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactRegistryRepositoryTimeoutsToTerraform(struct?: ArtifactRegistryRepositoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function artifactRegistryRepositoryTimeoutsToHclTerraform(struct?: ArtifactRegistryRepositoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactRegistryRepositoryTimeoutsToHclTerraform(struct?: ArtifactRegistryRepositoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2931,19 +2931,19 @@ export function artifactRegistryRepositoryTimeoutsToHclTerraform(struct?: Artifa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ArtifactRegistryRepositoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ArtifactRegistryRepositoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2964,7 +2964,7 @@ export class ArtifactRegistryRepositoryTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArtifactRegistryRepositoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArtifactRegistryRepositoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2972,7 +2972,7 @@ export class ArtifactRegistryRepositoryTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3058,39 +3058,39 @@ export interface ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolici
   readonly repository?: string;
 }
 
-export function artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToTerraform(struct?: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToTerraform(struct?: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    repository: cdktf.stringToTerraform(struct!.repository),
+    id: cdktn.stringToTerraform(struct!.id),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    repository: cdktn.stringToTerraform(struct!.repository),
   }
 }
 
 
-export function artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToHclTerraform(struct?: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToHclTerraform(struct?: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     repository: {
-      value: cdktf.stringToHclTerraform(struct!.repository),
+      value: cdktn.stringToHclTerraform(struct!.repository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3101,9 +3101,9 @@ export function artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicie
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3111,11 +3111,11 @@ export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3136,7 +3136,7 @@ export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3144,7 +3144,7 @@ export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOu
       this._priority = undefined;
       this._repository = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3206,15 +3206,15 @@ export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOu
   }
 }
 
-export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList extends cdktf.ComplexList {
-  public internalValue? : ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktf.IResolvable
+export class ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList extends cdktn.ComplexList {
+  public internalValue? : ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3231,28 +3231,28 @@ export interface ArtifactRegistryRepositoryVirtualRepositoryConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository#upstream_policies ArtifactRegistryRepository#upstream_policies}
   */
-  readonly upstreamPolicies?: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktf.IResolvable;
+  readonly upstreamPolicies?: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktn.IResolvable;
 }
 
 export function artifactRegistryRepositoryVirtualRepositoryConfigToTerraform(struct?: ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference | ArtifactRegistryRepositoryVirtualRepositoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    upstream_policies: cdktf.listMapper(artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToTerraform, true)(struct!.upstreamPolicies),
+    upstream_policies: cdktn.listMapper(artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToTerraform, true)(struct!.upstreamPolicies),
   }
 }
 
 
 export function artifactRegistryRepositoryVirtualRepositoryConfigToHclTerraform(struct?: ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference | ArtifactRegistryRepositoryVirtualRepositoryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     upstream_policies: {
-      value: cdktf.listMapperHcl(artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToHclTerraform, true)(struct!.upstreamPolicies),
+      value: cdktn.listMapperHcl(artifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToHclTerraform, true)(struct!.upstreamPolicies),
       isBlock: true,
       type: "list",
       storageClassType: "ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList",
@@ -3263,14 +3263,14 @@ export function artifactRegistryRepositoryVirtualRepositoryConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3300,7 +3300,7 @@ export class ArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference ex
   public get upstreamPolicies() {
     return this._upstreamPolicies;
   }
-  public putUpstreamPolicies(value: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktf.IResolvable) {
+  public putUpstreamPolicies(value: ArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktn.IResolvable) {
     this._upstreamPolicies.internalValue = value;
   }
   public resetUpstreamPolicies() {
@@ -3321,24 +3321,24 @@ export interface ArtifactRegistryRepositoryVulnerabilityScanningConfig {
 }
 
 export function artifactRegistryRepositoryVulnerabilityScanningConfigToTerraform(struct?: ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference | ArtifactRegistryRepositoryVulnerabilityScanningConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enablement_config: cdktf.stringToTerraform(struct!.enablementConfig),
+    enablement_config: cdktn.stringToTerraform(struct!.enablementConfig),
   }
 }
 
 
 export function artifactRegistryRepositoryVulnerabilityScanningConfigToHclTerraform(struct?: ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference | ArtifactRegistryRepositoryVulnerabilityScanningConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enablement_config: {
-      value: cdktf.stringToHclTerraform(struct!.enablementConfig),
+      value: cdktn.stringToHclTerraform(struct!.enablementConfig),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3349,14 +3349,14 @@ export function artifactRegistryRepositoryVulnerabilityScanningConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference extends cdktf.ComplexObject {
+export class ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3411,7 +3411,7 @@ export class ArtifactRegistryRepositoryVulnerabilityScanningConfigOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository google_artifact_registry_repository}
 */
-export class ArtifactRegistryRepository extends cdktf.TerraformResource {
+export class ArtifactRegistryRepository extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3422,14 +3422,14 @@ export class ArtifactRegistryRepository extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ArtifactRegistryRepository resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ArtifactRegistryRepository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArtifactRegistryRepository to import
   * @param importFromId The id of the existing ArtifactRegistryRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/artifact_registry_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArtifactRegistryRepository to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_repository", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_repository", importId: importFromId, provider });
       }
 
   // ===========
@@ -3483,11 +3483,11 @@ export class ArtifactRegistryRepository extends cdktf.TerraformResource {
   // ==========
 
   // cleanup_policy_dry_run - computed: false, optional: true, required: false
-  private _cleanupPolicyDryRun?: boolean | cdktf.IResolvable; 
+  private _cleanupPolicyDryRun?: boolean | cdktn.IResolvable; 
   public get cleanupPolicyDryRun() {
     return this.getBooleanAttribute('cleanup_policy_dry_run');
   }
-  public set cleanupPolicyDryRun(value: boolean | cdktf.IResolvable) {
+  public set cleanupPolicyDryRun(value: boolean | cdktn.IResolvable) {
     this._cleanupPolicyDryRun = value;
   }
   public resetCleanupPolicyDryRun() {
@@ -3520,7 +3520,7 @@ export class ArtifactRegistryRepository extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -3653,7 +3653,7 @@ export class ArtifactRegistryRepository extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -3668,7 +3668,7 @@ export class ArtifactRegistryRepository extends cdktf.TerraformResource {
   public get cleanupPolicies() {
     return this._cleanupPolicies;
   }
-  public putCleanupPolicies(value: ArtifactRegistryRepositoryCleanupPolicies[] | cdktf.IResolvable) {
+  public putCleanupPolicies(value: ArtifactRegistryRepositoryCleanupPolicies[] | cdktn.IResolvable) {
     this._cleanupPolicies.internalValue = value;
   }
   public resetCleanupPolicies() {
@@ -3781,17 +3781,17 @@ export class ArtifactRegistryRepository extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cleanup_policy_dry_run: cdktf.booleanToTerraform(this._cleanupPolicyDryRun),
-      description: cdktf.stringToTerraform(this._description),
-      format: cdktf.stringToTerraform(this._format),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      mode: cdktf.stringToTerraform(this._mode),
-      project: cdktf.stringToTerraform(this._project),
-      repository_id: cdktf.stringToTerraform(this._repositoryId),
-      cleanup_policies: cdktf.listMapper(artifactRegistryRepositoryCleanupPoliciesToTerraform, true)(this._cleanupPolicies.internalValue),
+      cleanup_policy_dry_run: cdktn.booleanToTerraform(this._cleanupPolicyDryRun),
+      description: cdktn.stringToTerraform(this._description),
+      format: cdktn.stringToTerraform(this._format),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key_name: cdktn.stringToTerraform(this._kmsKeyName),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      mode: cdktn.stringToTerraform(this._mode),
+      project: cdktn.stringToTerraform(this._project),
+      repository_id: cdktn.stringToTerraform(this._repositoryId),
+      cleanup_policies: cdktn.listMapper(artifactRegistryRepositoryCleanupPoliciesToTerraform, true)(this._cleanupPolicies.internalValue),
       docker_config: artifactRegistryRepositoryDockerConfigToTerraform(this._dockerConfig.internalValue),
       maven_config: artifactRegistryRepositoryMavenConfigToTerraform(this._mavenConfig.internalValue),
       remote_repository_config: artifactRegistryRepositoryRemoteRepositoryConfigToTerraform(this._remoteRepositoryConfig.internalValue),
@@ -3804,67 +3804,67 @@ export class ArtifactRegistryRepository extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cleanup_policy_dry_run: {
-        value: cdktf.booleanToHclTerraform(this._cleanupPolicyDryRun),
+        value: cdktn.booleanToHclTerraform(this._cleanupPolicyDryRun),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       format: {
-        value: cdktf.stringToHclTerraform(this._format),
+        value: cdktn.stringToHclTerraform(this._format),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_name: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyName),
+        value: cdktn.stringToHclTerraform(this._kmsKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_id: {
-        value: cdktf.stringToHclTerraform(this._repositoryId),
+        value: cdktn.stringToHclTerraform(this._repositoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cleanup_policies: {
-        value: cdktf.listMapperHcl(artifactRegistryRepositoryCleanupPoliciesToHclTerraform, true)(this._cleanupPolicies.internalValue),
+        value: cdktn.listMapperHcl(artifactRegistryRepositoryCleanupPoliciesToHclTerraform, true)(this._cleanupPolicies.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ArtifactRegistryRepositoryCleanupPoliciesList",

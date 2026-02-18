@@ -298,7 +298,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -433,7 +433,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ChronicleRuleDeployment resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ChronicleRuleDeployment resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -505,7 +505,7 @@ import { chronicleRuleDeployment } from '@cdktn/provider-google'
 chronicleRuleDeployment.ChronicleRuleDeployment.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ChronicleRuleDeployment resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ChronicleRuleDeployment resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.generateConfigForImport.parameter.scope"></a>
 
@@ -535,7 +535,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ChronicleRuleDeployment to import is found.
 
@@ -546,19 +546,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.archiveTime">archiveTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.consumerRules">consumerRules</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.executionState">executionState</a></code> | <code>string</code> | *No description.* |
@@ -566,19 +566,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.producerRules">producerRules</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference">ChronicleRuleDeploymentTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.alertingInput">alertingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.archivedInput">archivedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.alertingInput">alertingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.archivedInput">archivedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.instanceInput">instanceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.ruleInput">ruleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.runFrequencyInput">runFrequencyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.alerting">alerting</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.archived">archived</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.alerting">alerting</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.archived">archived</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.instance">instance</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.location">location</a></code> | <code>string</code> | *No description.* |
@@ -606,7 +606,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -656,7 +656,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -666,7 +666,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -676,7 +676,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -696,7 +696,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -706,7 +706,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -716,7 +716,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -726,7 +726,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -806,7 +806,7 @@ public readonly timeouts: ChronicleRuleDeploymentTimeoutsOutputReference;
 public readonly alertingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -816,7 +816,7 @@ public readonly alertingInput: boolean | IResolvable;
 public readonly archivedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -826,7 +826,7 @@ public readonly archivedInput: boolean | IResolvable;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -896,7 +896,7 @@ public readonly runFrequencyInput: string;
 public readonly timeoutsInput: IResolvable | ChronicleRuleDeploymentTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a>
 
 ---
 
@@ -906,7 +906,7 @@ public readonly timeoutsInput: IResolvable | ChronicleRuleDeploymentTimeouts;
 public readonly alerting: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -916,7 +916,7 @@ public readonly alerting: boolean | IResolvable;
 public readonly archived: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -926,7 +926,7 @@ public readonly archived: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1024,19 +1024,19 @@ const chronicleRuleDeploymentConfig: chronicleRuleDeployment.ChronicleRuleDeploy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.instance">instance</a></code> | <code>string</code> | The unique identifier for the Chronicle instance, which is the same as the customer ID. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.location">location</a></code> | <code>string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.rule">rule</a></code> | <code>string</code> | The Rule ID of the rule. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.alerting">alerting</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether detections resulting from this deployment should be considered alerts. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.archived">archived</a></code> | <code>boolean \| cdktf.IResolvable</code> | The archive state of the rule deployment. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the rule is currently deployed continuously against incoming data. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.alerting">alerting</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether detections resulting from this deployment should be considered alerts. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.archived">archived</a></code> | <code>boolean \| cdktn.IResolvable</code> | The archive state of the rule deployment. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the rule is currently deployed continuously against incoming data. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment#project ChronicleRuleDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.runFrequency">runFrequency</a></code> | <code>string</code> | The run frequency of the rule deployment. Possible values: LIVE HOURLY DAILY. |
@@ -1050,7 +1050,7 @@ const chronicleRuleDeploymentConfig: chronicleRuleDeployment.ChronicleRuleDeploy
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1090,7 +1090,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly alerting: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether detections resulting from this deployment should be considered alerts.
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly archived: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 The archive state of the rule deployment.
 
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the rule is currently deployed continuously against incoming data.
 
@@ -1332,14 +1332,14 @@ new chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1512,7 +1512,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1557,7 +1557,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1651,7 +1651,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ChronicleRuleDeploymentTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a>
 
 ---
 

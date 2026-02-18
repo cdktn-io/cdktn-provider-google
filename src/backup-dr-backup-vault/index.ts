@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupDrBackupVaultConfig extends cdktf.TerraformMetaArguments {
+export interface BackupDrBackupVaultConfig extends cdktn.TerraformMetaArguments {
   /**
   * Access restriction for the backup vault. Default value is 'WITHIN_ORGANIZATION' if not provided during creation. Default value: "WITHIN_ORGANIZATION" Possible values: ["ACCESS_RESTRICTION_UNSPECIFIED", "WITHIN_PROJECT", "WITHIN_ORGANIZATION", "UNRESTRICTED", "WITHIN_ORG_BUT_UNRESTRICTED_FOR_BA"]
   *
@@ -23,7 +23,7 @@ export interface BackupDrBackupVaultConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
   */
-  readonly allowMissing?: boolean | cdktf.IResolvable;
+  readonly allowMissing?: boolean | cdktn.IResolvable;
   /**
   * Optional. User annotations. See https://google.aip.dev/128#annotations
   * Stores small amounts of arbitrary data. 
@@ -71,7 +71,7 @@ export interface BackupDrBackupVaultConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * If set, allow update to extend the minimum enforced retention for backup vault. This overrides
   *  the restriction against conflicting retention periods. This conflict may occur when the
@@ -80,7 +80,7 @@ export interface BackupDrBackupVaultConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
   */
-  readonly forceUpdate?: boolean | cdktf.IResolvable;
+  readonly forceUpdate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}
   *
@@ -94,14 +94,14 @@ export interface BackupDrBackupVaultConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
   */
-  readonly ignoreBackupPlanReferences?: boolean | cdktf.IResolvable;
+  readonly ignoreBackupPlanReferences?: boolean | cdktn.IResolvable;
   /**
   * If set, the following restrictions against deletion of the backup vault instance can be overridden:
   *    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
   */
-  readonly ignoreInactiveDatasources?: boolean | cdktf.IResolvable;
+  readonly ignoreInactiveDatasources?: boolean | cdktn.IResolvable;
   /**
   * Optional. Resource labels to represent user provided metadata. 
   * 
@@ -143,39 +143,39 @@ export interface BackupDrBackupVaultTimeouts {
   readonly update?: string;
 }
 
-export function backupDrBackupVaultTimeoutsToTerraform(struct?: BackupDrBackupVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupDrBackupVaultTimeoutsToTerraform(struct?: BackupDrBackupVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function backupDrBackupVaultTimeoutsToHclTerraform(struct?: BackupDrBackupVaultTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupDrBackupVaultTimeoutsToHclTerraform(struct?: BackupDrBackupVaultTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -186,19 +186,19 @@ export function backupDrBackupVaultTimeoutsToHclTerraform(struct?: BackupDrBacku
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupDrBackupVaultTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BackupDrBackupVaultTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BackupDrBackupVaultTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupDrBackupVaultTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -219,7 +219,7 @@ export class BackupDrBackupVaultTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupDrBackupVaultTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupDrBackupVaultTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -227,7 +227,7 @@ export class BackupDrBackupVaultTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -292,7 +292,7 @@ export class BackupDrBackupVaultTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}
 */
-export class BackupDrBackupVault extends cdktf.TerraformResource {
+export class BackupDrBackupVault extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -303,14 +303,14 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupDrBackupVault resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupDrBackupVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupDrBackupVault to import
   * @param importFromId The id of the existing BackupDrBackupVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupDrBackupVault to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_backup_vault", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_backup_vault", importId: importFromId, provider });
       }
 
   // ===========
@@ -380,11 +380,11 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   }
 
   // allow_missing - computed: false, optional: true, required: false
-  private _allowMissing?: boolean | cdktf.IResolvable; 
+  private _allowMissing?: boolean | cdktn.IResolvable; 
   public get allowMissing() {
     return this.getBooleanAttribute('allow_missing');
   }
-  public set allowMissing(value: boolean | cdktf.IResolvable) {
+  public set allowMissing(value: boolean | cdktn.IResolvable) {
     this._allowMissing = value;
   }
   public resetAllowMissing() {
@@ -485,13 +485,13 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -518,11 +518,11 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable; 
+  private _forceDelete?: boolean | cdktn.IResolvable; 
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable) {
+  public set forceDelete(value: boolean | cdktn.IResolvable) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -534,11 +534,11 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   }
 
   // force_update - computed: false, optional: true, required: false
-  private _forceUpdate?: boolean | cdktf.IResolvable; 
+  private _forceUpdate?: boolean | cdktn.IResolvable; 
   public get forceUpdate() {
     return this.getBooleanAttribute('force_update');
   }
-  public set forceUpdate(value: boolean | cdktf.IResolvable) {
+  public set forceUpdate(value: boolean | cdktn.IResolvable) {
     this._forceUpdate = value;
   }
   public resetForceUpdate() {
@@ -566,11 +566,11 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   }
 
   // ignore_backup_plan_references - computed: false, optional: true, required: false
-  private _ignoreBackupPlanReferences?: boolean | cdktf.IResolvable; 
+  private _ignoreBackupPlanReferences?: boolean | cdktn.IResolvable; 
   public get ignoreBackupPlanReferences() {
     return this.getBooleanAttribute('ignore_backup_plan_references');
   }
-  public set ignoreBackupPlanReferences(value: boolean | cdktf.IResolvable) {
+  public set ignoreBackupPlanReferences(value: boolean | cdktn.IResolvable) {
     this._ignoreBackupPlanReferences = value;
   }
   public resetIgnoreBackupPlanReferences() {
@@ -582,11 +582,11 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   }
 
   // ignore_inactive_datasources - computed: false, optional: true, required: false
-  private _ignoreInactiveDatasources?: boolean | cdktf.IResolvable; 
+  private _ignoreInactiveDatasources?: boolean | cdktn.IResolvable; 
   public get ignoreInactiveDatasources() {
     return this.getBooleanAttribute('ignore_inactive_datasources');
   }
-  public set ignoreInactiveDatasources(value: boolean | cdktf.IResolvable) {
+  public set ignoreInactiveDatasources(value: boolean | cdktn.IResolvable) {
     this._ignoreInactiveDatasources = value;
   }
   public resetIgnoreInactiveDatasources() {
@@ -658,7 +658,7 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -700,22 +700,22 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_restriction: cdktf.stringToTerraform(this._accessRestriction),
-      allow_missing: cdktf.booleanToTerraform(this._allowMissing),
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      backup_minimum_enforced_retention_duration: cdktf.stringToTerraform(this._backupMinimumEnforcedRetentionDuration),
-      backup_retention_inheritance: cdktf.stringToTerraform(this._backupRetentionInheritance),
-      backup_vault_id: cdktf.stringToTerraform(this._backupVaultId),
-      description: cdktf.stringToTerraform(this._description),
-      effective_time: cdktf.stringToTerraform(this._effectiveTime),
-      force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      force_update: cdktf.booleanToTerraform(this._forceUpdate),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_backup_plan_references: cdktf.booleanToTerraform(this._ignoreBackupPlanReferences),
-      ignore_inactive_datasources: cdktf.booleanToTerraform(this._ignoreInactiveDatasources),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      access_restriction: cdktn.stringToTerraform(this._accessRestriction),
+      allow_missing: cdktn.booleanToTerraform(this._allowMissing),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      backup_minimum_enforced_retention_duration: cdktn.stringToTerraform(this._backupMinimumEnforcedRetentionDuration),
+      backup_retention_inheritance: cdktn.stringToTerraform(this._backupRetentionInheritance),
+      backup_vault_id: cdktn.stringToTerraform(this._backupVaultId),
+      description: cdktn.stringToTerraform(this._description),
+      effective_time: cdktn.stringToTerraform(this._effectiveTime),
+      force_delete: cdktn.booleanToTerraform(this._forceDelete),
+      force_update: cdktn.booleanToTerraform(this._forceUpdate),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_backup_plan_references: cdktn.booleanToTerraform(this._ignoreBackupPlanReferences),
+      ignore_inactive_datasources: cdktn.booleanToTerraform(this._ignoreInactiveDatasources),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: backupDrBackupVaultTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -723,97 +723,97 @@ export class BackupDrBackupVault extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_restriction: {
-        value: cdktf.stringToHclTerraform(this._accessRestriction),
+        value: cdktn.stringToHclTerraform(this._accessRestriction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_missing: {
-        value: cdktf.booleanToHclTerraform(this._allowMissing),
+        value: cdktn.booleanToHclTerraform(this._allowMissing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       backup_minimum_enforced_retention_duration: {
-        value: cdktf.stringToHclTerraform(this._backupMinimumEnforcedRetentionDuration),
+        value: cdktn.stringToHclTerraform(this._backupMinimumEnforcedRetentionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backup_retention_inheritance: {
-        value: cdktf.stringToHclTerraform(this._backupRetentionInheritance),
+        value: cdktn.stringToHclTerraform(this._backupRetentionInheritance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backup_vault_id: {
-        value: cdktf.stringToHclTerraform(this._backupVaultId),
+        value: cdktn.stringToHclTerraform(this._backupVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       effective_time: {
-        value: cdktf.stringToHclTerraform(this._effectiveTime),
+        value: cdktn.stringToHclTerraform(this._effectiveTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       force_delete: {
-        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        value: cdktn.booleanToHclTerraform(this._forceDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_update: {
-        value: cdktf.booleanToHclTerraform(this._forceUpdate),
+        value: cdktn.booleanToHclTerraform(this._forceUpdate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_backup_plan_references: {
-        value: cdktf.booleanToHclTerraform(this._ignoreBackupPlanReferences),
+        value: cdktn.booleanToHclTerraform(this._ignoreBackupPlanReferences),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ignore_inactive_datasources: {
-        value: cdktf.booleanToHclTerraform(this._ignoreInactiveDatasources),
+        value: cdktn.booleanToHclTerraform(this._ignoreInactiveDatasources),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -54,13 +54,13 @@ netappVolume.NetappVolume(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.capacityGib">capacity_gib</a></code> | <code>str</code> | Capacity of the volume (in GiB). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.location">location</a></code> | <code>str</code> | Name of the pool location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the volume. Needs to be unique per location. |
@@ -73,16 +73,16 @@ netappVolume.NetappVolume(
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.exportPolicy">export_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy">NetappVolumeExportPolicy</a></code> | export_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.hybridReplicationParameters">hybrid_replication_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters">NetappVolumeHybridReplicationParameters</a></code> | hybrid_replication_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#id NetappVolume#id}. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p). |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.largeCapacity">large_capacity</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. Flag indicating if the volume will be a large capacity volume or a regular volume. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.largeCapacity">large_capacity</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Flag indicating if the volume will be a large capacity volume or a regular volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#project NetappVolume#project}. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.restoreParameters">restore_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeRestoreParameters">NetappVolumeRestoreParameters</a></code> | restore_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.restrictedActions">restricted_actions</a></code> | <code>typing.List[str]</code> | List of actions that are restricted on this volume. Possible values: ["DELETE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.securityStyle">security_style</a></code> | <code>str</code> | Security Style of the Volume. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.smbSettings">smb_settings</a></code> | <code>typing.List[str]</code> | Settings for volumes with SMB access. Possible values: ["ENCRYPT_DATA", "BROWSABLE", "CHANGE_NOTIFY", "NON_BROWSABLE", "OPLOCKS", "SHOW_SNAPSHOT", "SHOW_PREVIOUS_VERSIONS", "ACCESS_BASED_ENUMERATION", "CONTINUOUSLY_AVAILABLE"]. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.snapshotPolicy">snapshot_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy">NetappVolumeSnapshotPolicy</a></code> | snapshot_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.tieringPolicy">tiering_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy">NetappVolumeTieringPolicy</a></code> | tiering_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | timeouts block. |
@@ -110,43 +110,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -281,7 +281,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `kerberos_enabled`<sup>Optional</sup> <a name="kerberos_enabled" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.kerberosEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p).
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `large_capacity`<sup>Optional</sup> <a name="large_capacity" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.largeCapacity"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional. Flag indicating if the volume will be a large capacity volume or a regular volume.
 
@@ -314,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `multiple_endpoints`<sup>Optional</sup> <a name="multiple_endpoints" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.multipleEndpoints"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -378,7 +378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `snapshot_directory`<sup>Optional</sup> <a name="snapshot_directory" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.snapshotDirectory"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB.
 
@@ -725,7 +725,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappVolume.NetappVolume.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `scheduled_backup_enabled`<sup>Optional</sup> <a name="scheduled_backup_enabled" id="@cdktn/provider-google.netappVolume.NetappVolume.putBackupConfig.parameter.scheduledBackupEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified.
 
@@ -858,7 +858,7 @@ def put_export_policy(
 
 ###### `rules`<sup>Required</sup> <a name="rules" id="@cdktn/provider-google.netappVolume.NetappVolume.putExportPolicy.parameter.rules"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
 
 rules block.
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-google.netappVolume.NetappVolume.putSnapshotPolicy.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables automated snapshot creation according to defined schedule.
 
@@ -1255,7 +1255,7 @@ def reset_unix_permissions() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a NetappVolume resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a NetappVolume resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1338,7 +1338,7 @@ netappVolume.NetappVolume.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a NetappVolume resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NetappVolume resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.netappVolume.NetappVolume.generateConfigForImport.parameter.scope"></a>
 
@@ -1368,7 +1368,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappVolume.NetappVolume.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NetappVolume to import is found.
 
@@ -1379,30 +1379,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.activeDirectory">active_directory</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.backupConfig">backup_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference">NetappVolumeBackupConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.coldTierSizeGib">cold_tier_size_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.encryptionType">encryption_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.exportPolicy">export_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference">NetappVolumeExportPolicyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.hasReplication">has_replication</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.hasReplication">has_replication</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.hybridReplicationParameters">hybrid_replication_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference">NetappVolumeHybridReplicationParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.kmsConfig">kms_config</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.ldapEnabled">ldap_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.ldapEnabled">ldap_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.mountOptions">mount_options</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList">NetappVolumeMountOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.network">network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.psaRange">psa_range</a></code> | <code>str</code> | *No description.* |
@@ -1412,7 +1412,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotPolicy">snapshot_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference">NetappVolumeSnapshotPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.stateDetails">state_details</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.tieringPolicy">tiering_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference">NetappVolumeTieringPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference">NetappVolumeTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.usedGib">used_gib</a></code> | <code>str</code> | *No description.* |
@@ -1424,11 +1424,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.exportPolicyInput">export_policy_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy">NetappVolumeExportPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.hybridReplicationParametersInput">hybrid_replication_parameters_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters">NetappVolumeHybridReplicationParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.kerberosEnabledInput">kerberos_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.kerberosEnabledInput">kerberos_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacityInput">large_capacity_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacityInput">large_capacity_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.multipleEndpointsInput">multiple_endpoints_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.multipleEndpointsInput">multiple_endpoints_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.protocolsInput">protocols_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1437,21 +1437,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.securityStyleInput">security_style_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.shareNameInput">share_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.smbSettingsInput">smb_settings_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotDirectoryInput">snapshot_directory_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotDirectoryInput">snapshot_directory_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotPolicyInput">snapshot_policy_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy">NetappVolumeSnapshotPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.storagePoolInput">storage_pool_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.tieringPolicyInput">tiering_policy_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy">NetappVolumeTieringPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.unixPermissionsInput">unix_permissions_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.capacityGib">capacity_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacity">large_capacity</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacity">large_capacity</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.protocols">protocols</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1459,7 +1459,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.securityStyle">security_style</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.shareName">share_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.smbSettings">smb_settings</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.storagePool">storage_pool</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.unixPermissions">unix_permissions</a></code> | <code>str</code> | *No description.* |
 
@@ -1483,7 +1483,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1533,7 +1533,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1543,7 +1543,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1553,7 +1553,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1573,7 +1573,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1583,7 +1583,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1593,7 +1593,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1603,7 +1603,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1653,7 +1653,7 @@ create_time: str
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1683,7 +1683,7 @@ export_policy: NetappVolumeExportPolicyOutputReference
 has_replication: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1713,7 +1713,7 @@ kms_config: str
 ldap_enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1813,7 +1813,7 @@ state_details: str
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1933,7 +1933,7 @@ id_input: str
 kerberos_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1953,7 +1953,7 @@ labels_input: typing.Mapping[str]
 large_capacity_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1973,7 +1973,7 @@ location_input: str
 multiple_endpoints_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2063,7 +2063,7 @@ smb_settings_input: typing.List[str]
 snapshot_directory_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2103,7 +2103,7 @@ tiering_policy_input: NetappVolumeTieringPolicy
 timeouts_input: IResolvable | NetappVolumeTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a>
 
 ---
 
@@ -2163,7 +2163,7 @@ id: str
 kerberos_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2183,7 +2183,7 @@ labels: typing.Mapping[str]
 large_capacity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2203,7 +2203,7 @@ location: str
 multiple_endpoints: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2283,7 +2283,7 @@ smb_settings: typing.List[str]
 snapshot_directory: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2347,7 +2347,7 @@ netappVolume.NetappVolumeBackupConfig(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig.property.backupPolicies">backup_policies</a></code> | <code>typing.List[str]</code> | Specify a single backup policy ID for scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupPolicies/{{backupPolicyName}}'. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig.property.backupVault">backup_vault</a></code> | <code>str</code> | ID of the backup vault to use. A backup vault is reqired to create manual or scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupVaults/{{backupVaultName}}'. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig.property.scheduledBackupEnabled">scheduled_backup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig.property.scheduledBackupEnabled">scheduled_backup_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified. |
 
 ---
 
@@ -2385,7 +2385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 scheduled_backup_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified.
 
@@ -2441,13 +2441,13 @@ netappVolume.NetappVolumeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.capacityGib">capacity_gib</a></code> | <code>str</code> | Capacity of the volume (in GiB). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.location">location</a></code> | <code>str</code> | Name of the pool location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.name">name</a></code> | <code>str</code> | The name of the volume. Needs to be unique per location. |
@@ -2460,16 +2460,16 @@ netappVolume.NetappVolumeConfig(
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.exportPolicy">export_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy">NetappVolumeExportPolicy</a></code> | export_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.hybridReplicationParameters">hybrid_replication_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters">NetappVolumeHybridReplicationParameters</a></code> | hybrid_replication_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#id NetappVolume#id}. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p). |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.largeCapacity">large_capacity</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. Flag indicating if the volume will be a large capacity volume or a regular volume. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.largeCapacity">large_capacity</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Flag indicating if the volume will be a large capacity volume or a regular volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#project NetappVolume#project}. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.restoreParameters">restore_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeRestoreParameters">NetappVolumeRestoreParameters</a></code> | restore_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.restrictedActions">restricted_actions</a></code> | <code>typing.List[str]</code> | List of actions that are restricted on this volume. Possible values: ["DELETE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.securityStyle">security_style</a></code> | <code>str</code> | Security Style of the Volume. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.smbSettings">smb_settings</a></code> | <code>typing.List[str]</code> | Settings for volumes with SMB access. Possible values: ["ENCRYPT_DATA", "BROWSABLE", "CHANGE_NOTIFY", "NON_BROWSABLE", "OPLOCKS", "SHOW_SNAPSHOT", "SHOW_PREVIOUS_VERSIONS", "ACCESS_BASED_ENUMERATION", "CONTINUOUSLY_AVAILABLE"]. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.snapshotPolicy">snapshot_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy">NetappVolumeSnapshotPolicy</a></code> | snapshot_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.tieringPolicy">tiering_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy">NetappVolumeTieringPolicy</a></code> | tiering_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | timeouts block. |
@@ -2483,7 +2483,7 @@ netappVolume.NetappVolumeConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2493,7 +2493,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2503,7 +2503,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2513,7 +2513,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2523,7 +2523,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2533,7 +2533,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2543,7 +2543,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2730,7 +2730,7 @@ If you experience problems setting this value it might not be settable. Please t
 kerberos_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p).
 
@@ -2761,7 +2761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 large_capacity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional. Flag indicating if the volume will be a large capacity volume or a regular volume.
 
@@ -2775,7 +2775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 multiple_endpoints: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -2863,7 +2863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 snapshot_directory: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB.
 
@@ -2943,7 +2943,7 @@ netappVolume.NetappVolumeExportPolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy.property.rules">rules</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]</code> | rules block. |
 
 ---
 
@@ -2953,7 +2953,7 @@ netappVolume.NetappVolumeExportPolicy(
 rules: IResolvable | typing.List[NetappVolumeExportPolicyRules]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
 
 rules block.
 
@@ -2990,14 +2990,14 @@ netappVolume.NetappVolumeExportPolicyRules(
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.accessType">access_type</a></code> | <code>str</code> | Defines the access type for clients matching the 'allowedClients' specification. Possible values: ["READ_ONLY", "READ_WRITE", "READ_NONE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.allowedClients">allowed_clients</a></code> | <code>str</code> | Defines the client ingress specification (allowed clients) as a comma separated list with IPv4 CIDRs or IPv4 host addresses. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.hasRootAccess">has_root_access</a></code> | <code>str</code> | If enabled, the root user (UID = 0) of the specified clients doesn't get mapped to nobody (UID = 65534). |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5IReadOnly">kerberos5_i_read_only</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5IReadWrite">kerberos5_i_read_write</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5PReadOnly">kerberos5_p_read_only</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5PReadWrite">kerberos5_p_read_write</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5ReadOnly">kerberos5_read_only</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5ReadWrite">kerberos5_read_write</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.nfsv3">nfsv3</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable to apply the export rule to NFSV3 clients. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.nfsv4">nfsv4</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable to apply the export rule to NFSV4.1 clients. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5IReadOnly">kerberos5_i_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5IReadWrite">kerberos5_i_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5PReadOnly">kerberos5_p_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5PReadWrite">kerberos5_p_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5ReadOnly">kerberos5_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5ReadWrite">kerberos5_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.nfsv3">nfsv3</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable to apply the export rule to NFSV3 clients. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.nfsv4">nfsv4</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable to apply the export rule to NFSV4.1 clients. |
 
 ---
 
@@ -3051,7 +3051,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kerberos5_i_read_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification.
 
@@ -3067,7 +3067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kerberos5_i_read_write: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification.
 
@@ -3083,7 +3083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kerberos5_p_read_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification.
 
@@ -3099,7 +3099,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kerberos5_p_read_write: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification.
 
@@ -3115,7 +3115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kerberos5_read_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification.
 
@@ -3131,7 +3131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 kerberos5_read_write: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification.
 
@@ -3147,7 +3147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 nfsv3: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable to apply the export rule to NFSV3 clients.
 
@@ -3161,7 +3161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 nfsv4: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable to apply the export rule to NFSV4.1 clients.
 
@@ -3402,7 +3402,7 @@ netappVolume.NetappVolumeSnapshotPolicy(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy.property.dailySchedule">daily_schedule</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailySchedule">NetappVolumeSnapshotPolicyDailySchedule</a></code> | daily_schedule block. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables automated snapshot creation according to defined schedule. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables automated snapshot creation according to defined schedule. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy.property.hourlySchedule">hourly_schedule</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule">NetappVolumeSnapshotPolicyHourlySchedule</a></code> | hourly_schedule block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy.property.monthlySchedule">monthly_schedule</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule">NetappVolumeSnapshotPolicyMonthlySchedule</a></code> | monthly_schedule block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy.property.weeklySchedule">weekly_schedule</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule">NetappVolumeSnapshotPolicyWeeklySchedule</a></code> | weekly_schedule block. |
@@ -3429,7 +3429,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables automated snapshot creation according to defined schedule.
 
@@ -3898,14 +3898,14 @@ netappVolume.NetappVolumeBackupConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4100,7 +4100,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4141,10 +4141,10 @@ def reset_scheduled_backup_enabled() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.backupPoliciesInput">backup_policies_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.backupVaultInput">backup_vault_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.scheduledBackupEnabledInput">scheduled_backup_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.scheduledBackupEnabledInput">scheduled_backup_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.backupPolicies">backup_policies</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.backupVault">backup_vault</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.scheduledBackupEnabled">scheduled_backup_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.scheduledBackupEnabled">scheduled_backup_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig">NetappVolumeBackupConfig</a></code> | *No description.* |
 
 ---
@@ -4199,7 +4199,7 @@ backup_vault_input: str
 scheduled_backup_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4229,7 +4229,7 @@ backup_vault: str
 scheduled_backup_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4259,14 +4259,14 @@ netappVolume.NetappVolumeExportPolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4459,7 +4459,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4483,7 +4483,7 @@ def put_rules(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.putRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
 
 ---
 
@@ -4495,7 +4495,7 @@ def put_rules(
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList">NetappVolumeExportPolicyRulesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.property.rulesInput">rules_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.property.rulesInput">rules_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy">NetappVolumeExportPolicy</a></code> | *No description.* |
 
 ---
@@ -4540,7 +4540,7 @@ rules: NetappVolumeExportPolicyRulesList
 rules_input: IResolvable | typing.List[NetappVolumeExportPolicyRules]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
 
 ---
 
@@ -4571,7 +4571,7 @@ netappVolume.NetappVolumeExportPolicyRulesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4579,7 +4579,7 @@ netappVolume.NetappVolumeExportPolicyRulesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4649,7 +4649,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4686,7 +4686,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]</code> | *No description.* |
 
 ---
 
@@ -4720,7 +4720,7 @@ fqn: str
 internal_value: IResolvable | typing.List[NetappVolumeExportPolicyRules]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>]
 
 ---
 
@@ -4742,7 +4742,7 @@ netappVolume.NetappVolumeExportPolicyRulesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4751,7 +4751,7 @@ netappVolume.NetappVolumeExportPolicyRulesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4970,7 +4970,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5060,26 +5060,26 @@ def reset_nfsv4() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.accessTypeInput">access_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.allowedClientsInput">allowed_clients_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.hasRootAccessInput">has_root_access_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadOnlyInput">kerberos5_i_read_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadWriteInput">kerberos5_i_read_write_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadOnlyInput">kerberos5_p_read_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadWriteInput">kerberos5_p_read_write_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadOnlyInput">kerberos5_read_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadWriteInput">kerberos5_read_write_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv3Input">nfsv3_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv4Input">nfsv4_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadOnlyInput">kerberos5_i_read_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadWriteInput">kerberos5_i_read_write_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadOnlyInput">kerberos5_p_read_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadWriteInput">kerberos5_p_read_write_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadOnlyInput">kerberos5_read_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadWriteInput">kerberos5_read_write_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv3Input">nfsv3_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv4Input">nfsv4_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.accessType">access_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.allowedClients">allowed_clients</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.hasRootAccess">has_root_access</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadOnly">kerberos5_i_read_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadWrite">kerberos5_i_read_write</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadOnly">kerberos5_p_read_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadWrite">kerberos5_p_read_write</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadOnly">kerberos5_read_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadWrite">kerberos5_read_write</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv3">nfsv3</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv4">nfsv4</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadOnly">kerberos5_i_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadWrite">kerberos5_i_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadOnly">kerberos5_p_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5PReadWrite">kerberos5_p_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadOnly">kerberos5_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadWrite">kerberos5_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv3">nfsv3</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv4">nfsv4</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a></code> | *No description.* |
 
 ---
 
@@ -5143,7 +5143,7 @@ has_root_access_input: str
 kerberos5_i_read_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5153,7 +5153,7 @@ kerberos5_i_read_only_input: bool | IResolvable
 kerberos5_i_read_write_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5163,7 +5163,7 @@ kerberos5_i_read_write_input: bool | IResolvable
 kerberos5_p_read_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5173,7 +5173,7 @@ kerberos5_p_read_only_input: bool | IResolvable
 kerberos5_p_read_write_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5183,7 +5183,7 @@ kerberos5_p_read_write_input: bool | IResolvable
 kerberos5_read_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5193,7 +5193,7 @@ kerberos5_read_only_input: bool | IResolvable
 kerberos5_read_write_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5203,7 +5203,7 @@ kerberos5_read_write_input: bool | IResolvable
 nfsv3_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5213,7 +5213,7 @@ nfsv3_input: bool | IResolvable
 nfsv4_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5253,7 +5253,7 @@ has_root_access: str
 kerberos5_i_read_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5263,7 +5263,7 @@ kerberos5_i_read_only: bool | IResolvable
 kerberos5_i_read_write: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5273,7 +5273,7 @@ kerberos5_i_read_write: bool | IResolvable
 kerberos5_p_read_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5283,7 +5283,7 @@ kerberos5_p_read_only: bool | IResolvable
 kerberos5_p_read_write: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5293,7 +5293,7 @@ kerberos5_p_read_write: bool | IResolvable
 kerberos5_read_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5303,7 +5303,7 @@ kerberos5_read_only: bool | IResolvable
 kerberos5_read_write: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5313,7 +5313,7 @@ kerberos5_read_write: bool | IResolvable
 nfsv3: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5323,7 +5323,7 @@ nfsv3: bool | IResolvable
 nfsv4: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5333,7 +5333,7 @@ nfsv4: bool | IResolvable
 internal_value: IResolvable | NetappVolumeExportPolicyRules
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a>
 
 ---
 
@@ -5353,14 +5353,14 @@ netappVolume.NetappVolumeHybridReplicationParametersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5560,7 +5560,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5860,7 +5860,7 @@ netappVolume.NetappVolumeMountOptionsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5868,7 +5868,7 @@ netappVolume.NetappVolumeMountOptionsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5938,7 +5938,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6020,7 +6020,7 @@ netappVolume.NetappVolumeMountOptionsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6029,7 +6029,7 @@ netappVolume.NetappVolumeMountOptionsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6237,7 +6237,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6356,14 +6356,14 @@ netappVolume.NetappVolumeRestoreParametersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6557,7 +6557,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeRestoreParametersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6688,14 +6688,14 @@ netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6889,7 +6889,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailyScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7042,14 +7042,14 @@ netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7242,7 +7242,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlyScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7367,14 +7367,14 @@ netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7569,7 +7569,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7750,14 +7750,14 @@ netappVolume.NetappVolumeSnapshotPolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7958,7 +7958,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8189,11 +8189,11 @@ def reset_weekly_schedule() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.monthlySchedule">monthly_schedule</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference">NetappVolumeSnapshotPolicyMonthlyScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.weeklySchedule">weekly_schedule</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference">NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.dailyScheduleInput">daily_schedule_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyDailySchedule">NetappVolumeSnapshotPolicyDailySchedule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.hourlyScheduleInput">hourly_schedule_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyHourlySchedule">NetappVolumeSnapshotPolicyHourlySchedule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.monthlyScheduleInput">monthly_schedule_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyMonthlySchedule">NetappVolumeSnapshotPolicyMonthlySchedule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.weeklyScheduleInput">weekly_schedule_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklySchedule">NetappVolumeSnapshotPolicyWeeklySchedule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy">NetappVolumeSnapshotPolicy</a></code> | *No description.* |
 
 ---
@@ -8278,7 +8278,7 @@ daily_schedule_input: NetappVolumeSnapshotPolicyDailySchedule
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8318,7 +8318,7 @@ weekly_schedule_input: NetappVolumeSnapshotPolicyWeeklySchedule
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8348,14 +8348,14 @@ netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8550,7 +8550,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicyWeeklyScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8731,14 +8731,14 @@ netappVolume.NetappVolumeTieringPolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8932,7 +8932,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9063,14 +9063,14 @@ netappVolume.NetappVolumeTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9265,7 +9265,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9310,7 +9310,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -9404,7 +9404,7 @@ update: str
 internal_value: IResolvable | NetappVolumeTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a>
 
 ---
 

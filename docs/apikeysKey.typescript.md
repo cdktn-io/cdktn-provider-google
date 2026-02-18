@@ -298,7 +298,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apikeysKey.ApikeysKey.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -439,7 +439,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ApikeysKey resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ApikeysKey resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -511,7 +511,7 @@ import { apikeysKey } from '@cdktn/provider-google'
 apikeysKey.ApikeysKey.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ApikeysKey resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApikeysKey resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.apikeysKey.ApikeysKey.generateConfigForImport.parameter.scope"></a>
 
@@ -541,7 +541,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apikeysKey.ApikeysKey.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApikeysKey to import is found.
 
@@ -552,19 +552,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.keyString">keyString</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.restrictions">restrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference">ApikeysKeyRestrictionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference">ApikeysKeyTimeoutsOutputReference</a></code> | *No description.* |
@@ -575,7 +575,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.restrictionsInput">restrictionsInput</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions">ApikeysKeyRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.serviceAccountEmailInput">serviceAccountEmailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -602,7 +602,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -652,7 +652,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -662,7 +662,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -672,7 +672,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -692,7 +692,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -702,7 +702,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -712,7 +712,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -722,7 +722,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -832,7 +832,7 @@ public readonly serviceAccountEmailInput: string;
 public readonly timeoutsInput: IResolvable | ApikeysKeyTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a>
 
 ---
 
@@ -920,13 +920,13 @@ const apikeysKeyConfig: apikeysKey.ApikeysKeyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.name">name</a></code> | <code>string</code> | The resource name of the key. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.displayName">displayName</a></code> | <code>string</code> | Human-readable display name of this API key. Modifiable by user. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apikeys_key#id ApikeysKey#id}. |
@@ -943,7 +943,7 @@ const apikeysKeyConfig: apikeysKey.ApikeysKeyConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -953,7 +953,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -963,7 +963,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -973,7 +973,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -983,7 +983,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -993,7 +993,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1003,7 +1003,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1125,7 +1125,7 @@ const apikeysKeyRestrictions: apikeysKey.ApikeysKeyRestrictions = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions.property.androidKeyRestrictions">androidKeyRestrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions">ApikeysKeyRestrictionsAndroidKeyRestrictions</a></code> | android_key_restrictions block. |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions.property.apiTargets">apiTargets</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]</code> | api_targets block. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions.property.apiTargets">apiTargets</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]</code> | api_targets block. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions.property.browserKeyRestrictions">browserKeyRestrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictions">ApikeysKeyRestrictionsBrowserKeyRestrictions</a></code> | browser_key_restrictions block. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions.property.iosKeyRestrictions">iosKeyRestrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictions">ApikeysKeyRestrictionsIosKeyRestrictions</a></code> | ios_key_restrictions block. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions.property.serverKeyRestrictions">serverKeyRestrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictions">ApikeysKeyRestrictionsServerKeyRestrictions</a></code> | server_key_restrictions block. |
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly apiTargets: IResolvable | ApikeysKeyRestrictionsApiTargets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
 
 api_targets block.
 
@@ -1216,7 +1216,7 @@ const apikeysKeyRestrictionsAndroidKeyRestrictions: apikeysKey.ApikeysKeyRestric
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions.property.allowedApplications">allowedApplications</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]</code> | allowed_applications block. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions.property.allowedApplications">allowedApplications</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]</code> | allowed_applications block. |
 
 ---
 
@@ -1226,7 +1226,7 @@ const apikeysKeyRestrictionsAndroidKeyRestrictions: apikeysKey.ApikeysKeyRestric
 public readonly allowedApplications: IResolvable | ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
 
 allowed_applications block.
 
@@ -1500,7 +1500,7 @@ new apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1508,7 +1508,7 @@ new apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1574,7 +1574,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1609,7 +1609,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]</code> | *No description.* |
 
 ---
 
@@ -1643,7 +1643,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
 
 ---
 
@@ -1660,7 +1660,7 @@ new apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1669,7 +1669,7 @@ new apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1855,7 +1855,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1880,7 +1880,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.property.sha1FingerprintInput">sha1FingerprintInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.property.packageName">packageName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.property.sha1Fingerprint">sha1Fingerprint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a></code> | *No description.* |
 
 ---
 
@@ -1954,7 +1954,7 @@ public readonly sha1Fingerprint: string;
 public readonly internalValue: IResolvable | ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>
 
 ---
 
@@ -1971,14 +1971,14 @@ new apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2149,7 +2149,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2171,7 +2171,7 @@ public putAllowedApplications(value: IResolvable | ApikeysKeyRestrictionsAndroid
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.putAllowedApplications.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
 
 ---
 
@@ -2183,7 +2183,7 @@ public putAllowedApplications(value: IResolvable | ApikeysKeyRestrictionsAndroid
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.property.allowedApplications">allowedApplications</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.property.allowedApplicationsInput">allowedApplicationsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.property.allowedApplicationsInput">allowedApplicationsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions">ApikeysKeyRestrictionsAndroidKeyRestrictions</a></code> | *No description.* |
 
 ---
@@ -2228,7 +2228,7 @@ public readonly allowedApplications: ApikeysKeyRestrictionsAndroidKeyRestriction
 public readonly allowedApplicationsInput: IResolvable | ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications">ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications</a>[]
 
 ---
 
@@ -2255,7 +2255,7 @@ new apikeysKey.ApikeysKeyRestrictionsApiTargetsList(terraformResource: IInterpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2263,7 +2263,7 @@ new apikeysKey.ApikeysKeyRestrictionsApiTargetsList(terraformResource: IInterpol
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2329,7 +2329,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2364,7 +2364,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]</code> | *No description.* |
 
 ---
 
@@ -2398,7 +2398,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApikeysKeyRestrictionsApiTargets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
 
 ---
 
@@ -2415,7 +2415,7 @@ new apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2424,7 +2424,7 @@ new apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2611,7 +2611,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2642,7 +2642,7 @@ public resetMethods(): void
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.property.methods">methods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a></code> | *No description.* |
 
 ---
 
@@ -2716,7 +2716,7 @@ public readonly service: string;
 public readonly internalValue: IResolvable | ApikeysKeyRestrictionsApiTargets;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>
 
 ---
 
@@ -2733,14 +2733,14 @@ new apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2910,7 +2910,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3004,14 +3004,14 @@ new apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3181,7 +3181,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3275,14 +3275,14 @@ new apikeysKey.ApikeysKeyRestrictionsOutputReference(terraformResource: IInterpo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3462,7 +3462,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3496,7 +3496,7 @@ public putApiTargets(value: IResolvable | ApikeysKeyRestrictionsApiTargets[]): v
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.putApiTargets.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
 
 ---
 
@@ -3579,7 +3579,7 @@ public resetServerKeyRestrictions(): void
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.iosKeyRestrictions">iosKeyRestrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference">ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.serverKeyRestrictions">serverKeyRestrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference">ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.androidKeyRestrictionsInput">androidKeyRestrictionsInput</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions">ApikeysKeyRestrictionsAndroidKeyRestrictions</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.apiTargetsInput">apiTargetsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.apiTargetsInput">apiTargetsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.browserKeyRestrictionsInput">browserKeyRestrictionsInput</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictions">ApikeysKeyRestrictionsBrowserKeyRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.iosKeyRestrictionsInput">iosKeyRestrictionsInput</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictions">ApikeysKeyRestrictionsIosKeyRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.property.serverKeyRestrictionsInput">serverKeyRestrictionsInput</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictions">ApikeysKeyRestrictionsServerKeyRestrictions</a></code> | *No description.* |
@@ -3677,7 +3677,7 @@ public readonly androidKeyRestrictionsInput: ApikeysKeyRestrictionsAndroidKeyRes
 public readonly apiTargetsInput: IResolvable | ApikeysKeyRestrictionsApiTargets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets">ApikeysKeyRestrictionsApiTargets</a>[]
 
 ---
 
@@ -3734,14 +3734,14 @@ new apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3911,7 +3911,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4005,14 +4005,14 @@ new apikeysKey.ApikeysKeyTimeoutsOutputReference(terraformResource: IInterpolati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4185,7 +4185,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4230,7 +4230,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4324,7 +4324,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ApikeysKeyTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts">ApikeysKeyTimeouts</a>
 
 ---
 

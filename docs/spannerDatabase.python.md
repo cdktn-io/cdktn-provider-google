@@ -40,20 +40,20 @@ spannerDatabase.SpannerDatabase(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.instance">instance</a></code> | <code>str</code> | The instance to create the database on. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.name">name</a></code> | <code>str</code> | A unique identifier for the database, which cannot be changed after the instance is created. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.databaseDialect">database_dialect</a></code> | <code>str</code> | The dialect of the Cloud Spanner Database. If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"]. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.ddl">ddl</a></code> | <code>typing.List[str]</code> | An optional list of DDL statements to run inside the database. Statements can create tables, indexes, etc. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.defaultTimeZone">default_time_zone</a></code> | <code>str</code> | The default time zone for the database. |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Terraform will be prevented from destroying the database. |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.enableDropProtection">enable_drop_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether drop protection is enabled for this database. |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the database. |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.enableDropProtection">enable_drop_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether drop protection is enabled for this database. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfig">SpannerDatabaseEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database#id SpannerDatabase#id}. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database#project SpannerDatabase#project}. |
@@ -82,43 +82,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `deletion_protection`<sup>Optional</sup> <a name="deletion_protection" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.deletionProtection"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether Terraform will be prevented from destroying the database.
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_drop_protection`<sup>Optional</sup> <a name="enable_drop_protection" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.Initializer.parameter.enableDropProtection"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether drop protection is enabled for this database.
 
@@ -559,7 +559,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -778,7 +778,7 @@ def reset_version_retention_period() -> None
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SpannerDatabase resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a SpannerDatabase resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -861,7 +861,7 @@ spannerDatabase.SpannerDatabase.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a SpannerDatabase resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a SpannerDatabase resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.generateConfigForImport.parameter.scope"></a>
 
@@ -891,7 +891,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.spannerDatabase.SpannerDatabase.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the SpannerDatabase to import is found.
 
@@ -902,39 +902,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference">SpannerDatabaseEncryptionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference">SpannerDatabaseTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.databaseDialectInput">database_dialect_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.ddlInput">ddl_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.defaultTimeZoneInput">default_time_zone_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.enableDropProtectionInput">enable_drop_protection_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.enableDropProtectionInput">enable_drop_protection_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.encryptionConfigInput">encryption_config_input</a></code> | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfig">SpannerDatabaseEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.versionRetentionPeriodInput">version_retention_period_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.databaseDialect">database_dialect</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.ddl">ddl</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.defaultTimeZone">default_time_zone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.enableDropProtection">enable_drop_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.enableDropProtection">enable_drop_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.instance">instance</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabase.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -961,7 +961,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1011,7 +1011,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1021,7 +1021,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1031,7 +1031,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1051,7 +1051,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1061,7 +1061,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1071,7 +1071,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1081,7 +1081,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1151,7 +1151,7 @@ default_time_zone_input: str
 deletion_protection_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1161,7 +1161,7 @@ deletion_protection_input: bool | IResolvable
 enable_drop_protection_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1221,7 +1221,7 @@ project_input: str
 timeouts_input: IResolvable | SpannerDatabaseTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a>
 
 ---
 
@@ -1271,7 +1271,7 @@ default_time_zone: str
 deletion_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1281,7 +1281,7 @@ deletion_protection: bool | IResolvable
 enable_drop_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1389,20 +1389,20 @@ spannerDatabase.SpannerDatabaseConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.instance">instance</a></code> | <code>str</code> | The instance to create the database on. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.name">name</a></code> | <code>str</code> | A unique identifier for the database, which cannot be changed after the instance is created. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.databaseDialect">database_dialect</a></code> | <code>str</code> | The dialect of the Cloud Spanner Database. If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"]. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.ddl">ddl</a></code> | <code>typing.List[str]</code> | An optional list of DDL statements to run inside the database. Statements can create tables, indexes, etc. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.defaultTimeZone">default_time_zone</a></code> | <code>str</code> | The default time zone for the database. |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Terraform will be prevented from destroying the database. |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.enableDropProtection">enable_drop_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether drop protection is enabled for this database. |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the database. |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.enableDropProtection">enable_drop_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether drop protection is enabled for this database. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfig">SpannerDatabaseEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database#id SpannerDatabase#id}. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database#project SpannerDatabase#project}. |
@@ -1417,7 +1417,7 @@ spannerDatabase.SpannerDatabaseConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1427,7 +1427,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1437,7 +1437,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1447,7 +1447,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1457,7 +1457,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1467,7 +1467,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1477,7 +1477,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 deletion_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether Terraform will be prevented from destroying the database.
 
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_drop_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether drop protection is enabled for this database.
 
@@ -1815,14 +1815,14 @@ spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2016,7 +2016,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.spannerDatabase.SpannerDatabaseEncryptionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2147,14 +2147,14 @@ spannerDatabase.SpannerDatabaseTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2349,7 +2349,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2394,7 +2394,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2488,7 +2488,7 @@ update: str
 internal_value: IResolvable | SpannerDatabaseTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.spannerDatabase.SpannerDatabaseTimeouts">SpannerDatabaseTimeouts</a>
 
 ---
 

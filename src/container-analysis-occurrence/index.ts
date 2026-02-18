@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ContainerAnalysisOccurrenceConfig extends cdktf.TerraformMetaArguments {
+export interface ContainerAnalysisOccurrenceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_analysis_occurrence#id ContainerAnalysisOccurrence#id}
   *
@@ -89,32 +89,32 @@ export interface ContainerAnalysisOccurrenceAttestationSignatures {
   readonly signature?: string;
 }
 
-export function containerAnalysisOccurrenceAttestationSignaturesToTerraform(struct?: ContainerAnalysisOccurrenceAttestationSignatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAnalysisOccurrenceAttestationSignaturesToTerraform(struct?: ContainerAnalysisOccurrenceAttestationSignatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_key_id: cdktf.stringToTerraform(struct!.publicKeyId),
-    signature: cdktf.stringToTerraform(struct!.signature),
+    public_key_id: cdktn.stringToTerraform(struct!.publicKeyId),
+    signature: cdktn.stringToTerraform(struct!.signature),
   }
 }
 
 
-export function containerAnalysisOccurrenceAttestationSignaturesToHclTerraform(struct?: ContainerAnalysisOccurrenceAttestationSignatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAnalysisOccurrenceAttestationSignaturesToHclTerraform(struct?: ContainerAnalysisOccurrenceAttestationSignatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicKeyId),
+      value: cdktn.stringToHclTerraform(struct!.publicKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signature: {
-      value: cdktf.stringToHclTerraform(struct!.signature),
+      value: cdktn.stringToHclTerraform(struct!.signature),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,9 +125,9 @@ export function containerAnalysisOccurrenceAttestationSignaturesToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAnalysisOccurrenceAttestationSignaturesOutputReference extends cdktf.ComplexObject {
+export class ContainerAnalysisOccurrenceAttestationSignaturesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -135,11 +135,11 @@ export class ContainerAnalysisOccurrenceAttestationSignaturesOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ContainerAnalysisOccurrenceAttestationSignatures | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAnalysisOccurrenceAttestationSignatures | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,14 +156,14 @@ export class ContainerAnalysisOccurrenceAttestationSignaturesOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAnalysisOccurrenceAttestationSignatures | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAnalysisOccurrenceAttestationSignatures | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._publicKeyId = undefined;
       this._signature = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -205,15 +205,15 @@ export class ContainerAnalysisOccurrenceAttestationSignaturesOutputReference ext
   }
 }
 
-export class ContainerAnalysisOccurrenceAttestationSignaturesList extends cdktf.ComplexList {
-  public internalValue? : ContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable
+export class ContainerAnalysisOccurrenceAttestationSignaturesList extends cdktn.ComplexList {
+  public internalValue? : ContainerAnalysisOccurrenceAttestationSignatures[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,35 +237,35 @@ export interface ContainerAnalysisOccurrenceAttestation {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_analysis_occurrence#signatures ContainerAnalysisOccurrence#signatures}
   */
-  readonly signatures: ContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable;
+  readonly signatures: ContainerAnalysisOccurrenceAttestationSignatures[] | cdktn.IResolvable;
 }
 
 export function containerAnalysisOccurrenceAttestationToTerraform(struct?: ContainerAnalysisOccurrenceAttestationOutputReference | ContainerAnalysisOccurrenceAttestation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    serialized_payload: cdktf.stringToTerraform(struct!.serializedPayload),
-    signatures: cdktf.listMapper(containerAnalysisOccurrenceAttestationSignaturesToTerraform, true)(struct!.signatures),
+    serialized_payload: cdktn.stringToTerraform(struct!.serializedPayload),
+    signatures: cdktn.listMapper(containerAnalysisOccurrenceAttestationSignaturesToTerraform, true)(struct!.signatures),
   }
 }
 
 
 export function containerAnalysisOccurrenceAttestationToHclTerraform(struct?: ContainerAnalysisOccurrenceAttestationOutputReference | ContainerAnalysisOccurrenceAttestation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     serialized_payload: {
-      value: cdktf.stringToHclTerraform(struct!.serializedPayload),
+      value: cdktn.stringToHclTerraform(struct!.serializedPayload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     signatures: {
-      value: cdktf.listMapperHcl(containerAnalysisOccurrenceAttestationSignaturesToHclTerraform, true)(struct!.signatures),
+      value: cdktn.listMapperHcl(containerAnalysisOccurrenceAttestationSignaturesToHclTerraform, true)(struct!.signatures),
       isBlock: true,
       type: "set",
       storageClassType: "ContainerAnalysisOccurrenceAttestationSignaturesList",
@@ -276,14 +276,14 @@ export function containerAnalysisOccurrenceAttestationToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAnalysisOccurrenceAttestationOutputReference extends cdktf.ComplexObject {
+export class ContainerAnalysisOccurrenceAttestationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -332,7 +332,7 @@ export class ContainerAnalysisOccurrenceAttestationOutputReference extends cdktf
   public get signatures() {
     return this._signatures;
   }
-  public putSignatures(value: ContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable) {
+  public putSignatures(value: ContainerAnalysisOccurrenceAttestationSignatures[] | cdktn.IResolvable) {
     this._signatures.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -355,39 +355,39 @@ export interface ContainerAnalysisOccurrenceTimeouts {
   readonly update?: string;
 }
 
-export function containerAnalysisOccurrenceTimeoutsToTerraform(struct?: ContainerAnalysisOccurrenceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAnalysisOccurrenceTimeoutsToTerraform(struct?: ContainerAnalysisOccurrenceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function containerAnalysisOccurrenceTimeoutsToHclTerraform(struct?: ContainerAnalysisOccurrenceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAnalysisOccurrenceTimeoutsToHclTerraform(struct?: ContainerAnalysisOccurrenceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -398,19 +398,19 @@ export function containerAnalysisOccurrenceTimeoutsToHclTerraform(struct?: Conta
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAnalysisOccurrenceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ContainerAnalysisOccurrenceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ContainerAnalysisOccurrenceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAnalysisOccurrenceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -431,7 +431,7 @@ export class ContainerAnalysisOccurrenceTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAnalysisOccurrenceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAnalysisOccurrenceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -439,7 +439,7 @@ export class ContainerAnalysisOccurrenceTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -504,7 +504,7 @@ export class ContainerAnalysisOccurrenceTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence}
 */
-export class ContainerAnalysisOccurrence extends cdktf.TerraformResource {
+export class ContainerAnalysisOccurrence extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -515,14 +515,14 @@ export class ContainerAnalysisOccurrence extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ContainerAnalysisOccurrence resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ContainerAnalysisOccurrence resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAnalysisOccurrence to import
   * @param importFromId The id of the existing ContainerAnalysisOccurrence that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_analysis_occurrence#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAnalysisOccurrence to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_container_analysis_occurrence", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_container_analysis_occurrence", importId: importFromId, provider });
       }
 
   // ===========
@@ -694,11 +694,11 @@ export class ContainerAnalysisOccurrence extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      note_name: cdktf.stringToTerraform(this._noteName),
-      project: cdktf.stringToTerraform(this._project),
-      remediation: cdktf.stringToTerraform(this._remediation),
-      resource_uri: cdktf.stringToTerraform(this._resourceUri),
+      id: cdktn.stringToTerraform(this._id),
+      note_name: cdktn.stringToTerraform(this._noteName),
+      project: cdktn.stringToTerraform(this._project),
+      remediation: cdktn.stringToTerraform(this._remediation),
+      resource_uri: cdktn.stringToTerraform(this._resourceUri),
       attestation: containerAnalysisOccurrenceAttestationToTerraform(this._attestation.internalValue),
       timeouts: containerAnalysisOccurrenceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -707,31 +707,31 @@ export class ContainerAnalysisOccurrence extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       note_name: {
-        value: cdktf.stringToHclTerraform(this._noteName),
+        value: cdktn.stringToHclTerraform(this._noteName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remediation: {
-        value: cdktf.stringToHclTerraform(this._remediation),
+        value: cdktn.stringToHclTerraform(this._remediation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_uri: {
-        value: cdktf.stringToHclTerraform(this._resourceUri),
+        value: cdktn.stringToHclTerraform(this._resourceUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

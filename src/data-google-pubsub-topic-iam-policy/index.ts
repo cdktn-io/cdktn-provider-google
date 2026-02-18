@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGooglePubsubTopicIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGooglePubsubTopicIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic_iam_policy#id DataGooglePubsubTopicIamPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface DataGooglePubsubTopicIamPolicyConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic_iam_policy google_pubsub_topic_iam_policy}
 */
-export class DataGooglePubsubTopicIamPolicy extends cdktf.TerraformDataSource {
+export class DataGooglePubsubTopicIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGooglePubsubTopicIamPolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGooglePubsubTopicIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGooglePubsubTopicIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePubsubTopicIamPolicy to import
   * @param importFromId The id of the existing DataGooglePubsubTopicIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePubsubTopicIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_pubsub_topic_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_pubsub_topic_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -150,28 +150,28 @@ export class DataGooglePubsubTopicIamPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
-      topic: cdktf.stringToTerraform(this._topic),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
+      topic: cdktn.stringToTerraform(this._topic),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       topic: {
-        value: cdktf.stringToHclTerraform(this._topic),
+        value: cdktn.stringToHclTerraform(this._topic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

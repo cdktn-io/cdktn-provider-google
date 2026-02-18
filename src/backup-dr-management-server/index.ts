@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupDrManagementServerConfig extends cdktf.TerraformMetaArguments {
+export interface BackupDrManagementServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server#id BackupDrManagementServer#id}
   *
@@ -46,7 +46,7 @@ export interface BackupDrManagementServerConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server#networks BackupDrManagementServer#networks}
   */
-  readonly networks?: BackupDrManagementServerNetworks[] | cdktf.IResolvable;
+  readonly networks?: BackupDrManagementServerNetworks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -58,8 +58,8 @@ export interface BackupDrManagementServerManagementUri {
 }
 
 export function backupDrManagementServerManagementUriToTerraform(struct?: BackupDrManagementServerManagementUri): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -68,8 +68,8 @@ export function backupDrManagementServerManagementUriToTerraform(struct?: Backup
 
 
 export function backupDrManagementServerManagementUriToHclTerraform(struct?: BackupDrManagementServerManagementUri): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -77,7 +77,7 @@ export function backupDrManagementServerManagementUriToHclTerraform(struct?: Bac
   return attrs;
 }
 
-export class BackupDrManagementServerManagementUriOutputReference extends cdktf.ComplexObject {
+export class BackupDrManagementServerManagementUriOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -86,7 +86,7 @@ export class BackupDrManagementServerManagementUriOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -116,14 +116,14 @@ export class BackupDrManagementServerManagementUriOutputReference extends cdktf.
   }
 }
 
-export class BackupDrManagementServerManagementUriList extends cdktf.ComplexList {
+export class BackupDrManagementServerManagementUriList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -149,32 +149,32 @@ export interface BackupDrManagementServerNetworks {
   readonly peeringMode?: string;
 }
 
-export function backupDrManagementServerNetworksToTerraform(struct?: BackupDrManagementServerNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupDrManagementServerNetworksToTerraform(struct?: BackupDrManagementServerNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
-    peering_mode: cdktf.stringToTerraform(struct!.peeringMode),
+    network: cdktn.stringToTerraform(struct!.network),
+    peering_mode: cdktn.stringToTerraform(struct!.peeringMode),
   }
 }
 
 
-export function backupDrManagementServerNetworksToHclTerraform(struct?: BackupDrManagementServerNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupDrManagementServerNetworksToHclTerraform(struct?: BackupDrManagementServerNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     peering_mode: {
-      value: cdktf.stringToHclTerraform(struct!.peeringMode),
+      value: cdktn.stringToHclTerraform(struct!.peeringMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -185,9 +185,9 @@ export function backupDrManagementServerNetworksToHclTerraform(struct?: BackupDr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupDrManagementServerNetworksOutputReference extends cdktf.ComplexObject {
+export class BackupDrManagementServerNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -195,11 +195,11 @@ export class BackupDrManagementServerNetworksOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BackupDrManagementServerNetworks | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupDrManagementServerNetworks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -216,14 +216,14 @@ export class BackupDrManagementServerNetworksOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupDrManagementServerNetworks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupDrManagementServerNetworks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
       this._peeringMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -265,15 +265,15 @@ export class BackupDrManagementServerNetworksOutputReference extends cdktf.Compl
   }
 }
 
-export class BackupDrManagementServerNetworksList extends cdktf.ComplexList {
-  public internalValue? : BackupDrManagementServerNetworks[] | cdktf.IResolvable
+export class BackupDrManagementServerNetworksList extends cdktn.ComplexList {
+  public internalValue? : BackupDrManagementServerNetworks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -295,32 +295,32 @@ export interface BackupDrManagementServerTimeouts {
   readonly delete?: string;
 }
 
-export function backupDrManagementServerTimeoutsToTerraform(struct?: BackupDrManagementServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupDrManagementServerTimeoutsToTerraform(struct?: BackupDrManagementServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function backupDrManagementServerTimeoutsToHclTerraform(struct?: BackupDrManagementServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupDrManagementServerTimeoutsToHclTerraform(struct?: BackupDrManagementServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -331,19 +331,19 @@ export function backupDrManagementServerTimeoutsToHclTerraform(struct?: BackupDr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupDrManagementServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BackupDrManagementServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BackupDrManagementServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupDrManagementServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -360,14 +360,14 @@ export class BackupDrManagementServerTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupDrManagementServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupDrManagementServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -415,7 +415,7 @@ export class BackupDrManagementServerTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server google_backup_dr_management_server}
 */
-export class BackupDrManagementServer extends cdktf.TerraformResource {
+export class BackupDrManagementServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -426,14 +426,14 @@ export class BackupDrManagementServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupDrManagementServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupDrManagementServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupDrManagementServer to import
   * @param importFromId The id of the existing BackupDrManagementServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupDrManagementServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_management_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_backup_dr_management_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -566,7 +566,7 @@ export class BackupDrManagementServer extends cdktf.TerraformResource {
   public get networks() {
     return this._networks;
   }
-  public putNetworks(value: BackupDrManagementServerNetworks[] | cdktf.IResolvable) {
+  public putNetworks(value: BackupDrManagementServerNetworks[] | cdktn.IResolvable) {
     this._networks.internalValue = value;
   }
   public resetNetworks() {
@@ -599,12 +599,12 @@ export class BackupDrManagementServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      type: cdktf.stringToTerraform(this._type),
-      networks: cdktf.listMapper(backupDrManagementServerNetworksToTerraform, true)(this._networks.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      type: cdktn.stringToTerraform(this._type),
+      networks: cdktn.listMapper(backupDrManagementServerNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: backupDrManagementServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -612,37 +612,37 @@ export class BackupDrManagementServer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       networks: {
-        value: cdktf.listMapperHcl(backupDrManagementServerNetworksToHclTerraform, true)(this._networks.internalValue),
+        value: cdktn.listMapperHcl(backupDrManagementServerNetworksToHclTerraform, true)(this._networks.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BackupDrManagementServerNetworksList",

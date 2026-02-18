@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleOrganizationIamCustomRolesConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleOrganizationIamCustomRolesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_roles#id DataGoogleOrganizationIamCustomRoles#id}
   *
@@ -26,7 +26,7 @@ export interface DataGoogleOrganizationIamCustomRolesConfig extends cdktf.Terraf
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_roles#show_deleted DataGoogleOrganizationIamCustomRoles#show_deleted}
   */
-  readonly showDeleted?: boolean | cdktf.IResolvable;
+  readonly showDeleted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_roles#view DataGoogleOrganizationIamCustomRoles#view}
   */
@@ -36,8 +36,8 @@ export interface DataGoogleOrganizationIamCustomRolesRoles {
 }
 
 export function dataGoogleOrganizationIamCustomRolesRolesToTerraform(struct?: DataGoogleOrganizationIamCustomRolesRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataGoogleOrganizationIamCustomRolesRolesToTerraform(struct?: Da
 
 
 export function dataGoogleOrganizationIamCustomRolesRolesToHclTerraform(struct?: DataGoogleOrganizationIamCustomRolesRoles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataGoogleOrganizationIamCustomRolesRolesToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataGoogleOrganizationIamCustomRolesRolesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleOrganizationIamCustomRolesRolesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataGoogleOrganizationIamCustomRolesRolesOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -124,14 +124,14 @@ export class DataGoogleOrganizationIamCustomRolesRolesOutputReference extends cd
   }
 }
 
-export class DataGoogleOrganizationIamCustomRolesRolesList extends cdktf.ComplexList {
+export class DataGoogleOrganizationIamCustomRolesRolesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -146,7 +146,7 @@ export class DataGoogleOrganizationIamCustomRolesRolesList extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_roles google_organization_iam_custom_roles}
 */
-export class DataGoogleOrganizationIamCustomRoles extends cdktf.TerraformDataSource {
+export class DataGoogleOrganizationIamCustomRoles extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -157,14 +157,14 @@ export class DataGoogleOrganizationIamCustomRoles extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleOrganizationIamCustomRoles resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleOrganizationIamCustomRoles resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOrganizationIamCustomRoles to import
   * @param importFromId The id of the existing DataGoogleOrganizationIamCustomRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_roles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOrganizationIamCustomRoles to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_iam_custom_roles", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_iam_custom_roles", importId: importFromId, provider });
       }
 
   // ===========
@@ -243,11 +243,11 @@ export class DataGoogleOrganizationIamCustomRoles extends cdktf.TerraformDataSou
   }
 
   // show_deleted - computed: false, optional: true, required: false
-  private _showDeleted?: boolean | cdktf.IResolvable; 
+  private _showDeleted?: boolean | cdktn.IResolvable; 
   public get showDeleted() {
     return this.getBooleanAttribute('show_deleted');
   }
-  public set showDeleted(value: boolean | cdktf.IResolvable) {
+  public set showDeleted(value: boolean | cdktn.IResolvable) {
     this._showDeleted = value;
   }
   public resetShowDeleted() {
@@ -280,35 +280,35 @@ export class DataGoogleOrganizationIamCustomRoles extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      show_deleted: cdktf.booleanToTerraform(this._showDeleted),
-      view: cdktf.stringToTerraform(this._view),
+      id: cdktn.stringToTerraform(this._id),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      show_deleted: cdktn.booleanToTerraform(this._showDeleted),
+      view: cdktn.stringToTerraform(this._view),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       show_deleted: {
-        value: cdktf.booleanToHclTerraform(this._showDeleted),
+        value: cdktn.booleanToHclTerraform(this._showDeleted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       view: {
-        value: cdktf.stringToHclTerraform(this._view),
+        value: cdktn.stringToHclTerraform(this._view),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

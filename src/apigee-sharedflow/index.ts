@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeSharedflowConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeSharedflowConfig extends cdktn.TerraformMetaArguments {
   /**
   * Path to the config zip bundle
   *
@@ -54,8 +54,8 @@ export interface ApigeeSharedflowMetaData {
 }
 
 export function apigeeSharedflowMetaDataToTerraform(struct?: ApigeeSharedflowMetaData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -64,8 +64,8 @@ export function apigeeSharedflowMetaDataToTerraform(struct?: ApigeeSharedflowMet
 
 
 export function apigeeSharedflowMetaDataToHclTerraform(struct?: ApigeeSharedflowMetaData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -73,7 +73,7 @@ export function apigeeSharedflowMetaDataToHclTerraform(struct?: ApigeeSharedflow
   return attrs;
 }
 
-export class ApigeeSharedflowMetaDataOutputReference extends cdktf.ComplexObject {
+export class ApigeeSharedflowMetaDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -82,7 +82,7 @@ export class ApigeeSharedflowMetaDataOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -117,14 +117,14 @@ export class ApigeeSharedflowMetaDataOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ApigeeSharedflowMetaDataList extends cdktf.ComplexList {
+export class ApigeeSharedflowMetaDataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -150,39 +150,39 @@ export interface ApigeeSharedflowTimeouts {
   readonly update?: string;
 }
 
-export function apigeeSharedflowTimeoutsToTerraform(struct?: ApigeeSharedflowTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeSharedflowTimeoutsToTerraform(struct?: ApigeeSharedflowTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigeeSharedflowTimeoutsToHclTerraform(struct?: ApigeeSharedflowTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeSharedflowTimeoutsToHclTerraform(struct?: ApigeeSharedflowTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -193,19 +193,19 @@ export function apigeeSharedflowTimeoutsToHclTerraform(struct?: ApigeeSharedflow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeSharedflowTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeSharedflowTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeSharedflowTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeSharedflowTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -226,7 +226,7 @@ export class ApigeeSharedflowTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeSharedflowTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeSharedflowTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -234,7 +234,7 @@ export class ApigeeSharedflowTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -299,7 +299,7 @@ export class ApigeeSharedflowTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sharedflow google_apigee_sharedflow}
 */
-export class ApigeeSharedflow extends cdktf.TerraformResource {
+export class ApigeeSharedflow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -310,14 +310,14 @@ export class ApigeeSharedflow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeSharedflow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeSharedflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeSharedflow to import
   * @param importFromId The id of the existing ApigeeSharedflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sharedflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeSharedflow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_sharedflow", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_sharedflow", importId: importFromId, provider });
       }
 
   // ===========
@@ -473,11 +473,11 @@ export class ApigeeSharedflow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      config_bundle: cdktf.stringToTerraform(this._configBundle),
-      detect_md5hash: cdktf.stringToTerraform(this._detectMd5Hash),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      org_id: cdktf.stringToTerraform(this._orgId),
+      config_bundle: cdktn.stringToTerraform(this._configBundle),
+      detect_md5hash: cdktn.stringToTerraform(this._detectMd5Hash),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      org_id: cdktn.stringToTerraform(this._orgId),
       timeouts: apigeeSharedflowTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -485,31 +485,31 @@ export class ApigeeSharedflow extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       config_bundle: {
-        value: cdktf.stringToHclTerraform(this._configBundle),
+        value: cdktn.stringToHclTerraform(this._configBundle),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detect_md5hash: {
-        value: cdktf.stringToHclTerraform(this._detectMd5Hash),
+        value: cdktn.stringToHclTerraform(this._detectMd5Hash),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

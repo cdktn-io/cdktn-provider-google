@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BeyondcorpApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface BeyondcorpApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. User-settable Application resource ID.
   * * Must start with a letter.
@@ -50,7 +50,7 @@ export interface BeyondcorpApplicationConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_application#endpoint_matchers BeyondcorpApplication#endpoint_matchers}
   */
-  readonly endpointMatchers: BeyondcorpApplicationEndpointMatchers[] | cdktf.IResolvable;
+  readonly endpointMatchers: BeyondcorpApplicationEndpointMatchers[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -62,7 +62,7 @@ export interface BeyondcorpApplicationConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_application#upstreams BeyondcorpApplication#upstreams}
   */
-  readonly upstreams?: BeyondcorpApplicationUpstreams[] | cdktf.IResolvable;
+  readonly upstreams?: BeyondcorpApplicationUpstreams[] | cdktn.IResolvable;
 }
 export interface BeyondcorpApplicationEndpointMatchers {
   /**
@@ -79,32 +79,32 @@ export interface BeyondcorpApplicationEndpointMatchers {
   readonly ports?: number[];
 }
 
-export function beyondcorpApplicationEndpointMatchersToTerraform(struct?: BeyondcorpApplicationEndpointMatchers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function beyondcorpApplicationEndpointMatchersToTerraform(struct?: BeyondcorpApplicationEndpointMatchers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    ports: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.ports),
   }
 }
 
 
-export function beyondcorpApplicationEndpointMatchersToHclTerraform(struct?: BeyondcorpApplicationEndpointMatchers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function beyondcorpApplicationEndpointMatchersToHclTerraform(struct?: BeyondcorpApplicationEndpointMatchers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ports: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.ports),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.ports),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -115,9 +115,9 @@ export function beyondcorpApplicationEndpointMatchersToHclTerraform(struct?: Bey
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BeyondcorpApplicationEndpointMatchersOutputReference extends cdktf.ComplexObject {
+export class BeyondcorpApplicationEndpointMatchersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -125,11 +125,11 @@ export class BeyondcorpApplicationEndpointMatchersOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BeyondcorpApplicationEndpointMatchers | cdktf.IResolvable | undefined {
+  public get internalValue(): BeyondcorpApplicationEndpointMatchers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,14 +146,14 @@ export class BeyondcorpApplicationEndpointMatchersOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BeyondcorpApplicationEndpointMatchers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BeyondcorpApplicationEndpointMatchers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hostname = undefined;
       this._ports = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -195,15 +195,15 @@ export class BeyondcorpApplicationEndpointMatchersOutputReference extends cdktf.
   }
 }
 
-export class BeyondcorpApplicationEndpointMatchersList extends cdktf.ComplexList {
-  public internalValue? : BeyondcorpApplicationEndpointMatchers[] | cdktf.IResolvable
+export class BeyondcorpApplicationEndpointMatchersList extends cdktn.ComplexList {
+  public internalValue? : BeyondcorpApplicationEndpointMatchers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -229,39 +229,39 @@ export interface BeyondcorpApplicationTimeouts {
   readonly update?: string;
 }
 
-export function beyondcorpApplicationTimeoutsToTerraform(struct?: BeyondcorpApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function beyondcorpApplicationTimeoutsToTerraform(struct?: BeyondcorpApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function beyondcorpApplicationTimeoutsToHclTerraform(struct?: BeyondcorpApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function beyondcorpApplicationTimeoutsToHclTerraform(struct?: BeyondcorpApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -272,19 +272,19 @@ export function beyondcorpApplicationTimeoutsToHclTerraform(struct?: BeyondcorpA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BeyondcorpApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BeyondcorpApplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BeyondcorpApplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BeyondcorpApplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -305,7 +305,7 @@ export class BeyondcorpApplicationTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BeyondcorpApplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BeyondcorpApplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -313,7 +313,7 @@ export class BeyondcorpApplicationTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -384,24 +384,24 @@ export interface BeyondcorpApplicationUpstreamsEgressPolicy {
 }
 
 export function beyondcorpApplicationUpstreamsEgressPolicyToTerraform(struct?: BeyondcorpApplicationUpstreamsEgressPolicyOutputReference | BeyondcorpApplicationUpstreamsEgressPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
+    regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
   }
 }
 
 
 export function beyondcorpApplicationUpstreamsEgressPolicyToHclTerraform(struct?: BeyondcorpApplicationUpstreamsEgressPolicyOutputReference | BeyondcorpApplicationUpstreamsEgressPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -412,14 +412,14 @@ export function beyondcorpApplicationUpstreamsEgressPolicyToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BeyondcorpApplicationUpstreamsEgressPolicyOutputReference extends cdktf.ComplexObject {
+export class BeyondcorpApplicationUpstreamsEgressPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -468,24 +468,24 @@ export interface BeyondcorpApplicationUpstreamsNetwork {
 }
 
 export function beyondcorpApplicationUpstreamsNetworkToTerraform(struct?: BeyondcorpApplicationUpstreamsNetworkOutputReference | BeyondcorpApplicationUpstreamsNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function beyondcorpApplicationUpstreamsNetworkToHclTerraform(struct?: BeyondcorpApplicationUpstreamsNetworkOutputReference | BeyondcorpApplicationUpstreamsNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -496,14 +496,14 @@ export function beyondcorpApplicationUpstreamsNetworkToHclTerraform(struct?: Bey
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BeyondcorpApplicationUpstreamsNetworkOutputReference extends cdktf.ComplexObject {
+export class BeyondcorpApplicationUpstreamsNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -556,9 +556,9 @@ export interface BeyondcorpApplicationUpstreams {
   readonly network?: BeyondcorpApplicationUpstreamsNetwork;
 }
 
-export function beyondcorpApplicationUpstreamsToTerraform(struct?: BeyondcorpApplicationUpstreams | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function beyondcorpApplicationUpstreamsToTerraform(struct?: BeyondcorpApplicationUpstreams | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -568,9 +568,9 @@ export function beyondcorpApplicationUpstreamsToTerraform(struct?: BeyondcorpApp
 }
 
 
-export function beyondcorpApplicationUpstreamsToHclTerraform(struct?: BeyondcorpApplicationUpstreams | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function beyondcorpApplicationUpstreamsToHclTerraform(struct?: BeyondcorpApplicationUpstreams | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -592,9 +592,9 @@ export function beyondcorpApplicationUpstreamsToHclTerraform(struct?: Beyondcorp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BeyondcorpApplicationUpstreamsOutputReference extends cdktf.ComplexObject {
+export class BeyondcorpApplicationUpstreamsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -602,11 +602,11 @@ export class BeyondcorpApplicationUpstreamsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BeyondcorpApplicationUpstreams | cdktf.IResolvable | undefined {
+  public get internalValue(): BeyondcorpApplicationUpstreams | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -623,14 +623,14 @@ export class BeyondcorpApplicationUpstreamsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BeyondcorpApplicationUpstreams | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BeyondcorpApplicationUpstreams | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._egressPolicy.internalValue = undefined;
       this._network.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -675,15 +675,15 @@ export class BeyondcorpApplicationUpstreamsOutputReference extends cdktf.Complex
   }
 }
 
-export class BeyondcorpApplicationUpstreamsList extends cdktf.ComplexList {
-  public internalValue? : BeyondcorpApplicationUpstreams[] | cdktf.IResolvable
+export class BeyondcorpApplicationUpstreamsList extends cdktn.ComplexList {
+  public internalValue? : BeyondcorpApplicationUpstreams[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -698,7 +698,7 @@ export class BeyondcorpApplicationUpstreamsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_application google_beyondcorp_application}
 */
-export class BeyondcorpApplication extends cdktf.TerraformResource {
+export class BeyondcorpApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -709,14 +709,14 @@ export class BeyondcorpApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BeyondcorpApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BeyondcorpApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BeyondcorpApplication to import
   * @param importFromId The id of the existing BeyondcorpApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BeyondcorpApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_beyondcorp_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_beyondcorp_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -854,7 +854,7 @@ export class BeyondcorpApplication extends cdktf.TerraformResource {
   public get endpointMatchers() {
     return this._endpointMatchers;
   }
-  public putEndpointMatchers(value: BeyondcorpApplicationEndpointMatchers[] | cdktf.IResolvable) {
+  public putEndpointMatchers(value: BeyondcorpApplicationEndpointMatchers[] | cdktn.IResolvable) {
     this._endpointMatchers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -883,7 +883,7 @@ export class BeyondcorpApplication extends cdktf.TerraformResource {
   public get upstreams() {
     return this._upstreams;
   }
-  public putUpstreams(value: BeyondcorpApplicationUpstreams[] | cdktf.IResolvable) {
+  public putUpstreams(value: BeyondcorpApplicationUpstreams[] | cdktn.IResolvable) {
     this._upstreams.internalValue = value;
   }
   public resetUpstreams() {
@@ -900,51 +900,51 @@ export class BeyondcorpApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
-      security_gateways_id: cdktf.stringToTerraform(this._securityGatewaysId),
-      endpoint_matchers: cdktf.listMapper(beyondcorpApplicationEndpointMatchersToTerraform, true)(this._endpointMatchers.internalValue),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
+      security_gateways_id: cdktn.stringToTerraform(this._securityGatewaysId),
+      endpoint_matchers: cdktn.listMapper(beyondcorpApplicationEndpointMatchersToTerraform, true)(this._endpointMatchers.internalValue),
       timeouts: beyondcorpApplicationTimeoutsToTerraform(this._timeouts.internalValue),
-      upstreams: cdktf.listMapper(beyondcorpApplicationUpstreamsToTerraform, true)(this._upstreams.internalValue),
+      upstreams: cdktn.listMapper(beyondcorpApplicationUpstreamsToTerraform, true)(this._upstreams.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_gateways_id: {
-        value: cdktf.stringToHclTerraform(this._securityGatewaysId),
+        value: cdktn.stringToHclTerraform(this._securityGatewaysId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_matchers: {
-        value: cdktf.listMapperHcl(beyondcorpApplicationEndpointMatchersToHclTerraform, true)(this._endpointMatchers.internalValue),
+        value: cdktn.listMapperHcl(beyondcorpApplicationEndpointMatchersToHclTerraform, true)(this._endpointMatchers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BeyondcorpApplicationEndpointMatchersList",
@@ -956,7 +956,7 @@ export class BeyondcorpApplication extends cdktf.TerraformResource {
         storageClassType: "BeyondcorpApplicationTimeouts",
       },
       upstreams: {
-        value: cdktf.listMapperHcl(beyondcorpApplicationUpstreamsToHclTerraform, true)(this._upstreams.internalValue),
+        value: cdktn.listMapperHcl(beyondcorpApplicationUpstreamsToHclTerraform, true)(this._upstreams.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BeyondcorpApplicationUpstreamsList",

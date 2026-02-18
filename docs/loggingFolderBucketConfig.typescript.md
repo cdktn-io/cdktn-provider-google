@@ -297,7 +297,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -391,7 +391,7 @@ public putIndexConfigs(value: IResolvable | LoggingFolderBucketConfigIndexConfig
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.putIndexConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
 
 ---
 
@@ -432,7 +432,7 @@ public resetRetentionDays(): void
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a LoggingFolderBucketConfig resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a LoggingFolderBucketConfig resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -504,7 +504,7 @@ import { loggingFolderBucketConfig } from '@cdktn/provider-google'
 loggingFolderBucketConfig.LoggingFolderBucketConfig.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a LoggingFolderBucketConfig resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a LoggingFolderBucketConfig resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.generateConfigForImport.parameter.scope"></a>
 
@@ -534,7 +534,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the LoggingFolderBucketConfig to import is found.
 
@@ -545,19 +545,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.cmekSettings">cmekSettings</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference">LoggingFolderBucketConfigCmekSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.indexConfigs">indexConfigs</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList">LoggingFolderBucketConfigIndexConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.lifecycleState">lifecycleState</a></code> | <code>string</code> | *No description.* |
@@ -567,7 +567,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.folderInput">folderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.indexConfigsInput">indexConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.indexConfigsInput">indexConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.retentionDaysInput">retentionDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.property.bucketId">bucketId</a></code> | <code>string</code> | *No description.* |
@@ -597,7 +597,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -647,7 +647,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -657,7 +657,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -667,7 +667,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -687,7 +687,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -697,7 +697,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -707,7 +707,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -717,7 +717,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -817,7 +817,7 @@ public readonly idInput: string;
 public readonly indexConfigsInput: IResolvable | LoggingFolderBucketConfigIndexConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
 
 ---
 
@@ -973,20 +973,20 @@ const loggingFolderBucketConfigConfig: loggingFolderBucketConfig.LoggingFolderBu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.bucketId">bucketId</a></code> | <code>string</code> | The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.folder">folder</a></code> | <code>string</code> | The parent resource that contains the logging bucket. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.location">location</a></code> | <code>string</code> | The location of the bucket. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.cmekSettings">cmekSettings</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettings">LoggingFolderBucketConfigCmekSettings</a></code> | cmek_settings block. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.description">description</a></code> | <code>string</code> | An optional description for this bucket. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#id LoggingFolderBucketConfig#id}. |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.indexConfigs">indexConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]</code> | index_configs block. |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.indexConfigs">indexConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]</code> | index_configs block. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.retentionDays">retentionDays</a></code> | <code>number</code> | Logs will be retained by default for this amount of time, after which they will automatically be deleted. |
 
 ---
@@ -997,7 +997,7 @@ const loggingFolderBucketConfigConfig: loggingFolderBucketConfig.LoggingFolderBu
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1017,7 +1017,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1047,7 +1047,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1152,7 +1152,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly indexConfigs: IResolvable | LoggingFolderBucketConfigIndexConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
 
 index_configs block.
 
@@ -1240,14 +1240,14 @@ new loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1417,7 +1417,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1544,7 +1544,7 @@ new loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1552,7 +1552,7 @@ new loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1618,7 +1618,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1653,7 +1653,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -1687,7 +1687,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LoggingFolderBucketConfigIndexConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>[]
 
 ---
 
@@ -1704,7 +1704,7 @@ new loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1713,7 +1713,7 @@ new loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1899,7 +1899,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1924,7 +1924,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.property.fieldPath">fieldPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a></code> | *No description.* |
 
 ---
 
@@ -1998,7 +1998,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | LoggingFolderBucketConfigIndexConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs">LoggingFolderBucketConfigIndexConfigs</a>
 
 ---
 

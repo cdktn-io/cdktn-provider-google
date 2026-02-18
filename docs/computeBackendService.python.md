@@ -65,27 +65,27 @@ computeBackendService.ComputeBackendService(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.affinityCookieTtlSec">affinity_cookie_ttl_sec</a></code> | <code>typing.Union[int, float]</code> | Lifetime of cookies in seconds if session_affinity is GENERATED_COOKIE. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.backend">backend</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | backend block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.backend">backend</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | backend block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.cdnPolicy">cdn_policy</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy">ComputeBackendServiceCdnPolicy</a></code> | cdn_policy block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.circuitBreakers">circuit_breakers</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakers">ComputeBackendServiceCircuitBreakers</a></code> | circuit_breakers block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.compressionMode">compression_mode</a></code> | <code>str</code> | Compress text responses using Brotli or gzip compression, based on the client's Accept-Encoding header. Possible values: ["AUTOMATIC", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.connectionDrainingTimeoutSec">connection_draining_timeout_sec</a></code> | <code>typing.Union[int, float]</code> | Time for which instance will be drained (not accept new connections, but still work to finish started). |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.consistentHash">consistent_hash</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHash">ComputeBackendServiceConsistentHash</a></code> | consistent_hash block. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.customMetrics">custom_metrics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | custom_metrics block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.customMetrics">custom_metrics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | custom_metrics block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.customRequestHeaders">custom_request_headers</a></code> | <code>typing.List[str]</code> | Headers that the HTTP/S load balancer should add to proxied requests. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.customResponseHeaders">custom_response_headers</a></code> | <code>typing.List[str]</code> | Headers that the HTTP/S load balancer should add to proxied responses. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.edgeSecurityPolicy">edge_security_policy</a></code> | <code>str</code> | The resource URL for the edge security policy associated with this backend service. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.enableCdn">enable_cdn</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, enable Cloud CDN for this BackendService. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.enableCdn">enable_cdn</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, enable Cloud CDN for this BackendService. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.externalManagedMigrationState">external_managed_migration_state</a></code> | <code>str</code> | Specifies the canary migration state. Possible values are PREPARE, TEST_BY_PERCENTAGE, and TEST_ALL_TRAFFIC. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.externalManagedMigrationTestingPercentage">external_managed_migration_testing_percentage</a></code> | <code>typing.Union[int, float]</code> | Determines the fraction of requests that should be processed by the Global external Application Load Balancer. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.healthChecks">health_checks</a></code> | <code>typing.List[str]</code> | The set of URLs to the HttpHealthCheck or HttpsHealthCheck resource for health checking this BackendService. |
@@ -93,7 +93,7 @@ computeBackendService.ComputeBackendService(
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#id ComputeBackendService#id}. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.ipAddressSelectionPolicy">ip_address_selection_policy</a></code> | <code>str</code> | Specifies preference of traffic to the backend (from the proxy and from the client for proxyless gRPC). |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.loadBalancingScheme">load_balancing_scheme</a></code> | <code>str</code> | Indicates whether the backend service will be used with internal or external load balancing. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.localityLbPolicies">locality_lb_policies</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | locality_lb_policies block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.localityLbPolicies">locality_lb_policies</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | locality_lb_policies block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.localityLbPolicy">locality_lb_policy</a></code> | <code>str</code> | The load balancing algorithm used within the scope of the locality. The possible values are:. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.logConfig">log_config</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig">ComputeBackendServiceLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.maxStreamDuration">max_stream_duration</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDuration">ComputeBackendServiceMaxStreamDuration</a></code> | max_stream_duration block. |
@@ -132,43 +132,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `backend`<sup>Optional</sup> <a name="backend" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.backend"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
 
 backend block.
 
@@ -268,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `custom_metrics`<sup>Optional</sup> <a name="custom_metrics" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.customMetrics"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
 
 custom_metrics block.
 
@@ -318,7 +318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_cdn`<sup>Optional</sup> <a name="enable_cdn" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.enableCdn"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, enable Cloud CDN for this BackendService.
 
@@ -431,7 +431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `locality_lb_policies`<sup>Optional</sup> <a name="locality_lb_policies" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer.parameter.localityLbPolicies"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
 
 locality_lb_policies block.
 
@@ -979,7 +979,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1072,7 +1072,7 @@ def put_backend(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putBackend.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
 
 ---
 
@@ -1096,7 +1096,7 @@ def put_cdn_policy(
 
 ###### `bypass_cache_on_request_headers`<sup>Optional</sup> <a name="bypass_cache_on_request_headers" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putCdnPolicy.parameter.bypassCacheOnRequestHeaders"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
 
 bypass_cache_on_request_headers block.
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `negative_caching`<sup>Optional</sup> <a name="negative_caching" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putCdnPolicy.parameter.negativeCaching"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `negative_caching_policy`<sup>Optional</sup> <a name="negative_caching_policy" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putCdnPolicy.parameter.negativeCachingPolicy"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
 
 negative_caching_policy block.
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `request_coalescing`<sup>Optional</sup> <a name="request_coalescing" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putCdnPolicy.parameter.requestCoalescing"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin.
 
@@ -1341,7 +1341,7 @@ def put_custom_metrics(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putCustomMetrics.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
 
 ---
 
@@ -1357,7 +1357,7 @@ def put_iap(
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putIap.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the serving infrastructure will authenticate and authorize all incoming requests.
 
@@ -1395,7 +1395,7 @@ def put_locality_lb_policies(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putLocalityLbPolicies.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
 
 ---
 
@@ -1412,7 +1412,7 @@ def put_log_config(
 
 ###### `enable`<sup>Optional</sup> <a name="enable" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putLogConfig.parameter.enable"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to enable logging for the load balancer traffic served by this backend service.
 
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `subject_alt_names`<sup>Optional</sup> <a name="subject_alt_names" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putTlsSettings.parameter.subjectAltNames"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
 
 subject_alt_names block.
 
@@ -2027,7 +2027,7 @@ def reset_tls_settings() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeBackendService resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ComputeBackendService resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -2110,7 +2110,7 @@ computeBackendService.ComputeBackendService.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ComputeBackendService resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeBackendService resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.generateConfigForImport.parameter.scope"></a>
 
@@ -2140,7 +2140,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeBackendService to import is found.
 
@@ -2151,19 +2151,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.backend">backend</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList">ComputeBackendServiceBackendList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.cdnPolicy">cdn_policy</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference">ComputeBackendServiceCdnPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.circuitBreakers">circuit_breakers</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference">ComputeBackendServiceCircuitBreakersOutputReference</a></code> | *No description.* |
@@ -2183,18 +2183,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference">ComputeBackendServiceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.tlsSettings">tls_settings</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference">ComputeBackendServiceTlsSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.affinityCookieTtlSecInput">affinity_cookie_ttl_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.backendInput">backend_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.backendInput">backend_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.cdnPolicyInput">cdn_policy_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy">ComputeBackendServiceCdnPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.circuitBreakersInput">circuit_breakers_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakers">ComputeBackendServiceCircuitBreakers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.compressionModeInput">compression_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.connectionDrainingTimeoutSecInput">connection_draining_timeout_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.consistentHashInput">consistent_hash_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHash">ComputeBackendServiceConsistentHash</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.customMetricsInput">custom_metrics_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.customMetricsInput">custom_metrics_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.customRequestHeadersInput">custom_request_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.customResponseHeadersInput">custom_response_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.edgeSecurityPolicyInput">edge_security_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.enableCdnInput">enable_cdn_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.enableCdnInput">enable_cdn_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.externalManagedMigrationStateInput">external_managed_migration_state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.externalManagedMigrationTestingPercentageInput">external_managed_migration_testing_percentage_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.healthChecksInput">health_checks_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -2202,7 +2202,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.ipAddressSelectionPolicyInput">ip_address_selection_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.loadBalancingSchemeInput">load_balancing_scheme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.localityLbPoliciesInput">locality_lb_policies_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.localityLbPoliciesInput">locality_lb_policies_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.localityLbPolicyInput">locality_lb_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.logConfigInput">log_config_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig">ComputeBackendServiceLogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.maxStreamDurationInput">max_stream_duration_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDuration">ComputeBackendServiceMaxStreamDuration</a></code> | *No description.* |
@@ -2217,7 +2217,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.sessionAffinityInput">session_affinity_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.strongSessionAffinityCookieInput">strong_session_affinity_cookie_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookie">ComputeBackendServiceStrongSessionAffinityCookie</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.timeoutSecInput">timeout_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.tlsSettingsInput">tls_settings_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettings">ComputeBackendServiceTlsSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.affinityCookieTtlSec">affinity_cookie_ttl_sec</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.compressionMode">compression_mode</a></code> | <code>str</code> | *No description.* |
@@ -2226,7 +2226,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.customResponseHeaders">custom_response_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.edgeSecurityPolicy">edge_security_policy</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.enableCdn">enable_cdn</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.enableCdn">enable_cdn</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.externalManagedMigrationState">external_managed_migration_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.externalManagedMigrationTestingPercentage">external_managed_migration_testing_percentage</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.healthChecks">health_checks</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -2263,7 +2263,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -2313,7 +2313,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -2323,7 +2323,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2333,7 +2333,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2353,7 +2353,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2363,7 +2363,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2373,7 +2373,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2383,7 +2383,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2583,7 +2583,7 @@ affinity_cookie_ttl_sec_input: typing.Union[int, float]
 backend_input: IResolvable | typing.List[ComputeBackendServiceBackend]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
 
 ---
 
@@ -2643,7 +2643,7 @@ consistent_hash_input: ComputeBackendServiceConsistentHash
 custom_metrics_input: IResolvable | typing.List[ComputeBackendServiceCustomMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
 
 ---
 
@@ -2693,7 +2693,7 @@ edge_security_policy_input: str
 enable_cdn_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2773,7 +2773,7 @@ load_balancing_scheme_input: str
 locality_lb_policies_input: IResolvable | typing.List[ComputeBackendServiceLocalityLbPolicies]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
 
 ---
 
@@ -2923,7 +2923,7 @@ timeout_sec_input: typing.Union[int, float]
 timeouts_input: IResolvable | ComputeBackendServiceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a>
 
 ---
 
@@ -3013,7 +3013,7 @@ edge_security_policy: str
 enable_cdn: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3218,7 +3218,7 @@ computeBackendService.ComputeBackendServiceBackend(
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.group">group</a></code> | <code>str</code> | The fully-qualified URL of an Instance Group or Network Endpoint Group resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.balancingMode">balancing_mode</a></code> | <code>str</code> | Specifies the balancing mode for this backend. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.capacityScaler">capacity_scaler</a></code> | <code>typing.Union[int, float]</code> | A multiplier applied to the group's maximum servicing capacity (based on UTILIZATION, RATE or CONNECTION). |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.customMetrics">custom_metrics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]</code> | custom_metrics block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.customMetrics">custom_metrics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]</code> | custom_metrics block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.maxConnections">max_connections</a></code> | <code>typing.Union[int, float]</code> | The max number of simultaneous connections for the group. Can be used with either CONNECTION or UTILIZATION balancing modes. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.property.maxConnectionsPerEndpoint">max_connections_per_endpoint</a></code> | <code>typing.Union[int, float]</code> | The max number of simultaneous connections that a single backend network endpoint can handle. |
@@ -3308,7 +3308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 custom_metrics: IResolvable | typing.List[ComputeBackendServiceBackendCustomMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
 
 custom_metrics block.
 
@@ -3498,7 +3498,7 @@ computeBackendService.ComputeBackendServiceBackendCustomMetrics(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics.property.dryRun">dry_run</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the metric data is collected and reported to Cloud Monitoring, but is not used for load balancing. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics.property.dryRun">dry_run</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, the metric data is collected and reported to Cloud Monitoring, but is not used for load balancing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics.property.name">name</a></code> | <code>str</code> | Name of a custom utilization signal. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics.property.maxUtilization">max_utilization</a></code> | <code>typing.Union[int, float]</code> | Optional parameter to define a target utilization for the Custom Metrics balancing mode. The valid range is <code>[0.0, 1.0]</code>. |
 
@@ -3510,7 +3510,7 @@ computeBackendService.ComputeBackendServiceBackendCustomMetrics(
 dry_run: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, the metric data is collected and reported to Cloud Monitoring, but is not used for load balancing.
 
@@ -3582,15 +3582,15 @@ computeBackendService.ComputeBackendServiceCdnPolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.bypassCacheOnRequestHeaders">bypass_cache_on_request_headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]</code> | bypass_cache_on_request_headers block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.bypassCacheOnRequestHeaders">bypass_cache_on_request_headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]</code> | bypass_cache_on_request_headers block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.cacheKeyPolicy">cache_key_policy</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy">ComputeBackendServiceCdnPolicyCacheKeyPolicy</a></code> | cache_key_policy block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.cacheMode">cache_mode</a></code> | <code>str</code> | Specifies the cache setting for all responses from this backend. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.clientTtl">client_ttl</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum allowed TTL for cached content served by this origin. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.defaultTtl">default_ttl</a></code> | <code>typing.Union[int, float]</code> | Specifies the default TTL for cached content served by this origin for responses that do not have an existing valid TTL (max-age or s-max-age). |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.maxTtl">max_ttl</a></code> | <code>typing.Union[int, float]</code> | Specifies the maximum allowed TTL for cached content served by this origin. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.negativeCaching">negative_caching</a></code> | <code>bool \| cdktf.IResolvable</code> | Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.negativeCachingPolicy">negative_caching_policy</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]</code> | negative_caching_policy block. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.requestCoalescing">request_coalescing</a></code> | <code>bool \| cdktf.IResolvable</code> | If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.negativeCaching">negative_caching</a></code> | <code>bool \| cdktn.IResolvable</code> | Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.negativeCachingPolicy">negative_caching_policy</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]</code> | negative_caching_policy block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.requestCoalescing">request_coalescing</a></code> | <code>bool \| cdktn.IResolvable</code> | If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.serveWhileStale">serve_while_stale</a></code> | <code>typing.Union[int, float]</code> | Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.property.signedUrlCacheMaxAgeSec">signed_url_cache_max_age_sec</a></code> | <code>typing.Union[int, float]</code> | Maximum number of seconds the response to a signed URL request will be considered fresh, defaults to 1hr (3600s). |
 
@@ -3602,7 +3602,7 @@ computeBackendService.ComputeBackendServiceCdnPolicy(
 bypass_cache_on_request_headers: IResolvable | typing.List[ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
 
 bypass_cache_on_request_headers block.
 
@@ -3688,7 +3688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 negative_caching: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
 
@@ -3702,7 +3702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 negative_caching_policy: IResolvable | typing.List[ComputeBackendServiceCdnPolicyNegativeCachingPolicy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
 
 negative_caching_policy block.
 
@@ -3716,7 +3716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 request_coalescing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin.
 
@@ -3818,11 +3818,11 @@ computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeHost">include_host</a></code> | <code>bool \| cdktf.IResolvable</code> | If true requests to different hosts will be cached separately. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeHost">include_host</a></code> | <code>bool \| cdktn.IResolvable</code> | If true requests to different hosts will be cached separately. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeHttpHeaders">include_http_headers</a></code> | <code>typing.List[str]</code> | Allows HTTP request headers (by name) to be used in the cache key. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeNamedCookies">include_named_cookies</a></code> | <code>typing.List[str]</code> | Names of cookies to include in cache keys. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeProtocol">include_protocol</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, http and https requests will be cached separately. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeQueryString">include_query_string</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, include query string parameters in the cache key according to query_string_whitelist and query_string_blacklist. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeProtocol">include_protocol</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, http and https requests will be cached separately. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.includeQueryString">include_query_string</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, include query string parameters in the cache key according to query_string_whitelist and query_string_blacklist. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.queryStringBlacklist">query_string_blacklist</a></code> | <code>typing.List[str]</code> | Names of query string parameters to exclude in cache keys. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.property.queryStringWhitelist">query_string_whitelist</a></code> | <code>typing.List[str]</code> | Names of query string parameters to include in cache keys. |
 
@@ -3834,7 +3834,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy(
 include_host: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true requests to different hosts will be cached separately.
 
@@ -3876,7 +3876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 include_protocol: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, http and https requests will be cached separately.
 
@@ -3890,7 +3890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 include_query_string: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, include query string parameters in the cache key according to query_string_whitelist and query_string_blacklist.
 
@@ -4160,27 +4160,27 @@ computeBackendService.ComputeBackendServiceConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.affinityCookieTtlSec">affinity_cookie_ttl_sec</a></code> | <code>typing.Union[int, float]</code> | Lifetime of cookies in seconds if session_affinity is GENERATED_COOKIE. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.backend">backend</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | backend block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.backend">backend</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | backend block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.cdnPolicy">cdn_policy</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy">ComputeBackendServiceCdnPolicy</a></code> | cdn_policy block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.circuitBreakers">circuit_breakers</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakers">ComputeBackendServiceCircuitBreakers</a></code> | circuit_breakers block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.compressionMode">compression_mode</a></code> | <code>str</code> | Compress text responses using Brotli or gzip compression, based on the client's Accept-Encoding header. Possible values: ["AUTOMATIC", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.connectionDrainingTimeoutSec">connection_draining_timeout_sec</a></code> | <code>typing.Union[int, float]</code> | Time for which instance will be drained (not accept new connections, but still work to finish started). |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.consistentHash">consistent_hash</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHash">ComputeBackendServiceConsistentHash</a></code> | consistent_hash block. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.customMetrics">custom_metrics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | custom_metrics block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.customMetrics">custom_metrics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | custom_metrics block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.customRequestHeaders">custom_request_headers</a></code> | <code>typing.List[str]</code> | Headers that the HTTP/S load balancer should add to proxied requests. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.customResponseHeaders">custom_response_headers</a></code> | <code>typing.List[str]</code> | Headers that the HTTP/S load balancer should add to proxied responses. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.edgeSecurityPolicy">edge_security_policy</a></code> | <code>str</code> | The resource URL for the edge security policy associated with this backend service. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.enableCdn">enable_cdn</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, enable Cloud CDN for this BackendService. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.enableCdn">enable_cdn</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, enable Cloud CDN for this BackendService. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.externalManagedMigrationState">external_managed_migration_state</a></code> | <code>str</code> | Specifies the canary migration state. Possible values are PREPARE, TEST_BY_PERCENTAGE, and TEST_ALL_TRAFFIC. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.externalManagedMigrationTestingPercentage">external_managed_migration_testing_percentage</a></code> | <code>typing.Union[int, float]</code> | Determines the fraction of requests that should be processed by the Global external Application Load Balancer. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.healthChecks">health_checks</a></code> | <code>typing.List[str]</code> | The set of URLs to the HttpHealthCheck or HttpsHealthCheck resource for health checking this BackendService. |
@@ -4188,7 +4188,7 @@ computeBackendService.ComputeBackendServiceConfig(
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#id ComputeBackendService#id}. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.ipAddressSelectionPolicy">ip_address_selection_policy</a></code> | <code>str</code> | Specifies preference of traffic to the backend (from the proxy and from the client for proxyless gRPC). |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.loadBalancingScheme">load_balancing_scheme</a></code> | <code>str</code> | Indicates whether the backend service will be used with internal or external load balancing. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.localityLbPolicies">locality_lb_policies</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | locality_lb_policies block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.localityLbPolicies">locality_lb_policies</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | locality_lb_policies block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.localityLbPolicy">locality_lb_policy</a></code> | <code>str</code> | The load balancing algorithm used within the scope of the locality. The possible values are:. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.logConfig">log_config</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig">ComputeBackendServiceLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.maxStreamDuration">max_stream_duration</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDuration">ComputeBackendServiceMaxStreamDuration</a></code> | max_stream_duration block. |
@@ -4213,7 +4213,7 @@ computeBackendService.ComputeBackendServiceConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -4223,7 +4223,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -4233,7 +4233,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -4243,7 +4243,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -4253,7 +4253,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -4263,7 +4263,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -4273,7 +4273,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -4325,7 +4325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 backend: IResolvable | typing.List[ComputeBackendServiceBackend]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
 
 backend block.
 
@@ -4409,7 +4409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 custom_metrics: IResolvable | typing.List[ComputeBackendServiceCustomMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
 
 custom_metrics block.
 
@@ -4479,7 +4479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_cdn: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, enable Cloud CDN for this BackendService.
 
@@ -4624,7 +4624,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 locality_lb_policies: IResolvable | typing.List[ComputeBackendServiceLocalityLbPolicies]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
 
 locality_lb_policies block.
 
@@ -5121,7 +5121,7 @@ computeBackendService.ComputeBackendServiceCustomMetrics(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics.property.dryRun">dry_run</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the metric data is not used for load balancing. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics.property.dryRun">dry_run</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, the metric data is not used for load balancing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics.property.name">name</a></code> | <code>str</code> | Name of a custom utilization signal. |
 
 ---
@@ -5132,7 +5132,7 @@ computeBackendService.ComputeBackendServiceCustomMetrics(
 dry_run: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, the metric data is not used for load balancing.
 
@@ -5182,7 +5182,7 @@ computeBackendService.ComputeBackendServiceIap(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIap.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the serving infrastructure will authenticate and authorize all incoming requests. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIap.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the serving infrastructure will authenticate and authorize all incoming requests. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIap.property.oauth2ClientId">oauth2_client_id</a></code> | <code>str</code> | OAuth2 Client ID for IAP. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIap.property.oauth2ClientSecret">oauth2_client_secret</a></code> | <code>str</code> | OAuth2 Client Secret for IAP. |
 
@@ -5194,7 +5194,7 @@ computeBackendService.ComputeBackendServiceIap(
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the serving infrastructure will authenticate and authorize all incoming requests.
 
@@ -5422,7 +5422,7 @@ computeBackendService.ComputeBackendServiceLogConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable logging for the load balancer traffic served by this backend service. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig.property.enable">enable</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable logging for the load balancer traffic served by this backend service. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig.property.optionalFields">optional_fields</a></code> | <code>typing.List[str]</code> | This field can only be specified if logging is enabled for this backend service and "logConfig.optionalMode" was set to CUSTOM. Contains a list of optional fields you want to include in the logs. For example: serverInstance, serverGkeDetails.cluster, serverGkeDetails.pod.podNamespace For example: orca_load_report, tls.protocol. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig.property.optionalMode">optional_mode</a></code> | <code>str</code> | Specifies the optional logging mode for the load balancer traffic. Supported values: INCLUDE_ALL_OPTIONAL, EXCLUDE_ALL_OPTIONAL, CUSTOM. Possible values: ["INCLUDE_ALL_OPTIONAL", "EXCLUDE_ALL_OPTIONAL", "CUSTOM"]. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig.property.sampleRate">sample_rate</a></code> | <code>typing.Union[int, float]</code> | This field can only be specified if logging is enabled for this backend service. |
@@ -5435,7 +5435,7 @@ computeBackendService.ComputeBackendServiceLogConfig(
 enable: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to enable logging for the load balancer traffic served by this backend service.
 
@@ -6235,7 +6235,7 @@ computeBackendService.ComputeBackendServiceTlsSettings(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettings.property.authenticationConfig">authentication_config</a></code> | <code>str</code> | Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace. Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field. Can only be specified if authenticationMode is not NONE. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettings.property.sni">sni</a></code> | <code>str</code> | Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend's server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettings.property.subjectAltNames">subject_alt_names</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]</code> | subject_alt_names block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettings.property.subjectAltNames">subject_alt_names</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]</code> | subject_alt_names block. |
 
 ---
 
@@ -6273,7 +6273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 subject_alt_names: IResolvable | typing.List[ComputeBackendServiceTlsSettingsSubjectAltNames]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
 
 subject_alt_names block.
 
@@ -6349,7 +6349,7 @@ computeBackendService.ComputeBackendServiceBackendCustomMetricsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6357,7 +6357,7 @@ computeBackendService.ComputeBackendServiceBackendCustomMetricsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6427,7 +6427,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6464,7 +6464,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]</code> | *No description.* |
 
 ---
 
@@ -6498,7 +6498,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeBackendServiceBackendCustomMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
 
 ---
 
@@ -6520,7 +6520,7 @@ computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6529,7 +6529,7 @@ computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6738,7 +6738,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6765,13 +6765,13 @@ def reset_max_utilization() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.dryRunInput">dry_run_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.dryRunInput">dry_run_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.maxUtilizationInput">max_utilization_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.dryRun">dry_run</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.dryRun">dry_run</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.maxUtilization">max_utilization</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a></code> | *No description.* |
 
 ---
 
@@ -6805,7 +6805,7 @@ fqn: str
 dry_run_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6835,7 +6835,7 @@ name_input: str
 dry_run: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6865,7 +6865,7 @@ name: str
 internal_value: IResolvable | ComputeBackendServiceBackendCustomMetrics
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>
 
 ---
 
@@ -6886,7 +6886,7 @@ computeBackendService.ComputeBackendServiceBackendList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6894,7 +6894,7 @@ computeBackendService.ComputeBackendServiceBackendList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6964,7 +6964,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7001,7 +7001,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]</code> | *No description.* |
 
 ---
 
@@ -7035,7 +7035,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeBackendServiceBackend]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>]
 
 ---
 
@@ -7057,7 +7057,7 @@ computeBackendService.ComputeBackendServiceBackendOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7066,7 +7066,7 @@ computeBackendService.ComputeBackendServiceBackendOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7287,7 +7287,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7311,7 +7311,7 @@ def put_custom_metrics(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.putCustomMetrics.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
 
 ---
 
@@ -7397,7 +7397,7 @@ def reset_preference() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.customMetrics">custom_metrics</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList">ComputeBackendServiceBackendCustomMetricsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.balancingModeInput">balancing_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.capacityScalerInput">capacity_scaler_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.customMetricsInput">custom_metrics_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.customMetricsInput">custom_metrics_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.maxConnectionsInput">max_connections_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -7420,7 +7420,7 @@ def reset_preference() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.maxRatePerInstance">max_rate_per_instance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.maxUtilization">max_utilization</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.preference">preference</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a></code> | *No description.* |
 
 ---
 
@@ -7484,7 +7484,7 @@ capacity_scaler_input: typing.Union[int, float]
 custom_metrics_input: IResolvable | typing.List[ComputeBackendServiceBackendCustomMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics">ComputeBackendServiceBackendCustomMetrics</a>]
 
 ---
 
@@ -7714,7 +7714,7 @@ preference: str
 internal_value: IResolvable | ComputeBackendServiceBackend
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend">ComputeBackendServiceBackend</a>
 
 ---
 
@@ -7735,7 +7735,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7743,7 +7743,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersL
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7813,7 +7813,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7850,7 +7850,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]</code> | *No description.* |
 
 ---
 
@@ -7884,7 +7884,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
 
 ---
 
@@ -7906,7 +7906,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7915,7 +7915,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersO
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8123,7 +8123,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8146,7 +8146,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.headerNameInput">header_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.headerName">header_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a></code> | *No description.* |
 
 ---
 
@@ -8200,7 +8200,7 @@ header_name: str
 internal_value: IResolvable | ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>
 
 ---
 
@@ -8220,14 +8220,14 @@ computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8426,7 +8426,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8489,18 +8489,18 @@ def reset_query_string_whitelist() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeHostInput">include_host_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeHostInput">include_host_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeHttpHeadersInput">include_http_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeNamedCookiesInput">include_named_cookies_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeProtocolInput">include_protocol_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeQueryStringInput">include_query_string_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeProtocolInput">include_protocol_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeQueryStringInput">include_query_string_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.queryStringBlacklistInput">query_string_blacklist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.queryStringWhitelistInput">query_string_whitelist_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeHost">include_host</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeHost">include_host</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeHttpHeaders">include_http_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeNamedCookies">include_named_cookies</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeProtocol">include_protocol</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeQueryString">include_query_string</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeProtocol">include_protocol</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.includeQueryString">include_query_string</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.queryStringBlacklist">query_string_blacklist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.queryStringWhitelist">query_string_whitelist</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy">ComputeBackendServiceCdnPolicyCacheKeyPolicy</a></code> | *No description.* |
@@ -8537,7 +8537,7 @@ fqn: str
 include_host_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8567,7 +8567,7 @@ include_named_cookies_input: typing.List[str]
 include_protocol_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8577,7 +8577,7 @@ include_protocol_input: bool | IResolvable
 include_query_string_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8607,7 +8607,7 @@ query_string_whitelist_input: typing.List[str]
 include_host: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8637,7 +8637,7 @@ include_named_cookies: typing.List[str]
 include_protocol: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8647,7 +8647,7 @@ include_protocol: bool | IResolvable
 include_query_string: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -8698,7 +8698,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8706,7 +8706,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8776,7 +8776,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8813,7 +8813,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]</code> | *No description.* |
 
 ---
 
@@ -8847,7 +8847,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeBackendServiceCdnPolicyNegativeCachingPolicy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
 
 ---
 
@@ -8869,7 +8869,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8878,7 +8878,7 @@ computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputR
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9088,7 +9088,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9125,7 +9125,7 @@ def reset_ttl() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.code">code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a></code> | *No description.* |
 
 ---
 
@@ -9199,7 +9199,7 @@ ttl: typing.Union[int, float]
 internal_value: IResolvable | ComputeBackendServiceCdnPolicyNegativeCachingPolicy
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>
 
 ---
 
@@ -9219,14 +9219,14 @@ computeBackendService.ComputeBackendServiceCdnPolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9432,7 +9432,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9456,7 +9456,7 @@ def put_bypass_cache_on_request_headers(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.putBypassCacheOnRequestHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
 
 ---
 
@@ -9476,7 +9476,7 @@ def put_cache_key_policy(
 
 ###### `include_host`<sup>Optional</sup> <a name="include_host" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.putCacheKeyPolicy.parameter.includeHost"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true requests to different hosts will be cached separately.
 
@@ -9506,7 +9506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `include_protocol`<sup>Optional</sup> <a name="include_protocol" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.putCacheKeyPolicy.parameter.includeProtocol"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, http and https requests will be cached separately.
 
@@ -9516,7 +9516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `include_query_string`<sup>Optional</sup> <a name="include_query_string" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.putCacheKeyPolicy.parameter.includeQueryString"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, include query string parameters in the cache key according to query_string_whitelist and query_string_blacklist.
 
@@ -9570,7 +9570,7 @@ def put_negative_caching_policy(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.putNegativeCachingPolicy.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
 
 ---
 
@@ -9650,23 +9650,23 @@ def reset_signed_url_cache_max_age_sec() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.bypassCacheOnRequestHeaders">bypass_cache_on_request_headers</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.cacheKeyPolicy">cache_key_policy</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference">ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.negativeCachingPolicy">negative_caching_policy</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList">ComputeBackendServiceCdnPolicyNegativeCachingPolicyList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.bypassCacheOnRequestHeadersInput">bypass_cache_on_request_headers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.bypassCacheOnRequestHeadersInput">bypass_cache_on_request_headers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.cacheKeyPolicyInput">cache_key_policy_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy">ComputeBackendServiceCdnPolicyCacheKeyPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.cacheModeInput">cache_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.clientTtlInput">client_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.defaultTtlInput">default_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.maxTtlInput">max_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.negativeCachingInput">negative_caching_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.negativeCachingPolicyInput">negative_caching_policy_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.requestCoalescingInput">request_coalescing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.negativeCachingInput">negative_caching_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.negativeCachingPolicyInput">negative_caching_policy_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.requestCoalescingInput">request_coalescing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.serveWhileStaleInput">serve_while_stale_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.signedUrlCacheMaxAgeSecInput">signed_url_cache_max_age_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.cacheMode">cache_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.clientTtl">client_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.defaultTtl">default_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.maxTtl">max_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.negativeCaching">negative_caching</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.requestCoalescing">request_coalescing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.negativeCaching">negative_caching</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.requestCoalescing">request_coalescing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.serveWhileStale">serve_while_stale</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.signedUrlCacheMaxAgeSec">signed_url_cache_max_age_sec</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy">ComputeBackendServiceCdnPolicy</a></code> | *No description.* |
@@ -9733,7 +9733,7 @@ negative_caching_policy: ComputeBackendServiceCdnPolicyNegativeCachingPolicyList
 bypass_cache_on_request_headers_input: IResolvable | typing.List[ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>]
 
 ---
 
@@ -9793,7 +9793,7 @@ max_ttl_input: typing.Union[int, float]
 negative_caching_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9803,7 +9803,7 @@ negative_caching_input: bool | IResolvable
 negative_caching_policy_input: IResolvable | typing.List[ComputeBackendServiceCdnPolicyNegativeCachingPolicy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy">ComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>]
 
 ---
 
@@ -9813,7 +9813,7 @@ negative_caching_policy_input: IResolvable | typing.List[ComputeBackendServiceCd
 request_coalescing_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9883,7 +9883,7 @@ max_ttl: typing.Union[int, float]
 negative_caching: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9893,7 +9893,7 @@ negative_caching: bool | IResolvable
 request_coalescing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9943,14 +9943,14 @@ computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10147,7 +10147,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10362,14 +10362,14 @@ computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10565,7 +10565,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10757,14 +10757,14 @@ computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10957,7 +10957,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11082,14 +11082,14 @@ computeBackendService.ComputeBackendServiceConsistentHashOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11285,7 +11285,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11485,7 +11485,7 @@ computeBackendService.ComputeBackendServiceCustomMetricsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11493,7 +11493,7 @@ computeBackendService.ComputeBackendServiceCustomMetricsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11563,7 +11563,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11600,7 +11600,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]</code> | *No description.* |
 
 ---
 
@@ -11634,7 +11634,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeBackendServiceCustomMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>]
 
 ---
 
@@ -11656,7 +11656,7 @@ computeBackendService.ComputeBackendServiceCustomMetricsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11665,7 +11665,7 @@ computeBackendService.ComputeBackendServiceCustomMetricsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11873,7 +11873,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11894,11 +11894,11 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.dryRunInput">dry_run_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.dryRunInput">dry_run_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.dryRun">dry_run</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.dryRun">dry_run</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a></code> | *No description.* |
 
 ---
 
@@ -11932,7 +11932,7 @@ fqn: str
 dry_run_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11952,7 +11952,7 @@ name_input: str
 dry_run: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11972,7 +11972,7 @@ name: str
 internal_value: IResolvable | ComputeBackendServiceCustomMetrics
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics">ComputeBackendServiceCustomMetrics</a>
 
 ---
 
@@ -11992,14 +11992,14 @@ computeBackendService.ComputeBackendServiceIapOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12193,7 +12193,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12227,10 +12227,10 @@ def reset_oauth2_client_secret() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.oauth2ClientSecretSha256">oauth2_client_secret_sha256</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.oauth2ClientIdInput">oauth2_client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.oauth2ClientSecretInput">oauth2_client_secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.oauth2ClientId">oauth2_client_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.oauth2ClientSecret">oauth2_client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIap">ComputeBackendServiceIap</a></code> | *No description.* |
@@ -12277,7 +12277,7 @@ oauth2_client_secret_sha256: str
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -12307,7 +12307,7 @@ oauth2_client_secret_input: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -12357,14 +12357,14 @@ computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12557,7 +12557,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12683,7 +12683,7 @@ computeBackendService.ComputeBackendServiceLocalityLbPoliciesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12691,7 +12691,7 @@ computeBackendService.ComputeBackendServiceLocalityLbPoliciesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12761,7 +12761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12798,7 +12798,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]</code> | *No description.* |
 
 ---
 
@@ -12832,7 +12832,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeBackendServiceLocalityLbPolicies]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>]
 
 ---
 
@@ -12854,7 +12854,7 @@ computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12863,7 +12863,7 @@ computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13075,7 +13075,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13198,7 +13198,7 @@ def reset_policy() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.property.policy">policy</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference">ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.property.customPolicyInput">custom_policy_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicy">ComputeBackendServiceLocalityLbPoliciesCustomPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.property.policyInput">policy_input</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicy">ComputeBackendServiceLocalityLbPoliciesPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a></code> | *No description.* |
 
 ---
 
@@ -13272,7 +13272,7 @@ policy_input: ComputeBackendServiceLocalityLbPoliciesPolicy
 internal_value: IResolvable | ComputeBackendServiceLocalityLbPolicies
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies">ComputeBackendServiceLocalityLbPolicies</a>
 
 ---
 
@@ -13292,14 +13292,14 @@ computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13491,7 +13491,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13588,14 +13588,14 @@ computeBackendService.ComputeBackendServiceLogConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13791,7 +13791,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13836,11 +13836,11 @@ def reset_sample_rate() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.enableInput">enable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.enableInput">enable_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.optionalFieldsInput">optional_fields_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.optionalModeInput">optional_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.sampleRateInput">sample_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.enable">enable</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.optionalFields">optional_fields</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.optionalMode">optional_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.property.sampleRate">sample_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -13878,7 +13878,7 @@ fqn: str
 enable_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -13918,7 +13918,7 @@ sample_rate_input: typing.Union[int, float]
 enable: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -13978,14 +13978,14 @@ computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14178,7 +14178,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14303,14 +14303,14 @@ computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14503,7 +14503,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14628,14 +14628,14 @@ computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14828,7 +14828,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14953,14 +14953,14 @@ computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15165,7 +15165,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15614,14 +15614,14 @@ computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15817,7 +15817,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16004,14 +16004,14 @@ computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16207,7 +16207,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16424,14 +16424,14 @@ computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16627,7 +16627,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16819,14 +16819,14 @@ computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17019,7 +17019,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17144,14 +17144,14 @@ computeBackendService.ComputeBackendServiceTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17346,7 +17346,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17391,7 +17391,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -17485,7 +17485,7 @@ update: str
 internal_value: IResolvable | ComputeBackendServiceTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts">ComputeBackendServiceTimeouts</a>
 
 ---
 
@@ -17505,14 +17505,14 @@ computeBackendService.ComputeBackendServiceTlsSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17708,7 +17708,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17732,7 +17732,7 @@ def put_subject_alt_names(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.putSubjectAltNames.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
 
 ---
 
@@ -17764,7 +17764,7 @@ def reset_subject_alt_names() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.subjectAltNames">subject_alt_names</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList">ComputeBackendServiceTlsSettingsSubjectAltNamesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.authenticationConfigInput">authentication_config_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.sniInput">sni_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.subjectAltNamesInput">subject_alt_names_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.subjectAltNamesInput">subject_alt_names_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.authenticationConfig">authentication_config</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.sni">sni</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettings">ComputeBackendServiceTlsSettings</a></code> | *No description.* |
@@ -17831,7 +17831,7 @@ sni_input: str
 subject_alt_names_input: IResolvable | typing.List[ComputeBackendServiceTlsSettingsSubjectAltNames]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
 
 ---
 
@@ -17882,7 +17882,7 @@ computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17890,7 +17890,7 @@ computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17960,7 +17960,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17997,7 +17997,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]</code> | *No description.* |
 
 ---
 
@@ -18031,7 +18031,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeBackendServiceTlsSettingsSubjectAltNames]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>]
 
 ---
 
@@ -18053,7 +18053,7 @@ computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18062,7 +18062,7 @@ computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputRefer
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18272,7 +18272,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18309,7 +18309,7 @@ def reset_uniform_resource_identifier() -> None
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.uniformResourceIdentifierInput">uniform_resource_identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.dnsName">dns_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.uniformResourceIdentifier">uniform_resource_identifier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a></code> | *No description.* |
 
 ---
 
@@ -18383,7 +18383,7 @@ uniform_resource_identifier: str
 internal_value: IResolvable | ComputeBackendServiceTlsSettingsSubjectAltNames
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames">ComputeBackendServiceTlsSettingsSubjectAltNames</a>
 
 ---
 

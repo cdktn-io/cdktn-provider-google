@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EssentialContactsContactConfig extends cdktf.TerraformMetaArguments {
+export interface EssentialContactsContactConfig extends cdktn.TerraformMetaArguments {
   /**
   * The email address to send notifications to. This does not need to be a Google account.
   *
@@ -65,39 +65,39 @@ export interface EssentialContactsContactTimeouts {
   readonly update?: string;
 }
 
-export function essentialContactsContactTimeoutsToTerraform(struct?: EssentialContactsContactTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function essentialContactsContactTimeoutsToTerraform(struct?: EssentialContactsContactTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function essentialContactsContactTimeoutsToHclTerraform(struct?: EssentialContactsContactTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function essentialContactsContactTimeoutsToHclTerraform(struct?: EssentialContactsContactTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,19 +108,19 @@ export function essentialContactsContactTimeoutsToHclTerraform(struct?: Essentia
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EssentialContactsContactTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EssentialContactsContactTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EssentialContactsContactTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EssentialContactsContactTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class EssentialContactsContactTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EssentialContactsContactTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EssentialContactsContactTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class EssentialContactsContactTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,7 +214,7 @@ export class EssentialContactsContactTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/essential_contacts_contact google_essential_contacts_contact}
 */
-export class EssentialContactsContact extends cdktf.TerraformResource {
+export class EssentialContactsContact extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -225,14 +225,14 @@ export class EssentialContactsContact extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EssentialContactsContact resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EssentialContactsContact resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EssentialContactsContact to import
   * @param importFromId The id of the existing EssentialContactsContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/essential_contacts_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EssentialContactsContact to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_essential_contacts_contact", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_essential_contacts_contact", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,11 +369,11 @@ export class EssentialContactsContact extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email: cdktf.stringToTerraform(this._email),
-      id: cdktf.stringToTerraform(this._id),
-      language_tag: cdktf.stringToTerraform(this._languageTag),
-      notification_category_subscriptions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationCategorySubscriptions),
-      parent: cdktf.stringToTerraform(this._parent),
+      email: cdktn.stringToTerraform(this._email),
+      id: cdktn.stringToTerraform(this._id),
+      language_tag: cdktn.stringToTerraform(this._languageTag),
+      notification_category_subscriptions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notificationCategorySubscriptions),
+      parent: cdktn.stringToTerraform(this._parent),
       timeouts: essentialContactsContactTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -381,31 +381,31 @@ export class EssentialContactsContact extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language_tag: {
-        value: cdktf.stringToHclTerraform(this._languageTag),
+        value: cdktn.stringToHclTerraform(this._languageTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_category_subscriptions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notificationCategorySubscriptions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notificationCategorySubscriptions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig extends cdktf.TerraformMetaArguments {
+export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The display name of the Security Health Analytics custom module. This
   * display name becomes the finding category for all findings that are
@@ -89,45 +89,45 @@ export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCo
 }
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,14 +138,14 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference extends cdktf.ComplexObject {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -264,26 +264,26 @@ export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCo
   readonly valueExpression?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression;
 }
 
-export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     value_expression: sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionToTerraform(struct!.valueExpression),
   }
 }
 
 
-export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -300,9 +300,9 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference extends cdktf.ComplexObject {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -310,11 +310,11 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable | undefined {
+  public get internalValue(): SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -331,14 +331,14 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._valueExpression.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -383,15 +383,15 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig
   }
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList extends cdktf.ComplexList {
-  public internalValue? : SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties[] | cdktf.IResolvable
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList extends cdktn.ComplexList {
+  public internalValue? : SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -408,28 +408,28 @@ export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_management_project_security_health_analytics_custom_module#properties SccManagementProjectSecurityHealthAnalyticsCustomModule#properties}
   */
-  readonly properties?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties[] | cdktf.IResolvable;
+  readonly properties?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties[] | cdktn.IResolvable;
 }
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    properties: cdktf.listMapper(sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToTerraform, true)(struct!.properties),
+    properties: cdktn.listMapper(sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToTerraform, true)(struct!.properties),
   }
 }
 
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     properties: {
-      value: cdktf.listMapperHcl(sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform, true)(struct!.properties),
+      value: cdktn.listMapperHcl(sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform, true)(struct!.properties),
       isBlock: true,
       type: "list",
       storageClassType: "SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList",
@@ -440,14 +440,14 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference extends cdktf.ComplexObject {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -477,7 +477,7 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig
   public get properties() {
     return this._properties;
   }
-  public putProperties(value: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties[] | cdktf.IResolvable) {
+  public putProperties(value: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties[] | cdktn.IResolvable) {
     this._properties.internalValue = value;
   }
   public resetProperties() {
@@ -519,45 +519,45 @@ export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCo
 }
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -568,14 +568,14 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference extends cdktf.ComplexObject {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -689,24 +689,24 @@ export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCo
 }
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
   }
 }
 
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -717,14 +717,14 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference extends cdktf.ComplexObject {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -806,14 +806,14 @@ export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCo
 }
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    recommendation: cdktf.stringToTerraform(struct!.recommendation),
-    severity: cdktf.stringToTerraform(struct!.severity),
+    description: cdktn.stringToTerraform(struct!.description),
+    recommendation: cdktn.stringToTerraform(struct!.recommendation),
+    severity: cdktn.stringToTerraform(struct!.severity),
     custom_output: sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputToTerraform(struct!.customOutput),
     predicate: sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateToTerraform(struct!.predicate),
     resource_selector: sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorToTerraform(struct!.resourceSelector),
@@ -822,25 +822,25 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
 
 
 export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference | SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recommendation: {
-      value: cdktf.stringToHclTerraform(struct!.recommendation),
+      value: cdktn.stringToHclTerraform(struct!.recommendation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     severity: {
-      value: cdktf.stringToHclTerraform(struct!.severity),
+      value: cdktn.stringToHclTerraform(struct!.severity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -869,14 +869,14 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference extends cdktf.ComplexObject {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1030,39 +1030,39 @@ export interface SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts
   readonly update?: string;
 }
 
-export function sccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsToTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsToHclTerraform(struct?: SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1073,19 +1073,19 @@ export function sccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1106,7 +1106,7 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1114,7 +1114,7 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutp
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1179,7 +1179,7 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module}
 */
-export class SccManagementProjectSecurityHealthAnalyticsCustomModule extends cdktf.TerraformResource {
+export class SccManagementProjectSecurityHealthAnalyticsCustomModule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1190,14 +1190,14 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModule extends cdk
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SccManagementProjectSecurityHealthAnalyticsCustomModule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SccManagementProjectSecurityHealthAnalyticsCustomModule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccManagementProjectSecurityHealthAnalyticsCustomModule to import
   * @param importFromId The id of the existing SccManagementProjectSecurityHealthAnalyticsCustomModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_management_project_security_health_analytics_custom_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccManagementProjectSecurityHealthAnalyticsCustomModule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_management_project_security_health_analytics_custom_module", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_management_project_security_health_analytics_custom_module", importId: importFromId, provider });
       }
 
   // ===========
@@ -1378,11 +1378,11 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModule extends cdk
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enablement_state: cdktf.stringToTerraform(this._enablementState),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enablement_state: cdktn.stringToTerraform(this._enablementState),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       custom_config: sccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigToTerraform(this._customConfig.internalValue),
       timeouts: sccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1391,31 +1391,31 @@ export class SccManagementProjectSecurityHealthAnalyticsCustomModule extends cdk
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enablement_state: {
-        value: cdktf.stringToHclTerraform(this._enablementState),
+        value: cdktn.stringToHclTerraform(this._enablementState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeTargetGrpcProxyConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeTargetGrpcProxyConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of this resource.
   *
@@ -63,7 +63,7 @@ export interface ComputeTargetGrpcProxyConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_grpc_proxy#validate_for_proxyless ComputeTargetGrpcProxy#validate_for_proxyless}
   */
-  readonly validateForProxyless?: boolean | cdktf.IResolvable;
+  readonly validateForProxyless?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -86,39 +86,39 @@ export interface ComputeTargetGrpcProxyTimeouts {
   readonly update?: string;
 }
 
-export function computeTargetGrpcProxyTimeoutsToTerraform(struct?: ComputeTargetGrpcProxyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeTargetGrpcProxyTimeoutsToTerraform(struct?: ComputeTargetGrpcProxyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeTargetGrpcProxyTimeoutsToHclTerraform(struct?: ComputeTargetGrpcProxyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeTargetGrpcProxyTimeoutsToHclTerraform(struct?: ComputeTargetGrpcProxyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,19 +129,19 @@ export function computeTargetGrpcProxyTimeoutsToHclTerraform(struct?: ComputeTar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeTargetGrpcProxyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeTargetGrpcProxyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeTargetGrpcProxyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeTargetGrpcProxyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,7 +162,7 @@ export class ComputeTargetGrpcProxyTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeTargetGrpcProxyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeTargetGrpcProxyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -170,7 +170,7 @@ export class ComputeTargetGrpcProxyTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,7 +235,7 @@ export class ComputeTargetGrpcProxyTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_grpc_proxy google_compute_target_grpc_proxy}
 */
-export class ComputeTargetGrpcProxy extends cdktf.TerraformResource {
+export class ComputeTargetGrpcProxy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,14 +246,14 @@ export class ComputeTargetGrpcProxy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeTargetGrpcProxy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeTargetGrpcProxy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeTargetGrpcProxy to import
   * @param importFromId The id of the existing ComputeTargetGrpcProxy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_grpc_proxy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeTargetGrpcProxy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_target_grpc_proxy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_target_grpc_proxy", importId: importFromId, provider });
       }
 
   // ===========
@@ -394,11 +394,11 @@ export class ComputeTargetGrpcProxy extends cdktf.TerraformResource {
   }
 
   // validate_for_proxyless - computed: false, optional: true, required: false
-  private _validateForProxyless?: boolean | cdktf.IResolvable; 
+  private _validateForProxyless?: boolean | cdktn.IResolvable; 
   public get validateForProxyless() {
     return this.getBooleanAttribute('validate_for_proxyless');
   }
-  public set validateForProxyless(value: boolean | cdktf.IResolvable) {
+  public set validateForProxyless(value: boolean | cdktn.IResolvable) {
     this._validateForProxyless = value;
   }
   public resetValidateForProxyless() {
@@ -431,12 +431,12 @@ export class ComputeTargetGrpcProxy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      url_map: cdktf.stringToTerraform(this._urlMap),
-      validate_for_proxyless: cdktf.booleanToTerraform(this._validateForProxyless),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      url_map: cdktn.stringToTerraform(this._urlMap),
+      validate_for_proxyless: cdktn.booleanToTerraform(this._validateForProxyless),
       timeouts: computeTargetGrpcProxyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -444,37 +444,37 @@ export class ComputeTargetGrpcProxy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url_map: {
-        value: cdktf.stringToHclTerraform(this._urlMap),
+        value: cdktn.stringToHclTerraform(this._urlMap),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validate_for_proxyless: {
-        value: cdktf.booleanToHclTerraform(this._validateForProxyless),
+        value: cdktn.booleanToHclTerraform(this._validateForProxyless),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

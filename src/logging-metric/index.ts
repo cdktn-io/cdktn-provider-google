@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoggingMetricConfig extends cdktf.TerraformMetaArguments {
+export interface LoggingMetricConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource name of the Log Bucket that owns the Log Metric. Only Log Buckets in projects
   * are supported. The bucket has to be in the same project as the metric.
@@ -31,7 +31,7 @@ export interface LoggingMetricConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_metric#disabled LoggingMetric#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * An advanced logs filter (https://cloud.google.com/logging/docs/view/advanced-filters) which
   * is used to match log entries.
@@ -110,24 +110,24 @@ export interface LoggingMetricBucketOptionsExplicitBuckets {
 }
 
 export function loggingMetricBucketOptionsExplicitBucketsToTerraform(struct?: LoggingMetricBucketOptionsExplicitBucketsOutputReference | LoggingMetricBucketOptionsExplicitBuckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bounds: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.bounds),
+    bounds: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.bounds),
   }
 }
 
 
 export function loggingMetricBucketOptionsExplicitBucketsToHclTerraform(struct?: LoggingMetricBucketOptionsExplicitBucketsOutputReference | LoggingMetricBucketOptionsExplicitBuckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bounds: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.bounds),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.bounds),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
@@ -138,14 +138,14 @@ export function loggingMetricBucketOptionsExplicitBucketsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingMetricBucketOptionsExplicitBucketsOutputReference extends cdktf.ComplexObject {
+export class LoggingMetricBucketOptionsExplicitBucketsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -205,38 +205,38 @@ export interface LoggingMetricBucketOptionsExponentialBuckets {
 }
 
 export function loggingMetricBucketOptionsExponentialBucketsToTerraform(struct?: LoggingMetricBucketOptionsExponentialBucketsOutputReference | LoggingMetricBucketOptionsExponentialBuckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    growth_factor: cdktf.numberToTerraform(struct!.growthFactor),
-    num_finite_buckets: cdktf.numberToTerraform(struct!.numFiniteBuckets),
-    scale: cdktf.numberToTerraform(struct!.scale),
+    growth_factor: cdktn.numberToTerraform(struct!.growthFactor),
+    num_finite_buckets: cdktn.numberToTerraform(struct!.numFiniteBuckets),
+    scale: cdktn.numberToTerraform(struct!.scale),
   }
 }
 
 
 export function loggingMetricBucketOptionsExponentialBucketsToHclTerraform(struct?: LoggingMetricBucketOptionsExponentialBucketsOutputReference | LoggingMetricBucketOptionsExponentialBuckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     growth_factor: {
-      value: cdktf.numberToHclTerraform(struct!.growthFactor),
+      value: cdktn.numberToHclTerraform(struct!.growthFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     num_finite_buckets: {
-      value: cdktf.numberToHclTerraform(struct!.numFiniteBuckets),
+      value: cdktn.numberToHclTerraform(struct!.numFiniteBuckets),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scale: {
-      value: cdktf.numberToHclTerraform(struct!.scale),
+      value: cdktn.numberToHclTerraform(struct!.scale),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -247,14 +247,14 @@ export function loggingMetricBucketOptionsExponentialBucketsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingMetricBucketOptionsExponentialBucketsOutputReference extends cdktf.ComplexObject {
+export class LoggingMetricBucketOptionsExponentialBucketsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -352,38 +352,38 @@ export interface LoggingMetricBucketOptionsLinearBuckets {
 }
 
 export function loggingMetricBucketOptionsLinearBucketsToTerraform(struct?: LoggingMetricBucketOptionsLinearBucketsOutputReference | LoggingMetricBucketOptionsLinearBuckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    num_finite_buckets: cdktf.numberToTerraform(struct!.numFiniteBuckets),
-    offset: cdktf.numberToTerraform(struct!.offset),
-    width: cdktf.numberToTerraform(struct!.width),
+    num_finite_buckets: cdktn.numberToTerraform(struct!.numFiniteBuckets),
+    offset: cdktn.numberToTerraform(struct!.offset),
+    width: cdktn.numberToTerraform(struct!.width),
   }
 }
 
 
 export function loggingMetricBucketOptionsLinearBucketsToHclTerraform(struct?: LoggingMetricBucketOptionsLinearBucketsOutputReference | LoggingMetricBucketOptionsLinearBuckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     num_finite_buckets: {
-      value: cdktf.numberToHclTerraform(struct!.numFiniteBuckets),
+      value: cdktn.numberToHclTerraform(struct!.numFiniteBuckets),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     offset: {
-      value: cdktf.numberToHclTerraform(struct!.offset),
+      value: cdktn.numberToHclTerraform(struct!.offset),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -394,14 +394,14 @@ export function loggingMetricBucketOptionsLinearBucketsToHclTerraform(struct?: L
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingMetricBucketOptionsLinearBucketsOutputReference extends cdktf.ComplexObject {
+export class LoggingMetricBucketOptionsLinearBucketsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -499,8 +499,8 @@ export interface LoggingMetricBucketOptions {
 }
 
 export function loggingMetricBucketOptionsToTerraform(struct?: LoggingMetricBucketOptionsOutputReference | LoggingMetricBucketOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -512,8 +512,8 @@ export function loggingMetricBucketOptionsToTerraform(struct?: LoggingMetricBuck
 
 
 export function loggingMetricBucketOptionsToHclTerraform(struct?: LoggingMetricBucketOptionsOutputReference | LoggingMetricBucketOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -541,14 +541,14 @@ export function loggingMetricBucketOptionsToHclTerraform(struct?: LoggingMetricB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingMetricBucketOptionsOutputReference extends cdktf.ComplexObject {
+export class LoggingMetricBucketOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -654,39 +654,39 @@ export interface LoggingMetricMetricDescriptorLabels {
   readonly valueType?: string;
 }
 
-export function loggingMetricMetricDescriptorLabelsToTerraform(struct?: LoggingMetricMetricDescriptorLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingMetricMetricDescriptorLabelsToTerraform(struct?: LoggingMetricMetricDescriptorLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    key: cdktf.stringToTerraform(struct!.key),
-    value_type: cdktf.stringToTerraform(struct!.valueType),
+    description: cdktn.stringToTerraform(struct!.description),
+    key: cdktn.stringToTerraform(struct!.key),
+    value_type: cdktn.stringToTerraform(struct!.valueType),
   }
 }
 
 
-export function loggingMetricMetricDescriptorLabelsToHclTerraform(struct?: LoggingMetricMetricDescriptorLabels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingMetricMetricDescriptorLabelsToHclTerraform(struct?: LoggingMetricMetricDescriptorLabels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_type: {
-      value: cdktf.stringToHclTerraform(struct!.valueType),
+      value: cdktn.stringToHclTerraform(struct!.valueType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -697,9 +697,9 @@ export function loggingMetricMetricDescriptorLabelsToHclTerraform(struct?: Loggi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingMetricMetricDescriptorLabelsOutputReference extends cdktf.ComplexObject {
+export class LoggingMetricMetricDescriptorLabelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -707,11 +707,11 @@ export class LoggingMetricMetricDescriptorLabelsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoggingMetricMetricDescriptorLabels | cdktf.IResolvable | undefined {
+  public get internalValue(): LoggingMetricMetricDescriptorLabels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -732,7 +732,7 @@ export class LoggingMetricMetricDescriptorLabelsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoggingMetricMetricDescriptorLabels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoggingMetricMetricDescriptorLabels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -740,7 +740,7 @@ export class LoggingMetricMetricDescriptorLabelsOutputReference extends cdktf.Co
       this._key = undefined;
       this._valueType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -799,15 +799,15 @@ export class LoggingMetricMetricDescriptorLabelsOutputReference extends cdktf.Co
   }
 }
 
-export class LoggingMetricMetricDescriptorLabelsList extends cdktf.ComplexList {
-  public internalValue? : LoggingMetricMetricDescriptorLabels[] | cdktf.IResolvable
+export class LoggingMetricMetricDescriptorLabelsList extends cdktn.ComplexList {
+  public internalValue? : LoggingMetricMetricDescriptorLabels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -856,56 +856,56 @@ export interface LoggingMetricMetricDescriptor {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_metric#labels LoggingMetric#labels}
   */
-  readonly labels?: LoggingMetricMetricDescriptorLabels[] | cdktf.IResolvable;
+  readonly labels?: LoggingMetricMetricDescriptorLabels[] | cdktn.IResolvable;
 }
 
 export function loggingMetricMetricDescriptorToTerraform(struct?: LoggingMetricMetricDescriptorOutputReference | LoggingMetricMetricDescriptor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    metric_kind: cdktf.stringToTerraform(struct!.metricKind),
-    unit: cdktf.stringToTerraform(struct!.unit),
-    value_type: cdktf.stringToTerraform(struct!.valueType),
-    labels: cdktf.listMapper(loggingMetricMetricDescriptorLabelsToTerraform, true)(struct!.labels),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    metric_kind: cdktn.stringToTerraform(struct!.metricKind),
+    unit: cdktn.stringToTerraform(struct!.unit),
+    value_type: cdktn.stringToTerraform(struct!.valueType),
+    labels: cdktn.listMapper(loggingMetricMetricDescriptorLabelsToTerraform, true)(struct!.labels),
   }
 }
 
 
 export function loggingMetricMetricDescriptorToHclTerraform(struct?: LoggingMetricMetricDescriptorOutputReference | LoggingMetricMetricDescriptor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric_kind: {
-      value: cdktf.stringToHclTerraform(struct!.metricKind),
+      value: cdktn.stringToHclTerraform(struct!.metricKind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_type: {
-      value: cdktf.stringToHclTerraform(struct!.valueType),
+      value: cdktn.stringToHclTerraform(struct!.valueType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     labels: {
-      value: cdktf.listMapperHcl(loggingMetricMetricDescriptorLabelsToHclTerraform, true)(struct!.labels),
+      value: cdktn.listMapperHcl(loggingMetricMetricDescriptorLabelsToHclTerraform, true)(struct!.labels),
       isBlock: true,
       type: "set",
       storageClassType: "LoggingMetricMetricDescriptorLabelsList",
@@ -916,14 +916,14 @@ export function loggingMetricMetricDescriptorToHclTerraform(struct?: LoggingMetr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingMetricMetricDescriptorOutputReference extends cdktf.ComplexObject {
+export class LoggingMetricMetricDescriptorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1035,7 +1035,7 @@ export class LoggingMetricMetricDescriptorOutputReference extends cdktf.ComplexO
   public get labels() {
     return this._labels;
   }
-  public putLabels(value: LoggingMetricMetricDescriptorLabels[] | cdktf.IResolvable) {
+  public putLabels(value: LoggingMetricMetricDescriptorLabels[] | cdktn.IResolvable) {
     this._labels.internalValue = value;
   }
   public resetLabels() {
@@ -1061,39 +1061,39 @@ export interface LoggingMetricTimeouts {
   readonly update?: string;
 }
 
-export function loggingMetricTimeoutsToTerraform(struct?: LoggingMetricTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingMetricTimeoutsToTerraform(struct?: LoggingMetricTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function loggingMetricTimeoutsToHclTerraform(struct?: LoggingMetricTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loggingMetricTimeoutsToHclTerraform(struct?: LoggingMetricTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1104,19 +1104,19 @@ export function loggingMetricTimeoutsToHclTerraform(struct?: LoggingMetricTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoggingMetricTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LoggingMetricTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoggingMetricTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LoggingMetricTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1137,7 +1137,7 @@ export class LoggingMetricTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoggingMetricTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoggingMetricTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1145,7 +1145,7 @@ export class LoggingMetricTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1210,7 +1210,7 @@ export class LoggingMetricTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_metric google_logging_metric}
 */
-export class LoggingMetric extends cdktf.TerraformResource {
+export class LoggingMetric extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1221,14 +1221,14 @@ export class LoggingMetric extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoggingMetric resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoggingMetric resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingMetric to import
   * @param importFromId The id of the existing LoggingMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingMetric to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_metric", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_metric", importId: importFromId, provider });
       }
 
   // ===========
@@ -1309,11 +1309,11 @@ export class LoggingMetric extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -1468,15 +1468,15 @@ export class LoggingMetric extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      description: cdktf.stringToTerraform(this._description),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      label_extractors: cdktf.hashMapper(cdktf.stringToTerraform)(this._labelExtractors),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      value_extractor: cdktf.stringToTerraform(this._valueExtractor),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      description: cdktn.stringToTerraform(this._description),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      label_extractors: cdktn.hashMapper(cdktn.stringToTerraform)(this._labelExtractors),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      value_extractor: cdktn.stringToTerraform(this._valueExtractor),
       bucket_options: loggingMetricBucketOptionsToTerraform(this._bucketOptions.internalValue),
       metric_descriptor: loggingMetricMetricDescriptorToTerraform(this._metricDescriptor.internalValue),
       timeouts: loggingMetricTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1486,55 +1486,55 @@ export class LoggingMetric extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       label_extractors: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labelExtractors),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labelExtractors),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value_extractor: {
-        value: cdktf.stringToHclTerraform(this._valueExtractor),
+        value: cdktn.stringToHclTerraform(this._valueExtractor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

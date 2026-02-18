@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpannerInstanceConfigAConfig extends cdktf.TerraformMetaArguments {
+export interface SpannerInstanceConfigAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Base configuration name, e.g. nam3, based on which this configuration is created.
   * Only set for user managed configurations.
@@ -60,7 +60,7 @@ export interface SpannerInstanceConfigAConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_config#replicas SpannerInstanceConfigA#replicas}
   */
-  readonly replicas: SpannerInstanceConfigReplicas[] | cdktf.IResolvable;
+  readonly replicas: SpannerInstanceConfigReplicas[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -75,7 +75,7 @@ export interface SpannerInstanceConfigReplicas {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_config#default_leader_location SpannerInstanceConfigA#default_leader_location}
   */
-  readonly defaultLeaderLocation?: boolean | cdktf.IResolvable;
+  readonly defaultLeaderLocation?: boolean | cdktn.IResolvable;
   /**
   * The location of the serving resources, e.g. "us-central1".
   *
@@ -92,39 +92,39 @@ export interface SpannerInstanceConfigReplicas {
   readonly type?: string;
 }
 
-export function spannerInstanceConfigReplicasToTerraform(struct?: SpannerInstanceConfigReplicas | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spannerInstanceConfigReplicasToTerraform(struct?: SpannerInstanceConfigReplicas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_leader_location: cdktf.booleanToTerraform(struct!.defaultLeaderLocation),
-    location: cdktf.stringToTerraform(struct!.location),
-    type: cdktf.stringToTerraform(struct!.type),
+    default_leader_location: cdktn.booleanToTerraform(struct!.defaultLeaderLocation),
+    location: cdktn.stringToTerraform(struct!.location),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function spannerInstanceConfigReplicasToHclTerraform(struct?: SpannerInstanceConfigReplicas | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spannerInstanceConfigReplicasToHclTerraform(struct?: SpannerInstanceConfigReplicas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_leader_location: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultLeaderLocation),
+      value: cdktn.booleanToHclTerraform(struct!.defaultLeaderLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,9 +135,9 @@ export function spannerInstanceConfigReplicasToHclTerraform(struct?: SpannerInst
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpannerInstanceConfigReplicasOutputReference extends cdktf.ComplexObject {
+export class SpannerInstanceConfigReplicasOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -145,11 +145,11 @@ export class SpannerInstanceConfigReplicasOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SpannerInstanceConfigReplicas | cdktf.IResolvable | undefined {
+  public get internalValue(): SpannerInstanceConfigReplicas | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -170,7 +170,7 @@ export class SpannerInstanceConfigReplicasOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpannerInstanceConfigReplicas | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpannerInstanceConfigReplicas | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -178,7 +178,7 @@ export class SpannerInstanceConfigReplicasOutputReference extends cdktf.ComplexO
       this._location = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -192,11 +192,11 @@ export class SpannerInstanceConfigReplicasOutputReference extends cdktf.ComplexO
   }
 
   // default_leader_location - computed: false, optional: true, required: false
-  private _defaultLeaderLocation?: boolean | cdktf.IResolvable; 
+  private _defaultLeaderLocation?: boolean | cdktn.IResolvable; 
   public get defaultLeaderLocation() {
     return this.getBooleanAttribute('default_leader_location');
   }
-  public set defaultLeaderLocation(value: boolean | cdktf.IResolvable) {
+  public set defaultLeaderLocation(value: boolean | cdktn.IResolvable) {
     this._defaultLeaderLocation = value;
   }
   public resetDefaultLeaderLocation() {
@@ -240,15 +240,15 @@ export class SpannerInstanceConfigReplicasOutputReference extends cdktf.ComplexO
   }
 }
 
-export class SpannerInstanceConfigReplicasList extends cdktf.ComplexList {
-  public internalValue? : SpannerInstanceConfigReplicas[] | cdktf.IResolvable
+export class SpannerInstanceConfigReplicasList extends cdktn.ComplexList {
+  public internalValue? : SpannerInstanceConfigReplicas[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -274,39 +274,39 @@ export interface SpannerInstanceConfigTimeouts {
   readonly update?: string;
 }
 
-export function spannerInstanceConfigTimeoutsToTerraform(struct?: SpannerInstanceConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spannerInstanceConfigTimeoutsToTerraform(struct?: SpannerInstanceConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function spannerInstanceConfigTimeoutsToHclTerraform(struct?: SpannerInstanceConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spannerInstanceConfigTimeoutsToHclTerraform(struct?: SpannerInstanceConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -317,19 +317,19 @@ export function spannerInstanceConfigTimeoutsToHclTerraform(struct?: SpannerInst
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpannerInstanceConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpannerInstanceConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpannerInstanceConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpannerInstanceConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -350,7 +350,7 @@ export class SpannerInstanceConfigTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpannerInstanceConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpannerInstanceConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -358,7 +358,7 @@ export class SpannerInstanceConfigTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -423,7 +423,7 @@ export class SpannerInstanceConfigTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_config google_spanner_instance_config}
 */
-export class SpannerInstanceConfigA extends cdktf.TerraformResource {
+export class SpannerInstanceConfigA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -434,14 +434,14 @@ export class SpannerInstanceConfigA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpannerInstanceConfigA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpannerInstanceConfigA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpannerInstanceConfigA to import
   * @param importFromId The id of the existing SpannerInstanceConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpannerInstanceConfigA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_spanner_instance_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_spanner_instance_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -520,7 +520,7 @@ export class SpannerInstanceConfigA extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -590,7 +590,7 @@ export class SpannerInstanceConfigA extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -600,7 +600,7 @@ export class SpannerInstanceConfigA extends cdktf.TerraformResource {
   public get replicas() {
     return this._replicas;
   }
-  public putReplicas(value: SpannerInstanceConfigReplicas[] | cdktf.IResolvable) {
+  public putReplicas(value: SpannerInstanceConfigReplicas[] | cdktn.IResolvable) {
     this._replicas.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -630,13 +630,13 @@ export class SpannerInstanceConfigA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      base_config: cdktf.stringToTerraform(this._baseConfig),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      replicas: cdktf.listMapper(spannerInstanceConfigReplicasToTerraform, true)(this._replicas.internalValue),
+      base_config: cdktn.stringToTerraform(this._baseConfig),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      replicas: cdktn.listMapper(spannerInstanceConfigReplicasToTerraform, true)(this._replicas.internalValue),
       timeouts: spannerInstanceConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -644,43 +644,43 @@ export class SpannerInstanceConfigA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       base_config: {
-        value: cdktf.stringToHclTerraform(this._baseConfig),
+        value: cdktn.stringToHclTerraform(this._baseConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replicas: {
-        value: cdktf.listMapperHcl(spannerInstanceConfigReplicasToHclTerraform, true)(this._replicas.internalValue),
+        value: cdktn.listMapperHcl(spannerInstanceConfigReplicasToHclTerraform, true)(this._replicas.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SpannerInstanceConfigReplicasList",

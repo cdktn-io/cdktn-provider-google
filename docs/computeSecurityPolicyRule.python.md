@@ -41,13 +41,13 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleA(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.action">action</a></code> | <code>str</code> | The Action to perform when the rule is matched. The following are the valid actions:. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | An integer indicating the priority of a rule in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.securityPolicy">security_policy</a></code> | <code>str</code> | The name of the security policy this rule belongs to. |
@@ -56,7 +56,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleA(
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_security_policy_rule#id ComputeSecurityPolicyRuleA#id}. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.match">match</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchA">ComputeSecurityPolicyRuleMatchA</a></code> | match block. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.preconfiguredWafConfig">preconfigured_waf_config</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA">ComputeSecurityPolicyRulePreconfiguredWafConfigA</a></code> | preconfigured_waf_config block. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.preview">preview</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, the specified action is not enforced. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.preview">preview</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, the specified action is not enforced. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_security_policy_rule#project ComputeSecurityPolicyRuleA#project}. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.rateLimitOptions">rate_limit_options</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA">ComputeSecurityPolicyRuleRateLimitOptionsA</a></code> | rate_limit_options block. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.redirectOptions">redirect_options</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsA">ComputeSecurityPolicyRuleRedirectOptionsA</a></code> | redirect_options block. |
@@ -84,43 +84,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `preview`<sup>Optional</sup> <a name="preview" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.Initializer.parameter.preview"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, the specified action is not enforced.
 
@@ -550,7 +550,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -643,7 +643,7 @@ def put_header_action(
 
 ###### `request_headers_to_adds`<sup>Optional</sup> <a name="request_headers_to_adds" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.putHeaderAction.parameter.requestHeadersToAdds"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
 
 request_headers_to_adds block.
 
@@ -715,7 +715,7 @@ def put_preconfigured_waf_config(
 
 ###### `exclusion`<sup>Optional</sup> <a name="exclusion" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.putPreconfiguredWafConfig.parameter.exclusion"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
 
 exclusion block.
 
@@ -797,7 +797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enforce_on_key_configs`<sup>Optional</sup> <a name="enforce_on_key_configs" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.putRateLimitOptions.parameter.enforceOnKeyConfigs"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
 
 enforce_on_key_configs block.
 
@@ -979,7 +979,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeSecurityPolicyRuleA resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ComputeSecurityPolicyRuleA resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1062,7 +1062,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ComputeSecurityPolicyRuleA resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeSecurityPolicyRuleA resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.generateConfigForImport.parameter.scope"></a>
 
@@ -1092,7 +1092,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeSecurityPolicyRuleA to import is found.
 
@@ -1103,19 +1103,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.headerAction">header_action</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference">ComputeSecurityPolicyRuleHeaderActionAOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.match">match</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference">ComputeSecurityPolicyRuleMatchAOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.preconfiguredWafConfig">preconfigured_waf_config</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference">ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference</a></code> | *No description.* |
@@ -1128,17 +1128,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.matchInput">match_input</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchA">ComputeSecurityPolicyRuleMatchA</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.preconfiguredWafConfigInput">preconfigured_waf_config_input</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA">ComputeSecurityPolicyRulePreconfiguredWafConfigA</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.previewInput">preview_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.previewInput">preview_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.rateLimitOptionsInput">rate_limit_options_input</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA">ComputeSecurityPolicyRuleRateLimitOptionsA</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.redirectOptionsInput">redirect_options_input</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsA">ComputeSecurityPolicyRuleRedirectOptionsA</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.securityPolicyInput">security_policy_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.action">action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.preview">preview</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.preview">preview</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleA.property.securityPolicy">security_policy</a></code> | <code>str</code> | *No description.* |
@@ -1163,7 +1163,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1213,7 +1213,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1223,7 +1223,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1233,7 +1233,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1253,7 +1253,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1263,7 +1263,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1273,7 +1273,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1283,7 +1283,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1413,7 +1413,7 @@ preconfigured_waf_config_input: ComputeSecurityPolicyRulePreconfiguredWafConfigA
 preview_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1473,7 +1473,7 @@ security_policy_input: str
 timeouts_input: IResolvable | ComputeSecurityPolicyRuleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a>
 
 ---
 
@@ -1513,7 +1513,7 @@ id: str
 preview: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1602,13 +1602,13 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.action">action</a></code> | <code>str</code> | The Action to perform when the rule is matched. The following are the valid actions:. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | An integer indicating the priority of a rule in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.securityPolicy">security_policy</a></code> | <code>str</code> | The name of the security policy this rule belongs to. |
@@ -1617,7 +1617,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig(
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_security_policy_rule#id ComputeSecurityPolicyRuleA#id}. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.match">match</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchA">ComputeSecurityPolicyRuleMatchA</a></code> | match block. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.preconfiguredWafConfig">preconfigured_waf_config</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA">ComputeSecurityPolicyRulePreconfiguredWafConfigA</a></code> | preconfigured_waf_config block. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.preview">preview</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, the specified action is not enforced. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.preview">preview</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, the specified action is not enforced. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_security_policy_rule#project ComputeSecurityPolicyRuleA#project}. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.rateLimitOptions">rate_limit_options</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA">ComputeSecurityPolicyRuleRateLimitOptionsA</a></code> | rate_limit_options block. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig.property.redirectOptions">redirect_options</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsA">ComputeSecurityPolicyRuleRedirectOptionsA</a></code> | redirect_options block. |
@@ -1631,7 +1631,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleAConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1641,7 +1641,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1651,7 +1651,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1661,7 +1661,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1671,7 +1671,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1681,7 +1681,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1691,7 +1691,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1823,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 preview: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, the specified action is not enforced.
 
@@ -1901,7 +1901,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionA(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionA.property.requestHeadersToAdds">request_headers_to_adds</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]</code> | request_headers_to_adds block. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionA.property.requestHeadersToAdds">request_headers_to_adds</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]</code> | request_headers_to_adds block. |
 
 ---
 
@@ -1911,7 +1911,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionA(
 request_headers_to_adds: IResolvable | typing.List[ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
 
 request_headers_to_adds block.
 
@@ -2228,7 +2228,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA.property.exclusion">exclusion</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]</code> | exclusion block. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA.property.exclusion">exclusion</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]</code> | exclusion block. |
 
 ---
 
@@ -2238,7 +2238,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA(
 exclusion: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
 
 exclusion block.
 
@@ -2268,10 +2268,10 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.targetRuleSet">target_rule_set</a></code> | <code>str</code> | Target WAF rule set to apply the preconfigured WAF exclusion. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestCookie">request_cookie</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]</code> | request_cookie block. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestHeader">request_header</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]</code> | request_header block. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestQueryParam">request_query_param</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]</code> | request_query_param block. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestUri">request_uri</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]</code> | request_uri block. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestCookie">request_cookie</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]</code> | request_cookie block. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestHeader">request_header</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]</code> | request_header block. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestQueryParam">request_query_param</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]</code> | request_query_param block. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.requestUri">request_uri</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]</code> | request_uri block. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA.property.targetRuleIds">target_rule_ids</a></code> | <code>typing.List[str]</code> | A list of target rule IDs under the WAF rule set to apply the preconfigured WAF exclusion. |
 
 ---
@@ -2296,7 +2296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 request_cookie: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
 
 request_cookie block.
 
@@ -2310,7 +2310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 request_header: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
 
 request_header block.
 
@@ -2324,7 +2324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 request_query_param: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
 
 request_query_param block.
 
@@ -2338,7 +2338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 request_uri: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
 
 request_uri block.
 
@@ -2626,7 +2626,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA(
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.banThreshold">ban_threshold</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdA">ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdA</a></code> | ban_threshold block. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.conformAction">conform_action</a></code> | <code>str</code> | Action to take for requests that are under the configured rate limit threshold. Valid option is "allow" only. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.enforceOnKey">enforce_on_key</a></code> | <code>str</code> | Determines the key to enforce the rateLimitThreshold on. |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.enforceOnKeyConfigs">enforce_on_key_configs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]</code> | enforce_on_key_configs block. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.enforceOnKeyConfigs">enforce_on_key_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]</code> | enforce_on_key_configs block. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.enforceOnKeyName">enforce_on_key_name</a></code> | <code>str</code> | Rate limit key name applicable only for the following key types: HTTP_HEADER -- Name of the HTTP header whose value is taken as the key value. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.exceedAction">exceed_action</a></code> | <code>str</code> | Action to take for requests that are above the configured rate limit threshold, to either deny with a specified HTTP response code, or redirect to a different endpoint. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsA.property.exceedRedirectOptions">exceed_redirect_options</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsA">ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsA</a></code> | exceed_redirect_options block. |
@@ -2712,7 +2712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enforce_on_key_configs: IResolvable | typing.List[ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
 
 enforce_on_key_configs block.
 
@@ -3123,14 +3123,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3324,7 +3324,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3348,7 +3348,7 @@ def put_request_headers_to_adds(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.putRequestHeadersToAdds.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
 
 ---
 
@@ -3366,7 +3366,7 @@ def reset_request_headers_to_adds() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.property.requestHeadersToAdds">request_headers_to_adds</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.property.requestHeadersToAddsInput">request_headers_to_adds_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.property.requestHeadersToAddsInput">request_headers_to_adds_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionAOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionA">ComputeSecurityPolicyRuleHeaderActionA</a></code> | *No description.* |
 
 ---
@@ -3411,7 +3411,7 @@ request_headers_to_adds: ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAd
 request_headers_to_adds_input: IResolvable | typing.List[ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
 
 ---
 
@@ -3442,7 +3442,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3450,7 +3450,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToA
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3520,7 +3520,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3557,7 +3557,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]</code> | *No description.* |
 
 ---
 
@@ -3591,7 +3591,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>]
 
 ---
 
@@ -3613,7 +3613,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3622,7 +3622,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToA
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3832,7 +3832,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3869,7 +3869,7 @@ def reset_header_value() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.property.headerValueInput">header_value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.property.headerName">header_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.property.headerValue">header_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a></code> | *No description.* |
 
 ---
 
@@ -3943,7 +3943,7 @@ header_value: str
 internal_value: IResolvable | ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA">ComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsA</a>
 
 ---
 
@@ -3963,14 +3963,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4169,7 +4169,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4412,14 +4412,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchConfigAOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchConfigAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchConfigAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4612,7 +4612,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchConfigAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4715,14 +4715,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprAOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4914,7 +4914,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5011,14 +5011,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsAOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5211,7 +5211,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5341,14 +5341,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOpti
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5542,7 +5542,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleMatchExprOptionsRecaptchaOptionsAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5673,14 +5673,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5874,7 +5874,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5898,7 +5898,7 @@ def put_exclusion(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.putExclusion.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
 
 ---
 
@@ -5916,7 +5916,7 @@ def reset_exclusion() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.property.exclusion">exclusion</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.property.exclusionInput">exclusion_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.property.exclusionInput">exclusion_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigAOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigA">ComputeSecurityPolicyRulePreconfiguredWafConfigA</a></code> | *No description.* |
 
 ---
@@ -5961,7 +5961,7 @@ exclusion: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList
 exclusion_input: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
 
 ---
 
@@ -5992,7 +5992,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6000,7 +6000,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6070,7 +6070,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6107,7 +6107,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]</code> | *No description.* |
 
 ---
 
@@ -6141,7 +6141,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>]
 
 ---
 
@@ -6163,7 +6163,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6172,7 +6172,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6389,7 +6389,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6413,7 +6413,7 @@ def put_request_cookie(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.putRequestCookie.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
 
 ---
 
@@ -6427,7 +6427,7 @@ def put_request_header(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.putRequestHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
 
 ---
 
@@ -6441,7 +6441,7 @@ def put_request_query_param(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.putRequestQueryParam.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
 
 ---
 
@@ -6455,7 +6455,7 @@ def put_request_uri(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.putRequestUri.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
 
 ---
 
@@ -6500,15 +6500,15 @@ def reset_target_rule_ids() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestHeader">request_header</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestQueryParam">request_query_param</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestUri">request_uri</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestCookieInput">request_cookie_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestHeaderInput">request_header_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestQueryParamInput">request_query_param_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestUriInput">request_uri_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestCookieInput">request_cookie_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestHeaderInput">request_header_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestQueryParamInput">request_query_param_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.requestUriInput">request_uri_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.targetRuleIdsInput">target_rule_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.targetRuleSetInput">target_rule_set_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.targetRuleIds">target_rule_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.targetRuleSet">target_rule_set</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a></code> | *No description.* |
 
 ---
 
@@ -6582,7 +6582,7 @@ request_uri: ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA
 request_cookie_input: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
 
 ---
 
@@ -6592,7 +6592,7 @@ request_cookie_input: IResolvable | typing.List[ComputeSecurityPolicyRulePreconf
 request_header_input: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
 
 ---
 
@@ -6602,7 +6602,7 @@ request_header_input: IResolvable | typing.List[ComputeSecurityPolicyRulePreconf
 request_query_param_input: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
 
 ---
 
@@ -6612,7 +6612,7 @@ request_query_param_input: IResolvable | typing.List[ComputeSecurityPolicyRulePr
 request_uri_input: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
 
 ---
 
@@ -6662,7 +6662,7 @@ target_rule_set: str
 internal_value: IResolvable | ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionA</a>
 
 ---
 
@@ -6683,7 +6683,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6691,7 +6691,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6761,7 +6761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6798,7 +6798,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]</code> | *No description.* |
 
 ---
 
@@ -6832,7 +6832,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>]
 
 ---
 
@@ -6854,7 +6854,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6863,7 +6863,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7072,7 +7072,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7103,7 +7103,7 @@ def reset_value() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a></code> | *No description.* |
 
 ---
 
@@ -7177,7 +7177,7 @@ value: str
 internal_value: IResolvable | ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieA</a>
 
 ---
 
@@ -7198,7 +7198,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7206,7 +7206,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7276,7 +7276,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7313,7 +7313,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]</code> | *No description.* |
 
 ---
 
@@ -7347,7 +7347,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>]
 
 ---
 
@@ -7369,7 +7369,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7378,7 +7378,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7587,7 +7587,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7618,7 +7618,7 @@ def reset_value() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a></code> | *No description.* |
 
 ---
 
@@ -7692,7 +7692,7 @@ value: str
 internal_value: IResolvable | ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderA</a>
 
 ---
 
@@ -7713,7 +7713,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7721,7 +7721,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7791,7 +7791,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7828,7 +7828,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]</code> | *No description.* |
 
 ---
 
@@ -7862,7 +7862,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>]
 
 ---
 
@@ -7884,7 +7884,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7893,7 +7893,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8102,7 +8102,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8133,7 +8133,7 @@ def reset_value() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a></code> | *No description.* |
 
 ---
 
@@ -8207,7 +8207,7 @@ value: str
 internal_value: IResolvable | ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamA</a>
 
 ---
 
@@ -8228,7 +8228,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8236,7 +8236,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8306,7 +8306,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8343,7 +8343,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]</code> | *No description.* |
 
 ---
 
@@ -8377,7 +8377,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>]
 
 ---
 
@@ -8399,7 +8399,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8408,7 +8408,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8617,7 +8617,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8648,7 +8648,7 @@ def reset_value() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.property.operator">operator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a></code> | *No description.* |
 
 ---
 
@@ -8722,7 +8722,7 @@ value: str
 internal_value: IResolvable | ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA">ComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriA</a>
 
 ---
 
@@ -8742,14 +8742,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8954,7 +8954,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9007,7 +9007,7 @@ def put_enforce_on_key_configs(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.putEnforceOnKeyConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
 
 ---
 
@@ -9137,7 +9137,7 @@ def reset_rate_limit_threshold() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.banDurationSecInput">ban_duration_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.banThresholdInput">ban_threshold_input</a></code> | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdA">ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdA</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.conformActionInput">conform_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.enforceOnKeyConfigsInput">enforce_on_key_configs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.enforceOnKeyConfigsInput">enforce_on_key_configs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.enforceOnKeyInput">enforce_on_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.enforceOnKeyNameInput">enforce_on_key_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsAOutputReference.property.exceedActionInput">exceed_action_input</a></code> | <code>str</code> | *No description.* |
@@ -9252,7 +9252,7 @@ conform_action_input: str
 enforce_on_key_configs_input: IResolvable | typing.List[ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
 
 ---
 
@@ -9382,14 +9382,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9583,7 +9583,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsBanThresholdAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9715,7 +9715,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9723,7 +9723,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyC
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9793,7 +9793,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9830,7 +9830,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]</code> | *No description.* |
 
 ---
 
@@ -9864,7 +9864,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>]
 
 ---
 
@@ -9886,7 +9886,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9895,7 +9895,7 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyC
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10105,7 +10105,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10142,7 +10142,7 @@ def reset_enforce_on_key_type() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.property.enforceOnKeyTypeInput">enforce_on_key_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.property.enforceOnKeyName">enforce_on_key_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.property.enforceOnKeyType">enforce_on_key_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsAOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a></code> | *No description.* |
 
 ---
 
@@ -10216,7 +10216,7 @@ enforce_on_key_type: str
 internal_value: IResolvable | ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA">ComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsA</a>
 
 ---
 
@@ -10236,14 +10236,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10437,7 +10437,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10568,14 +10568,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10769,7 +10769,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10900,14 +10900,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11101,7 +11101,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11232,14 +11232,14 @@ computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11434,7 +11434,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11479,7 +11479,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -11573,7 +11573,7 @@ update: str
 internal_value: IResolvable | ComputeSecurityPolicyRuleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleTimeouts">ComputeSecurityPolicyRuleTimeouts</a>
 
 ---
 

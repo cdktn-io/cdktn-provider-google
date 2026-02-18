@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VmwareengineNetworkPeeringConfig extends cdktf.TerraformMetaArguments {
+export interface VmwareengineNetworkPeeringConfig extends cdktn.TerraformMetaArguments {
   /**
   * User-provided description for this network peering.
   *
@@ -23,13 +23,13 @@ export interface VmwareengineNetworkPeeringConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network_peering#export_custom_routes VmwareengineNetworkPeering#export_custom_routes}
   */
-  readonly exportCustomRoutes?: boolean | cdktf.IResolvable;
+  readonly exportCustomRoutes?: boolean | cdktn.IResolvable;
   /**
   * True if all subnet routes with a public IP address range are exported; false otherwise.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network_peering#export_custom_routes_with_public_ip VmwareengineNetworkPeering#export_custom_routes_with_public_ip}
   */
-  readonly exportCustomRoutesWithPublicIp?: boolean | cdktf.IResolvable;
+  readonly exportCustomRoutesWithPublicIp?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network_peering#id VmwareengineNetworkPeering#id}
   *
@@ -42,13 +42,13 @@ export interface VmwareengineNetworkPeeringConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network_peering#import_custom_routes VmwareengineNetworkPeering#import_custom_routes}
   */
-  readonly importCustomRoutes?: boolean | cdktf.IResolvable;
+  readonly importCustomRoutes?: boolean | cdktn.IResolvable;
   /**
   * True if custom routes are imported from the peered network; false otherwise.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network_peering#import_custom_routes_with_public_ip VmwareengineNetworkPeering#import_custom_routes_with_public_ip}
   */
-  readonly importCustomRoutesWithPublicIp?: boolean | cdktf.IResolvable;
+  readonly importCustomRoutesWithPublicIp?: boolean | cdktn.IResolvable;
   /**
   * The ID of the Network Peering.
   *
@@ -102,39 +102,39 @@ export interface VmwareengineNetworkPeeringTimeouts {
   readonly update?: string;
 }
 
-export function vmwareengineNetworkPeeringTimeoutsToTerraform(struct?: VmwareengineNetworkPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineNetworkPeeringTimeoutsToTerraform(struct?: VmwareengineNetworkPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vmwareengineNetworkPeeringTimeoutsToHclTerraform(struct?: VmwareengineNetworkPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineNetworkPeeringTimeoutsToHclTerraform(struct?: VmwareengineNetworkPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -145,19 +145,19 @@ export function vmwareengineNetworkPeeringTimeoutsToHclTerraform(struct?: Vmware
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VmwareengineNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VmwareengineNetworkPeeringTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VmwareengineNetworkPeeringTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VmwareengineNetworkPeeringTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -178,7 +178,7 @@ export class VmwareengineNetworkPeeringTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VmwareengineNetworkPeeringTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VmwareengineNetworkPeeringTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -186,7 +186,7 @@ export class VmwareengineNetworkPeeringTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class VmwareengineNetworkPeeringTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network_peering google_vmwareengine_network_peering}
 */
-export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
+export class VmwareengineNetworkPeering extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VmwareengineNetworkPeering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VmwareengineNetworkPeering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VmwareengineNetworkPeering to import
   * @param importFromId The id of the existing VmwareengineNetworkPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network_peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VmwareengineNetworkPeering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_network_peering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_network_peering", importId: importFromId, provider });
       }
 
   // ===========
@@ -339,11 +339,11 @@ export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
   }
 
   // export_custom_routes - computed: false, optional: true, required: false
-  private _exportCustomRoutes?: boolean | cdktf.IResolvable; 
+  private _exportCustomRoutes?: boolean | cdktn.IResolvable; 
   public get exportCustomRoutes() {
     return this.getBooleanAttribute('export_custom_routes');
   }
-  public set exportCustomRoutes(value: boolean | cdktf.IResolvable) {
+  public set exportCustomRoutes(value: boolean | cdktn.IResolvable) {
     this._exportCustomRoutes = value;
   }
   public resetExportCustomRoutes() {
@@ -355,11 +355,11 @@ export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
   }
 
   // export_custom_routes_with_public_ip - computed: false, optional: true, required: false
-  private _exportCustomRoutesWithPublicIp?: boolean | cdktf.IResolvable; 
+  private _exportCustomRoutesWithPublicIp?: boolean | cdktn.IResolvable; 
   public get exportCustomRoutesWithPublicIp() {
     return this.getBooleanAttribute('export_custom_routes_with_public_ip');
   }
-  public set exportCustomRoutesWithPublicIp(value: boolean | cdktf.IResolvable) {
+  public set exportCustomRoutesWithPublicIp(value: boolean | cdktn.IResolvable) {
     this._exportCustomRoutesWithPublicIp = value;
   }
   public resetExportCustomRoutesWithPublicIp() {
@@ -387,11 +387,11 @@ export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
   }
 
   // import_custom_routes - computed: false, optional: true, required: false
-  private _importCustomRoutes?: boolean | cdktf.IResolvable; 
+  private _importCustomRoutes?: boolean | cdktn.IResolvable; 
   public get importCustomRoutes() {
     return this.getBooleanAttribute('import_custom_routes');
   }
-  public set importCustomRoutes(value: boolean | cdktf.IResolvable) {
+  public set importCustomRoutes(value: boolean | cdktn.IResolvable) {
     this._importCustomRoutes = value;
   }
   public resetImportCustomRoutes() {
@@ -403,11 +403,11 @@ export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
   }
 
   // import_custom_routes_with_public_ip - computed: false, optional: true, required: false
-  private _importCustomRoutesWithPublicIp?: boolean | cdktf.IResolvable; 
+  private _importCustomRoutesWithPublicIp?: boolean | cdktn.IResolvable; 
   public get importCustomRoutesWithPublicIp() {
     return this.getBooleanAttribute('import_custom_routes_with_public_ip');
   }
-  public set importCustomRoutesWithPublicIp(value: boolean | cdktf.IResolvable) {
+  public set importCustomRoutesWithPublicIp(value: boolean | cdktn.IResolvable) {
     this._importCustomRoutesWithPublicIp = value;
   }
   public resetImportCustomRoutesWithPublicIp() {
@@ -533,17 +533,17 @@ export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      export_custom_routes: cdktf.booleanToTerraform(this._exportCustomRoutes),
-      export_custom_routes_with_public_ip: cdktf.booleanToTerraform(this._exportCustomRoutesWithPublicIp),
-      id: cdktf.stringToTerraform(this._id),
-      import_custom_routes: cdktf.booleanToTerraform(this._importCustomRoutes),
-      import_custom_routes_with_public_ip: cdktf.booleanToTerraform(this._importCustomRoutesWithPublicIp),
-      name: cdktf.stringToTerraform(this._name),
-      peer_network: cdktf.stringToTerraform(this._peerNetwork),
-      peer_network_type: cdktf.stringToTerraform(this._peerNetworkType),
-      project: cdktf.stringToTerraform(this._project),
-      vmware_engine_network: cdktf.stringToTerraform(this._vmwareEngineNetwork),
+      description: cdktn.stringToTerraform(this._description),
+      export_custom_routes: cdktn.booleanToTerraform(this._exportCustomRoutes),
+      export_custom_routes_with_public_ip: cdktn.booleanToTerraform(this._exportCustomRoutesWithPublicIp),
+      id: cdktn.stringToTerraform(this._id),
+      import_custom_routes: cdktn.booleanToTerraform(this._importCustomRoutes),
+      import_custom_routes_with_public_ip: cdktn.booleanToTerraform(this._importCustomRoutesWithPublicIp),
+      name: cdktn.stringToTerraform(this._name),
+      peer_network: cdktn.stringToTerraform(this._peerNetwork),
+      peer_network_type: cdktn.stringToTerraform(this._peerNetworkType),
+      project: cdktn.stringToTerraform(this._project),
+      vmware_engine_network: cdktn.stringToTerraform(this._vmwareEngineNetwork),
       timeouts: vmwareengineNetworkPeeringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -551,67 +551,67 @@ export class VmwareengineNetworkPeering extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_custom_routes: {
-        value: cdktf.booleanToHclTerraform(this._exportCustomRoutes),
+        value: cdktn.booleanToHclTerraform(this._exportCustomRoutes),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       export_custom_routes_with_public_ip: {
-        value: cdktf.booleanToHclTerraform(this._exportCustomRoutesWithPublicIp),
+        value: cdktn.booleanToHclTerraform(this._exportCustomRoutesWithPublicIp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       import_custom_routes: {
-        value: cdktf.booleanToHclTerraform(this._importCustomRoutes),
+        value: cdktn.booleanToHclTerraform(this._importCustomRoutes),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       import_custom_routes_with_public_ip: {
-        value: cdktf.booleanToHclTerraform(this._importCustomRoutesWithPublicIp),
+        value: cdktn.booleanToHclTerraform(this._importCustomRoutesWithPublicIp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_network: {
-        value: cdktf.stringToHclTerraform(this._peerNetwork),
+        value: cdktn.stringToHclTerraform(this._peerNetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_network_type: {
-        value: cdktf.stringToHclTerraform(this._peerNetworkType),
+        value: cdktn.stringToHclTerraform(this._peerNetworkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vmware_engine_network: {
-        value: cdktf.stringToHclTerraform(this._vmwareEngineNetwork),
+        value: cdktn.stringToHclTerraform(this._vmwareEngineNetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

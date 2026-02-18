@@ -308,7 +308,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -533,7 +533,7 @@ public resetVisibility(): void
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DnsManagedZone resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DnsManagedZone resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -605,7 +605,7 @@ import { dnsManagedZone } from '@cdktn/provider-google'
 dnsManagedZone.DnsManagedZone.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DnsManagedZone resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DnsManagedZone resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.generateConfigForImport.parameter.scope"></a>
 
@@ -635,7 +635,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DnsManagedZone to import is found.
 
@@ -646,35 +646,35 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.cloudLoggingConfig">cloudLoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference">DnsManagedZoneCloudLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.creationTime">creationTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.dnssecConfig">dnssecConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference">DnsManagedZoneDnssecConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forwardingConfig">forwardingConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference">DnsManagedZoneForwardingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.managedZoneId">managedZoneId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.nameServers">nameServers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.peeringConfig">peeringConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigOutputReference">DnsManagedZonePeeringConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.privateVisibilityConfig">privateVisibilityConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference">DnsManagedZonePrivateVisibilityConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference">DnsManagedZoneTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.cloudLoggingConfigInput">cloudLoggingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfig">DnsManagedZoneCloudLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.dnsNameInput">dnsNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.dnssecConfigInput">dnssecConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig">DnsManagedZoneDnssecConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forwardingConfigInput">forwardingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfig">DnsManagedZoneForwardingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -682,11 +682,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.peeringConfigInput">peeringConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfig">DnsManagedZonePeeringConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.privateVisibilityConfigInput">privateVisibilityConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig">DnsManagedZonePrivateVisibilityConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.visibilityInput">visibilityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.dnsName">dnsName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZone.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -713,7 +713,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -763,7 +763,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -773,7 +773,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -783,7 +783,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -803,7 +803,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -813,7 +813,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -823,7 +823,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -833,7 +833,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -873,7 +873,7 @@ public readonly dnssecConfig: DnsManagedZoneDnssecConfigOutputReference;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -933,7 +933,7 @@ public readonly privateVisibilityConfig: DnsManagedZonePrivateVisibilityConfigOu
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -993,7 +993,7 @@ public readonly dnssecConfigInput: DnsManagedZoneDnssecConfig;
 public readonly forceDestroyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly projectInput: string;
 public readonly timeoutsInput: IResolvable | DnsManagedZoneTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a>
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly dnsName: string;
 public readonly forceDestroy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1201,7 +1201,7 @@ const dnsManagedZoneCloudLoggingConfig: dnsManagedZone.DnsManagedZoneCloudLoggin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, enable query logging for this ManagedZone. False by default, making logging opt-in. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set, enable query logging for this ManagedZone. False by default, making logging opt-in. |
 
 ---
 
@@ -1211,7 +1211,7 @@ const dnsManagedZoneCloudLoggingConfig: dnsManagedZone.DnsManagedZoneCloudLoggin
 public readonly enableLogging: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set, enable query logging for this ManagedZone. False by default, making logging opt-in.
 
@@ -1233,19 +1233,19 @@ const dnsManagedZoneConfig: dnsManagedZone.DnsManagedZoneConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.dnsName">dnsName</a></code> | <code>string</code> | The DNS name of this managed zone, for instance "example.com.". |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.name">name</a></code> | <code>string</code> | User assigned name for this resource. Must be unique within the project. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.cloudLoggingConfig">cloudLoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfig">DnsManagedZoneCloudLoggingConfig</a></code> | cloud_logging_config block. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.description">description</a></code> | <code>string</code> | A textual description field. Defaults to 'Managed by Terraform'. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.dnssecConfig">dnssecConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig">DnsManagedZoneDnssecConfig</a></code> | dnssec_config block. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set this true to delete all records in the zone. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Set this true to delete all records in the zone. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.forwardingConfig">forwardingConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfig">DnsManagedZoneForwardingConfig</a></code> | forwarding_config block. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#id DnsManagedZone#id}. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | A set of key/value label pairs to assign to this ManagedZone. |
@@ -1263,7 +1263,7 @@ const dnsManagedZoneConfig: dnsManagedZone.DnsManagedZoneConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1273,7 +1273,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1283,7 +1283,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1303,7 +1303,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1313,7 +1313,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1323,7 +1323,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly forceDestroy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Set this true to delete all records in the zone.
 
@@ -1541,7 +1541,7 @@ const dnsManagedZoneDnssecConfig: dnsManagedZone.DnsManagedZoneDnssecConfig = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig.property.defaultKeySpecs">defaultKeySpecs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]</code> | default_key_specs block. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig.property.defaultKeySpecs">defaultKeySpecs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]</code> | default_key_specs block. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig.property.kind">kind</a></code> | <code>string</code> | Identifies what kind of resource this is. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig.property.nonExistence">nonExistence</a></code> | <code>string</code> | Specifies the mechanism used to provide authenticated denial-of-existence responses. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig.property.state">state</a></code> | <code>string</code> | Specifies whether DNSSEC is enabled, and what mode it is in Possible values: ["off", "on", "transfer"]. |
@@ -1554,7 +1554,7 @@ const dnsManagedZoneDnssecConfig: dnsManagedZone.DnsManagedZoneDnssecConfig = { 
 public readonly defaultKeySpecs: IResolvable | DnsManagedZoneDnssecConfigDefaultKeySpecs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
 
 default_key_specs block.
 
@@ -1703,7 +1703,7 @@ const dnsManagedZoneForwardingConfig: dnsManagedZone.DnsManagedZoneForwardingCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfig.property.targetNameServers">targetNameServers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]</code> | target_name_servers block. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfig.property.targetNameServers">targetNameServers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]</code> | target_name_servers block. |
 
 ---
 
@@ -1713,7 +1713,7 @@ const dnsManagedZoneForwardingConfig: dnsManagedZone.DnsManagedZoneForwardingCon
 public readonly targetNameServers: IResolvable | DnsManagedZoneForwardingConfigTargetNameServers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
 
 target_name_servers block.
 
@@ -1868,8 +1868,8 @@ const dnsManagedZonePrivateVisibilityConfig: dnsManagedZone.DnsManagedZonePrivat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig.property.gkeClusters">gkeClusters</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]</code> | gke_clusters block. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig.property.networks">networks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]</code> | networks block. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig.property.gkeClusters">gkeClusters</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]</code> | gke_clusters block. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig.property.networks">networks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]</code> | networks block. |
 
 ---
 
@@ -1879,7 +1879,7 @@ const dnsManagedZonePrivateVisibilityConfig: dnsManagedZone.DnsManagedZonePrivat
 public readonly gkeClusters: IResolvable | DnsManagedZonePrivateVisibilityConfigGkeClusters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
 
 gke_clusters block.
 
@@ -1893,7 +1893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly networks: IResolvable | DnsManagedZonePrivateVisibilityConfigNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
 
 networks block.
 
@@ -2040,14 +2040,14 @@ new dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2217,7 +2217,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2238,8 +2238,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfig">DnsManagedZoneCloudLoggingConfig</a></code> | *No description.* |
 
 ---
@@ -2274,7 +2274,7 @@ public readonly fqn: string;
 public readonly enableLoggingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2284,7 +2284,7 @@ public readonly enableLoggingInput: boolean | IResolvable;
 public readonly enableLogging: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2311,7 +2311,7 @@ new dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2319,7 +2319,7 @@ new dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2385,7 +2385,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2420,7 +2420,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]</code> | *No description.* |
 
 ---
 
@@ -2454,7 +2454,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DnsManagedZoneDnssecConfigDefaultKeySpecs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
 
 ---
 
@@ -2471,7 +2471,7 @@ new dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2480,7 +2480,7 @@ new dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2670,7 +2670,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2723,7 +2723,7 @@ public resetKind(): void
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.property.keyLength">keyLength</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.property.keyType">keyType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.property.kind">kind</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a></code> | *No description.* |
 
 ---
 
@@ -2837,7 +2837,7 @@ public readonly kind: string;
 public readonly internalValue: IResolvable | DnsManagedZoneDnssecConfigDefaultKeySpecs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>
 
 ---
 
@@ -2854,14 +2854,14 @@ new dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3036,7 +3036,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3058,7 +3058,7 @@ public putDefaultKeySpecs(value: IResolvable | DnsManagedZoneDnssecConfigDefault
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.putDefaultKeySpecs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
 
 ---
 
@@ -3094,7 +3094,7 @@ public resetState(): void
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.defaultKeySpecs">defaultKeySpecs</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList">DnsManagedZoneDnssecConfigDefaultKeySpecsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.defaultKeySpecsInput">defaultKeySpecsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.defaultKeySpecsInput">defaultKeySpecsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.kindInput">kindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.nonExistenceInput">nonExistenceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.property.stateInput">stateInput</a></code> | <code>string</code> | *No description.* |
@@ -3145,7 +3145,7 @@ public readonly defaultKeySpecs: DnsManagedZoneDnssecConfigDefaultKeySpecsList;
 public readonly defaultKeySpecsInput: IResolvable | DnsManagedZoneDnssecConfigDefaultKeySpecs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs">DnsManagedZoneDnssecConfigDefaultKeySpecs</a>[]
 
 ---
 
@@ -3232,14 +3232,14 @@ new dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3410,7 +3410,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3432,7 +3432,7 @@ public putTargetNameServers(value: IResolvable | DnsManagedZoneForwardingConfigT
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.putTargetNameServers.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
 
 ---
 
@@ -3444,7 +3444,7 @@ public putTargetNameServers(value: IResolvable | DnsManagedZoneForwardingConfigT
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.property.targetNameServers">targetNameServers</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList">DnsManagedZoneForwardingConfigTargetNameServersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.property.targetNameServersInput">targetNameServersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.property.targetNameServersInput">targetNameServersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfig">DnsManagedZoneForwardingConfig</a></code> | *No description.* |
 
 ---
@@ -3489,7 +3489,7 @@ public readonly targetNameServers: DnsManagedZoneForwardingConfigTargetNameServe
 public readonly targetNameServersInput: IResolvable | DnsManagedZoneForwardingConfigTargetNameServers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
 
 ---
 
@@ -3516,7 +3516,7 @@ new dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3524,7 +3524,7 @@ new dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3590,7 +3590,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3625,7 +3625,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]</code> | *No description.* |
 
 ---
 
@@ -3659,7 +3659,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DnsManagedZoneForwardingConfigTargetNameServers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>[]
 
 ---
 
@@ -3676,7 +3676,7 @@ new dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3685,7 +3685,7 @@ new dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3874,7 +3874,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3919,7 +3919,7 @@ public resetIpv4Address(): void
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.domainName">domainName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.forwardingPath">forwardingPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.ipv4Address">ipv4Address</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a></code> | *No description.* |
 
 ---
 
@@ -4013,7 +4013,7 @@ public readonly ipv4Address: string;
 public readonly internalValue: IResolvable | DnsManagedZoneForwardingConfigTargetNameServers;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers">DnsManagedZoneForwardingConfigTargetNameServers</a>
 
 ---
 
@@ -4030,14 +4030,14 @@ new dnsManagedZone.DnsManagedZonePeeringConfigOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4208,7 +4208,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4314,14 +4314,14 @@ new dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4491,7 +4491,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4585,7 +4585,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4593,7 +4593,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4659,7 +4659,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4694,7 +4694,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]</code> | *No description.* |
 
 ---
 
@@ -4728,7 +4728,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DnsManagedZonePrivateVisibilityConfigGkeClusters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
 
 ---
 
@@ -4745,7 +4745,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4754,7 +4754,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4940,7 +4940,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4963,7 +4963,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.property.gkeClusterNameInput">gkeClusterNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.property.gkeClusterName">gkeClusterName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a></code> | *No description.* |
 
 ---
 
@@ -5017,7 +5017,7 @@ public readonly gkeClusterName: string;
 public readonly internalValue: IResolvable | DnsManagedZonePrivateVisibilityConfigGkeClusters;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>
 
 ---
 
@@ -5034,7 +5034,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5042,7 +5042,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5108,7 +5108,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5143,7 +5143,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]</code> | *No description.* |
 
 ---
 
@@ -5177,7 +5177,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DnsManagedZonePrivateVisibilityConfigNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
 
 ---
 
@@ -5194,7 +5194,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5203,7 +5203,7 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5389,7 +5389,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5412,7 +5412,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.property.networkUrlInput">networkUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.property.networkUrl">networkUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a></code> | *No description.* |
 
 ---
 
@@ -5466,7 +5466,7 @@ public readonly networkUrl: string;
 public readonly internalValue: IResolvable | DnsManagedZonePrivateVisibilityConfigNetworks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>
 
 ---
 
@@ -5483,14 +5483,14 @@ new dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5664,7 +5664,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5686,7 +5686,7 @@ public putGkeClusters(value: IResolvable | DnsManagedZonePrivateVisibilityConfig
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.putGkeClusters.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
 
 ---
 
@@ -5698,7 +5698,7 @@ public putNetworks(value: IResolvable | DnsManagedZonePrivateVisibilityConfigNet
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.putNetworks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
 
 ---
 
@@ -5723,8 +5723,8 @@ public resetNetworks(): void
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.gkeClusters">gkeClusters</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList">DnsManagedZonePrivateVisibilityConfigGkeClustersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.networks">networks</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList">DnsManagedZonePrivateVisibilityConfigNetworksList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.gkeClustersInput">gkeClustersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.networksInput">networksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.gkeClustersInput">gkeClustersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.networksInput">networksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig">DnsManagedZonePrivateVisibilityConfig</a></code> | *No description.* |
 
 ---
@@ -5779,7 +5779,7 @@ public readonly networks: DnsManagedZonePrivateVisibilityConfigNetworksList;
 public readonly gkeClustersInput: IResolvable | DnsManagedZonePrivateVisibilityConfigGkeClusters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters">DnsManagedZonePrivateVisibilityConfigGkeClusters</a>[]
 
 ---
 
@@ -5789,7 +5789,7 @@ public readonly gkeClustersInput: IResolvable | DnsManagedZonePrivateVisibilityC
 public readonly networksInput: IResolvable | DnsManagedZonePrivateVisibilityConfigNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks">DnsManagedZonePrivateVisibilityConfigNetworks</a>[]
 
 ---
 
@@ -5816,14 +5816,14 @@ new dnsManagedZone.DnsManagedZoneTimeoutsOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5996,7 +5996,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6041,7 +6041,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6135,7 +6135,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | DnsManagedZoneTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a>
 
 ---
 

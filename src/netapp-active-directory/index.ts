@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetappActiveDirectoryConfig extends cdktf.TerraformMetaArguments {
+export interface NetappActiveDirectoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Domain user accounts to be added to the local Administrators group of the SMB service. Comma-separated list of domain users or groups. The Domain Admin group is automatically added when the service joins your domain as a hidden group.
   *
@@ -23,7 +23,7 @@ export interface NetappActiveDirectoryConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#aes_encryption NetappActiveDirectory#aes_encryption}
   */
-  readonly aesEncryption?: boolean | cdktf.IResolvable;
+  readonly aesEncryption?: boolean | cdktn.IResolvable;
   /**
   * Domain user/group accounts to be added to the Backup Operators group of the SMB service. The Backup Operators group allows members to backup and restore files regardless of whether they have read or write access to the files. Comma-separated list.
   *
@@ -53,7 +53,7 @@ export interface NetappActiveDirectoryConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#encrypt_dc_connections NetappActiveDirectory#encrypt_dc_connections}
   */
-  readonly encryptDcConnections?: boolean | cdktf.IResolvable;
+  readonly encryptDcConnections?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#id NetappActiveDirectory#id}
   *
@@ -88,7 +88,7 @@ export interface NetappActiveDirectoryConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#ldap_signing NetappActiveDirectory#ldap_signing}
   */
-  readonly ldapSigning?: boolean | cdktf.IResolvable;
+  readonly ldapSigning?: boolean | cdktn.IResolvable;
   /**
   * Name of the region for the policy to apply to.
   *
@@ -115,7 +115,7 @@ export interface NetappActiveDirectoryConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#nfs_users_with_ldap NetappActiveDirectory#nfs_users_with_ldap}
   */
-  readonly nfsUsersWithLdap?: boolean | cdktf.IResolvable;
+  readonly nfsUsersWithLdap?: boolean | cdktn.IResolvable;
   /**
   * Name of the Organizational Unit where you intend to create the computer account for NetApp Volumes.
   * Defaults to 'CN=Computers' if left empty.
@@ -174,39 +174,39 @@ export interface NetappActiveDirectoryTimeouts {
   readonly update?: string;
 }
 
-export function netappActiveDirectoryTimeoutsToTerraform(struct?: NetappActiveDirectoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappActiveDirectoryTimeoutsToTerraform(struct?: NetappActiveDirectoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function netappActiveDirectoryTimeoutsToHclTerraform(struct?: NetappActiveDirectoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappActiveDirectoryTimeoutsToHclTerraform(struct?: NetappActiveDirectoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -217,19 +217,19 @@ export function netappActiveDirectoryTimeoutsToHclTerraform(struct?: NetappActiv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappActiveDirectoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetappActiveDirectoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetappActiveDirectoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappActiveDirectoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -250,7 +250,7 @@ export class NetappActiveDirectoryTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappActiveDirectoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappActiveDirectoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -258,7 +258,7 @@ export class NetappActiveDirectoryTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,7 +323,7 @@ export class NetappActiveDirectoryTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory google_netapp_active_directory}
 */
-export class NetappActiveDirectory extends cdktf.TerraformResource {
+export class NetappActiveDirectory extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -334,14 +334,14 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetappActiveDirectory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetappActiveDirectory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappActiveDirectory to import
   * @param importFromId The id of the existing NetappActiveDirectory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappActiveDirectory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_netapp_active_directory", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_netapp_active_directory", importId: importFromId, provider });
       }
 
   // ===========
@@ -417,11 +417,11 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
   }
 
   // aes_encryption - computed: false, optional: true, required: false
-  private _aesEncryption?: boolean | cdktf.IResolvable; 
+  private _aesEncryption?: boolean | cdktn.IResolvable; 
   public get aesEncryption() {
     return this.getBooleanAttribute('aes_encryption');
   }
-  public set aesEncryption(value: boolean | cdktf.IResolvable) {
+  public set aesEncryption(value: boolean | cdktn.IResolvable) {
     this._aesEncryption = value;
   }
   public resetAesEncryption() {
@@ -496,17 +496,17 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // encrypt_dc_connections - computed: false, optional: true, required: false
-  private _encryptDcConnections?: boolean | cdktf.IResolvable; 
+  private _encryptDcConnections?: boolean | cdktn.IResolvable; 
   public get encryptDcConnections() {
     return this.getBooleanAttribute('encrypt_dc_connections');
   }
-  public set encryptDcConnections(value: boolean | cdktf.IResolvable) {
+  public set encryptDcConnections(value: boolean | cdktn.IResolvable) {
     this._encryptDcConnections = value;
   }
   public resetEncryptDcConnections() {
@@ -582,11 +582,11 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
   }
 
   // ldap_signing - computed: false, optional: true, required: false
-  private _ldapSigning?: boolean | cdktf.IResolvable; 
+  private _ldapSigning?: boolean | cdktn.IResolvable; 
   public get ldapSigning() {
     return this.getBooleanAttribute('ldap_signing');
   }
-  public set ldapSigning(value: boolean | cdktf.IResolvable) {
+  public set ldapSigning(value: boolean | cdktn.IResolvable) {
     this._ldapSigning = value;
   }
   public resetLdapSigning() {
@@ -637,11 +637,11 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
   }
 
   // nfs_users_with_ldap - computed: false, optional: true, required: false
-  private _nfsUsersWithLdap?: boolean | cdktf.IResolvable; 
+  private _nfsUsersWithLdap?: boolean | cdktn.IResolvable; 
   public get nfsUsersWithLdap() {
     return this.getBooleanAttribute('nfs_users_with_ldap');
   }
-  public set nfsUsersWithLdap(value: boolean | cdktf.IResolvable) {
+  public set nfsUsersWithLdap(value: boolean | cdktn.IResolvable) {
     this._nfsUsersWithLdap = value;
   }
   public resetNfsUsersWithLdap() {
@@ -740,7 +740,7 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -780,28 +780,28 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrators: cdktf.listMapper(cdktf.stringToTerraform, false)(this._administrators),
-      aes_encryption: cdktf.booleanToTerraform(this._aesEncryption),
-      backup_operators: cdktf.listMapper(cdktf.stringToTerraform, false)(this._backupOperators),
-      description: cdktf.stringToTerraform(this._description),
-      dns: cdktf.stringToTerraform(this._dns),
-      domain: cdktf.stringToTerraform(this._domain),
-      encrypt_dc_connections: cdktf.booleanToTerraform(this._encryptDcConnections),
-      id: cdktf.stringToTerraform(this._id),
-      kdc_hostname: cdktf.stringToTerraform(this._kdcHostname),
-      kdc_ip: cdktf.stringToTerraform(this._kdcIp),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      ldap_signing: cdktf.booleanToTerraform(this._ldapSigning),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      net_bios_prefix: cdktf.stringToTerraform(this._netBiosPrefix),
-      nfs_users_with_ldap: cdktf.booleanToTerraform(this._nfsUsersWithLdap),
-      organizational_unit: cdktf.stringToTerraform(this._organizationalUnit),
-      password: cdktf.stringToTerraform(this._password),
-      project: cdktf.stringToTerraform(this._project),
-      security_operators: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityOperators),
-      site: cdktf.stringToTerraform(this._site),
-      username: cdktf.stringToTerraform(this._username),
+      administrators: cdktn.listMapper(cdktn.stringToTerraform, false)(this._administrators),
+      aes_encryption: cdktn.booleanToTerraform(this._aesEncryption),
+      backup_operators: cdktn.listMapper(cdktn.stringToTerraform, false)(this._backupOperators),
+      description: cdktn.stringToTerraform(this._description),
+      dns: cdktn.stringToTerraform(this._dns),
+      domain: cdktn.stringToTerraform(this._domain),
+      encrypt_dc_connections: cdktn.booleanToTerraform(this._encryptDcConnections),
+      id: cdktn.stringToTerraform(this._id),
+      kdc_hostname: cdktn.stringToTerraform(this._kdcHostname),
+      kdc_ip: cdktn.stringToTerraform(this._kdcIp),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      ldap_signing: cdktn.booleanToTerraform(this._ldapSigning),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      net_bios_prefix: cdktn.stringToTerraform(this._netBiosPrefix),
+      nfs_users_with_ldap: cdktn.booleanToTerraform(this._nfsUsersWithLdap),
+      organizational_unit: cdktn.stringToTerraform(this._organizationalUnit),
+      password: cdktn.stringToTerraform(this._password),
+      project: cdktn.stringToTerraform(this._project),
+      security_operators: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityOperators),
+      site: cdktn.stringToTerraform(this._site),
+      username: cdktn.stringToTerraform(this._username),
       timeouts: netappActiveDirectoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -809,133 +809,133 @@ export class NetappActiveDirectory extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrators: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._administrators),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._administrators),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       aes_encryption: {
-        value: cdktf.booleanToHclTerraform(this._aesEncryption),
+        value: cdktn.booleanToHclTerraform(this._aesEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backup_operators: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._backupOperators),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._backupOperators),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns: {
-        value: cdktf.stringToHclTerraform(this._dns),
+        value: cdktn.stringToHclTerraform(this._dns),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encrypt_dc_connections: {
-        value: cdktf.booleanToHclTerraform(this._encryptDcConnections),
+        value: cdktn.booleanToHclTerraform(this._encryptDcConnections),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kdc_hostname: {
-        value: cdktf.stringToHclTerraform(this._kdcHostname),
+        value: cdktn.stringToHclTerraform(this._kdcHostname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kdc_ip: {
-        value: cdktf.stringToHclTerraform(this._kdcIp),
+        value: cdktn.stringToHclTerraform(this._kdcIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ldap_signing: {
-        value: cdktf.booleanToHclTerraform(this._ldapSigning),
+        value: cdktn.booleanToHclTerraform(this._ldapSigning),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       net_bios_prefix: {
-        value: cdktf.stringToHclTerraform(this._netBiosPrefix),
+        value: cdktn.stringToHclTerraform(this._netBiosPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nfs_users_with_ldap: {
-        value: cdktf.booleanToHclTerraform(this._nfsUsersWithLdap),
+        value: cdktn.booleanToHclTerraform(this._nfsUsersWithLdap),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       organizational_unit: {
-        value: cdktf.stringToHclTerraform(this._organizationalUnit),
+        value: cdktn.stringToHclTerraform(this._organizationalUnit),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_operators: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityOperators),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityOperators),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       site: {
-        value: cdktf.stringToHclTerraform(this._site),
+        value: cdktn.stringToHclTerraform(this._site),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

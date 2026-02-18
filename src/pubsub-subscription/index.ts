@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PubsubSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface PubsubSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * This value is the maximum time after a subscriber receives a message
   * before the subscriber should acknowledge the message. After message
@@ -48,7 +48,7 @@ export interface PubsubSubscriptionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#enable_exactly_once_delivery PubsubSubscription#enable_exactly_once_delivery}
   */
-  readonly enableExactlyOnceDelivery?: boolean | cdktf.IResolvable;
+  readonly enableExactlyOnceDelivery?: boolean | cdktn.IResolvable;
   /**
   * If 'true', messages published with the same orderingKey in PubsubMessage will be delivered to
   * the subscribers in the order in which they are received by the Pub/Sub system. Otherwise, they
@@ -56,7 +56,7 @@ export interface PubsubSubscriptionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#enable_message_ordering PubsubSubscription#enable_message_ordering}
   */
-  readonly enableMessageOrdering?: boolean | cdktf.IResolvable;
+  readonly enableMessageOrdering?: boolean | cdktn.IResolvable;
   /**
   * The subscription only delivers the messages that match the filter.
   * Pub/Sub automatically acknowledges the messages that don't match the filter. You can filter messages
@@ -115,7 +115,7 @@ export interface PubsubSubscriptionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#retain_acked_messages PubsubSubscription#retain_acked_messages}
   */
-  readonly retainAckedMessages?: boolean | cdktf.IResolvable;
+  readonly retainAckedMessages?: boolean | cdktn.IResolvable;
   /**
   * A reference to a Topic resource, of the form projects/{project}/topics/{{name}}
   * (as in the id property of a google_pubsub_topic), or just a topic name if
@@ -153,7 +153,7 @@ export interface PubsubSubscriptionConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#message_transforms PubsubSubscription#message_transforms}
   */
-  readonly messageTransforms?: PubsubSubscriptionMessageTransforms[] | cdktf.IResolvable;
+  readonly messageTransforms?: PubsubSubscriptionMessageTransforms[] | cdktn.IResolvable;
   /**
   * push_config block
   *
@@ -181,7 +181,7 @@ export interface PubsubSubscriptionBigqueryConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#drop_unknown_fields PubsubSubscription#drop_unknown_fields}
   */
-  readonly dropUnknownFields?: boolean | cdktf.IResolvable;
+  readonly dropUnknownFields?: boolean | cdktn.IResolvable;
   /**
   * The service account to use to write to BigQuery. If not specified, the Pub/Sub
   * [service agent](https://cloud.google.com/iam/docs/service-agents),
@@ -202,77 +202,77 @@ export interface PubsubSubscriptionBigqueryConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#use_table_schema PubsubSubscription#use_table_schema}
   */
-  readonly useTableSchema?: boolean | cdktf.IResolvable;
+  readonly useTableSchema?: boolean | cdktn.IResolvable;
   /**
   * When true, use the topic's schema as the columns to write to in BigQuery, if it exists.
   * Only one of use_topic_schema and use_table_schema can be set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#use_topic_schema PubsubSubscription#use_topic_schema}
   */
-  readonly useTopicSchema?: boolean | cdktf.IResolvable;
+  readonly useTopicSchema?: boolean | cdktn.IResolvable;
   /**
   * When true, write the subscription name, messageId, publishTime, attributes, and orderingKey to additional columns in the table.
   * The subscription name, messageId, and publishTime fields are put in their own columns while all other message properties (other than data) are written to a JSON object in the attributes column.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
   */
-  readonly writeMetadata?: boolean | cdktf.IResolvable;
+  readonly writeMetadata?: boolean | cdktn.IResolvable;
 }
 
 export function pubsubSubscriptionBigqueryConfigToTerraform(struct?: PubsubSubscriptionBigqueryConfigOutputReference | PubsubSubscriptionBigqueryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    drop_unknown_fields: cdktf.booleanToTerraform(struct!.dropUnknownFields),
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
-    table: cdktf.stringToTerraform(struct!.table),
-    use_table_schema: cdktf.booleanToTerraform(struct!.useTableSchema),
-    use_topic_schema: cdktf.booleanToTerraform(struct!.useTopicSchema),
-    write_metadata: cdktf.booleanToTerraform(struct!.writeMetadata),
+    drop_unknown_fields: cdktn.booleanToTerraform(struct!.dropUnknownFields),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
+    table: cdktn.stringToTerraform(struct!.table),
+    use_table_schema: cdktn.booleanToTerraform(struct!.useTableSchema),
+    use_topic_schema: cdktn.booleanToTerraform(struct!.useTopicSchema),
+    write_metadata: cdktn.booleanToTerraform(struct!.writeMetadata),
   }
 }
 
 
 export function pubsubSubscriptionBigqueryConfigToHclTerraform(struct?: PubsubSubscriptionBigqueryConfigOutputReference | PubsubSubscriptionBigqueryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     drop_unknown_fields: {
-      value: cdktf.booleanToHclTerraform(struct!.dropUnknownFields),
+      value: cdktn.booleanToHclTerraform(struct!.dropUnknownFields),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table: {
-      value: cdktf.stringToHclTerraform(struct!.table),
+      value: cdktn.stringToHclTerraform(struct!.table),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_table_schema: {
-      value: cdktf.booleanToHclTerraform(struct!.useTableSchema),
+      value: cdktn.booleanToHclTerraform(struct!.useTableSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     use_topic_schema: {
-      value: cdktf.booleanToHclTerraform(struct!.useTopicSchema),
+      value: cdktn.booleanToHclTerraform(struct!.useTopicSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     write_metadata: {
-      value: cdktf.booleanToHclTerraform(struct!.writeMetadata),
+      value: cdktn.booleanToHclTerraform(struct!.writeMetadata),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -283,14 +283,14 @@ export function pubsubSubscriptionBigqueryConfigToHclTerraform(struct?: PubsubSu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionBigqueryConfigOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionBigqueryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -346,11 +346,11 @@ export class PubsubSubscriptionBigqueryConfigOutputReference extends cdktf.Compl
   }
 
   // drop_unknown_fields - computed: false, optional: true, required: false
-  private _dropUnknownFields?: boolean | cdktf.IResolvable; 
+  private _dropUnknownFields?: boolean | cdktn.IResolvable; 
   public get dropUnknownFields() {
     return this.getBooleanAttribute('drop_unknown_fields');
   }
-  public set dropUnknownFields(value: boolean | cdktf.IResolvable) {
+  public set dropUnknownFields(value: boolean | cdktn.IResolvable) {
     this._dropUnknownFields = value;
   }
   public resetDropUnknownFields() {
@@ -391,11 +391,11 @@ export class PubsubSubscriptionBigqueryConfigOutputReference extends cdktf.Compl
   }
 
   // use_table_schema - computed: false, optional: true, required: false
-  private _useTableSchema?: boolean | cdktf.IResolvable; 
+  private _useTableSchema?: boolean | cdktn.IResolvable; 
   public get useTableSchema() {
     return this.getBooleanAttribute('use_table_schema');
   }
-  public set useTableSchema(value: boolean | cdktf.IResolvable) {
+  public set useTableSchema(value: boolean | cdktn.IResolvable) {
     this._useTableSchema = value;
   }
   public resetUseTableSchema() {
@@ -407,11 +407,11 @@ export class PubsubSubscriptionBigqueryConfigOutputReference extends cdktf.Compl
   }
 
   // use_topic_schema - computed: false, optional: true, required: false
-  private _useTopicSchema?: boolean | cdktf.IResolvable; 
+  private _useTopicSchema?: boolean | cdktn.IResolvable; 
   public get useTopicSchema() {
     return this.getBooleanAttribute('use_topic_schema');
   }
-  public set useTopicSchema(value: boolean | cdktf.IResolvable) {
+  public set useTopicSchema(value: boolean | cdktn.IResolvable) {
     this._useTopicSchema = value;
   }
   public resetUseTopicSchema() {
@@ -423,11 +423,11 @@ export class PubsubSubscriptionBigqueryConfigOutputReference extends cdktf.Compl
   }
 
   // write_metadata - computed: false, optional: true, required: false
-  private _writeMetadata?: boolean | cdktf.IResolvable; 
+  private _writeMetadata?: boolean | cdktn.IResolvable; 
   public get writeMetadata() {
     return this.getBooleanAttribute('write_metadata');
   }
-  public set writeMetadata(value: boolean | cdktf.IResolvable) {
+  public set writeMetadata(value: boolean | cdktn.IResolvable) {
     this._writeMetadata = value;
   }
   public resetWriteMetadata() {
@@ -444,41 +444,41 @@ export interface PubsubSubscriptionCloudStorageConfigAvroConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#use_topic_schema PubsubSubscription#use_topic_schema}
   */
-  readonly useTopicSchema?: boolean | cdktf.IResolvable;
+  readonly useTopicSchema?: boolean | cdktn.IResolvable;
   /**
   * When true, write the subscription name, messageId, publishTime, attributes, and orderingKey as additional fields in the output.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
   */
-  readonly writeMetadata?: boolean | cdktf.IResolvable;
+  readonly writeMetadata?: boolean | cdktn.IResolvable;
 }
 
 export function pubsubSubscriptionCloudStorageConfigAvroConfigToTerraform(struct?: PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference | PubsubSubscriptionCloudStorageConfigAvroConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    use_topic_schema: cdktf.booleanToTerraform(struct!.useTopicSchema),
-    write_metadata: cdktf.booleanToTerraform(struct!.writeMetadata),
+    use_topic_schema: cdktn.booleanToTerraform(struct!.useTopicSchema),
+    write_metadata: cdktn.booleanToTerraform(struct!.writeMetadata),
   }
 }
 
 
 export function pubsubSubscriptionCloudStorageConfigAvroConfigToHclTerraform(struct?: PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference | PubsubSubscriptionCloudStorageConfigAvroConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     use_topic_schema: {
-      value: cdktf.booleanToHclTerraform(struct!.useTopicSchema),
+      value: cdktn.booleanToHclTerraform(struct!.useTopicSchema),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     write_metadata: {
-      value: cdktf.booleanToHclTerraform(struct!.writeMetadata),
+      value: cdktn.booleanToHclTerraform(struct!.writeMetadata),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -489,14 +489,14 @@ export function pubsubSubscriptionCloudStorageConfigAvroConfigToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -528,11 +528,11 @@ export class PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference exten
   }
 
   // use_topic_schema - computed: false, optional: true, required: false
-  private _useTopicSchema?: boolean | cdktf.IResolvable; 
+  private _useTopicSchema?: boolean | cdktn.IResolvable; 
   public get useTopicSchema() {
     return this.getBooleanAttribute('use_topic_schema');
   }
-  public set useTopicSchema(value: boolean | cdktf.IResolvable) {
+  public set useTopicSchema(value: boolean | cdktn.IResolvable) {
     this._useTopicSchema = value;
   }
   public resetUseTopicSchema() {
@@ -544,11 +544,11 @@ export class PubsubSubscriptionCloudStorageConfigAvroConfigOutputReference exten
   }
 
   // write_metadata - computed: false, optional: true, required: false
-  private _writeMetadata?: boolean | cdktf.IResolvable; 
+  private _writeMetadata?: boolean | cdktn.IResolvable; 
   public get writeMetadata() {
     return this.getBooleanAttribute('write_metadata');
   }
-  public set writeMetadata(value: boolean | cdktf.IResolvable) {
+  public set writeMetadata(value: boolean | cdktn.IResolvable) {
     this._writeMetadata = value;
   }
   public resetWriteMetadata() {
@@ -622,74 +622,74 @@ export interface PubsubSubscriptionCloudStorageConfig {
 }
 
 export function pubsubSubscriptionCloudStorageConfigToTerraform(struct?: PubsubSubscriptionCloudStorageConfigOutputReference | PubsubSubscriptionCloudStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    filename_datetime_format: cdktf.stringToTerraform(struct!.filenameDatetimeFormat),
-    filename_prefix: cdktf.stringToTerraform(struct!.filenamePrefix),
-    filename_suffix: cdktf.stringToTerraform(struct!.filenameSuffix),
-    max_bytes: cdktf.numberToTerraform(struct!.maxBytes),
-    max_duration: cdktf.stringToTerraform(struct!.maxDuration),
-    max_messages: cdktf.numberToTerraform(struct!.maxMessages),
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    filename_datetime_format: cdktn.stringToTerraform(struct!.filenameDatetimeFormat),
+    filename_prefix: cdktn.stringToTerraform(struct!.filenamePrefix),
+    filename_suffix: cdktn.stringToTerraform(struct!.filenameSuffix),
+    max_bytes: cdktn.numberToTerraform(struct!.maxBytes),
+    max_duration: cdktn.stringToTerraform(struct!.maxDuration),
+    max_messages: cdktn.numberToTerraform(struct!.maxMessages),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
     avro_config: pubsubSubscriptionCloudStorageConfigAvroConfigToTerraform(struct!.avroConfig),
   }
 }
 
 
 export function pubsubSubscriptionCloudStorageConfigToHclTerraform(struct?: PubsubSubscriptionCloudStorageConfigOutputReference | PubsubSubscriptionCloudStorageConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filename_datetime_format: {
-      value: cdktf.stringToHclTerraform(struct!.filenameDatetimeFormat),
+      value: cdktn.stringToHclTerraform(struct!.filenameDatetimeFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filename_prefix: {
-      value: cdktf.stringToHclTerraform(struct!.filenamePrefix),
+      value: cdktn.stringToHclTerraform(struct!.filenamePrefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filename_suffix: {
-      value: cdktf.stringToHclTerraform(struct!.filenameSuffix),
+      value: cdktn.stringToHclTerraform(struct!.filenameSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_bytes: {
-      value: cdktf.numberToHclTerraform(struct!.maxBytes),
+      value: cdktn.numberToHclTerraform(struct!.maxBytes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_duration: {
-      value: cdktf.stringToHclTerraform(struct!.maxDuration),
+      value: cdktn.stringToHclTerraform(struct!.maxDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_messages: {
-      value: cdktf.numberToHclTerraform(struct!.maxMessages),
+      value: cdktn.numberToHclTerraform(struct!.maxMessages),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -706,14 +706,14 @@ export function pubsubSubscriptionCloudStorageConfigToHclTerraform(struct?: Pubs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionCloudStorageConfigOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionCloudStorageConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -969,31 +969,31 @@ export interface PubsubSubscriptionDeadLetterPolicy {
 }
 
 export function pubsubSubscriptionDeadLetterPolicyToTerraform(struct?: PubsubSubscriptionDeadLetterPolicyOutputReference | PubsubSubscriptionDeadLetterPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dead_letter_topic: cdktf.stringToTerraform(struct!.deadLetterTopic),
-    max_delivery_attempts: cdktf.numberToTerraform(struct!.maxDeliveryAttempts),
+    dead_letter_topic: cdktn.stringToTerraform(struct!.deadLetterTopic),
+    max_delivery_attempts: cdktn.numberToTerraform(struct!.maxDeliveryAttempts),
   }
 }
 
 
 export function pubsubSubscriptionDeadLetterPolicyToHclTerraform(struct?: PubsubSubscriptionDeadLetterPolicyOutputReference | PubsubSubscriptionDeadLetterPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dead_letter_topic: {
-      value: cdktf.stringToHclTerraform(struct!.deadLetterTopic),
+      value: cdktn.stringToHclTerraform(struct!.deadLetterTopic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_delivery_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.maxDeliveryAttempts),
+      value: cdktn.numberToHclTerraform(struct!.maxDeliveryAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1004,14 +1004,14 @@ export function pubsubSubscriptionDeadLetterPolicyToHclTerraform(struct?: Pubsub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionDeadLetterPolicyOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionDeadLetterPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1088,24 +1088,24 @@ export interface PubsubSubscriptionExpirationPolicy {
 }
 
 export function pubsubSubscriptionExpirationPolicyToTerraform(struct?: PubsubSubscriptionExpirationPolicyOutputReference | PubsubSubscriptionExpirationPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ttl: cdktf.stringToTerraform(struct!.ttl),
+    ttl: cdktn.stringToTerraform(struct!.ttl),
   }
 }
 
 
 export function pubsubSubscriptionExpirationPolicyToHclTerraform(struct?: PubsubSubscriptionExpirationPolicyOutputReference | PubsubSubscriptionExpirationPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ttl: {
-      value: cdktf.stringToHclTerraform(struct!.ttl),
+      value: cdktn.stringToHclTerraform(struct!.ttl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1116,14 +1116,14 @@ export function pubsubSubscriptionExpirationPolicyToHclTerraform(struct?: Pubsub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionExpirationPolicyOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionExpirationPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1206,31 +1206,31 @@ export interface PubsubSubscriptionMessageTransformsJavascriptUdf {
 }
 
 export function pubsubSubscriptionMessageTransformsJavascriptUdfToTerraform(struct?: PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference | PubsubSubscriptionMessageTransformsJavascriptUdf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code: cdktf.stringToTerraform(struct!.code),
-    function_name: cdktf.stringToTerraform(struct!.functionName),
+    code: cdktn.stringToTerraform(struct!.code),
+    function_name: cdktn.stringToTerraform(struct!.functionName),
   }
 }
 
 
 export function pubsubSubscriptionMessageTransformsJavascriptUdfToHclTerraform(struct?: PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference | PubsubSubscriptionMessageTransformsJavascriptUdf): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code: {
-      value: cdktf.stringToHclTerraform(struct!.code),
+      value: cdktn.stringToHclTerraform(struct!.code),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     function_name: {
-      value: cdktf.stringToHclTerraform(struct!.functionName),
+      value: cdktn.stringToHclTerraform(struct!.functionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1241,14 +1241,14 @@ export function pubsubSubscriptionMessageTransformsJavascriptUdfToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1312,7 +1312,7 @@ export interface PubsubSubscriptionMessageTransforms {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#disabled PubsubSubscription#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * javascript_udf block
   *
@@ -1321,26 +1321,26 @@ export interface PubsubSubscriptionMessageTransforms {
   readonly javascriptUdf?: PubsubSubscriptionMessageTransformsJavascriptUdf;
 }
 
-export function pubsubSubscriptionMessageTransformsToTerraform(struct?: PubsubSubscriptionMessageTransforms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pubsubSubscriptionMessageTransformsToTerraform(struct?: PubsubSubscriptionMessageTransforms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
     javascript_udf: pubsubSubscriptionMessageTransformsJavascriptUdfToTerraform(struct!.javascriptUdf),
   }
 }
 
 
-export function pubsubSubscriptionMessageTransformsToHclTerraform(struct?: PubsubSubscriptionMessageTransforms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pubsubSubscriptionMessageTransformsToHclTerraform(struct?: PubsubSubscriptionMessageTransforms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1357,9 +1357,9 @@ export function pubsubSubscriptionMessageTransformsToHclTerraform(struct?: Pubsu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionMessageTransformsOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionMessageTransformsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1367,11 +1367,11 @@ export class PubsubSubscriptionMessageTransformsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PubsubSubscriptionMessageTransforms | cdktf.IResolvable | undefined {
+  public get internalValue(): PubsubSubscriptionMessageTransforms | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1388,14 +1388,14 @@ export class PubsubSubscriptionMessageTransformsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PubsubSubscriptionMessageTransforms | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PubsubSubscriptionMessageTransforms | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._disabled = undefined;
       this._javascriptUdf.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1408,11 +1408,11 @@ export class PubsubSubscriptionMessageTransformsOutputReference extends cdktf.Co
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -1440,15 +1440,15 @@ export class PubsubSubscriptionMessageTransformsOutputReference extends cdktf.Co
   }
 }
 
-export class PubsubSubscriptionMessageTransformsList extends cdktf.ComplexList {
-  public internalValue? : PubsubSubscriptionMessageTransforms[] | cdktf.IResolvable
+export class PubsubSubscriptionMessageTransformsList extends cdktn.ComplexList {
+  public internalValue? : PubsubSubscriptionMessageTransforms[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1467,28 +1467,28 @@ export interface PubsubSubscriptionPushConfigNoWrapper {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#write_metadata PubsubSubscription#write_metadata}
   */
-  readonly writeMetadata: boolean | cdktf.IResolvable;
+  readonly writeMetadata: boolean | cdktn.IResolvable;
 }
 
 export function pubsubSubscriptionPushConfigNoWrapperToTerraform(struct?: PubsubSubscriptionPushConfigNoWrapperOutputReference | PubsubSubscriptionPushConfigNoWrapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    write_metadata: cdktf.booleanToTerraform(struct!.writeMetadata),
+    write_metadata: cdktn.booleanToTerraform(struct!.writeMetadata),
   }
 }
 
 
 export function pubsubSubscriptionPushConfigNoWrapperToHclTerraform(struct?: PubsubSubscriptionPushConfigNoWrapperOutputReference | PubsubSubscriptionPushConfigNoWrapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     write_metadata: {
-      value: cdktf.booleanToHclTerraform(struct!.writeMetadata),
+      value: cdktn.booleanToHclTerraform(struct!.writeMetadata),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1499,14 +1499,14 @@ export function pubsubSubscriptionPushConfigNoWrapperToHclTerraform(struct?: Pub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionPushConfigNoWrapperOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionPushConfigNoWrapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1532,11 +1532,11 @@ export class PubsubSubscriptionPushConfigNoWrapperOutputReference extends cdktf.
   }
 
   // write_metadata - computed: false, optional: false, required: true
-  private _writeMetadata?: boolean | cdktf.IResolvable; 
+  private _writeMetadata?: boolean | cdktn.IResolvable; 
   public get writeMetadata() {
     return this.getBooleanAttribute('write_metadata');
   }
-  public set writeMetadata(value: boolean | cdktf.IResolvable) {
+  public set writeMetadata(value: boolean | cdktn.IResolvable) {
     this._writeMetadata = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1568,31 +1568,31 @@ export interface PubsubSubscriptionPushConfigOidcToken {
 }
 
 export function pubsubSubscriptionPushConfigOidcTokenToTerraform(struct?: PubsubSubscriptionPushConfigOidcTokenOutputReference | PubsubSubscriptionPushConfigOidcToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audience: cdktf.stringToTerraform(struct!.audience),
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
+    audience: cdktn.stringToTerraform(struct!.audience),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
   }
 }
 
 
 export function pubsubSubscriptionPushConfigOidcTokenToHclTerraform(struct?: PubsubSubscriptionPushConfigOidcTokenOutputReference | PubsubSubscriptionPushConfigOidcToken): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audience: {
-      value: cdktf.stringToHclTerraform(struct!.audience),
+      value: cdktn.stringToHclTerraform(struct!.audience),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1603,14 +1603,14 @@ export function pubsubSubscriptionPushConfigOidcTokenToHclTerraform(struct?: Pub
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionPushConfigOidcTokenOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionPushConfigOidcTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1722,13 +1722,13 @@ export interface PubsubSubscriptionPushConfig {
 }
 
 export function pubsubSubscriptionPushConfigToTerraform(struct?: PubsubSubscriptionPushConfigOutputReference | PubsubSubscriptionPushConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attributes: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.attributes),
-    push_endpoint: cdktf.stringToTerraform(struct!.pushEndpoint),
+    attributes: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.attributes),
+    push_endpoint: cdktn.stringToTerraform(struct!.pushEndpoint),
     no_wrapper: pubsubSubscriptionPushConfigNoWrapperToTerraform(struct!.noWrapper),
     oidc_token: pubsubSubscriptionPushConfigOidcTokenToTerraform(struct!.oidcToken),
   }
@@ -1736,19 +1736,19 @@ export function pubsubSubscriptionPushConfigToTerraform(struct?: PubsubSubscript
 
 
 export function pubsubSubscriptionPushConfigToHclTerraform(struct?: PubsubSubscriptionPushConfigOutputReference | PubsubSubscriptionPushConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attributes: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.attributes),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.attributes),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     push_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.pushEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.pushEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1771,14 +1771,14 @@ export function pubsubSubscriptionPushConfigToHclTerraform(struct?: PubsubSubscr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionPushConfigOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionPushConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1900,31 +1900,31 @@ export interface PubsubSubscriptionRetryPolicy {
 }
 
 export function pubsubSubscriptionRetryPolicyToTerraform(struct?: PubsubSubscriptionRetryPolicyOutputReference | PubsubSubscriptionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_backoff: cdktf.stringToTerraform(struct!.maximumBackoff),
-    minimum_backoff: cdktf.stringToTerraform(struct!.minimumBackoff),
+    maximum_backoff: cdktn.stringToTerraform(struct!.maximumBackoff),
+    minimum_backoff: cdktn.stringToTerraform(struct!.minimumBackoff),
   }
 }
 
 
 export function pubsubSubscriptionRetryPolicyToHclTerraform(struct?: PubsubSubscriptionRetryPolicyOutputReference | PubsubSubscriptionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_backoff: {
-      value: cdktf.stringToHclTerraform(struct!.maximumBackoff),
+      value: cdktn.stringToHclTerraform(struct!.maximumBackoff),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     minimum_backoff: {
-      value: cdktf.stringToHclTerraform(struct!.minimumBackoff),
+      value: cdktn.stringToHclTerraform(struct!.minimumBackoff),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1935,14 +1935,14 @@ export function pubsubSubscriptionRetryPolicyToHclTerraform(struct?: PubsubSubsc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2020,39 +2020,39 @@ export interface PubsubSubscriptionTimeouts {
   readonly update?: string;
 }
 
-export function pubsubSubscriptionTimeoutsToTerraform(struct?: PubsubSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pubsubSubscriptionTimeoutsToTerraform(struct?: PubsubSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function pubsubSubscriptionTimeoutsToHclTerraform(struct?: PubsubSubscriptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pubsubSubscriptionTimeoutsToHclTerraform(struct?: PubsubSubscriptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2063,19 +2063,19 @@ export function pubsubSubscriptionTimeoutsToHclTerraform(struct?: PubsubSubscrip
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PubsubSubscriptionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PubsubSubscriptionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PubsubSubscriptionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PubsubSubscriptionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2096,7 +2096,7 @@ export class PubsubSubscriptionTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PubsubSubscriptionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PubsubSubscriptionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2104,7 +2104,7 @@ export class PubsubSubscriptionTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2169,7 +2169,7 @@ export class PubsubSubscriptionTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription google_pubsub_subscription}
 */
-export class PubsubSubscription extends cdktf.TerraformResource {
+export class PubsubSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2180,14 +2180,14 @@ export class PubsubSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PubsubSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PubsubSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PubsubSubscription to import
   * @param importFromId The id of the existing PubsubSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PubsubSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_pubsub_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_pubsub_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -2259,17 +2259,17 @@ export class PubsubSubscription extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // enable_exactly_once_delivery - computed: false, optional: true, required: false
-  private _enableExactlyOnceDelivery?: boolean | cdktf.IResolvable; 
+  private _enableExactlyOnceDelivery?: boolean | cdktn.IResolvable; 
   public get enableExactlyOnceDelivery() {
     return this.getBooleanAttribute('enable_exactly_once_delivery');
   }
-  public set enableExactlyOnceDelivery(value: boolean | cdktf.IResolvable) {
+  public set enableExactlyOnceDelivery(value: boolean | cdktn.IResolvable) {
     this._enableExactlyOnceDelivery = value;
   }
   public resetEnableExactlyOnceDelivery() {
@@ -2281,11 +2281,11 @@ export class PubsubSubscription extends cdktf.TerraformResource {
   }
 
   // enable_message_ordering - computed: false, optional: true, required: false
-  private _enableMessageOrdering?: boolean | cdktf.IResolvable; 
+  private _enableMessageOrdering?: boolean | cdktn.IResolvable; 
   public get enableMessageOrdering() {
     return this.getBooleanAttribute('enable_message_ordering');
   }
-  public set enableMessageOrdering(value: boolean | cdktf.IResolvable) {
+  public set enableMessageOrdering(value: boolean | cdktn.IResolvable) {
     this._enableMessageOrdering = value;
   }
   public resetEnableMessageOrdering() {
@@ -2390,11 +2390,11 @@ export class PubsubSubscription extends cdktf.TerraformResource {
   }
 
   // retain_acked_messages - computed: false, optional: true, required: false
-  private _retainAckedMessages?: boolean | cdktf.IResolvable; 
+  private _retainAckedMessages?: boolean | cdktn.IResolvable; 
   public get retainAckedMessages() {
     return this.getBooleanAttribute('retain_acked_messages');
   }
-  public set retainAckedMessages(value: boolean | cdktf.IResolvable) {
+  public set retainAckedMessages(value: boolean | cdktn.IResolvable) {
     this._retainAckedMessages = value;
   }
   public resetRetainAckedMessages() {
@@ -2406,7 +2406,7 @@ export class PubsubSubscription extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -2493,7 +2493,7 @@ export class PubsubSubscription extends cdktf.TerraformResource {
   public get messageTransforms() {
     return this._messageTransforms;
   }
-  public putMessageTransforms(value: PubsubSubscriptionMessageTransforms[] | cdktf.IResolvable) {
+  public putMessageTransforms(value: PubsubSubscriptionMessageTransforms[] | cdktn.IResolvable) {
     this._messageTransforms.internalValue = value;
   }
   public resetMessageTransforms() {
@@ -2558,22 +2558,22 @@ export class PubsubSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ack_deadline_seconds: cdktf.numberToTerraform(this._ackDeadlineSeconds),
-      enable_exactly_once_delivery: cdktf.booleanToTerraform(this._enableExactlyOnceDelivery),
-      enable_message_ordering: cdktf.booleanToTerraform(this._enableMessageOrdering),
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      message_retention_duration: cdktf.stringToTerraform(this._messageRetentionDuration),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      retain_acked_messages: cdktf.booleanToTerraform(this._retainAckedMessages),
-      topic: cdktf.stringToTerraform(this._topic),
+      ack_deadline_seconds: cdktn.numberToTerraform(this._ackDeadlineSeconds),
+      enable_exactly_once_delivery: cdktn.booleanToTerraform(this._enableExactlyOnceDelivery),
+      enable_message_ordering: cdktn.booleanToTerraform(this._enableMessageOrdering),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      message_retention_duration: cdktn.stringToTerraform(this._messageRetentionDuration),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      retain_acked_messages: cdktn.booleanToTerraform(this._retainAckedMessages),
+      topic: cdktn.stringToTerraform(this._topic),
       bigquery_config: pubsubSubscriptionBigqueryConfigToTerraform(this._bigqueryConfig.internalValue),
       cloud_storage_config: pubsubSubscriptionCloudStorageConfigToTerraform(this._cloudStorageConfig.internalValue),
       dead_letter_policy: pubsubSubscriptionDeadLetterPolicyToTerraform(this._deadLetterPolicy.internalValue),
       expiration_policy: pubsubSubscriptionExpirationPolicyToTerraform(this._expirationPolicy.internalValue),
-      message_transforms: cdktf.listMapper(pubsubSubscriptionMessageTransformsToTerraform, true)(this._messageTransforms.internalValue),
+      message_transforms: cdktn.listMapper(pubsubSubscriptionMessageTransformsToTerraform, true)(this._messageTransforms.internalValue),
       push_config: pubsubSubscriptionPushConfigToTerraform(this._pushConfig.internalValue),
       retry_policy: pubsubSubscriptionRetryPolicyToTerraform(this._retryPolicy.internalValue),
       timeouts: pubsubSubscriptionTimeoutsToTerraform(this._timeouts.internalValue),
@@ -2583,67 +2583,67 @@ export class PubsubSubscription extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       ack_deadline_seconds: {
-        value: cdktf.numberToHclTerraform(this._ackDeadlineSeconds),
+        value: cdktn.numberToHclTerraform(this._ackDeadlineSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enable_exactly_once_delivery: {
-        value: cdktf.booleanToHclTerraform(this._enableExactlyOnceDelivery),
+        value: cdktn.booleanToHclTerraform(this._enableExactlyOnceDelivery),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_message_ordering: {
-        value: cdktf.booleanToHclTerraform(this._enableMessageOrdering),
+        value: cdktn.booleanToHclTerraform(this._enableMessageOrdering),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       message_retention_duration: {
-        value: cdktf.stringToHclTerraform(this._messageRetentionDuration),
+        value: cdktn.stringToHclTerraform(this._messageRetentionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retain_acked_messages: {
-        value: cdktf.booleanToHclTerraform(this._retainAckedMessages),
+        value: cdktn.booleanToHclTerraform(this._retainAckedMessages),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       topic: {
-        value: cdktf.stringToHclTerraform(this._topic),
+        value: cdktn.stringToHclTerraform(this._topic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2673,7 +2673,7 @@ export class PubsubSubscription extends cdktf.TerraformResource {
         storageClassType: "PubsubSubscriptionExpirationPolicyList",
       },
       message_transforms: {
-        value: cdktf.listMapperHcl(pubsubSubscriptionMessageTransformsToHclTerraform, true)(this._messageTransforms.internalValue),
+        value: cdktn.listMapperHcl(pubsubSubscriptionMessageTransformsToHclTerraform, true)(this._messageTransforms.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PubsubSubscriptionMessageTransformsList",

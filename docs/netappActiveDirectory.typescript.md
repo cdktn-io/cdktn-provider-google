@@ -307,7 +307,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -496,7 +496,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NetappActiveDirectory resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a NetappActiveDirectory resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -568,7 +568,7 @@ import { netappActiveDirectory } from '@cdktn/provider-google'
 netappActiveDirectory.NetappActiveDirectory.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a NetappActiveDirectory resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NetappActiveDirectory resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.scope"></a>
 
@@ -598,7 +598,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NetappActiveDirectory to import is found.
 
@@ -609,64 +609,64 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.stateDetails">stateDetails</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference">NetappActiveDirectoryTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administratorsInput">administratorsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryptionInput">aesEncryptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryptionInput">aesEncryptionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperatorsInput">backupOperatorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dnsInput">dnsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domainInput">domainInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnectionsInput">encryptDcConnectionsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnectionsInput">encryptDcConnectionsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostnameInput">kdcHostnameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIpInput">kdcIpInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigningInput">ldapSigningInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigningInput">ldapSigningInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefixInput">netBiosPrefixInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdapInput">nfsUsersWithLdapInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdapInput">nfsUsersWithLdapInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnitInput">organizationalUnitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperatorsInput">securityOperatorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.siteInput">siteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administrators">administrators</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryption">aesEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryption">aesEncryption</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperators">backupOperators</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dns">dns</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domain">domain</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnections">encryptDcConnections</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnections">encryptDcConnections</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostname">kdcHostname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIp">kdcIp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigning">ldapSigning</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigning">ldapSigning</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefix">netBiosPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdap">nfsUsersWithLdap</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdap">nfsUsersWithLdap</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnit">organizationalUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.password">password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -694,7 +694,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -744,7 +744,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -754,7 +754,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -764,7 +764,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -784,7 +784,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -794,7 +794,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -804,7 +804,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -814,7 +814,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -834,7 +834,7 @@ public readonly createTime: string;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -864,7 +864,7 @@ public readonly stateDetails: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -894,7 +894,7 @@ public readonly administratorsInput: string[];
 public readonly aesEncryptionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -944,7 +944,7 @@ public readonly domainInput: string;
 public readonly encryptDcConnectionsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -994,7 +994,7 @@ public readonly labelsInput: {[ key: string ]: string};
 public readonly ldapSigningInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly netBiosPrefixInput: string;
 public readonly nfsUsersWithLdapInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly siteInput: string;
 public readonly timeoutsInput: IResolvable | NetappActiveDirectoryTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly administrators: string[];
 public readonly aesEncryption: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly domain: string;
 public readonly encryptDcConnections: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly labels: {[ key: string ]: string};
 public readonly ldapSigning: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1264,7 +1264,7 @@ public readonly netBiosPrefix: string;
 public readonly nfsUsersWithLdap: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1362,13 +1362,13 @@ const netappActiveDirectoryConfig: netappActiveDirectory.NetappActiveDirectoryCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dns">dns</a></code> | <code>string</code> | Comma separated list of DNS server IP addresses for the Active Directory domain. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.domain">domain</a></code> | <code>string</code> | Fully qualified domain name for the Active Directory domain. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.location">location</a></code> | <code>string</code> | Name of the region for the policy to apply to. |
@@ -1377,16 +1377,16 @@ const netappActiveDirectoryConfig: netappActiveDirectory.NetappActiveDirectoryCo
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.password">password</a></code> | <code>string</code> | Password for specified username. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.username">username</a></code> | <code>string</code> | Username for the Active Directory account with permissions to create the compute account within the specified organizational unit. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.administrators">administrators</a></code> | <code>string[]</code> | Domain user accounts to be added to the local Administrators group of the SMB service. |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.aesEncryption">aesEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.aesEncryption">aesEncryption</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.backupOperators">backupOperators</a></code> | <code>string[]</code> | Domain user/group accounts to be added to the Backup Operators group of the SMB service. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.encryptDcConnections">encryptDcConnections</a></code> | <code>boolean \| cdktf.IResolvable</code> | If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.encryptDcConnections">encryptDcConnections</a></code> | <code>boolean \| cdktn.IResolvable</code> | If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#id NetappActiveDirectory#id}. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcHostname">kdcHostname</a></code> | <code>string</code> | Hostname of the Active Directory server used as Kerberos Key Distribution Center. Only required for volumes using kerberized NFSv4.1. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcIp">kdcIp</a></code> | <code>string</code> | IP address of the Active Directory server used as Kerberos Key Distribution Center. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.ldapSigning">ldapSigning</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.nfsUsersWithLdap">nfsUsersWithLdap</a></code> | <code>boolean \| cdktf.IResolvable</code> | Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.ldapSigning">ldapSigning</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.nfsUsersWithLdap">nfsUsersWithLdap</a></code> | <code>boolean \| cdktn.IResolvable</code> | Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.organizationalUnit">organizationalUnit</a></code> | <code>string</code> | Name of the Organizational Unit where you intend to create the computer account for NetApp Volumes. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#project NetappActiveDirectory#project}. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.securityOperators">securityOperators</a></code> | <code>string[]</code> | Domain accounts that require elevated privileges such as 'SeSecurityPrivilege' to manage security logs. Comma-separated list. |
@@ -1401,7 +1401,7 @@ const netappActiveDirectoryConfig: netappActiveDirectory.NetappActiveDirectoryCo
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1411,7 +1411,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1421,7 +1421,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1431,7 +1431,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1441,7 +1441,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1451,7 +1451,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1461,7 +1461,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly aesEncryption: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory.
 
@@ -1634,7 +1634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly encryptDcConnections: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted.
 
@@ -1708,7 +1708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ldapSigning: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether or not the LDAP traffic needs to be signed.
 
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nfsUsersWithLdap: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes.
 
@@ -1874,14 +1874,14 @@ new netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2054,7 +2054,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2099,7 +2099,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2193,7 +2193,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | NetappActiveDirectoryTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
 
 ---
 

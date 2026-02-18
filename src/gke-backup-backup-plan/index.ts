@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GkeBackupBackupPlanConfig extends cdktf.TerraformMetaArguments {
+export interface GkeBackupBackupPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * The source cluster from which Backups will be created via this BackupPlan.
   *
@@ -26,7 +26,7 @@ export interface GkeBackupBackupPlanConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#deactivated GkeBackupBackupPlan#deactivated}
   */
-  readonly deactivated?: boolean | cdktf.IResolvable;
+  readonly deactivated?: boolean | cdktn.IResolvable;
   /**
   * User specified descriptive string for this BackupPlan.
   *
@@ -105,24 +105,24 @@ export interface GkeBackupBackupPlanBackupConfigEncryptionKey {
 }
 
 export function gkeBackupBackupPlanBackupConfigEncryptionKeyToTerraform(struct?: GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference | GkeBackupBackupPlanBackupConfigEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gcp_kms_encryption_key: cdktf.stringToTerraform(struct!.gcpKmsEncryptionKey),
+    gcp_kms_encryption_key: cdktn.stringToTerraform(struct!.gcpKmsEncryptionKey),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupConfigEncryptionKeyToHclTerraform(struct?: GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference | GkeBackupBackupPlanBackupConfigEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gcp_kms_encryption_key: {
-      value: cdktf.stringToHclTerraform(struct!.gcpKmsEncryptionKey),
+      value: cdktn.stringToHclTerraform(struct!.gcpKmsEncryptionKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -133,14 +133,14 @@ export function gkeBackupBackupPlanBackupConfigEncryptionKeyToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupConfigEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -193,32 +193,32 @@ export interface GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNa
   readonly namespace: string;
 }
 
-export function gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
-export function gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToHclTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToHclTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -229,9 +229,9 @@ export function gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNam
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -239,11 +239,11 @@ export class GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -260,14 +260,14 @@ export class GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._namespace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -306,15 +306,15 @@ export class GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesO
   }
 }
 
-export class GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList extends cdktf.ComplexList {
-  public internalValue? : GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames[] | cdktf.IResolvable
+export class GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList extends cdktn.ComplexList {
+  public internalValue? : GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -331,28 +331,28 @@ export interface GkeBackupBackupPlanBackupConfigSelectedApplications {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#namespaced_names GkeBackupBackupPlan#namespaced_names}
   */
-  readonly namespacedNames: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames[] | cdktf.IResolvable;
+  readonly namespacedNames: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames[] | cdktn.IResolvable;
 }
 
 export function gkeBackupBackupPlanBackupConfigSelectedApplicationsToTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference | GkeBackupBackupPlanBackupConfigSelectedApplications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespaced_names: cdktf.listMapper(gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToTerraform, true)(struct!.namespacedNames),
+    namespaced_names: cdktn.listMapper(gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToTerraform, true)(struct!.namespacedNames),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupConfigSelectedApplicationsToHclTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference | GkeBackupBackupPlanBackupConfigSelectedApplications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespaced_names: {
-      value: cdktf.listMapperHcl(gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToHclTerraform, true)(struct!.namespacedNames),
+      value: cdktn.listMapperHcl(gkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesToHclTerraform, true)(struct!.namespacedNames),
       isBlock: true,
       type: "list",
       storageClassType: "GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNamesList",
@@ -363,14 +363,14 @@ export function gkeBackupBackupPlanBackupConfigSelectedApplicationsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -400,7 +400,7 @@ export class GkeBackupBackupPlanBackupConfigSelectedApplicationsOutputReference 
   public get namespacedNames() {
     return this._namespacedNames;
   }
-  public putNamespacedNames(value: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames[] | cdktf.IResolvable) {
+  public putNamespacedNames(value: GkeBackupBackupPlanBackupConfigSelectedApplicationsNamespacedNames[] | cdktn.IResolvable) {
     this._namespacedNames.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -418,24 +418,24 @@ export interface GkeBackupBackupPlanBackupConfigSelectedNamespaces {
 }
 
 export function gkeBackupBackupPlanBackupConfigSelectedNamespacesToTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference | GkeBackupBackupPlanBackupConfigSelectedNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.namespaces),
+    namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.namespaces),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupConfigSelectedNamespacesToHclTerraform(struct?: GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference | GkeBackupBackupPlanBackupConfigSelectedNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespaces: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.namespaces),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.namespaces),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -446,14 +446,14 @@ export function gkeBackupBackupPlanBackupConfigSelectedNamespacesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupConfigSelectedNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -497,21 +497,21 @@ export interface GkeBackupBackupPlanBackupConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#all_namespaces GkeBackupBackupPlan#all_namespaces}
   */
-  readonly allNamespaces?: boolean | cdktf.IResolvable;
+  readonly allNamespaces?: boolean | cdktn.IResolvable;
   /**
   * This flag specifies whether Kubernetes Secret resources should be included
   * when they fall into the scope of Backups.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#include_secrets GkeBackupBackupPlan#include_secrets}
   */
-  readonly includeSecrets?: boolean | cdktf.IResolvable;
+  readonly includeSecrets?: boolean | cdktn.IResolvable;
   /**
   * This flag specifies whether volume data should be backed up when PVCs are
   * included in the scope of a Backup.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#include_volume_data GkeBackupBackupPlan#include_volume_data}
   */
-  readonly includeVolumeData?: boolean | cdktf.IResolvable;
+  readonly includeVolumeData?: boolean | cdktn.IResolvable;
   /**
   * This flag specifies whether Backups will not fail when
   * Backup for GKE detects Kubernetes configuration that is
@@ -519,7 +519,7 @@ export interface GkeBackupBackupPlanBackupConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#permissive_mode GkeBackupBackupPlan#permissive_mode}
   */
-  readonly permissiveMode?: boolean | cdktf.IResolvable;
+  readonly permissiveMode?: boolean | cdktn.IResolvable;
   /**
   * encryption_key block
   *
@@ -541,15 +541,15 @@ export interface GkeBackupBackupPlanBackupConfig {
 }
 
 export function gkeBackupBackupPlanBackupConfigToTerraform(struct?: GkeBackupBackupPlanBackupConfigOutputReference | GkeBackupBackupPlanBackupConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_namespaces: cdktf.booleanToTerraform(struct!.allNamespaces),
-    include_secrets: cdktf.booleanToTerraform(struct!.includeSecrets),
-    include_volume_data: cdktf.booleanToTerraform(struct!.includeVolumeData),
-    permissive_mode: cdktf.booleanToTerraform(struct!.permissiveMode),
+    all_namespaces: cdktn.booleanToTerraform(struct!.allNamespaces),
+    include_secrets: cdktn.booleanToTerraform(struct!.includeSecrets),
+    include_volume_data: cdktn.booleanToTerraform(struct!.includeVolumeData),
+    permissive_mode: cdktn.booleanToTerraform(struct!.permissiveMode),
     encryption_key: gkeBackupBackupPlanBackupConfigEncryptionKeyToTerraform(struct!.encryptionKey),
     selected_applications: gkeBackupBackupPlanBackupConfigSelectedApplicationsToTerraform(struct!.selectedApplications),
     selected_namespaces: gkeBackupBackupPlanBackupConfigSelectedNamespacesToTerraform(struct!.selectedNamespaces),
@@ -558,31 +558,31 @@ export function gkeBackupBackupPlanBackupConfigToTerraform(struct?: GkeBackupBac
 
 
 export function gkeBackupBackupPlanBackupConfigToHclTerraform(struct?: GkeBackupBackupPlanBackupConfigOutputReference | GkeBackupBackupPlanBackupConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     all_namespaces: {
-      value: cdktf.booleanToHclTerraform(struct!.allNamespaces),
+      value: cdktn.booleanToHclTerraform(struct!.allNamespaces),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_secrets: {
-      value: cdktf.booleanToHclTerraform(struct!.includeSecrets),
+      value: cdktn.booleanToHclTerraform(struct!.includeSecrets),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_volume_data: {
-      value: cdktf.booleanToHclTerraform(struct!.includeVolumeData),
+      value: cdktn.booleanToHclTerraform(struct!.includeVolumeData),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     permissive_mode: {
-      value: cdktf.booleanToHclTerraform(struct!.permissiveMode),
+      value: cdktn.booleanToHclTerraform(struct!.permissiveMode),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -611,14 +611,14 @@ export function gkeBackupBackupPlanBackupConfigToHclTerraform(struct?: GkeBackup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupConfigOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -680,11 +680,11 @@ export class GkeBackupBackupPlanBackupConfigOutputReference extends cdktf.Comple
   }
 
   // all_namespaces - computed: false, optional: true, required: false
-  private _allNamespaces?: boolean | cdktf.IResolvable; 
+  private _allNamespaces?: boolean | cdktn.IResolvable; 
   public get allNamespaces() {
     return this.getBooleanAttribute('all_namespaces');
   }
-  public set allNamespaces(value: boolean | cdktf.IResolvable) {
+  public set allNamespaces(value: boolean | cdktn.IResolvable) {
     this._allNamespaces = value;
   }
   public resetAllNamespaces() {
@@ -696,11 +696,11 @@ export class GkeBackupBackupPlanBackupConfigOutputReference extends cdktf.Comple
   }
 
   // include_secrets - computed: true, optional: true, required: false
-  private _includeSecrets?: boolean | cdktf.IResolvable; 
+  private _includeSecrets?: boolean | cdktn.IResolvable; 
   public get includeSecrets() {
     return this.getBooleanAttribute('include_secrets');
   }
-  public set includeSecrets(value: boolean | cdktf.IResolvable) {
+  public set includeSecrets(value: boolean | cdktn.IResolvable) {
     this._includeSecrets = value;
   }
   public resetIncludeSecrets() {
@@ -712,11 +712,11 @@ export class GkeBackupBackupPlanBackupConfigOutputReference extends cdktf.Comple
   }
 
   // include_volume_data - computed: true, optional: true, required: false
-  private _includeVolumeData?: boolean | cdktf.IResolvable; 
+  private _includeVolumeData?: boolean | cdktn.IResolvable; 
   public get includeVolumeData() {
     return this.getBooleanAttribute('include_volume_data');
   }
-  public set includeVolumeData(value: boolean | cdktf.IResolvable) {
+  public set includeVolumeData(value: boolean | cdktn.IResolvable) {
     this._includeVolumeData = value;
   }
   public resetIncludeVolumeData() {
@@ -728,11 +728,11 @@ export class GkeBackupBackupPlanBackupConfigOutputReference extends cdktf.Comple
   }
 
   // permissive_mode - computed: false, optional: true, required: false
-  private _permissiveMode?: boolean | cdktf.IResolvable; 
+  private _permissiveMode?: boolean | cdktn.IResolvable; 
   public get permissiveMode() {
     return this.getBooleanAttribute('permissive_mode');
   }
-  public set permissiveMode(value: boolean | cdktf.IResolvable) {
+  public set permissiveMode(value: boolean | cdktn.IResolvable) {
     this._permissiveMode = value;
   }
   public resetPermissiveMode() {
@@ -801,24 +801,24 @@ export interface GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysO
 }
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeekToTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeekOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.daysOfWeek),
+    days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeekToHclTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeekOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeek): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_week: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -829,14 +829,14 @@ export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeekOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeekOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -899,38 +899,38 @@ export interface GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingl
 }
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDateToTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDateOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.numberToTerraform(struct!.day),
-    month: cdktf.numberToTerraform(struct!.month),
-    year: cdktf.numberToTerraform(struct!.year),
+    day: cdktn.numberToTerraform(struct!.day),
+    month: cdktn.numberToTerraform(struct!.month),
+    year: cdktn.numberToTerraform(struct!.year),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDateToHclTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDateOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.numberToHclTerraform(struct!.day),
+      value: cdktn.numberToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month: {
-      value: cdktf.numberToHclTerraform(struct!.month),
+      value: cdktn.numberToHclTerraform(struct!.month),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     year: {
-      value: cdktf.numberToHclTerraform(struct!.year),
+      value: cdktn.numberToHclTerraform(struct!.year),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -941,14 +941,14 @@ export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingle
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDateOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1061,45 +1061,45 @@ export interface GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStart
 }
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeToTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeToHclTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1110,14 +1110,14 @@ export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1232,7 +1232,7 @@ export interface GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#daily GkeBackupBackupPlan#daily}
   */
-  readonly daily?: boolean | cdktf.IResolvable;
+  readonly daily?: boolean | cdktn.IResolvable;
   /**
   * Specifies duration of the window in seconds with up to nine fractional digits,
   * terminated by 's'. Example: "3.5s". Restrictions for duration based on the
@@ -1266,14 +1266,14 @@ export interface GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows {
   readonly startTime: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTime;
 }
 
-export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    daily: cdktf.booleanToTerraform(struct!.daily),
-    duration: cdktf.stringToTerraform(struct!.duration),
+    daily: cdktn.booleanToTerraform(struct!.daily),
+    duration: cdktn.stringToTerraform(struct!.duration),
     days_of_week: gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsDaysOfWeekToTerraform(struct!.daysOfWeek),
     single_occurrence_date: gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsSingleOccurrenceDateToTerraform(struct!.singleOccurrenceDate),
     start_time: gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsStartTimeToTerraform(struct!.startTime),
@@ -1281,20 +1281,20 @@ export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToTerr
 }
 
 
-export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToHclTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToHclTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     daily: {
-      value: cdktf.booleanToHclTerraform(struct!.daily),
+      value: cdktn.booleanToHclTerraform(struct!.daily),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1323,9 +1323,9 @@ export function gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1333,11 +1333,11 @@ export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1366,7 +1366,7 @@ export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1376,7 +1376,7 @@ export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputRef
       this._singleOccurrenceDate.internalValue = undefined;
       this._startTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1392,11 +1392,11 @@ export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputRef
   }
 
   // daily - computed: false, optional: true, required: false
-  private _daily?: boolean | cdktf.IResolvable; 
+  private _daily?: boolean | cdktn.IResolvable; 
   public get daily() {
     return this.getBooleanAttribute('daily');
   }
-  public set daily(value: boolean | cdktf.IResolvable) {
+  public set daily(value: boolean | cdktn.IResolvable) {
     this._daily = value;
   }
   public resetDaily() {
@@ -1466,15 +1466,15 @@ export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsOutputRef
   }
 }
 
-export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsList extends cdktf.ComplexList {
-  public internalValue? : GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows[] | cdktf.IResolvable
+export class GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsList extends cdktn.ComplexList {
+  public internalValue? : GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1499,35 +1499,35 @@ export interface GkeBackupBackupPlanBackupScheduleRpoConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#exclusion_windows GkeBackupBackupPlan#exclusion_windows}
   */
-  readonly exclusionWindows?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows[] | cdktf.IResolvable;
+  readonly exclusionWindows?: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows[] | cdktn.IResolvable;
 }
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigToTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_rpo_minutes: cdktf.numberToTerraform(struct!.targetRpoMinutes),
-    exclusion_windows: cdktf.listMapper(gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToTerraform, true)(struct!.exclusionWindows),
+    target_rpo_minutes: cdktn.numberToTerraform(struct!.targetRpoMinutes),
+    exclusion_windows: cdktn.listMapper(gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToTerraform, true)(struct!.exclusionWindows),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupScheduleRpoConfigToHclTerraform(struct?: GkeBackupBackupPlanBackupScheduleRpoConfigOutputReference | GkeBackupBackupPlanBackupScheduleRpoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_rpo_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.targetRpoMinutes),
+      value: cdktn.numberToHclTerraform(struct!.targetRpoMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     exclusion_windows: {
-      value: cdktf.listMapperHcl(gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToHclTerraform, true)(struct!.exclusionWindows),
+      value: cdktn.listMapperHcl(gkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsToHclTerraform, true)(struct!.exclusionWindows),
       isBlock: true,
       type: "list",
       storageClassType: "GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindowsList",
@@ -1538,14 +1538,14 @@ export function gkeBackupBackupPlanBackupScheduleRpoConfigToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupScheduleRpoConfigOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupScheduleRpoConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1594,7 +1594,7 @@ export class GkeBackupBackupPlanBackupScheduleRpoConfigOutputReference extends c
   public get exclusionWindows() {
     return this._exclusionWindows;
   }
-  public putExclusionWindows(value: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows[] | cdktf.IResolvable) {
+  public putExclusionWindows(value: GkeBackupBackupPlanBackupScheduleRpoConfigExclusionWindows[] | cdktn.IResolvable) {
     this._exclusionWindows.internalValue = value;
   }
   public resetExclusionWindows() {
@@ -1621,7 +1621,7 @@ export interface GkeBackupBackupPlanBackupSchedule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#paused GkeBackupBackupPlan#paused}
   */
-  readonly paused?: boolean | cdktf.IResolvable;
+  readonly paused?: boolean | cdktn.IResolvable;
   /**
   * rpo_config block
   *
@@ -1631,32 +1631,32 @@ export interface GkeBackupBackupPlanBackupSchedule {
 }
 
 export function gkeBackupBackupPlanBackupScheduleToTerraform(struct?: GkeBackupBackupPlanBackupScheduleOutputReference | GkeBackupBackupPlanBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cron_schedule: cdktf.stringToTerraform(struct!.cronSchedule),
-    paused: cdktf.booleanToTerraform(struct!.paused),
+    cron_schedule: cdktn.stringToTerraform(struct!.cronSchedule),
+    paused: cdktn.booleanToTerraform(struct!.paused),
     rpo_config: gkeBackupBackupPlanBackupScheduleRpoConfigToTerraform(struct!.rpoConfig),
   }
 }
 
 
 export function gkeBackupBackupPlanBackupScheduleToHclTerraform(struct?: GkeBackupBackupPlanBackupScheduleOutputReference | GkeBackupBackupPlanBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cron_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.cronSchedule),
+      value: cdktn.stringToHclTerraform(struct!.cronSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     paused: {
-      value: cdktf.booleanToHclTerraform(struct!.paused),
+      value: cdktn.booleanToHclTerraform(struct!.paused),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1673,14 +1673,14 @@ export function gkeBackupBackupPlanBackupScheduleToHclTerraform(struct?: GkeBack
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanBackupScheduleOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanBackupScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1734,11 +1734,11 @@ export class GkeBackupBackupPlanBackupScheduleOutputReference extends cdktf.Comp
   }
 
   // paused - computed: true, optional: true, required: false
-  private _paused?: boolean | cdktf.IResolvable; 
+  private _paused?: boolean | cdktn.IResolvable; 
   public get paused() {
     return this.getBooleanAttribute('paused');
   }
-  public set paused(value: boolean | cdktf.IResolvable) {
+  public set paused(value: boolean | cdktn.IResolvable) {
     this._paused = value;
   }
   public resetPaused() {
@@ -1801,42 +1801,42 @@ export interface GkeBackupBackupPlanRetentionPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#locked GkeBackupBackupPlan#locked}
   */
-  readonly locked?: boolean | cdktf.IResolvable;
+  readonly locked?: boolean | cdktn.IResolvable;
 }
 
 export function gkeBackupBackupPlanRetentionPolicyToTerraform(struct?: GkeBackupBackupPlanRetentionPolicyOutputReference | GkeBackupBackupPlanRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup_delete_lock_days: cdktf.numberToTerraform(struct!.backupDeleteLockDays),
-    backup_retain_days: cdktf.numberToTerraform(struct!.backupRetainDays),
-    locked: cdktf.booleanToTerraform(struct!.locked),
+    backup_delete_lock_days: cdktn.numberToTerraform(struct!.backupDeleteLockDays),
+    backup_retain_days: cdktn.numberToTerraform(struct!.backupRetainDays),
+    locked: cdktn.booleanToTerraform(struct!.locked),
   }
 }
 
 
 export function gkeBackupBackupPlanRetentionPolicyToHclTerraform(struct?: GkeBackupBackupPlanRetentionPolicyOutputReference | GkeBackupBackupPlanRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup_delete_lock_days: {
-      value: cdktf.numberToHclTerraform(struct!.backupDeleteLockDays),
+      value: cdktn.numberToHclTerraform(struct!.backupDeleteLockDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     backup_retain_days: {
-      value: cdktf.numberToHclTerraform(struct!.backupRetainDays),
+      value: cdktn.numberToHclTerraform(struct!.backupRetainDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     locked: {
-      value: cdktf.booleanToHclTerraform(struct!.locked),
+      value: cdktn.booleanToHclTerraform(struct!.locked),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1847,14 +1847,14 @@ export function gkeBackupBackupPlanRetentionPolicyToHclTerraform(struct?: GkeBac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanRetentionPolicyOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanRetentionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1924,11 +1924,11 @@ export class GkeBackupBackupPlanRetentionPolicyOutputReference extends cdktf.Com
   }
 
   // locked - computed: true, optional: true, required: false
-  private _locked?: boolean | cdktf.IResolvable; 
+  private _locked?: boolean | cdktn.IResolvable; 
   public get locked() {
     return this.getBooleanAttribute('locked');
   }
-  public set locked(value: boolean | cdktf.IResolvable) {
+  public set locked(value: boolean | cdktn.IResolvable) {
     this._locked = value;
   }
   public resetLocked() {
@@ -1954,39 +1954,39 @@ export interface GkeBackupBackupPlanTimeouts {
   readonly update?: string;
 }
 
-export function gkeBackupBackupPlanTimeoutsToTerraform(struct?: GkeBackupBackupPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeBackupBackupPlanTimeoutsToTerraform(struct?: GkeBackupBackupPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function gkeBackupBackupPlanTimeoutsToHclTerraform(struct?: GkeBackupBackupPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeBackupBackupPlanTimeoutsToHclTerraform(struct?: GkeBackupBackupPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1997,19 +1997,19 @@ export function gkeBackupBackupPlanTimeoutsToHclTerraform(struct?: GkeBackupBack
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupBackupPlanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GkeBackupBackupPlanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GkeBackupBackupPlanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeBackupBackupPlanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2030,7 +2030,7 @@ export class GkeBackupBackupPlanTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeBackupBackupPlanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeBackupBackupPlanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2038,7 +2038,7 @@ export class GkeBackupBackupPlanTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2103,7 +2103,7 @@ export class GkeBackupBackupPlanTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan google_gke_backup_backup_plan}
 */
-export class GkeBackupBackupPlan extends cdktf.TerraformResource {
+export class GkeBackupBackupPlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2114,14 +2114,14 @@ export class GkeBackupBackupPlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GkeBackupBackupPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GkeBackupBackupPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeBackupBackupPlan to import
   * @param importFromId The id of the existing GkeBackupBackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_backup_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeBackupBackupPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_backup_backup_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_backup_backup_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -2183,11 +2183,11 @@ export class GkeBackupBackupPlan extends cdktf.TerraformResource {
   }
 
   // deactivated - computed: true, optional: true, required: false
-  private _deactivated?: boolean | cdktf.IResolvable; 
+  private _deactivated?: boolean | cdktn.IResolvable; 
   public get deactivated() {
     return this.getBooleanAttribute('deactivated');
   }
-  public set deactivated(value: boolean | cdktf.IResolvable) {
+  public set deactivated(value: boolean | cdktn.IResolvable) {
     this._deactivated = value;
   }
   public resetDeactivated() {
@@ -2215,7 +2215,7 @@ export class GkeBackupBackupPlan extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -2315,7 +2315,7 @@ export class GkeBackupBackupPlan extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -2395,14 +2395,14 @@ export class GkeBackupBackupPlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster: cdktf.stringToTerraform(this._cluster),
-      deactivated: cdktf.booleanToTerraform(this._deactivated),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      cluster: cdktn.stringToTerraform(this._cluster),
+      deactivated: cdktn.booleanToTerraform(this._deactivated),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       backup_config: gkeBackupBackupPlanBackupConfigToTerraform(this._backupConfig.internalValue),
       backup_schedule: gkeBackupBackupPlanBackupScheduleToTerraform(this._backupSchedule.internalValue),
       retention_policy: gkeBackupBackupPlanRetentionPolicyToTerraform(this._retentionPolicy.internalValue),
@@ -2413,49 +2413,49 @@ export class GkeBackupBackupPlan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster: {
-        value: cdktf.stringToHclTerraform(this._cluster),
+        value: cdktn.stringToHclTerraform(this._cluster),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deactivated: {
-        value: cdktf.booleanToHclTerraform(this._deactivated),
+        value: cdktn.booleanToHclTerraform(this._deactivated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

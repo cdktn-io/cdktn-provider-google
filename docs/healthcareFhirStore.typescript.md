@@ -306,7 +306,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -400,7 +400,7 @@ public putNotificationConfigs(value: IResolvable | HealthcareFhirStoreNotificati
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putNotificationConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
 
 ---
 
@@ -412,7 +412,7 @@ public putStreamConfigs(value: IResolvable | HealthcareFhirStoreStreamConfigs[])
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putStreamConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
 
 ---
 
@@ -507,7 +507,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a HealthcareFhirStore resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a HealthcareFhirStore resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -579,7 +579,7 @@ import { healthcareFhirStore } from '@cdktn/provider-google'
 healthcareFhirStore.HealthcareFhirStore.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a HealthcareFhirStore resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a HealthcareFhirStore resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.generateConfigForImport.parameter.scope"></a>
 
@@ -609,7 +609,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the HealthcareFhirStore to import is found.
 
@@ -620,48 +620,48 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference">HealthcareFhirStoreNotificationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.notificationConfigs">notificationConfigs</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList">HealthcareFhirStoreNotificationConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.streamConfigs">streamConfigs</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList">HealthcareFhirStoreStreamConfigsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference">HealthcareFhirStoreTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.complexDataTypeReferenceParsingInput">complexDataTypeReferenceParsingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.datasetInput">datasetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.defaultSearchHandlingStrictInput">defaultSearchHandlingStrictInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableReferentialIntegrityInput">disableReferentialIntegrityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableResourceVersioningInput">disableResourceVersioningInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableHistoryImportInput">enableHistoryImportInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableUpdateCreateInput">enableUpdateCreateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.defaultSearchHandlingStrictInput">defaultSearchHandlingStrictInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableReferentialIntegrityInput">disableReferentialIntegrityInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableResourceVersioningInput">disableResourceVersioningInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableHistoryImportInput">enableHistoryImportInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableUpdateCreateInput">enableUpdateCreateInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.notificationConfigInput">notificationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfig">HealthcareFhirStoreNotificationConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.notificationConfigsInput">notificationConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.streamConfigsInput">streamConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.notificationConfigsInput">notificationConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.streamConfigsInput">streamConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.versionInput">versionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.complexDataTypeReferenceParsing">complexDataTypeReferenceParsing</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.dataset">dataset</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.defaultSearchHandlingStrict">defaultSearchHandlingStrict</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableReferentialIntegrity">disableReferentialIntegrity</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableResourceVersioning">disableResourceVersioning</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableHistoryImport">enableHistoryImport</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableUpdateCreate">enableUpdateCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.defaultSearchHandlingStrict">defaultSearchHandlingStrict</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableReferentialIntegrity">disableReferentialIntegrity</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.disableResourceVersioning">disableResourceVersioning</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableHistoryImport">enableHistoryImport</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.enableUpdateCreate">enableUpdateCreate</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -687,7 +687,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -737,7 +737,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -747,7 +747,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -757,7 +757,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -777,7 +777,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -787,7 +787,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -797,7 +797,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -807,7 +807,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -817,7 +817,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -867,7 +867,7 @@ public readonly streamConfigs: HealthcareFhirStoreStreamConfigsList;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -907,7 +907,7 @@ public readonly datasetInput: string;
 public readonly defaultSearchHandlingStrictInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -917,7 +917,7 @@ public readonly defaultSearchHandlingStrictInput: boolean | IResolvable;
 public readonly disableReferentialIntegrityInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -927,7 +927,7 @@ public readonly disableReferentialIntegrityInput: boolean | IResolvable;
 public readonly disableResourceVersioningInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -937,7 +937,7 @@ public readonly disableResourceVersioningInput: boolean | IResolvable;
 public readonly enableHistoryImportInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -947,7 +947,7 @@ public readonly enableHistoryImportInput: boolean | IResolvable;
 public readonly enableUpdateCreateInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -997,7 +997,7 @@ public readonly notificationConfigInput: HealthcareFhirStoreNotificationConfig;
 public readonly notificationConfigsInput: IResolvable | HealthcareFhirStoreNotificationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly notificationConfigsInput: IResolvable | HealthcareFhirStoreNotif
 public readonly streamConfigsInput: IResolvable | HealthcareFhirStoreStreamConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
 
 ---
 
@@ -1017,7 +1017,7 @@ public readonly streamConfigsInput: IResolvable | HealthcareFhirStoreStreamConfi
 public readonly timeoutsInput: IResolvable | HealthcareFhirStoreTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a>
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly dataset: string;
 public readonly defaultSearchHandlingStrict: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly defaultSearchHandlingStrict: boolean | IResolvable;
 public readonly disableReferentialIntegrity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly disableReferentialIntegrity: boolean | IResolvable;
 public readonly disableResourceVersioning: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1087,7 +1087,7 @@ public readonly disableResourceVersioning: boolean | IResolvable;
 public readonly enableHistoryImport: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly enableHistoryImport: boolean | IResolvable;
 public readonly enableUpdateCreate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1175,27 +1175,27 @@ const healthcareFhirStoreConfig: healthcareFhirStore.HealthcareFhirStoreConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.dataset">dataset</a></code> | <code>string</code> | Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.name">name</a></code> | <code>string</code> | The resource name for the FhirStore. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.version">version</a></code> | <code>string</code> | The FHIR specification version. Possible values: ["DSTU2", "STU3", "R4"]. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.complexDataTypeReferenceParsing">complexDataTypeReferenceParsing</a></code> | <code>string</code> | Enable parsing of references within complex FHIR data types such as Extensions. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.defaultSearchHandlingStrict">defaultSearchHandlingStrict</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, overrides the default search behavior for this FHIR store to handling=strict which returns an error for unrecognized search parameters. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.disableReferentialIntegrity">disableReferentialIntegrity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to disable referential integrity in this FHIR store. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.disableResourceVersioning">disableResourceVersioning</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to disable resource versioning for this FHIR store. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.enableHistoryImport">enableHistoryImport</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to allow the bulk import API to accept history bundles and directly insert historical resource versions into the FHIR store. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.enableUpdateCreate">enableUpdateCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this FHIR store has the updateCreate capability. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.defaultSearchHandlingStrict">defaultSearchHandlingStrict</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, overrides the default search behavior for this FHIR store to handling=strict which returns an error for unrecognized search parameters. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.disableReferentialIntegrity">disableReferentialIntegrity</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to disable referential integrity in this FHIR store. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.disableResourceVersioning">disableResourceVersioning</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to disable resource versioning for this FHIR store. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.enableHistoryImport">enableHistoryImport</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to allow the bulk import API to accept history bundles and directly insert historical resource versions into the FHIR store. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.enableUpdateCreate">enableUpdateCreate</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this FHIR store has the updateCreate capability. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-supplied key-value pairs used to organize FHIR stores. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfig">HealthcareFhirStoreNotificationConfig</a></code> | notification_config block. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.notificationConfigs">notificationConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]</code> | notification_configs block. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.streamConfigs">streamConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]</code> | stream_configs block. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.notificationConfigs">notificationConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]</code> | notification_configs block. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.streamConfigs">streamConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]</code> | stream_configs block. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1206,7 +1206,7 @@ const healthcareFhirStoreConfig: healthcareFhirStore.HealthcareFhirStoreConfig =
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1226,7 +1226,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1236,7 +1236,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1256,7 +1256,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly defaultSearchHandlingStrict: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, overrides the default search behavior for this FHIR store to handling=strict which returns an error for unrecognized search parameters.
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disableReferentialIntegrity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to disable referential integrity in this FHIR store.
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disableResourceVersioning: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to disable resource versioning for this FHIR store.
 
@@ -1397,7 +1397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableHistoryImport: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to allow the bulk import API to accept history bundles and directly insert historical resource versions into the FHIR store.
 
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableUpdateCreate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether this FHIR store has the updateCreate capability.
 
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly notificationConfigs: IResolvable | HealthcareFhirStoreNotificationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
 
 notification_configs block.
 
@@ -1512,7 +1512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly streamConfigs: IResolvable | HealthcareFhirStoreStreamConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
 
 stream_configs block.
 
@@ -1588,8 +1588,8 @@ const healthcareFhirStoreNotificationConfigs: healthcareFhirStore.HealthcareFhir
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs.property.pubsubTopic">pubsubTopic</a></code> | <code>string</code> | The Cloud Pub/Sub topic that notifications of changes are published on. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs.property.sendFullResource">sendFullResource</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to send full FHIR resource to this Pub/Sub topic for Create and Update operation. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs.property.sendPreviousResourceOnDelete">sendPreviousResourceOnDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to send full FHIR resource to this Pub/Sub topic for deleting FHIR resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs.property.sendFullResource">sendFullResource</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to send full FHIR resource to this Pub/Sub topic for Create and Update operation. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs.property.sendPreviousResourceOnDelete">sendPreviousResourceOnDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to send full FHIR resource to this Pub/Sub topic for deleting FHIR resource. |
 
 ---
 
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sendFullResource: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to send full FHIR resource to this Pub/Sub topic for Create and Update operation.
 
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sendPreviousResourceOnDelete: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to send full FHIR resource to this Pub/Sub topic for deleting FHIR resource.
 
@@ -1940,14 +1940,14 @@ new healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2117,7 +2117,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2211,7 +2211,7 @@ new healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2219,7 +2219,7 @@ new healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2285,7 +2285,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2320,7 +2320,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -2354,7 +2354,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | HealthcareFhirStoreNotificationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>[]
 
 ---
 
@@ -2371,7 +2371,7 @@ new healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2380,7 +2380,7 @@ new healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2568,7 +2568,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2602,12 +2602,12 @@ public resetSendPreviousResourceOnDelete(): void
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.pubsubTopicInput">pubsubTopicInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendFullResourceInput">sendFullResourceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendPreviousResourceOnDeleteInput">sendPreviousResourceOnDeleteInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendFullResourceInput">sendFullResourceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendPreviousResourceOnDeleteInput">sendPreviousResourceOnDeleteInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.pubsubTopic">pubsubTopic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendFullResource">sendFullResource</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendPreviousResourceOnDelete">sendPreviousResourceOnDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendFullResource">sendFullResource</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.sendPreviousResourceOnDelete">sendPreviousResourceOnDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a></code> | *No description.* |
 
 ---
 
@@ -2651,7 +2651,7 @@ public readonly pubsubTopicInput: string;
 public readonly sendFullResourceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2661,7 +2661,7 @@ public readonly sendFullResourceInput: boolean | IResolvable;
 public readonly sendPreviousResourceOnDeleteInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2681,7 +2681,7 @@ public readonly pubsubTopic: string;
 public readonly sendFullResource: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2691,7 +2691,7 @@ public readonly sendFullResource: boolean | IResolvable;
 public readonly sendPreviousResourceOnDelete: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2701,7 +2701,7 @@ public readonly sendPreviousResourceOnDelete: boolean | IResolvable;
 public readonly internalValue: IResolvable | HealthcareFhirStoreNotificationConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>
 
 ---
 
@@ -2718,14 +2718,14 @@ new healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2896,7 +2896,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3024,14 +3024,14 @@ new healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3202,7 +3202,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdatedPartitionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3324,14 +3324,14 @@ new healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3504,7 +3504,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3666,7 +3666,7 @@ new healthcareFhirStore.HealthcareFhirStoreStreamConfigsList(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3674,7 +3674,7 @@ new healthcareFhirStore.HealthcareFhirStoreStreamConfigsList(terraformResource: 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3740,7 +3740,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3775,7 +3775,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -3809,7 +3809,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | HealthcareFhirStoreStreamConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>[]
 
 ---
 
@@ -3826,7 +3826,7 @@ new healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3835,7 +3835,7 @@ new healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4023,7 +4023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4066,7 +4066,7 @@ public resetResourceTypes(): void
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.property.bigqueryDestinationInput">bigqueryDestinationInput</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsBigqueryDestination">HealthcareFhirStoreStreamConfigsBigqueryDestination</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.property.resourceTypesInput">resourceTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.property.resourceTypes">resourceTypes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a></code> | *No description.* |
 
 ---
 
@@ -4140,7 +4140,7 @@ public readonly resourceTypes: string[];
 public readonly internalValue: IResolvable | HealthcareFhirStoreStreamConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>
 
 ---
 
@@ -4157,14 +4157,14 @@ new healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4337,7 +4337,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4382,7 +4382,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4476,7 +4476,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | HealthcareFhirStoreTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a>
 
 ---
 

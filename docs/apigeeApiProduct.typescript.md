@@ -312,7 +312,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -394,7 +394,7 @@ public putAttributes(value: IResolvable | ApigeeApiProductAttributes[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.putAttributes.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
 
 ---
 
@@ -555,7 +555,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ApigeeApiProduct resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ApigeeApiProduct resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -627,7 +627,7 @@ import { apigeeApiProduct } from '@cdktn/provider-google'
 apigeeApiProduct.ApigeeApiProduct.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ApigeeApiProduct resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApigeeApiProduct resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.generateConfigForImport.parameter.scope"></a>
 
@@ -657,7 +657,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApigeeApiProduct to import is found.
 
@@ -668,19 +668,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.attributes">attributes</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList">ApigeeApiProductAttributesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.graphqlOperationGroup">graphqlOperationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference">ApigeeApiProductGraphqlOperationGroupOutputReference</a></code> | *No description.* |
@@ -690,7 +690,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference">ApigeeApiProductTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.apiResourcesInput">apiResourcesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.approvalTypeInput">approvalTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.attributesInput">attributesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.attributesInput">attributesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.environmentsInput">environmentsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -707,7 +707,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.quotaTimeUnitInput">quotaTimeUnitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.scopesInput">scopesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.spaceInput">spaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.apiResources">apiResources</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.approvalType">approvalType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.property.description">description</a></code> | <code>string</code> | *No description.* |
@@ -744,7 +744,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -794,7 +794,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -804,7 +804,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -814,7 +814,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -834,7 +834,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -844,7 +844,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -854,7 +854,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -864,7 +864,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -964,7 +964,7 @@ public readonly approvalTypeInput: string;
 public readonly attributesInput: IResolvable | ApigeeApiProductAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
 
 ---
 
@@ -1134,7 +1134,7 @@ public readonly spaceInput: string;
 public readonly timeoutsInput: IResolvable | ApigeeApiProductTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a>
 
 ---
 
@@ -1369,19 +1369,19 @@ const apigeeApiProductConfig: apigeeApiProduct.ApigeeApiProductConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.displayName">displayName</a></code> | <code>string</code> | Name displayed in the UI or developer portal to developers registering for API access. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.name">name</a></code> | <code>string</code> | Internal name of the API product. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.orgId">orgId</a></code> | <code>string</code> | The Apigee Organization associated with the Apigee API product, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.apiResources">apiResources</a></code> | <code>string[]</code> | Comma-separated list of API resources to be bundled in the API product. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.approvalType">approvalType</a></code> | <code>string</code> | Flag that specifies how API keys are approved to access the APIs defined by the API product. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.attributes">attributes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]</code> | attributes block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.attributes">attributes</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]</code> | attributes block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.description">description</a></code> | <code>string</code> | Description of the API product. Include key information about the API product that is not captured by other fields. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.environments">environments</a></code> | <code>string[]</code> | Comma-separated list of environment names to which the API product is bound. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.graphqlOperationGroup">graphqlOperationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup">ApigeeApiProductGraphqlOperationGroup</a></code> | graphql_operation_group block. |
@@ -1405,7 +1405,7 @@ const apigeeApiProductConfig: apigeeApiProduct.ApigeeApiProductConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1415,7 +1415,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1425,7 +1425,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1435,7 +1435,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1445,7 +1445,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1455,7 +1455,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1465,7 +1465,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly attributes: IResolvable | ApigeeApiProductAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
 
 attributes block.
 
@@ -1781,7 +1781,7 @@ const apigeeApiProductGraphqlOperationGroup: apigeeApiProduct.ApigeeApiProductGr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup.property.operationConfigs">operationConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]</code> | operation_configs block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup.property.operationConfigs">operationConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]</code> | operation_configs block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup.property.operationConfigType">operationConfigType</a></code> | <code>string</code> | Flag that specifes whether the configuration is for Apigee API proxy or a remote service. |
 
 ---
@@ -1792,7 +1792,7 @@ const apigeeApiProductGraphqlOperationGroup: apigeeApiProduct.ApigeeApiProductGr
 public readonly operationConfigs: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
 
 operation_configs block.
 
@@ -1831,8 +1831,8 @@ const apigeeApiProductGraphqlOperationGroupOperationConfigs: apigeeApiProduct.Ap
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs.property.apiSource">apiSource</a></code> | <code>string</code> | Required. Name of the API proxy endpoint or remote service with which the GraphQL operation and quota are associated. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs.property.attributes">attributes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]</code> | attributes block. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs.property.operations">operations</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]</code> | operations block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs.property.attributes">attributes</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]</code> | attributes block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs.property.operations">operations</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]</code> | operations block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs.property.quota">quota</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota">ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota</a></code> | quota block. |
 
 ---
@@ -1857,7 +1857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly attributes: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
 
 attributes block.
 
@@ -1871,7 +1871,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly operations: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
 
 operations block.
 
@@ -2067,7 +2067,7 @@ const apigeeApiProductGrpcOperationGroup: apigeeApiProduct.ApigeeApiProductGrpcO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup.property.operationConfigs">operationConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]</code> | operation_configs block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup.property.operationConfigs">operationConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]</code> | operation_configs block. |
 
 ---
 
@@ -2077,7 +2077,7 @@ const apigeeApiProductGrpcOperationGroup: apigeeApiProduct.ApigeeApiProductGrpcO
 public readonly operationConfigs: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
 
 operation_configs block.
 
@@ -2100,7 +2100,7 @@ const apigeeApiProductGrpcOperationGroupOperationConfigs: apigeeApiProduct.Apige
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs.property.apiSource">apiSource</a></code> | <code>string</code> | Required. Name of the API proxy with which the gRPC operation and quota are associated. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs.property.attributes">attributes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]</code> | attributes block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs.property.attributes">attributes</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]</code> | attributes block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs.property.methods">methods</a></code> | <code>string[]</code> | List of unqualified gRPC method names for the proxy to which quota will be applied. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs.property.quota">quota</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuota">ApigeeApiProductGrpcOperationGroupOperationConfigsQuota</a></code> | quota block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs.property.service">service</a></code> | <code>string</code> | Required. |
@@ -2127,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly attributes: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
 
 attributes block.
 
@@ -2310,7 +2310,7 @@ const apigeeApiProductOperationGroup: apigeeApiProduct.ApigeeApiProductOperation
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroup.property.operationConfigs">operationConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]</code> | operation_configs block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroup.property.operationConfigs">operationConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]</code> | operation_configs block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroup.property.operationConfigType">operationConfigType</a></code> | <code>string</code> | Flag that specifes whether the configuration is for Apigee API proxy or a remote service. |
 
 ---
@@ -2321,7 +2321,7 @@ const apigeeApiProductOperationGroup: apigeeApiProduct.ApigeeApiProductOperation
 public readonly operationConfigs: IResolvable | ApigeeApiProductOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
 
 operation_configs block.
 
@@ -2360,8 +2360,8 @@ const apigeeApiProductOperationGroupOperationConfigs: apigeeApiProduct.ApigeeApi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs.property.apiSource">apiSource</a></code> | <code>string</code> | Required. Name of the API proxy or remote service with which the resources, methods, and quota are associated. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs.property.attributes">attributes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]</code> | attributes block. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs.property.operations">operations</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]</code> | operations block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs.property.attributes">attributes</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]</code> | attributes block. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs.property.operations">operations</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]</code> | operations block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs.property.quota">quota</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuota">ApigeeApiProductOperationGroupOperationConfigsQuota</a></code> | quota block. |
 
 ---
@@ -2386,7 +2386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly attributes: IResolvable | ApigeeApiProductOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
 
 attributes block.
 
@@ -2400,7 +2400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly operations: IResolvable | ApigeeApiProductOperationGroupOperationConfigsOperations[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
 
 operations block.
 
@@ -2650,7 +2650,7 @@ new apigeeApiProduct.ApigeeApiProductAttributesList(terraformResource: IInterpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2658,7 +2658,7 @@ new apigeeApiProduct.ApigeeApiProductAttributesList(terraformResource: IInterpol
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2724,7 +2724,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2759,7 +2759,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]</code> | *No description.* |
 
 ---
 
@@ -2793,7 +2793,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>[]
 
 ---
 
@@ -2810,7 +2810,7 @@ new apigeeApiProduct.ApigeeApiProductAttributesOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2819,7 +2819,7 @@ new apigeeApiProduct.ApigeeApiProductAttributesOutputReference(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3007,7 +3007,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3044,7 +3044,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a></code> | *No description.* |
 
 ---
 
@@ -3118,7 +3118,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApigeeApiProductAttributes;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductAttributes">ApigeeApiProductAttributes</a>
 
 ---
 
@@ -3135,7 +3135,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttrib
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3143,7 +3143,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttrib
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3209,7 +3209,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3244,7 +3244,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
 
 ---
 
@@ -3278,7 +3278,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -3295,7 +3295,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttrib
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3304,7 +3304,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttrib
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3492,7 +3492,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3529,7 +3529,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a></code> | *No description.* |
 
 ---
 
@@ -3603,7 +3603,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>
 
 ---
 
@@ -3620,7 +3620,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3628,7 +3628,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3694,7 +3694,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3729,7 +3729,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -3763,7 +3763,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -3780,7 +3780,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3788,7 +3788,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3854,7 +3854,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3889,7 +3889,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
 
 ---
 
@@ -3923,7 +3923,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
 
 ---
 
@@ -3940,7 +3940,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3949,7 +3949,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4137,7 +4137,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4174,7 +4174,7 @@ public resetOperationTypes(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.property.operationTypesInput">operationTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.property.operation">operation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.property.operationTypes">operationTypes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a></code> | *No description.* |
 
 ---
 
@@ -4248,7 +4248,7 @@ public readonly operationTypes: string[];
 public readonly internalValue: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>
 
 ---
 
@@ -4265,7 +4265,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4274,7 +4274,7 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4467,7 +4467,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4489,7 +4489,7 @@ public putAttributes(value: IResolvable | ApigeeApiProductGraphqlOperationGroupO
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.putAttributes.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -4501,7 +4501,7 @@ public putOperations(value: IResolvable | ApigeeApiProductGraphqlOperationGroupO
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.putOperations.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
 
 ---
 
@@ -4552,11 +4552,11 @@ public resetQuota(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.operations">operations</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperationsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.quota">quota</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference">ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.apiSourceInput">apiSourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.attributesInput">attributesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.operationsInput">operationsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.attributesInput">attributesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.operationsInput">operationsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.quotaInput">quotaInput</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota">ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.apiSource">apiSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a></code> | *No description.* |
 
 ---
 
@@ -4630,7 +4630,7 @@ public readonly apiSourceInput: string;
 public readonly attributesInput: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes">ApigeeApiProductGraphqlOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -4640,7 +4640,7 @@ public readonly attributesInput: IResolvable | ApigeeApiProductGraphqlOperationG
 public readonly operationsInput: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations">ApigeeApiProductGraphqlOperationGroupOperationConfigsOperations</a>[]
 
 ---
 
@@ -4670,7 +4670,7 @@ public readonly apiSource: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>
 
 ---
 
@@ -4687,14 +4687,14 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4867,7 +4867,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5023,14 +5023,14 @@ new apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5203,7 +5203,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5225,7 +5225,7 @@ public putOperationConfigs(value: IResolvable | ApigeeApiProductGraphqlOperation
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.putOperationConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -5249,7 +5249,7 @@ public resetOperationConfigType(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.operationConfigs">operationConfigs</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigsList">ApigeeApiProductGraphqlOperationGroupOperationConfigsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.operationConfigsInput">operationConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.operationConfigsInput">operationConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.operationConfigTypeInput">operationConfigTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.operationConfigType">operationConfigType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup">ApigeeApiProductGraphqlOperationGroup</a></code> | *No description.* |
@@ -5296,7 +5296,7 @@ public readonly operationConfigs: ApigeeApiProductGraphqlOperationGroupOperation
 public readonly operationConfigsInput: IResolvable | ApigeeApiProductGraphqlOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroupOperationConfigs">ApigeeApiProductGraphqlOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -5343,7 +5343,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttribute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5351,7 +5351,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttribute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5417,7 +5417,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5452,7 +5452,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
 
 ---
 
@@ -5486,7 +5486,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -5503,7 +5503,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttribute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5512,7 +5512,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttribute
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5700,7 +5700,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5737,7 +5737,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a></code> | *No description.* |
 
 ---
 
@@ -5811,7 +5811,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>
 
 ---
 
@@ -5828,7 +5828,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5836,7 +5836,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5902,7 +5902,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5937,7 +5937,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -5971,7 +5971,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -5988,7 +5988,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5997,7 +5997,7 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6190,7 +6190,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6212,7 +6212,7 @@ public putAttributes(value: IResolvable | ApigeeApiProductGrpcOperationGroupOper
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.putAttributes.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -6268,14 +6268,14 @@ public resetService(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.attributes">attributes</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.quota">quota</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference">ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.apiSourceInput">apiSourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.attributesInput">attributesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.attributesInput">attributesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.methodsInput">methodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.quotaInput">quotaInput</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuota">ApigeeApiProductGrpcOperationGroupOperationConfigsQuota</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.apiSource">apiSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.methods">methods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a></code> | *No description.* |
 
 ---
 
@@ -6339,7 +6339,7 @@ public readonly apiSourceInput: string;
 public readonly attributesInput: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes">ApigeeApiProductGrpcOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -6409,7 +6409,7 @@ public readonly service: string;
 public readonly internalValue: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>
 
 ---
 
@@ -6426,14 +6426,14 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6606,7 +6606,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsQuotaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6762,14 +6762,14 @@ new apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6941,7 +6941,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6963,7 +6963,7 @@ public putOperationConfigs(value: IResolvable | ApigeeApiProductGrpcOperationGro
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.putOperationConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -6981,7 +6981,7 @@ public resetOperationConfigs(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.property.operationConfigs">operationConfigs</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigsList">ApigeeApiProductGrpcOperationGroupOperationConfigsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.property.operationConfigsInput">operationConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.property.operationConfigsInput">operationConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup">ApigeeApiProductGrpcOperationGroup</a></code> | *No description.* |
 
 ---
@@ -7026,7 +7026,7 @@ public readonly operationConfigs: ApigeeApiProductGrpcOperationGroupOperationCon
 public readonly operationConfigsInput: IResolvable | ApigeeApiProductGrpcOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOperationConfigs">ApigeeApiProductGrpcOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -7053,7 +7053,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7061,7 +7061,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7127,7 +7127,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7162,7 +7162,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
 
 ---
 
@@ -7196,7 +7196,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -7213,7 +7213,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7222,7 +7222,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7410,7 +7410,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7447,7 +7447,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a></code> | *No description.* |
 
 ---
 
@@ -7521,7 +7521,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApigeeApiProductOperationGroupOperationConfigsAttributes;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>
 
 ---
 
@@ -7538,7 +7538,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7546,7 +7546,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7612,7 +7612,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7647,7 +7647,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -7681,7 +7681,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -7698,7 +7698,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7706,7 +7706,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7772,7 +7772,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7807,7 +7807,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
 
 ---
 
@@ -7841,7 +7841,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApigeeApiProductOperationGroupOperationConfigsOperations[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
 
 ---
 
@@ -7858,7 +7858,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7867,7 +7867,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8055,7 +8055,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8092,7 +8092,7 @@ public resetResource(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.property.resourceInput">resourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.property.methods">methods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.property.resource">resource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a></code> | *No description.* |
 
 ---
 
@@ -8166,7 +8166,7 @@ public readonly resource: string;
 public readonly internalValue: IResolvable | ApigeeApiProductOperationGroupOperationConfigsOperations;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>
 
 ---
 
@@ -8183,7 +8183,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8192,7 +8192,7 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8385,7 +8385,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8407,7 +8407,7 @@ public putAttributes(value: IResolvable | ApigeeApiProductOperationGroupOperatio
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.putAttributes.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -8419,7 +8419,7 @@ public putOperations(value: IResolvable | ApigeeApiProductOperationGroupOperatio
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.putOperations.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
 
 ---
 
@@ -8470,11 +8470,11 @@ public resetQuota(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.operations">operations</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperationsList">ApigeeApiProductOperationGroupOperationConfigsOperationsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.quota">quota</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference">ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.apiSourceInput">apiSourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.attributesInput">attributesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.operationsInput">operationsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.attributesInput">attributesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.operationsInput">operationsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.quotaInput">quotaInput</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuota">ApigeeApiProductOperationGroupOperationConfigsQuota</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.apiSource">apiSource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a></code> | *No description.* |
 
 ---
 
@@ -8548,7 +8548,7 @@ public readonly apiSourceInput: string;
 public readonly attributesInput: IResolvable | ApigeeApiProductOperationGroupOperationConfigsAttributes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsAttributes">ApigeeApiProductOperationGroupOperationConfigsAttributes</a>[]
 
 ---
 
@@ -8558,7 +8558,7 @@ public readonly attributesInput: IResolvable | ApigeeApiProductOperationGroupOpe
 public readonly operationsInput: IResolvable | ApigeeApiProductOperationGroupOperationConfigsOperations[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsOperations">ApigeeApiProductOperationGroupOperationConfigsOperations</a>[]
 
 ---
 
@@ -8588,7 +8588,7 @@ public readonly apiSource: string;
 public readonly internalValue: IResolvable | ApigeeApiProductOperationGroupOperationConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>
 
 ---
 
@@ -8605,14 +8605,14 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8785,7 +8785,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsQuotaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8941,14 +8941,14 @@ new apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9121,7 +9121,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9143,7 +9143,7 @@ public putOperationConfigs(value: IResolvable | ApigeeApiProductOperationGroupOp
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.putOperationConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -9167,7 +9167,7 @@ public resetOperationConfigType(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.operationConfigs">operationConfigs</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigsList">ApigeeApiProductOperationGroupOperationConfigsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.operationConfigsInput">operationConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.operationConfigsInput">operationConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.operationConfigTypeInput">operationConfigTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.operationConfigType">operationConfigType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroup">ApigeeApiProductOperationGroup</a></code> | *No description.* |
@@ -9214,7 +9214,7 @@ public readonly operationConfigs: ApigeeApiProductOperationGroupOperationConfigs
 public readonly operationConfigsInput: IResolvable | ApigeeApiProductOperationGroupOperationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroupOperationConfigs">ApigeeApiProductOperationGroupOperationConfigs</a>[]
 
 ---
 
@@ -9261,14 +9261,14 @@ new apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9441,7 +9441,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9486,7 +9486,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -9580,7 +9580,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ApigeeApiProductTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts">ApigeeApiProductTimeouts</a>
 
 ---
 

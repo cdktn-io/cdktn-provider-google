@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleOrganizationIamCustomRoleConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleOrganizationIamCustomRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_role#id DataGoogleOrganizationIamCustomRole#id}
   *
@@ -36,7 +36,7 @@ export interface DataGoogleOrganizationIamCustomRoleConfig extends cdktf.Terrafo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_role google_organization_iam_custom_role}
 */
-export class DataGoogleOrganizationIamCustomRole extends cdktf.TerraformDataSource {
+export class DataGoogleOrganizationIamCustomRole extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataGoogleOrganizationIamCustomRole extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleOrganizationIamCustomRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleOrganizationIamCustomRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOrganizationIamCustomRole to import
   * @param importFromId The id of the existing DataGoogleOrganizationIamCustomRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization_iam_custom_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOrganizationIamCustomRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_iam_custom_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_iam_custom_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -139,7 +139,7 @@ export class DataGoogleOrganizationIamCustomRole extends cdktf.TerraformDataSour
 
   // permissions - computed: true, optional: false, required: false
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
 
   // role_id - computed: false, optional: false, required: true
@@ -171,28 +171,28 @@ export class DataGoogleOrganizationIamCustomRole extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      role_id: cdktf.stringToTerraform(this._roleId),
+      id: cdktn.stringToTerraform(this._id),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      role_id: cdktn.stringToTerraform(this._roleId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_id: {
-        value: cdktf.stringToHclTerraform(this._roleId),
+        value: cdktn.stringToHclTerraform(this._roleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

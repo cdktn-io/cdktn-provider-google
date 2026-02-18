@@ -319,7 +319,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -586,7 +586,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputeForwardingRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ComputeForwardingRule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -658,7 +658,7 @@ import { computeForwardingRule } from '@cdktn/provider-google'
 computeForwardingRule.ComputeForwardingRule.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ComputeForwardingRule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeForwardingRule resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.generateConfigForImport.parameter.scope"></a>
 
@@ -688,7 +688,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeForwardingRule to import is found.
 
@@ -699,22 +699,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.baseForwardingRule">baseForwardingRule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.forwardingRuleId">forwardingRuleId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.labelFingerprint">labelFingerprint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.pscConnectionId">pscConnectionId</a></code> | <code>string</code> | *No description.* |
@@ -722,11 +722,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.serviceDirectoryRegistrations">serviceDirectoryRegistrations</a></code> | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference">ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.serviceName">serviceName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference">ComputeForwardingRuleTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowGlobalAccessInput">allowGlobalAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowPscGlobalAccessInput">allowPscGlobalAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allPortsInput">allPortsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowGlobalAccessInput">allowGlobalAccessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowPscGlobalAccessInput">allowPscGlobalAccessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allPortsInput">allPortsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.backendServiceInput">backendServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -734,27 +734,27 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.ipCollectionInput">ipCollectionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.ipProtocolInput">ipProtocolInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.ipVersionInput">ipVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.isMirroringCollectorInput">isMirroringCollectorInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.isMirroringCollectorInput">isMirroringCollectorInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.loadBalancingSchemeInput">loadBalancingSchemeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.networkTierInput">networkTierInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.noAutomateDnsZoneInput">noAutomateDnsZoneInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.noAutomateDnsZoneInput">noAutomateDnsZoneInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.portRangeInput">portRangeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.portsInput">portsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.recreateClosedPscInput">recreateClosedPscInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.recreateClosedPscInput">recreateClosedPscInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.serviceDirectoryRegistrationsInput">serviceDirectoryRegistrationsInput</a></code> | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrations">ComputeForwardingRuleServiceDirectoryRegistrations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.serviceLabelInput">serviceLabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.sourceIpRangesInput">sourceIpRangesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowGlobalAccess">allowGlobalAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowPscGlobalAccess">allowPscGlobalAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allPorts">allPorts</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowGlobalAccess">allowGlobalAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allowPscGlobalAccess">allowPscGlobalAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.allPorts">allPorts</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.backendService">backendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -762,17 +762,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.ipCollection">ipCollection</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.ipProtocol">ipProtocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.ipVersion">ipVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.isMirroringCollector">isMirroringCollector</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.isMirroringCollector">isMirroringCollector</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.loadBalancingScheme">loadBalancingScheme</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.network">network</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.networkTier">networkTier</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.noAutomateDnsZone">noAutomateDnsZone</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.noAutomateDnsZone">noAutomateDnsZone</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.portRange">portRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.ports">ports</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.recreateClosedPsc">recreateClosedPsc</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.recreateClosedPsc">recreateClosedPsc</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.serviceLabel">serviceLabel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRule.property.sourceIpRanges">sourceIpRanges</a></code> | <code>string[]</code> | *No description.* |
@@ -799,7 +799,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -849,7 +849,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -859,7 +859,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -869,7 +869,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -889,7 +889,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -899,7 +899,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -909,7 +909,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -919,7 +919,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -949,7 +949,7 @@ public readonly creationTimestamp: string;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1029,7 +1029,7 @@ public readonly serviceName: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly timeouts: ComputeForwardingRuleTimeoutsOutputReference;
 public readonly allowGlobalAccessInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1059,7 +1059,7 @@ public readonly allowGlobalAccessInput: boolean | IResolvable;
 public readonly allowPscGlobalAccessInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1069,7 +1069,7 @@ public readonly allowPscGlobalAccessInput: boolean | IResolvable;
 public readonly allPortsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1149,7 +1149,7 @@ public readonly ipVersionInput: string;
 public readonly isMirroringCollectorInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly networkTierInput: string;
 public readonly noAutomateDnsZoneInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly projectInput: string;
 public readonly recreateClosedPscInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1319,7 +1319,7 @@ public readonly targetInput: string;
 public readonly timeoutsInput: IResolvable | ComputeForwardingRuleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a>
 
 ---
 
@@ -1329,7 +1329,7 @@ public readonly timeoutsInput: IResolvable | ComputeForwardingRuleTimeouts;
 public readonly allowGlobalAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly allowGlobalAccess: boolean | IResolvable;
 public readonly allowPscGlobalAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1349,7 +1349,7 @@ public readonly allowPscGlobalAccess: boolean | IResolvable;
 public readonly allPorts: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1429,7 +1429,7 @@ public readonly ipVersion: string;
 public readonly isMirroringCollector: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1489,7 +1489,7 @@ public readonly networkTier: string;
 public readonly noAutomateDnsZone: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1529,7 +1529,7 @@ public readonly project: string;
 public readonly recreateClosedPsc: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1617,17 +1617,17 @@ const computeForwardingRuleConfig: computeForwardingRule.ComputeForwardingRuleCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.name">name</a></code> | <code>string</code> | Name of the resource; |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.allowGlobalAccess">allowGlobalAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | This field is used along with the 'backend_service' field for internal load balancing or with the 'target' field for internal TargetInstance. |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.allowPscGlobalAccess">allowPscGlobalAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether the PSC endpoint can be accessed from another region. |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.allPorts">allPorts</a></code> | <code>boolean \| cdktf.IResolvable</code> | The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.allowGlobalAccess">allowGlobalAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | This field is used along with the 'backend_service' field for internal load balancing or with the 'target' field for internal TargetInstance. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.allowPscGlobalAccess">allowPscGlobalAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether the PSC endpoint can be accessed from another region. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.allPorts">allPorts</a></code> | <code>boolean \| cdktn.IResolvable</code> | The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.backendService">backendService</a></code> | <code>string</code> | Identifies the backend service to which the forwarding rule sends traffic. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#id ComputeForwardingRule#id}. |
@@ -1635,16 +1635,16 @@ const computeForwardingRuleConfig: computeForwardingRule.ComputeForwardingRuleCo
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.ipCollection">ipCollection</a></code> | <code>string</code> | Resource reference of a PublicDelegatedPrefix. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.ipProtocol">ipProtocol</a></code> | <code>string</code> | The IP protocol to which this rule applies. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.ipVersion">ipVersion</a></code> | <code>string</code> | The IP address version that will be used by this forwarding rule. Valid options are IPV4 and IPV6. |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.isMirroringCollector">isMirroringCollector</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether or not this load balancer can be used as a collector for packet mirroring. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.isMirroringCollector">isMirroringCollector</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether or not this load balancer can be used as a collector for packet mirroring. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels to apply to this forwarding rule.  A list of key->value pairs. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.loadBalancingScheme">loadBalancingScheme</a></code> | <code>string</code> | Specifies the forwarding rule type. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.network">network</a></code> | <code>string</code> | This field is not used for external load balancing. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.networkTier">networkTier</a></code> | <code>string</code> | This signifies the networking tier used for configuring this load balancer and can only take the following values: 'PREMIUM', 'STANDARD'. |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.noAutomateDnsZone">noAutomateDnsZone</a></code> | <code>boolean \| cdktf.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.noAutomateDnsZone">noAutomateDnsZone</a></code> | <code>boolean \| cdktn.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.portRange">portRange</a></code> | <code>string</code> | The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.ports">ports</a></code> | <code>string[]</code> | The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_forwarding_rule#project ComputeForwardingRule#project}. |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.recreateClosedPsc">recreateClosedPsc</a></code> | <code>boolean \| cdktf.IResolvable</code> | This is used in PSC consumer ForwardingRule to make terraform recreate the ForwardingRule when the status is closed. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.recreateClosedPsc">recreateClosedPsc</a></code> | <code>boolean \| cdktn.IResolvable</code> | This is used in PSC consumer ForwardingRule to make terraform recreate the ForwardingRule when the status is closed. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.region">region</a></code> | <code>string</code> | A reference to the region where the regional forwarding rule resides. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.serviceDirectoryRegistrations">serviceDirectoryRegistrations</a></code> | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrations">ComputeForwardingRuleServiceDirectoryRegistrations</a></code> | service_directory_registrations block. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleConfig.property.serviceLabel">serviceLabel</a></code> | <code>string</code> | An optional prefix to the service name for this Forwarding Rule. |
@@ -1661,7 +1661,7 @@ const computeForwardingRuleConfig: computeForwardingRule.ComputeForwardingRuleCo
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1671,7 +1671,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1681,7 +1681,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1701,7 +1701,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1711,7 +1711,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1721,7 +1721,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1759,7 +1759,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowGlobalAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 This field is used along with the 'backend_service' field for internal load balancing or with the 'target' field for internal TargetInstance.
 
@@ -1779,7 +1779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowPscGlobalAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 This is used in PSC consumer ForwardingRule to control whether the PSC endpoint can be accessed from another region.
 
@@ -1793,7 +1793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allPorts: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 The 'ports', 'portRange', and 'allPorts' fields are mutually exclusive.
 
@@ -1988,7 +1988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly isMirroringCollector: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates whether or not this load balancer can be used as a collector for packet mirroring.
 
@@ -2092,7 +2092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly noAutomateDnsZone: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not.
 
@@ -2186,7 +2186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly recreateClosedPsc: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 This is used in PSC consumer ForwardingRule to make terraform recreate the ForwardingRule when the status is closed.
 
@@ -2439,14 +2439,14 @@ new computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2618,7 +2618,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2746,14 +2746,14 @@ new computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2926,7 +2926,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2971,7 +2971,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3065,7 +3065,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ComputeForwardingRuleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeForwardingRule.ComputeForwardingRuleTimeouts">ComputeForwardingRuleTimeouts</a>
 
 ---
 

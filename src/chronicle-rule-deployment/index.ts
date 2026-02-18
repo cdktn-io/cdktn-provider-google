@@ -7,18 +7,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChronicleRuleDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface ChronicleRuleDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether detections resulting from this deployment should be considered
   * alerts.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment#alerting ChronicleRuleDeployment#alerting}
   */
-  readonly alerting?: boolean | cdktf.IResolvable;
+  readonly alerting?: boolean | cdktn.IResolvable;
   /**
   * The archive state of the rule deployment.
   * Cannot be set to true unless enabled is set to false i.e.
@@ -30,13 +30,13 @@ export interface ChronicleRuleDeploymentConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment#archived ChronicleRuleDeployment#archived}
   */
-  readonly archived?: boolean | cdktf.IResolvable;
+  readonly archived?: boolean | cdktn.IResolvable;
   /**
   * Whether the rule is currently deployed continuously against incoming data.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment#enabled ChronicleRuleDeployment#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}
   *
@@ -98,39 +98,39 @@ export interface ChronicleRuleDeploymentTimeouts {
   readonly update?: string;
 }
 
-export function chronicleRuleDeploymentTimeoutsToTerraform(struct?: ChronicleRuleDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleRuleDeploymentTimeoutsToTerraform(struct?: ChronicleRuleDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function chronicleRuleDeploymentTimeoutsToHclTerraform(struct?: ChronicleRuleDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleRuleDeploymentTimeoutsToHclTerraform(struct?: ChronicleRuleDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -141,19 +141,19 @@ export function chronicleRuleDeploymentTimeoutsToHclTerraform(struct?: Chronicle
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleRuleDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChronicleRuleDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChronicleRuleDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleRuleDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -174,7 +174,7 @@ export class ChronicleRuleDeploymentTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleRuleDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleRuleDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -182,7 +182,7 @@ export class ChronicleRuleDeploymentTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class ChronicleRuleDeploymentTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment google_chronicle_rule_deployment}
 */
-export class ChronicleRuleDeployment extends cdktf.TerraformResource {
+export class ChronicleRuleDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class ChronicleRuleDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChronicleRuleDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChronicleRuleDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleRuleDeployment to import
   * @param importFromId The id of the existing ChronicleRuleDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_rule_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleRuleDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_rule_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_rule_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -312,11 +312,11 @@ export class ChronicleRuleDeployment extends cdktf.TerraformResource {
   // ==========
 
   // alerting - computed: false, optional: true, required: false
-  private _alerting?: boolean | cdktf.IResolvable; 
+  private _alerting?: boolean | cdktn.IResolvable; 
   public get alerting() {
     return this.getBooleanAttribute('alerting');
   }
-  public set alerting(value: boolean | cdktf.IResolvable) {
+  public set alerting(value: boolean | cdktn.IResolvable) {
     this._alerting = value;
   }
   public resetAlerting() {
@@ -333,11 +333,11 @@ export class ChronicleRuleDeployment extends cdktf.TerraformResource {
   }
 
   // archived - computed: false, optional: true, required: false
-  private _archived?: boolean | cdktf.IResolvable; 
+  private _archived?: boolean | cdktn.IResolvable; 
   public get archived() {
     return this.getBooleanAttribute('archived');
   }
-  public set archived(value: boolean | cdktf.IResolvable) {
+  public set archived(value: boolean | cdktn.IResolvable) {
     this._archived = value;
   }
   public resetArchived() {
@@ -354,11 +354,11 @@ export class ChronicleRuleDeployment extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -498,15 +498,15 @@ export class ChronicleRuleDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alerting: cdktf.booleanToTerraform(this._alerting),
-      archived: cdktf.booleanToTerraform(this._archived),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      rule: cdktf.stringToTerraform(this._rule),
-      run_frequency: cdktf.stringToTerraform(this._runFrequency),
+      alerting: cdktn.booleanToTerraform(this._alerting),
+      archived: cdktn.booleanToTerraform(this._archived),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      rule: cdktn.stringToTerraform(this._rule),
+      run_frequency: cdktn.stringToTerraform(this._runFrequency),
       timeouts: chronicleRuleDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -514,55 +514,55 @@ export class ChronicleRuleDeployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alerting: {
-        value: cdktf.booleanToHclTerraform(this._alerting),
+        value: cdktn.booleanToHclTerraform(this._alerting),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       archived: {
-        value: cdktf.booleanToHclTerraform(this._archived),
+        value: cdktn.booleanToHclTerraform(this._archived),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.stringToHclTerraform(this._rule),
+        value: cdktn.stringToHclTerraform(this._rule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       run_frequency: {
-        value: cdktf.stringToHclTerraform(this._runFrequency),
+        value: cdktn.stringToHclTerraform(this._runFrequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

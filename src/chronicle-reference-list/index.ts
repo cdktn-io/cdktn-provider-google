@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChronicleReferenceListConfig extends cdktf.TerraformMetaArguments {
+export interface ChronicleReferenceListConfig extends cdktn.TerraformMetaArguments {
   /**
   * Required. A user-provided description of the reference list.
   *
@@ -66,7 +66,7 @@ export interface ChronicleReferenceListConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#entries ChronicleReferenceList#entries}
   */
-  readonly entries: ChronicleReferenceListEntries[] | cdktf.IResolvable;
+  readonly entries: ChronicleReferenceListEntries[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -78,8 +78,8 @@ export interface ChronicleReferenceListScopeInfoReferenceListScope {
 }
 
 export function chronicleReferenceListScopeInfoReferenceListScopeToTerraform(struct?: ChronicleReferenceListScopeInfoReferenceListScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -88,8 +88,8 @@ export function chronicleReferenceListScopeInfoReferenceListScopeToTerraform(str
 
 
 export function chronicleReferenceListScopeInfoReferenceListScopeToHclTerraform(struct?: ChronicleReferenceListScopeInfoReferenceListScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -97,7 +97,7 @@ export function chronicleReferenceListScopeInfoReferenceListScopeToHclTerraform(
   return attrs;
 }
 
-export class ChronicleReferenceListScopeInfoReferenceListScopeOutputReference extends cdktf.ComplexObject {
+export class ChronicleReferenceListScopeInfoReferenceListScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -106,7 +106,7 @@ export class ChronicleReferenceListScopeInfoReferenceListScopeOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -131,14 +131,14 @@ export class ChronicleReferenceListScopeInfoReferenceListScopeOutputReference ex
   }
 }
 
-export class ChronicleReferenceListScopeInfoReferenceListScopeList extends cdktf.ComplexList {
+export class ChronicleReferenceListScopeInfoReferenceListScopeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -153,8 +153,8 @@ export interface ChronicleReferenceListScopeInfo {
 }
 
 export function chronicleReferenceListScopeInfoToTerraform(struct?: ChronicleReferenceListScopeInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -163,8 +163,8 @@ export function chronicleReferenceListScopeInfoToTerraform(struct?: ChronicleRef
 
 
 export function chronicleReferenceListScopeInfoToHclTerraform(struct?: ChronicleReferenceListScopeInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -172,7 +172,7 @@ export function chronicleReferenceListScopeInfoToHclTerraform(struct?: Chronicle
   return attrs;
 }
 
-export class ChronicleReferenceListScopeInfoOutputReference extends cdktf.ComplexObject {
+export class ChronicleReferenceListScopeInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -181,7 +181,7 @@ export class ChronicleReferenceListScopeInfoOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -207,14 +207,14 @@ export class ChronicleReferenceListScopeInfoOutputReference extends cdktf.Comple
   }
 }
 
-export class ChronicleReferenceListScopeInfoList extends cdktf.ComplexList {
+export class ChronicleReferenceListScopeInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,25 +234,25 @@ export interface ChronicleReferenceListEntries {
   readonly value: string;
 }
 
-export function chronicleReferenceListEntriesToTerraform(struct?: ChronicleReferenceListEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleReferenceListEntriesToTerraform(struct?: ChronicleReferenceListEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function chronicleReferenceListEntriesToHclTerraform(struct?: ChronicleReferenceListEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleReferenceListEntriesToHclTerraform(struct?: ChronicleReferenceListEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -263,9 +263,9 @@ export function chronicleReferenceListEntriesToHclTerraform(struct?: ChronicleRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleReferenceListEntriesOutputReference extends cdktf.ComplexObject {
+export class ChronicleReferenceListEntriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -273,11 +273,11 @@ export class ChronicleReferenceListEntriesOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ChronicleReferenceListEntries | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleReferenceListEntries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -290,13 +290,13 @@ export class ChronicleReferenceListEntriesOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleReferenceListEntries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleReferenceListEntries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -321,15 +321,15 @@ export class ChronicleReferenceListEntriesOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ChronicleReferenceListEntriesList extends cdktf.ComplexList {
-  public internalValue? : ChronicleReferenceListEntries[] | cdktf.IResolvable
+export class ChronicleReferenceListEntriesList extends cdktn.ComplexList {
+  public internalValue? : ChronicleReferenceListEntries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -355,39 +355,39 @@ export interface ChronicleReferenceListTimeouts {
   readonly update?: string;
 }
 
-export function chronicleReferenceListTimeoutsToTerraform(struct?: ChronicleReferenceListTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleReferenceListTimeoutsToTerraform(struct?: ChronicleReferenceListTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function chronicleReferenceListTimeoutsToHclTerraform(struct?: ChronicleReferenceListTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleReferenceListTimeoutsToHclTerraform(struct?: ChronicleReferenceListTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -398,19 +398,19 @@ export function chronicleReferenceListTimeoutsToHclTerraform(struct?: ChronicleR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleReferenceListTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChronicleReferenceListTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChronicleReferenceListTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleReferenceListTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -431,7 +431,7 @@ export class ChronicleReferenceListTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleReferenceListTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleReferenceListTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -439,7 +439,7 @@ export class ChronicleReferenceListTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -504,7 +504,7 @@ export class ChronicleReferenceListTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}
 */
-export class ChronicleReferenceList extends cdktf.TerraformResource {
+export class ChronicleReferenceList extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -515,14 +515,14 @@ export class ChronicleReferenceList extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChronicleReferenceList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChronicleReferenceList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleReferenceList to import
   * @param importFromId The id of the existing ChronicleReferenceList that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleReferenceList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_reference_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_reference_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -700,7 +700,7 @@ export class ChronicleReferenceList extends cdktf.TerraformResource {
   public get entries() {
     return this._entries;
   }
-  public putEntries(value: ChronicleReferenceListEntries[] | cdktf.IResolvable) {
+  public putEntries(value: ChronicleReferenceListEntries[] | cdktn.IResolvable) {
     this._entries.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -730,14 +730,14 @@ export class ChronicleReferenceList extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      reference_list_id: cdktf.stringToTerraform(this._referenceListId),
-      syntax_type: cdktf.stringToTerraform(this._syntaxType),
-      entries: cdktf.listMapper(chronicleReferenceListEntriesToTerraform, true)(this._entries.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      reference_list_id: cdktn.stringToTerraform(this._referenceListId),
+      syntax_type: cdktn.stringToTerraform(this._syntaxType),
+      entries: cdktn.listMapper(chronicleReferenceListEntriesToTerraform, true)(this._entries.internalValue),
       timeouts: chronicleReferenceListTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -745,49 +745,49 @@ export class ChronicleReferenceList extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reference_list_id: {
-        value: cdktf.stringToHclTerraform(this._referenceListId),
+        value: cdktn.stringToHclTerraform(this._referenceListId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       syntax_type: {
-        value: cdktf.stringToHclTerraform(this._syntaxType),
+        value: cdktn.stringToHclTerraform(this._syntaxType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entries: {
-        value: cdktf.listMapperHcl(chronicleReferenceListEntriesToHclTerraform, true)(this._entries.internalValue),
+        value: cdktn.listMapperHcl(chronicleReferenceListEntriesToHclTerraform, true)(this._entries.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ChronicleReferenceListEntriesList",

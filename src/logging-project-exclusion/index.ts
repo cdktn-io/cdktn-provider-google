@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoggingProjectExclusionConfig extends cdktf.TerraformMetaArguments {
+export interface LoggingProjectExclusionConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable description.
   *
@@ -23,7 +23,7 @@ export interface LoggingProjectExclusionConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_project_exclusion#disabled LoggingProjectExclusion#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The filter to apply when excluding logs. Only log entries that match the filter are excluded.
   *
@@ -52,7 +52,7 @@ export interface LoggingProjectExclusionConfig extends cdktf.TerraformMetaArgume
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_project_exclusion google_logging_project_exclusion}
 */
-export class LoggingProjectExclusion extends cdktf.TerraformResource {
+export class LoggingProjectExclusion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -63,14 +63,14 @@ export class LoggingProjectExclusion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoggingProjectExclusion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoggingProjectExclusion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingProjectExclusion to import
   * @param importFromId The id of the existing LoggingProjectExclusion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_project_exclusion#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingProjectExclusion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_project_exclusion", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_logging_project_exclusion", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,11 +129,11 @@ export class LoggingProjectExclusion extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -208,49 +208,49 @@ export class LoggingProjectExclusion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

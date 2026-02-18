@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ProjectAccessApprovalSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface ProjectAccessApprovalSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The asymmetric crypto key version to use for signing approval requests.
   * Empty active_key_version indicates that a Google-managed key should be used for signing.
@@ -52,7 +52,7 @@ export interface ProjectAccessApprovalSettingsConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_access_approval_settings#enrolled_services ProjectAccessApprovalSettings#enrolled_services}
   */
-  readonly enrolledServices: ProjectAccessApprovalSettingsEnrolledServices[] | cdktf.IResolvable;
+  readonly enrolledServices: ProjectAccessApprovalSettingsEnrolledServices[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -85,32 +85,32 @@ export interface ProjectAccessApprovalSettingsEnrolledServices {
   readonly enrollmentLevel?: string;
 }
 
-export function projectAccessApprovalSettingsEnrolledServicesToTerraform(struct?: ProjectAccessApprovalSettingsEnrolledServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectAccessApprovalSettingsEnrolledServicesToTerraform(struct?: ProjectAccessApprovalSettingsEnrolledServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_product: cdktf.stringToTerraform(struct!.cloudProduct),
-    enrollment_level: cdktf.stringToTerraform(struct!.enrollmentLevel),
+    cloud_product: cdktn.stringToTerraform(struct!.cloudProduct),
+    enrollment_level: cdktn.stringToTerraform(struct!.enrollmentLevel),
   }
 }
 
 
-export function projectAccessApprovalSettingsEnrolledServicesToHclTerraform(struct?: ProjectAccessApprovalSettingsEnrolledServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectAccessApprovalSettingsEnrolledServicesToHclTerraform(struct?: ProjectAccessApprovalSettingsEnrolledServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_product: {
-      value: cdktf.stringToHclTerraform(struct!.cloudProduct),
+      value: cdktn.stringToHclTerraform(struct!.cloudProduct),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enrollment_level: {
-      value: cdktf.stringToHclTerraform(struct!.enrollmentLevel),
+      value: cdktn.stringToHclTerraform(struct!.enrollmentLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -121,9 +121,9 @@ export function projectAccessApprovalSettingsEnrolledServicesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProjectAccessApprovalSettingsEnrolledServicesOutputReference extends cdktf.ComplexObject {
+export class ProjectAccessApprovalSettingsEnrolledServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -131,11 +131,11 @@ export class ProjectAccessApprovalSettingsEnrolledServicesOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ProjectAccessApprovalSettingsEnrolledServices | cdktf.IResolvable | undefined {
+  public get internalValue(): ProjectAccessApprovalSettingsEnrolledServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,14 +152,14 @@ export class ProjectAccessApprovalSettingsEnrolledServicesOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProjectAccessApprovalSettingsEnrolledServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProjectAccessApprovalSettingsEnrolledServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cloudProduct = undefined;
       this._enrollmentLevel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -201,15 +201,15 @@ export class ProjectAccessApprovalSettingsEnrolledServicesOutputReference extend
   }
 }
 
-export class ProjectAccessApprovalSettingsEnrolledServicesList extends cdktf.ComplexList {
-  public internalValue? : ProjectAccessApprovalSettingsEnrolledServices[] | cdktf.IResolvable
+export class ProjectAccessApprovalSettingsEnrolledServicesList extends cdktn.ComplexList {
+  public internalValue? : ProjectAccessApprovalSettingsEnrolledServices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -235,39 +235,39 @@ export interface ProjectAccessApprovalSettingsTimeouts {
   readonly update?: string;
 }
 
-export function projectAccessApprovalSettingsTimeoutsToTerraform(struct?: ProjectAccessApprovalSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectAccessApprovalSettingsTimeoutsToTerraform(struct?: ProjectAccessApprovalSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function projectAccessApprovalSettingsTimeoutsToHclTerraform(struct?: ProjectAccessApprovalSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function projectAccessApprovalSettingsTimeoutsToHclTerraform(struct?: ProjectAccessApprovalSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -278,19 +278,19 @@ export function projectAccessApprovalSettingsTimeoutsToHclTerraform(struct?: Pro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ProjectAccessApprovalSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ProjectAccessApprovalSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ProjectAccessApprovalSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ProjectAccessApprovalSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -311,7 +311,7 @@ export class ProjectAccessApprovalSettingsTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ProjectAccessApprovalSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ProjectAccessApprovalSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -319,7 +319,7 @@ export class ProjectAccessApprovalSettingsTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -384,7 +384,7 @@ export class ProjectAccessApprovalSettingsTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_access_approval_settings google_project_access_approval_settings}
 */
-export class ProjectAccessApprovalSettings extends cdktf.TerraformResource {
+export class ProjectAccessApprovalSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -395,14 +395,14 @@ export class ProjectAccessApprovalSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ProjectAccessApprovalSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ProjectAccessApprovalSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectAccessApprovalSettings to import
   * @param importFromId The id of the existing ProjectAccessApprovalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_access_approval_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectAccessApprovalSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_project_access_approval_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_project_access_approval_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -500,7 +500,7 @@ export class ProjectAccessApprovalSettings extends cdktf.TerraformResource {
   // notification_emails - computed: true, optional: true, required: false
   private _notificationEmails?: string[]; 
   public get notificationEmails() {
-    return cdktf.Fn.tolist(this.getListAttribute('notification_emails'));
+    return cdktn.Fn.tolist(this.getListAttribute('notification_emails'));
   }
   public set notificationEmails(value: string[]) {
     this._notificationEmails = value;
@@ -547,7 +547,7 @@ export class ProjectAccessApprovalSettings extends cdktf.TerraformResource {
   public get enrolledServices() {
     return this._enrolledServices;
   }
-  public putEnrolledServices(value: ProjectAccessApprovalSettingsEnrolledServices[] | cdktf.IResolvable) {
+  public putEnrolledServices(value: ProjectAccessApprovalSettingsEnrolledServices[] | cdktn.IResolvable) {
     this._enrolledServices.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -577,12 +577,12 @@ export class ProjectAccessApprovalSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active_key_version: cdktf.stringToTerraform(this._activeKeyVersion),
-      id: cdktf.stringToTerraform(this._id),
-      notification_emails: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationEmails),
-      project: cdktf.stringToTerraform(this._project),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      enrolled_services: cdktf.listMapper(projectAccessApprovalSettingsEnrolledServicesToTerraform, true)(this._enrolledServices.internalValue),
+      active_key_version: cdktn.stringToTerraform(this._activeKeyVersion),
+      id: cdktn.stringToTerraform(this._id),
+      notification_emails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notificationEmails),
+      project: cdktn.stringToTerraform(this._project),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      enrolled_services: cdktn.listMapper(projectAccessApprovalSettingsEnrolledServicesToTerraform, true)(this._enrolledServices.internalValue),
       timeouts: projectAccessApprovalSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -590,37 +590,37 @@ export class ProjectAccessApprovalSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active_key_version: {
-        value: cdktf.stringToHclTerraform(this._activeKeyVersion),
+        value: cdktn.stringToHclTerraform(this._activeKeyVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_emails: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notificationEmails),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notificationEmails),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enrolled_services: {
-        value: cdktf.listMapperHcl(projectAccessApprovalSettingsEnrolledServicesToHclTerraform, true)(this._enrolledServices.internalValue),
+        value: cdktn.listMapperHcl(projectAccessApprovalSettingsEnrolledServicesToHclTerraform, true)(this._enrolledServices.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ProjectAccessApprovalSettingsEnrolledServicesList",

@@ -304,7 +304,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.datastreamStream.DatastreamStream.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -499,7 +499,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DatastreamStream resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DatastreamStream resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -571,7 +571,7 @@ import { datastreamStream } from '@cdktn/provider-google'
 datastreamStream.DatastreamStream.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DatastreamStream resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DatastreamStream resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.datastreamStream.DatastreamStream.generateConfigForImport.parameter.scope"></a>
 
@@ -601,7 +601,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.datastreamStream.DatastreamStream.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DatastreamStream to import is found.
 
@@ -612,31 +612,31 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.backfillAll">backfillAll</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference">DatastreamStreamBackfillAllOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.backfillNone">backfillNone</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference">DatastreamStreamBackfillNoneOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.destinationConfig">destinationConfig</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference">DatastreamStreamDestinationConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.sourceConfig">sourceConfig</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference">DatastreamStreamSourceConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.state">state</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference">DatastreamStreamTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.backfillAllInput">backfillAllInput</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAll">DatastreamStreamBackfillAll</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.backfillNoneInput">backfillNoneInput</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNone">DatastreamStreamBackfillNone</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.createWithoutValidationInput">createWithoutValidationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.createWithoutValidationInput">createWithoutValidationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.customerManagedEncryptionKeyInput">customerManagedEncryptionKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.desiredStateInput">desiredStateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.destinationConfigInput">destinationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfig">DatastreamStreamDestinationConfig</a></code> | *No description.* |
@@ -647,8 +647,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.sourceConfigInput">sourceConfigInput</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfig">DatastreamStreamSourceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.streamIdInput">streamIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.createWithoutValidation">createWithoutValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.createWithoutValidation">createWithoutValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.customerManagedEncryptionKey">customerManagedEncryptionKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.desiredState">desiredState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStream.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
@@ -678,7 +678,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -728,7 +728,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -738,7 +738,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -748,7 +748,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -768,7 +768,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -778,7 +778,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -788,7 +788,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -798,7 +798,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -838,7 +838,7 @@ public readonly destinationConfig: DatastreamStreamDestinationConfigOutputRefere
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -878,7 +878,7 @@ public readonly state: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -918,7 +918,7 @@ public readonly backfillNoneInput: DatastreamStreamBackfillNone;
 public readonly createWithoutValidationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly streamIdInput: string;
 public readonly timeoutsInput: IResolvable | DatastreamStreamTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a>
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly timeoutsInput: IResolvable | DatastreamStreamTimeouts;
 public readonly createWithoutValidation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1248,7 +1248,7 @@ const datastreamStreamBackfillAllMysqlExcludedObjects: datastreamStream.Datastre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjects.property.mysqlDatabases">mysqlDatabases</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]</code> | mysql_databases block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjects.property.mysqlDatabases">mysqlDatabases</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]</code> | mysql_databases block. |
 
 ---
 
@@ -1258,7 +1258,7 @@ const datastreamStreamBackfillAllMysqlExcludedObjects: datastreamStream.Datastre
 public readonly mysqlDatabases: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
 
 mysql_databases block.
 
@@ -1281,7 +1281,7 @@ const datastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases: datastreamS
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases.property.database">database</a></code> | <code>string</code> | Database name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases.property.mysqlTables">mysqlTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]</code> | mysql_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases.property.mysqlTables">mysqlTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]</code> | mysql_tables block. |
 
 ---
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly mysqlTables: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
 
 mysql_tables block.
 
@@ -1328,7 +1328,7 @@ const datastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables: 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables.property.mysqlColumns">mysqlColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | mysql_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables.property.mysqlColumns">mysqlColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | mysql_columns block. |
 
 ---
 
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly mysqlColumns: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 mysql_columns block.
 
@@ -1377,9 +1377,9 @@ const datastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMy
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.collation">collation</a></code> | <code>string</code> | Column collation. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.column">column</a></code> | <code>string</code> | Column name. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.dataType">dataType</a></code> | <code>string</code> | The MySQL data type. Full data types list can be found here: https://dev.mysql.com/doc/refman/8.0/en/data-types.html. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column can accept a null value. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column can accept a null value. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | The ordinal position of the column in the table. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column represents a primary key. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column represents a primary key. |
 
 ---
 
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column can accept a null value.
 
@@ -1459,7 +1459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column represents a primary key.
 
@@ -1481,7 +1481,7 @@ const datastreamStreamBackfillAllOracleExcludedObjects: datastreamStream.Datastr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjects.property.oracleSchemas">oracleSchemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]</code> | oracle_schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjects.property.oracleSchemas">oracleSchemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]</code> | oracle_schemas block. |
 
 ---
 
@@ -1491,7 +1491,7 @@ const datastreamStreamBackfillAllOracleExcludedObjects: datastreamStream.Datastr
 public readonly oracleSchemas: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
 
 oracle_schemas block.
 
@@ -1514,7 +1514,7 @@ const datastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas: datastreamS
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas.property.schema">schema</a></code> | <code>string</code> | Schema name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas.property.oracleTables">oracleTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]</code> | oracle_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas.property.oracleTables">oracleTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]</code> | oracle_tables block. |
 
 ---
 
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly oracleTables: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
 
 oracle_tables block.
 
@@ -1561,7 +1561,7 @@ const datastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables:
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables.property.oracleColumns">oracleColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | oracle_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables.property.oracleColumns">oracleColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | oracle_columns block. |
 
 ---
 
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly oracleColumns: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 oracle_columns block.
 
@@ -1654,7 +1654,7 @@ const datastreamStreamBackfillAllPostgresqlExcludedObjects: datastreamStream.Dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjects.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]</code> | postgresql_schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjects.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]</code> | postgresql_schemas block. |
 
 ---
 
@@ -1664,7 +1664,7 @@ const datastreamStreamBackfillAllPostgresqlExcludedObjects: datastreamStream.Dat
 public readonly postgresqlSchemas: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
 
 postgresql_schemas block.
 
@@ -1687,7 +1687,7 @@ const datastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas: dat
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas.property.schema">schema</a></code> | <code>string</code> | Database name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas.property.postgresqlTables">postgresqlTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | postgresql_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas.property.postgresqlTables">postgresqlTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | postgresql_tables block. |
 
 ---
 
@@ -1711,7 +1711,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly postgresqlTables: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 postgresql_tables block.
 
@@ -1734,7 +1734,7 @@ const datastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostg
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables.property.postgresqlColumns">postgresqlColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | postgresql_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables.property.postgresqlColumns">postgresqlColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | postgresql_columns block. |
 
 ---
 
@@ -1758,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly postgresqlColumns: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 postgresql_columns block.
 
@@ -1782,9 +1782,9 @@ const datastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostg
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.column">column</a></code> | <code>string</code> | Column name. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.dataType">dataType</a></code> | <code>string</code> | The PostgreSQL data type. Full data types list can be found here: https://www.postgresql.org/docs/current/datatype.html. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column can accept a null value. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column can accept a null value. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | The ordinal position of the column in the table. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column represents a primary key. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column represents a primary key. |
 
 ---
 
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column can accept a null value.
 
@@ -1850,7 +1850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column represents a primary key.
 
@@ -1872,7 +1872,7 @@ const datastreamStreamBackfillAllSalesforceExcludedObjects: datastreamStream.Dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjects.property.objects">objects</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]</code> | objects block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjects.property.objects">objects</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]</code> | objects block. |
 
 ---
 
@@ -1882,7 +1882,7 @@ const datastreamStreamBackfillAllSalesforceExcludedObjects: datastreamStream.Dat
 public readonly objects: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
 
 objects block.
 
@@ -1904,7 +1904,7 @@ const datastreamStreamBackfillAllSalesforceExcludedObjectsObjects: datastreamStr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects.property.fields">fields</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]</code> | fields block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects.property.fields">fields</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]</code> | fields block. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects.property.objectName">objectName</a></code> | <code>string</code> | Name of object in Salesforce Org. |
 
 ---
@@ -1915,7 +1915,7 @@ const datastreamStreamBackfillAllSalesforceExcludedObjectsObjects: datastreamStr
 public readonly fields: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
 
 fields block.
 
@@ -1983,7 +1983,7 @@ const datastreamStreamBackfillAllSqlServerExcludedObjects: datastreamStream.Data
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjects.property.schemas">schemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]</code> | schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjects.property.schemas">schemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]</code> | schemas block. |
 
 ---
 
@@ -1993,7 +1993,7 @@ const datastreamStreamBackfillAllSqlServerExcludedObjects: datastreamStream.Data
 public readonly schemas: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
 
 schemas block.
 
@@ -2016,7 +2016,7 @@ const datastreamStreamBackfillAllSqlServerExcludedObjectsSchemas: datastreamStre
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas.property.schema">schema</a></code> | <code>string</code> | Schema name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas.property.tables">tables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]</code> | tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas.property.tables">tables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]</code> | tables block. |
 
 ---
 
@@ -2040,7 +2040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tables: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
 
 tables block.
 
@@ -2063,7 +2063,7 @@ const datastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables: datastre
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables.property.columns">columns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]</code> | columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables.property.columns">columns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]</code> | columns block. |
 
 ---
 
@@ -2087,7 +2087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly columns: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
 
 columns block.
 
@@ -2167,13 +2167,13 @@ const datastreamStreamConfig: datastreamStream.DatastreamStreamConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.destinationConfig">destinationConfig</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfig">DatastreamStreamDestinationConfig</a></code> | destination_config block. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.displayName">displayName</a></code> | <code>string</code> | Display name. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.location">location</a></code> | <code>string</code> | The name of the location this stream is located in. |
@@ -2181,7 +2181,7 @@ const datastreamStreamConfig: datastreamStream.DatastreamStreamConfig = { ... }
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.streamId">streamId</a></code> | <code>string</code> | The stream identifier. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.backfillAll">backfillAll</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAll">DatastreamStreamBackfillAll</a></code> | backfill_all block. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.backfillNone">backfillNone</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNone">DatastreamStreamBackfillNone</a></code> | backfill_none block. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.createWithoutValidation">createWithoutValidation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Create the stream without validating it. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.createWithoutValidation">createWithoutValidation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Create the stream without validating it. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.customerManagedEncryptionKey">customerManagedEncryptionKey</a></code> | <code>string</code> | A reference to a KMS encryption key. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.desiredState">desiredState</a></code> | <code>string</code> | Desired state of the Stream. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/datastream_stream#id DatastreamStream#id}. |
@@ -2197,7 +2197,7 @@ const datastreamStreamConfig: datastreamStream.DatastreamStreamConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2207,7 +2207,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -2217,7 +2217,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -2227,7 +2227,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2237,7 +2237,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2247,7 +2247,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2257,7 +2257,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -2365,7 +2365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly createWithoutValidation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Create the stream without validating it.
 
@@ -3283,7 +3283,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigExcludeObjects: datastreamStr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects.property.mysqlDatabases">mysqlDatabases</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]</code> | mysql_databases block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects.property.mysqlDatabases">mysqlDatabases</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]</code> | mysql_databases block. |
 
 ---
 
@@ -3293,7 +3293,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigExcludeObjects: datastreamStr
 public readonly mysqlDatabases: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
 
 mysql_databases block.
 
@@ -3316,7 +3316,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases:
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases.property.database">database</a></code> | <code>string</code> | Database name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases.property.mysqlTables">mysqlTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | mysql_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases.property.mysqlTables">mysqlTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | mysql_tables block. |
 
 ---
 
@@ -3340,7 +3340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly mysqlTables: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 mysql_tables block.
 
@@ -3363,7 +3363,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesM
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables.property.mysqlColumns">mysqlColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | mysql_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables.property.mysqlColumns">mysqlColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | mysql_columns block. |
 
 ---
 
@@ -3387,7 +3387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly mysqlColumns: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 mysql_columns block.
 
@@ -3412,9 +3412,9 @@ const datastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesM
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.collation">collation</a></code> | <code>string</code> | Column collation. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.column">column</a></code> | <code>string</code> | Column name. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.dataType">dataType</a></code> | <code>string</code> | The MySQL data type. Full data types list can be found here: https://dev.mysql.com/doc/refman/8.0/en/data-types.html. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column can accept a null value. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column can accept a null value. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | The ordinal position of the column in the table. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column represents a primary key. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column represents a primary key. |
 
 ---
 
@@ -3466,7 +3466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column can accept a null value.
 
@@ -3494,7 +3494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column represents a primary key.
 
@@ -3527,7 +3527,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigIncludeObjects: datastreamStr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects.property.mysqlDatabases">mysqlDatabases</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]</code> | mysql_databases block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects.property.mysqlDatabases">mysqlDatabases</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]</code> | mysql_databases block. |
 
 ---
 
@@ -3537,7 +3537,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigIncludeObjects: datastreamStr
 public readonly mysqlDatabases: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
 
 mysql_databases block.
 
@@ -3560,7 +3560,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases:
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases.property.database">database</a></code> | <code>string</code> | Database name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases.property.mysqlTables">mysqlTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | mysql_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases.property.mysqlTables">mysqlTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | mysql_tables block. |
 
 ---
 
@@ -3584,7 +3584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly mysqlTables: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 mysql_tables block.
 
@@ -3607,7 +3607,7 @@ const datastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesM
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables.property.mysqlColumns">mysqlColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | mysql_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables.property.mysqlColumns">mysqlColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | mysql_columns block. |
 
 ---
 
@@ -3631,7 +3631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly mysqlColumns: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 mysql_columns block.
 
@@ -3656,9 +3656,9 @@ const datastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesM
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.collation">collation</a></code> | <code>string</code> | Column collation. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.column">column</a></code> | <code>string</code> | Column name. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.dataType">dataType</a></code> | <code>string</code> | The MySQL data type. Full data types list can be found here: https://dev.mysql.com/doc/refman/8.0/en/data-types.html. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column can accept a null value. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column can accept a null value. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | The ordinal position of the column in the table. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column represents a primary key. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column represents a primary key. |
 
 ---
 
@@ -3710,7 +3710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column can accept a null value.
 
@@ -3738,7 +3738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column represents a primary key.
 
@@ -3884,7 +3884,7 @@ const datastreamStreamSourceConfigOracleSourceConfigExcludeObjects: datastreamSt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects.property.oracleSchemas">oracleSchemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]</code> | oracle_schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects.property.oracleSchemas">oracleSchemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]</code> | oracle_schemas block. |
 
 ---
 
@@ -3894,7 +3894,7 @@ const datastreamStreamSourceConfigOracleSourceConfigExcludeObjects: datastreamSt
 public readonly oracleSchemas: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
 
 oracle_schemas block.
 
@@ -3917,7 +3917,7 @@ const datastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas:
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas.property.schema">schema</a></code> | <code>string</code> | Schema name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas.property.oracleTables">oracleTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]</code> | oracle_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas.property.oracleTables">oracleTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]</code> | oracle_tables block. |
 
 ---
 
@@ -3941,7 +3941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly oracleTables: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
 
 oracle_tables block.
 
@@ -3964,7 +3964,7 @@ const datastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasO
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables.property.oracleColumns">oracleColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | oracle_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables.property.oracleColumns">oracleColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | oracle_columns block. |
 
 ---
 
@@ -3988,7 +3988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly oracleColumns: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 oracle_columns block.
 
@@ -4057,7 +4057,7 @@ const datastreamStreamSourceConfigOracleSourceConfigIncludeObjects: datastreamSt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects.property.oracleSchemas">oracleSchemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]</code> | oracle_schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects.property.oracleSchemas">oracleSchemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]</code> | oracle_schemas block. |
 
 ---
 
@@ -4067,7 +4067,7 @@ const datastreamStreamSourceConfigOracleSourceConfigIncludeObjects: datastreamSt
 public readonly oracleSchemas: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
 
 oracle_schemas block.
 
@@ -4090,7 +4090,7 @@ const datastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas:
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas.property.schema">schema</a></code> | <code>string</code> | Schema name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas.property.oracleTables">oracleTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]</code> | oracle_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas.property.oracleTables">oracleTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]</code> | oracle_tables block. |
 
 ---
 
@@ -4114,7 +4114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly oracleTables: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
 
 oracle_tables block.
 
@@ -4137,7 +4137,7 @@ const datastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasO
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables.property.oracleColumns">oracleColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | oracle_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables.property.oracleColumns">oracleColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | oracle_columns block. |
 
 ---
 
@@ -4161,7 +4161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly oracleColumns: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 oracle_columns block.
 
@@ -4336,7 +4336,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects: datastre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]</code> | postgresql_schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]</code> | postgresql_schemas block. |
 
 ---
 
@@ -4346,7 +4346,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects: datastre
 public readonly postgresqlSchemas: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
 
 postgresql_schemas block.
 
@@ -4369,7 +4369,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresql
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas.property.schema">schema</a></code> | <code>string</code> | Database name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas.property.postgresqlTables">postgresqlTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | postgresql_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas.property.postgresqlTables">postgresqlTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | postgresql_tables block. |
 
 ---
 
@@ -4393,7 +4393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly postgresqlTables: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 postgresql_tables block.
 
@@ -4416,7 +4416,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresql
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables.property.postgresqlColumns">postgresqlColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | postgresql_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables.property.postgresqlColumns">postgresqlColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | postgresql_columns block. |
 
 ---
 
@@ -4440,7 +4440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly postgresqlColumns: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 postgresql_columns block.
 
@@ -4464,9 +4464,9 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresql
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.column">column</a></code> | <code>string</code> | Column name. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.dataType">dataType</a></code> | <code>string</code> | The PostgreSQL data type. Full data types list can be found here: https://www.postgresql.org/docs/current/datatype.html. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column can accept a null value. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column can accept a null value. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | The ordinal position of the column in the table. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column represents a primary key. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column represents a primary key. |
 
 ---
 
@@ -4504,7 +4504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column can accept a null value.
 
@@ -4532,7 +4532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column represents a primary key.
 
@@ -4554,7 +4554,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects: datastre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]</code> | postgresql_schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]</code> | postgresql_schemas block. |
 
 ---
 
@@ -4564,7 +4564,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects: datastre
 public readonly postgresqlSchemas: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
 
 postgresql_schemas block.
 
@@ -4587,7 +4587,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresql
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas.property.schema">schema</a></code> | <code>string</code> | Database name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas.property.postgresqlTables">postgresqlTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | postgresql_tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas.property.postgresqlTables">postgresqlTables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | postgresql_tables block. |
 
 ---
 
@@ -4611,7 +4611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly postgresqlTables: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 postgresql_tables block.
 
@@ -4634,7 +4634,7 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresql
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables.property.postgresqlColumns">postgresqlColumns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | postgresql_columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables.property.postgresqlColumns">postgresqlColumns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | postgresql_columns block. |
 
 ---
 
@@ -4658,7 +4658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly postgresqlColumns: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 postgresql_columns block.
 
@@ -4682,9 +4682,9 @@ const datastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresql
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.column">column</a></code> | <code>string</code> | Column name. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.dataType">dataType</a></code> | <code>string</code> | The PostgreSQL data type. Full data types list can be found here: https://www.postgresql.org/docs/current/datatype.html. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column can accept a null value. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column can accept a null value. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | The ordinal position of the column in the table. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the column represents a primary key. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the column represents a primary key. |
 
 ---
 
@@ -4722,7 +4722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column can accept a null value.
 
@@ -4750,7 +4750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the column represents a primary key.
 
@@ -4836,7 +4836,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects: datastre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects.property.objects">objects</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]</code> | objects block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects.property.objects">objects</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]</code> | objects block. |
 
 ---
 
@@ -4846,7 +4846,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects: datastre
 public readonly objects: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
 
 objects block.
 
@@ -4868,7 +4868,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects: d
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects.property.fields">fields</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]</code> | fields block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects.property.fields">fields</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]</code> | fields block. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects.property.objectName">objectName</a></code> | <code>string</code> | Name of object in Salesforce Org. |
 
 ---
@@ -4879,7 +4879,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects: d
 public readonly fields: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
 
 fields block.
 
@@ -4947,7 +4947,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects: datastre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects.property.objects">objects</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]</code> | objects block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects.property.objects">objects</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]</code> | objects block. |
 
 ---
 
@@ -4957,7 +4957,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects: datastre
 public readonly objects: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
 
 objects block.
 
@@ -4979,7 +4979,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects: d
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects.property.fields">fields</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]</code> | fields block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects.property.fields">fields</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]</code> | fields block. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects.property.objectName">objectName</a></code> | <code>string</code> | Name of object in Salesforce Org. |
 
 ---
@@ -4990,7 +4990,7 @@ const datastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects: d
 public readonly fields: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
 
 fields block.
 
@@ -5176,7 +5176,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects: datastrea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects.property.schemas">schemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]</code> | schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects.property.schemas">schemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]</code> | schemas block. |
 
 ---
 
@@ -5186,7 +5186,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects: datastrea
 public readonly schemas: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
 
 schemas block.
 
@@ -5209,7 +5209,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas: da
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas.property.schema">schema</a></code> | <code>string</code> | Schema name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas.property.tables">tables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]</code> | tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas.property.tables">tables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]</code> | tables block. |
 
 ---
 
@@ -5233,7 +5233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tables: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
 
 tables block.
 
@@ -5256,7 +5256,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTabl
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables.property.columns">columns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]</code> | columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables.property.columns">columns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]</code> | columns block. |
 
 ---
 
@@ -5280,7 +5280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly columns: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
 
 columns block.
 
@@ -5349,7 +5349,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects: datastrea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects.property.schemas">schemas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]</code> | schemas block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects.property.schemas">schemas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]</code> | schemas block. |
 
 ---
 
@@ -5359,7 +5359,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects: datastrea
 public readonly schemas: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
 
 schemas block.
 
@@ -5382,7 +5382,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas: da
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas.property.schema">schema</a></code> | <code>string</code> | Schema name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas.property.tables">tables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]</code> | tables block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas.property.tables">tables</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]</code> | tables block. |
 
 ---
 
@@ -5406,7 +5406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tables: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
 
 tables block.
 
@@ -5429,7 +5429,7 @@ const datastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTabl
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables.property.table">table</a></code> | <code>string</code> | Table name. |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables.property.columns">columns</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]</code> | columns block. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables.property.columns">columns</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]</code> | columns block. |
 
 ---
 
@@ -5453,7 +5453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly columns: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
 
 columns block.
 
@@ -5589,7 +5589,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5597,7 +5597,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5663,7 +5663,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5698,7 +5698,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]</code> | *No description.* |
 
 ---
 
@@ -5732,7 +5732,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -5749,7 +5749,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5757,7 +5757,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5823,7 +5823,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5858,7 +5858,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -5892,7 +5892,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -5909,7 +5909,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5917,7 +5917,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5983,7 +5983,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6018,7 +6018,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -6052,7 +6052,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -6069,7 +6069,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6078,7 +6078,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6270,7 +6270,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6331,16 +6331,16 @@ public resetPrimaryKey(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.collationInput">collationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.ordinalPositionInput">ordinalPositionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.collation">collation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a></code> | *No description.* |
 
 ---
 
@@ -6414,7 +6414,7 @@ public readonly dataTypeInput: string;
 public readonly nullableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6434,7 +6434,7 @@ public readonly ordinalPositionInput: number;
 public readonly primaryKeyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6474,7 +6474,7 @@ public readonly dataType: string;
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6494,7 +6494,7 @@ public readonly ordinalPosition: number;
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6504,7 +6504,7 @@ public readonly primaryKey: boolean | IResolvable;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>
 
 ---
 
@@ -6521,7 +6521,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6530,7 +6530,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6718,7 +6718,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6740,7 +6740,7 @@ public putMysqlColumns(value: IResolvable | DatastreamStreamBackfillAllMysqlExcl
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.putMysqlColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -6758,10 +6758,10 @@ public resetMysqlColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumns">mysqlColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumnsInput">mysqlColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumnsInput">mysqlColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a></code> | *No description.* |
 
 ---
 
@@ -6805,7 +6805,7 @@ public readonly mysqlColumns: DatastreamStreamBackfillAllMysqlExcludedObjectsMys
 public readonly mysqlColumnsInput: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -6835,7 +6835,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>
 
 ---
 
@@ -6852,7 +6852,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6861,7 +6861,7 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabas
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7049,7 +7049,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7071,7 +7071,7 @@ public putMysqlTables(value: IResolvable | DatastreamStreamBackfillAllMysqlExclu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.putMysqlTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -7090,9 +7090,9 @@ public resetMysqlTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.mysqlTables">mysqlTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.mysqlTablesInput">mysqlTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.mysqlTablesInput">mysqlTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a></code> | *No description.* |
 
 ---
 
@@ -7146,7 +7146,7 @@ public readonly databaseInput: string;
 public readonly mysqlTablesInput: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -7166,7 +7166,7 @@ public readonly database: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>
 
 ---
 
@@ -7183,14 +7183,14 @@ new datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7361,7 +7361,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7383,7 +7383,7 @@ public putMysqlDatabases(value: IResolvable | DatastreamStreamBackfillAllMysqlEx
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.putMysqlDatabases.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -7395,7 +7395,7 @@ public putMysqlDatabases(value: IResolvable | DatastreamStreamBackfillAllMysqlEx
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.property.mysqlDatabases">mysqlDatabases</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.property.mysqlDatabasesInput">mysqlDatabasesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.property.mysqlDatabasesInput">mysqlDatabasesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjects">DatastreamStreamBackfillAllMysqlExcludedObjects</a></code> | *No description.* |
 
 ---
@@ -7440,7 +7440,7 @@ public readonly mysqlDatabases: DatastreamStreamBackfillAllMysqlExcludedObjectsM
 public readonly mysqlDatabasesInput: IResolvable | DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases">DatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -7467,7 +7467,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7475,7 +7475,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7541,7 +7541,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7576,7 +7576,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -7610,7 +7610,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
 
 ---
 
@@ -7627,7 +7627,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7635,7 +7635,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7701,7 +7701,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7736,7 +7736,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -7770,7 +7770,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -7787,7 +7787,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7795,7 +7795,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7861,7 +7861,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7896,7 +7896,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -7930,7 +7930,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -7947,7 +7947,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7956,7 +7956,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8144,7 +8144,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8179,16 +8179,16 @@ public resetDataType(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.encoding">encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.length">length</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.precision">precision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a></code> | *No description.* |
 
 ---
 
@@ -8242,7 +8242,7 @@ public readonly length: number;
 public readonly nullable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -8272,7 +8272,7 @@ public readonly precision: number;
 public readonly primaryKey: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -8332,7 +8332,7 @@ public readonly dataType: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>
 
 ---
 
@@ -8349,7 +8349,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8358,7 +8358,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8546,7 +8546,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8568,7 +8568,7 @@ public putOracleColumns(value: IResolvable | DatastreamStreamBackfillAllOracleEx
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.putOracleColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -8586,10 +8586,10 @@ public resetOracleColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumns">oracleColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumnsInput">oracleColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumnsInput">oracleColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a></code> | *No description.* |
 
 ---
 
@@ -8633,7 +8633,7 @@ public readonly oracleColumns: DatastreamStreamBackfillAllOracleExcludedObjectsO
 public readonly oracleColumnsInput: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -8663,7 +8663,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>
 
 ---
 
@@ -8680,7 +8680,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8689,7 +8689,7 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchem
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8877,7 +8877,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8899,7 +8899,7 @@ public putOracleTables(value: IResolvable | DatastreamStreamBackfillAllOracleExc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.putOracleTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -8917,10 +8917,10 @@ public resetOracleTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.oracleTables">oracleTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTablesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.oracleTablesInput">oracleTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.oracleTablesInput">oracleTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a></code> | *No description.* |
 
 ---
 
@@ -8964,7 +8964,7 @@ public readonly oracleTables: DatastreamStreamBackfillAllOracleExcludedObjectsOr
 public readonly oracleTablesInput: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -8994,7 +8994,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>
 
 ---
 
@@ -9011,14 +9011,14 @@ new datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9189,7 +9189,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9211,7 +9211,7 @@ public putOracleSchemas(value: IResolvable | DatastreamStreamBackfillAllOracleEx
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.putOracleSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
 
 ---
 
@@ -9223,7 +9223,7 @@ public putOracleSchemas(value: IResolvable | DatastreamStreamBackfillAllOracleEx
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.property.oracleSchemas">oracleSchemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.property.oracleSchemasInput">oracleSchemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.property.oracleSchemasInput">oracleSchemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjects">DatastreamStreamBackfillAllOracleExcludedObjects</a></code> | *No description.* |
 
 ---
@@ -9268,7 +9268,7 @@ public readonly oracleSchemas: DatastreamStreamBackfillAllOracleExcludedObjectsO
 public readonly oracleSchemasInput: IResolvable | DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas">DatastreamStreamBackfillAllOracleExcludedObjectsOracleSchemas</a>[]
 
 ---
 
@@ -9295,14 +9295,14 @@ new datastreamStream.DatastreamStreamBackfillAllOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9482,7 +9482,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9754,14 +9754,14 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9932,7 +9932,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9954,7 +9954,7 @@ public putPostgresqlSchemas(value: IResolvable | DatastreamStreamBackfillAllPost
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.putPostgresqlSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -9966,7 +9966,7 @@ public putPostgresqlSchemas(value: IResolvable | DatastreamStreamBackfillAllPost
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.property.postgresqlSchemasInput">postgresqlSchemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.property.postgresqlSchemasInput">postgresqlSchemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjects">DatastreamStreamBackfillAllPostgresqlExcludedObjects</a></code> | *No description.* |
 
 ---
@@ -10011,7 +10011,7 @@ public readonly postgresqlSchemas: DatastreamStreamBackfillAllPostgresqlExcluded
 public readonly postgresqlSchemasInput: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -10038,7 +10038,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10046,7 +10046,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10112,7 +10112,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10147,7 +10147,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -10181,7 +10181,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -10198,7 +10198,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10207,7 +10207,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10395,7 +10395,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10417,7 +10417,7 @@ public putPostgresqlTables(value: IResolvable | DatastreamStreamBackfillAllPostg
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.putPostgresqlTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -10435,10 +10435,10 @@ public resetPostgresqlTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.postgresqlTables">postgresqlTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.postgresqlTablesInput">postgresqlTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.postgresqlTablesInput">postgresqlTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a></code> | *No description.* |
 
 ---
 
@@ -10482,7 +10482,7 @@ public readonly postgresqlTables: DatastreamStreamBackfillAllPostgresqlExcludedO
 public readonly postgresqlTablesInput: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -10512,7 +10512,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemas</a>
 
 ---
 
@@ -10529,7 +10529,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10537,7 +10537,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10603,7 +10603,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10638,7 +10638,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -10672,7 +10672,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -10689,7 +10689,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10698,7 +10698,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10886,7 +10886,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10908,7 +10908,7 @@ public putPostgresqlColumns(value: IResolvable | DatastreamStreamBackfillAllPost
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.putPostgresqlColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -10926,10 +10926,10 @@ public resetPostgresqlColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumns">postgresqlColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumnsInput">postgresqlColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumnsInput">postgresqlColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a></code> | *No description.* |
 
 ---
 
@@ -10973,7 +10973,7 @@ public readonly postgresqlColumns: DatastreamStreamBackfillAllPostgresqlExcluded
 public readonly postgresqlColumnsInput: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -11003,7 +11003,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTables</a>
 
 ---
 
@@ -11020,7 +11020,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11028,7 +11028,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11094,7 +11094,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11129,7 +11129,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -11163,7 +11163,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -11180,7 +11180,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11189,7 +11189,7 @@ new datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgre
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11380,7 +11380,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11436,15 +11436,15 @@ public resetPrimaryKey(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.ordinalPositionInput">ordinalPositionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a></code> | *No description.* |
 
 ---
 
@@ -11528,7 +11528,7 @@ public readonly dataTypeInput: string;
 public readonly nullableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11548,7 +11548,7 @@ public readonly ordinalPositionInput: number;
 public readonly primaryKeyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11578,7 +11578,7 @@ public readonly dataType: string;
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11598,7 +11598,7 @@ public readonly ordinalPosition: number;
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11608,7 +11608,7 @@ public readonly primaryKey: boolean | IResolvable;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamBackfillAllPostgresqlExcludedObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>
 
 ---
 
@@ -11625,7 +11625,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11633,7 +11633,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11699,7 +11699,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11734,7 +11734,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -11768,7 +11768,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
 
 ---
 
@@ -11785,7 +11785,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11794,7 +11794,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11981,7 +11981,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12010,7 +12010,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a></code> | *No description.* |
 
 ---
 
@@ -12064,7 +12064,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>
 
 ---
 
@@ -12081,7 +12081,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12089,7 +12089,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12155,7 +12155,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12190,7 +12190,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]</code> | *No description.* |
 
 ---
 
@@ -12224,7 +12224,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
 
 ---
 
@@ -12241,7 +12241,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12250,7 +12250,7 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12439,7 +12439,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12461,7 +12461,7 @@ public putFields(value: IResolvable | DatastreamStreamBackfillAllSalesforceExclu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.putFields.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
 
 ---
 
@@ -12485,10 +12485,10 @@ public resetObjectName(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.fields">fields</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.objectNameInput">objectNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.objectName">objectName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a></code> | *No description.* |
 
 ---
 
@@ -12532,7 +12532,7 @@ public readonly fields: DatastreamStreamBackfillAllSalesforceExcludedObjectsObje
 public readonly fieldsInput: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFields</a>[]
 
 ---
 
@@ -12562,7 +12562,7 @@ public readonly objectName: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>
 
 ---
 
@@ -12579,14 +12579,14 @@ new datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12757,7 +12757,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12779,7 +12779,7 @@ public putObjects(value: IResolvable | DatastreamStreamBackfillAllSalesforceExcl
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.putObjects.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
 
 ---
 
@@ -12791,7 +12791,7 @@ public putObjects(value: IResolvable | DatastreamStreamBackfillAllSalesforceExcl
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.property.objects">objects</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.property.objectsInput">objectsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.property.objectsInput">objectsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjects">DatastreamStreamBackfillAllSalesforceExcludedObjects</a></code> | *No description.* |
 
 ---
@@ -12836,7 +12836,7 @@ public readonly objects: DatastreamStreamBackfillAllSalesforceExcludedObjectsObj
 public readonly objectsInput: IResolvable | DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects">DatastreamStreamBackfillAllSalesforceExcludedObjectsObjects</a>[]
 
 ---
 
@@ -12863,14 +12863,14 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13041,7 +13041,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13063,7 +13063,7 @@ public putSchemas(value: IResolvable | DatastreamStreamBackfillAllSqlServerExclu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.putSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
 
 ---
 
@@ -13075,7 +13075,7 @@ public putSchemas(value: IResolvable | DatastreamStreamBackfillAllSqlServerExclu
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.property.schemas">schemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.property.schemasInput">schemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.property.schemasInput">schemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjects">DatastreamStreamBackfillAllSqlServerExcludedObjects</a></code> | *No description.* |
 
 ---
@@ -13120,7 +13120,7 @@ public readonly schemas: DatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 public readonly schemasInput: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
 
 ---
 
@@ -13147,7 +13147,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13155,7 +13155,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13221,7 +13221,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13256,7 +13256,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -13290,7 +13290,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>[]
 
 ---
 
@@ -13307,7 +13307,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13316,7 +13316,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13504,7 +13504,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13526,7 +13526,7 @@ public putTables(value: IResolvable | DatastreamStreamBackfillAllSqlServerExclud
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.putTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
 
 ---
 
@@ -13545,9 +13545,9 @@ public resetTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.tables">tables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.tablesInput">tablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.tablesInput">tablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a></code> | *No description.* |
 
 ---
 
@@ -13601,7 +13601,7 @@ public readonly schemaInput: string;
 public readonly tablesInput: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
 
 ---
 
@@ -13621,7 +13621,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemas</a>
 
 ---
 
@@ -13638,7 +13638,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13646,7 +13646,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13712,7 +13712,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13747,7 +13747,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -13781,7 +13781,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -13798,7 +13798,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13807,7 +13807,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13995,7 +13995,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14029,16 +14029,16 @@ public resetDataType(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.length">length</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.precision">precision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a></code> | *No description.* |
 
 ---
 
@@ -14082,7 +14082,7 @@ public readonly length: number;
 public readonly nullable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -14112,7 +14112,7 @@ public readonly precision: number;
 public readonly primaryKey: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -14172,7 +14172,7 @@ public readonly dataType: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>
 
 ---
 
@@ -14189,7 +14189,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14197,7 +14197,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14263,7 +14263,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14298,7 +14298,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -14332,7 +14332,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>[]
 
 ---
 
@@ -14349,7 +14349,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14358,7 +14358,7 @@ new datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasT
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14546,7 +14546,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14568,7 +14568,7 @@ public putColumns(value: IResolvable | DatastreamStreamBackfillAllSqlServerExclu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.putColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -14586,10 +14586,10 @@ public resetColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.columns">columns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.columnsInput">columnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.columnsInput">columnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a></code> | *No description.* |
 
 ---
 
@@ -14633,7 +14633,7 @@ public readonly columns: DatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 public readonly columnsInput: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -14663,7 +14663,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables">DatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTables</a>
 
 ---
 
@@ -14680,14 +14680,14 @@ new datastreamStream.DatastreamStreamBackfillNoneOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14857,7 +14857,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamBackfillNoneOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14929,14 +14929,14 @@ new datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15106,7 +15106,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15178,14 +15178,14 @@ new datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigB
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15356,7 +15356,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15544,14 +15544,14 @@ new datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15721,7 +15721,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigMergeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15793,14 +15793,14 @@ new datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15981,7 +15981,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16281,14 +16281,14 @@ new datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16458,7 +16458,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDatasetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16552,14 +16552,14 @@ new datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16731,7 +16731,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16881,14 +16881,14 @@ new datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17059,7 +17059,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17165,14 +17165,14 @@ new datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17342,7 +17342,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigAvroFileFormatOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17414,14 +17414,14 @@ new datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17593,7 +17593,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigJsonFileFormatOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17721,14 +17721,14 @@ new datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17905,7 +17905,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigGcsDestinationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18141,14 +18141,14 @@ new datastreamStream.DatastreamStreamDestinationConfigOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18322,7 +18322,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18496,14 +18496,14 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18673,7 +18673,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPositionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18745,7 +18745,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18753,7 +18753,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18819,7 +18819,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18854,7 +18854,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
 
 ---
 
@@ -18888,7 +18888,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -18905,7 +18905,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18913,7 +18913,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18979,7 +18979,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19014,7 +19014,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -19048,7 +19048,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -19065,7 +19065,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19073,7 +19073,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19139,7 +19139,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19174,7 +19174,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -19208,7 +19208,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -19225,7 +19225,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19234,7 +19234,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19426,7 +19426,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19487,16 +19487,16 @@ public resetPrimaryKey(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.collationInput">collationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.ordinalPositionInput">ordinalPositionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.collation">collation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a></code> | *No description.* |
 
 ---
 
@@ -19570,7 +19570,7 @@ public readonly dataTypeInput: string;
 public readonly nullableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19590,7 +19590,7 @@ public readonly ordinalPositionInput: number;
 public readonly primaryKeyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19630,7 +19630,7 @@ public readonly dataType: string;
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19650,7 +19650,7 @@ public readonly ordinalPosition: number;
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19660,7 +19660,7 @@ public readonly primaryKey: boolean | IResolvable;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>
 
 ---
 
@@ -19677,7 +19677,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19686,7 +19686,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19874,7 +19874,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19896,7 +19896,7 @@ public putMysqlColumns(value: IResolvable | DatastreamStreamSourceConfigMysqlSou
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.putMysqlColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -19914,10 +19914,10 @@ public resetMysqlColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumns">mysqlColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumnsInput">mysqlColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumnsInput">mysqlColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a></code> | *No description.* |
 
 ---
 
@@ -19961,7 +19961,7 @@ public readonly mysqlColumns: DatastreamStreamSourceConfigMysqlSourceConfigExclu
 public readonly mysqlColumnsInput: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -19991,7 +19991,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>
 
 ---
 
@@ -20008,7 +20008,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20017,7 +20017,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20205,7 +20205,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20227,7 +20227,7 @@ public putMysqlTables(value: IResolvable | DatastreamStreamSourceConfigMysqlSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.putMysqlTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -20246,9 +20246,9 @@ public resetMysqlTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.mysqlTables">mysqlTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.mysqlTablesInput">mysqlTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.mysqlTablesInput">mysqlTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a></code> | *No description.* |
 
 ---
 
@@ -20302,7 +20302,7 @@ public readonly databaseInput: string;
 public readonly mysqlTablesInput: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -20322,7 +20322,7 @@ public readonly database: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>
 
 ---
 
@@ -20339,14 +20339,14 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20517,7 +20517,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20539,7 +20539,7 @@ public putMysqlDatabases(value: IResolvable | DatastreamStreamSourceConfigMysqlS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.putMysqlDatabases.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -20551,7 +20551,7 @@ public putMysqlDatabases(value: IResolvable | DatastreamStreamSourceConfigMysqlS
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.property.mysqlDatabases">mysqlDatabases</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabasesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.property.mysqlDatabasesInput">mysqlDatabasesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.property.mysqlDatabasesInput">mysqlDatabasesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects</a></code> | *No description.* |
 
 ---
@@ -20596,7 +20596,7 @@ public readonly mysqlDatabases: DatastreamStreamSourceConfigMysqlSourceConfigExc
 public readonly mysqlDatabasesInput: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigExcludeObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -20623,14 +20623,14 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20800,7 +20800,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigGtidOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20872,7 +20872,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20880,7 +20880,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20946,7 +20946,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20981,7 +20981,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
 
 ---
 
@@ -21015,7 +21015,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -21032,7 +21032,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21040,7 +21040,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21106,7 +21106,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21141,7 +21141,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -21175,7 +21175,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -21192,7 +21192,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21200,7 +21200,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21266,7 +21266,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21301,7 +21301,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -21335,7 +21335,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -21352,7 +21352,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21361,7 +21361,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21553,7 +21553,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21614,16 +21614,16 @@ public resetPrimaryKey(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.collationInput">collationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.ordinalPositionInput">ordinalPositionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.collation">collation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a></code> | *No description.* |
 
 ---
 
@@ -21697,7 +21697,7 @@ public readonly dataTypeInput: string;
 public readonly nullableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -21717,7 +21717,7 @@ public readonly ordinalPositionInput: number;
 public readonly primaryKeyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -21757,7 +21757,7 @@ public readonly dataType: string;
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -21777,7 +21777,7 @@ public readonly ordinalPosition: number;
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -21787,7 +21787,7 @@ public readonly primaryKey: boolean | IResolvable;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>
 
 ---
 
@@ -21804,7 +21804,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21813,7 +21813,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22001,7 +22001,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22023,7 +22023,7 @@ public putMysqlColumns(value: IResolvable | DatastreamStreamSourceConfigMysqlSou
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.putMysqlColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -22041,10 +22041,10 @@ public resetMysqlColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumns">mysqlColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumnsInput">mysqlColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.mysqlColumnsInput">mysqlColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a></code> | *No description.* |
 
 ---
 
@@ -22088,7 +22088,7 @@ public readonly mysqlColumns: DatastreamStreamSourceConfigMysqlSourceConfigInclu
 public readonly mysqlColumnsInput: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesMysqlColumns</a>[]
 
 ---
 
@@ -22118,7 +22118,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>
 
 ---
 
@@ -22135,7 +22135,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22144,7 +22144,7 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22332,7 +22332,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22354,7 +22354,7 @@ public putMysqlTables(value: IResolvable | DatastreamStreamSourceConfigMysqlSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.putMysqlTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -22373,9 +22373,9 @@ public resetMysqlTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.mysqlTables">mysqlTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.databaseInput">databaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.mysqlTablesInput">mysqlTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.mysqlTablesInput">mysqlTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.database">database</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a></code> | *No description.* |
 
 ---
 
@@ -22429,7 +22429,7 @@ public readonly databaseInput: string;
 public readonly mysqlTablesInput: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesMysqlTables</a>[]
 
 ---
 
@@ -22449,7 +22449,7 @@ public readonly database: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>
 
 ---
 
@@ -22466,14 +22466,14 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22644,7 +22644,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22666,7 +22666,7 @@ public putMysqlDatabases(value: IResolvable | DatastreamStreamSourceConfigMysqlS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.putMysqlDatabases.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -22678,7 +22678,7 @@ public putMysqlDatabases(value: IResolvable | DatastreamStreamSourceConfigMysqlS
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.property.mysqlDatabases">mysqlDatabases</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabasesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.property.mysqlDatabasesInput">mysqlDatabasesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.property.mysqlDatabasesInput">mysqlDatabasesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjects</a></code> | *No description.* |
 
 ---
@@ -22723,7 +22723,7 @@ public readonly mysqlDatabases: DatastreamStreamSourceConfigMysqlSourceConfigInc
 public readonly mysqlDatabasesInput: IResolvable | DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases">DatastreamStreamSourceConfigMysqlSourceConfigIncludeObjectsMysqlDatabases</a>[]
 
 ---
 
@@ -22750,14 +22750,14 @@ new datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22937,7 +22937,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigMysqlSourceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23225,14 +23225,14 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObje
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23402,7 +23402,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23474,7 +23474,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23482,7 +23482,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23548,7 +23548,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23583,7 +23583,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -23617,7 +23617,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
 
 ---
 
@@ -23634,7 +23634,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23642,7 +23642,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23708,7 +23708,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23743,7 +23743,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -23777,7 +23777,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -23794,7 +23794,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23802,7 +23802,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23868,7 +23868,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23903,7 +23903,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -23937,7 +23937,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -23954,7 +23954,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23963,7 +23963,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24151,7 +24151,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24186,16 +24186,16 @@ public resetDataType(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.encoding">encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.length">length</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.precision">precision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a></code> | *No description.* |
 
 ---
 
@@ -24249,7 +24249,7 @@ public readonly length: number;
 public readonly nullable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -24279,7 +24279,7 @@ public readonly precision: number;
 public readonly primaryKey: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -24339,7 +24339,7 @@ public readonly dataType: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>
 
 ---
 
@@ -24356,7 +24356,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24365,7 +24365,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24553,7 +24553,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24575,7 +24575,7 @@ public putOracleColumns(value: IResolvable | DatastreamStreamSourceConfigOracleS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.putOracleColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -24593,10 +24593,10 @@ public resetOracleColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumns">oracleColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumnsInput">oracleColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumnsInput">oracleColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a></code> | *No description.* |
 
 ---
 
@@ -24640,7 +24640,7 @@ public readonly oracleColumns: DatastreamStreamSourceConfigOracleSourceConfigExc
 public readonly oracleColumnsInput: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -24670,7 +24670,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>
 
 ---
 
@@ -24687,7 +24687,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24696,7 +24696,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24884,7 +24884,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24906,7 +24906,7 @@ public putOracleTables(value: IResolvable | DatastreamStreamSourceConfigOracleSo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.putOracleTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -24924,10 +24924,10 @@ public resetOracleTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.oracleTables">oracleTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTablesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.oracleTablesInput">oracleTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.oracleTablesInput">oracleTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a></code> | *No description.* |
 
 ---
 
@@ -24971,7 +24971,7 @@ public readonly oracleTables: DatastreamStreamSourceConfigOracleSourceConfigExcl
 public readonly oracleTablesInput: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -25001,7 +25001,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>
 
 ---
 
@@ -25018,14 +25018,14 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25196,7 +25196,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25218,7 +25218,7 @@ public putOracleSchemas(value: IResolvable | DatastreamStreamSourceConfigOracleS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.putOracleSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
 
 ---
 
@@ -25230,7 +25230,7 @@ public putOracleSchemas(value: IResolvable | DatastreamStreamSourceConfigOracleS
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.property.oracleSchemas">oracleSchemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.property.oracleSchemasInput">oracleSchemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.property.oracleSchemasInput">oracleSchemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjects</a></code> | *No description.* |
 
 ---
@@ -25275,7 +25275,7 @@ public readonly oracleSchemas: DatastreamStreamSourceConfigOracleSourceConfigExc
 public readonly oracleSchemasInput: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigExcludeObjectsOracleSchemas</a>[]
 
 ---
 
@@ -25302,7 +25302,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25310,7 +25310,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25376,7 +25376,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25411,7 +25411,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -25445,7 +25445,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
 
 ---
 
@@ -25462,7 +25462,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25470,7 +25470,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25536,7 +25536,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25571,7 +25571,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -25605,7 +25605,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -25622,7 +25622,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25630,7 +25630,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25696,7 +25696,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25731,7 +25731,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -25765,7 +25765,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -25782,7 +25782,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25791,7 +25791,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25979,7 +25979,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26014,16 +26014,16 @@ public resetDataType(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.encoding">encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.length">length</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.precision">precision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a></code> | *No description.* |
 
 ---
 
@@ -26077,7 +26077,7 @@ public readonly length: number;
 public readonly nullable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -26107,7 +26107,7 @@ public readonly precision: number;
 public readonly primaryKey: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -26167,7 +26167,7 @@ public readonly dataType: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>
 
 ---
 
@@ -26184,7 +26184,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26193,7 +26193,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26381,7 +26381,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26403,7 +26403,7 @@ public putOracleColumns(value: IResolvable | DatastreamStreamSourceConfigOracleS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.putOracleColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -26421,10 +26421,10 @@ public resetOracleColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumns">oracleColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumnsInput">oracleColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.oracleColumnsInput">oracleColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a></code> | *No description.* |
 
 ---
 
@@ -26468,7 +26468,7 @@ public readonly oracleColumns: DatastreamStreamSourceConfigOracleSourceConfigInc
 public readonly oracleColumnsInput: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesOracleColumns</a>[]
 
 ---
 
@@ -26498,7 +26498,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>
 
 ---
 
@@ -26515,7 +26515,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26524,7 +26524,7 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26712,7 +26712,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26734,7 +26734,7 @@ public putOracleTables(value: IResolvable | DatastreamStreamSourceConfigOracleSo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.putOracleTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -26752,10 +26752,10 @@ public resetOracleTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.oracleTables">oracleTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTablesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.oracleTablesInput">oracleTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.oracleTablesInput">oracleTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a></code> | *No description.* |
 
 ---
 
@@ -26799,7 +26799,7 @@ public readonly oracleTables: DatastreamStreamSourceConfigOracleSourceConfigIncl
 public readonly oracleTablesInput: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasOracleTables</a>[]
 
 ---
 
@@ -26829,7 +26829,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>
 
 ---
 
@@ -26846,14 +26846,14 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObject
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27024,7 +27024,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27046,7 +27046,7 @@ public putOracleSchemas(value: IResolvable | DatastreamStreamSourceConfigOracleS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.putOracleSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
 
 ---
 
@@ -27058,7 +27058,7 @@ public putOracleSchemas(value: IResolvable | DatastreamStreamSourceConfigOracleS
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.property.oracleSchemas">oracleSchemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.property.oracleSchemasInput">oracleSchemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.property.oracleSchemasInput">oracleSchemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjects</a></code> | *No description.* |
 
 ---
@@ -27103,7 +27103,7 @@ public readonly oracleSchemas: DatastreamStreamSourceConfigOracleSourceConfigInc
 public readonly oracleSchemasInput: IResolvable | DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas">DatastreamStreamSourceConfigOracleSourceConfigIncludeObjectsOracleSchemas</a>[]
 
 ---
 
@@ -27130,14 +27130,14 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27317,7 +27317,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27605,14 +27605,14 @@ new datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27782,7 +27782,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27854,14 +27854,14 @@ new datastreamStream.DatastreamStreamSourceConfigOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28041,7 +28041,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28335,14 +28335,14 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28513,7 +28513,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28535,7 +28535,7 @@ public putPostgresqlSchemas(value: IResolvable | DatastreamStreamSourceConfigPos
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.putPostgresqlSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -28547,7 +28547,7 @@ public putPostgresqlSchemas(value: IResolvable | DatastreamStreamSourceConfigPos
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.property.postgresqlSchemasInput">postgresqlSchemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.property.postgresqlSchemasInput">postgresqlSchemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjects</a></code> | *No description.* |
 
 ---
@@ -28592,7 +28592,7 @@ public readonly postgresqlSchemas: DatastreamStreamSourceConfigPostgresqlSourceC
 public readonly postgresqlSchemasInput: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -28619,7 +28619,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28627,7 +28627,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28693,7 +28693,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28728,7 +28728,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -28762,7 +28762,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -28779,7 +28779,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28788,7 +28788,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28976,7 +28976,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28998,7 +28998,7 @@ public putPostgresqlTables(value: IResolvable | DatastreamStreamSourceConfigPost
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.putPostgresqlTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -29016,10 +29016,10 @@ public resetPostgresqlTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.postgresqlTables">postgresqlTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.postgresqlTablesInput">postgresqlTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.postgresqlTablesInput">postgresqlTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a></code> | *No description.* |
 
 ---
 
@@ -29063,7 +29063,7 @@ public readonly postgresqlTables: DatastreamStreamSourceConfigPostgresqlSourceCo
 public readonly postgresqlTablesInput: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -29093,7 +29093,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemas</a>
 
 ---
 
@@ -29110,7 +29110,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29118,7 +29118,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29184,7 +29184,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29219,7 +29219,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -29253,7 +29253,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -29270,7 +29270,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29279,7 +29279,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29467,7 +29467,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29489,7 +29489,7 @@ public putPostgresqlColumns(value: IResolvable | DatastreamStreamSourceConfigPos
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.putPostgresqlColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -29507,10 +29507,10 @@ public resetPostgresqlColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumns">postgresqlColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumnsInput">postgresqlColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumnsInput">postgresqlColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a></code> | *No description.* |
 
 ---
 
@@ -29554,7 +29554,7 @@ public readonly postgresqlColumns: DatastreamStreamSourceConfigPostgresqlSourceC
 public readonly postgresqlColumnsInput: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -29584,7 +29584,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTables</a>
 
 ---
 
@@ -29601,7 +29601,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29609,7 +29609,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29675,7 +29675,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29710,7 +29710,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -29744,7 +29744,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -29761,7 +29761,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29770,7 +29770,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29961,7 +29961,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30017,15 +30017,15 @@ public resetPrimaryKey(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.ordinalPositionInput">ordinalPositionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a></code> | *No description.* |
 
 ---
 
@@ -30109,7 +30109,7 @@ public readonly dataTypeInput: string;
 public readonly nullableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30129,7 +30129,7 @@ public readonly ordinalPositionInput: number;
 public readonly primaryKeyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30159,7 +30159,7 @@ public readonly dataType: string;
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30179,7 +30179,7 @@ public readonly ordinalPosition: number;
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30189,7 +30189,7 @@ public readonly primaryKey: boolean | IResolvable;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigExcludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>
 
 ---
 
@@ -30206,14 +30206,14 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30384,7 +30384,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30406,7 +30406,7 @@ public putPostgresqlSchemas(value: IResolvable | DatastreamStreamSourceConfigPos
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.putPostgresqlSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -30418,7 +30418,7 @@ public putPostgresqlSchemas(value: IResolvable | DatastreamStreamSourceConfigPos
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.property.postgresqlSchemas">postgresqlSchemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.property.postgresqlSchemasInput">postgresqlSchemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.property.postgresqlSchemasInput">postgresqlSchemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjects</a></code> | *No description.* |
 
 ---
@@ -30463,7 +30463,7 @@ public readonly postgresqlSchemas: DatastreamStreamSourceConfigPostgresqlSourceC
 public readonly postgresqlSchemasInput: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -30490,7 +30490,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30498,7 +30498,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30564,7 +30564,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30599,7 +30599,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -30633,7 +30633,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>[]
 
 ---
 
@@ -30650,7 +30650,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -30659,7 +30659,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30847,7 +30847,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30869,7 +30869,7 @@ public putPostgresqlTables(value: IResolvable | DatastreamStreamSourceConfigPost
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.putPostgresqlTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -30887,10 +30887,10 @@ public resetPostgresqlTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.postgresqlTables">postgresqlTables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.postgresqlTablesInput">postgresqlTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.postgresqlTablesInput">postgresqlTablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a></code> | *No description.* |
 
 ---
 
@@ -30934,7 +30934,7 @@ public readonly postgresqlTables: DatastreamStreamSourceConfigPostgresqlSourceCo
 public readonly postgresqlTablesInput: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -30964,7 +30964,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemas</a>
 
 ---
 
@@ -30981,7 +30981,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30989,7 +30989,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31055,7 +31055,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31090,7 +31090,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -31124,7 +31124,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>[]
 
 ---
 
@@ -31141,7 +31141,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31150,7 +31150,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31338,7 +31338,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31360,7 +31360,7 @@ public putPostgresqlColumns(value: IResolvable | DatastreamStreamSourceConfigPos
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.putPostgresqlColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -31378,10 +31378,10 @@ public resetPostgresqlColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumns">postgresqlColumns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumnsInput">postgresqlColumnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.postgresqlColumnsInput">postgresqlColumnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a></code> | *No description.* |
 
 ---
 
@@ -31425,7 +31425,7 @@ public readonly postgresqlColumns: DatastreamStreamSourceConfigPostgresqlSourceC
 public readonly postgresqlColumnsInput: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -31455,7 +31455,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTables</a>
 
 ---
 
@@ -31472,7 +31472,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31480,7 +31480,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31546,7 +31546,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31581,7 +31581,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -31615,7 +31615,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>[]
 
 ---
 
@@ -31632,7 +31632,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31641,7 +31641,7 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31832,7 +31832,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31888,15 +31888,15 @@ public resetPrimaryKey(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullableInput">nullableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.ordinalPositionInput">ordinalPositionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.nullable">nullable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a></code> | *No description.* |
 
 ---
 
@@ -31980,7 +31980,7 @@ public readonly dataTypeInput: string;
 public readonly nullableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32000,7 +32000,7 @@ public readonly ordinalPositionInput: number;
 public readonly primaryKeyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32030,7 +32030,7 @@ public readonly dataType: string;
 public readonly nullable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32050,7 +32050,7 @@ public readonly ordinalPosition: number;
 public readonly primaryKey: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32060,7 +32060,7 @@ public readonly primaryKey: boolean | IResolvable;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns">DatastreamStreamSourceConfigPostgresqlSourceConfigIncludeObjectsPostgresqlSchemasPostgresqlTablesPostgresqlColumns</a>
 
 ---
 
@@ -32077,14 +32077,14 @@ new datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32259,7 +32259,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigPostgresqlSourceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32483,7 +32483,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -32491,7 +32491,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32557,7 +32557,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32592,7 +32592,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -32626,7 +32626,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
 
 ---
 
@@ -32643,7 +32643,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -32652,7 +32652,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32839,7 +32839,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32868,7 +32868,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a></code> | *No description.* |
 
 ---
 
@@ -32922,7 +32922,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>
 
 ---
 
@@ -32939,7 +32939,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -32947,7 +32947,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33013,7 +33013,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33048,7 +33048,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]</code> | *No description.* |
 
 ---
 
@@ -33082,7 +33082,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
 
 ---
 
@@ -33099,7 +33099,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -33108,7 +33108,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33297,7 +33297,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33319,7 +33319,7 @@ public putFields(value: IResolvable | DatastreamStreamSourceConfigSalesforceSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.putFields.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
 
 ---
 
@@ -33343,10 +33343,10 @@ public resetObjectName(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.fields">fields</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFieldsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.objectNameInput">objectNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.objectName">objectName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a></code> | *No description.* |
 
 ---
 
@@ -33390,7 +33390,7 @@ public readonly fields: DatastreamStreamSourceConfigSalesforceSourceConfigExclud
 public readonly fieldsInput: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsFields</a>[]
 
 ---
 
@@ -33420,7 +33420,7 @@ public readonly objectName: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>
 
 ---
 
@@ -33437,14 +33437,14 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33615,7 +33615,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33637,7 +33637,7 @@ public putObjects(value: IResolvable | DatastreamStreamSourceConfigSalesforceSou
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.putObjects.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
 
 ---
 
@@ -33649,7 +33649,7 @@ public putObjects(value: IResolvable | DatastreamStreamSourceConfigSalesforceSou
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.property.objects">objects</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjectsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.property.objectsInput">objectsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.property.objectsInput">objectsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjects</a></code> | *No description.* |
 
 ---
@@ -33694,7 +33694,7 @@ public readonly objects: DatastreamStreamSourceConfigSalesforceSourceConfigExclu
 public readonly objectsInput: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigExcludeObjectsObjects</a>[]
 
 ---
 
@@ -33721,7 +33721,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -33729,7 +33729,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33795,7 +33795,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33830,7 +33830,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -33864,7 +33864,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
 
 ---
 
@@ -33881,7 +33881,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -33890,7 +33890,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34077,7 +34077,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34106,7 +34106,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a></code> | *No description.* |
 
 ---
 
@@ -34160,7 +34160,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>
 
 ---
 
@@ -34177,7 +34177,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -34185,7 +34185,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34251,7 +34251,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34286,7 +34286,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]</code> | *No description.* |
 
 ---
 
@@ -34320,7 +34320,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
 
 ---
 
@@ -34337,7 +34337,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -34346,7 +34346,7 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34535,7 +34535,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34557,7 +34557,7 @@ public putFields(value: IResolvable | DatastreamStreamSourceConfigSalesforceSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.putFields.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
 
 ---
 
@@ -34581,10 +34581,10 @@ public resetObjectName(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.fields">fields</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFieldsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.fieldsInput">fieldsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.objectNameInput">objectNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.objectName">objectName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a></code> | *No description.* |
 
 ---
 
@@ -34628,7 +34628,7 @@ public readonly fields: DatastreamStreamSourceConfigSalesforceSourceConfigInclud
 public readonly fieldsInput: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsFields</a>[]
 
 ---
 
@@ -34658,7 +34658,7 @@ public readonly objectName: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>
 
 ---
 
@@ -34675,14 +34675,14 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34853,7 +34853,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34875,7 +34875,7 @@ public putObjects(value: IResolvable | DatastreamStreamSourceConfigSalesforceSou
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.putObjects.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
 
 ---
 
@@ -34887,7 +34887,7 @@ public putObjects(value: IResolvable | DatastreamStreamSourceConfigSalesforceSou
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.property.objects">objects</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjectsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.property.objectsInput">objectsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.property.objectsInput">objectsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjects</a></code> | *No description.* |
 
 ---
@@ -34932,7 +34932,7 @@ public readonly objects: DatastreamStreamSourceConfigSalesforceSourceConfigInclu
 public readonly objectsInput: IResolvable | DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects">DatastreamStreamSourceConfigSalesforceSourceConfigIncludeObjectsObjects</a>[]
 
 ---
 
@@ -34959,14 +34959,14 @@ new datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35140,7 +35140,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSalesforceSourceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35314,14 +35314,14 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTabl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35491,7 +35491,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35563,14 +35563,14 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35741,7 +35741,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35763,7 +35763,7 @@ public putSchemas(value: IResolvable | DatastreamStreamSourceConfigSqlServerSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.putSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
 
 ---
 
@@ -35775,7 +35775,7 @@ public putSchemas(value: IResolvable | DatastreamStreamSourceConfigSqlServerSour
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.property.schemas">schemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.property.schemasInput">schemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.property.schemasInput">schemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjects</a></code> | *No description.* |
 
 ---
@@ -35820,7 +35820,7 @@ public readonly schemas: DatastreamStreamSourceConfigSqlServerSourceConfigExclud
 public readonly schemasInput: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
 
 ---
 
@@ -35847,7 +35847,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -35855,7 +35855,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35921,7 +35921,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35956,7 +35956,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -35990,7 +35990,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>[]
 
 ---
 
@@ -36007,7 +36007,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -36016,7 +36016,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36204,7 +36204,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36226,7 +36226,7 @@ public putTables(value: IResolvable | DatastreamStreamSourceConfigSqlServerSourc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.putTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
 
 ---
 
@@ -36245,9 +36245,9 @@ public resetTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.tables">tables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.tablesInput">tablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.tablesInput">tablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a></code> | *No description.* |
 
 ---
 
@@ -36301,7 +36301,7 @@ public readonly schemaInput: string;
 public readonly tablesInput: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
 
 ---
 
@@ -36321,7 +36321,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemas</a>
 
 ---
 
@@ -36338,7 +36338,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -36346,7 +36346,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36412,7 +36412,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36447,7 +36447,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -36481,7 +36481,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -36498,7 +36498,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -36507,7 +36507,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36695,7 +36695,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36729,16 +36729,16 @@ public resetDataType(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.length">length</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.precision">precision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a></code> | *No description.* |
 
 ---
 
@@ -36782,7 +36782,7 @@ public readonly length: number;
 public readonly nullable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -36812,7 +36812,7 @@ public readonly precision: number;
 public readonly primaryKey: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -36872,7 +36872,7 @@ public readonly dataType: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>
 
 ---
 
@@ -36889,7 +36889,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -36897,7 +36897,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36963,7 +36963,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36998,7 +36998,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -37032,7 +37032,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>[]
 
 ---
 
@@ -37049,7 +37049,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -37058,7 +37058,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37246,7 +37246,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37268,7 +37268,7 @@ public putColumns(value: IResolvable | DatastreamStreamSourceConfigSqlServerSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.putColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -37286,10 +37286,10 @@ public resetColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.columns">columns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.columnsInput">columnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.columnsInput">columnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a></code> | *No description.* |
 
 ---
 
@@ -37333,7 +37333,7 @@ public readonly columns: DatastreamStreamSourceConfigSqlServerSourceConfigExclud
 public readonly columnsInput: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -37363,7 +37363,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigExcludeObjectsSchemasTables</a>
 
 ---
 
@@ -37380,14 +37380,14 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37558,7 +37558,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37580,7 +37580,7 @@ public putSchemas(value: IResolvable | DatastreamStreamSourceConfigSqlServerSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.putSchemas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
 
 ---
 
@@ -37592,7 +37592,7 @@ public putSchemas(value: IResolvable | DatastreamStreamSourceConfigSqlServerSour
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.property.schemas">schemas</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.property.schemasInput">schemasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.property.schemasInput">schemasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjects</a></code> | *No description.* |
 
 ---
@@ -37637,7 +37637,7 @@ public readonly schemas: DatastreamStreamSourceConfigSqlServerSourceConfigInclud
 public readonly schemasInput: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
 
 ---
 
@@ -37664,7 +37664,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -37672,7 +37672,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37738,7 +37738,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37773,7 +37773,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]</code> | *No description.* |
 
 ---
 
@@ -37807,7 +37807,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>[]
 
 ---
 
@@ -37824,7 +37824,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -37833,7 +37833,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38021,7 +38021,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38043,7 +38043,7 @@ public putTables(value: IResolvable | DatastreamStreamSourceConfigSqlServerSourc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.putTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
 
 ---
 
@@ -38062,9 +38062,9 @@ public resetTables(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.tables">tables</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.tablesInput">tablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.tablesInput">tablesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a></code> | *No description.* |
 
 ---
 
@@ -38118,7 +38118,7 @@ public readonly schemaInput: string;
 public readonly tablesInput: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
 
 ---
 
@@ -38138,7 +38138,7 @@ public readonly schema: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemas</a>
 
 ---
 
@@ -38155,7 +38155,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -38163,7 +38163,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38229,7 +38229,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38264,7 +38264,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
 
 ---
 
@@ -38298,7 +38298,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -38315,7 +38315,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38324,7 +38324,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38512,7 +38512,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38546,16 +38546,16 @@ public resetDataType(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.length">length</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.nullable">nullable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.ordinalPosition">ordinalPosition</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.precision">precision</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.primaryKey">primaryKey</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.scale">scale</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.dataTypeInput">dataTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.dataType">dataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a></code> | *No description.* |
 
 ---
 
@@ -38599,7 +38599,7 @@ public readonly length: number;
 public readonly nullable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -38629,7 +38629,7 @@ public readonly precision: number;
 public readonly primaryKey: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -38689,7 +38689,7 @@ public readonly dataType: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>
 
 ---
 
@@ -38706,7 +38706,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -38714,7 +38714,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38780,7 +38780,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38815,7 +38815,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]</code> | *No description.* |
 
 ---
 
@@ -38849,7 +38849,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>[]
 
 ---
 
@@ -38866,7 +38866,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38875,7 +38875,7 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObj
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39063,7 +39063,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39085,7 +39085,7 @@ public putColumns(value: IResolvable | DatastreamStreamSourceConfigSqlServerSour
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.putColumns.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -39103,10 +39103,10 @@ public resetColumns(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.columns">columns</a></code> | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumnsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.columnsInput">columnsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.columnsInput">columnsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.table">table</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a></code> | *No description.* |
 
 ---
 
@@ -39150,7 +39150,7 @@ public readonly columns: DatastreamStreamSourceConfigSqlServerSourceConfigInclud
 public readonly columnsInput: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTablesColumns</a>[]
 
 ---
 
@@ -39180,7 +39180,7 @@ public readonly table: string;
 public readonly internalValue: IResolvable | DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables">DatastreamStreamSourceConfigSqlServerSourceConfigIncludeObjectsSchemasTables</a>
 
 ---
 
@@ -39197,14 +39197,14 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39384,7 +39384,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39672,14 +39672,14 @@ new datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39849,7 +39849,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSqlServerSourceConfigTransactionLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39921,14 +39921,14 @@ new datastreamStream.DatastreamStreamTimeoutsOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40101,7 +40101,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40146,7 +40146,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -40240,7 +40240,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | DatastreamStreamTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.datastreamStream.DatastreamStreamTimeouts">DatastreamStreamTimeouts</a>
 
 ---
 

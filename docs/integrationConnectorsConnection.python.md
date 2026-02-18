@@ -47,20 +47,20 @@ integrationConnectorsConnection.IntegrationConnectorsConnection(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.connectorVersion">connector_version</a></code> | <code>str</code> | connectorVersion of the Connector. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.location">location</a></code> | <code>str</code> | Location in which Connection needs to be created. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of Connection needs to be created. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.authConfig">auth_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig">IntegrationConnectorsConnectionAuthConfig</a></code> | auth_config block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.configVariable">config_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | config_variable block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.configVariable">config_variable</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | config_variable block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.description">description</a></code> | <code>str</code> | An arbitrary description for the Connection. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.destinationConfig">destination_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | destination_config block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.destinationConfig">destination_config</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | destination_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.eventingConfig">eventing_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig">IntegrationConnectorsConnectionEventingConfig</a></code> | eventing_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.eventingEnablementType">eventing_enablement_type</a></code> | <code>str</code> | Eventing enablement type. Will be nil if eventing is not enabled. Possible values: ["EVENTING_AND_CONNECTION", "ONLY_EVENTING"]. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#id IntegrationConnectorsConnection#id}. |
@@ -71,7 +71,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnection(
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#project IntegrationConnectorsConnection#project}. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.serviceAccount">service_account</a></code> | <code>str</code> | Service account needed for runtime plane to access Google Cloud resources. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.sslConfig">ssl_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig">IntegrationConnectorsConnectionSslConfig</a></code> | ssl_config block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.suspended">suspended</a></code> | <code>bool \| cdktf.IResolvable</code> | Suspended indicates if a user has suspended a connection or not. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.suspended">suspended</a></code> | <code>bool \| cdktn.IResolvable</code> | Suspended indicates if a user has suspended a connection or not. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -96,43 +96,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `config_variable`<sup>Optional</sup> <a name="config_variable" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.configVariable"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
 
 config_variable block.
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `destination_config`<sup>Optional</sup> <a name="destination_config" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.destinationConfig"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
 
 destination_config block.
 
@@ -310,7 +310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `suspended`<sup>Optional</sup> <a name="suspended" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.Initializer.parameter.suspended"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Suspended indicates if a user has suspended a connection or not.
 
@@ -625,7 +625,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `additional_variable`<sup>Optional</sup> <a name="additional_variable" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putAuthConfig.parameter.additionalVariable"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -813,7 +813,7 @@ def put_config_variable(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putConfigVariable.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
 
 ---
 
@@ -827,7 +827,7 @@ def put_destination_config(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putDestinationConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
 
 ---
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `additional_variable`<sup>Optional</sup> <a name="additional_variable" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putEventingConfig.parameter.additionalVariable"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enrichment_enabled`<sup>Optional</sup> <a name="enrichment_enabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putEventingConfig.parameter.enrichmentEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enrichment Enabled.
 
@@ -893,7 +893,7 @@ def put_lock_config(
 
 ###### `locked`<sup>Required</sup> <a name="locked" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putLockConfig.parameter.locked"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether or not the connection is locked.
 
@@ -922,7 +922,7 @@ def put_log_config(
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putLogConfig.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enabled represents whether logging is enabled or not for a connection.
 
@@ -998,7 +998,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `additional_variable`<sup>Optional</sup> <a name="additional_variable" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putSslConfig.parameter.additionalVariable"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `use_ssl`<sup>Optional</sup> <a name="use_ssl" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.putSslConfig.parameter.useSsl"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Bool for enabling SSL.
 
@@ -1223,7 +1223,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a IntegrationConnectorsConnection resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a IntegrationConnectorsConnection resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1306,7 +1306,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnection.generate_config_
 )
 ```
 
-Generates CDKTF code for importing a IntegrationConnectorsConnection resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a IntegrationConnectorsConnection resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.generateConfigForImport.parameter.scope"></a>
 
@@ -1336,7 +1336,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the IntegrationConnectorsConnection to import is found.
 
@@ -1347,19 +1347,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authConfig">auth_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference">IntegrationConnectorsConnectionAuthConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.configVariable">config_variable</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList">IntegrationConnectorsConnectionConfigVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connectionRevision">connection_revision</a></code> | <code>str</code> | *No description.* |
@@ -1367,7 +1367,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connectorVersionLaunchStage">connector_version_launch_stage</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.destinationConfig">destination_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList">IntegrationConnectorsConnectionDestinationConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.eventingConfig">eventing_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference">IntegrationConnectorsConnectionEventingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.eventingRuntimeData">eventing_runtime_data</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList">IntegrationConnectorsConnectionEventingRuntimeDataList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.lockConfig">lock_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference">IntegrationConnectorsConnectionLockConfigOutputReference</a></code> | *No description.* |
@@ -1377,14 +1377,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.sslConfig">ssl_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference">IntegrationConnectorsConnectionSslConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.status">status</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList">IntegrationConnectorsConnectionStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.subscriptionType">subscription_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference">IntegrationConnectorsConnectionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.authConfigInput">auth_config_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig">IntegrationConnectorsConnectionAuthConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.configVariableInput">config_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.configVariableInput">config_variable_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connectorVersionInput">connector_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.destinationConfigInput">destination_config_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.destinationConfigInput">destination_config_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.eventingConfigInput">eventing_config_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig">IntegrationConnectorsConnectionEventingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.eventingEnablementTypeInput">eventing_enablement_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -1397,8 +1397,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.serviceAccountInput">service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.sslConfigInput">ssl_config_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig">IntegrationConnectorsConnectionSslConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.suspendedInput">suspended_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.suspendedInput">suspended_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.connectorVersion">connector_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.eventingEnablementType">eventing_enablement_type</a></code> | <code>str</code> | *No description.* |
@@ -1408,7 +1408,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.suspended">suspended</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnection.property.suspended">suspended</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1430,7 +1430,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1480,7 +1480,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1490,7 +1490,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1500,7 +1500,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1520,7 +1520,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1530,7 +1530,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1540,7 +1540,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1550,7 +1550,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1630,7 +1630,7 @@ destination_config: IntegrationConnectorsConnectionDestinationConfigList
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1730,7 +1730,7 @@ subscription_type: str
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1770,7 +1770,7 @@ auth_config_input: IntegrationConnectorsConnectionAuthConfig
 config_variable_input: IResolvable | typing.List[IntegrationConnectorsConnectionConfigVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
 
 ---
 
@@ -1800,7 +1800,7 @@ description_input: str
 destination_config_input: IResolvable | typing.List[IntegrationConnectorsConnectionDestinationConfig]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
 
 ---
 
@@ -1930,7 +1930,7 @@ ssl_config_input: IntegrationConnectorsConnectionSslConfig
 suspended_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1940,7 +1940,7 @@ suspended_input: bool | IResolvable
 timeouts_input: IResolvable | IntegrationConnectorsConnectionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a>
 
 ---
 
@@ -2040,7 +2040,7 @@ service_account: str
 suspended: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2088,7 +2088,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig.property.authType">auth_type</a></code> | <code>str</code> | authType of the Connection Possible values: ["AUTH_TYPE_UNSPECIFIED", "USER_PASSWORD", "OAUTH2_JWT_BEARER", "OAUTH2_CLIENT_CREDENTIALS", "SSH_PUBLIC_KEY", "OAUTH2_AUTH_CODE_FLOW"]. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]</code> | additional_variable block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]</code> | additional_variable block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig.property.authKey">auth_key</a></code> | <code>str</code> | The type of authentication configured. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig.property.oauth2AuthCodeFlow">oauth2_auth_code_flow</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow">IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow</a></code> | oauth2_auth_code_flow block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig.property.oauth2ClientCredentials">oauth2_client_credentials</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials">IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentials</a></code> | oauth2_client_credentials block. |
@@ -2118,7 +2118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 additional_variable: IResolvable | typing.List[IntegrationConnectorsConnectionAuthConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -2232,7 +2232,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditio
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable.property.key">key</a></code> | <code>str</code> | Key for the configVariable. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean Value of configVariable. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Boolean Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue</a></code> | encryption_key_value block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | Integer Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue</a></code> | secret_value block. |
@@ -2260,7 +2260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Boolean Value of configVariable.
 
@@ -2437,7 +2437,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2A
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow.property.authUri">auth_uri</a></code> | <code>str</code> | Auth URL for Authorization Code Flow. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow.property.clientId">client_id</a></code> | <code>str</code> | Client ID for user-provided OAuth app. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow.property.clientSecret">client_secret</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret">IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret</a></code> | client_secret block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow.property.enablePkce">enable_pkce</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable PKCE when the user performs the auth code flow. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow.property.enablePkce">enable_pkce</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable PKCE when the user performs the auth code flow. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | Scopes the connection will request when the user performs the auth code flow. |
 
 ---
@@ -2490,7 +2490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_pkce: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to enable PKCE when the user performs the auth code flow.
 
@@ -3067,20 +3067,20 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.connectorVersion">connector_version</a></code> | <code>str</code> | connectorVersion of the Connector. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.location">location</a></code> | <code>str</code> | Location in which Connection needs to be created. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.name">name</a></code> | <code>str</code> | Name of Connection needs to be created. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.authConfig">auth_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfig">IntegrationConnectorsConnectionAuthConfig</a></code> | auth_config block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.configVariable">config_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | config_variable block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.configVariable">config_variable</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | config_variable block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.description">description</a></code> | <code>str</code> | An arbitrary description for the Connection. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.destinationConfig">destination_config</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | destination_config block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.destinationConfig">destination_config</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | destination_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.eventingConfig">eventing_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig">IntegrationConnectorsConnectionEventingConfig</a></code> | eventing_config block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.eventingEnablementType">eventing_enablement_type</a></code> | <code>str</code> | Eventing enablement type. Will be nil if eventing is not enabled. Possible values: ["EVENTING_AND_CONNECTION", "ONLY_EVENTING"]. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#id IntegrationConnectorsConnection#id}. |
@@ -3091,7 +3091,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfig(
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/integration_connectors_connection#project IntegrationConnectorsConnection#project}. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.serviceAccount">service_account</a></code> | <code>str</code> | Service account needed for runtime plane to access Google Cloud resources. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.sslConfig">ssl_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig">IntegrationConnectorsConnectionSslConfig</a></code> | ssl_config block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.suspended">suspended</a></code> | <code>bool \| cdktf.IResolvable</code> | Suspended indicates if a user has suspended a connection or not. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.suspended">suspended</a></code> | <code>bool \| cdktn.IResolvable</code> | Suspended indicates if a user has suspended a connection or not. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -3102,7 +3102,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -3112,7 +3112,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -3122,7 +3122,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -3132,7 +3132,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -3142,7 +3142,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -3152,7 +3152,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -3162,7 +3162,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -3228,7 +3228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 config_variable: IResolvable | typing.List[IntegrationConnectorsConnectionConfigVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
 
 config_variable block.
 
@@ -3256,7 +3256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 destination_config: IResolvable | typing.List[IntegrationConnectorsConnectionDestinationConfig]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
 
 destination_config block.
 
@@ -3412,7 +3412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 suspended: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Suspended indicates if a user has suspended a connection or not.
 
@@ -3456,7 +3456,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable.property.key">key</a></code> | <code>str</code> | Key for the configVariable. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean Value of configVariable. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Boolean Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue">IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue</a></code> | encryption_key_value block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | Integer Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValue">IntegrationConnectorsConnectionConfigVariableSecretValue</a></code> | secret_value block. |
@@ -3484,7 +3484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Boolean Value of configVariable.
 
@@ -3667,7 +3667,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig.property.key">key</a></code> | <code>str</code> | The key is the destination identifier that is supported by the Connector. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig.property.destination">destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]</code> | destination block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig.property.destination">destination</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]</code> | destination block. |
 
 ---
 
@@ -3691,7 +3691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 destination: IResolvable | typing.List[IntegrationConnectorsConnectionDestinationConfigDestination]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
 
 destination block.
 
@@ -3787,9 +3787,9 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.registrationDestinationConfig">registration_destination_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig</a></code> | registration_destination_config block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]</code> | additional_variable block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]</code> | additional_variable block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.authConfig">auth_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig">IntegrationConnectorsConnectionEventingConfigAuthConfig</a></code> | auth_config block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.enrichmentEnabled">enrichment_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enrichment Enabled. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig.property.enrichmentEnabled">enrichment_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Enrichment Enabled. |
 
 ---
 
@@ -3813,7 +3813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 additional_variable: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -3841,7 +3841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enrichment_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enrichment Enabled.
 
@@ -3871,7 +3871,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdd
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable.property.key">key</a></code> | <code>str</code> | Key for the configVariable. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean Value of configVariable. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Boolean Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue</a></code> | encryption_key_value block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | Integer Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue</a></code> | secret_value block. |
@@ -3899,7 +3899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Boolean Value of configVariable.
 
@@ -4074,7 +4074,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig.property.authType">auth_type</a></code> | <code>str</code> | authType of the Connection Possible values: ["USER_PASSWORD"]. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig.property.userPassword">user_password</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword">IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword</a></code> | user_password block. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]</code> | additional_variable block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]</code> | additional_variable block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig.property.authKey">auth_key</a></code> | <code>str</code> | The type of authentication configured. |
 
 ---
@@ -4113,7 +4113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 additional_variable: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -4157,7 +4157,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable.property.key">key</a></code> | <code>str</code> | Key for the configVariable. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean Value of configVariable. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Boolean Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue</a></code> | encryption_key_value block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | Integer Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue</a></code> | secret_value block. |
@@ -4185,7 +4185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Boolean Value of configVariable.
 
@@ -4442,7 +4442,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigReg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig.property.destination">destination</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]</code> | destination block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig.property.destination">destination</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]</code> | destination block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig.property.key">key</a></code> | <code>str</code> | Key for the connection. |
 
 ---
@@ -4453,7 +4453,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigReg
 destination: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
 
 destination block.
 
@@ -4580,7 +4580,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig.property.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether or not the connection is locked. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether or not the connection is locked. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig.property.reason">reason</a></code> | <code>str</code> | Describes why a connection is locked. |
 
 ---
@@ -4591,7 +4591,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig(
 locked: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether or not the connection is locked.
 
@@ -4630,7 +4630,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Enabled represents whether logging is enabled or not for a connection. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Enabled represents whether logging is enabled or not for a connection. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig.property.level">level</a></code> | <code>str</code> | Log configuration level. Possible values: ["LOG_LEVEL_UNSPECIFIED", "ERROR", "INFO", "DEBUG"]. |
 
 ---
@@ -4641,7 +4641,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig(
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enabled represents whether logging is enabled or not for a connection.
 
@@ -4739,7 +4739,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.type">type</a></code> | <code>str</code> | Enum for controlling the SSL Type (TLS/MTLS) Possible values: ["TLS", "MTLS"]. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]</code> | additional_variable block. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.additionalVariable">additional_variable</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]</code> | additional_variable block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.clientCertificate">client_certificate</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificate">IntegrationConnectorsConnectionSslConfigClientCertificate</a></code> | client_certificate block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.clientCertType">client_cert_type</a></code> | <code>str</code> | Type of Client Cert (PEM/JKS/.. etc.) Possible values: ["PEM"]. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.clientPrivateKey">client_private_key</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKey">IntegrationConnectorsConnectionSslConfigClientPrivateKey</a></code> | client_private_key block. |
@@ -4747,7 +4747,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig(
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.privateServerCertificate">private_server_certificate</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificate">IntegrationConnectorsConnectionSslConfigPrivateServerCertificate</a></code> | private_server_certificate block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.serverCertType">server_cert_type</a></code> | <code>str</code> | Type of Server Cert (PEM/JKS/.. etc.) Possible values: ["PEM"]. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.trustModel">trust_model</a></code> | <code>str</code> | Enum for Trust Model Possible values: ["PUBLIC", "PRIVATE", "INSECURE"]. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.useSsl">use_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | Bool for enabling SSL. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig.property.useSsl">use_ssl</a></code> | <code>bool \| cdktn.IResolvable</code> | Bool for enabling SSL. |
 
 ---
 
@@ -4771,7 +4771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 additional_variable: IResolvable | typing.List[IntegrationConnectorsConnectionSslConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -4883,7 +4883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_ssl: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Bool for enabling SSL.
 
@@ -4913,7 +4913,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAddition
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable.property.key">key</a></code> | <code>str</code> | Key for the configVariable. |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean Value of configVariable. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | Boolean Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue</a></code> | encryption_key_value block. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | Integer Value of configVariable. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue</a></code> | secret_value block. |
@@ -4941,7 +4941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Boolean Value of configVariable.
 
@@ -5319,14 +5319,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5519,7 +5519,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5645,7 +5645,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5653,7 +5653,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5723,7 +5723,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5760,7 +5760,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -5794,7 +5794,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionAuthConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
 
 ---
 
@@ -5816,7 +5816,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5825,7 +5825,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6040,7 +6040,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6146,17 +6146,17 @@ def reset_string_value() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference">IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference">IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.encryptionKeyValueInput">encryption_key_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionAuthConfigAdditionalVariableEncryptionKeyValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.integerValueInput">integer_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.secretValueInput">secret_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.stringValueInput">string_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.stringValue">string_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a></code> | *No description.* |
 
 ---
 
@@ -6210,7 +6210,7 @@ secret_value: IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretV
 boolean_value_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6270,7 +6270,7 @@ string_value_input: str
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6310,7 +6310,7 @@ string_value: str
 internal_value: IResolvable | IntegrationConnectorsConnectionAuthConfigAdditionalVariable
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>
 
 ---
 
@@ -6330,14 +6330,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6529,7 +6529,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariableSecretValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6626,14 +6626,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2A
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6825,7 +6825,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecretOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6922,14 +6922,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2A
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7127,7 +7127,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7202,11 +7202,11 @@ def reset_scopes() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.authUriInput">auth_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.clientSecretInput">client_secret_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret">IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.enablePkceInput">enable_pkce_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.enablePkceInput">enable_pkce_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.authUri">auth_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.clientId">client_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.enablePkce">enable_pkce</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.enablePkce">enable_pkce</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow">IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow</a></code> | *No description.* |
 
@@ -7282,7 +7282,7 @@ client_secret_input: IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow
 enable_pkce_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7322,7 +7322,7 @@ client_id: str
 enable_pkce: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7362,14 +7362,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2C
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7561,7 +7561,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsClientSecretOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7658,14 +7658,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2C
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7859,7 +7859,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2ClientCredentialsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8004,14 +8004,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2J
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8203,7 +8203,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerClientKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8300,14 +8300,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2J
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8502,7 +8502,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerJwtClaimsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8661,14 +8661,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2J
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8864,7 +8864,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9055,14 +9055,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9267,7 +9267,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9291,7 +9291,7 @@ def put_additional_variable(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.putAdditionalVariable.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
 
 ---
 
@@ -9339,7 +9339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_pkce`<sup>Optional</sup> <a name="enable_pkce" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.putOauth2AuthCodeFlow.parameter.enablePkce"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to enable PKCE when the user performs the auth code flow.
 
@@ -9550,7 +9550,7 @@ def reset_user_password() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.oauth2JwtBearer">oauth2_jwt_bearer</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference">IntegrationConnectorsConnectionAuthConfigOauth2JwtBearerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.sshPublicKey">ssh_public_key</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference">IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.userPassword">user_password</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference">IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.authKeyInput">auth_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.authTypeInput">auth_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOutputReference.property.oauth2AuthCodeFlowInput">oauth2_auth_code_flow_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow">IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlow</a></code> | *No description.* |
@@ -9654,7 +9654,7 @@ user_password: IntegrationConnectorsConnectionAuthConfigUserPasswordOutputRefere
 additional_variable_input: IResolvable | typing.List[IntegrationConnectorsConnectionAuthConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigAdditionalVariable">IntegrationConnectorsConnectionAuthConfigAdditionalVariable</a>]
 
 ---
 
@@ -9774,14 +9774,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPubl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9978,7 +9978,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10199,14 +10199,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPubl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10398,7 +10398,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10495,14 +10495,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPubl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10694,7 +10694,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertPassOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10791,14 +10791,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10992,7 +10992,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11137,14 +11137,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11336,7 +11336,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigUserPasswordPasswordOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11433,14 +11433,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEnc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11633,7 +11633,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11759,7 +11759,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11767,7 +11767,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableLis
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11837,7 +11837,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11874,7 +11874,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -11908,7 +11908,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionConfigVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>]
 
 ---
 
@@ -11930,7 +11930,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11939,7 +11939,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOut
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12154,7 +12154,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12260,17 +12260,17 @@ def reset_string_value() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference">IntegrationConnectorsConnectionConfigVariableEncryptionKeyValueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference">IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.encryptionKeyValueInput">encryption_key_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue">IntegrationConnectorsConnectionConfigVariableEncryptionKeyValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.integerValueInput">integer_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.secretValueInput">secret_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValue">IntegrationConnectorsConnectionConfigVariableSecretValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.stringValueInput">string_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.stringValue">string_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a></code> | *No description.* |
 
 ---
 
@@ -12324,7 +12324,7 @@ secret_value: IntegrationConnectorsConnectionConfigVariableSecretValueOutputRefe
 boolean_value_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -12384,7 +12384,7 @@ string_value_input: str
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -12424,7 +12424,7 @@ string_value: str
 internal_value: IResolvable | IntegrationConnectorsConnectionConfigVariable
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariable">IntegrationConnectorsConnectionConfigVariable</a>
 
 ---
 
@@ -12444,14 +12444,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12643,7 +12643,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConfigVariableSecretValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12741,7 +12741,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12749,7 +12749,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionI
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12819,7 +12819,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12901,7 +12901,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12910,7 +12910,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionI
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13118,7 +13118,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionConnectorVersionInfraConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13205,7 +13205,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13213,7 +13213,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13283,7 +13283,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13320,7 +13320,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]</code> | *No description.* |
 
 ---
 
@@ -13354,7 +13354,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionDestinationConfigDestination]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
 
 ---
 
@@ -13376,7 +13376,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13385,7 +13385,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13596,7 +13596,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13641,7 +13641,7 @@ def reset_service_attachment() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.property.serviceAttachment">service_attachment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a></code> | *No description.* |
 
 ---
 
@@ -13735,7 +13735,7 @@ service_attachment: str
 internal_value: IResolvable | IntegrationConnectorsConnectionDestinationConfigDestination
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>
 
 ---
 
@@ -13756,7 +13756,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13764,7 +13764,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13834,7 +13834,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13871,7 +13871,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]</code> | *No description.* |
 
 ---
 
@@ -13905,7 +13905,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionDestinationConfig]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>]
 
 ---
 
@@ -13927,7 +13927,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13936,7 +13936,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14146,7 +14146,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14170,7 +14170,7 @@ def put_destination(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.putDestination.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
 
 ---
 
@@ -14188,10 +14188,10 @@ def reset_destination() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestinationList">IntegrationConnectorsConnectionDestinationConfigDestinationList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.destinationInput">destination_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.destinationInput">destination_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a></code> | *No description.* |
 
 ---
 
@@ -14235,7 +14235,7 @@ destination: IntegrationConnectorsConnectionDestinationConfigDestinationList
 destination_input: IResolvable | typing.List[IntegrationConnectorsConnectionDestinationConfigDestination]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfigDestination">IntegrationConnectorsConnectionDestinationConfigDestination</a>]
 
 ---
 
@@ -14265,7 +14265,7 @@ key: str
 internal_value: IResolvable | IntegrationConnectorsConnectionDestinationConfig
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionDestinationConfig">IntegrationConnectorsConnectionDestinationConfig</a>
 
 ---
 
@@ -14285,14 +14285,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14486,7 +14486,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14618,7 +14618,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14626,7 +14626,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdd
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14696,7 +14696,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14733,7 +14733,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -14767,7 +14767,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
 
 ---
 
@@ -14789,7 +14789,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14798,7 +14798,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdd
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15013,7 +15013,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15119,17 +15119,17 @@ def reset_string_value() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference">IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference">IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.encryptionKeyValueInput">encryption_key_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionEventingConfigAdditionalVariableEncryptionKeyValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.integerValueInput">integer_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.secretValueInput">secret_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.stringValueInput">string_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.stringValue">string_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a></code> | *No description.* |
 
 ---
 
@@ -15183,7 +15183,7 @@ secret_value: IntegrationConnectorsConnectionEventingConfigAdditionalVariableSec
 boolean_value_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15243,7 +15243,7 @@ string_value_input: str
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15283,7 +15283,7 @@ string_value: str
 internal_value: IResolvable | IntegrationConnectorsConnectionEventingConfigAdditionalVariable
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>
 
 ---
 
@@ -15303,14 +15303,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15502,7 +15502,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableSecretValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15599,14 +15599,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15800,7 +15800,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15932,7 +15932,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15940,7 +15940,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16010,7 +16010,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16047,7 +16047,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -16081,7 +16081,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
 
 ---
 
@@ -16103,7 +16103,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16112,7 +16112,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16327,7 +16327,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16433,17 +16433,17 @@ def reset_string_value() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.encryptionKeyValueInput">encryption_key_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableEncryptionKeyValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.integerValueInput">integer_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.secretValueInput">secret_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.stringValueInput">string_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.stringValue">string_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a></code> | *No description.* |
 
 ---
 
@@ -16497,7 +16497,7 @@ secret_value: IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalV
 boolean_value_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16557,7 +16557,7 @@ string_value_input: str
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16597,7 +16597,7 @@ string_value: str
 internal_value: IResolvable | IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>
 
 ---
 
@@ -16617,14 +16617,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16816,7 +16816,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableSecretValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16913,14 +16913,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17116,7 +17116,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17140,7 +17140,7 @@ def put_additional_variable(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.putAdditionalVariable.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
 
 ---
 
@@ -17194,7 +17194,7 @@ def reset_auth_key() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.additionalVariable">additional_variable</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.userPassword">user_password</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference">IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.authKeyInput">auth_key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.authTypeInput">auth_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference.property.userPasswordInput">user_password_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword">IntegrationConnectorsConnectionEventingConfigAuthConfigUserPassword</a></code> | *No description.* |
@@ -17254,7 +17254,7 @@ user_password: IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswo
 additional_variable_input: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
 
 ---
 
@@ -17334,14 +17334,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17536,7 +17536,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17687,14 +17687,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17886,7 +17886,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigUserPasswordPasswordOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17983,14 +17983,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18188,7 +18188,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18212,7 +18212,7 @@ def put_additional_variable(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putAdditionalVariable.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
 
 ---
 
@@ -18249,7 +18249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `additional_variable`<sup>Optional</sup> <a name="additional_variable" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putAuthConfig.parameter.additionalVariable"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariable</a>]
 
 additional_variable block.
 
@@ -18278,7 +18278,7 @@ def put_registration_destination_config(
 
 ###### `destination`<sup>Optional</sup> <a name="destination" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.putRegistrationDestinationConfig.parameter.destination"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
 
 destination block.
 
@@ -18324,11 +18324,11 @@ def reset_enrichment_enabled() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.additionalVariable">additional_variable</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariableList">IntegrationConnectorsConnectionEventingConfigAdditionalVariableList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.authConfig">auth_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference">IntegrationConnectorsConnectionEventingConfigAuthConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.registrationDestinationConfig">registration_destination_config</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.authConfigInput">auth_config_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAuthConfig">IntegrationConnectorsConnectionEventingConfigAuthConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentEnabledInput">enrichment_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentEnabledInput">enrichment_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.registrationDestinationConfigInput">registration_destination_config_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentEnabled">enrichment_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.enrichmentEnabled">enrichment_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfig">IntegrationConnectorsConnectionEventingConfig</a></code> | *No description.* |
 
 ---
@@ -18393,7 +18393,7 @@ registration_destination_config: IntegrationConnectorsConnectionEventingConfigRe
 additional_variable_input: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigAdditionalVariable">IntegrationConnectorsConnectionEventingConfigAdditionalVariable</a>]
 
 ---
 
@@ -18413,7 +18413,7 @@ auth_config_input: IntegrationConnectorsConnectionEventingConfigAuthConfig
 enrichment_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18433,7 +18433,7 @@ registration_destination_config_input: IntegrationConnectorsConnectionEventingCo
 enrichment_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18464,7 +18464,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigReg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18472,7 +18472,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigReg
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18542,7 +18542,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18579,7 +18579,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]</code> | *No description.* |
 
 ---
 
@@ -18613,7 +18613,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
 
 ---
 
@@ -18635,7 +18635,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigReg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18644,7 +18644,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigReg
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18855,7 +18855,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18900,7 +18900,7 @@ def reset_service_attachment() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.property.serviceAttachment">service_attachment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a></code> | *No description.* |
 
 ---
 
@@ -18994,7 +18994,7 @@ service_attachment: str
 internal_value: IResolvable | IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>
 
 ---
 
@@ -19014,14 +19014,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigReg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19216,7 +19216,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19240,7 +19240,7 @@ def put_destination(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.putDestination.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
 
 ---
 
@@ -19264,7 +19264,7 @@ def reset_key() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.destination">destination</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestinationList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.destinationInput">destination_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.destinationInput">destination_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfig</a></code> | *No description.* |
@@ -19311,7 +19311,7 @@ destination: IntegrationConnectorsConnectionEventingConfigRegistrationDestinatio
 destination_input: IResolvable | typing.List[IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination">IntegrationConnectorsConnectionEventingConfigRegistrationDestinationConfigDestination</a>]
 
 ---
 
@@ -19362,7 +19362,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19370,7 +19370,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19440,7 +19440,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19522,7 +19522,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19531,7 +19531,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19739,7 +19739,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19837,7 +19837,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19845,7 +19845,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19915,7 +19915,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19997,7 +19997,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20006,7 +20006,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20214,7 +20214,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionEventingRuntimeDataStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20311,14 +20311,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20511,7 +20511,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20538,9 +20538,9 @@ def reset_reason() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.lockedInput">locked_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.lockedInput">locked_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.reasonInput">reason_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.reason">reason</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLockConfig">IntegrationConnectorsConnectionLockConfig</a></code> | *No description.* |
 
@@ -20576,7 +20576,7 @@ fqn: str
 locked_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -20596,7 +20596,7 @@ reason_input: str
 locked: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -20636,14 +20636,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20836,7 +20836,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20863,9 +20863,9 @@ def reset_level() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.levelInput">level_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.level">level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionLogConfig">IntegrationConnectorsConnectionLogConfig</a></code> | *No description.* |
 
@@ -20901,7 +20901,7 @@ fqn: str
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -20921,7 +20921,7 @@ level_input: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -20961,14 +20961,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfigOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21162,7 +21162,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21293,14 +21293,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAddition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21494,7 +21494,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21626,7 +21626,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAddition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21634,7 +21634,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAddition
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21704,7 +21704,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21741,7 +21741,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]</code> | *No description.* |
 
 ---
 
@@ -21775,7 +21775,7 @@ fqn: str
 internal_value: IResolvable | typing.List[IntegrationConnectorsConnectionSslConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
 
 ---
 
@@ -21797,7 +21797,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAddition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21806,7 +21806,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAddition
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22021,7 +22021,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22127,17 +22127,17 @@ def reset_string_value() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.encryptionKeyValue">encryption_key_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference">IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.secretValue">secret_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference">IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.booleanValueInput">boolean_value_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.encryptionKeyValueInput">encryption_key_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue">IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.integerValueInput">integer_value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.secretValueInput">secret_value_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue">IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.stringValueInput">string_value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.booleanValue">boolean_value</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.integerValue">integer_value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.stringValue">string_value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a></code> | *No description.* |
 
 ---
 
@@ -22191,7 +22191,7 @@ secret_value: IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretVa
 boolean_value_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22251,7 +22251,7 @@ string_value_input: str
 boolean_value: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22291,7 +22291,7 @@ string_value: str
 internal_value: IResolvable | IntegrationConnectorsConnectionSslConfigAdditionalVariable
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>
 
 ---
 
@@ -22311,14 +22311,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAddition
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22510,7 +22510,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22607,14 +22607,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22806,7 +22806,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22903,14 +22903,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23102,7 +23102,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23199,14 +23199,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23398,7 +23398,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23495,14 +23495,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23708,7 +23708,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23732,7 +23732,7 @@ def put_additional_variable(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.putAdditionalVariable.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
 
 ---
 
@@ -23874,7 +23874,7 @@ def reset_use_ssl() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.clientPrivateKey">client_private_key</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference">IntegrationConnectorsConnectionSslConfigClientPrivateKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.clientPrivateKeyPass">client_private_key_pass</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference">IntegrationConnectorsConnectionSslConfigClientPrivateKeyPassOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.privateServerCertificate">private_server_certificate</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference">IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.additionalVariableInput">additional_variable_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.clientCertificateInput">client_certificate_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientCertificate">IntegrationConnectorsConnectionSslConfigClientCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.clientCertTypeInput">client_cert_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.clientPrivateKeyInput">client_private_key_input</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigClientPrivateKey">IntegrationConnectorsConnectionSslConfigClientPrivateKey</a></code> | *No description.* |
@@ -23883,12 +23883,12 @@ def reset_use_ssl() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.serverCertTypeInput">server_cert_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.trustModelInput">trust_model_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.useSslInput">use_ssl_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.useSslInput">use_ssl_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.clientCertType">client_cert_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.serverCertType">server_cert_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.trustModel">trust_model</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.useSsl">use_ssl</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.useSsl">use_ssl</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfig">IntegrationConnectorsConnectionSslConfig</a></code> | *No description.* |
 
 ---
@@ -23973,7 +23973,7 @@ private_server_certificate: IntegrationConnectorsConnectionSslConfigPrivateServe
 additional_variable_input: IResolvable | typing.List[IntegrationConnectorsConnectionSslConfigAdditionalVariable]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariable">IntegrationConnectorsConnectionSslConfigAdditionalVariable</a>]
 
 ---
 
@@ -24063,7 +24063,7 @@ type_input: str
 use_ssl_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -24113,7 +24113,7 @@ type: str
 use_ssl: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -24143,14 +24143,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24342,7 +24342,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24440,7 +24440,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24448,7 +24448,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24518,7 +24518,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24600,7 +24600,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24609,7 +24609,7 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputRefer
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24817,7 +24817,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24925,14 +24925,14 @@ integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25127,7 +25127,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25172,7 +25172,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -25266,7 +25266,7 @@ update: str
 internal_value: IResolvable | IntegrationConnectorsConnectionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionTimeouts">IntegrationConnectorsConnectionTimeouts</a>
 
 ---
 

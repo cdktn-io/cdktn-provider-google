@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/organization_iam_member#id OrganizationIamMember#id}
   *
@@ -56,38 +56,38 @@ export interface OrganizationIamMemberCondition {
 }
 
 export function organizationIamMemberConditionToTerraform(struct?: OrganizationIamMemberConditionOutputReference | OrganizationIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function organizationIamMemberConditionToHclTerraform(struct?: OrganizationIamMemberConditionOutputReference | OrganizationIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -98,14 +98,14 @@ export function organizationIamMemberConditionToHclTerraform(struct?: Organizati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class OrganizationIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -188,7 +188,7 @@ export class OrganizationIamMemberConditionOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/organization_iam_member google_organization_iam_member}
 */
-export class OrganizationIamMember extends cdktf.TerraformResource {
+export class OrganizationIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -199,14 +199,14 @@ export class OrganizationIamMember extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationIamMember to import
   * @param importFromId The id of the existing OrganizationIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/organization_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -329,10 +329,10 @@ export class OrganizationIamMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      member: cdktf.stringToTerraform(this._member),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      role: cdktf.stringToTerraform(this._role),
+      id: cdktn.stringToTerraform(this._id),
+      member: cdktn.stringToTerraform(this._member),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      role: cdktn.stringToTerraform(this._role),
       condition: organizationIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -340,25 +340,25 @@ export class OrganizationIamMember extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

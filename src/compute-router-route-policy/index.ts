@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeRouterRoutePolicyConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeRouterRoutePolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_route_policy#id ComputeRouterRoutePolicy#id}
   *
@@ -52,7 +52,7 @@ export interface ComputeRouterRoutePolicyConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_route_policy#terms ComputeRouterRoutePolicy#terms}
   */
-  readonly terms: ComputeRouterRoutePolicyTerms[] | cdktf.IResolvable;
+  readonly terms: ComputeRouterRoutePolicyTerms[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -90,46 +90,46 @@ export interface ComputeRouterRoutePolicyTermsActions {
   readonly title?: string;
 }
 
-export function computeRouterRoutePolicyTermsActionsToTerraform(struct?: ComputeRouterRoutePolicyTermsActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterRoutePolicyTermsActionsToTerraform(struct?: ComputeRouterRoutePolicyTermsActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
-export function computeRouterRoutePolicyTermsActionsToHclTerraform(struct?: ComputeRouterRoutePolicyTermsActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterRoutePolicyTermsActionsToHclTerraform(struct?: ComputeRouterRoutePolicyTermsActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -140,9 +140,9 @@ export function computeRouterRoutePolicyTermsActionsToHclTerraform(struct?: Comp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterRoutePolicyTermsActionsOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterRoutePolicyTermsActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -150,11 +150,11 @@ export class ComputeRouterRoutePolicyTermsActionsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRouterRoutePolicyTermsActions | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterRoutePolicyTermsActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -179,7 +179,7 @@ export class ComputeRouterRoutePolicyTermsActionsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterRoutePolicyTermsActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterRoutePolicyTermsActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -188,7 +188,7 @@ export class ComputeRouterRoutePolicyTermsActionsOutputReference extends cdktf.C
       this._location = undefined;
       this._title = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -264,15 +264,15 @@ export class ComputeRouterRoutePolicyTermsActionsOutputReference extends cdktf.C
   }
 }
 
-export class ComputeRouterRoutePolicyTermsActionsList extends cdktf.ComplexList {
-  public internalValue? : ComputeRouterRoutePolicyTermsActions[] | cdktf.IResolvable
+export class ComputeRouterRoutePolicyTermsActionsList extends cdktn.ComplexList {
+  public internalValue? : ComputeRouterRoutePolicyTermsActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -311,45 +311,45 @@ export interface ComputeRouterRoutePolicyTermsMatch {
 }
 
 export function computeRouterRoutePolicyTermsMatchToTerraform(struct?: ComputeRouterRoutePolicyTermsMatchOutputReference | ComputeRouterRoutePolicyTermsMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function computeRouterRoutePolicyTermsMatchToHclTerraform(struct?: ComputeRouterRoutePolicyTermsMatchOutputReference | ComputeRouterRoutePolicyTermsMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -360,14 +360,14 @@ export function computeRouterRoutePolicyTermsMatchToHclTerraform(struct?: Comput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterRoutePolicyTermsMatchOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterRoutePolicyTermsMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -483,7 +483,7 @@ export interface ComputeRouterRoutePolicyTerms {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_route_policy#actions ComputeRouterRoutePolicy#actions}
   */
-  readonly actions?: ComputeRouterRoutePolicyTermsActions[] | cdktf.IResolvable;
+  readonly actions?: ComputeRouterRoutePolicyTermsActions[] | cdktn.IResolvable;
   /**
   * match block
   *
@@ -492,33 +492,33 @@ export interface ComputeRouterRoutePolicyTerms {
   readonly match: ComputeRouterRoutePolicyTermsMatch;
 }
 
-export function computeRouterRoutePolicyTermsToTerraform(struct?: ComputeRouterRoutePolicyTerms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterRoutePolicyTermsToTerraform(struct?: ComputeRouterRoutePolicyTerms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    priority: cdktf.numberToTerraform(struct!.priority),
-    actions: cdktf.listMapper(computeRouterRoutePolicyTermsActionsToTerraform, true)(struct!.actions),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    actions: cdktn.listMapper(computeRouterRoutePolicyTermsActionsToTerraform, true)(struct!.actions),
     match: computeRouterRoutePolicyTermsMatchToTerraform(struct!.match),
   }
 }
 
 
-export function computeRouterRoutePolicyTermsToHclTerraform(struct?: ComputeRouterRoutePolicyTerms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterRoutePolicyTermsToHclTerraform(struct?: ComputeRouterRoutePolicyTerms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     actions: {
-      value: cdktf.listMapperHcl(computeRouterRoutePolicyTermsActionsToHclTerraform, true)(struct!.actions),
+      value: cdktn.listMapperHcl(computeRouterRoutePolicyTermsActionsToHclTerraform, true)(struct!.actions),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRouterRoutePolicyTermsActionsList",
@@ -535,9 +535,9 @@ export function computeRouterRoutePolicyTermsToHclTerraform(struct?: ComputeRout
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterRoutePolicyTermsOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterRoutePolicyTermsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -545,11 +545,11 @@ export class ComputeRouterRoutePolicyTermsOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRouterRoutePolicyTerms | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterRoutePolicyTerms | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -570,7 +570,7 @@ export class ComputeRouterRoutePolicyTermsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterRoutePolicyTerms | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterRoutePolicyTerms | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -578,7 +578,7 @@ export class ComputeRouterRoutePolicyTermsOutputReference extends cdktf.ComplexO
       this._actions.internalValue = undefined;
       this._match.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -609,7 +609,7 @@ export class ComputeRouterRoutePolicyTermsOutputReference extends cdktf.ComplexO
   public get actions() {
     return this._actions;
   }
-  public putActions(value: ComputeRouterRoutePolicyTermsActions[] | cdktf.IResolvable) {
+  public putActions(value: ComputeRouterRoutePolicyTermsActions[] | cdktn.IResolvable) {
     this._actions.internalValue = value;
   }
   public resetActions() {
@@ -634,15 +634,15 @@ export class ComputeRouterRoutePolicyTermsOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ComputeRouterRoutePolicyTermsList extends cdktf.ComplexList {
-  public internalValue? : ComputeRouterRoutePolicyTerms[] | cdktf.IResolvable
+export class ComputeRouterRoutePolicyTermsList extends cdktn.ComplexList {
+  public internalValue? : ComputeRouterRoutePolicyTerms[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -668,39 +668,39 @@ export interface ComputeRouterRoutePolicyTimeouts {
   readonly update?: string;
 }
 
-export function computeRouterRoutePolicyTimeoutsToTerraform(struct?: ComputeRouterRoutePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterRoutePolicyTimeoutsToTerraform(struct?: ComputeRouterRoutePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeRouterRoutePolicyTimeoutsToHclTerraform(struct?: ComputeRouterRoutePolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterRoutePolicyTimeoutsToHclTerraform(struct?: ComputeRouterRoutePolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -711,19 +711,19 @@ export function computeRouterRoutePolicyTimeoutsToHclTerraform(struct?: ComputeR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterRoutePolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterRoutePolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeRouterRoutePolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterRoutePolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -744,7 +744,7 @@ export class ComputeRouterRoutePolicyTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterRoutePolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterRoutePolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -752,7 +752,7 @@ export class ComputeRouterRoutePolicyTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -817,7 +817,7 @@ export class ComputeRouterRoutePolicyTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_route_policy google_compute_router_route_policy}
 */
-export class ComputeRouterRoutePolicy extends cdktf.TerraformResource {
+export class ComputeRouterRoutePolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -828,14 +828,14 @@ export class ComputeRouterRoutePolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeRouterRoutePolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeRouterRoutePolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRouterRoutePolicy to import
   * @param importFromId The id of the existing ComputeRouterRoutePolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_route_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRouterRoutePolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_route_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_route_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -979,7 +979,7 @@ export class ComputeRouterRoutePolicy extends cdktf.TerraformResource {
   public get terms() {
     return this._terms;
   }
-  public putTerms(value: ComputeRouterRoutePolicyTerms[] | cdktf.IResolvable) {
+  public putTerms(value: ComputeRouterRoutePolicyTerms[] | cdktn.IResolvable) {
     this._terms.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1009,13 +1009,13 @@ export class ComputeRouterRoutePolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      router: cdktf.stringToTerraform(this._router),
-      type: cdktf.stringToTerraform(this._type),
-      terms: cdktf.listMapper(computeRouterRoutePolicyTermsToTerraform, true)(this._terms.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      router: cdktn.stringToTerraform(this._router),
+      type: cdktn.stringToTerraform(this._type),
+      terms: cdktn.listMapper(computeRouterRoutePolicyTermsToTerraform, true)(this._terms.internalValue),
       timeouts: computeRouterRoutePolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1023,43 +1023,43 @@ export class ComputeRouterRoutePolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router: {
-        value: cdktf.stringToHclTerraform(this._router),
+        value: cdktn.stringToHclTerraform(this._router),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       terms: {
-        value: cdktf.listMapperHcl(computeRouterRoutePolicyTermsToHclTerraform, true)(this._terms.internalValue),
+        value: cdktn.listMapperHcl(computeRouterRoutePolicyTermsToHclTerraform, true)(this._terms.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeRouterRoutePolicyTermsList",

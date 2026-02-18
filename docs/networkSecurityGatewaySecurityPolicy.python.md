@@ -35,13 +35,13 @@ networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy} gatewaySecurityPolicy should match the pattern:(^a-z?$). |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}. |
@@ -72,43 +72,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -460,7 +460,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -620,7 +620,7 @@ def reset_tls_inspection_policy() -> None
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a NetworkSecurityGatewaySecurityPolicy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a NetworkSecurityGatewaySecurityPolicy resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -703,7 +703,7 @@ networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.genera
 )
 ```
 
-Generates CDKTF code for importing a NetworkSecurityGatewaySecurityPolicy resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NetworkSecurityGatewaySecurityPolicy resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.generateConfigForImport.parameter.scope"></a>
 
@@ -733,7 +733,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NetworkSecurityGatewaySecurityPolicy to import is found.
 
@@ -744,19 +744,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference">NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference</a></code> | *No description.* |
@@ -766,7 +766,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.tlsInspectionPolicyInput">tls_inspection_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -795,7 +795,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -845,7 +845,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -855,7 +855,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -865,7 +865,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -885,7 +885,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -895,7 +895,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -905,7 +905,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -915,7 +915,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1015,7 +1015,7 @@ project_input: str
 timeouts_input: IResolvable | NetworkSecurityGatewaySecurityPolicyTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a>
 
 ---
 
@@ -1138,13 +1138,13 @@ networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy} gatewaySecurityPolicy should match the pattern:(^a-z?$). |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.description">description</a></code> | <code>str</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_gateway_security_policy#id NetworkSecurityGatewaySecurityPolicy#id}. |
@@ -1161,7 +1161,7 @@ networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1171,7 +1171,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1181,7 +1181,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1191,7 +1191,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1201,7 +1201,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1211,7 +1211,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1221,7 +1221,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1399,14 +1399,14 @@ networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeout
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1601,7 +1601,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1646,7 +1646,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1740,7 +1740,7 @@ update: str
 internal_value: IResolvable | NetworkSecurityGatewaySecurityPolicyTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.networkSecurityGatewaySecurityPolicy.NetworkSecurityGatewaySecurityPolicyTimeouts">NetworkSecurityGatewaySecurityPolicyTimeouts</a>
 
 ---
 

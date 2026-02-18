@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeSnapshotSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeSnapshotSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}
   *
@@ -50,32 +50,32 @@ export interface ComputeSnapshotSettingsStorageLocationLocations {
   readonly name: string;
 }
 
-export function computeSnapshotSettingsStorageLocationLocationsToTerraform(struct?: ComputeSnapshotSettingsStorageLocationLocations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSnapshotSettingsStorageLocationLocationsToTerraform(struct?: ComputeSnapshotSettingsStorageLocationLocations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    name: cdktf.stringToTerraform(struct!.name),
+    location: cdktn.stringToTerraform(struct!.location),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function computeSnapshotSettingsStorageLocationLocationsToHclTerraform(struct?: ComputeSnapshotSettingsStorageLocationLocations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSnapshotSettingsStorageLocationLocationsToHclTerraform(struct?: ComputeSnapshotSettingsStorageLocationLocations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,9 +86,9 @@ export function computeSnapshotSettingsStorageLocationLocationsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSnapshotSettingsStorageLocationLocationsOutputReference extends cdktf.ComplexObject {
+export class ComputeSnapshotSettingsStorageLocationLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -96,11 +96,11 @@ export class ComputeSnapshotSettingsStorageLocationLocationsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeSnapshotSettingsStorageLocationLocations | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeSnapshotSettingsStorageLocationLocations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class ComputeSnapshotSettingsStorageLocationLocationsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeSnapshotSettingsStorageLocationLocations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeSnapshotSettingsStorageLocationLocations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._location = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,15 +163,15 @@ export class ComputeSnapshotSettingsStorageLocationLocationsOutputReference exte
   }
 }
 
-export class ComputeSnapshotSettingsStorageLocationLocationsList extends cdktf.ComplexList {
-  public internalValue? : ComputeSnapshotSettingsStorageLocationLocations[] | cdktf.IResolvable
+export class ComputeSnapshotSettingsStorageLocationLocationsList extends cdktn.ComplexList {
+  public internalValue? : ComputeSnapshotSettingsStorageLocationLocations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,35 +194,35 @@ export interface ComputeSnapshotSettingsStorageLocation {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
   */
-  readonly locations?: ComputeSnapshotSettingsStorageLocationLocations[] | cdktf.IResolvable;
+  readonly locations?: ComputeSnapshotSettingsStorageLocationLocations[] | cdktn.IResolvable;
 }
 
 export function computeSnapshotSettingsStorageLocationToTerraform(struct?: ComputeSnapshotSettingsStorageLocationOutputReference | ComputeSnapshotSettingsStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    policy: cdktf.stringToTerraform(struct!.policy),
-    locations: cdktf.listMapper(computeSnapshotSettingsStorageLocationLocationsToTerraform, true)(struct!.locations),
+    policy: cdktn.stringToTerraform(struct!.policy),
+    locations: cdktn.listMapper(computeSnapshotSettingsStorageLocationLocationsToTerraform, true)(struct!.locations),
   }
 }
 
 
 export function computeSnapshotSettingsStorageLocationToHclTerraform(struct?: ComputeSnapshotSettingsStorageLocationOutputReference | ComputeSnapshotSettingsStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     policy: {
-      value: cdktf.stringToHclTerraform(struct!.policy),
+      value: cdktn.stringToHclTerraform(struct!.policy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     locations: {
-      value: cdktf.listMapperHcl(computeSnapshotSettingsStorageLocationLocationsToHclTerraform, true)(struct!.locations),
+      value: cdktn.listMapperHcl(computeSnapshotSettingsStorageLocationLocationsToHclTerraform, true)(struct!.locations),
       isBlock: true,
       type: "set",
       storageClassType: "ComputeSnapshotSettingsStorageLocationLocationsList",
@@ -233,14 +233,14 @@ export function computeSnapshotSettingsStorageLocationToHclTerraform(struct?: Co
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSnapshotSettingsStorageLocationOutputReference extends cdktf.ComplexObject {
+export class ComputeSnapshotSettingsStorageLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -289,7 +289,7 @@ export class ComputeSnapshotSettingsStorageLocationOutputReference extends cdktf
   public get locations() {
     return this._locations;
   }
-  public putLocations(value: ComputeSnapshotSettingsStorageLocationLocations[] | cdktf.IResolvable) {
+  public putLocations(value: ComputeSnapshotSettingsStorageLocationLocations[] | cdktn.IResolvable) {
     this._locations.internalValue = value;
   }
   public resetLocations() {
@@ -315,39 +315,39 @@ export interface ComputeSnapshotSettingsTimeouts {
   readonly update?: string;
 }
 
-export function computeSnapshotSettingsTimeoutsToTerraform(struct?: ComputeSnapshotSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSnapshotSettingsTimeoutsToTerraform(struct?: ComputeSnapshotSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeSnapshotSettingsTimeoutsToHclTerraform(struct?: ComputeSnapshotSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSnapshotSettingsTimeoutsToHclTerraform(struct?: ComputeSnapshotSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -358,19 +358,19 @@ export function computeSnapshotSettingsTimeoutsToHclTerraform(struct?: ComputeSn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSnapshotSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeSnapshotSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeSnapshotSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeSnapshotSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -391,7 +391,7 @@ export class ComputeSnapshotSettingsTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeSnapshotSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeSnapshotSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -399,7 +399,7 @@ export class ComputeSnapshotSettingsTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -464,7 +464,7 @@ export class ComputeSnapshotSettingsTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}
 */
-export class ComputeSnapshotSettings extends cdktf.TerraformResource {
+export class ComputeSnapshotSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -475,14 +475,14 @@ export class ComputeSnapshotSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeSnapshotSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeSnapshotSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSnapshotSettings to import
   * @param importFromId The id of the existing ComputeSnapshotSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSnapshotSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_snapshot_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_snapshot_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -589,8 +589,8 @@ export class ComputeSnapshotSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
       storage_location: computeSnapshotSettingsStorageLocationToTerraform(this._storageLocation.internalValue),
       timeouts: computeSnapshotSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -599,13 +599,13 @@ export class ComputeSnapshotSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

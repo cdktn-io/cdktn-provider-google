@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxEntityTypeConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxEntityTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Represents kinds of entities.
   * * AUTO_EXPANSION_MODE_UNSPECIFIED: Auto expansion disabled for the entity.
@@ -31,7 +31,7 @@ export interface DialogflowCxEntityTypeConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_entity_type#enable_fuzzy_extraction DialogflowCxEntityType#enable_fuzzy_extraction}
   */
-  readonly enableFuzzyExtraction?: boolean | cdktf.IResolvable;
+  readonly enableFuzzyExtraction?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_entity_type#id DialogflowCxEntityType#id}
   *
@@ -70,19 +70,19 @@ export interface DialogflowCxEntityTypeConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_entity_type#redact DialogflowCxEntityType#redact}
   */
-  readonly redact?: boolean | cdktf.IResolvable;
+  readonly redact?: boolean | cdktn.IResolvable;
   /**
   * entities block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_entity_type#entities DialogflowCxEntityType#entities}
   */
-  readonly entities: DialogflowCxEntityTypeEntities[] | cdktf.IResolvable;
+  readonly entities: DialogflowCxEntityTypeEntities[] | cdktn.IResolvable;
   /**
   * excluded_phrases block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_entity_type#excluded_phrases DialogflowCxEntityType#excluded_phrases}
   */
-  readonly excludedPhrases?: DialogflowCxEntityTypeExcludedPhrases[] | cdktf.IResolvable;
+  readonly excludedPhrases?: DialogflowCxEntityTypeExcludedPhrases[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -108,32 +108,32 @@ export interface DialogflowCxEntityTypeEntities {
   readonly value?: string;
 }
 
-export function dialogflowCxEntityTypeEntitiesToTerraform(struct?: DialogflowCxEntityTypeEntities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEntityTypeEntitiesToTerraform(struct?: DialogflowCxEntityTypeEntities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    synonyms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonyms),
-    value: cdktf.stringToTerraform(struct!.value),
+    synonyms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.synonyms),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dialogflowCxEntityTypeEntitiesToHclTerraform(struct?: DialogflowCxEntityTypeEntities | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEntityTypeEntitiesToHclTerraform(struct?: DialogflowCxEntityTypeEntities | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     synonyms: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.synonyms),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.synonyms),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -144,9 +144,9 @@ export function dialogflowCxEntityTypeEntitiesToHclTerraform(struct?: Dialogflow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxEntityTypeEntitiesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxEntityTypeEntitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -154,11 +154,11 @@ export class DialogflowCxEntityTypeEntitiesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxEntityTypeEntities | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxEntityTypeEntities | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -175,14 +175,14 @@ export class DialogflowCxEntityTypeEntitiesOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxEntityTypeEntities | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxEntityTypeEntities | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._synonyms = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -227,15 +227,15 @@ export class DialogflowCxEntityTypeEntitiesOutputReference extends cdktf.Complex
   }
 }
 
-export class DialogflowCxEntityTypeEntitiesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxEntityTypeEntities[] | cdktf.IResolvable
+export class DialogflowCxEntityTypeEntitiesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxEntityTypeEntities[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -255,25 +255,25 @@ export interface DialogflowCxEntityTypeExcludedPhrases {
   readonly value?: string;
 }
 
-export function dialogflowCxEntityTypeExcludedPhrasesToTerraform(struct?: DialogflowCxEntityTypeExcludedPhrases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEntityTypeExcludedPhrasesToTerraform(struct?: DialogflowCxEntityTypeExcludedPhrases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dialogflowCxEntityTypeExcludedPhrasesToHclTerraform(struct?: DialogflowCxEntityTypeExcludedPhrases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEntityTypeExcludedPhrasesToHclTerraform(struct?: DialogflowCxEntityTypeExcludedPhrases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,9 +284,9 @@ export function dialogflowCxEntityTypeExcludedPhrasesToHclTerraform(struct?: Dia
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxEntityTypeExcludedPhrasesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxEntityTypeExcludedPhrasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -294,11 +294,11 @@ export class DialogflowCxEntityTypeExcludedPhrasesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxEntityTypeExcludedPhrases | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxEntityTypeExcludedPhrases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -311,13 +311,13 @@ export class DialogflowCxEntityTypeExcludedPhrasesOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxEntityTypeExcludedPhrases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxEntityTypeExcludedPhrases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -345,15 +345,15 @@ export class DialogflowCxEntityTypeExcludedPhrasesOutputReference extends cdktf.
   }
 }
 
-export class DialogflowCxEntityTypeExcludedPhrasesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxEntityTypeExcludedPhrases[] | cdktf.IResolvable
+export class DialogflowCxEntityTypeExcludedPhrasesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxEntityTypeExcludedPhrases[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -379,39 +379,39 @@ export interface DialogflowCxEntityTypeTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxEntityTypeTimeoutsToTerraform(struct?: DialogflowCxEntityTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEntityTypeTimeoutsToTerraform(struct?: DialogflowCxEntityTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxEntityTypeTimeoutsToHclTerraform(struct?: DialogflowCxEntityTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEntityTypeTimeoutsToHclTerraform(struct?: DialogflowCxEntityTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -422,19 +422,19 @@ export function dialogflowCxEntityTypeTimeoutsToHclTerraform(struct?: Dialogflow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxEntityTypeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxEntityTypeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxEntityTypeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxEntityTypeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -455,7 +455,7 @@ export class DialogflowCxEntityTypeTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxEntityTypeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxEntityTypeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -463,7 +463,7 @@ export class DialogflowCxEntityTypeTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -528,7 +528,7 @@ export class DialogflowCxEntityTypeTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_entity_type google_dialogflow_cx_entity_type}
 */
-export class DialogflowCxEntityType extends cdktf.TerraformResource {
+export class DialogflowCxEntityType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -539,14 +539,14 @@ export class DialogflowCxEntityType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxEntityType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxEntityType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxEntityType to import
   * @param importFromId The id of the existing DialogflowCxEntityType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_entity_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxEntityType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_entity_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_entity_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -623,11 +623,11 @@ export class DialogflowCxEntityType extends cdktf.TerraformResource {
   }
 
   // enable_fuzzy_extraction - computed: false, optional: true, required: false
-  private _enableFuzzyExtraction?: boolean | cdktf.IResolvable; 
+  private _enableFuzzyExtraction?: boolean | cdktn.IResolvable; 
   public get enableFuzzyExtraction() {
     return this.getBooleanAttribute('enable_fuzzy_extraction');
   }
-  public set enableFuzzyExtraction(value: boolean | cdktf.IResolvable) {
+  public set enableFuzzyExtraction(value: boolean | cdktn.IResolvable) {
     this._enableFuzzyExtraction = value;
   }
   public resetEnableFuzzyExtraction() {
@@ -705,11 +705,11 @@ export class DialogflowCxEntityType extends cdktf.TerraformResource {
   }
 
   // redact - computed: false, optional: true, required: false
-  private _redact?: boolean | cdktf.IResolvable; 
+  private _redact?: boolean | cdktn.IResolvable; 
   public get redact() {
     return this.getBooleanAttribute('redact');
   }
-  public set redact(value: boolean | cdktf.IResolvable) {
+  public set redact(value: boolean | cdktn.IResolvable) {
     this._redact = value;
   }
   public resetRedact() {
@@ -725,7 +725,7 @@ export class DialogflowCxEntityType extends cdktf.TerraformResource {
   public get entities() {
     return this._entities;
   }
-  public putEntities(value: DialogflowCxEntityTypeEntities[] | cdktf.IResolvable) {
+  public putEntities(value: DialogflowCxEntityTypeEntities[] | cdktn.IResolvable) {
     this._entities.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -738,7 +738,7 @@ export class DialogflowCxEntityType extends cdktf.TerraformResource {
   public get excludedPhrases() {
     return this._excludedPhrases;
   }
-  public putExcludedPhrases(value: DialogflowCxEntityTypeExcludedPhrases[] | cdktf.IResolvable) {
+  public putExcludedPhrases(value: DialogflowCxEntityTypeExcludedPhrases[] | cdktn.IResolvable) {
     this._excludedPhrases.internalValue = value;
   }
   public resetExcludedPhrases() {
@@ -771,16 +771,16 @@ export class DialogflowCxEntityType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_expansion_mode: cdktf.stringToTerraform(this._autoExpansionMode),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_fuzzy_extraction: cdktf.booleanToTerraform(this._enableFuzzyExtraction),
-      id: cdktf.stringToTerraform(this._id),
-      kind: cdktf.stringToTerraform(this._kind),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      parent: cdktf.stringToTerraform(this._parent),
-      redact: cdktf.booleanToTerraform(this._redact),
-      entities: cdktf.listMapper(dialogflowCxEntityTypeEntitiesToTerraform, true)(this._entities.internalValue),
-      excluded_phrases: cdktf.listMapper(dialogflowCxEntityTypeExcludedPhrasesToTerraform, true)(this._excludedPhrases.internalValue),
+      auto_expansion_mode: cdktn.stringToTerraform(this._autoExpansionMode),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_fuzzy_extraction: cdktn.booleanToTerraform(this._enableFuzzyExtraction),
+      id: cdktn.stringToTerraform(this._id),
+      kind: cdktn.stringToTerraform(this._kind),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      parent: cdktn.stringToTerraform(this._parent),
+      redact: cdktn.booleanToTerraform(this._redact),
+      entities: cdktn.listMapper(dialogflowCxEntityTypeEntitiesToTerraform, true)(this._entities.internalValue),
+      excluded_phrases: cdktn.listMapper(dialogflowCxEntityTypeExcludedPhrasesToTerraform, true)(this._excludedPhrases.internalValue),
       timeouts: dialogflowCxEntityTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -788,61 +788,61 @@ export class DialogflowCxEntityType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_expansion_mode: {
-        value: cdktf.stringToHclTerraform(this._autoExpansionMode),
+        value: cdktn.stringToHclTerraform(this._autoExpansionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_fuzzy_extraction: {
-        value: cdktf.booleanToHclTerraform(this._enableFuzzyExtraction),
+        value: cdktn.booleanToHclTerraform(this._enableFuzzyExtraction),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redact: {
-        value: cdktf.booleanToHclTerraform(this._redact),
+        value: cdktn.booleanToHclTerraform(this._redact),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       entities: {
-        value: cdktf.listMapperHcl(dialogflowCxEntityTypeEntitiesToHclTerraform, true)(this._entities.internalValue),
+        value: cdktn.listMapperHcl(dialogflowCxEntityTypeEntitiesToHclTerraform, true)(this._entities.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowCxEntityTypeEntitiesList",
       },
       excluded_phrases: {
-        value: cdktf.listMapperHcl(dialogflowCxEntityTypeExcludedPhrasesToHclTerraform, true)(this._excludedPhrases.internalValue),
+        value: cdktn.listMapperHcl(dialogflowCxEntityTypeExcludedPhrasesToHclTerraform, true)(this._excludedPhrases.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowCxEntityTypeExcludedPhrasesList",

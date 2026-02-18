@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AssuredWorkloadsWorkloadConfig extends cdktf.TerraformMetaArguments {
+export interface AssuredWorkloadsWorkloadConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. Input only. The billing account used for the resources which are direct children of workload. This billing account is initially associated with the resources created as part of Workload creation. After the initial creation of these resources, the customer can change the assigned billing account. The resource name has the form `billingAccounts/{billing_account_id}`. For example, `billingAccounts/012345-567890-ABCDEF`.
   *
@@ -35,7 +35,7 @@ export interface AssuredWorkloadsWorkloadConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#enable_sovereign_controls AssuredWorkloadsWorkload#enable_sovereign_controls}
   */
-  readonly enableSovereignControls?: boolean | cdktf.IResolvable;
+  readonly enableSovereignControls?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#id AssuredWorkloadsWorkload#id}
   *
@@ -87,7 +87,7 @@ export interface AssuredWorkloadsWorkloadConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#violation_notifications_enabled AssuredWorkloadsWorkload#violation_notifications_enabled}
   */
-  readonly violationNotificationsEnabled?: boolean | cdktf.IResolvable;
+  readonly violationNotificationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * kms_settings block
   *
@@ -105,7 +105,7 @@ export interface AssuredWorkloadsWorkloadConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#resource_settings AssuredWorkloadsWorkload#resource_settings}
   */
-  readonly resourceSettings?: AssuredWorkloadsWorkloadResourceSettings[] | cdktf.IResolvable;
+  readonly resourceSettings?: AssuredWorkloadsWorkloadResourceSettings[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -123,8 +123,8 @@ export interface AssuredWorkloadsWorkloadComplianceStatus {
 }
 
 export function assuredWorkloadsWorkloadComplianceStatusToTerraform(struct?: AssuredWorkloadsWorkloadComplianceStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -133,8 +133,8 @@ export function assuredWorkloadsWorkloadComplianceStatusToTerraform(struct?: Ass
 
 
 export function assuredWorkloadsWorkloadComplianceStatusToHclTerraform(struct?: AssuredWorkloadsWorkloadComplianceStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -142,7 +142,7 @@ export function assuredWorkloadsWorkloadComplianceStatusToHclTerraform(struct?: 
   return attrs;
 }
 
-export class AssuredWorkloadsWorkloadComplianceStatusOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadComplianceStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -151,7 +151,7 @@ export class AssuredWorkloadsWorkloadComplianceStatusOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -181,14 +181,14 @@ export class AssuredWorkloadsWorkloadComplianceStatusOutputReference extends cdk
   }
 }
 
-export class AssuredWorkloadsWorkloadComplianceStatusList extends cdktf.ComplexList {
+export class AssuredWorkloadsWorkloadComplianceStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,8 +203,8 @@ export interface AssuredWorkloadsWorkloadEkmProvisioningResponse {
 }
 
 export function assuredWorkloadsWorkloadEkmProvisioningResponseToTerraform(struct?: AssuredWorkloadsWorkloadEkmProvisioningResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -213,8 +213,8 @@ export function assuredWorkloadsWorkloadEkmProvisioningResponseToTerraform(struc
 
 
 export function assuredWorkloadsWorkloadEkmProvisioningResponseToHclTerraform(struct?: AssuredWorkloadsWorkloadEkmProvisioningResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -222,7 +222,7 @@ export function assuredWorkloadsWorkloadEkmProvisioningResponseToHclTerraform(st
   return attrs;
 }
 
-export class AssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -231,7 +231,7 @@ export class AssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -266,14 +266,14 @@ export class AssuredWorkloadsWorkloadEkmProvisioningResponseOutputReference exte
   }
 }
 
-export class AssuredWorkloadsWorkloadEkmProvisioningResponseList extends cdktf.ComplexList {
+export class AssuredWorkloadsWorkloadEkmProvisioningResponseList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -288,8 +288,8 @@ export interface AssuredWorkloadsWorkloadResources {
 }
 
 export function assuredWorkloadsWorkloadResourcesToTerraform(struct?: AssuredWorkloadsWorkloadResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -298,8 +298,8 @@ export function assuredWorkloadsWorkloadResourcesToTerraform(struct?: AssuredWor
 
 
 export function assuredWorkloadsWorkloadResourcesToHclTerraform(struct?: AssuredWorkloadsWorkloadResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -307,7 +307,7 @@ export function assuredWorkloadsWorkloadResourcesToHclTerraform(struct?: Assured
   return attrs;
 }
 
-export class AssuredWorkloadsWorkloadResourcesOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -316,7 +316,7 @@ export class AssuredWorkloadsWorkloadResourcesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -346,14 +346,14 @@ export class AssuredWorkloadsWorkloadResourcesOutputReference extends cdktf.Comp
   }
 }
 
-export class AssuredWorkloadsWorkloadResourcesList extends cdktf.ComplexList {
+export class AssuredWorkloadsWorkloadResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -368,8 +368,8 @@ export interface AssuredWorkloadsWorkloadSaaEnrollmentResponse {
 }
 
 export function assuredWorkloadsWorkloadSaaEnrollmentResponseToTerraform(struct?: AssuredWorkloadsWorkloadSaaEnrollmentResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -378,8 +378,8 @@ export function assuredWorkloadsWorkloadSaaEnrollmentResponseToTerraform(struct?
 
 
 export function assuredWorkloadsWorkloadSaaEnrollmentResponseToHclTerraform(struct?: AssuredWorkloadsWorkloadSaaEnrollmentResponse): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -387,7 +387,7 @@ export function assuredWorkloadsWorkloadSaaEnrollmentResponseToHclTerraform(stru
   return attrs;
 }
 
-export class AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -396,7 +396,7 @@ export class AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -426,14 +426,14 @@ export class AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference extend
   }
 }
 
-export class AssuredWorkloadsWorkloadSaaEnrollmentResponseList extends cdktf.ComplexList {
+export class AssuredWorkloadsWorkloadSaaEnrollmentResponseList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -460,31 +460,31 @@ export interface AssuredWorkloadsWorkloadKmsSettings {
 }
 
 export function assuredWorkloadsWorkloadKmsSettingsToTerraform(struct?: AssuredWorkloadsWorkloadKmsSettingsOutputReference | AssuredWorkloadsWorkloadKmsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    next_rotation_time: cdktf.stringToTerraform(struct!.nextRotationTime),
-    rotation_period: cdktf.stringToTerraform(struct!.rotationPeriod),
+    next_rotation_time: cdktn.stringToTerraform(struct!.nextRotationTime),
+    rotation_period: cdktn.stringToTerraform(struct!.rotationPeriod),
   }
 }
 
 
 export function assuredWorkloadsWorkloadKmsSettingsToHclTerraform(struct?: AssuredWorkloadsWorkloadKmsSettingsOutputReference | AssuredWorkloadsWorkloadKmsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     next_rotation_time: {
-      value: cdktf.stringToHclTerraform(struct!.nextRotationTime),
+      value: cdktn.stringToHclTerraform(struct!.nextRotationTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_period: {
-      value: cdktf.stringToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.stringToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -495,14 +495,14 @@ export function assuredWorkloadsWorkloadKmsSettingsToHclTerraform(struct?: Assur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AssuredWorkloadsWorkloadKmsSettingsOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadKmsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -565,54 +565,54 @@ export interface AssuredWorkloadsWorkloadPartnerPermissions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#assured_workloads_monitoring AssuredWorkloadsWorkload#assured_workloads_monitoring}
   */
-  readonly assuredWorkloadsMonitoring?: boolean | cdktf.IResolvable;
+  readonly assuredWorkloadsMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Allow the partner to view inspectability logs and monitoring violations.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#data_logs_viewer AssuredWorkloadsWorkload#data_logs_viewer}
   */
-  readonly dataLogsViewer?: boolean | cdktf.IResolvable;
+  readonly dataLogsViewer?: boolean | cdktn.IResolvable;
   /**
   * Optional. Allow partner to view access approval logs.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#service_access_approver AssuredWorkloadsWorkload#service_access_approver}
   */
-  readonly serviceAccessApprover?: boolean | cdktf.IResolvable;
+  readonly serviceAccessApprover?: boolean | cdktn.IResolvable;
 }
 
 export function assuredWorkloadsWorkloadPartnerPermissionsToTerraform(struct?: AssuredWorkloadsWorkloadPartnerPermissionsOutputReference | AssuredWorkloadsWorkloadPartnerPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    assured_workloads_monitoring: cdktf.booleanToTerraform(struct!.assuredWorkloadsMonitoring),
-    data_logs_viewer: cdktf.booleanToTerraform(struct!.dataLogsViewer),
-    service_access_approver: cdktf.booleanToTerraform(struct!.serviceAccessApprover),
+    assured_workloads_monitoring: cdktn.booleanToTerraform(struct!.assuredWorkloadsMonitoring),
+    data_logs_viewer: cdktn.booleanToTerraform(struct!.dataLogsViewer),
+    service_access_approver: cdktn.booleanToTerraform(struct!.serviceAccessApprover),
   }
 }
 
 
 export function assuredWorkloadsWorkloadPartnerPermissionsToHclTerraform(struct?: AssuredWorkloadsWorkloadPartnerPermissionsOutputReference | AssuredWorkloadsWorkloadPartnerPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     assured_workloads_monitoring: {
-      value: cdktf.booleanToHclTerraform(struct!.assuredWorkloadsMonitoring),
+      value: cdktn.booleanToHclTerraform(struct!.assuredWorkloadsMonitoring),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     data_logs_viewer: {
-      value: cdktf.booleanToHclTerraform(struct!.dataLogsViewer),
+      value: cdktn.booleanToHclTerraform(struct!.dataLogsViewer),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service_access_approver: {
-      value: cdktf.booleanToHclTerraform(struct!.serviceAccessApprover),
+      value: cdktn.booleanToHclTerraform(struct!.serviceAccessApprover),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -623,14 +623,14 @@ export function assuredWorkloadsWorkloadPartnerPermissionsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AssuredWorkloadsWorkloadPartnerPermissionsOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadPartnerPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -668,11 +668,11 @@ export class AssuredWorkloadsWorkloadPartnerPermissionsOutputReference extends c
   }
 
   // assured_workloads_monitoring - computed: false, optional: true, required: false
-  private _assuredWorkloadsMonitoring?: boolean | cdktf.IResolvable; 
+  private _assuredWorkloadsMonitoring?: boolean | cdktn.IResolvable; 
   public get assuredWorkloadsMonitoring() {
     return this.getBooleanAttribute('assured_workloads_monitoring');
   }
-  public set assuredWorkloadsMonitoring(value: boolean | cdktf.IResolvable) {
+  public set assuredWorkloadsMonitoring(value: boolean | cdktn.IResolvable) {
     this._assuredWorkloadsMonitoring = value;
   }
   public resetAssuredWorkloadsMonitoring() {
@@ -684,11 +684,11 @@ export class AssuredWorkloadsWorkloadPartnerPermissionsOutputReference extends c
   }
 
   // data_logs_viewer - computed: false, optional: true, required: false
-  private _dataLogsViewer?: boolean | cdktf.IResolvable; 
+  private _dataLogsViewer?: boolean | cdktn.IResolvable; 
   public get dataLogsViewer() {
     return this.getBooleanAttribute('data_logs_viewer');
   }
-  public set dataLogsViewer(value: boolean | cdktf.IResolvable) {
+  public set dataLogsViewer(value: boolean | cdktn.IResolvable) {
     this._dataLogsViewer = value;
   }
   public resetDataLogsViewer() {
@@ -700,11 +700,11 @@ export class AssuredWorkloadsWorkloadPartnerPermissionsOutputReference extends c
   }
 
   // service_access_approver - computed: false, optional: true, required: false
-  private _serviceAccessApprover?: boolean | cdktf.IResolvable; 
+  private _serviceAccessApprover?: boolean | cdktn.IResolvable; 
   public get serviceAccessApprover() {
     return this.getBooleanAttribute('service_access_approver');
   }
-  public set serviceAccessApprover(value: boolean | cdktf.IResolvable) {
+  public set serviceAccessApprover(value: boolean | cdktn.IResolvable) {
     this._serviceAccessApprover = value;
   }
   public resetServiceAccessApprover() {
@@ -736,39 +736,39 @@ export interface AssuredWorkloadsWorkloadResourceSettings {
   readonly resourceType?: string;
 }
 
-export function assuredWorkloadsWorkloadResourceSettingsToTerraform(struct?: AssuredWorkloadsWorkloadResourceSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function assuredWorkloadsWorkloadResourceSettingsToTerraform(struct?: AssuredWorkloadsWorkloadResourceSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
   }
 }
 
 
-export function assuredWorkloadsWorkloadResourceSettingsToHclTerraform(struct?: AssuredWorkloadsWorkloadResourceSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function assuredWorkloadsWorkloadResourceSettingsToHclTerraform(struct?: AssuredWorkloadsWorkloadResourceSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -779,9 +779,9 @@ export function assuredWorkloadsWorkloadResourceSettingsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AssuredWorkloadsWorkloadResourceSettingsOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadResourceSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -789,11 +789,11 @@ export class AssuredWorkloadsWorkloadResourceSettingsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AssuredWorkloadsWorkloadResourceSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): AssuredWorkloadsWorkloadResourceSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -814,7 +814,7 @@ export class AssuredWorkloadsWorkloadResourceSettingsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AssuredWorkloadsWorkloadResourceSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AssuredWorkloadsWorkloadResourceSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -822,7 +822,7 @@ export class AssuredWorkloadsWorkloadResourceSettingsOutputReference extends cdk
       this._resourceId = undefined;
       this._resourceType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -884,15 +884,15 @@ export class AssuredWorkloadsWorkloadResourceSettingsOutputReference extends cdk
   }
 }
 
-export class AssuredWorkloadsWorkloadResourceSettingsList extends cdktf.ComplexList {
-  public internalValue? : AssuredWorkloadsWorkloadResourceSettings[] | cdktf.IResolvable
+export class AssuredWorkloadsWorkloadResourceSettingsList extends cdktn.ComplexList {
+  public internalValue? : AssuredWorkloadsWorkloadResourceSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -918,39 +918,39 @@ export interface AssuredWorkloadsWorkloadTimeouts {
   readonly update?: string;
 }
 
-export function assuredWorkloadsWorkloadTimeoutsToTerraform(struct?: AssuredWorkloadsWorkloadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function assuredWorkloadsWorkloadTimeoutsToTerraform(struct?: AssuredWorkloadsWorkloadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function assuredWorkloadsWorkloadTimeoutsToHclTerraform(struct?: AssuredWorkloadsWorkloadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function assuredWorkloadsWorkloadTimeoutsToHclTerraform(struct?: AssuredWorkloadsWorkloadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -961,19 +961,19 @@ export function assuredWorkloadsWorkloadTimeoutsToHclTerraform(struct?: AssuredW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AssuredWorkloadsWorkloadTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AssuredWorkloadsWorkloadTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AssuredWorkloadsWorkloadTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -994,7 +994,7 @@ export class AssuredWorkloadsWorkloadTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AssuredWorkloadsWorkloadTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AssuredWorkloadsWorkloadTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1002,7 +1002,7 @@ export class AssuredWorkloadsWorkloadTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1073,24 +1073,24 @@ export interface AssuredWorkloadsWorkloadWorkloadOptions {
 }
 
 export function assuredWorkloadsWorkloadWorkloadOptionsToTerraform(struct?: AssuredWorkloadsWorkloadWorkloadOptionsOutputReference | AssuredWorkloadsWorkloadWorkloadOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    kaj_enrollment_type: cdktf.stringToTerraform(struct!.kajEnrollmentType),
+    kaj_enrollment_type: cdktn.stringToTerraform(struct!.kajEnrollmentType),
   }
 }
 
 
 export function assuredWorkloadsWorkloadWorkloadOptionsToHclTerraform(struct?: AssuredWorkloadsWorkloadWorkloadOptionsOutputReference | AssuredWorkloadsWorkloadWorkloadOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     kaj_enrollment_type: {
-      value: cdktf.stringToHclTerraform(struct!.kajEnrollmentType),
+      value: cdktn.stringToHclTerraform(struct!.kajEnrollmentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1101,14 +1101,14 @@ export function assuredWorkloadsWorkloadWorkloadOptionsToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AssuredWorkloadsWorkloadWorkloadOptionsOutputReference extends cdktf.ComplexObject {
+export class AssuredWorkloadsWorkloadWorkloadOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1153,7 +1153,7 @@ export class AssuredWorkloadsWorkloadWorkloadOptionsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload google_assured_workloads_workload}
 */
-export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
+export class AssuredWorkloadsWorkload extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1164,14 +1164,14 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AssuredWorkloadsWorkload resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AssuredWorkloadsWorkload resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AssuredWorkloadsWorkload to import
   * @param importFromId The id of the existing AssuredWorkloadsWorkload that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/assured_workloads_workload#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AssuredWorkloadsWorkload to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_assured_workloads_workload", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_assured_workloads_workload", importId: importFromId, provider });
       }
 
   // ===========
@@ -1283,7 +1283,7 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1295,11 +1295,11 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
   }
 
   // enable_sovereign_controls - computed: false, optional: true, required: false
-  private _enableSovereignControls?: boolean | cdktf.IResolvable; 
+  private _enableSovereignControls?: boolean | cdktn.IResolvable; 
   public get enableSovereignControls() {
     return this.getBooleanAttribute('enable_sovereign_controls');
   }
-  public set enableSovereignControls(value: boolean | cdktf.IResolvable) {
+  public set enableSovereignControls(value: boolean | cdktn.IResolvable) {
     this._enableSovereignControls = value;
   }
   public resetEnableSovereignControls() {
@@ -1439,17 +1439,17 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
 
   // violation_notifications_enabled - computed: true, optional: true, required: false
-  private _violationNotificationsEnabled?: boolean | cdktf.IResolvable; 
+  private _violationNotificationsEnabled?: boolean | cdktn.IResolvable; 
   public get violationNotificationsEnabled() {
     return this.getBooleanAttribute('violation_notifications_enabled');
   }
-  public set violationNotificationsEnabled(value: boolean | cdktf.IResolvable) {
+  public set violationNotificationsEnabled(value: boolean | cdktn.IResolvable) {
     this._violationNotificationsEnabled = value;
   }
   public resetViolationNotificationsEnabled() {
@@ -1497,7 +1497,7 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
   public get resourceSettings() {
     return this._resourceSettings;
   }
-  public putResourceSettings(value: AssuredWorkloadsWorkloadResourceSettings[] | cdktf.IResolvable) {
+  public putResourceSettings(value: AssuredWorkloadsWorkloadResourceSettings[] | cdktn.IResolvable) {
     this._resourceSettings.internalValue = value;
   }
   public resetResourceSettings() {
@@ -1546,21 +1546,21 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_account: cdktf.stringToTerraform(this._billingAccount),
-      compliance_regime: cdktf.stringToTerraform(this._complianceRegime),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_sovereign_controls: cdktf.booleanToTerraform(this._enableSovereignControls),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      organization: cdktf.stringToTerraform(this._organization),
-      partner: cdktf.stringToTerraform(this._partner),
-      partner_services_billing_account: cdktf.stringToTerraform(this._partnerServicesBillingAccount),
-      provisioned_resources_parent: cdktf.stringToTerraform(this._provisionedResourcesParent),
-      violation_notifications_enabled: cdktf.booleanToTerraform(this._violationNotificationsEnabled),
+      billing_account: cdktn.stringToTerraform(this._billingAccount),
+      compliance_regime: cdktn.stringToTerraform(this._complianceRegime),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_sovereign_controls: cdktn.booleanToTerraform(this._enableSovereignControls),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      organization: cdktn.stringToTerraform(this._organization),
+      partner: cdktn.stringToTerraform(this._partner),
+      partner_services_billing_account: cdktn.stringToTerraform(this._partnerServicesBillingAccount),
+      provisioned_resources_parent: cdktn.stringToTerraform(this._provisionedResourcesParent),
+      violation_notifications_enabled: cdktn.booleanToTerraform(this._violationNotificationsEnabled),
       kms_settings: assuredWorkloadsWorkloadKmsSettingsToTerraform(this._kmsSettings.internalValue),
       partner_permissions: assuredWorkloadsWorkloadPartnerPermissionsToTerraform(this._partnerPermissions.internalValue),
-      resource_settings: cdktf.listMapper(assuredWorkloadsWorkloadResourceSettingsToTerraform, true)(this._resourceSettings.internalValue),
+      resource_settings: cdktn.listMapper(assuredWorkloadsWorkloadResourceSettingsToTerraform, true)(this._resourceSettings.internalValue),
       timeouts: assuredWorkloadsWorkloadTimeoutsToTerraform(this._timeouts.internalValue),
       workload_options: assuredWorkloadsWorkloadWorkloadOptionsToTerraform(this._workloadOptions.internalValue),
     };
@@ -1569,73 +1569,73 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_account: {
-        value: cdktf.stringToHclTerraform(this._billingAccount),
+        value: cdktn.stringToHclTerraform(this._billingAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compliance_regime: {
-        value: cdktf.stringToHclTerraform(this._complianceRegime),
+        value: cdktn.stringToHclTerraform(this._complianceRegime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_sovereign_controls: {
-        value: cdktf.booleanToHclTerraform(this._enableSovereignControls),
+        value: cdktn.booleanToHclTerraform(this._enableSovereignControls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partner: {
-        value: cdktf.stringToHclTerraform(this._partner),
+        value: cdktn.stringToHclTerraform(this._partner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partner_services_billing_account: {
-        value: cdktf.stringToHclTerraform(this._partnerServicesBillingAccount),
+        value: cdktn.stringToHclTerraform(this._partnerServicesBillingAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provisioned_resources_parent: {
-        value: cdktf.stringToHclTerraform(this._provisionedResourcesParent),
+        value: cdktn.stringToHclTerraform(this._provisionedResourcesParent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       violation_notifications_enabled: {
-        value: cdktf.booleanToHclTerraform(this._violationNotificationsEnabled),
+        value: cdktn.booleanToHclTerraform(this._violationNotificationsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -1653,7 +1653,7 @@ export class AssuredWorkloadsWorkload extends cdktf.TerraformResource {
         storageClassType: "AssuredWorkloadsWorkloadPartnerPermissionsList",
       },
       resource_settings: {
-        value: cdktf.listMapperHcl(assuredWorkloadsWorkloadResourceSettingsToHclTerraform, true)(this._resourceSettings.internalValue),
+        value: cdktn.listMapperHcl(assuredWorkloadsWorkloadResourceSettingsToHclTerraform, true)(this._resourceSettings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AssuredWorkloadsWorkloadResourceSettingsList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EndpointsServiceConsumersIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface EndpointsServiceConsumersIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/endpoints_service_consumers_iam_policy#consumer_project EndpointsServiceConsumersIamPolicy#consumer_project}
   */
@@ -36,7 +36,7 @@ export interface EndpointsServiceConsumersIamPolicyConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}
 */
-export class EndpointsServiceConsumersIamPolicy extends cdktf.TerraformResource {
+export class EndpointsServiceConsumersIamPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class EndpointsServiceConsumersIamPolicy extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EndpointsServiceConsumersIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EndpointsServiceConsumersIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EndpointsServiceConsumersIamPolicy to import
   * @param importFromId The id of the existing EndpointsServiceConsumersIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/endpoints_service_consumers_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EndpointsServiceConsumersIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_endpoints_service_consumers_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_endpoints_service_consumers_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -160,35 +160,35 @@ export class EndpointsServiceConsumersIamPolicy extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      consumer_project: cdktf.stringToTerraform(this._consumerProject),
-      id: cdktf.stringToTerraform(this._id),
-      policy_data: cdktf.stringToTerraform(this._policyData),
-      service_name: cdktf.stringToTerraform(this._serviceName),
+      consumer_project: cdktn.stringToTerraform(this._consumerProject),
+      id: cdktn.stringToTerraform(this._id),
+      policy_data: cdktn.stringToTerraform(this._policyData),
+      service_name: cdktn.stringToTerraform(this._serviceName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       consumer_project: {
-        value: cdktf.stringToHclTerraform(this._consumerProject),
+        value: cdktn.stringToHclTerraform(this._consumerProject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_data: {
-        value: cdktf.stringToHclTerraform(this._policyData),
+        value: cdktn.stringToHclTerraform(this._policyData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_name: {
-        value: cdktf.stringToHclTerraform(this._serviceName),
+        value: cdktn.stringToHclTerraform(this._serviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

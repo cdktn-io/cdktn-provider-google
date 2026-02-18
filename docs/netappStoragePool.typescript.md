@@ -305,7 +305,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -482,7 +482,7 @@ public resetZone(): void
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NetappStoragePool resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a NetappStoragePool resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -554,7 +554,7 @@ import { netappStoragePool } from '@cdktn/provider-google'
 netappStoragePool.NetappStoragePool.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a NetappStoragePool resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NetappStoragePool resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.generateConfigForImport.parameter.scope"></a>
 
@@ -584,7 +584,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NetappStoragePool to import is found.
 
@@ -595,53 +595,53 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.encryptionType">encryptionType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference">NetappStoragePoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.volumeCapacityGib">volumeCapacityGib</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.volumeCount">volumeCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.activeDirectoryInput">activeDirectoryInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.allowAutoTieringInput">allowAutoTieringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.allowAutoTieringInput">allowAutoTieringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.capacityGibInput">capacityGibInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.customPerformanceEnabledInput">customPerformanceEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.customPerformanceEnabledInput">customPerformanceEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.kmsConfigInput">kmsConfigInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.ldapEnabledInput">ldapEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.ldapEnabledInput">ldapEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.replicaZoneInput">replicaZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.serviceLevelInput">serviceLevelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.totalIopsInput">totalIopsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.totalThroughputMibpsInput">totalThroughputMibpsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.activeDirectory">activeDirectory</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.allowAutoTiering">allowAutoTiering</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.allowAutoTiering">allowAutoTiering</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.capacityGib">capacityGib</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.customPerformanceEnabled">customPerformanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.customPerformanceEnabled">customPerformanceEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.kmsConfig">kmsConfig</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.ldapEnabled">ldapEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.ldapEnabled">ldapEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.network">network</a></code> | <code>string</code> | *No description.* |
@@ -672,7 +672,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -722,7 +722,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -732,7 +732,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -742,7 +742,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -762,7 +762,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -772,7 +772,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -782,7 +782,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -792,7 +792,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -802,7 +802,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -822,7 +822,7 @@ public readonly encryptionType: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -872,7 +872,7 @@ public readonly activeDirectoryInput: string;
 public readonly allowAutoTieringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -892,7 +892,7 @@ public readonly capacityGibInput: string;
 public readonly customPerformanceEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -942,7 +942,7 @@ public readonly labelsInput: {[ key: string ]: string};
 public readonly ldapEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly serviceLevelInput: string;
 public readonly timeoutsInput: IResolvable | NetappStoragePoolTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a>
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly activeDirectory: string;
 public readonly allowAutoTiering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly capacityGib: string;
 public readonly customPerformanceEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly labels: {[ key: string ]: string};
 public readonly ldapEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1260,26 +1260,26 @@ const netappStoragePoolConfig: netappStoragePool.NetappStoragePoolConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.capacityGib">capacityGib</a></code> | <code>string</code> | Capacity of the storage pool (in GiB). |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.location">location</a></code> | <code>string</code> | Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.name">name</a></code> | <code>string</code> | The resource name of the storage pool. Needs to be unique per location/region. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.network">network</a></code> | <code>string</code> | VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.serviceLevel">serviceLevel</a></code> | <code>string</code> | Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"]. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.activeDirectory">activeDirectory</a></code> | <code>string</code> | Specifies the Active Directory policy to be used. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.allowAutoTiering">allowAutoTiering</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.customPerformanceEnabled">customPerformanceEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.allowAutoTiering">allowAutoTiering</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.customPerformanceEnabled">customPerformanceEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.kmsConfig">kmsConfig</a></code> | <code>string</code> | Specifies the CMEK policy to be used for volume encryption. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.ldapEnabled">ldapEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.ldapEnabled">ldapEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.replicaZone">replicaZone</a></code> | <code>string</code> | Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones). |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | timeouts block. |
@@ -1295,7 +1295,7 @@ const netappStoragePoolConfig: netappStoragePool.NetappStoragePoolConfig = { ...
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1305,7 +1305,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1315,7 +1315,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1325,7 +1325,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1335,7 +1335,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1345,7 +1345,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1355,7 +1355,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1452,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowAutoTiering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly customPerformanceEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false.
 
@@ -1546,7 +1546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ldapEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups.
 
@@ -1713,14 +1713,14 @@ new netappStoragePool.NetappStoragePoolTimeoutsOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1893,7 +1893,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1938,7 +1938,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2032,7 +2032,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | NetappStoragePoolTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a>
 
 ---
 

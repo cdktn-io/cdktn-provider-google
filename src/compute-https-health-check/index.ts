@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeHttpsHealthCheckConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeHttpsHealthCheckConfig extends cdktn.TerraformMetaArguments {
   /**
   * How often (in seconds) to send a health check. The default value is 5
   * seconds.
@@ -115,39 +115,39 @@ export interface ComputeHttpsHealthCheckTimeouts {
   readonly update?: string;
 }
 
-export function computeHttpsHealthCheckTimeoutsToTerraform(struct?: ComputeHttpsHealthCheckTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeHttpsHealthCheckTimeoutsToTerraform(struct?: ComputeHttpsHealthCheckTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeHttpsHealthCheckTimeoutsToHclTerraform(struct?: ComputeHttpsHealthCheckTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeHttpsHealthCheckTimeoutsToHclTerraform(struct?: ComputeHttpsHealthCheckTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -158,19 +158,19 @@ export function computeHttpsHealthCheckTimeoutsToHclTerraform(struct?: ComputeHt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeHttpsHealthCheckTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeHttpsHealthCheckTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeHttpsHealthCheckTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeHttpsHealthCheckTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -191,7 +191,7 @@ export class ComputeHttpsHealthCheckTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeHttpsHealthCheckTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeHttpsHealthCheckTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -199,7 +199,7 @@ export class ComputeHttpsHealthCheckTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -264,7 +264,7 @@ export class ComputeHttpsHealthCheckTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_https_health_check google_compute_https_health_check}
 */
-export class ComputeHttpsHealthCheck extends cdktf.TerraformResource {
+export class ComputeHttpsHealthCheck extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -275,14 +275,14 @@ export class ComputeHttpsHealthCheck extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeHttpsHealthCheck resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeHttpsHealthCheck resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeHttpsHealthCheck to import
   * @param importFromId The id of the existing ComputeHttpsHealthCheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_https_health_check#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeHttpsHealthCheck to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_https_health_check", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_https_health_check", importId: importFromId, provider });
       }
 
   // ===========
@@ -535,17 +535,17 @@ export class ComputeHttpsHealthCheck extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      check_interval_sec: cdktf.numberToTerraform(this._checkIntervalSec),
-      description: cdktf.stringToTerraform(this._description),
-      healthy_threshold: cdktf.numberToTerraform(this._healthyThreshold),
-      host: cdktf.stringToTerraform(this._host),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      port: cdktf.numberToTerraform(this._port),
-      project: cdktf.stringToTerraform(this._project),
-      request_path: cdktf.stringToTerraform(this._requestPath),
-      timeout_sec: cdktf.numberToTerraform(this._timeoutSec),
-      unhealthy_threshold: cdktf.numberToTerraform(this._unhealthyThreshold),
+      check_interval_sec: cdktn.numberToTerraform(this._checkIntervalSec),
+      description: cdktn.stringToTerraform(this._description),
+      healthy_threshold: cdktn.numberToTerraform(this._healthyThreshold),
+      host: cdktn.stringToTerraform(this._host),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      port: cdktn.numberToTerraform(this._port),
+      project: cdktn.stringToTerraform(this._project),
+      request_path: cdktn.stringToTerraform(this._requestPath),
+      timeout_sec: cdktn.numberToTerraform(this._timeoutSec),
+      unhealthy_threshold: cdktn.numberToTerraform(this._unhealthyThreshold),
       timeouts: computeHttpsHealthCheckTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -553,67 +553,67 @@ export class ComputeHttpsHealthCheck extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       check_interval_sec: {
-        value: cdktf.numberToHclTerraform(this._checkIntervalSec),
+        value: cdktn.numberToHclTerraform(this._checkIntervalSec),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       healthy_threshold: {
-        value: cdktf.numberToHclTerraform(this._healthyThreshold),
+        value: cdktn.numberToHclTerraform(this._healthyThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_path: {
-        value: cdktf.stringToHclTerraform(this._requestPath),
+        value: cdktn.stringToHclTerraform(this._requestPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timeout_sec: {
-        value: cdktf.numberToHclTerraform(this._timeoutSec),
+        value: cdktn.numberToHclTerraform(this._timeoutSec),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       unhealthy_threshold: {
-        value: cdktf.numberToHclTerraform(this._unhealthyThreshold),
+        value: cdktn.numberToHclTerraform(this._unhealthyThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

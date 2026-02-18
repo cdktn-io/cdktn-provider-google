@@ -303,7 +303,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -397,7 +397,7 @@ public putTargetSecureTags(value: IResolvable | ComputeFirewallPolicyRuleTargetS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.putTargetSecureTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
 
 ---
 
@@ -480,7 +480,7 @@ public resetTlsInspect(): void
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputeFirewallPolicyRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ComputeFirewallPolicyRule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -552,7 +552,7 @@ import { computeFirewallPolicyRule } from '@cdktn/provider-google'
 computeFirewallPolicyRule.ComputeFirewallPolicyRule.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ComputeFirewallPolicyRule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeFirewallPolicyRule resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.generateConfigForImport.parameter.scope"></a>
 
@@ -582,7 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeFirewallPolicyRule to import is found.
 
@@ -593,19 +593,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.kind">kind</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.match">match</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference">ComputeFirewallPolicyRuleMatchOutputReference</a></code> | *No description.* |
@@ -615,30 +615,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.actionInput">actionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.directionInput">directionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.firewallPolicyInput">firewallPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.matchInput">matchInput</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch">ComputeFirewallPolicyRuleMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.securityProfileGroupInput">securityProfileGroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.targetResourcesInput">targetResourcesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.targetSecureTagsInput">targetSecureTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.targetSecureTagsInput">targetSecureTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.targetServiceAccountsInput">targetServiceAccountsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.tlsInspectInput">tlsInspectInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.tlsInspectInput">tlsInspectInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.action">action</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.direction">direction</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.firewallPolicy">firewallPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.securityProfileGroup">securityProfileGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.targetResources">targetResources</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.targetServiceAccounts">targetServiceAccounts</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.tlsInspect">tlsInspect</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRule.property.tlsInspect">tlsInspect</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -660,7 +660,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -710,7 +710,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -720,7 +720,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -730,7 +730,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -750,7 +750,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -760,7 +760,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -770,7 +770,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -780,7 +780,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -880,7 +880,7 @@ public readonly directionInput: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -890,7 +890,7 @@ public readonly disabledInput: boolean | IResolvable;
 public readonly enableLoggingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -960,7 +960,7 @@ public readonly targetResourcesInput: string[];
 public readonly targetSecureTagsInput: IResolvable | ComputeFirewallPolicyRuleTargetSecureTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
 
 ---
 
@@ -980,7 +980,7 @@ public readonly targetServiceAccountsInput: string[];
 public readonly timeoutsInput: IResolvable | ComputeFirewallPolicyRuleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a>
 
 ---
 
@@ -990,7 +990,7 @@ public readonly timeoutsInput: IResolvable | ComputeFirewallPolicyRuleTimeouts;
 public readonly tlsInspectInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly direction: string;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly disabled: boolean | IResolvable;
 public readonly enableLogging: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly targetServiceAccounts: string[];
 public readonly tlsInspect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1148,28 +1148,28 @@ const computeFirewallPolicyRuleConfig: computeFirewallPolicyRule.ComputeFirewall
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.action">action</a></code> | <code>string</code> | The Action to perform when the client connection triggers the rule. Valid actions are "allow", "deny", "goto_next" and "apply_security_profile_group". |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.direction">direction</a></code> | <code>string</code> | The direction in which this rule applies. Possible values: ["INGRESS", "EGRESS"]. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.firewallPolicy">firewallPolicy</a></code> | <code>string</code> | The firewall policy of the resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.match">match</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch">ComputeFirewallPolicyRuleMatch</a></code> | match block. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.priority">priority</a></code> | <code>number</code> | An integer indicating the priority of a rule in the list. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.description">description</a></code> | <code>string</code> | An optional description for this resource. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Denotes whether the firewall policy rule is disabled. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | Denotes whether to enable logging for a particular rule. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Denotes whether the firewall policy rule is disabled. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | Denotes whether to enable logging for a particular rule. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_firewall_policy_rule#id ComputeFirewallPolicyRule#id}. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.securityProfileGroup">securityProfileGroup</a></code> | <code>string</code> | A fully-qualified URL of a SecurityProfile resource instance. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.targetResources">targetResources</a></code> | <code>string[]</code> | A list of network resource URLs to which this rule applies. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.targetSecureTags">targetSecureTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]</code> | target_secure_tags block. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.targetSecureTags">targetSecureTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]</code> | target_secure_tags block. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.targetServiceAccounts">targetServiceAccounts</a></code> | <code>string[]</code> | A list of service accounts indicating the sets of instances that are applied with this rule. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.tlsInspect">tlsInspect</a></code> | <code>boolean \| cdktf.IResolvable</code> | Boolean flag indicating if the traffic should be TLS decrypted. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleConfig.property.tlsInspect">tlsInspect</a></code> | <code>boolean \| cdktn.IResolvable</code> | Boolean flag indicating if the traffic should be TLS decrypted. |
 
 ---
 
@@ -1179,7 +1179,7 @@ const computeFirewallPolicyRuleConfig: computeFirewallPolicyRule.ComputeFirewall
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1199,7 +1199,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Denotes whether the firewall policy rule is disabled.
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableLogging: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Denotes whether to enable logging for a particular rule.
 
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly targetSecureTags: IResolvable | ComputeFirewallPolicyRuleTargetSecureTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
 
 target_secure_tags block.
 
@@ -1462,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tlsInspect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Boolean flag indicating if the traffic should be TLS decrypted.
 
@@ -1486,7 +1486,7 @@ const computeFirewallPolicyRuleMatch: computeFirewallPolicyRule.ComputeFirewallP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.layer4Configs">layer4Configs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]</code> | layer4_configs block. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.layer4Configs">layer4Configs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]</code> | layer4_configs block. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.destAddressGroups">destAddressGroups</a></code> | <code>string[]</code> | Address groups which should be matched against the traffic destination. Maximum number of destination address groups is 10. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.destFqdns">destFqdns</a></code> | <code>string[]</code> | Fully Qualified Domain Name (FQDN) which should be matched against traffic destination. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.destIpRanges">destIpRanges</a></code> | <code>string[]</code> | CIDR IP address range. Maximum number of destination CIDR IP ranges allowed is 5000. |
@@ -1496,7 +1496,7 @@ const computeFirewallPolicyRuleMatch: computeFirewallPolicyRule.ComputeFirewallP
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.srcFqdns">srcFqdns</a></code> | <code>string[]</code> | Fully Qualified Domain Name (FQDN) which should be matched against traffic source. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.srcIpRanges">srcIpRanges</a></code> | <code>string[]</code> | CIDR IP address range. Maximum number of source CIDR IP ranges allowed is 5000. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.srcRegionCodes">srcRegionCodes</a></code> | <code>string[]</code> | Region codes whose IP addresses will be used to match for source of traffic. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.srcSecureTags">srcSecureTags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]</code> | src_secure_tags block. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.srcSecureTags">srcSecureTags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]</code> | src_secure_tags block. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatch.property.srcThreatIntelligences">srcThreatIntelligences</a></code> | <code>string[]</code> | Names of Network Threat Intelligence lists. The IPs in these lists will be matched against traffic source. |
 
 ---
@@ -1507,7 +1507,7 @@ const computeFirewallPolicyRuleMatch: computeFirewallPolicyRule.ComputeFirewallP
 public readonly layer4Configs: IResolvable | ComputeFirewallPolicyRuleMatchLayer4Configs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
 
 layer4_configs block.
 
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly srcSecureTags: IResolvable | ComputeFirewallPolicyRuleMatchSrcSecureTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
 
 src_secure_tags block.
 
@@ -1864,7 +1864,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1872,7 +1872,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1938,7 +1938,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1973,7 +1973,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]</code> | *No description.* |
 
 ---
 
@@ -2007,7 +2007,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeFirewallPolicyRuleMatchLayer4Configs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
 
 ---
 
@@ -2024,7 +2024,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2033,7 +2033,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2220,7 +2220,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2251,7 +2251,7 @@ public resetPorts(): void
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.property.portsInput">portsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.property.ipProtocol">ipProtocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.property.ports">ports</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4ConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a></code> | *No description.* |
 
 ---
 
@@ -2325,7 +2325,7 @@ public readonly ports: string[];
 public readonly internalValue: IResolvable | ComputeFirewallPolicyRuleMatchLayer4Configs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>
 
 ---
 
@@ -2342,14 +2342,14 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2532,7 +2532,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2554,7 +2554,7 @@ public putLayer4Configs(value: IResolvable | ComputeFirewallPolicyRuleMatchLayer
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.putLayer4Configs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
 
 ---
 
@@ -2566,7 +2566,7 @@ public putSrcSecureTags(value: IResolvable | ComputeFirewallPolicyRuleMatchSrcSe
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.putSrcSecureTags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
 
 ---
 
@@ -2650,12 +2650,12 @@ public resetSrcThreatIntelligences(): void
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.destIpRangesInput">destIpRangesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.destRegionCodesInput">destRegionCodesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.destThreatIntelligencesInput">destThreatIntelligencesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.layer4ConfigsInput">layer4ConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.layer4ConfigsInput">layer4ConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.srcAddressGroupsInput">srcAddressGroupsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.srcFqdnsInput">srcFqdnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.srcIpRangesInput">srcIpRangesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.srcRegionCodesInput">srcRegionCodesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.srcSecureTagsInput">srcSecureTagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.srcSecureTagsInput">srcSecureTagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.srcThreatIntelligencesInput">srcThreatIntelligencesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.destAddressGroups">destAddressGroups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchOutputReference.property.destFqdns">destFqdns</a></code> | <code>string[]</code> | *No description.* |
@@ -2771,7 +2771,7 @@ public readonly destThreatIntelligencesInput: string[];
 public readonly layer4ConfigsInput: IResolvable | ComputeFirewallPolicyRuleMatchLayer4Configs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchLayer4Configs">ComputeFirewallPolicyRuleMatchLayer4Configs</a>[]
 
 ---
 
@@ -2821,7 +2821,7 @@ public readonly srcRegionCodesInput: string[];
 public readonly srcSecureTagsInput: IResolvable | ComputeFirewallPolicyRuleMatchSrcSecureTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
 
 ---
 
@@ -2958,7 +2958,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2966,7 +2966,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3032,7 +3032,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3067,7 +3067,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -3101,7 +3101,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeFirewallPolicyRuleMatchSrcSecureTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>[]
 
 ---
 
@@ -3118,7 +3118,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3127,7 +3127,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3314,7 +3314,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3344,7 +3344,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a></code> | *No description.* |
 
 ---
 
@@ -3408,7 +3408,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | ComputeFirewallPolicyRuleMatchSrcSecureTags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleMatchSrcSecureTags">ComputeFirewallPolicyRuleMatchSrcSecureTags</a>
 
 ---
 
@@ -3425,7 +3425,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3433,7 +3433,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3499,7 +3499,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3534,7 +3534,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]</code> | *No description.* |
 
 ---
 
@@ -3568,7 +3568,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeFirewallPolicyRuleTargetSecureTags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>[]
 
 ---
 
@@ -3585,7 +3585,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3594,7 +3594,7 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3781,7 +3781,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3811,7 +3811,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a></code> | *No description.* |
 
 ---
 
@@ -3875,7 +3875,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | ComputeFirewallPolicyRuleTargetSecureTags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTargetSecureTags">ComputeFirewallPolicyRuleTargetSecureTags</a>
 
 ---
 
@@ -3892,14 +3892,14 @@ new computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4072,7 +4072,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4117,7 +4117,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4211,7 +4211,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ComputeFirewallPolicyRuleTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeFirewallPolicyRule.ComputeFirewallPolicyRuleTimeouts">ComputeFirewallPolicyRuleTimeouts</a>
 
 ---
 

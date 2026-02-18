@@ -307,7 +307,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -413,7 +413,7 @@ public putHostRule(value: IResolvable | ComputeRegionUrlMapHostRule[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.putHostRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
 
 ---
 
@@ -425,7 +425,7 @@ public putPathMatcher(value: IResolvable | ComputeRegionUrlMapPathMatcher[]): vo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.putPathMatcher.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
 
 ---
 
@@ -437,7 +437,7 @@ public putTest(value: IResolvable | ComputeRegionUrlMapTest[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.putTest.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
 
 ---
 
@@ -526,7 +526,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputeRegionUrlMap resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ComputeRegionUrlMap resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -598,7 +598,7 @@ import { computeRegionUrlMap } from '@cdktn/provider-google'
 computeRegionUrlMap.ComputeRegionUrlMap.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ComputeRegionUrlMap resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeRegionUrlMap resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.generateConfigForImport.parameter.scope"></a>
 
@@ -628,7 +628,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeRegionUrlMap to import is found.
 
@@ -639,19 +639,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.defaultRouteAction">defaultRouteAction</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference">ComputeRegionUrlMapDefaultRouteActionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.defaultUrlRedirect">defaultUrlRedirect</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference">ComputeRegionUrlMapDefaultUrlRedirectOutputReference</a></code> | *No description.* |
@@ -666,14 +666,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.defaultServiceInput">defaultServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.defaultUrlRedirectInput">defaultUrlRedirectInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect">ComputeRegionUrlMapDefaultUrlRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.hostRuleInput">hostRuleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.hostRuleInput">hostRuleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.pathMatcherInput">pathMatcherInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.pathMatcherInput">pathMatcherInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.testInput">testInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.testInput">testInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.defaultService">defaultService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMap.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -701,7 +701,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -751,7 +751,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -761,7 +761,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -771,7 +771,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -791,7 +791,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -801,7 +801,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -811,7 +811,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -821,7 +821,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -971,7 +971,7 @@ public readonly descriptionInput: string;
 public readonly hostRuleInput: IResolvable | ComputeRegionUrlMapHostRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly nameInput: string;
 public readonly pathMatcherInput: IResolvable | ComputeRegionUrlMapPathMatcher[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly regionInput: string;
 public readonly testInput: IResolvable | ComputeRegionUrlMapTest[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly testInput: IResolvable | ComputeRegionUrlMapTest[];
 public readonly timeoutsInput: IResolvable | ComputeRegionUrlMapTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a>
 
 ---
 
@@ -1139,24 +1139,24 @@ const computeRegionUrlMapConfig: computeRegionUrlMap.ComputeRegionUrlMapConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.defaultRouteAction">defaultRouteAction</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction">ComputeRegionUrlMapDefaultRouteAction</a></code> | default_route_action block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.defaultService">defaultService</a></code> | <code>string</code> | The full or partial URL of the defaultService resource to which traffic is directed if none of the hostRules match. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.defaultUrlRedirect">defaultUrlRedirect</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect">ComputeRegionUrlMapDefaultUrlRedirect</a></code> | default_url_redirect block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.hostRule">hostRule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]</code> | host_rule block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.hostRule">hostRule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]</code> | host_rule block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#id ComputeRegionUrlMap#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.pathMatcher">pathMatcher</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]</code> | path_matcher block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.pathMatcher">pathMatcher</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]</code> | path_matcher block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_url_map#project ComputeRegionUrlMap#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.region">region</a></code> | <code>string</code> | The Region in which the url map should reside. If it is not provided, the provider region is used. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.test">test</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]</code> | test block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.test">test</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]</code> | test block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1167,7 +1167,7 @@ const computeRegionUrlMapConfig: computeRegionUrlMap.ComputeRegionUrlMapConfig =
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1177,7 +1177,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1197,7 +1197,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1207,7 +1207,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1227,7 +1227,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly hostRule: IResolvable | ComputeRegionUrlMapHostRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
 
 host_rule block.
 
@@ -1351,7 +1351,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly pathMatcher: IResolvable | ComputeRegionUrlMapPathMatcher[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
 
 path_matcher block.
 
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly test: IResolvable | ComputeRegionUrlMapTest[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
 
 test block.
 
@@ -1433,7 +1433,7 @@ const computeRegionUrlMapDefaultRouteAction: computeRegionUrlMap.ComputeRegionUr
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy">ComputeRegionUrlMapDefaultRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction.property.timeout">timeout</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout">ComputeRegionUrlMapDefaultRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction.property.urlRewrite">urlRewrite</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite">ComputeRegionUrlMapDefaultRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly weightedBackendServices: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -1549,12 +1549,12 @@ const computeRegionUrlMapDefaultRouteActionCorsPolicy: computeRegionUrlMap.Compu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regualar expression patterns that match allowed origins. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.allowOrigins">allowOrigins</a></code> | <code>string[]</code> | Specifies the list of origins that will be allowed to do CORS requests. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the setting specifies the CORS policy is disabled. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, the setting specifies the CORS policy is disabled. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.exposeHeaders">exposeHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Expose-Headers header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy.property.maxAge">maxAge</a></code> | <code>number</code> | Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header. |
 
@@ -1566,7 +1566,7 @@ const computeRegionUrlMapDefaultRouteActionCorsPolicy: computeRegionUrlMap.Compu
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -1645,7 +1645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, the setting specifies the CORS policy is disabled.
 
@@ -2226,9 +2226,9 @@ const computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request before forwarding the request to the backendService. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response before sending the response back to the client. |
 
 ---
@@ -2239,7 +2239,7 @@ const computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction: 
 public readonly requestHeadersToAdd: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -2267,7 +2267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly responseHeadersToAdd: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -2305,7 +2305,7 @@ const computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRe
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -2343,7 +2343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -2370,7 +2370,7 @@ const computeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRe
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -2408,7 +2408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -2433,9 +2433,9 @@ const computeRegionUrlMapDefaultUrlRedirect: computeRegionUrlMap.ComputeRegionUr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
@@ -2448,7 +2448,7 @@ const computeRegionUrlMapDefaultUrlRedirect: computeRegionUrlMap.ComputeRegionUr
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -2482,7 +2482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -2644,8 +2644,8 @@ const computeRegionUrlMapPathMatcher: computeRegionUrlMap.ComputeRegionUrlMapPat
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.property.defaultService">defaultService</a></code> | <code>string</code> | A reference to a RegionBackendService resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.property.defaultUrlRedirect">defaultUrlRedirect</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect">ComputeRegionUrlMapPathMatcherDefaultUrlRedirect</a></code> | default_url_redirect block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.property.pathRule">pathRule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]</code> | path_rule block. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.property.routeRules">routeRules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]</code> | route_rules block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.property.pathRule">pathRule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]</code> | path_rule block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher.property.routeRules">routeRules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]</code> | route_rules block. |
 
 ---
 
@@ -2729,7 +2729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pathRule: IResolvable | ComputeRegionUrlMapPathMatcherPathRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
 
 path_rule block.
 
@@ -2743,7 +2743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly routeRules: IResolvable | ComputeRegionUrlMapPathMatcherRouteRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
 
 route_rules block.
 
@@ -2772,7 +2772,7 @@ const computeRegionUrlMapPathMatcherDefaultRouteAction: computeRegionUrlMap.Comp
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy">ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction.property.timeout">timeout</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout">ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction.property.urlRewrite">urlRewrite</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite">ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -2880,7 +2880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly weightedBackendServices: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -2902,12 +2902,12 @@ const computeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy: computeRegionU
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regular expression patterns that match allowed origins. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.allowOrigins">allowOrigins</a></code> | <code>string[]</code> | Specifies the list of origins that will be allowed to do CORS requests. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, specifies the CORS policy is disabled. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, specifies the CORS policy is disabled. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.exposeHeaders">exposeHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Expose-Headers header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy.property.maxAge">maxAge</a></code> | <code>number</code> | Specifies how long results of a preflight request can be cached in seconds. This translates to the Access-Control-Max-Age header. |
 
@@ -2919,7 +2919,7 @@ const computeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy: computeRegionU
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -2997,7 +2997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, specifies the CORS policy is disabled.
 
@@ -3667,9 +3667,9 @@ const computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -3680,7 +3680,7 @@ const computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHea
 public readonly requestHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -3708,7 +3708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly responseHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -3746,7 +3746,7 @@ const computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHea
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header to add. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -3784,7 +3784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -3810,7 +3810,7 @@ const computeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHea
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header to add. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -3848,7 +3848,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -3872,9 +3872,9 @@ const computeRegionUrlMapPathMatcherDefaultUrlRedirect: computeRegionUrlMap.Comp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
@@ -3887,7 +3887,7 @@ const computeRegionUrlMapPathMatcherDefaultUrlRedirect: computeRegionUrlMap.Comp
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -3921,7 +3921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -4106,7 +4106,7 @@ const computeRegionUrlMapPathMatcherPathRuleRouteAction: computeRegionUrlMap.Com
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy">ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction.property.timeout">timeout</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout">ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction.property.urlRewrite">urlRewrite</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite">ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -4200,7 +4200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly weightedBackendServices: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -4222,8 +4222,8 @@ const computeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy: computeRegion
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, specifies the CORS policy is disabled. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, specifies the CORS policy is disabled. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regular expression patterns that match allowed origins. |
@@ -4239,7 +4239,7 @@ const computeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy: computeRegion
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, specifies the CORS policy is disabled.
 
@@ -4253,7 +4253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -4912,9 +4912,9 @@ const computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -4925,7 +4925,7 @@ const computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHe
 public readonly requestHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -4953,7 +4953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly responseHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -4991,7 +4991,7 @@ const computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHe
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -5029,7 +5029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -5056,7 +5056,7 @@ const computeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHe
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -5094,7 +5094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -5119,9 +5119,9 @@ const computeRegionUrlMapPathMatcherPathRuleUrlRedirect: computeRegionUrlMap.Com
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
@@ -5134,7 +5134,7 @@ const computeRegionUrlMapPathMatcherPathRuleUrlRedirect: computeRegionUrlMap.Com
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -5169,7 +5169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -5262,7 +5262,7 @@ const computeRegionUrlMapPathMatcherRouteRules: computeRegionUrlMap.ComputeRegio
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.property.priority">priority</a></code> | <code>number</code> | For routeRules within a given pathMatcher, priority determines the order in which load balancer will interpret routeRules. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.property.headerAction">headerAction</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction">ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction</a></code> | header_action block. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.property.matchRules">matchRules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | match_rules block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.property.matchRules">matchRules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | match_rules block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.property.routeAction">routeAction</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction">ComputeRegionUrlMapPathMatcherRouteRulesRouteAction</a></code> | route_action block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.property.service">service</a></code> | <code>string</code> | The region backend service resource to which traffic is directed if this rule is matched. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules.property.urlRedirect">urlRedirect</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect">ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect</a></code> | url_redirect block. |
@@ -5318,7 +5318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly matchRules: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 match_rules block.
 
@@ -5389,9 +5389,9 @@ const computeRegionUrlMapPathMatcherRouteRulesHeaderAction: computeRegionUrlMap.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -5402,7 +5402,7 @@ const computeRegionUrlMapPathMatcherRouteRulesHeaderAction: computeRegionUrlMap.
 public readonly requestHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -5430,7 +5430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly responseHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -5468,7 +5468,7 @@ const computeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd: c
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -5506,7 +5506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -5533,7 +5533,7 @@ const computeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd: 
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -5571,7 +5571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -5597,12 +5597,12 @@ const computeRegionUrlMapPathMatcherRouteRulesMatchRules: computeRegionUrlMap.Co
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.fullPathMatch">fullPathMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the path of the request must exactly match the value specified in fullPathMatch after removing any query parameters and anchor that may be part of the original URL. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.headerMatches">headerMatches</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | header_matches block. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.ignoreCase">ignoreCase</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.metadataFilters">metadataFilters</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | metadata_filters block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.headerMatches">headerMatches</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | header_matches block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.ignoreCase">ignoreCase</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.metadataFilters">metadataFilters</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | metadata_filters block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.pathTemplateMatch">pathTemplateMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the path of the request must match the wildcard pattern specified in pathTemplateMatch after removing any query parameters and anchor that may be part of the original URL. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.prefixMatch">prefixMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the request's path must begin with the specified prefixMatch. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.queryParameterMatches">queryParameterMatches</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | query_parameter_matches block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.queryParameterMatches">queryParameterMatches</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | query_parameter_matches block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules.property.regexMatch">regexMatch</a></code> | <code>string</code> | For satisfying the matchRule condition, the path of the request must satisfy the regular expression specified in regexMatch after removing any query parameters and anchor supplied with the original URL. |
 
 ---
@@ -5631,7 +5631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly headerMatches: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 header_matches block.
 
@@ -5645,7 +5645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ignoreCase: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies that prefixMatch and fullPathMatch matches are case sensitive. Defaults to false.
 
@@ -5659,7 +5659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly metadataFilters: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 metadata_filters block.
 
@@ -5710,7 +5710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly queryParameterMatches: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 query_parameter_matches block.
 
@@ -5752,9 +5752,9 @@ const computeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches: computeRe
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.headerName">headerName</a></code> | <code>string</code> | The name of the HTTP header to match. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.exactMatch">exactMatch</a></code> | <code>string</code> | The value should exactly match contents of exactMatch. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.invertMatch">invertMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to false, the headerMatch is considered a match if the match criteria above are met. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.invertMatch">invertMatch</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to false, the headerMatch is considered a match if the match criteria above are met. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.prefixMatch">prefixMatch</a></code> | <code>string</code> | The value of the header must start with the contents of prefixMatch. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | A header with the contents of headerName must exist. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktn.IResolvable</code> | A header with the contents of headerName must exist. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.rangeMatch">rangeMatch</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch</a></code> | range_match block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.regexMatch">regexMatch</a></code> | <code>string</code> | The value of the header must match the regular expression specified in regexMatch. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches.property.suffixMatch">suffixMatch</a></code> | <code>string</code> | The value of the header must end with the contents of suffixMatch. |
@@ -5802,7 +5802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly invertMatch: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to false, the headerMatch is considered a match if the match criteria above are met.
 
@@ -5837,7 +5837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly presentMatch: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 A header with the contents of headerName must exist.
 
@@ -5963,7 +5963,7 @@ const computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters: compute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.property.filterLabels">filterLabels</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | filter_labels block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.property.filterLabels">filterLabels</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | filter_labels block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters.property.filterMatchCriteria">filterMatchCriteria</a></code> | <code>string</code> | Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match. Supported values are:. |
 
 ---
@@ -5974,7 +5974,7 @@ const computeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters: compute
 public readonly filterLabels: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 filter_labels block.
 
@@ -6067,7 +6067,7 @@ const computeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches: c
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.name">name</a></code> | <code>string</code> | The name of the query parameter to match. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.exactMatch">exactMatch</a></code> | <code>string</code> | The queryParameterMatch matches if the value of the parameter exactly matches the contents of exactMatch. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies that the queryParameterMatch matches if the request contains the query parameter, irrespective of whether the parameter has a value or not. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies that the queryParameterMatch matches if the request contains the query parameter, irrespective of whether the parameter has a value or not. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches.property.regexMatch">regexMatch</a></code> | <code>string</code> | The queryParameterMatch matches if the value of the parameter matches the regular expression specified by regexMatch. |
 
 ---
@@ -6112,7 +6112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly presentMatch: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies that the queryParameterMatch matches if the request contains the query parameter, irrespective of whether the parameter has a value or not.
 
@@ -6161,7 +6161,7 @@ const computeRegionUrlMapPathMatcherRouteRulesRouteAction: computeRegionUrlMap.C
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction.property.timeout">timeout</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout</a></code> | timeout block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction.property.urlRewrite">urlRewrite</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite</a></code> | url_rewrite block. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction.property.weightedBackendServices">weightedBackendServices</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | weighted_backend_services block. |
 
 ---
 
@@ -6255,7 +6255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly weightedBackendServices: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 weighted_backend_services block.
 
@@ -6277,12 +6277,12 @@ const computeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy: computeRegi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | In response to a preflight request, setting this to true indicates that the actual request can include user credentials. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Headers header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Allow-Methods header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | Specifies the regular expression patterns that match allowed origins. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.allowOrigins">allowOrigins</a></code> | <code>string[]</code> | Specifies the list of origins that will be allowed to do CORS requests. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.exposeHeaders">exposeHeaders</a></code> | <code>string[]</code> | Specifies the content for the Access-Control-Expose-Headers header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy.property.maxAge">maxAge</a></code> | <code>number</code> | Specifies how long the results of a preflight request can be cached. |
 
@@ -6294,7 +6294,7 @@ const computeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy: computeRegi
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
 
@@ -6374,7 +6374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, specifies the CORS policy is disabled. which indicates that the CORS policy is in effect. Defaults to false.
 
@@ -6992,9 +6992,9 @@ const computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | request_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the request prior to forwarding the request to the backendService. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | response_headers_to_add block. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | A list of header names for headers that need to be removed from the response prior to sending the response back to the client. |
 
 ---
@@ -7005,7 +7005,7 @@ const computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices
 public readonly requestHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 request_headers_to_add block.
 
@@ -7033,7 +7033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly responseHeadersToAdd: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 response_headers_to_add block.
 
@@ -7071,7 +7071,7 @@ const computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -7109,7 +7109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -7136,7 +7136,7 @@ const computeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerName">headerName</a></code> | <code>string</code> | The name of the header. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.headerValue">headerValue</a></code> | <code>string</code> | The value of the header to add. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | If false, headerValue is appended to any values that already exist for the header. |
 
 ---
 
@@ -7174,7 +7174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If false, headerValue is appended to any values that already exist for the header.
 
@@ -7200,11 +7200,11 @@ const computeRegionUrlMapPathMatcherRouteRulesUrlRedirect: computeRegionUrlMap.C
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | The host that will be used in the redirect response instead of the one that was supplied in the request. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the URL scheme in the redirected request is set to https. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | The path that will be used in the redirect response instead of the one that was supplied in the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch, retaining the remaining portion of the URL before redirecting the request. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | The HTTP Status code to use for this RedirectAction. Supported values are:. |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request. |
 
 ---
 
@@ -7231,7 +7231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the URL scheme in the redirected request is set to https.
 
@@ -7314,7 +7314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
 
@@ -7472,14 +7472,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7657,7 +7657,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7726,20 +7726,20 @@ public resetMaxAge(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">allowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.allowOrigins">allowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.maxAge">maxAge</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionCorsPolicy">ComputeRegionUrlMapDefaultRouteActionCorsPolicy</a></code> | *No description.* |
@@ -7776,7 +7776,7 @@ public readonly fqn: string;
 public readonly allowCredentialsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7826,7 +7826,7 @@ public readonly allowOriginsInput: string[];
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7856,7 +7856,7 @@ public readonly maxAgeInput: number;
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7906,7 +7906,7 @@ public readonly allowOrigins: string[];
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7953,14 +7953,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8132,7 +8132,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8260,14 +8260,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8439,7 +8439,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8567,14 +8567,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8747,7 +8747,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8887,14 +8887,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9068,7 +9068,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9220,14 +9220,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9411,7 +9411,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9505,7 +9505,7 @@ public putWeightedBackendServices(value: IResolvable | ComputeRegionUrlMapDefaul
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -9571,7 +9571,7 @@ public resetWeightedBackendServices(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.property.retryPolicyInput">retryPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicy">ComputeRegionUrlMapDefaultRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.property.timeoutInput">timeoutInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeout">ComputeRegionUrlMapDefaultRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.property.urlRewriteInput">urlRewriteInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewrite">ComputeRegionUrlMapDefaultRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteAction">ComputeRegionUrlMapDefaultRouteAction</a></code> | *No description.* |
 
 ---
@@ -9736,7 +9736,7 @@ public readonly urlRewriteInput: ComputeRegionUrlMapDefaultRouteActionUrlRewrite
 public readonly weightedBackendServicesInput: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -9763,14 +9763,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9941,7 +9941,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10041,14 +10041,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10222,7 +10222,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10390,14 +10390,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10569,7 +10569,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10697,14 +10697,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10876,7 +10876,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11004,14 +11004,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11183,7 +11183,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11311,14 +11311,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11494,7 +11494,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11516,7 +11516,7 @@ public putRequestHeadersToAdd(value: IResolvable | ComputeRegionUrlMapDefaultRou
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -11528,7 +11528,7 @@ public putResponseHeadersToAdd(value: IResolvable | ComputeRegionUrlMapDefaultRo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -11565,9 +11565,9 @@ public resetResponseHeadersToRemove(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">requestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">responseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -11625,7 +11625,7 @@ public readonly responseHeadersToAdd: ComputeRegionUrlMapDefaultRouteActionWeigh
 public readonly requestHeadersToAddInput: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -11645,7 +11645,7 @@ public readonly requestHeadersToRemoveInput: string[];
 public readonly responseHeadersToAddInput: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -11702,7 +11702,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11710,7 +11710,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11776,7 +11776,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11811,7 +11811,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -11845,7 +11845,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -11862,7 +11862,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11871,7 +11871,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12060,7 +12060,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12101,11 +12101,11 @@ public resetReplace(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -12159,7 +12159,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12189,7 +12189,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12199,7 +12199,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -12216,7 +12216,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12224,7 +12224,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12290,7 +12290,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12325,7 +12325,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -12359,7 +12359,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -12376,7 +12376,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12385,7 +12385,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12574,7 +12574,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12615,11 +12615,11 @@ public resetReplace(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -12673,7 +12673,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12703,7 +12703,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12713,7 +12713,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -12730,7 +12730,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12738,7 +12738,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12804,7 +12804,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12839,7 +12839,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -12873,7 +12873,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -12890,7 +12890,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12899,7 +12899,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13089,7 +13089,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13146,7 +13146,7 @@ public resetWeight(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.weightInput">weightInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.backendService">backendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.weight">weight</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -13240,7 +13240,7 @@ public readonly weight: number;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapDefaultRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -13257,14 +13257,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13439,7 +13439,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13491,17 +13491,17 @@ public resetRedirectResponseCode(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.hostRedirectInput">hostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.pathRedirectInput">pathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.prefixRedirectInput">prefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.redirectResponseCodeInput">redirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapDefaultUrlRedirect">ComputeRegionUrlMapDefaultUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -13546,7 +13546,7 @@ public readonly hostRedirectInput: string;
 public readonly httpsRedirectInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13586,7 +13586,7 @@ public readonly redirectResponseCodeInput: string;
 public readonly stripQueryInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13606,7 +13606,7 @@ public readonly hostRedirect: string;
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13646,7 +13646,7 @@ public readonly redirectResponseCode: string;
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13673,7 +13673,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapHostRuleList(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13681,7 +13681,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapHostRuleList(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13747,7 +13747,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13782,7 +13782,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -13816,7 +13816,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapHostRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>[]
 
 ---
 
@@ -13833,7 +13833,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13842,7 +13842,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14029,7 +14029,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14062,7 +14062,7 @@ public resetDescription(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.property.hosts">hosts</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.property.pathMatcher">pathMatcher</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a></code> | *No description.* |
 
 ---
 
@@ -14156,7 +14156,7 @@ public readonly pathMatcher: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapHostRule;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapHostRule">ComputeRegionUrlMapHostRule</a>
 
 ---
 
@@ -14173,14 +14173,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPoli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14358,7 +14358,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14427,20 +14427,20 @@ public resetMaxAge(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">allowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.allowOrigins">allowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.maxAge">maxAge</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy">ComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicy</a></code> | *No description.* |
@@ -14477,7 +14477,7 @@ public readonly fqn: string;
 public readonly allowCredentialsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14527,7 +14527,7 @@ public readonly allowOriginsInput: string[];
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14557,7 +14557,7 @@ public readonly maxAgeInput: number;
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14607,7 +14607,7 @@ public readonly allowOrigins: string[];
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14654,14 +14654,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14833,7 +14833,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyAbortOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14961,14 +14961,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15140,7 +15140,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15268,14 +15268,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15448,7 +15448,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15588,14 +15588,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15769,7 +15769,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionFaultInjectionPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15921,14 +15921,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStrea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16099,7 +16099,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16221,14 +16221,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16414,7 +16414,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16520,7 +16520,7 @@ public putWeightedBackendServices(value: IResolvable | ComputeRegionUrlMapPathMa
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -16594,7 +16594,7 @@ public resetWeightedBackendServices(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.property.retryPolicyInput">retryPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy">ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.property.timeoutInput">timeoutInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout">ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.property.urlRewriteInput">urlRewriteInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite">ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteAction">ComputeRegionUrlMapPathMatcherDefaultRouteAction</a></code> | *No description.* |
 
 ---
@@ -16779,7 +16779,7 @@ public readonly urlRewriteInput: ComputeRegionUrlMapPathMatcherDefaultRouteActio
 public readonly weightedBackendServicesInput: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -16806,14 +16806,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16983,7 +16983,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17077,14 +17077,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17258,7 +17258,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17426,14 +17426,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17605,7 +17605,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionRetryPolicyPerTryTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17733,14 +17733,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17912,7 +17912,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18040,14 +18040,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18220,7 +18220,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionUrlRewriteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18376,14 +18376,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18559,7 +18559,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18581,7 +18581,7 @@ public putRequestHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatche
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -18593,7 +18593,7 @@ public putResponseHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatch
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -18630,9 +18630,9 @@ public resetResponseHeadersToRemove(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">requestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">responseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -18690,7 +18690,7 @@ public readonly responseHeadersToAdd: ComputeRegionUrlMapPathMatcherDefaultRoute
 public readonly requestHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -18710,7 +18710,7 @@ public readonly requestHeadersToRemoveInput: string[];
 public readonly responseHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -18767,7 +18767,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18775,7 +18775,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18841,7 +18841,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18876,7 +18876,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -18910,7 +18910,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -18927,7 +18927,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18936,7 +18936,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19125,7 +19125,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19166,11 +19166,11 @@ public resetReplace(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -19224,7 +19224,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19254,7 +19254,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19264,7 +19264,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -19281,7 +19281,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19289,7 +19289,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19355,7 +19355,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19390,7 +19390,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -19424,7 +19424,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -19441,7 +19441,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19450,7 +19450,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19639,7 +19639,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19680,11 +19680,11 @@ public resetReplace(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -19738,7 +19738,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19768,7 +19768,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19778,7 +19778,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -19795,7 +19795,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19803,7 +19803,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19869,7 +19869,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19904,7 +19904,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -19938,7 +19938,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -19955,7 +19955,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19964,7 +19964,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeighted
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20154,7 +20154,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20211,7 +20211,7 @@ public resetWeight(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.weightInput">weightInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.backendService">backendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.weight">weight</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -20305,7 +20305,7 @@ public readonly weight: number;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherDefaultRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -20322,14 +20322,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20504,7 +20504,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20556,17 +20556,17 @@ public resetRedirectResponseCode(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.hostRedirectInput">hostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.pathRedirectInput">pathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.prefixRedirectInput">prefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.redirectResponseCodeInput">redirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect">ComputeRegionUrlMapPathMatcherDefaultUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -20611,7 +20611,7 @@ public readonly hostRedirectInput: string;
 public readonly httpsRedirectInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20651,7 +20651,7 @@ public readonly redirectResponseCodeInput: string;
 public readonly stripQueryInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20671,7 +20671,7 @@ public readonly hostRedirect: string;
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20711,7 +20711,7 @@ public readonly redirectResponseCode: string;
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20738,7 +20738,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20746,7 +20746,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList(terraformResource: II
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20812,7 +20812,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20847,7 +20847,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]</code> | *No description.* |
 
 ---
 
@@ -20881,7 +20881,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcher[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>[]
 
 ---
 
@@ -20898,7 +20898,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20907,7 +20907,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21103,7 +21103,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21149,7 +21149,7 @@ public putPathRule(value: IResolvable | ComputeRegionUrlMapPathMatcherPathRule[]
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.putPathRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
 
 ---
 
@@ -21161,7 +21161,7 @@ public putRouteRules(value: IResolvable | ComputeRegionUrlMapPathMatcherRouteRul
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.putRouteRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
 
 ---
 
@@ -21217,12 +21217,12 @@ public resetRouteRules(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.defaultUrlRedirectInput">defaultUrlRedirectInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherDefaultUrlRedirect">ComputeRegionUrlMapPathMatcherDefaultUrlRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.pathRuleInput">pathRuleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.routeRulesInput">routeRulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.pathRuleInput">pathRuleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.routeRulesInput">routeRulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.defaultService">defaultService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a></code> | *No description.* |
 
 ---
 
@@ -21346,7 +21346,7 @@ public readonly nameInput: string;
 public readonly pathRuleInput: IResolvable | ComputeRegionUrlMapPathMatcherPathRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
 
 ---
 
@@ -21356,7 +21356,7 @@ public readonly pathRuleInput: IResolvable | ComputeRegionUrlMapPathMatcherPathR
 public readonly routeRulesInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
 
 ---
 
@@ -21396,7 +21396,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcher;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcher">ComputeRegionUrlMapPathMatcher</a>
 
 ---
 
@@ -21413,7 +21413,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21421,7 +21421,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21487,7 +21487,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21522,7 +21522,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -21556,7 +21556,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>[]
 
 ---
 
@@ -21573,7 +21573,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21582,7 +21582,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21773,7 +21773,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21844,7 +21844,7 @@ public resetUrlRedirect(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.property.urlRedirectInput">urlRedirectInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect">ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.property.paths">paths</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a></code> | *No description.* |
 
 ---
 
@@ -21958,7 +21958,7 @@ public readonly service: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRule;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRule">ComputeRegionUrlMapPathMatcherPathRule</a>
 
 ---
 
@@ -21975,14 +21975,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22159,7 +22159,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22222,20 +22222,20 @@ public resetMaxAge(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">allowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.allowOrigins">allowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.maxAge">maxAge</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy">ComputeRegionUrlMapPathMatcherPathRuleRouteActionCorsPolicy</a></code> | *No description.* |
@@ -22272,7 +22272,7 @@ public readonly fqn: string;
 public readonly allowCredentialsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -22322,7 +22322,7 @@ public readonly allowOriginsInput: string[];
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -22352,7 +22352,7 @@ public readonly maxAgeInput: number;
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -22402,7 +22402,7 @@ public readonly allowOrigins: string[];
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -22449,14 +22449,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22626,7 +22626,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyAbortOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22742,14 +22742,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22920,7 +22920,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23042,14 +23042,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23220,7 +23220,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23348,14 +23348,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23529,7 +23529,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionFaultInjectionPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23681,14 +23681,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23872,7 +23872,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23966,7 +23966,7 @@ public putWeightedBackendServices(value: IResolvable | ComputeRegionUrlMapPathMa
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -24032,7 +24032,7 @@ public resetWeightedBackendServices(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.property.retryPolicyInput">retryPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy">ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.property.timeoutInput">timeoutInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout">ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.property.urlRewriteInput">urlRewriteInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite">ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteAction">ComputeRegionUrlMapPathMatcherPathRuleRouteAction</a></code> | *No description.* |
 
 ---
@@ -24197,7 +24197,7 @@ public readonly urlRewriteInput: ComputeRegionUrlMapPathMatcherPathRuleRouteActi
 public readonly weightedBackendServicesInput: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -24224,14 +24224,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24401,7 +24401,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRequestMirrorPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24495,14 +24495,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24676,7 +24676,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24844,14 +24844,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25022,7 +25022,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionRetryPolicyPerTryTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25144,14 +25144,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeout
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25322,7 +25322,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25444,14 +25444,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25623,7 +25623,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionUrlRewriteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25751,14 +25751,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25934,7 +25934,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25956,7 +25956,7 @@ public putRequestHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatche
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -25968,7 +25968,7 @@ public putResponseHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatch
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -26005,9 +26005,9 @@ public resetResponseHeadersToRemove(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">requestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">responseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -26065,7 +26065,7 @@ public readonly responseHeadersToAdd: ComputeRegionUrlMapPathMatcherPathRuleRout
 public readonly requestHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -26085,7 +26085,7 @@ public readonly requestHeadersToRemoveInput: string[];
 public readonly responseHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -26142,7 +26142,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26150,7 +26150,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26216,7 +26216,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26251,7 +26251,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -26285,7 +26285,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -26302,7 +26302,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26311,7 +26311,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26497,7 +26497,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26520,11 +26520,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -26578,7 +26578,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26608,7 +26608,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26618,7 +26618,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -26635,7 +26635,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26643,7 +26643,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26709,7 +26709,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26744,7 +26744,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -26778,7 +26778,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -26795,7 +26795,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26804,7 +26804,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26990,7 +26990,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27013,11 +27013,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -27071,7 +27071,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27101,7 +27101,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27111,7 +27111,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -27128,7 +27128,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -27136,7 +27136,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27202,7 +27202,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27237,7 +27237,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -27271,7 +27271,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -27288,7 +27288,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27297,7 +27297,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeighte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27485,7 +27485,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27530,7 +27530,7 @@ public resetHeaderAction(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.weightInput">weightInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.backendService">backendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.weight">weight</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -27624,7 +27624,7 @@ public readonly weight: number;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -27641,14 +27641,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27823,7 +27823,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27875,17 +27875,17 @@ public resetRedirectResponseCode(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.hostRedirectInput">hostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.pathRedirectInput">pathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.prefixRedirectInput">prefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.redirectResponseCodeInput">redirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect">ComputeRegionUrlMapPathMatcherPathRuleUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -27930,7 +27930,7 @@ public readonly hostRedirectInput: string;
 public readonly httpsRedirectInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27970,7 +27970,7 @@ public readonly redirectResponseCodeInput: string;
 public readonly stripQueryInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27990,7 +27990,7 @@ public readonly hostRedirect: string;
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -28030,7 +28030,7 @@ public readonly redirectResponseCode: string;
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -28057,14 +28057,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28240,7 +28240,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28262,7 +28262,7 @@ public putRequestHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatche
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -28274,7 +28274,7 @@ public putResponseHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatch
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -28311,9 +28311,9 @@ public resetResponseHeadersToRemove(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToRemoveInput">requestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToRemoveInput">responseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionOutputReference.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -28371,7 +28371,7 @@ public readonly responseHeadersToAdd: ComputeRegionUrlMapPathMatcherRouteRulesHe
 public readonly requestHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -28391,7 +28391,7 @@ public readonly requestHeadersToRemoveInput: string[];
 public readonly responseHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -28448,7 +28448,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28456,7 +28456,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28522,7 +28522,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28557,7 +28557,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -28591,7 +28591,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -28608,7 +28608,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -28617,7 +28617,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequ
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28803,7 +28803,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28826,11 +28826,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -28884,7 +28884,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -28914,7 +28914,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -28924,7 +28924,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -28941,7 +28941,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28949,7 +28949,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29015,7 +29015,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29050,7 +29050,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -29084,7 +29084,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -29101,7 +29101,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29110,7 +29110,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29296,7 +29296,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29319,11 +29319,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -29377,7 +29377,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -29407,7 +29407,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -29417,7 +29417,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -29434,7 +29434,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29442,7 +29442,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29508,7 +29508,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29543,7 +29543,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -29577,7 +29577,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>[]
 
 ---
 
@@ -29594,7 +29594,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeader
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29602,7 +29602,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeader
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29668,7 +29668,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29703,7 +29703,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | *No description.* |
 
 ---
 
@@ -29737,7 +29737,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 ---
 
@@ -29754,7 +29754,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeader
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29763,7 +29763,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeader
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29957,7 +29957,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30035,20 +30035,20 @@ public resetSuffixMatch(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.rangeMatch">rangeMatch</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.exactMatchInput">exactMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatchInput">invertMatchInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatchInput">invertMatchInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.prefixMatchInput">prefixMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatchInput">presentMatchInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatchInput">presentMatchInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.rangeMatchInput">rangeMatchInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.regexMatchInput">regexMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.suffixMatchInput">suffixMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.exactMatch">exactMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatch">invertMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.invertMatch">invertMatch</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.prefixMatch">prefixMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.regexMatch">regexMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.suffixMatch">suffixMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a></code> | *No description.* |
 
 ---
 
@@ -30112,7 +30112,7 @@ public readonly headerNameInput: string;
 public readonly invertMatchInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30132,7 +30132,7 @@ public readonly prefixMatchInput: string;
 public readonly presentMatchInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30192,7 +30192,7 @@ public readonly headerName: string;
 public readonly invertMatch: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30212,7 +30212,7 @@ public readonly prefixMatch: string;
 public readonly presentMatch: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30242,7 +30242,7 @@ public readonly suffixMatch: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>
 
 ---
 
@@ -30259,14 +30259,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeader
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30436,7 +30436,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30552,7 +30552,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30560,7 +30560,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30626,7 +30626,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30661,7 +30661,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -30695,7 +30695,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 ---
 
@@ -30712,7 +30712,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30720,7 +30720,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30786,7 +30786,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30821,7 +30821,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | *No description.* |
 
 ---
 
@@ -30855,7 +30855,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 ---
 
@@ -30872,7 +30872,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -30881,7 +30881,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31067,7 +31067,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31092,7 +31092,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a></code> | *No description.* |
 
 ---
 
@@ -31166,7 +31166,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>
 
 ---
 
@@ -31183,7 +31183,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31191,7 +31191,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31257,7 +31257,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31292,7 +31292,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | *No description.* |
 
 ---
 
@@ -31326,7 +31326,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 ---
 
@@ -31343,7 +31343,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31352,7 +31352,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetada
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31539,7 +31539,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31561,7 +31561,7 @@ public putFilterLabels(value: IResolvable | ComputeRegionUrlMapPathMatcherRouteR
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.putFilterLabels.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 ---
 
@@ -31573,10 +31573,10 @@ public putFilterLabels(value: IResolvable | ComputeRegionUrlMapPathMatcherRouteR
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterLabels">filterLabels</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterLabelsInput">filterLabelsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterLabelsInput">filterLabelsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterMatchCriteriaInput">filterMatchCriteriaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.filterMatchCriteria">filterMatchCriteria</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a></code> | *No description.* |
 
 ---
 
@@ -31620,7 +31620,7 @@ public readonly filterLabels: ComputeRegionUrlMapPathMatcherRouteRulesMatchRules
 public readonly filterLabelsInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels</a>[]
 
 ---
 
@@ -31650,7 +31650,7 @@ public readonly filterMatchCriteria: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>
 
 ---
 
@@ -31667,7 +31667,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31676,7 +31676,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31873,7 +31873,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31895,7 +31895,7 @@ public putHeaderMatches(value: IResolvable | ComputeRegionUrlMapPathMatcherRoute
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putHeaderMatches.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 ---
 
@@ -31907,7 +31907,7 @@ public putMetadataFilters(value: IResolvable | ComputeRegionUrlMapPathMatcherRou
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putMetadataFilters.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 ---
 
@@ -31919,7 +31919,7 @@ public putQueryParameterMatches(value: IResolvable | ComputeRegionUrlMapPathMatc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.putQueryParameterMatches.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 ---
 
@@ -31982,19 +31982,19 @@ public resetRegexMatch(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.metadataFilters">metadataFilters</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.queryParameterMatches">queryParameterMatches</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.fullPathMatchInput">fullPathMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.headerMatchesInput">headerMatchesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCaseInput">ignoreCaseInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.metadataFiltersInput">metadataFiltersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.headerMatchesInput">headerMatchesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCaseInput">ignoreCaseInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.metadataFiltersInput">metadataFiltersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.pathTemplateMatchInput">pathTemplateMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.prefixMatchInput">prefixMatchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.queryParameterMatchesInput">queryParameterMatchesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.queryParameterMatchesInput">queryParameterMatchesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.regexMatchInput">regexMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.fullPathMatch">fullPathMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCase">ignoreCase</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.ignoreCase">ignoreCase</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.pathTemplateMatch">pathTemplateMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.prefixMatch">prefixMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.regexMatch">regexMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a></code> | *No description.* |
 
 ---
 
@@ -32068,7 +32068,7 @@ public readonly fullPathMatchInput: string;
 public readonly headerMatchesInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches</a>[]
 
 ---
 
@@ -32078,7 +32078,7 @@ public readonly headerMatchesInput: IResolvable | ComputeRegionUrlMapPathMatcher
 public readonly ignoreCaseInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32088,7 +32088,7 @@ public readonly ignoreCaseInput: boolean | IResolvable;
 public readonly metadataFiltersInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters</a>[]
 
 ---
 
@@ -32118,7 +32118,7 @@ public readonly prefixMatchInput: string;
 public readonly queryParameterMatchesInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 ---
 
@@ -32148,7 +32148,7 @@ public readonly fullPathMatch: string;
 public readonly ignoreCase: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32188,7 +32188,7 @@ public readonly regexMatch: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>
 
 ---
 
@@ -32205,7 +32205,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -32213,7 +32213,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32279,7 +32279,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32314,7 +32314,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]</code> | *No description.* |
 
 ---
 
@@ -32348,7 +32348,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>[]
 
 ---
 
@@ -32365,7 +32365,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -32374,7 +32374,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32563,7 +32563,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32604,13 +32604,13 @@ public resetRegexMatch(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.exactMatchInput">exactMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatchInput">presentMatchInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatchInput">presentMatchInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.regexMatchInput">regexMatchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.exactMatch">exactMatch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.presentMatch">presentMatch</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.regexMatch">regexMatch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a></code> | *No description.* |
 
 ---
 
@@ -32664,7 +32664,7 @@ public readonly nameInput: string;
 public readonly presentMatchInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32704,7 +32704,7 @@ public readonly name: string;
 public readonly presentMatch: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -32724,7 +32724,7 @@ public readonly regexMatch: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches">ComputeRegionUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches</a>
 
 ---
 
@@ -32741,7 +32741,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -32750,7 +32750,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32945,7 +32945,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32979,7 +32979,7 @@ public putMatchRules(value: IResolvable | ComputeRegionUrlMapPathMatcherRouteRul
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.putMatchRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 ---
 
@@ -33049,14 +33049,14 @@ public resetUrlRedirect(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.routeAction">routeAction</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.urlRedirect">urlRedirect</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference">ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.headerActionInput">headerActionInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction">ComputeRegionUrlMapPathMatcherRouteRulesHeaderAction</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.matchRulesInput">matchRulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.matchRulesInput">matchRulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.routeActionInput">routeActionInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction">ComputeRegionUrlMapPathMatcherRouteRulesRouteAction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.urlRedirectInput">urlRedirectInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect">ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a></code> | *No description.* |
 
 ---
 
@@ -33140,7 +33140,7 @@ public readonly headerActionInput: ComputeRegionUrlMapPathMatcherRouteRulesHeade
 public readonly matchRulesInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesMatchRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesMatchRules">ComputeRegionUrlMapPathMatcherRouteRulesMatchRules</a>[]
 
 ---
 
@@ -33210,7 +33210,7 @@ public readonly service: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRules">ComputeRegionUrlMapPathMatcherRouteRules</a>
 
 ---
 
@@ -33227,14 +33227,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33412,7 +33412,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33481,20 +33481,20 @@ public resetMaxAge(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentialsInput">allowCredentialsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowHeadersInput">allowHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowMethodsInput">allowMethodsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOriginRegexesInput">allowOriginRegexesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOriginsInput">allowOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.exposeHeadersInput">exposeHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.maxAgeInput">maxAgeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowCredentials">allowCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowHeaders">allowHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowMethods">allowMethods</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOriginRegexes">allowOriginRegexes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.allowOrigins">allowOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.exposeHeaders">exposeHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.maxAge">maxAge</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionCorsPolicy</a></code> | *No description.* |
@@ -33531,7 +33531,7 @@ public readonly fqn: string;
 public readonly allowCredentialsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -33581,7 +33581,7 @@ public readonly allowOriginsInput: string[];
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -33611,7 +33611,7 @@ public readonly maxAgeInput: number;
 public readonly allowCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -33661,7 +33661,7 @@ public readonly allowOrigins: string[];
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -33708,14 +33708,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFault
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33887,7 +33887,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyAbortOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34015,14 +34015,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFault
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34193,7 +34193,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayFixedDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34315,14 +34315,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFault
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34495,7 +34495,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyDelayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34635,14 +34635,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFault
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34816,7 +34816,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34968,14 +34968,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35159,7 +35159,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35253,7 +35253,7 @@ public putWeightedBackendServices(value: IResolvable | ComputeRegionUrlMapPathMa
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.putWeightedBackendServices.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -35319,7 +35319,7 @@ public resetWeightedBackendServices(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.retryPolicyInput">retryPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.timeoutInput">timeoutInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.urlRewriteInput">urlRewriteInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewrite</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.weightedBackendServicesInput">weightedBackendServicesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteAction">ComputeRegionUrlMapPathMatcherRouteRulesRouteAction</a></code> | *No description.* |
 
 ---
@@ -35484,7 +35484,7 @@ public readonly urlRewriteInput: ComputeRegionUrlMapPathMatcherRouteRulesRouteAc
 public readonly weightedBackendServicesInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -35511,14 +35511,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionReque
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35688,7 +35688,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35782,14 +35782,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetry
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35962,7 +35962,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36124,14 +36124,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetry
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36302,7 +36302,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionRetryPolicyPerTryTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36424,14 +36424,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36602,7 +36602,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionTimeoutOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36724,14 +36724,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36904,7 +36904,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionUrlRewriteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37060,14 +37060,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37243,7 +37243,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37265,7 +37265,7 @@ public putRequestHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatche
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.putRequestHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -37277,7 +37277,7 @@ public putResponseHeadersToAdd(value: IResolvable | ComputeRegionUrlMapPathMatch
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.putResponseHeadersToAdd.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -37314,9 +37314,9 @@ public resetResponseHeadersToRemove(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAdd">requestHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAdd">responseHeadersToAdd</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToAddInput">requestHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemoveInput">requestHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToAddInput">responseHeadersToAddInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemoveInput">responseHeadersToRemoveInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.requestHeadersToRemove">requestHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference.property.responseHeadersToRemove">responseHeadersToRemove</a></code> | <code>string[]</code> | *No description.* |
@@ -37374,7 +37374,7 @@ public readonly responseHeadersToAdd: ComputeRegionUrlMapPathMatcherRouteRulesRo
 public readonly requestHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -37394,7 +37394,7 @@ public readonly requestHeadersToRemoveInput: string[];
 public readonly responseHeadersToAddInput: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -37451,7 +37451,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -37459,7 +37459,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37525,7 +37525,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37560,7 +37560,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -37594,7 +37594,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>[]
 
 ---
 
@@ -37611,7 +37611,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -37620,7 +37620,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37806,7 +37806,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37829,11 +37829,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -37887,7 +37887,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -37917,7 +37917,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -37927,7 +37927,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd</a>
 
 ---
 
@@ -37944,7 +37944,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -37952,7 +37952,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38018,7 +38018,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38053,7 +38053,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]</code> | *No description.* |
 
 ---
 
@@ -38087,7 +38087,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>[]
 
 ---
 
@@ -38104,7 +38104,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38113,7 +38113,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38299,7 +38299,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38322,11 +38322,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValueInput">headerValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replaceInput">replaceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.headerValue">headerValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.replace">replace</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a></code> | *No description.* |
 
 ---
 
@@ -38380,7 +38380,7 @@ public readonly headerValueInput: string;
 public readonly replaceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -38410,7 +38410,7 @@ public readonly headerValue: string;
 public readonly replace: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -38420,7 +38420,7 @@ public readonly replace: boolean | IResolvable;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd</a>
 
 ---
 
@@ -38437,7 +38437,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -38445,7 +38445,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38511,7 +38511,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38546,7 +38546,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]</code> | *No description.* |
 
 ---
 
@@ -38580,7 +38580,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>[]
 
 ---
 
@@ -38597,7 +38597,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38606,7 +38606,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeigh
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38794,7 +38794,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38839,7 +38839,7 @@ public resetHeaderAction(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.weightInput">weightInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.backendService">backendService</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.weight">weight</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a></code> | *No description.* |
 
 ---
 
@@ -38933,7 +38933,7 @@ public readonly weight: number;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices">ComputeRegionUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices</a>
 
 ---
 
@@ -38950,14 +38950,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39133,7 +39133,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39191,17 +39191,17 @@ public resetStripQuery(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.hostRedirectInput">hostRedirectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirectInput">httpsRedirectInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.pathRedirectInput">pathRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.prefixRedirectInput">prefixRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.redirectResponseCodeInput">redirectResponseCodeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQueryInput">stripQueryInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.hostRedirect">hostRedirect</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.httpsRedirect">httpsRedirect</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.pathRedirect">pathRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.prefixRedirect">prefixRedirect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.redirectResponseCode">redirectResponseCode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.stripQuery">stripQuery</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect">ComputeRegionUrlMapPathMatcherRouteRulesUrlRedirect</a></code> | *No description.* |
 
 ---
@@ -39246,7 +39246,7 @@ public readonly hostRedirectInput: string;
 public readonly httpsRedirectInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -39286,7 +39286,7 @@ public readonly redirectResponseCodeInput: string;
 public readonly stripQueryInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -39306,7 +39306,7 @@ public readonly hostRedirect: string;
 public readonly httpsRedirect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -39346,7 +39346,7 @@ public readonly redirectResponseCode: string;
 public readonly stripQuery: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -39373,7 +39373,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapTestList(terraformResource: IInterpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -39381,7 +39381,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapTestList(terraformResource: IInterpol
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39447,7 +39447,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39482,7 +39482,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]</code> | *No description.* |
 
 ---
 
@@ -39516,7 +39516,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapTest[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>[]
 
 ---
 
@@ -39533,7 +39533,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -39542,7 +39542,7 @@ new computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39729,7 +39729,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39764,7 +39764,7 @@ public resetDescription(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.property.host">host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTestOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a></code> | *No description.* |
 
 ---
 
@@ -39878,7 +39878,7 @@ public readonly service: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapTest;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTest">ComputeRegionUrlMapTest</a>
 
 ---
 
@@ -39895,14 +39895,14 @@ new computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40075,7 +40075,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40120,7 +40120,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -40214,7 +40214,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ComputeRegionUrlMapTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRegionUrlMap.ComputeRegionUrlMapTimeouts">ComputeRegionUrlMapTimeouts</a>
 
 ---
 

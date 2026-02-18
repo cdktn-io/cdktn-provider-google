@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeRouterNatAddressConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeRouterNatAddressConfig extends cdktn.TerraformMetaArguments {
   /**
   * A list of URLs of the IP resources to be drained. These IPs must be
   * valid static external IPs that have been assigned to the NAT.
@@ -77,39 +77,39 @@ export interface ComputeRouterNatAddressTimeouts {
   readonly update?: string;
 }
 
-export function computeRouterNatAddressTimeoutsToTerraform(struct?: ComputeRouterNatAddressTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterNatAddressTimeoutsToTerraform(struct?: ComputeRouterNatAddressTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeRouterNatAddressTimeoutsToHclTerraform(struct?: ComputeRouterNatAddressTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterNatAddressTimeoutsToHclTerraform(struct?: ComputeRouterNatAddressTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,19 +120,19 @@ export function computeRouterNatAddressTimeoutsToHclTerraform(struct?: ComputeRo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterNatAddressTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterNatAddressTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeRouterNatAddressTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterNatAddressTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class ComputeRouterNatAddressTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterNatAddressTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterNatAddressTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class ComputeRouterNatAddressTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -226,7 +226,7 @@ export class ComputeRouterNatAddressTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_nat_address google_compute_router_nat_address}
 */
-export class ComputeRouterNatAddress extends cdktf.TerraformResource {
+export class ComputeRouterNatAddress extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -237,14 +237,14 @@ export class ComputeRouterNatAddress extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeRouterNatAddress resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeRouterNatAddress resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRouterNatAddress to import
   * @param importFromId The id of the existing ComputeRouterNatAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_nat_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRouterNatAddress to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_nat_address", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_nat_address", importId: importFromId, provider });
       }
 
   // ===========
@@ -291,7 +291,7 @@ export class ComputeRouterNatAddress extends cdktf.TerraformResource {
   // drain_nat_ips - computed: false, optional: true, required: false
   private _drainNatIps?: string[]; 
   public get drainNatIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('drain_nat_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('drain_nat_ips'));
   }
   public set drainNatIps(value: string[]) {
     this._drainNatIps = value;
@@ -323,7 +323,7 @@ export class ComputeRouterNatAddress extends cdktf.TerraformResource {
   // nat_ips - computed: false, optional: false, required: true
   private _natIps?: string[]; 
   public get natIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('nat_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('nat_ips'));
   }
   public set natIps(value: string[]) {
     this._natIps = value;
@@ -413,13 +413,13 @@ export class ComputeRouterNatAddress extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      drain_nat_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._drainNatIps),
-      id: cdktf.stringToTerraform(this._id),
-      nat_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._natIps),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      router: cdktf.stringToTerraform(this._router),
-      router_nat: cdktf.stringToTerraform(this._routerNat),
+      drain_nat_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._drainNatIps),
+      id: cdktn.stringToTerraform(this._id),
+      nat_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._natIps),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      router: cdktn.stringToTerraform(this._router),
+      router_nat: cdktn.stringToTerraform(this._routerNat),
       timeouts: computeRouterNatAddressTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -427,43 +427,43 @@ export class ComputeRouterNatAddress extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       drain_nat_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._drainNatIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._drainNatIps),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nat_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._natIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._natIps),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router: {
-        value: cdktf.stringToHclTerraform(this._router),
+        value: cdktn.stringToHclTerraform(this._router),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router_nat: {
-        value: cdktf.stringToHclTerraform(this._routerNat),
+        value: cdktn.stringToHclTerraform(this._routerNat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

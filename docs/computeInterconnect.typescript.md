@@ -304,7 +304,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -481,7 +481,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputeInterconnect resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ComputeInterconnect resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -553,7 +553,7 @@ import { computeInterconnect } from '@cdktn/provider-google'
 computeInterconnect.ComputeInterconnect.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ComputeInterconnect resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeInterconnect resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.generateConfigForImport.parameter.scope"></a>
 
@@ -583,7 +583,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnect.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeInterconnect to import is found.
 
@@ -594,23 +594,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.availableFeatures">availableFeatures</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.circuitInfos">circuitInfos</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList">ComputeInterconnectCircuitInfosList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.expectedOutages">expectedOutages</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesList">ComputeInterconnectExpectedOutagesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.googleIpAddress">googleIpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.googleReferenceId">googleReferenceId</a></code> | <code>string</code> | *No description.* |
@@ -621,11 +621,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.operationalStatus">operationalStatus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.peerIpAddress">peerIpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.provisionedLinkCount">provisionedLinkCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.satisfiesPzs">satisfiesPzs</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.satisfiesPzs">satisfiesPzs</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.state">state</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference">ComputeInterconnectTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabledInput">adminEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabledInput">adminEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.customerNameInput">customerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -633,7 +633,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.linkTypeInput">linkTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.macsecEnabledInput">macsecEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.macsecEnabledInput">macsecEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.macsecInput">macsecInput</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec">ComputeInterconnectMacsec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.nocContactEmailInput">nocContactEmailInput</a></code> | <code>string</code> | *No description.* |
@@ -641,8 +641,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.remoteLocationInput">remoteLocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.requestedFeaturesInput">requestedFeaturesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.requestedLinkCountInput">requestedLinkCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabled">adminEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.adminEnabled">adminEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.customerName">customerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -650,7 +650,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.linkType">linkType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.location">location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.macsecEnabled">macsecEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.macsecEnabled">macsecEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.nocContactEmail">nocContactEmail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnect.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -678,7 +678,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -728,7 +728,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -738,7 +738,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -748,7 +748,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -768,7 +768,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -778,7 +778,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -788,7 +788,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -798,7 +798,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -838,7 +838,7 @@ public readonly creationTimestamp: string;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -948,7 +948,7 @@ public readonly provisionedLinkCount: number;
 public readonly satisfiesPzs: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -968,7 +968,7 @@ public readonly state: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -988,7 +988,7 @@ public readonly timeouts: ComputeInterconnectTimeoutsOutputReference;
 public readonly adminEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly locationInput: string;
 public readonly macsecEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1148,7 +1148,7 @@ public readonly requestedLinkCountInput: number;
 public readonly timeoutsInput: IResolvable | ComputeInterconnectTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a>
 
 ---
 
@@ -1158,7 +1158,7 @@ public readonly timeoutsInput: IResolvable | ComputeInterconnectTimeouts;
 public readonly adminEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly location: string;
 public readonly macsecEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1347,25 +1347,25 @@ const computeInterconnectConfig: computeInterconnect.ComputeInterconnectConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.interconnectType">interconnectType</a></code> | <code>string</code> | Type of interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.linkType">linkType</a></code> | <code>string</code> | Type of link requested. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.location">location</a></code> | <code>string</code> | URL of the InterconnectLocation object that represents where this connection is to be provisioned. Specifies the location inside Google's Networks. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.requestedLinkCount">requestedLinkCount</a></code> | <code>number</code> | Target number of physical links in the link bundle, as requested by the customer. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.adminEnabled">adminEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Administrative status of the interconnect. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.adminEnabled">adminEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Administrative status of the interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.customerName">customerName</a></code> | <code>string</code> | Customer name, to put in the Letter of Authorization as the party authorized to request a crossconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels for this resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.macsec">macsec</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec">ComputeInterconnectMacsec</a></code> | macsec block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.macsecEnabled">macsecEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.macsecEnabled">macsecEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.nocContactEmail">nocContactEmail</a></code> | <code>string</code> | Email address to contact the customer NOC for operations and maintenance notifications regarding this Interconnect. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectConfig.property.remoteLocation">remoteLocation</a></code> | <code>string</code> | Indicates that this is a Cross-Cloud Interconnect. |
@@ -1380,7 +1380,7 @@ const computeInterconnectConfig: computeInterconnect.ComputeInterconnectConfig =
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1390,7 +1390,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1400,7 +1400,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1410,7 +1410,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1420,7 +1420,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1440,7 +1440,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly adminEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Administrative status of the interconnect.
 
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly macsecEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable or disable MACsec on this Interconnect connection. MACsec enablement fails if the MACsec object is not specified.
 
@@ -1745,8 +1745,8 @@ const computeInterconnectMacsec: computeInterconnect.ComputeInterconnectMacsec =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec.property.preSharedKeys">preSharedKeys</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]</code> | pre_shared_keys block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the Interconnect connection is configured with a should-secure MACsec security policy, that allows the Google router to fallback to cleartext traffic if the MKA session cannot be established. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec.property.preSharedKeys">preSharedKeys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]</code> | pre_shared_keys block. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec.property.failOpen">failOpen</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the Interconnect connection is configured with a should-secure MACsec security policy, that allows the Google router to fallback to cleartext traffic if the MKA session cannot be established. |
 
 ---
 
@@ -1756,7 +1756,7 @@ const computeInterconnectMacsec: computeInterconnect.ComputeInterconnectMacsec =
 public readonly preSharedKeys: IResolvable | ComputeInterconnectMacsecPreSharedKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
 
 pre_shared_keys block.
 
@@ -1770,7 +1770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly failOpen: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the Interconnect connection is configured with a should-secure MACsec security policy, that allows the Google router to fallback to cleartext traffic if the MKA session cannot be established.
 
@@ -1797,7 +1797,7 @@ const computeInterconnectMacsecPreSharedKeys: computeInterconnect.ComputeInterco
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys.property.name">name</a></code> | <code>string</code> | A name for this pre-shared key. |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the Interconnect connection is configured with a should-secure MACsec security policy, that allows the Google router to fallback to cleartext traffic if the MKA session cannot be established. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys.property.failOpen">failOpen</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the Interconnect connection is configured with a should-secure MACsec security policy, that allows the Google router to fallback to cleartext traffic if the MKA session cannot be established. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys.property.startTime">startTime</a></code> | <code>string</code> | A RFC3339 timestamp on or after which the key is valid. |
 
 ---
@@ -1828,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly failOpen: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the Interconnect connection is configured with a should-secure MACsec security policy, that allows the Google router to fallback to cleartext traffic if the MKA session cannot be established.
 
@@ -1930,7 +1930,7 @@ new computeInterconnect.ComputeInterconnectCircuitInfosList(terraformResource: I
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1938,7 +1938,7 @@ new computeInterconnect.ComputeInterconnectCircuitInfosList(terraformResource: I
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2004,7 +2004,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2079,7 +2079,7 @@ new computeInterconnect.ComputeInterconnectCircuitInfosOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2088,7 +2088,7 @@ new computeInterconnect.ComputeInterconnectCircuitInfosOutputReference(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2274,7 +2274,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectCircuitInfosOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2379,7 +2379,7 @@ new computeInterconnect.ComputeInterconnectExpectedOutagesList(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2387,7 +2387,7 @@ new computeInterconnect.ComputeInterconnectExpectedOutagesList(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2453,7 +2453,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2528,7 +2528,7 @@ new computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2537,7 +2537,7 @@ new computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2723,7 +2723,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectExpectedOutagesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2883,14 +2883,14 @@ new computeInterconnect.ComputeInterconnectMacsecOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3062,7 +3062,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3084,7 +3084,7 @@ public putPreSharedKeys(value: IResolvable | ComputeInterconnectMacsecPreSharedK
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.putPreSharedKeys.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
 
 ---
 
@@ -3102,9 +3102,9 @@ public resetFailOpen(): void
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.preSharedKeys">preSharedKeys</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList">ComputeInterconnectMacsecPreSharedKeysList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.failOpenInput">failOpenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.preSharedKeysInput">preSharedKeysInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.failOpenInput">failOpenInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.preSharedKeysInput">preSharedKeysInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.failOpen">failOpen</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsec">ComputeInterconnectMacsec</a></code> | *No description.* |
 
 ---
@@ -3149,7 +3149,7 @@ public readonly preSharedKeys: ComputeInterconnectMacsecPreSharedKeysList;
 public readonly failOpenInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3159,7 +3159,7 @@ public readonly failOpenInput: boolean | IResolvable;
 public readonly preSharedKeysInput: IResolvable | ComputeInterconnectMacsecPreSharedKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
 
 ---
 
@@ -3169,7 +3169,7 @@ public readonly preSharedKeysInput: IResolvable | ComputeInterconnectMacsecPreSh
 public readonly failOpen: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3196,7 +3196,7 @@ new computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3204,7 +3204,7 @@ new computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3270,7 +3270,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3305,7 +3305,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -3339,7 +3339,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeInterconnectMacsecPreSharedKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>[]
 
 ---
 
@@ -3356,7 +3356,7 @@ new computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3365,7 +3365,7 @@ new computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3553,7 +3553,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3586,13 +3586,13 @@ public resetStartTime(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.failOpenInput">failOpenInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.failOpenInput">failOpenInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.failOpen">failOpen</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.failOpen">failOpen</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.startTime">startTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a></code> | *No description.* |
 
 ---
 
@@ -3626,7 +3626,7 @@ public readonly fqn: string;
 public readonly failOpenInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3656,7 +3656,7 @@ public readonly startTimeInput: string;
 public readonly failOpen: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3686,7 +3686,7 @@ public readonly startTime: string;
 public readonly internalValue: IResolvable | ComputeInterconnectMacsecPreSharedKeys;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectMacsecPreSharedKeys">ComputeInterconnectMacsecPreSharedKeys</a>
 
 ---
 
@@ -3703,14 +3703,14 @@ new computeInterconnect.ComputeInterconnectTimeoutsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3883,7 +3883,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3928,7 +3928,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4022,7 +4022,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ComputeInterconnectTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeInterconnect.ComputeInterconnectTimeouts">ComputeInterconnectTimeouts</a>
 
 ---
 

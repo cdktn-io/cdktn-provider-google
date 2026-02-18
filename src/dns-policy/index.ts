@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DnsPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * A textual description field. Defaults to 'Managed by Terraform'.
   *
@@ -26,14 +26,14 @@ export interface DnsPolicyConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#enable_inbound_forwarding DnsPolicy#enable_inbound_forwarding}
   */
-  readonly enableInboundForwarding?: boolean | cdktf.IResolvable;
+  readonly enableInboundForwarding?: boolean | cdktn.IResolvable;
   /**
   * Controls whether logging is enabled for the networks bound to this policy.
   * Defaults to no logging if not set.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#enable_logging DnsPolicy#enable_logging}
   */
-  readonly enableLogging?: boolean | cdktf.IResolvable;
+  readonly enableLogging?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#id DnsPolicy#id}
   *
@@ -68,7 +68,7 @@ export interface DnsPolicyConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#networks DnsPolicy#networks}
   */
-  readonly networks?: DnsPolicyNetworks[] | cdktf.IResolvable;
+  readonly networks?: DnsPolicyNetworks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -93,32 +93,32 @@ export interface DnsPolicyAlternativeNameServerConfigTargetNameServers {
   readonly ipv4Address: string;
 }
 
-export function dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform(struct?: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform(struct?: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    forwarding_path: cdktf.stringToTerraform(struct!.forwardingPath),
-    ipv4_address: cdktf.stringToTerraform(struct!.ipv4Address),
+    forwarding_path: cdktn.stringToTerraform(struct!.forwardingPath),
+    ipv4_address: cdktn.stringToTerraform(struct!.ipv4Address),
   }
 }
 
 
-export function dnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform(struct?: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform(struct?: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     forwarding_path: {
-      value: cdktf.stringToHclTerraform(struct!.forwardingPath),
+      value: cdktn.stringToHclTerraform(struct!.forwardingPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv4_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipv4Address),
+      value: cdktn.stringToHclTerraform(struct!.ipv4Address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,9 +129,9 @@ export function dnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference extends cdktf.ComplexObject {
+export class DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -139,11 +139,11 @@ export class DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,14 +160,14 @@ export class DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsPolicyAlternativeNameServerConfigTargetNameServers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._forwardingPath = undefined;
       this._ipv4Address = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -209,15 +209,15 @@ export class DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReferenc
   }
 }
 
-export class DnsPolicyAlternativeNameServerConfigTargetNameServersList extends cdktf.ComplexList {
-  public internalValue? : DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktf.IResolvable
+export class DnsPolicyAlternativeNameServerConfigTargetNameServersList extends cdktn.ComplexList {
+  public internalValue? : DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,28 +234,28 @@ export interface DnsPolicyAlternativeNameServerConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#target_name_servers DnsPolicy#target_name_servers}
   */
-  readonly targetNameServers: DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktf.IResolvable;
+  readonly targetNameServers: DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktn.IResolvable;
 }
 
 export function dnsPolicyAlternativeNameServerConfigToTerraform(struct?: DnsPolicyAlternativeNameServerConfigOutputReference | DnsPolicyAlternativeNameServerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_name_servers: cdktf.listMapper(dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform, true)(struct!.targetNameServers),
+    target_name_servers: cdktn.listMapper(dnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform, true)(struct!.targetNameServers),
   }
 }
 
 
 export function dnsPolicyAlternativeNameServerConfigToHclTerraform(struct?: DnsPolicyAlternativeNameServerConfigOutputReference | DnsPolicyAlternativeNameServerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_name_servers: {
-      value: cdktf.listMapperHcl(dnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform, true)(struct!.targetNameServers),
+      value: cdktn.listMapperHcl(dnsPolicyAlternativeNameServerConfigTargetNameServersToHclTerraform, true)(struct!.targetNameServers),
       isBlock: true,
       type: "set",
       storageClassType: "DnsPolicyAlternativeNameServerConfigTargetNameServersList",
@@ -266,14 +266,14 @@ export function dnsPolicyAlternativeNameServerConfigToHclTerraform(struct?: DnsP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsPolicyAlternativeNameServerConfigOutputReference extends cdktf.ComplexObject {
+export class DnsPolicyAlternativeNameServerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -303,7 +303,7 @@ export class DnsPolicyAlternativeNameServerConfigOutputReference extends cdktf.C
   public get targetNameServers() {
     return this._targetNameServers;
   }
-  public putTargetNameServers(value: DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktf.IResolvable) {
+  public putTargetNameServers(value: DnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktn.IResolvable) {
     this._targetNameServers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -317,28 +317,28 @@ export interface DnsPolicyDns64ConfigScope {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#all_queries DnsPolicy#all_queries}
   */
-  readonly allQueries?: boolean | cdktf.IResolvable;
+  readonly allQueries?: boolean | cdktn.IResolvable;
 }
 
 export function dnsPolicyDns64ConfigScopeToTerraform(struct?: DnsPolicyDns64ConfigScopeOutputReference | DnsPolicyDns64ConfigScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    all_queries: cdktf.booleanToTerraform(struct!.allQueries),
+    all_queries: cdktn.booleanToTerraform(struct!.allQueries),
   }
 }
 
 
 export function dnsPolicyDns64ConfigScopeToHclTerraform(struct?: DnsPolicyDns64ConfigScopeOutputReference | DnsPolicyDns64ConfigScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     all_queries: {
-      value: cdktf.booleanToHclTerraform(struct!.allQueries),
+      value: cdktn.booleanToHclTerraform(struct!.allQueries),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -349,14 +349,14 @@ export function dnsPolicyDns64ConfigScopeToHclTerraform(struct?: DnsPolicyDns64C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsPolicyDns64ConfigScopeOutputReference extends cdktf.ComplexObject {
+export class DnsPolicyDns64ConfigScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -382,11 +382,11 @@ export class DnsPolicyDns64ConfigScopeOutputReference extends cdktf.ComplexObjec
   }
 
   // all_queries - computed: false, optional: true, required: false
-  private _allQueries?: boolean | cdktf.IResolvable; 
+  private _allQueries?: boolean | cdktn.IResolvable; 
   public get allQueries() {
     return this.getBooleanAttribute('all_queries');
   }
-  public set allQueries(value: boolean | cdktf.IResolvable) {
+  public set allQueries(value: boolean | cdktn.IResolvable) {
     this._allQueries = value;
   }
   public resetAllQueries() {
@@ -407,8 +407,8 @@ export interface DnsPolicyDns64Config {
 }
 
 export function dnsPolicyDns64ConfigToTerraform(struct?: DnsPolicyDns64ConfigOutputReference | DnsPolicyDns64Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -418,8 +418,8 @@ export function dnsPolicyDns64ConfigToTerraform(struct?: DnsPolicyDns64ConfigOut
 
 
 export function dnsPolicyDns64ConfigToHclTerraform(struct?: DnsPolicyDns64ConfigOutputReference | DnsPolicyDns64Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -435,14 +435,14 @@ export function dnsPolicyDns64ConfigToHclTerraform(struct?: DnsPolicyDns64Config
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsPolicyDns64ConfigOutputReference extends cdktf.ComplexObject {
+export class DnsPolicyDns64ConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -491,25 +491,25 @@ export interface DnsPolicyNetworks {
   readonly networkUrl: string;
 }
 
-export function dnsPolicyNetworksToTerraform(struct?: DnsPolicyNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsPolicyNetworksToTerraform(struct?: DnsPolicyNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_url: cdktf.stringToTerraform(struct!.networkUrl),
+    network_url: cdktn.stringToTerraform(struct!.networkUrl),
   }
 }
 
 
-export function dnsPolicyNetworksToHclTerraform(struct?: DnsPolicyNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsPolicyNetworksToHclTerraform(struct?: DnsPolicyNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_url: {
-      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      value: cdktn.stringToHclTerraform(struct!.networkUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -520,9 +520,9 @@ export function dnsPolicyNetworksToHclTerraform(struct?: DnsPolicyNetworks | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsPolicyNetworksOutputReference extends cdktf.ComplexObject {
+export class DnsPolicyNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -530,11 +530,11 @@ export class DnsPolicyNetworksOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsPolicyNetworks | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsPolicyNetworks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -547,13 +547,13 @@ export class DnsPolicyNetworksOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsPolicyNetworks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsPolicyNetworks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._networkUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -578,15 +578,15 @@ export class DnsPolicyNetworksOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DnsPolicyNetworksList extends cdktf.ComplexList {
-  public internalValue? : DnsPolicyNetworks[] | cdktf.IResolvable
+export class DnsPolicyNetworksList extends cdktn.ComplexList {
+  public internalValue? : DnsPolicyNetworks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -612,39 +612,39 @@ export interface DnsPolicyTimeouts {
   readonly update?: string;
 }
 
-export function dnsPolicyTimeoutsToTerraform(struct?: DnsPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsPolicyTimeoutsToTerraform(struct?: DnsPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dnsPolicyTimeoutsToHclTerraform(struct?: DnsPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsPolicyTimeoutsToHclTerraform(struct?: DnsPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -655,19 +655,19 @@ export function dnsPolicyTimeoutsToHclTerraform(struct?: DnsPolicyTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DnsPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DnsPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -688,7 +688,7 @@ export class DnsPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -696,7 +696,7 @@ export class DnsPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -761,7 +761,7 @@ export class DnsPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy google_dns_policy}
 */
-export class DnsPolicy extends cdktf.TerraformResource {
+export class DnsPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -772,14 +772,14 @@ export class DnsPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsPolicy to import
   * @param importFromId The id of the existing DnsPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dns_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dns_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -842,11 +842,11 @@ export class DnsPolicy extends cdktf.TerraformResource {
   }
 
   // enable_inbound_forwarding - computed: false, optional: true, required: false
-  private _enableInboundForwarding?: boolean | cdktf.IResolvable; 
+  private _enableInboundForwarding?: boolean | cdktn.IResolvable; 
   public get enableInboundForwarding() {
     return this.getBooleanAttribute('enable_inbound_forwarding');
   }
-  public set enableInboundForwarding(value: boolean | cdktf.IResolvable) {
+  public set enableInboundForwarding(value: boolean | cdktn.IResolvable) {
     this._enableInboundForwarding = value;
   }
   public resetEnableInboundForwarding() {
@@ -858,11 +858,11 @@ export class DnsPolicy extends cdktf.TerraformResource {
   }
 
   // enable_logging - computed: false, optional: true, required: false
-  private _enableLogging?: boolean | cdktf.IResolvable; 
+  private _enableLogging?: boolean | cdktn.IResolvable; 
   public get enableLogging() {
     return this.getBooleanAttribute('enable_logging');
   }
-  public set enableLogging(value: boolean | cdktf.IResolvable) {
+  public set enableLogging(value: boolean | cdktn.IResolvable) {
     this._enableLogging = value;
   }
   public resetEnableLogging() {
@@ -955,7 +955,7 @@ export class DnsPolicy extends cdktf.TerraformResource {
   public get networks() {
     return this._networks;
   }
-  public putNetworks(value: DnsPolicyNetworks[] | cdktf.IResolvable) {
+  public putNetworks(value: DnsPolicyNetworks[] | cdktn.IResolvable) {
     this._networks.internalValue = value;
   }
   public resetNetworks() {
@@ -988,15 +988,15 @@ export class DnsPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enable_inbound_forwarding: cdktf.booleanToTerraform(this._enableInboundForwarding),
-      enable_logging: cdktf.booleanToTerraform(this._enableLogging),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      enable_inbound_forwarding: cdktn.booleanToTerraform(this._enableInboundForwarding),
+      enable_logging: cdktn.booleanToTerraform(this._enableLogging),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       alternative_name_server_config: dnsPolicyAlternativeNameServerConfigToTerraform(this._alternativeNameServerConfig.internalValue),
       dns64_config: dnsPolicyDns64ConfigToTerraform(this._dns64Config.internalValue),
-      networks: cdktf.listMapper(dnsPolicyNetworksToTerraform, true)(this._networks.internalValue),
+      networks: cdktn.listMapper(dnsPolicyNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: dnsPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1004,37 +1004,37 @@ export class DnsPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_inbound_forwarding: {
-        value: cdktf.booleanToHclTerraform(this._enableInboundForwarding),
+        value: cdktn.booleanToHclTerraform(this._enableInboundForwarding),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_logging: {
-        value: cdktf.booleanToHclTerraform(this._enableLogging),
+        value: cdktn.booleanToHclTerraform(this._enableLogging),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1052,7 +1052,7 @@ export class DnsPolicy extends cdktf.TerraformResource {
         storageClassType: "DnsPolicyDns64ConfigList",
       },
       networks: {
-        value: cdktf.listMapperHcl(dnsPolicyNetworksToHclTerraform, true)(this._networks.internalValue),
+        value: cdktn.listMapperHcl(dnsPolicyNetworksToHclTerraform, true)(this._networks.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DnsPolicyNetworksList",

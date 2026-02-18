@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleDataplexTaskIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleDataplexTaskIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataplex_task_iam_policy#id DataGoogleDataplexTaskIamPolicy#id}
   *
@@ -40,7 +40,7 @@ export interface DataGoogleDataplexTaskIamPolicyConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataplex_task_iam_policy google_dataplex_task_iam_policy}
 */
-export class DataGoogleDataplexTaskIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleDataplexTaskIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DataGoogleDataplexTaskIamPolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleDataplexTaskIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleDataplexTaskIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleDataplexTaskIamPolicy to import
   * @param importFromId The id of the existing DataGoogleDataplexTaskIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataplex_task_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleDataplexTaskIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataplex_task_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataplex_task_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -189,42 +189,42 @@ export class DataGoogleDataplexTaskIamPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      lake: cdktf.stringToTerraform(this._lake),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      task_id: cdktf.stringToTerraform(this._taskId),
+      id: cdktn.stringToTerraform(this._id),
+      lake: cdktn.stringToTerraform(this._lake),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      task_id: cdktn.stringToTerraform(this._taskId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lake: {
-        value: cdktf.stringToHclTerraform(this._lake),
+        value: cdktn.stringToHclTerraform(this._lake),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       task_id: {
-        value: cdktf.stringToHclTerraform(this._taskId),
+        value: cdktn.stringToHclTerraform(this._taskId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

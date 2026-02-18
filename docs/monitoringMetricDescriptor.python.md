@@ -40,20 +40,20 @@ monitoringMetricDescriptor.MonitoringMetricDescriptor(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.metricKind">metric_kind</a></code> | <code>str</code> | Whether the metric records instantaneous values, changes to a value, etc. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.type">type</a></code> | <code>str</code> | The metric type, including its DNS name prefix. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.valueType">value_type</a></code> | <code>str</code> | Whether the measurement is an integer, a floating-point number, etc. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.description">description</a></code> | <code>str</code> | A detailed description of the metric, which can be used in documentation. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | A concise name for the metric, which can be displayed in user interfaces. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_metric_descriptor#id MonitoringMetricDescriptor#id}. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.labels">labels</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | labels block. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.labels">labels</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | labels block. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.launchStage">launch_stage</a></code> | <code>str</code> | The launch stage of the metric definition. Possible values: ["LAUNCH_STAGE_UNSPECIFIED", "UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadata">MonitoringMetricDescriptorMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_metric_descriptor#project MonitoringMetricDescriptor#project}. |
@@ -82,43 +82,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -193,7 +193,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.Initializer.parameter.labels"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
 
 labels block.
 
@@ -554,7 +554,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -647,7 +647,7 @@ def put_labels(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.putLabels.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
 
 ---
 
@@ -779,7 +779,7 @@ def reset_unit() -> None
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a MonitoringMetricDescriptor resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a MonitoringMetricDescriptor resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -862,7 +862,7 @@ monitoringMetricDescriptor.MonitoringMetricDescriptor.generate_config_for_import
 )
 ```
 
-Generates CDKTF code for importing a MonitoringMetricDescriptor resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a MonitoringMetricDescriptor resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.generateConfigForImport.parameter.scope"></a>
 
@@ -892,7 +892,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the MonitoringMetricDescriptor to import is found.
 
@@ -903,19 +903,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.labels">labels</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList">MonitoringMetricDescriptorLabelsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference">MonitoringMetricDescriptorMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.monitoredResourceTypes">monitored_resource_types</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -924,12 +924,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.labelsInput">labels_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.labelsInput">labels_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.launchStageInput">launch_stage_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.metadataInput">metadata_input</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadata">MonitoringMetricDescriptorMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.metricKindInput">metric_kind_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.unitInput">unit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptor.property.valueTypeInput">value_type_input</a></code> | <code>str</code> | *No description.* |
@@ -963,7 +963,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1013,7 +1013,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1023,7 +1023,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1033,7 +1033,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1053,7 +1053,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1063,7 +1063,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1073,7 +1073,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1083,7 +1083,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1173,7 +1173,7 @@ id_input: str
 labels_input: IResolvable | typing.List[MonitoringMetricDescriptorLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
 
 ---
 
@@ -1223,7 +1223,7 @@ project_input: str
 timeouts_input: IResolvable | MonitoringMetricDescriptorTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a>
 
 ---
 
@@ -1401,20 +1401,20 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.metricKind">metric_kind</a></code> | <code>str</code> | Whether the metric records instantaneous values, changes to a value, etc. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.type">type</a></code> | <code>str</code> | The metric type, including its DNS name prefix. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.valueType">value_type</a></code> | <code>str</code> | Whether the measurement is an integer, a floating-point number, etc. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.description">description</a></code> | <code>str</code> | A detailed description of the metric, which can be used in documentation. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.displayName">display_name</a></code> | <code>str</code> | A concise name for the metric, which can be displayed in user interfaces. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_metric_descriptor#id MonitoringMetricDescriptor#id}. |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.labels">labels</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | labels block. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.labels">labels</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | labels block. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.launchStage">launch_stage</a></code> | <code>str</code> | The launch stage of the metric definition. Possible values: ["LAUNCH_STAGE_UNSPECIFIED", "UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadata">MonitoringMetricDescriptorMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_metric_descriptor#project MonitoringMetricDescriptor#project}. |
@@ -1429,7 +1429,7 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1439,7 +1439,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1449,7 +1449,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1459,7 +1459,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1469,7 +1469,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1479,7 +1479,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1489,7 +1489,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1592,7 +1592,7 @@ If you experience problems setting this value it might not be settable. Please t
 labels: IResolvable | typing.List[MonitoringMetricDescriptorLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
 
 labels block.
 
@@ -1889,7 +1889,7 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1897,7 +1897,7 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1967,7 +1967,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2004,7 +2004,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]</code> | *No description.* |
 
 ---
 
@@ -2038,7 +2038,7 @@ fqn: str
 internal_value: IResolvable | typing.List[MonitoringMetricDescriptorLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>]
 
 ---
 
@@ -2060,7 +2060,7 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2069,7 +2069,7 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2279,7 +2279,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2318,7 +2318,7 @@ def reset_value_type() -> None
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.property.valueType">value_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a></code> | *No description.* |
 
 ---
 
@@ -2412,7 +2412,7 @@ value_type: str
 internal_value: IResolvable | MonitoringMetricDescriptorLabels
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorLabels">MonitoringMetricDescriptorLabels</a>
 
 ---
 
@@ -2432,14 +2432,14 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2633,7 +2633,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorMetadataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2764,14 +2764,14 @@ monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2966,7 +2966,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3011,7 +3011,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3105,7 +3105,7 @@ update: str
 internal_value: IResolvable | MonitoringMetricDescriptorTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.monitoringMetricDescriptor.MonitoringMetricDescriptorTimeouts">MonitoringMetricDescriptorTimeouts</a>
 
 ---
 

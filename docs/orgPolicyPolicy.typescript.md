@@ -297,7 +297,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -438,7 +438,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a OrgPolicyPolicy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a OrgPolicyPolicy resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -510,7 +510,7 @@ import { orgPolicyPolicy } from '@cdktn/provider-google'
 orgPolicyPolicy.OrgPolicyPolicy.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a OrgPolicyPolicy resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a OrgPolicyPolicy resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.generateConfigForImport.parameter.scope"></a>
 
@@ -540,7 +540,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the OrgPolicyPolicy to import is found.
 
@@ -551,19 +551,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.dryRunSpec">dryRunSpec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference">OrgPolicyPolicyDryRunSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.spec">spec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference">OrgPolicyPolicySpecOutputReference</a></code> | *No description.* |
@@ -573,7 +573,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.specInput">specInput</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec">OrgPolicyPolicySpec</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicy.property.parent">parent</a></code> | <code>string</code> | *No description.* |
@@ -598,7 +598,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -648,7 +648,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -658,7 +658,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -668,7 +668,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -688,7 +688,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -698,7 +698,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -708,7 +708,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -718,7 +718,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -818,7 +818,7 @@ public readonly specInput: OrgPolicyPolicySpec;
 public readonly timeoutsInput: IResolvable | OrgPolicyPolicyTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a>
 
 ---
 
@@ -886,13 +886,13 @@ const orgPolicyPolicyConfig: orgPolicyPolicy.OrgPolicyPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.name">name</a></code> | <code>string</code> | Immutable. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.parent">parent</a></code> | <code>string</code> | The parent of the resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyConfig.property.dryRunSpec">dryRunSpec</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec">OrgPolicyPolicyDryRunSpec</a></code> | dry_run_spec block. |
@@ -908,7 +908,7 @@ const orgPolicyPolicyConfig: orgPolicyPolicy.OrgPolicyPolicyConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -918,7 +918,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -928,7 +928,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -938,7 +938,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -948,7 +948,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -958,7 +958,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -968,7 +968,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1073,9 +1073,9 @@ const orgPolicyPolicyDryRunSpec: orgPolicyPolicy.OrgPolicyPolicyDryRunSpec = { .
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines the inheritance behavior for this policy. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec.property.reset">reset</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific constraint at this resource. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec.property.rules">rules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines the inheritance behavior for this policy. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec.property.reset">reset</a></code> | <code>boolean \| cdktn.IResolvable</code> | Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific constraint at this resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]</code> | rules block. |
 
 ---
 
@@ -1085,7 +1085,7 @@ const orgPolicyPolicyDryRunSpec: orgPolicyPolicy.OrgPolicyPolicyDryRunSpec = { .
 public readonly inheritFromParent: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Determines the inheritance behavior for this policy.
 
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly reset: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific constraint at this resource.
 
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rules: IResolvable | OrgPolicyPolicyDryRunSpecRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
 
 rules block.
 
@@ -1384,9 +1384,9 @@ const orgPolicyPolicySpec: orgPolicyPolicy.OrgPolicyPolicySpec = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines the inheritance behavior for this 'Policy'. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec.property.reset">reset</a></code> | <code>boolean \| cdktf.IResolvable</code> | Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific 'Constraint' at this resource. |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec.property.rules">rules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines the inheritance behavior for this 'Policy'. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec.property.reset">reset</a></code> | <code>boolean \| cdktn.IResolvable</code> | Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific 'Constraint' at this resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]</code> | rules block. |
 
 ---
 
@@ -1396,7 +1396,7 @@ const orgPolicyPolicySpec: orgPolicyPolicy.OrgPolicyPolicySpec = { ... }
 public readonly inheritFromParent: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Determines the inheritance behavior for this 'Policy'.
 
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly reset: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Ignores policies set above this resource and restores the 'constraint_default' enforcement behavior of the specific 'Constraint' at this resource.
 
@@ -1428,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rules: IResolvable | OrgPolicyPolicySpecRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
 
 rules block.
 
@@ -1751,14 +1751,14 @@ new orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1932,7 +1932,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1954,7 +1954,7 @@ public putRules(value: IResolvable | OrgPolicyPolicyDryRunSpecRules[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.putRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
 
 ---
 
@@ -1986,11 +1986,11 @@ public resetRules(): void
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList">OrgPolicyPolicyDryRunSpecRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.inheritFromParentInput">inheritFromParentInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.resetInput">resetInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.rulesInput">rulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.reset">reset</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.inheritFromParentInput">inheritFromParentInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.resetInput">resetInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.rulesInput">rulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.reset">reset</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpec">OrgPolicyPolicyDryRunSpec</a></code> | *No description.* |
 
 ---
@@ -2055,7 +2055,7 @@ public readonly updateTime: string;
 public readonly inheritFromParentInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2065,7 +2065,7 @@ public readonly inheritFromParentInput: boolean | IResolvable;
 public readonly resetInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2075,7 +2075,7 @@ public readonly resetInput: boolean | IResolvable;
 public readonly rulesInput: IResolvable | OrgPolicyPolicyDryRunSpecRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
 
 ---
 
@@ -2085,7 +2085,7 @@ public readonly rulesInput: IResolvable | OrgPolicyPolicyDryRunSpecRules[];
 public readonly inheritFromParent: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2095,7 +2095,7 @@ public readonly inheritFromParent: boolean | IResolvable;
 public readonly reset: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2122,14 +2122,14 @@ new orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesConditionOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesConditionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2303,7 +2303,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesConditionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2487,7 +2487,7 @@ new orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList(terraformResource: IInter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2495,7 +2495,7 @@ new orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList(terraformResource: IInter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2561,7 +2561,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2596,7 +2596,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -2630,7 +2630,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | OrgPolicyPolicyDryRunSpecRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>[]
 
 ---
 
@@ -2647,7 +2647,7 @@ new orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2656,7 +2656,7 @@ new orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference(terraformResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2850,7 +2850,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2943,7 +2943,7 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.property.denyAll">denyAll</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.property.enforce">enforce</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.property.parameters">parameters</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a></code> | *No description.* |
 
 ---
 
@@ -3097,7 +3097,7 @@ public readonly parameters: string;
 public readonly internalValue: IResolvable | OrgPolicyPolicyDryRunSpecRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRules">OrgPolicyPolicyDryRunSpecRules</a>
 
 ---
 
@@ -3114,14 +3114,14 @@ new orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3293,7 +3293,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesValuesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3421,14 +3421,14 @@ new orgPolicyPolicy.OrgPolicyPolicySpecOutputReference(terraformResource: IInter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3602,7 +3602,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3624,7 +3624,7 @@ public putRules(value: IResolvable | OrgPolicyPolicySpecRules[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.putRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
 
 ---
 
@@ -3656,11 +3656,11 @@ public resetRules(): void
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList">OrgPolicyPolicySpecRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.inheritFromParentInput">inheritFromParentInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.resetInput">resetInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.rulesInput">rulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.reset">reset</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.inheritFromParentInput">inheritFromParentInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.resetInput">resetInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.rulesInput">rulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.inheritFromParent">inheritFromParent</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.reset">reset</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpec">OrgPolicyPolicySpec</a></code> | *No description.* |
 
 ---
@@ -3725,7 +3725,7 @@ public readonly updateTime: string;
 public readonly inheritFromParentInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3735,7 +3735,7 @@ public readonly inheritFromParentInput: boolean | IResolvable;
 public readonly resetInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3745,7 +3745,7 @@ public readonly resetInput: boolean | IResolvable;
 public readonly rulesInput: IResolvable | OrgPolicyPolicySpecRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
 
 ---
 
@@ -3755,7 +3755,7 @@ public readonly rulesInput: IResolvable | OrgPolicyPolicySpecRules[];
 public readonly inheritFromParent: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3765,7 +3765,7 @@ public readonly inheritFromParent: boolean | IResolvable;
 public readonly reset: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3792,14 +3792,14 @@ new orgPolicyPolicy.OrgPolicyPolicySpecRulesConditionOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesConditionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3973,7 +3973,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesConditionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4157,7 +4157,7 @@ new orgPolicyPolicy.OrgPolicyPolicySpecRulesList(terraformResource: IInterpolati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4165,7 +4165,7 @@ new orgPolicyPolicy.OrgPolicyPolicySpecRulesList(terraformResource: IInterpolati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4231,7 +4231,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4266,7 +4266,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -4300,7 +4300,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | OrgPolicyPolicySpecRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>[]
 
 ---
 
@@ -4317,7 +4317,7 @@ new orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference(terraformResource: I
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4326,7 +4326,7 @@ new orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference(terraformResource: I
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4520,7 +4520,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4613,7 +4613,7 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.property.denyAll">denyAll</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.property.enforce">enforce</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.property.parameters">parameters</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a></code> | *No description.* |
 
 ---
 
@@ -4767,7 +4767,7 @@ public readonly parameters: string;
 public readonly internalValue: IResolvable | OrgPolicyPolicySpecRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRules">OrgPolicyPolicySpecRules</a>
 
 ---
 
@@ -4784,14 +4784,14 @@ new orgPolicyPolicy.OrgPolicyPolicySpecRulesValuesOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesValuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesValuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesValuesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesValuesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4963,7 +4963,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesValuesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5091,14 +5091,14 @@ new orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5271,7 +5271,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5316,7 +5316,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -5410,7 +5410,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | OrgPolicyPolicyTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyTimeouts">OrgPolicyPolicyTimeouts</a>
 
 ---
 

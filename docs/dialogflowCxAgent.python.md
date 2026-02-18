@@ -47,23 +47,23 @@ dialogflowCxAgent.DialogflowCxAgent(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.defaultLanguageCode">default_language_code</a></code> | <code>str</code> | The default language of the agent as a language tag. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The human-readable name of the agent, unique within the location. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.location">location</a></code> | <code>str</code> | The name of the location this agent is located in. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.timeZone">time_zone</a></code> | <code>str</code> | The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.advancedSettings">advanced_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings">DialogflowCxAgentAdvancedSettings</a></code> | advanced_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.avatarUri">avatar_uri</a></code> | <code>str</code> | The URI of the agent's avatar. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.deleteChatEngineOnDestroy">delete_chat_engine_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.deleteChatEngineOnDestroy">delete_chat_engine_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableSpellCorrection">enable_spell_correction</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if automatic spell correction is enabled in detect intent requests. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether this agent should log conversation queries. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableSpellCorrection">enable_spell_correction</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if automatic spell correction is enabled in detect intent requests. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Determines whether this agent should log conversation queries. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.genAppBuilderSettings">gen_app_builder_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings">DialogflowCxAgentGenAppBuilderSettings</a></code> | gen_app_builder_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.gitIntegrationSettings">git_integration_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a></code> | git_integration_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}. |
@@ -96,43 +96,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `delete_chat_engine_on_destroy`<sup>Optional</sup> <a name="delete_chat_engine_on_destroy" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.deleteChatEngineOnDestroy"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed.
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_spell_correction`<sup>Optional</sup> <a name="enable_spell_correction" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableSpellCorrection"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates if automatic spell correction is enabled in detect intent requests.
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_stackdriver_logging`<sup>Optional</sup> <a name="enable_stackdriver_logging" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableStackdriverLogging"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determines whether this agent should log conversation queries.
 
@@ -641,7 +641,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -823,7 +823,7 @@ def put_speech_to_text_settings(
 
 ###### `enable_speech_adaptation`<sup>Optional</sup> <a name="enable_speech_adaptation" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putSpeechToTextSettings.parameter.enableSpeechAdaptation"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to use speech adaptation for speech recognition.
 
@@ -980,7 +980,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DialogflowCxAgent resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DialogflowCxAgent resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1063,7 +1063,7 @@ dialogflowCxAgent.DialogflowCxAgent.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DialogflowCxAgent resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DialogflowCxAgent resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.generateConfigForImport.parameter.scope"></a>
 
@@ -1093,7 +1093,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DialogflowCxAgent to import is found.
 
@@ -1104,19 +1104,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.advancedSettings">advanced_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference">DialogflowCxAgentAdvancedSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.genAppBuilderSettings">gen_app_builder_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference">DialogflowCxAgentGenAppBuilderSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.gitIntegrationSettings">git_integration_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference">DialogflowCxAgentGitIntegrationSettingsOutputReference</a></code> | *No description.* |
@@ -1128,11 +1128,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.advancedSettingsInput">advanced_settings_input</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings">DialogflowCxAgentAdvancedSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.avatarUriInput">avatar_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.defaultLanguageCodeInput">default_language_code_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.deleteChatEngineOnDestroyInput">delete_chat_engine_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.deleteChatEngineOnDestroyInput">delete_chat_engine_on_destroy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableSpellCorrectionInput">enable_spell_correction_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableStackdriverLoggingInput">enable_stackdriver_logging_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableSpellCorrectionInput">enable_spell_correction_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableStackdriverLoggingInput">enable_stackdriver_logging_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.genAppBuilderSettingsInput">gen_app_builder_settings_input</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings">DialogflowCxAgentGenAppBuilderSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.gitIntegrationSettingsInput">git_integration_settings_input</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -1142,15 +1142,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.speechToTextSettingsInput">speech_to_text_settings_input</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings">DialogflowCxAgentSpeechToTextSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.supportedLanguageCodesInput">supported_language_codes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.textToSpeechSettingsInput">text_to_speech_settings_input</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettings">DialogflowCxAgentTextToSpeechSettings</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.timeZoneInput">time_zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.avatarUri">avatar_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.defaultLanguageCode">default_language_code</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.deleteChatEngineOnDestroy">delete_chat_engine_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.deleteChatEngineOnDestroy">delete_chat_engine_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableSpellCorrection">enable_spell_correction</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableSpellCorrection">enable_spell_correction</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -1178,7 +1178,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1228,7 +1228,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1238,7 +1238,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1248,7 +1248,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1268,7 +1268,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1278,7 +1278,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1288,7 +1288,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1298,7 +1298,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1418,7 +1418,7 @@ default_language_code_input: str
 delete_chat_engine_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1448,7 +1448,7 @@ display_name_input: str
 enable_spell_correction_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1458,7 +1458,7 @@ enable_spell_correction_input: bool | IResolvable
 enable_stackdriver_logging_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1558,7 +1558,7 @@ text_to_speech_settings_input: DialogflowCxAgentTextToSpeechSettings
 timeouts_input: IResolvable | DialogflowCxAgentTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a>
 
 ---
 
@@ -1598,7 +1598,7 @@ default_language_code: str
 delete_chat_engine_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1628,7 +1628,7 @@ display_name: str
 enable_spell_correction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1638,7 +1638,7 @@ enable_spell_correction: bool | IResolvable
 enable_stackdriver_logging: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1859,7 +1859,7 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, incoming audio is processed for DTMF (dual tone multi frequency) events. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, incoming audio is processed for DTMF (dual tone multi frequency) events. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings.property.finishDigit">finish_digit</a></code> | <code>str</code> | The digit that terminates a DTMF digit sequence. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings.property.maxDigits">max_digits</a></code> | <code>typing.Union[int, float]</code> | Max length of DTMF digits. |
 
@@ -1871,7 +1871,7 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings(
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, incoming audio is processed for DTMF (dual tone multi frequency) events.
 
@@ -1927,9 +1927,9 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings.property.enableConsentBasedRedaction">enable_consent_based_redaction</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings.property.enableInteractionLogging">enable_interaction_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables DF Interaction logging. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables Google Cloud Logging. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings.property.enableConsentBasedRedaction">enable_consent_based_redaction</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings.property.enableInteractionLogging">enable_interaction_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables DF Interaction logging. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables Google Cloud Logging. |
 
 ---
 
@@ -1939,7 +1939,7 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings(
 enable_consent_based_redaction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted.
 
@@ -1953,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_interaction_logging: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables DF Interaction logging.
 
@@ -1967,7 +1967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_stackdriver_logging: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables Google Cloud Logging.
 
@@ -1997,7 +1997,7 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings(
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings.property.endpointerSensitivity">endpointer_sensitivity</a></code> | <code>typing.Union[int, float]</code> | Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings.property.models">models</a></code> | <code>typing.Mapping[str]</code> | Mapping from language to Speech-to-Text model. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings.property.noSpeechTimeout">no_speech_timeout</a></code> | <code>str</code> | Timeout before detecting no speech. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s". |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings.property.useTimeoutBasedEndpointing">use_timeout_based_endpointing</a></code> | <code>bool \| cdktf.IResolvable</code> | Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings.property.useTimeoutBasedEndpointing">use_timeout_based_endpointing</a></code> | <code>bool \| cdktn.IResolvable</code> | Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value. |
 
 ---
 
@@ -2052,7 +2052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_timeout_based_endpointing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 
@@ -2101,23 +2101,23 @@ dialogflowCxAgent.DialogflowCxAgentConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.defaultLanguageCode">default_language_code</a></code> | <code>str</code> | The default language of the agent as a language tag. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.displayName">display_name</a></code> | <code>str</code> | The human-readable name of the agent, unique within the location. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.location">location</a></code> | <code>str</code> | The name of the location this agent is located in. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.timeZone">time_zone</a></code> | <code>str</code> | The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.advancedSettings">advanced_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings">DialogflowCxAgentAdvancedSettings</a></code> | advanced_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.avatarUri">avatar_uri</a></code> | <code>str</code> | The URI of the agent's avatar. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.deleteChatEngineOnDestroy">delete_chat_engine_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.deleteChatEngineOnDestroy">delete_chat_engine_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.description">description</a></code> | <code>str</code> | The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableSpellCorrection">enable_spell_correction</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates if automatic spell correction is enabled in detect intent requests. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Determines whether this agent should log conversation queries. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableSpellCorrection">enable_spell_correction</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if automatic spell correction is enabled in detect intent requests. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Determines whether this agent should log conversation queries. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.genAppBuilderSettings">gen_app_builder_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings">DialogflowCxAgentGenAppBuilderSettings</a></code> | gen_app_builder_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.gitIntegrationSettings">git_integration_settings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a></code> | git_integration_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}. |
@@ -2136,7 +2136,7 @@ dialogflowCxAgent.DialogflowCxAgentConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2146,7 +2146,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2156,7 +2156,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2166,7 +2166,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2176,7 +2176,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2186,7 +2186,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2196,7 +2196,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2299,7 +2299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 delete_chat_engine_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed.
 
@@ -2341,7 +2341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_spell_correction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates if automatic spell correction is enabled in detect intent requests.
 
@@ -2355,7 +2355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_stackdriver_logging: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Determines whether this agent should log conversation queries.
 
@@ -2672,7 +2672,7 @@ dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings.property.enableSpeechAdaptation">enable_speech_adaptation</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to use speech adaptation for speech recognition. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings.property.enableSpeechAdaptation">enable_speech_adaptation</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to use speech adaptation for speech recognition. |
 
 ---
 
@@ -2682,7 +2682,7 @@ dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings(
 enable_speech_adaptation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether to use speech adaptation for speech recognition.
 
@@ -2801,14 +2801,14 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3001,7 +3001,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3104,14 +3104,14 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3306,7 +3306,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3345,10 +3345,10 @@ def reset_max_digits() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.finishDigitInput">finish_digit_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.maxDigitsInput">max_digits_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.finishDigit">finish_digit</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.maxDigits">max_digits</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings">DialogflowCxAgentAdvancedSettingsDtmfSettings</a></code> | *No description.* |
@@ -3385,7 +3385,7 @@ fqn: str
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3415,7 +3415,7 @@ max_digits_input: typing.Union[int, float]
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3465,14 +3465,14 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3667,7 +3667,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3706,12 +3706,12 @@ def reset_enable_stackdriver_logging() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableConsentBasedRedactionInput">enable_consent_based_redaction_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableInteractionLoggingInput">enable_interaction_logging_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableStackdriverLoggingInput">enable_stackdriver_logging_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableConsentBasedRedaction">enable_consent_based_redaction</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableInteractionLogging">enable_interaction_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableConsentBasedRedactionInput">enable_consent_based_redaction_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableInteractionLoggingInput">enable_interaction_logging_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableStackdriverLoggingInput">enable_stackdriver_logging_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableConsentBasedRedaction">enable_consent_based_redaction</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableInteractionLogging">enable_interaction_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.enableStackdriverLogging">enable_stackdriver_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings">DialogflowCxAgentAdvancedSettingsLoggingSettings</a></code> | *No description.* |
 
 ---
@@ -3746,7 +3746,7 @@ fqn: str
 enable_consent_based_redaction_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3756,7 +3756,7 @@ enable_consent_based_redaction_input: bool | IResolvable
 enable_interaction_logging_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3766,7 +3766,7 @@ enable_interaction_logging_input: bool | IResolvable
 enable_stackdriver_logging_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3776,7 +3776,7 @@ enable_stackdriver_logging_input: bool | IResolvable
 enable_consent_based_redaction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3786,7 +3786,7 @@ enable_consent_based_redaction: bool | IResolvable
 enable_interaction_logging: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3796,7 +3796,7 @@ enable_interaction_logging: bool | IResolvable
 enable_stackdriver_logging: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3826,14 +3826,14 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4033,7 +4033,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4080,7 +4080,7 @@ def put_dtmf_settings(
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.putDtmfSettings.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, incoming audio is processed for DTMF (dual tone multi frequency) events.
 
@@ -4122,7 +4122,7 @@ def put_logging_settings(
 
 ###### `enable_consent_based_redaction`<sup>Optional</sup> <a name="enable_consent_based_redaction" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.putLoggingSettings.parameter.enableConsentBasedRedaction"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted.
 
@@ -4132,7 +4132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_interaction_logging`<sup>Optional</sup> <a name="enable_interaction_logging" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.putLoggingSettings.parameter.enableInteractionLogging"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables DF Interaction logging.
 
@@ -4142,7 +4142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_stackdriver_logging`<sup>Optional</sup> <a name="enable_stackdriver_logging" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.putLoggingSettings.parameter.enableStackdriverLogging"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enables Google Cloud Logging.
 
@@ -4196,7 +4196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `use_timeout_based_endpointing`<sup>Optional</sup> <a name="use_timeout_based_endpointing" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference.putSpeechSettings.parameter.useTimeoutBasedEndpointing"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 
@@ -4377,14 +4377,14 @@ dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4580,7 +4580,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4628,11 +4628,11 @@ def reset_use_timeout_based_endpointing() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.endpointerSensitivityInput">endpointer_sensitivity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.modelsInput">models_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.noSpeechTimeoutInput">no_speech_timeout_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.useTimeoutBasedEndpointingInput">use_timeout_based_endpointing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.useTimeoutBasedEndpointingInput">use_timeout_based_endpointing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.endpointerSensitivity">endpointer_sensitivity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.models">models</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.noSpeechTimeout">no_speech_timeout</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.useTimeoutBasedEndpointing">use_timeout_based_endpointing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.useTimeoutBasedEndpointing">use_timeout_based_endpointing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings">DialogflowCxAgentAdvancedSettingsSpeechSettings</a></code> | *No description.* |
 
 ---
@@ -4697,7 +4697,7 @@ no_speech_timeout_input: str
 use_timeout_based_endpointing_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4737,7 +4737,7 @@ no_speech_timeout: str
 use_timeout_based_endpointing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4767,14 +4767,14 @@ dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4966,7 +4966,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5063,14 +5063,14 @@ dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5267,7 +5267,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5482,14 +5482,14 @@ dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5683,7 +5683,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5848,14 +5848,14 @@ dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6048,7 +6048,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6075,8 +6075,8 @@ def reset_enable_speech_adaptation() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.property.enableSpeechAdaptationInput">enable_speech_adaptation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.property.enableSpeechAdaptation">enable_speech_adaptation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.property.enableSpeechAdaptationInput">enable_speech_adaptation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.property.enableSpeechAdaptation">enable_speech_adaptation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings">DialogflowCxAgentSpeechToTextSettings</a></code> | *No description.* |
 
 ---
@@ -6111,7 +6111,7 @@ fqn: str
 enable_speech_adaptation_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6121,7 +6121,7 @@ enable_speech_adaptation_input: bool | IResolvable
 enable_speech_adaptation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6151,14 +6151,14 @@ dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6351,7 +6351,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6454,14 +6454,14 @@ dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6656,7 +6656,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6701,7 +6701,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6795,7 +6795,7 @@ update: str
 internal_value: IResolvable | DialogflowCxAgentTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a>
 
 ---
 

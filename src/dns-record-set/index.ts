@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsRecordSetConfig extends cdktf.TerraformMetaArguments {
+export interface DnsRecordSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#id DnsRecordSet#id}
   *
@@ -107,67 +107,67 @@ export interface DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBal
   readonly region?: string;
 }
 
-export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
-    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
-    network_url: cdktf.stringToTerraform(struct!.networkUrl),
-    port: cdktf.stringToTerraform(struct!.port),
-    project: cdktf.stringToTerraform(struct!.project),
-    region: cdktf.stringToTerraform(struct!.region),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktn.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktn.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktn.stringToTerraform(struct!.networkUrl),
+    port: cdktn.stringToTerraform(struct!.port),
+    project: cdktn.stringToTerraform(struct!.project),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      value: cdktn.stringToHclTerraform(struct!.ipProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     load_balancer_type: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancerType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_url: {
-      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      value: cdktn.stringToHclTerraform(struct!.networkUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project: {
-      value: cdktf.stringToHclTerraform(struct!.project),
+      value: cdktn.stringToHclTerraform(struct!.project),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -178,9 +178,9 @@ export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBala
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -188,11 +188,11 @@ export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalance
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -229,7 +229,7 @@ export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalance
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -241,7 +241,7 @@ export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalance
       this._project = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -356,15 +356,15 @@ export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalance
   }
 }
 
-export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList extends cdktf.ComplexList {
-  public internalValue? : DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable
+export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList extends cdktn.ComplexList {
+  public internalValue? : DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -387,35 +387,35 @@ export interface DnsRecordSetRoutingPolicyGeoHealthCheckedTargets {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable;
 }
 
 export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyGeoHealthCheckedTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
-    internal_load_balancers: cdktf.listMapper(dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+    external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
+    internal_load_balancers: cdktn.listMapper(dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
 
 
 export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyGeoHealthCheckedTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_endpoints: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalEndpoints),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     internal_load_balancers: {
-      value: cdktf.listMapperHcl(dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      value: cdktn.listMapperHcl(dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
       type: "list",
       storageClassType: "DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList",
@@ -426,14 +426,14 @@ export function dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -485,7 +485,7 @@ export class DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference ext
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
-  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
+  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
   }
   public resetInternalLoadBalancers() {
@@ -515,33 +515,33 @@ export interface DnsRecordSetRoutingPolicyGeo {
   readonly healthCheckedTargets?: DnsRecordSetRoutingPolicyGeoHealthCheckedTargets;
 }
 
-export function dnsRecordSetRoutingPolicyGeoToTerraform(struct?: DnsRecordSetRoutingPolicyGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyGeoToTerraform(struct?: DnsRecordSetRoutingPolicyGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
+    location: cdktn.stringToTerraform(struct!.location),
+    rrdatas: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rrdatas),
     health_checked_targets: dnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
 }
 
 
-export function dnsRecordSetRoutingPolicyGeoToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyGeoToHclTerraform(struct?: DnsRecordSetRoutingPolicyGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rrdatas: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rrdatas),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rrdatas),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -558,9 +558,9 @@ export function dnsRecordSetRoutingPolicyGeoToHclTerraform(struct?: DnsRecordSet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyGeoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -568,11 +568,11 @@ export class DnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsRecordSetRoutingPolicyGeo | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSetRoutingPolicyGeo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -593,7 +593,7 @@ export class DnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSetRoutingPolicyGeo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSetRoutingPolicyGeo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -601,7 +601,7 @@ export class DnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.ComplexOb
       this._rrdatas = undefined;
       this._healthCheckedTargets.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -660,15 +660,15 @@ export class DnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DnsRecordSetRoutingPolicyGeoList extends cdktf.ComplexList {
-  public internalValue? : DnsRecordSetRoutingPolicyGeo[] | cdktf.IResolvable
+export class DnsRecordSetRoutingPolicyGeoList extends cdktn.ComplexList {
+  public internalValue? : DnsRecordSetRoutingPolicyGeo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -724,67 +724,67 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTar
   readonly region?: string;
 }
 
-export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
-    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
-    network_url: cdktf.stringToTerraform(struct!.networkUrl),
-    port: cdktf.stringToTerraform(struct!.port),
-    project: cdktf.stringToTerraform(struct!.project),
-    region: cdktf.stringToTerraform(struct!.region),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktn.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktn.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktn.stringToTerraform(struct!.networkUrl),
+    port: cdktn.stringToTerraform(struct!.port),
+    project: cdktn.stringToTerraform(struct!.project),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      value: cdktn.stringToHclTerraform(struct!.ipProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     load_balancer_type: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancerType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_url: {
-      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      value: cdktn.stringToHclTerraform(struct!.networkUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project: {
-      value: cdktf.stringToHclTerraform(struct!.project),
+      value: cdktn.stringToHclTerraform(struct!.project),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -795,9 +795,9 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTarg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -805,11 +805,11 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -846,7 +846,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -858,7 +858,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets
       this._project = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -973,15 +973,15 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets
   }
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList extends cdktf.ComplexList {
-  public internalValue? : DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable
+export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList extends cdktn.ComplexList {
+  public internalValue? : DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1004,35 +1004,35 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTar
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable;
 }
 
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
-    internal_load_balancers: cdktf.listMapper(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+    external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
+    internal_load_balancers: cdktn.listMapper(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
 
 
 export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_endpoints: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalEndpoints),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     internal_load_balancers: {
-      value: cdktf.listMapperHcl(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      value: cdktn.listMapperHcl(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
       type: "list",
       storageClassType: "DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList",
@@ -1043,14 +1043,14 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTarg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1102,7 +1102,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
-  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
+  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
   }
   public resetInternalLoadBalancers() {
@@ -1132,33 +1132,33 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo {
   readonly healthCheckedTargets?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets;
 }
 
-export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
+    location: cdktn.stringToTerraform(struct!.location),
+    rrdatas: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rrdatas),
     health_checked_targets: dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
 }
 
 
-export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rrdatas: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rrdatas),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rrdatas),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1175,9 +1175,9 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1185,11 +1185,11 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1210,7 +1210,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1218,7 +1218,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference exte
       this._rrdatas = undefined;
       this._healthCheckedTargets.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1277,15 +1277,15 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference exte
   }
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList extends cdktf.ComplexList {
-  public internalValue? : DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktf.IResolvable
+export class DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList extends cdktn.ComplexList {
+  public internalValue? : DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1341,67 +1341,67 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalanc
   readonly region?: string;
 }
 
-export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
-    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
-    network_url: cdktf.stringToTerraform(struct!.networkUrl),
-    port: cdktf.stringToTerraform(struct!.port),
-    project: cdktf.stringToTerraform(struct!.project),
-    region: cdktf.stringToTerraform(struct!.region),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktn.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktn.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktn.stringToTerraform(struct!.networkUrl),
+    port: cdktn.stringToTerraform(struct!.port),
+    project: cdktn.stringToTerraform(struct!.project),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      value: cdktn.stringToHclTerraform(struct!.ipProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     load_balancer_type: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancerType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_url: {
-      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      value: cdktn.stringToHclTerraform(struct!.networkUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project: {
-      value: cdktf.stringToHclTerraform(struct!.project),
+      value: cdktn.stringToHclTerraform(struct!.project),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1412,9 +1412,9 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalance
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1422,11 +1422,11 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1463,7 +1463,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1475,7 +1475,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersO
       this._project = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1590,15 +1590,15 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersO
   }
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList extends cdktf.ComplexList {
-  public internalValue? : DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable
+export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList extends cdktn.ComplexList {
+  public internalValue? : DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1621,35 +1621,35 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackupPrimary {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktn.IResolvable;
 }
 
 export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupPrimary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
-    internal_load_balancers: cdktf.listMapper(dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+    external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
+    internal_load_balancers: cdktn.listMapper(dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
 
 
 export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference | DnsRecordSetRoutingPolicyPrimaryBackupPrimary): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_endpoints: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalEndpoints),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     internal_load_balancers: {
-      value: cdktf.listMapperHcl(dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      value: cdktn.listMapperHcl(dnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
       type: "list",
       storageClassType: "DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList",
@@ -1660,14 +1660,14 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupPrimaryToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1719,7 +1719,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference extend
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
-  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable) {
+  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktn.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
   }
   public resetInternalLoadBalancers() {
@@ -1736,7 +1736,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#enable_geo_fencing_for_backups DnsRecordSet#enable_geo_fencing_for_backups}
   */
-  readonly enableGeoFencingForBackups?: boolean | cdktf.IResolvable;
+  readonly enableGeoFencingForBackups?: boolean | cdktn.IResolvable;
   /**
   * Specifies the percentage of traffic to send to the backup targets even when the primary targets are healthy.
   *
@@ -1748,7 +1748,7 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#backup_geo DnsRecordSet#backup_geo}
   */
-  readonly backupGeo: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktf.IResolvable;
+  readonly backupGeo: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktn.IResolvable;
   /**
   * primary block
   *
@@ -1758,39 +1758,39 @@ export interface DnsRecordSetRoutingPolicyPrimaryBackup {
 }
 
 export function dnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupOutputReference | DnsRecordSetRoutingPolicyPrimaryBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_geo_fencing_for_backups: cdktf.booleanToTerraform(struct!.enableGeoFencingForBackups),
-    trickle_ratio: cdktf.numberToTerraform(struct!.trickleRatio),
-    backup_geo: cdktf.listMapper(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform, true)(struct!.backupGeo),
+    enable_geo_fencing_for_backups: cdktn.booleanToTerraform(struct!.enableGeoFencingForBackups),
+    trickle_ratio: cdktn.numberToTerraform(struct!.trickleRatio),
+    backup_geo: cdktn.listMapper(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform, true)(struct!.backupGeo),
     primary: dnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct!.primary),
   }
 }
 
 
 export function dnsRecordSetRoutingPolicyPrimaryBackupToHclTerraform(struct?: DnsRecordSetRoutingPolicyPrimaryBackupOutputReference | DnsRecordSetRoutingPolicyPrimaryBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_geo_fencing_for_backups: {
-      value: cdktf.booleanToHclTerraform(struct!.enableGeoFencingForBackups),
+      value: cdktn.booleanToHclTerraform(struct!.enableGeoFencingForBackups),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     trickle_ratio: {
-      value: cdktf.numberToHclTerraform(struct!.trickleRatio),
+      value: cdktn.numberToHclTerraform(struct!.trickleRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     backup_geo: {
-      value: cdktf.listMapperHcl(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform, true)(struct!.backupGeo),
+      value: cdktn.listMapperHcl(dnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToHclTerraform, true)(struct!.backupGeo),
       isBlock: true,
       type: "list",
       storageClassType: "DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList",
@@ -1807,14 +1807,14 @@ export function dnsRecordSetRoutingPolicyPrimaryBackupToHclTerraform(struct?: Dn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyPrimaryBackupOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyPrimaryBackupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1858,11 +1858,11 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupOutputReference extends cdktf
   }
 
   // enable_geo_fencing_for_backups - computed: false, optional: true, required: false
-  private _enableGeoFencingForBackups?: boolean | cdktf.IResolvable; 
+  private _enableGeoFencingForBackups?: boolean | cdktn.IResolvable; 
   public get enableGeoFencingForBackups() {
     return this.getBooleanAttribute('enable_geo_fencing_for_backups');
   }
-  public set enableGeoFencingForBackups(value: boolean | cdktf.IResolvable) {
+  public set enableGeoFencingForBackups(value: boolean | cdktn.IResolvable) {
     this._enableGeoFencingForBackups = value;
   }
   public resetEnableGeoFencingForBackups() {
@@ -1894,7 +1894,7 @@ export class DnsRecordSetRoutingPolicyPrimaryBackupOutputReference extends cdktf
   public get backupGeo() {
     return this._backupGeo;
   }
-  public putBackupGeo(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktf.IResolvable) {
+  public putBackupGeo(value: DnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktn.IResolvable) {
     this._backupGeo.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1960,67 +1960,67 @@ export interface DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBal
   readonly region?: string;
 }
 
-export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
-    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
-    network_url: cdktf.stringToTerraform(struct!.networkUrl),
-    port: cdktf.stringToTerraform(struct!.port),
-    project: cdktf.stringToTerraform(struct!.project),
-    region: cdktf.stringToTerraform(struct!.region),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktn.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktn.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktn.stringToTerraform(struct!.networkUrl),
+    port: cdktn.stringToTerraform(struct!.port),
+    project: cdktn.stringToTerraform(struct!.project),
+    region: cdktn.stringToTerraform(struct!.region),
   }
 }
 
 
-export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_protocol: {
-      value: cdktf.stringToHclTerraform(struct!.ipProtocol),
+      value: cdktn.stringToHclTerraform(struct!.ipProtocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     load_balancer_type: {
-      value: cdktf.stringToHclTerraform(struct!.loadBalancerType),
+      value: cdktn.stringToHclTerraform(struct!.loadBalancerType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_url: {
-      value: cdktf.stringToHclTerraform(struct!.networkUrl),
+      value: cdktn.stringToHclTerraform(struct!.networkUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project: {
-      value: cdktf.stringToHclTerraform(struct!.project),
+      value: cdktn.stringToHclTerraform(struct!.project),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2031,9 +2031,9 @@ export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBala
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2041,11 +2041,11 @@ export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalance
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2082,7 +2082,7 @@ export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalance
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2094,7 +2094,7 @@ export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalance
       this._project = undefined;
       this._region = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2209,15 +2209,15 @@ export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalance
   }
 }
 
-export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList extends cdktf.ComplexList {
-  public internalValue? : DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable
+export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList extends cdktn.ComplexList {
+  public internalValue? : DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2240,35 +2240,35 @@ export interface DnsRecordSetRoutingPolicyWrrHealthCheckedTargets {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#internal_load_balancers DnsRecordSet#internal_load_balancers}
   */
-  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+  readonly internalLoadBalancers?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable;
 }
 
 export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyWrrHealthCheckedTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalEndpoints),
-    internal_load_balancers: cdktf.listMapper(dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+    external_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalEndpoints),
+    internal_load_balancers: cdktn.listMapper(dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
   }
 }
 
 
 export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference | DnsRecordSetRoutingPolicyWrrHealthCheckedTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_endpoints: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalEndpoints),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalEndpoints),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     internal_load_balancers: {
-      value: cdktf.listMapperHcl(dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
+      value: cdktn.listMapperHcl(dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToHclTerraform, true)(struct!.internalLoadBalancers),
       isBlock: true,
       type: "list",
       storageClassType: "DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList",
@@ -2279,14 +2279,14 @@ export function dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2338,7 +2338,7 @@ export class DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference ext
   public get internalLoadBalancers() {
     return this._internalLoadBalancers;
   }
-  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
+  public putInternalLoadBalancers(value: DnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktn.IResolvable) {
     this._internalLoadBalancers.internalValue = value;
   }
   public resetInternalLoadBalancers() {
@@ -2368,33 +2368,33 @@ export interface DnsRecordSetRoutingPolicyWrr {
   readonly healthCheckedTargets?: DnsRecordSetRoutingPolicyWrrHealthCheckedTargets;
 }
 
-export function dnsRecordSetRoutingPolicyWrrToTerraform(struct?: DnsRecordSetRoutingPolicyWrr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyWrrToTerraform(struct?: DnsRecordSetRoutingPolicyWrr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    rrdatas: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rrdatas),
+    weight: cdktn.numberToTerraform(struct!.weight),
     health_checked_targets: dnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
 }
 
 
-export function dnsRecordSetRoutingPolicyWrrToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrr | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSetRoutingPolicyWrrToHclTerraform(struct?: DnsRecordSetRoutingPolicyWrr | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rrdatas: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rrdatas),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rrdatas),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2411,9 +2411,9 @@ export function dnsRecordSetRoutingPolicyWrrToHclTerraform(struct?: DnsRecordSet
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyWrrOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2421,11 +2421,11 @@ export class DnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DnsRecordSetRoutingPolicyWrr | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSetRoutingPolicyWrr | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2446,7 +2446,7 @@ export class DnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSetRoutingPolicyWrr | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSetRoutingPolicyWrr | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2454,7 +2454,7 @@ export class DnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.ComplexOb
       this._weight = undefined;
       this._healthCheckedTargets.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2513,15 +2513,15 @@ export class DnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DnsRecordSetRoutingPolicyWrrList extends cdktf.ComplexList {
-  public internalValue? : DnsRecordSetRoutingPolicyWrr[] | cdktf.IResolvable
+export class DnsRecordSetRoutingPolicyWrrList extends cdktn.ComplexList {
+  public internalValue? : DnsRecordSetRoutingPolicyWrr[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2538,7 +2538,7 @@ export interface DnsRecordSetRoutingPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#enable_geo_fencing DnsRecordSet#enable_geo_fencing}
   */
-  readonly enableGeoFencing?: boolean | cdktf.IResolvable;
+  readonly enableGeoFencing?: boolean | cdktn.IResolvable;
   /**
   * Specifies the health check.
   *
@@ -2550,7 +2550,7 @@ export interface DnsRecordSetRoutingPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#geo DnsRecordSet#geo}
   */
-  readonly geo?: DnsRecordSetRoutingPolicyGeo[] | cdktf.IResolvable;
+  readonly geo?: DnsRecordSetRoutingPolicyGeo[] | cdktn.IResolvable;
   /**
   * primary_backup block
   *
@@ -2562,44 +2562,44 @@ export interface DnsRecordSetRoutingPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#wrr DnsRecordSet#wrr}
   */
-  readonly wrr?: DnsRecordSetRoutingPolicyWrr[] | cdktf.IResolvable;
+  readonly wrr?: DnsRecordSetRoutingPolicyWrr[] | cdktn.IResolvable;
 }
 
 export function dnsRecordSetRoutingPolicyToTerraform(struct?: DnsRecordSetRoutingPolicyOutputReference | DnsRecordSetRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_geo_fencing: cdktf.booleanToTerraform(struct!.enableGeoFencing),
-    health_check: cdktf.stringToTerraform(struct!.healthCheck),
-    geo: cdktf.listMapper(dnsRecordSetRoutingPolicyGeoToTerraform, true)(struct!.geo),
+    enable_geo_fencing: cdktn.booleanToTerraform(struct!.enableGeoFencing),
+    health_check: cdktn.stringToTerraform(struct!.healthCheck),
+    geo: cdktn.listMapper(dnsRecordSetRoutingPolicyGeoToTerraform, true)(struct!.geo),
     primary_backup: dnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct!.primaryBackup),
-    wrr: cdktf.listMapper(dnsRecordSetRoutingPolicyWrrToTerraform, true)(struct!.wrr),
+    wrr: cdktn.listMapper(dnsRecordSetRoutingPolicyWrrToTerraform, true)(struct!.wrr),
   }
 }
 
 
 export function dnsRecordSetRoutingPolicyToHclTerraform(struct?: DnsRecordSetRoutingPolicyOutputReference | DnsRecordSetRoutingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_geo_fencing: {
-      value: cdktf.booleanToHclTerraform(struct!.enableGeoFencing),
+      value: cdktn.booleanToHclTerraform(struct!.enableGeoFencing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     health_check: {
-      value: cdktf.stringToHclTerraform(struct!.healthCheck),
+      value: cdktn.stringToHclTerraform(struct!.healthCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     geo: {
-      value: cdktf.listMapperHcl(dnsRecordSetRoutingPolicyGeoToHclTerraform, true)(struct!.geo),
+      value: cdktn.listMapperHcl(dnsRecordSetRoutingPolicyGeoToHclTerraform, true)(struct!.geo),
       isBlock: true,
       type: "list",
       storageClassType: "DnsRecordSetRoutingPolicyGeoList",
@@ -2611,7 +2611,7 @@ export function dnsRecordSetRoutingPolicyToHclTerraform(struct?: DnsRecordSetRou
       storageClassType: "DnsRecordSetRoutingPolicyPrimaryBackupList",
     },
     wrr: {
-      value: cdktf.listMapperHcl(dnsRecordSetRoutingPolicyWrrToHclTerraform, true)(struct!.wrr),
+      value: cdktn.listMapperHcl(dnsRecordSetRoutingPolicyWrrToHclTerraform, true)(struct!.wrr),
       isBlock: true,
       type: "list",
       storageClassType: "DnsRecordSetRoutingPolicyWrrList",
@@ -2622,14 +2622,14 @@ export function dnsRecordSetRoutingPolicyToHclTerraform(struct?: DnsRecordSetRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSetRoutingPolicyOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSetRoutingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2679,11 +2679,11 @@ export class DnsRecordSetRoutingPolicyOutputReference extends cdktf.ComplexObjec
   }
 
   // enable_geo_fencing - computed: false, optional: true, required: false
-  private _enableGeoFencing?: boolean | cdktf.IResolvable; 
+  private _enableGeoFencing?: boolean | cdktn.IResolvable; 
   public get enableGeoFencing() {
     return this.getBooleanAttribute('enable_geo_fencing');
   }
-  public set enableGeoFencing(value: boolean | cdktf.IResolvable) {
+  public set enableGeoFencing(value: boolean | cdktn.IResolvable) {
     this._enableGeoFencing = value;
   }
   public resetEnableGeoFencing() {
@@ -2715,7 +2715,7 @@ export class DnsRecordSetRoutingPolicyOutputReference extends cdktf.ComplexObjec
   public get geo() {
     return this._geo;
   }
-  public putGeo(value: DnsRecordSetRoutingPolicyGeo[] | cdktf.IResolvable) {
+  public putGeo(value: DnsRecordSetRoutingPolicyGeo[] | cdktn.IResolvable) {
     this._geo.internalValue = value;
   }
   public resetGeo() {
@@ -2747,7 +2747,7 @@ export class DnsRecordSetRoutingPolicyOutputReference extends cdktf.ComplexObjec
   public get wrr() {
     return this._wrr;
   }
-  public putWrr(value: DnsRecordSetRoutingPolicyWrr[] | cdktf.IResolvable) {
+  public putWrr(value: DnsRecordSetRoutingPolicyWrr[] | cdktn.IResolvable) {
     this._wrr.internalValue = value;
   }
   public resetWrr() {
@@ -2762,7 +2762,7 @@ export class DnsRecordSetRoutingPolicyOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set google_dns_record_set}
 */
-export class DnsRecordSet extends cdktf.TerraformResource {
+export class DnsRecordSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2773,14 +2773,14 @@ export class DnsRecordSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsRecordSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsRecordSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsRecordSet to import
   * @param importFromId The id of the existing DnsRecordSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_record_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsRecordSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dns_record_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dns_record_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -2949,13 +2949,13 @@ export class DnsRecordSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      managed_zone: cdktf.stringToTerraform(this._managedZone),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rrdatas),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      type: cdktf.stringToTerraform(this._type),
+      id: cdktn.stringToTerraform(this._id),
+      managed_zone: cdktn.stringToTerraform(this._managedZone),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      rrdatas: cdktn.listMapper(cdktn.stringToTerraform, false)(this._rrdatas),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      type: cdktn.stringToTerraform(this._type),
       routing_policy: dnsRecordSetRoutingPolicyToTerraform(this._routingPolicy.internalValue),
     };
   }
@@ -2963,43 +2963,43 @@ export class DnsRecordSet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_zone: {
-        value: cdktf.stringToHclTerraform(this._managedZone),
+        value: cdktn.stringToHclTerraform(this._managedZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rrdatas: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rrdatas),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._rrdatas),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

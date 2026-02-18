@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGooglePrivatecaCertificateTemplateIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGooglePrivatecaCertificateTemplateIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/privateca_certificate_template_iam_policy#certificate_template DataGooglePrivatecaCertificateTemplateIamPolicy#certificate_template}
   */
@@ -36,7 +36,7 @@ export interface DataGooglePrivatecaCertificateTemplateIamPolicyConfig extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy}
 */
-export class DataGooglePrivatecaCertificateTemplateIamPolicy extends cdktf.TerraformDataSource {
+export class DataGooglePrivatecaCertificateTemplateIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataGooglePrivatecaCertificateTemplateIamPolicy extends cdktf.Terra
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGooglePrivatecaCertificateTemplateIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGooglePrivatecaCertificateTemplateIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePrivatecaCertificateTemplateIamPolicy to import
   * @param importFromId The id of the existing DataGooglePrivatecaCertificateTemplateIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/privateca_certificate_template_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePrivatecaCertificateTemplateIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_privateca_certificate_template_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_privateca_certificate_template_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -171,35 +171,35 @@ export class DataGooglePrivatecaCertificateTemplateIamPolicy extends cdktf.Terra
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_template: cdktf.stringToTerraform(this._certificateTemplate),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      certificate_template: cdktn.stringToTerraform(this._certificateTemplate),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_template: {
-        value: cdktf.stringToHclTerraform(this._certificateTemplate),
+        value: cdktn.stringToHclTerraform(this._certificateTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

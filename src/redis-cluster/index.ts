@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedisClusterConfig extends cdktf.TerraformMetaArguments {
+export interface RedisClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Allows customers to specify if they are okay with deploying a multi-zone
   * cluster in less than 3 zones. Once set, if there is a zonal outage during
@@ -20,7 +20,7 @@ export interface RedisClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster#allow_fewer_zones_deployment RedisCluster#allow_fewer_zones_deployment}
   */
-  readonly allowFewerZonesDeployment?: boolean | cdktf.IResolvable;
+  readonly allowFewerZonesDeployment?: boolean | cdktn.IResolvable;
   /**
   * Optional. The authorization mode of the Redis cluster. If not provided, auth feature is disabled for the cluster. Default value: "AUTH_MODE_DISABLED" Possible values: ["AUTH_MODE_UNSPECIFIED", "AUTH_MODE_IAM_AUTH", "AUTH_MODE_DISABLED"]
   *
@@ -34,7 +34,7 @@ export interface RedisClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster#deletion_protection_enabled RedisCluster#deletion_protection_enabled}
   */
-  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster#id RedisCluster#id}
   *
@@ -140,7 +140,7 @@ export interface RedisClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster#psc_configs RedisCluster#psc_configs}
   */
-  readonly pscConfigs?: RedisClusterPscConfigs[] | cdktf.IResolvable;
+  readonly pscConfigs?: RedisClusterPscConfigs[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -158,8 +158,8 @@ export interface RedisClusterDiscoveryEndpointsPscConfig {
 }
 
 export function redisClusterDiscoveryEndpointsPscConfigToTerraform(struct?: RedisClusterDiscoveryEndpointsPscConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -168,8 +168,8 @@ export function redisClusterDiscoveryEndpointsPscConfigToTerraform(struct?: Redi
 
 
 export function redisClusterDiscoveryEndpointsPscConfigToHclTerraform(struct?: RedisClusterDiscoveryEndpointsPscConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -177,7 +177,7 @@ export function redisClusterDiscoveryEndpointsPscConfigToHclTerraform(struct?: R
   return attrs;
 }
 
-export class RedisClusterDiscoveryEndpointsPscConfigOutputReference extends cdktf.ComplexObject {
+export class RedisClusterDiscoveryEndpointsPscConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -186,7 +186,7 @@ export class RedisClusterDiscoveryEndpointsPscConfigOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -211,14 +211,14 @@ export class RedisClusterDiscoveryEndpointsPscConfigOutputReference extends cdkt
   }
 }
 
-export class RedisClusterDiscoveryEndpointsPscConfigList extends cdktf.ComplexList {
+export class RedisClusterDiscoveryEndpointsPscConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -233,8 +233,8 @@ export interface RedisClusterDiscoveryEndpoints {
 }
 
 export function redisClusterDiscoveryEndpointsToTerraform(struct?: RedisClusterDiscoveryEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -243,8 +243,8 @@ export function redisClusterDiscoveryEndpointsToTerraform(struct?: RedisClusterD
 
 
 export function redisClusterDiscoveryEndpointsToHclTerraform(struct?: RedisClusterDiscoveryEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -252,7 +252,7 @@ export function redisClusterDiscoveryEndpointsToHclTerraform(struct?: RedisClust
   return attrs;
 }
 
-export class RedisClusterDiscoveryEndpointsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterDiscoveryEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -261,7 +261,7 @@ export class RedisClusterDiscoveryEndpointsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -297,14 +297,14 @@ export class RedisClusterDiscoveryEndpointsOutputReference extends cdktf.Complex
   }
 }
 
-export class RedisClusterDiscoveryEndpointsList extends cdktf.ComplexList {
+export class RedisClusterDiscoveryEndpointsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -319,8 +319,8 @@ export interface RedisClusterMaintenanceSchedule {
 }
 
 export function redisClusterMaintenanceScheduleToTerraform(struct?: RedisClusterMaintenanceSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -329,8 +329,8 @@ export function redisClusterMaintenanceScheduleToTerraform(struct?: RedisCluster
 
 
 export function redisClusterMaintenanceScheduleToHclTerraform(struct?: RedisClusterMaintenanceSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -338,7 +338,7 @@ export function redisClusterMaintenanceScheduleToHclTerraform(struct?: RedisClus
   return attrs;
 }
 
-export class RedisClusterMaintenanceScheduleOutputReference extends cdktf.ComplexObject {
+export class RedisClusterMaintenanceScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -347,7 +347,7 @@ export class RedisClusterMaintenanceScheduleOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -382,14 +382,14 @@ export class RedisClusterMaintenanceScheduleOutputReference extends cdktf.Comple
   }
 }
 
-export class RedisClusterMaintenanceScheduleList extends cdktf.ComplexList {
+export class RedisClusterMaintenanceScheduleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -404,8 +404,8 @@ export interface RedisClusterManagedServerCaCaCerts {
 }
 
 export function redisClusterManagedServerCaCaCertsToTerraform(struct?: RedisClusterManagedServerCaCaCerts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -414,8 +414,8 @@ export function redisClusterManagedServerCaCaCertsToTerraform(struct?: RedisClus
 
 
 export function redisClusterManagedServerCaCaCertsToHclTerraform(struct?: RedisClusterManagedServerCaCaCerts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -423,7 +423,7 @@ export function redisClusterManagedServerCaCaCertsToHclTerraform(struct?: RedisC
   return attrs;
 }
 
-export class RedisClusterManagedServerCaCaCertsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterManagedServerCaCaCertsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -432,7 +432,7 @@ export class RedisClusterManagedServerCaCaCertsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -457,14 +457,14 @@ export class RedisClusterManagedServerCaCaCertsOutputReference extends cdktf.Com
   }
 }
 
-export class RedisClusterManagedServerCaCaCertsList extends cdktf.ComplexList {
+export class RedisClusterManagedServerCaCaCertsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -479,8 +479,8 @@ export interface RedisClusterManagedServerCa {
 }
 
 export function redisClusterManagedServerCaToTerraform(struct?: RedisClusterManagedServerCa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -489,8 +489,8 @@ export function redisClusterManagedServerCaToTerraform(struct?: RedisClusterMana
 
 
 export function redisClusterManagedServerCaToHclTerraform(struct?: RedisClusterManagedServerCa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -498,7 +498,7 @@ export function redisClusterManagedServerCaToHclTerraform(struct?: RedisClusterM
   return attrs;
 }
 
-export class RedisClusterManagedServerCaOutputReference extends cdktf.ComplexObject {
+export class RedisClusterManagedServerCaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -507,7 +507,7 @@ export class RedisClusterManagedServerCaOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -533,14 +533,14 @@ export class RedisClusterManagedServerCaOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class RedisClusterManagedServerCaList extends cdktf.ComplexList {
+export class RedisClusterManagedServerCaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -555,8 +555,8 @@ export interface RedisClusterPscConnections {
 }
 
 export function redisClusterPscConnectionsToTerraform(struct?: RedisClusterPscConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -565,8 +565,8 @@ export function redisClusterPscConnectionsToTerraform(struct?: RedisClusterPscCo
 
 
 export function redisClusterPscConnectionsToHclTerraform(struct?: RedisClusterPscConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -574,7 +574,7 @@ export function redisClusterPscConnectionsToHclTerraform(struct?: RedisClusterPs
   return attrs;
 }
 
-export class RedisClusterPscConnectionsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterPscConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -583,7 +583,7 @@ export class RedisClusterPscConnectionsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -628,14 +628,14 @@ export class RedisClusterPscConnectionsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class RedisClusterPscConnectionsList extends cdktf.ComplexList {
+export class RedisClusterPscConnectionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -650,8 +650,8 @@ export interface RedisClusterPscServiceAttachments {
 }
 
 export function redisClusterPscServiceAttachmentsToTerraform(struct?: RedisClusterPscServiceAttachments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -660,8 +660,8 @@ export function redisClusterPscServiceAttachmentsToTerraform(struct?: RedisClust
 
 
 export function redisClusterPscServiceAttachmentsToHclTerraform(struct?: RedisClusterPscServiceAttachments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -669,7 +669,7 @@ export function redisClusterPscServiceAttachmentsToHclTerraform(struct?: RedisCl
   return attrs;
 }
 
-export class RedisClusterPscServiceAttachmentsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterPscServiceAttachmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -678,7 +678,7 @@ export class RedisClusterPscServiceAttachmentsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -708,14 +708,14 @@ export class RedisClusterPscServiceAttachmentsOutputReference extends cdktf.Comp
   }
 }
 
-export class RedisClusterPscServiceAttachmentsList extends cdktf.ComplexList {
+export class RedisClusterPscServiceAttachmentsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -730,8 +730,8 @@ export interface RedisClusterStateInfoUpdateInfo {
 }
 
 export function redisClusterStateInfoUpdateInfoToTerraform(struct?: RedisClusterStateInfoUpdateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -740,8 +740,8 @@ export function redisClusterStateInfoUpdateInfoToTerraform(struct?: RedisCluster
 
 
 export function redisClusterStateInfoUpdateInfoToHclTerraform(struct?: RedisClusterStateInfoUpdateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -749,7 +749,7 @@ export function redisClusterStateInfoUpdateInfoToHclTerraform(struct?: RedisClus
   return attrs;
 }
 
-export class RedisClusterStateInfoUpdateInfoOutputReference extends cdktf.ComplexObject {
+export class RedisClusterStateInfoUpdateInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -758,7 +758,7 @@ export class RedisClusterStateInfoUpdateInfoOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -788,14 +788,14 @@ export class RedisClusterStateInfoUpdateInfoOutputReference extends cdktf.Comple
   }
 }
 
-export class RedisClusterStateInfoUpdateInfoList extends cdktf.ComplexList {
+export class RedisClusterStateInfoUpdateInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -810,8 +810,8 @@ export interface RedisClusterStateInfo {
 }
 
 export function redisClusterStateInfoToTerraform(struct?: RedisClusterStateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -820,8 +820,8 @@ export function redisClusterStateInfoToTerraform(struct?: RedisClusterStateInfo)
 
 
 export function redisClusterStateInfoToHclTerraform(struct?: RedisClusterStateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -829,7 +829,7 @@ export function redisClusterStateInfoToHclTerraform(struct?: RedisClusterStateIn
   return attrs;
 }
 
-export class RedisClusterStateInfoOutputReference extends cdktf.ComplexObject {
+export class RedisClusterStateInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -838,7 +838,7 @@ export class RedisClusterStateInfoOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -864,14 +864,14 @@ export class RedisClusterStateInfoOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RedisClusterStateInfoList extends cdktf.ComplexList {
+export class RedisClusterStateInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -893,24 +893,24 @@ export interface RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTim
 }
 
 export function redisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeToTerraform(struct?: RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference | RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
+    hours: cdktn.numberToTerraform(struct!.hours),
   }
 }
 
 
 export function redisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeToHclTerraform(struct?: RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference | RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -921,14 +921,14 @@ export function redisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference extends cdktf.ComplexObject {
+export class RedisClusterAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -976,8 +976,8 @@ export interface RedisClusterAutomatedBackupConfigFixedFrequencySchedule {
 }
 
 export function redisClusterAutomatedBackupConfigFixedFrequencyScheduleToTerraform(struct?: RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference | RedisClusterAutomatedBackupConfigFixedFrequencySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -987,8 +987,8 @@ export function redisClusterAutomatedBackupConfigFixedFrequencyScheduleToTerrafo
 
 
 export function redisClusterAutomatedBackupConfigFixedFrequencyScheduleToHclTerraform(struct?: RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference | RedisClusterAutomatedBackupConfigFixedFrequencySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1004,14 +1004,14 @@ export function redisClusterAutomatedBackupConfigFixedFrequencyScheduleToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference extends cdktf.ComplexObject {
+export class RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1067,25 +1067,25 @@ export interface RedisClusterAutomatedBackupConfig {
 }
 
 export function redisClusterAutomatedBackupConfigToTerraform(struct?: RedisClusterAutomatedBackupConfigOutputReference | RedisClusterAutomatedBackupConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    retention: cdktf.stringToTerraform(struct!.retention),
+    retention: cdktn.stringToTerraform(struct!.retention),
     fixed_frequency_schedule: redisClusterAutomatedBackupConfigFixedFrequencyScheduleToTerraform(struct!.fixedFrequencySchedule),
   }
 }
 
 
 export function redisClusterAutomatedBackupConfigToHclTerraform(struct?: RedisClusterAutomatedBackupConfigOutputReference | RedisClusterAutomatedBackupConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     retention: {
-      value: cdktf.stringToHclTerraform(struct!.retention),
+      value: cdktn.stringToHclTerraform(struct!.retention),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1102,14 +1102,14 @@ export function redisClusterAutomatedBackupConfigToHclTerraform(struct?: RedisCl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterAutomatedBackupConfigOutputReference extends cdktf.ComplexObject {
+export class RedisClusterAutomatedBackupConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1170,8 +1170,8 @@ export interface RedisClusterCrossClusterReplicationConfigMembershipPrimaryClust
 }
 
 export function redisClusterCrossClusterReplicationConfigMembershipPrimaryClusterToTerraform(struct?: RedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1180,8 +1180,8 @@ export function redisClusterCrossClusterReplicationConfigMembershipPrimaryCluste
 
 
 export function redisClusterCrossClusterReplicationConfigMembershipPrimaryClusterToHclTerraform(struct?: RedisClusterCrossClusterReplicationConfigMembershipPrimaryCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1189,7 +1189,7 @@ export function redisClusterCrossClusterReplicationConfigMembershipPrimaryCluste
   return attrs;
 }
 
-export class RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference extends cdktf.ComplexObject {
+export class RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1198,7 +1198,7 @@ export class RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1228,14 +1228,14 @@ export class RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOu
   }
 }
 
-export class RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList extends cdktf.ComplexList {
+export class RedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1250,8 +1250,8 @@ export interface RedisClusterCrossClusterReplicationConfigMembershipSecondaryClu
 }
 
 export function redisClusterCrossClusterReplicationConfigMembershipSecondaryClustersToTerraform(struct?: RedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1260,8 +1260,8 @@ export function redisClusterCrossClusterReplicationConfigMembershipSecondaryClus
 
 
 export function redisClusterCrossClusterReplicationConfigMembershipSecondaryClustersToHclTerraform(struct?: RedisClusterCrossClusterReplicationConfigMembershipSecondaryClusters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1269,7 +1269,7 @@ export function redisClusterCrossClusterReplicationConfigMembershipSecondaryClus
   return attrs;
 }
 
-export class RedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference extends cdktf.ComplexObject {
+export class RedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1278,7 +1278,7 @@ export class RedisClusterCrossClusterReplicationConfigMembershipSecondaryCluster
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1308,14 +1308,14 @@ export class RedisClusterCrossClusterReplicationConfigMembershipSecondaryCluster
   }
 }
 
-export class RedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList extends cdktf.ComplexList {
+export class RedisClusterCrossClusterReplicationConfigMembershipSecondaryClustersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1330,8 +1330,8 @@ export interface RedisClusterCrossClusterReplicationConfigMembership {
 }
 
 export function redisClusterCrossClusterReplicationConfigMembershipToTerraform(struct?: RedisClusterCrossClusterReplicationConfigMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1340,8 +1340,8 @@ export function redisClusterCrossClusterReplicationConfigMembershipToTerraform(s
 
 
 export function redisClusterCrossClusterReplicationConfigMembershipToHclTerraform(struct?: RedisClusterCrossClusterReplicationConfigMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1349,7 +1349,7 @@ export function redisClusterCrossClusterReplicationConfigMembershipToHclTerrafor
   return attrs;
 }
 
-export class RedisClusterCrossClusterReplicationConfigMembershipOutputReference extends cdktf.ComplexObject {
+export class RedisClusterCrossClusterReplicationConfigMembershipOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1358,7 +1358,7 @@ export class RedisClusterCrossClusterReplicationConfigMembershipOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1390,14 +1390,14 @@ export class RedisClusterCrossClusterReplicationConfigMembershipOutputReference 
   }
 }
 
-export class RedisClusterCrossClusterReplicationConfigMembershipList extends cdktf.ComplexList {
+export class RedisClusterCrossClusterReplicationConfigMembershipList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1418,24 +1418,24 @@ export interface RedisClusterCrossClusterReplicationConfigPrimaryCluster {
 }
 
 export function redisClusterCrossClusterReplicationConfigPrimaryClusterToTerraform(struct?: RedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference | RedisClusterCrossClusterReplicationConfigPrimaryCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster: cdktf.stringToTerraform(struct!.cluster),
+    cluster: cdktn.stringToTerraform(struct!.cluster),
   }
 }
 
 
 export function redisClusterCrossClusterReplicationConfigPrimaryClusterToHclTerraform(struct?: RedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference | RedisClusterCrossClusterReplicationConfigPrimaryCluster): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster: {
-      value: cdktf.stringToHclTerraform(struct!.cluster),
+      value: cdktn.stringToHclTerraform(struct!.cluster),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1446,14 +1446,14 @@ export function redisClusterCrossClusterReplicationConfigPrimaryClusterToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference extends cdktf.ComplexObject {
+export class RedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1508,25 +1508,25 @@ export interface RedisClusterCrossClusterReplicationConfigSecondaryClusters {
   readonly cluster?: string;
 }
 
-export function redisClusterCrossClusterReplicationConfigSecondaryClustersToTerraform(struct?: RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterCrossClusterReplicationConfigSecondaryClustersToTerraform(struct?: RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster: cdktf.stringToTerraform(struct!.cluster),
+    cluster: cdktn.stringToTerraform(struct!.cluster),
   }
 }
 
 
-export function redisClusterCrossClusterReplicationConfigSecondaryClustersToHclTerraform(struct?: RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterCrossClusterReplicationConfigSecondaryClustersToHclTerraform(struct?: RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster: {
-      value: cdktf.stringToHclTerraform(struct!.cluster),
+      value: cdktn.stringToHclTerraform(struct!.cluster),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1537,9 +1537,9 @@ export function redisClusterCrossClusterReplicationConfigSecondaryClustersToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference extends cdktf.ComplexObject {
+export class RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1547,11 +1547,11 @@ export class RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1564,13 +1564,13 @@ export class RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisClusterCrossClusterReplicationConfigSecondaryClusters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cluster = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1603,15 +1603,15 @@ export class RedisClusterCrossClusterReplicationConfigSecondaryClustersOutputRef
   }
 }
 
-export class RedisClusterCrossClusterReplicationConfigSecondaryClustersList extends cdktf.ComplexList {
-  public internalValue? : RedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktf.IResolvable
+export class RedisClusterCrossClusterReplicationConfigSecondaryClustersList extends cdktn.ComplexList {
+  public internalValue? : RedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1648,30 +1648,30 @@ export interface RedisClusterCrossClusterReplicationConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster#secondary_clusters RedisCluster#secondary_clusters}
   */
-  readonly secondaryClusters?: RedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktf.IResolvable;
+  readonly secondaryClusters?: RedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktn.IResolvable;
 }
 
 export function redisClusterCrossClusterReplicationConfigToTerraform(struct?: RedisClusterCrossClusterReplicationConfigOutputReference | RedisClusterCrossClusterReplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_role: cdktf.stringToTerraform(struct!.clusterRole),
+    cluster_role: cdktn.stringToTerraform(struct!.clusterRole),
     primary_cluster: redisClusterCrossClusterReplicationConfigPrimaryClusterToTerraform(struct!.primaryCluster),
-    secondary_clusters: cdktf.listMapper(redisClusterCrossClusterReplicationConfigSecondaryClustersToTerraform, true)(struct!.secondaryClusters),
+    secondary_clusters: cdktn.listMapper(redisClusterCrossClusterReplicationConfigSecondaryClustersToTerraform, true)(struct!.secondaryClusters),
   }
 }
 
 
 export function redisClusterCrossClusterReplicationConfigToHclTerraform(struct?: RedisClusterCrossClusterReplicationConfigOutputReference | RedisClusterCrossClusterReplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_role: {
-      value: cdktf.stringToHclTerraform(struct!.clusterRole),
+      value: cdktn.stringToHclTerraform(struct!.clusterRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1683,7 +1683,7 @@ export function redisClusterCrossClusterReplicationConfigToHclTerraform(struct?:
       storageClassType: "RedisClusterCrossClusterReplicationConfigPrimaryClusterList",
     },
     secondary_clusters: {
-      value: cdktf.listMapperHcl(redisClusterCrossClusterReplicationConfigSecondaryClustersToHclTerraform, true)(struct!.secondaryClusters),
+      value: cdktn.listMapperHcl(redisClusterCrossClusterReplicationConfigSecondaryClustersToHclTerraform, true)(struct!.secondaryClusters),
       isBlock: true,
       type: "list",
       storageClassType: "RedisClusterCrossClusterReplicationConfigSecondaryClustersList",
@@ -1694,14 +1694,14 @@ export function redisClusterCrossClusterReplicationConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterCrossClusterReplicationConfigOutputReference extends cdktf.ComplexObject {
+export class RedisClusterCrossClusterReplicationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1786,7 +1786,7 @@ export class RedisClusterCrossClusterReplicationConfigOutputReference extends cd
   public get secondaryClusters() {
     return this._secondaryClusters;
   }
-  public putSecondaryClusters(value: RedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktf.IResolvable) {
+  public putSecondaryClusters(value: RedisClusterCrossClusterReplicationConfigSecondaryClusters[] | cdktn.IResolvable) {
     this._secondaryClusters.internalValue = value;
   }
   public resetSecondaryClusters() {
@@ -1807,24 +1807,24 @@ export interface RedisClusterGcsSource {
 }
 
 export function redisClusterGcsSourceToTerraform(struct?: RedisClusterGcsSourceOutputReference | RedisClusterGcsSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
+    uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.uris),
   }
 }
 
 
 export function redisClusterGcsSourceToHclTerraform(struct?: RedisClusterGcsSourceOutputReference | RedisClusterGcsSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.uris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.uris),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1835,14 +1835,14 @@ export function redisClusterGcsSourceToHclTerraform(struct?: RedisClusterGcsSour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterGcsSourceOutputReference extends cdktf.ComplexObject {
+export class RedisClusterGcsSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1870,7 +1870,7 @@ export class RedisClusterGcsSourceOutputReference extends cdktf.ComplexObject {
   // uris - computed: false, optional: false, required: true
   private _uris?: string[]; 
   public get uris() {
-    return cdktf.Fn.tolist(this.getListAttribute('uris'));
+    return cdktn.Fn.tolist(this.getListAttribute('uris'));
   }
   public set uris(value: string[]) {
     this._uris = value;
@@ -1910,45 +1910,45 @@ export interface RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime {
 }
 
 export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeToTerraform(struct?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference | RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
 export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeToHclTerraform(struct?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference | RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1959,14 +1959,14 @@ export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
+export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2097,26 +2097,26 @@ export interface RedisClusterMaintenancePolicyWeeklyMaintenanceWindow {
   readonly startTime: RedisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTime;
 }
 
-export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowToTerraform(struct?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowToTerraform(struct?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.stringToTerraform(struct!.day),
+    day: cdktn.stringToTerraform(struct!.day),
     start_time: redisClusterMaintenancePolicyWeeklyMaintenanceWindowStartTimeToTerraform(struct!.startTime),
   }
 }
 
 
-export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform(struct?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform(struct?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.stringToHclTerraform(struct!.day),
+      value: cdktn.stringToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2133,9 +2133,9 @@ export function redisClusterMaintenancePolicyWeeklyMaintenanceWindowToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2143,11 +2143,11 @@ export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2164,14 +2164,14 @@ export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._day = undefined;
       this._startTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2215,15 +2215,15 @@ export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowOutputReference
   }
 }
 
-export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList extends cdktf.ComplexList {
-  public internalValue? : RedisClusterMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable
+export class RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList extends cdktn.ComplexList {
+  public internalValue? : RedisClusterMaintenancePolicyWeeklyMaintenanceWindow[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2240,28 +2240,28 @@ export interface RedisClusterMaintenancePolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster#weekly_maintenance_window RedisCluster#weekly_maintenance_window}
   */
-  readonly weeklyMaintenanceWindow?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable;
+  readonly weeklyMaintenanceWindow?: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow[] | cdktn.IResolvable;
 }
 
 export function redisClusterMaintenancePolicyToTerraform(struct?: RedisClusterMaintenancePolicyOutputReference | RedisClusterMaintenancePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weekly_maintenance_window: cdktf.listMapper(redisClusterMaintenancePolicyWeeklyMaintenanceWindowToTerraform, true)(struct!.weeklyMaintenanceWindow),
+    weekly_maintenance_window: cdktn.listMapper(redisClusterMaintenancePolicyWeeklyMaintenanceWindowToTerraform, true)(struct!.weeklyMaintenanceWindow),
   }
 }
 
 
 export function redisClusterMaintenancePolicyToHclTerraform(struct?: RedisClusterMaintenancePolicyOutputReference | RedisClusterMaintenancePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     weekly_maintenance_window: {
-      value: cdktf.listMapperHcl(redisClusterMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform, true)(struct!.weeklyMaintenanceWindow),
+      value: cdktn.listMapperHcl(redisClusterMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform, true)(struct!.weeklyMaintenanceWindow),
       isBlock: true,
       type: "list",
       storageClassType: "RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList",
@@ -2272,14 +2272,14 @@ export function redisClusterMaintenancePolicyToHclTerraform(struct?: RedisCluste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterMaintenancePolicyOutputReference extends cdktf.ComplexObject {
+export class RedisClusterMaintenancePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2319,7 +2319,7 @@ export class RedisClusterMaintenancePolicyOutputReference extends cdktf.ComplexO
   public get weeklyMaintenanceWindow() {
     return this._weeklyMaintenanceWindow;
   }
-  public putWeeklyMaintenanceWindow(value: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable) {
+  public putWeeklyMaintenanceWindow(value: RedisClusterMaintenancePolicyWeeklyMaintenanceWindow[] | cdktn.IResolvable) {
     this._weeklyMaintenanceWindow.internalValue = value;
   }
   public resetWeeklyMaintenanceWindow() {
@@ -2340,24 +2340,24 @@ export interface RedisClusterManagedBackupSource {
 }
 
 export function redisClusterManagedBackupSourceToTerraform(struct?: RedisClusterManagedBackupSourceOutputReference | RedisClusterManagedBackupSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup: cdktf.stringToTerraform(struct!.backup),
+    backup: cdktn.stringToTerraform(struct!.backup),
   }
 }
 
 
 export function redisClusterManagedBackupSourceToHclTerraform(struct?: RedisClusterManagedBackupSourceOutputReference | RedisClusterManagedBackupSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup: {
-      value: cdktf.stringToHclTerraform(struct!.backup),
+      value: cdktn.stringToHclTerraform(struct!.backup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2368,14 +2368,14 @@ export function redisClusterManagedBackupSourceToHclTerraform(struct?: RedisClus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterManagedBackupSourceOutputReference extends cdktf.ComplexObject {
+export class RedisClusterManagedBackupSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2427,24 +2427,24 @@ export interface RedisClusterPersistenceConfigAofConfig {
 }
 
 export function redisClusterPersistenceConfigAofConfigToTerraform(struct?: RedisClusterPersistenceConfigAofConfigOutputReference | RedisClusterPersistenceConfigAofConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    append_fsync: cdktf.stringToTerraform(struct!.appendFsync),
+    append_fsync: cdktn.stringToTerraform(struct!.appendFsync),
   }
 }
 
 
 export function redisClusterPersistenceConfigAofConfigToHclTerraform(struct?: RedisClusterPersistenceConfigAofConfigOutputReference | RedisClusterPersistenceConfigAofConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     append_fsync: {
-      value: cdktf.stringToHclTerraform(struct!.appendFsync),
+      value: cdktn.stringToHclTerraform(struct!.appendFsync),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2455,14 +2455,14 @@ export function redisClusterPersistenceConfigAofConfigToHclTerraform(struct?: Re
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterPersistenceConfigAofConfigOutputReference extends cdktf.ComplexObject {
+export class RedisClusterPersistenceConfigAofConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2526,31 +2526,31 @@ export interface RedisClusterPersistenceConfigRdbConfig {
 }
 
 export function redisClusterPersistenceConfigRdbConfigToTerraform(struct?: RedisClusterPersistenceConfigRdbConfigOutputReference | RedisClusterPersistenceConfigRdbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rdb_snapshot_period: cdktf.stringToTerraform(struct!.rdbSnapshotPeriod),
-    rdb_snapshot_start_time: cdktf.stringToTerraform(struct!.rdbSnapshotStartTime),
+    rdb_snapshot_period: cdktn.stringToTerraform(struct!.rdbSnapshotPeriod),
+    rdb_snapshot_start_time: cdktn.stringToTerraform(struct!.rdbSnapshotStartTime),
   }
 }
 
 
 export function redisClusterPersistenceConfigRdbConfigToHclTerraform(struct?: RedisClusterPersistenceConfigRdbConfigOutputReference | RedisClusterPersistenceConfigRdbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rdb_snapshot_period: {
-      value: cdktf.stringToHclTerraform(struct!.rdbSnapshotPeriod),
+      value: cdktn.stringToHclTerraform(struct!.rdbSnapshotPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rdb_snapshot_start_time: {
-      value: cdktf.stringToHclTerraform(struct!.rdbSnapshotStartTime),
+      value: cdktn.stringToHclTerraform(struct!.rdbSnapshotStartTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2561,14 +2561,14 @@ export function redisClusterPersistenceConfigRdbConfigToHclTerraform(struct?: Re
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterPersistenceConfigRdbConfigOutputReference extends cdktf.ComplexObject {
+export class RedisClusterPersistenceConfigRdbConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2657,12 +2657,12 @@ export interface RedisClusterPersistenceConfig {
 }
 
 export function redisClusterPersistenceConfigToTerraform(struct?: RedisClusterPersistenceConfigOutputReference | RedisClusterPersistenceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
     aof_config: redisClusterPersistenceConfigAofConfigToTerraform(struct!.aofConfig),
     rdb_config: redisClusterPersistenceConfigRdbConfigToTerraform(struct!.rdbConfig),
   }
@@ -2670,13 +2670,13 @@ export function redisClusterPersistenceConfigToTerraform(struct?: RedisClusterPe
 
 
 export function redisClusterPersistenceConfigToHclTerraform(struct?: RedisClusterPersistenceConfigOutputReference | RedisClusterPersistenceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2699,14 +2699,14 @@ export function redisClusterPersistenceConfigToHclTerraform(struct?: RedisCluste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterPersistenceConfigOutputReference extends cdktf.ComplexObject {
+export class RedisClusterPersistenceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2802,25 +2802,25 @@ export interface RedisClusterPscConfigs {
   readonly network: string;
 }
 
-export function redisClusterPscConfigsToTerraform(struct?: RedisClusterPscConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterPscConfigsToTerraform(struct?: RedisClusterPscConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
+    network: cdktn.stringToTerraform(struct!.network),
   }
 }
 
 
-export function redisClusterPscConfigsToHclTerraform(struct?: RedisClusterPscConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterPscConfigsToHclTerraform(struct?: RedisClusterPscConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2831,9 +2831,9 @@ export function redisClusterPscConfigsToHclTerraform(struct?: RedisClusterPscCon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterPscConfigsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterPscConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2841,11 +2841,11 @@ export class RedisClusterPscConfigsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedisClusterPscConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisClusterPscConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2858,13 +2858,13 @@ export class RedisClusterPscConfigsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisClusterPscConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisClusterPscConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2889,15 +2889,15 @@ export class RedisClusterPscConfigsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RedisClusterPscConfigsList extends cdktf.ComplexList {
-  public internalValue? : RedisClusterPscConfigs[] | cdktf.IResolvable
+export class RedisClusterPscConfigsList extends cdktn.ComplexList {
+  public internalValue? : RedisClusterPscConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2923,39 +2923,39 @@ export interface RedisClusterTimeouts {
   readonly update?: string;
 }
 
-export function redisClusterTimeoutsToTerraform(struct?: RedisClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterTimeoutsToTerraform(struct?: RedisClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function redisClusterTimeoutsToHclTerraform(struct?: RedisClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterTimeoutsToHclTerraform(struct?: RedisClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2966,19 +2966,19 @@ export function redisClusterTimeoutsToHclTerraform(struct?: RedisClusterTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedisClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2999,7 +2999,7 @@ export class RedisClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3007,7 +3007,7 @@ export class RedisClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3085,31 +3085,31 @@ export interface RedisClusterZoneDistributionConfig {
 }
 
 export function redisClusterZoneDistributionConfigToTerraform(struct?: RedisClusterZoneDistributionConfigOutputReference | RedisClusterZoneDistributionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    zone: cdktf.stringToTerraform(struct!.zone),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    zone: cdktn.stringToTerraform(struct!.zone),
   }
 }
 
 
 export function redisClusterZoneDistributionConfigToHclTerraform(struct?: RedisClusterZoneDistributionConfigOutputReference | RedisClusterZoneDistributionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone: {
-      value: cdktf.stringToHclTerraform(struct!.zone),
+      value: cdktn.stringToHclTerraform(struct!.zone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3120,14 +3120,14 @@ export function redisClusterZoneDistributionConfigToHclTerraform(struct?: RedisC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterZoneDistributionConfigOutputReference extends cdktf.ComplexObject {
+export class RedisClusterZoneDistributionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3194,7 +3194,7 @@ export class RedisClusterZoneDistributionConfigOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster google_redis_cluster}
 */
-export class RedisCluster extends cdktf.TerraformResource {
+export class RedisCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3205,14 +3205,14 @@ export class RedisCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedisCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedisCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedisCluster to import
   * @param importFromId The id of the existing RedisCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedisCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_redis_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_redis_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -3271,11 +3271,11 @@ export class RedisCluster extends cdktf.TerraformResource {
   // ==========
 
   // allow_fewer_zones_deployment - computed: false, optional: true, required: false
-  private _allowFewerZonesDeployment?: boolean | cdktf.IResolvable; 
+  private _allowFewerZonesDeployment?: boolean | cdktn.IResolvable; 
   public get allowFewerZonesDeployment() {
     return this.getBooleanAttribute('allow_fewer_zones_deployment');
   }
-  public set allowFewerZonesDeployment(value: boolean | cdktf.IResolvable) {
+  public set allowFewerZonesDeployment(value: boolean | cdktn.IResolvable) {
     this._allowFewerZonesDeployment = value;
   }
   public resetAllowFewerZonesDeployment() {
@@ -3313,11 +3313,11 @@ export class RedisCluster extends cdktf.TerraformResource {
   }
 
   // deletion_protection_enabled - computed: false, optional: true, required: false
-  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _deletionProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
   }
-  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set deletionProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._deletionProtectionEnabled = value;
   }
   public resetDeletionProtectionEnabled() {
@@ -3642,7 +3642,7 @@ export class RedisCluster extends cdktf.TerraformResource {
   public get pscConfigs() {
     return this._pscConfigs;
   }
-  public putPscConfigs(value: RedisClusterPscConfigs[] | cdktf.IResolvable) {
+  public putPscConfigs(value: RedisClusterPscConfigs[] | cdktn.IResolvable) {
     this._pscConfigs.internalValue = value;
   }
   public resetPscConfigs() {
@@ -3691,26 +3691,26 @@ export class RedisCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_fewer_zones_deployment: cdktf.booleanToTerraform(this._allowFewerZonesDeployment),
-      authorization_mode: cdktf.stringToTerraform(this._authorizationMode),
-      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      name: cdktf.stringToTerraform(this._name),
-      node_type: cdktf.stringToTerraform(this._nodeType),
-      project: cdktf.stringToTerraform(this._project),
-      redis_configs: cdktf.hashMapper(cdktf.stringToTerraform)(this._redisConfigs),
-      region: cdktf.stringToTerraform(this._region),
-      replica_count: cdktf.numberToTerraform(this._replicaCount),
-      shard_count: cdktf.numberToTerraform(this._shardCount),
-      transit_encryption_mode: cdktf.stringToTerraform(this._transitEncryptionMode),
+      allow_fewer_zones_deployment: cdktn.booleanToTerraform(this._allowFewerZonesDeployment),
+      authorization_mode: cdktn.stringToTerraform(this._authorizationMode),
+      deletion_protection_enabled: cdktn.booleanToTerraform(this._deletionProtectionEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      name: cdktn.stringToTerraform(this._name),
+      node_type: cdktn.stringToTerraform(this._nodeType),
+      project: cdktn.stringToTerraform(this._project),
+      redis_configs: cdktn.hashMapper(cdktn.stringToTerraform)(this._redisConfigs),
+      region: cdktn.stringToTerraform(this._region),
+      replica_count: cdktn.numberToTerraform(this._replicaCount),
+      shard_count: cdktn.numberToTerraform(this._shardCount),
+      transit_encryption_mode: cdktn.stringToTerraform(this._transitEncryptionMode),
       automated_backup_config: redisClusterAutomatedBackupConfigToTerraform(this._automatedBackupConfig.internalValue),
       cross_cluster_replication_config: redisClusterCrossClusterReplicationConfigToTerraform(this._crossClusterReplicationConfig.internalValue),
       gcs_source: redisClusterGcsSourceToTerraform(this._gcsSource.internalValue),
       maintenance_policy: redisClusterMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
       managed_backup_source: redisClusterManagedBackupSourceToTerraform(this._managedBackupSource.internalValue),
       persistence_config: redisClusterPersistenceConfigToTerraform(this._persistenceConfig.internalValue),
-      psc_configs: cdktf.listMapper(redisClusterPscConfigsToTerraform, true)(this._pscConfigs.internalValue),
+      psc_configs: cdktn.listMapper(redisClusterPscConfigsToTerraform, true)(this._pscConfigs.internalValue),
       timeouts: redisClusterTimeoutsToTerraform(this._timeouts.internalValue),
       zone_distribution_config: redisClusterZoneDistributionConfigToTerraform(this._zoneDistributionConfig.internalValue),
     };
@@ -3719,79 +3719,79 @@ export class RedisCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_fewer_zones_deployment: {
-        value: cdktf.booleanToHclTerraform(this._allowFewerZonesDeployment),
+        value: cdktn.booleanToHclTerraform(this._allowFewerZonesDeployment),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       authorization_mode: {
-        value: cdktf.stringToHclTerraform(this._authorizationMode),
+        value: cdktn.stringToHclTerraform(this._authorizationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._deletionProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_type: {
-        value: cdktf.stringToHclTerraform(this._nodeType),
+        value: cdktn.stringToHclTerraform(this._nodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redis_configs: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._redisConfigs),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._redisConfigs),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replica_count: {
-        value: cdktf.numberToHclTerraform(this._replicaCount),
+        value: cdktn.numberToHclTerraform(this._replicaCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       shard_count: {
-        value: cdktf.numberToHclTerraform(this._shardCount),
+        value: cdktn.numberToHclTerraform(this._shardCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       transit_encryption_mode: {
-        value: cdktf.stringToHclTerraform(this._transitEncryptionMode),
+        value: cdktn.stringToHclTerraform(this._transitEncryptionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3833,7 +3833,7 @@ export class RedisCluster extends cdktf.TerraformResource {
         storageClassType: "RedisClusterPersistenceConfigList",
       },
       psc_configs: {
-        value: cdktf.listMapperHcl(redisClusterPscConfigsToHclTerraform, true)(this._pscConfigs.internalValue),
+        value: cdktn.listMapperHcl(redisClusterPscConfigsToHclTerraform, true)(this._pscConfigs.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RedisClusterPscConfigsList",

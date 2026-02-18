@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TagsTagKeyIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface TagsTagKeyIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key_iam_policy#id TagsTagKeyIamPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface TagsTagKeyIamPolicyConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key_iam_policy google_tags_tag_key_iam_policy}
 */
-export class TagsTagKeyIamPolicy extends cdktf.TerraformResource {
+export class TagsTagKeyIamPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class TagsTagKeyIamPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TagsTagKeyIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TagsTagKeyIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagsTagKeyIamPolicy to import
   * @param importFromId The id of the existing TagsTagKeyIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagsTagKeyIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_tags_tag_key_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_tags_tag_key_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -142,28 +142,28 @@ export class TagsTagKeyIamPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      policy_data: cdktf.stringToTerraform(this._policyData),
-      tag_key: cdktf.stringToTerraform(this._tagKey),
+      id: cdktn.stringToTerraform(this._id),
+      policy_data: cdktn.stringToTerraform(this._policyData),
+      tag_key: cdktn.stringToTerraform(this._tagKey),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_data: {
-        value: cdktf.stringToHclTerraform(this._policyData),
+        value: cdktn.stringToHclTerraform(this._policyData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tag_key: {
-        value: cdktf.stringToHclTerraform(this._tagKey),
+        value: cdktn.stringToHclTerraform(this._tagKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

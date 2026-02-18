@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeNodeGroupConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeNodeGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional textual description of the resource.
   *
@@ -113,38 +113,38 @@ export interface ComputeNodeGroupAutoscalingPolicy {
 }
 
 export function computeNodeGroupAutoscalingPolicyToTerraform(struct?: ComputeNodeGroupAutoscalingPolicyOutputReference | ComputeNodeGroupAutoscalingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_nodes: cdktf.numberToTerraform(struct!.maxNodes),
-    min_nodes: cdktf.numberToTerraform(struct!.minNodes),
-    mode: cdktf.stringToTerraform(struct!.mode),
+    max_nodes: cdktn.numberToTerraform(struct!.maxNodes),
+    min_nodes: cdktn.numberToTerraform(struct!.minNodes),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
 export function computeNodeGroupAutoscalingPolicyToHclTerraform(struct?: ComputeNodeGroupAutoscalingPolicyOutputReference | ComputeNodeGroupAutoscalingPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.maxNodes),
+      value: cdktn.numberToHclTerraform(struct!.maxNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_nodes: {
-      value: cdktf.numberToHclTerraform(struct!.minNodes),
+      value: cdktn.numberToHclTerraform(struct!.minNodes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,14 +155,14 @@ export function computeNodeGroupAutoscalingPolicyToHclTerraform(struct?: Compute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeNodeGroupAutoscalingPolicyOutputReference extends cdktf.ComplexObject {
+export class ComputeNodeGroupAutoscalingPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -257,24 +257,24 @@ export interface ComputeNodeGroupMaintenanceWindow {
 }
 
 export function computeNodeGroupMaintenanceWindowToTerraform(struct?: ComputeNodeGroupMaintenanceWindowOutputReference | ComputeNodeGroupMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
 export function computeNodeGroupMaintenanceWindowToHclTerraform(struct?: ComputeNodeGroupMaintenanceWindowOutputReference | ComputeNodeGroupMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -285,14 +285,14 @@ export function computeNodeGroupMaintenanceWindowToHclTerraform(struct?: Compute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeNodeGroupMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class ComputeNodeGroupMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -346,32 +346,32 @@ export interface ComputeNodeGroupShareSettingsProjectMap {
   readonly projectId: string;
 }
 
-export function computeNodeGroupShareSettingsProjectMapToTerraform(struct?: ComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeNodeGroupShareSettingsProjectMapToTerraform(struct?: ComputeNodeGroupShareSettingsProjectMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    id: cdktn.stringToTerraform(struct!.id),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
-export function computeNodeGroupShareSettingsProjectMapToHclTerraform(struct?: ComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeNodeGroupShareSettingsProjectMapToHclTerraform(struct?: ComputeNodeGroupShareSettingsProjectMap | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -382,9 +382,9 @@ export function computeNodeGroupShareSettingsProjectMapToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeNodeGroupShareSettingsProjectMapOutputReference extends cdktf.ComplexObject {
+export class ComputeNodeGroupShareSettingsProjectMapOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -392,11 +392,11 @@ export class ComputeNodeGroupShareSettingsProjectMapOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeNodeGroupShareSettingsProjectMap | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -413,14 +413,14 @@ export class ComputeNodeGroupShareSettingsProjectMapOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeNodeGroupShareSettingsProjectMap | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._projectId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -459,15 +459,15 @@ export class ComputeNodeGroupShareSettingsProjectMapOutputReference extends cdkt
   }
 }
 
-export class ComputeNodeGroupShareSettingsProjectMapList extends cdktf.ComplexList {
-  public internalValue? : ComputeNodeGroupShareSettingsProjectMap[] | cdktf.IResolvable
+export class ComputeNodeGroupShareSettingsProjectMapList extends cdktn.ComplexList {
+  public internalValue? : ComputeNodeGroupShareSettingsProjectMap[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -490,35 +490,35 @@ export interface ComputeNodeGroupShareSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_node_group#project_map ComputeNodeGroup#project_map}
   */
-  readonly projectMap?: ComputeNodeGroupShareSettingsProjectMap[] | cdktf.IResolvable;
+  readonly projectMap?: ComputeNodeGroupShareSettingsProjectMap[] | cdktn.IResolvable;
 }
 
 export function computeNodeGroupShareSettingsToTerraform(struct?: ComputeNodeGroupShareSettingsOutputReference | ComputeNodeGroupShareSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    share_type: cdktf.stringToTerraform(struct!.shareType),
-    project_map: cdktf.listMapper(computeNodeGroupShareSettingsProjectMapToTerraform, true)(struct!.projectMap),
+    share_type: cdktn.stringToTerraform(struct!.shareType),
+    project_map: cdktn.listMapper(computeNodeGroupShareSettingsProjectMapToTerraform, true)(struct!.projectMap),
   }
 }
 
 
 export function computeNodeGroupShareSettingsToHclTerraform(struct?: ComputeNodeGroupShareSettingsOutputReference | ComputeNodeGroupShareSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     share_type: {
-      value: cdktf.stringToHclTerraform(struct!.shareType),
+      value: cdktn.stringToHclTerraform(struct!.shareType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_map: {
-      value: cdktf.listMapperHcl(computeNodeGroupShareSettingsProjectMapToHclTerraform, true)(struct!.projectMap),
+      value: cdktn.listMapperHcl(computeNodeGroupShareSettingsProjectMapToHclTerraform, true)(struct!.projectMap),
       isBlock: true,
       type: "set",
       storageClassType: "ComputeNodeGroupShareSettingsProjectMapList",
@@ -529,14 +529,14 @@ export function computeNodeGroupShareSettingsToHclTerraform(struct?: ComputeNode
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeNodeGroupShareSettingsOutputReference extends cdktf.ComplexObject {
+export class ComputeNodeGroupShareSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -585,7 +585,7 @@ export class ComputeNodeGroupShareSettingsOutputReference extends cdktf.ComplexO
   public get projectMap() {
     return this._projectMap;
   }
-  public putProjectMap(value: ComputeNodeGroupShareSettingsProjectMap[] | cdktf.IResolvable) {
+  public putProjectMap(value: ComputeNodeGroupShareSettingsProjectMap[] | cdktn.IResolvable) {
     this._projectMap.internalValue = value;
   }
   public resetProjectMap() {
@@ -611,39 +611,39 @@ export interface ComputeNodeGroupTimeouts {
   readonly update?: string;
 }
 
-export function computeNodeGroupTimeoutsToTerraform(struct?: ComputeNodeGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeNodeGroupTimeoutsToTerraform(struct?: ComputeNodeGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeNodeGroupTimeoutsToHclTerraform(struct?: ComputeNodeGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeNodeGroupTimeoutsToHclTerraform(struct?: ComputeNodeGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -654,19 +654,19 @@ export function computeNodeGroupTimeoutsToHclTerraform(struct?: ComputeNodeGroup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeNodeGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeNodeGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeNodeGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -687,7 +687,7 @@ export class ComputeNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeNodeGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeNodeGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -695,7 +695,7 @@ export class ComputeNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -760,7 +760,7 @@ export class ComputeNodeGroupTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_node_group google_compute_node_group}
 */
-export class ComputeNodeGroup extends cdktf.TerraformResource {
+export class ComputeNodeGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -771,14 +771,14 @@ export class ComputeNodeGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeNodeGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeNodeGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeNodeGroup to import
   * @param importFromId The id of the existing ComputeNodeGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_node_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeNodeGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_node_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_node_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -1033,14 +1033,14 @@ export class ComputeNodeGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      initial_size: cdktf.numberToTerraform(this._initialSize),
-      maintenance_policy: cdktf.stringToTerraform(this._maintenancePolicy),
-      name: cdktf.stringToTerraform(this._name),
-      node_template: cdktf.stringToTerraform(this._nodeTemplate),
-      project: cdktf.stringToTerraform(this._project),
-      zone: cdktf.stringToTerraform(this._zone),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      initial_size: cdktn.numberToTerraform(this._initialSize),
+      maintenance_policy: cdktn.stringToTerraform(this._maintenancePolicy),
+      name: cdktn.stringToTerraform(this._name),
+      node_template: cdktn.stringToTerraform(this._nodeTemplate),
+      project: cdktn.stringToTerraform(this._project),
+      zone: cdktn.stringToTerraform(this._zone),
       autoscaling_policy: computeNodeGroupAutoscalingPolicyToTerraform(this._autoscalingPolicy.internalValue),
       maintenance_window: computeNodeGroupMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       share_settings: computeNodeGroupShareSettingsToTerraform(this._shareSettings.internalValue),
@@ -1051,49 +1051,49 @@ export class ComputeNodeGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       initial_size: {
-        value: cdktf.numberToHclTerraform(this._initialSize),
+        value: cdktn.numberToHclTerraform(this._initialSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       maintenance_policy: {
-        value: cdktf.stringToHclTerraform(this._maintenancePolicy),
+        value: cdktn.stringToHclTerraform(this._maintenancePolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_template: {
-        value: cdktf.stringToHclTerraform(this._nodeTemplate),
+        value: cdktn.stringToHclTerraform(this._nodeTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

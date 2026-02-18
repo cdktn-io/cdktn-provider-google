@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The human-readable description of the environment. The maximum length is 500 characters. If exceeded, the request is rejected.
   *
@@ -49,7 +49,7 @@ export interface DialogflowCxEnvironmentConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_environment#version_configs DialogflowCxEnvironment#version_configs}
   */
-  readonly versionConfigs: DialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable;
+  readonly versionConfigs: DialogflowCxEnvironmentVersionConfigs[] | cdktn.IResolvable;
 }
 export interface DialogflowCxEnvironmentTimeouts {
   /**
@@ -66,39 +66,39 @@ export interface DialogflowCxEnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxEnvironmentTimeoutsToTerraform(struct?: DialogflowCxEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEnvironmentTimeoutsToTerraform(struct?: DialogflowCxEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxEnvironmentTimeoutsToHclTerraform(struct?: DialogflowCxEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEnvironmentTimeoutsToHclTerraform(struct?: DialogflowCxEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,19 +109,19 @@ export function dialogflowCxEnvironmentTimeoutsToHclTerraform(struct?: Dialogflo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxEnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxEnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxEnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -142,7 +142,7 @@ export class DialogflowCxEnvironmentTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxEnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxEnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -150,7 +150,7 @@ export class DialogflowCxEnvironmentTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -220,25 +220,25 @@ export interface DialogflowCxEnvironmentVersionConfigs {
   readonly version: string;
 }
 
-export function dialogflowCxEnvironmentVersionConfigsToTerraform(struct?: DialogflowCxEnvironmentVersionConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEnvironmentVersionConfigsToTerraform(struct?: DialogflowCxEnvironmentVersionConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    version: cdktf.stringToTerraform(struct!.version),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function dialogflowCxEnvironmentVersionConfigsToHclTerraform(struct?: DialogflowCxEnvironmentVersionConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxEnvironmentVersionConfigsToHclTerraform(struct?: DialogflowCxEnvironmentVersionConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -249,9 +249,9 @@ export function dialogflowCxEnvironmentVersionConfigsToHclTerraform(struct?: Dia
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxEnvironmentVersionConfigsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxEnvironmentVersionConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -259,11 +259,11 @@ export class DialogflowCxEnvironmentVersionConfigsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxEnvironmentVersionConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxEnvironmentVersionConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -276,13 +276,13 @@ export class DialogflowCxEnvironmentVersionConfigsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxEnvironmentVersionConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxEnvironmentVersionConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,15 +307,15 @@ export class DialogflowCxEnvironmentVersionConfigsOutputReference extends cdktf.
   }
 }
 
-export class DialogflowCxEnvironmentVersionConfigsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable
+export class DialogflowCxEnvironmentVersionConfigsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxEnvironmentVersionConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -330,7 +330,7 @@ export class DialogflowCxEnvironmentVersionConfigsList extends cdktf.ComplexList
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_environment google_dialogflow_cx_environment}
 */
-export class DialogflowCxEnvironment extends cdktf.TerraformResource {
+export class DialogflowCxEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -341,14 +341,14 @@ export class DialogflowCxEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxEnvironment to import
   * @param importFromId The id of the existing DialogflowCxEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -482,7 +482,7 @@ export class DialogflowCxEnvironment extends cdktf.TerraformResource {
   public get versionConfigs() {
     return this._versionConfigs;
   }
-  public putVersionConfigs(value: DialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable) {
+  public putVersionConfigs(value: DialogflowCxEnvironmentVersionConfigs[] | cdktn.IResolvable) {
     this._versionConfigs.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -496,37 +496,37 @@ export class DialogflowCxEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
       timeouts: dialogflowCxEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
-      version_configs: cdktf.listMapper(dialogflowCxEnvironmentVersionConfigsToTerraform, true)(this._versionConfigs.internalValue),
+      version_configs: cdktn.listMapper(dialogflowCxEnvironmentVersionConfigsToTerraform, true)(this._versionConfigs.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -538,7 +538,7 @@ export class DialogflowCxEnvironment extends cdktf.TerraformResource {
         storageClassType: "DialogflowCxEnvironmentTimeouts",
       },
       version_configs: {
-        value: cdktf.listMapperHcl(dialogflowCxEnvironmentVersionConfigsToHclTerraform, true)(this._versionConfigs.internalValue),
+        value: cdktn.listMapperHcl(dialogflowCxEnvironmentVersionConfigsToHclTerraform, true)(this._versionConfigs.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowCxEnvironmentVersionConfigsList",

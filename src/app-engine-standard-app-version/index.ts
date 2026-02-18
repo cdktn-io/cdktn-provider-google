@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppEngineStandardAppVersionConfig extends cdktf.TerraformMetaArguments {
+export interface AppEngineStandardAppVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Allows App Engine second generation runtimes to access the legacy bundled services.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#app_engine_apis AppEngineStandardAppVersion#app_engine_apis}
   */
-  readonly appEngineApis?: boolean | cdktf.IResolvable;
+  readonly appEngineApis?: boolean | cdktn.IResolvable;
   /**
   * If set to 'true', the service will be deleted if it is the last version.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#delete_service_on_destroy AppEngineStandardAppVersion#delete_service_on_destroy}
   */
-  readonly deleteServiceOnDestroy?: boolean | cdktf.IResolvable;
+  readonly deleteServiceOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Environment variables available to the application.
   *
@@ -57,7 +57,7 @@ export interface AppEngineStandardAppVersionConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#noop_on_destroy AppEngineStandardAppVersion#noop_on_destroy}
   */
-  readonly noopOnDestroy?: boolean | cdktf.IResolvable;
+  readonly noopOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}
   */
@@ -93,7 +93,7 @@ export interface AppEngineStandardAppVersionConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#threadsafe AppEngineStandardAppVersion#threadsafe}
   */
-  readonly threadsafe?: boolean | cdktf.IResolvable;
+  readonly threadsafe?: boolean | cdktn.IResolvable;
   /**
   * Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters, numbers, or hyphens. Reserved names,"default", "latest", and any name with the prefix "ah-".
   *
@@ -129,13 +129,13 @@ export interface AppEngineStandardAppVersionConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#handlers AppEngineStandardAppVersion#handlers}
   */
-  readonly handlers?: AppEngineStandardAppVersionHandlers[] | cdktf.IResolvable;
+  readonly handlers?: AppEngineStandardAppVersionHandlers[] | cdktn.IResolvable;
   /**
   * libraries block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#libraries AppEngineStandardAppVersion#libraries}
   */
-  readonly libraries?: AppEngineStandardAppVersionLibraries[] | cdktf.IResolvable;
+  readonly libraries?: AppEngineStandardAppVersionLibraries[] | cdktn.IResolvable;
   /**
   * manual_scaling block
   *
@@ -185,45 +185,45 @@ export interface AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSet
 }
 
 export function appEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsToTerraform(struct?: AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference | AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_instances: cdktf.numberToTerraform(struct!.maxInstances),
-    min_instances: cdktf.numberToTerraform(struct!.minInstances),
-    target_cpu_utilization: cdktf.numberToTerraform(struct!.targetCpuUtilization),
-    target_throughput_utilization: cdktf.numberToTerraform(struct!.targetThroughputUtilization),
+    max_instances: cdktn.numberToTerraform(struct!.maxInstances),
+    min_instances: cdktn.numberToTerraform(struct!.minInstances),
+    target_cpu_utilization: cdktn.numberToTerraform(struct!.targetCpuUtilization),
+    target_throughput_utilization: cdktn.numberToTerraform(struct!.targetThroughputUtilization),
   }
 }
 
 
 export function appEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsToHclTerraform(struct?: AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference | AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_instances: {
-      value: cdktf.numberToHclTerraform(struct!.maxInstances),
+      value: cdktn.numberToHclTerraform(struct!.maxInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_instances: {
-      value: cdktf.numberToHclTerraform(struct!.minInstances),
+      value: cdktn.numberToHclTerraform(struct!.minInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target_cpu_utilization: {
-      value: cdktf.numberToHclTerraform(struct!.targetCpuUtilization),
+      value: cdktn.numberToHclTerraform(struct!.targetCpuUtilization),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target_throughput_utilization: {
-      value: cdktf.numberToHclTerraform(struct!.targetThroughputUtilization),
+      value: cdktn.numberToHclTerraform(struct!.targetThroughputUtilization),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -234,14 +234,14 @@ export function appEngineStandardAppVersionAutomaticScalingStandardSchedulerSett
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -392,53 +392,53 @@ export interface AppEngineStandardAppVersionAutomaticScaling {
 }
 
 export function appEngineStandardAppVersionAutomaticScalingToTerraform(struct?: AppEngineStandardAppVersionAutomaticScalingOutputReference | AppEngineStandardAppVersionAutomaticScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_concurrent_requests: cdktf.numberToTerraform(struct!.maxConcurrentRequests),
-    max_idle_instances: cdktf.numberToTerraform(struct!.maxIdleInstances),
-    max_pending_latency: cdktf.stringToTerraform(struct!.maxPendingLatency),
-    min_idle_instances: cdktf.numberToTerraform(struct!.minIdleInstances),
-    min_pending_latency: cdktf.stringToTerraform(struct!.minPendingLatency),
+    max_concurrent_requests: cdktn.numberToTerraform(struct!.maxConcurrentRequests),
+    max_idle_instances: cdktn.numberToTerraform(struct!.maxIdleInstances),
+    max_pending_latency: cdktn.stringToTerraform(struct!.maxPendingLatency),
+    min_idle_instances: cdktn.numberToTerraform(struct!.minIdleInstances),
+    min_pending_latency: cdktn.stringToTerraform(struct!.minPendingLatency),
     standard_scheduler_settings: appEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsToTerraform(struct!.standardSchedulerSettings),
   }
 }
 
 
 export function appEngineStandardAppVersionAutomaticScalingToHclTerraform(struct?: AppEngineStandardAppVersionAutomaticScalingOutputReference | AppEngineStandardAppVersionAutomaticScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_concurrent_requests: {
-      value: cdktf.numberToHclTerraform(struct!.maxConcurrentRequests),
+      value: cdktn.numberToHclTerraform(struct!.maxConcurrentRequests),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_instances: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleInstances),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_pending_latency: {
-      value: cdktf.stringToHclTerraform(struct!.maxPendingLatency),
+      value: cdktn.stringToHclTerraform(struct!.maxPendingLatency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min_idle_instances: {
-      value: cdktf.numberToHclTerraform(struct!.minIdleInstances),
+      value: cdktn.numberToHclTerraform(struct!.minIdleInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_pending_latency: {
-      value: cdktf.stringToHclTerraform(struct!.minPendingLatency),
+      value: cdktn.stringToHclTerraform(struct!.minPendingLatency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -455,14 +455,14 @@ export function appEngineStandardAppVersionAutomaticScalingToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionAutomaticScalingOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionAutomaticScalingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -630,31 +630,31 @@ export interface AppEngineStandardAppVersionBasicScaling {
 }
 
 export function appEngineStandardAppVersionBasicScalingToTerraform(struct?: AppEngineStandardAppVersionBasicScalingOutputReference | AppEngineStandardAppVersionBasicScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    idle_timeout: cdktf.stringToTerraform(struct!.idleTimeout),
-    max_instances: cdktf.numberToTerraform(struct!.maxInstances),
+    idle_timeout: cdktn.stringToTerraform(struct!.idleTimeout),
+    max_instances: cdktn.numberToTerraform(struct!.maxInstances),
   }
 }
 
 
 export function appEngineStandardAppVersionBasicScalingToHclTerraform(struct?: AppEngineStandardAppVersionBasicScalingOutputReference | AppEngineStandardAppVersionBasicScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     idle_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.idleTimeout),
+      value: cdktn.stringToHclTerraform(struct!.idleTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_instances: {
-      value: cdktf.numberToHclTerraform(struct!.maxInstances),
+      value: cdktn.numberToHclTerraform(struct!.maxInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -665,14 +665,14 @@ export function appEngineStandardAppVersionBasicScalingToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionBasicScalingOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionBasicScalingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -751,39 +751,39 @@ export interface AppEngineStandardAppVersionDeploymentFiles {
   readonly sourceUrl: string;
 }
 
-export function appEngineStandardAppVersionDeploymentFilesToTerraform(struct?: AppEngineStandardAppVersionDeploymentFiles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionDeploymentFilesToTerraform(struct?: AppEngineStandardAppVersionDeploymentFiles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    sha1_sum: cdktf.stringToTerraform(struct!.sha1Sum),
-    source_url: cdktf.stringToTerraform(struct!.sourceUrl),
+    name: cdktn.stringToTerraform(struct!.name),
+    sha1_sum: cdktn.stringToTerraform(struct!.sha1Sum),
+    source_url: cdktn.stringToTerraform(struct!.sourceUrl),
   }
 }
 
 
-export function appEngineStandardAppVersionDeploymentFilesToHclTerraform(struct?: AppEngineStandardAppVersionDeploymentFiles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionDeploymentFilesToHclTerraform(struct?: AppEngineStandardAppVersionDeploymentFiles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sha1_sum: {
-      value: cdktf.stringToHclTerraform(struct!.sha1Sum),
+      value: cdktn.stringToHclTerraform(struct!.sha1Sum),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_url: {
-      value: cdktf.stringToHclTerraform(struct!.sourceUrl),
+      value: cdktn.stringToHclTerraform(struct!.sourceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -794,9 +794,9 @@ export function appEngineStandardAppVersionDeploymentFilesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionDeploymentFilesOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionDeploymentFilesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -804,11 +804,11 @@ export class AppEngineStandardAppVersionDeploymentFilesOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppEngineStandardAppVersionDeploymentFiles | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineStandardAppVersionDeploymentFiles | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -829,7 +829,7 @@ export class AppEngineStandardAppVersionDeploymentFilesOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineStandardAppVersionDeploymentFiles | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineStandardAppVersionDeploymentFiles | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -837,7 +837,7 @@ export class AppEngineStandardAppVersionDeploymentFilesOutputReference extends c
       this._sha1Sum = undefined;
       this._sourceUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -893,15 +893,15 @@ export class AppEngineStandardAppVersionDeploymentFilesOutputReference extends c
   }
 }
 
-export class AppEngineStandardAppVersionDeploymentFilesList extends cdktf.ComplexList {
-  public internalValue? : AppEngineStandardAppVersionDeploymentFiles[] | cdktf.IResolvable
+export class AppEngineStandardAppVersionDeploymentFilesList extends cdktn.ComplexList {
+  public internalValue? : AppEngineStandardAppVersionDeploymentFiles[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -928,31 +928,31 @@ export interface AppEngineStandardAppVersionDeploymentZip {
 }
 
 export function appEngineStandardAppVersionDeploymentZipToTerraform(struct?: AppEngineStandardAppVersionDeploymentZipOutputReference | AppEngineStandardAppVersionDeploymentZip): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    files_count: cdktf.numberToTerraform(struct!.filesCount),
-    source_url: cdktf.stringToTerraform(struct!.sourceUrl),
+    files_count: cdktn.numberToTerraform(struct!.filesCount),
+    source_url: cdktn.stringToTerraform(struct!.sourceUrl),
   }
 }
 
 
 export function appEngineStandardAppVersionDeploymentZipToHclTerraform(struct?: AppEngineStandardAppVersionDeploymentZipOutputReference | AppEngineStandardAppVersionDeploymentZip): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     files_count: {
-      value: cdktf.numberToHclTerraform(struct!.filesCount),
+      value: cdktn.numberToHclTerraform(struct!.filesCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     source_url: {
-      value: cdktf.stringToHclTerraform(struct!.sourceUrl),
+      value: cdktn.stringToHclTerraform(struct!.sourceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -963,14 +963,14 @@ export function appEngineStandardAppVersionDeploymentZipToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionDeploymentZipOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionDeploymentZipOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1036,7 +1036,7 @@ export interface AppEngineStandardAppVersionDeployment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#files AppEngineStandardAppVersion#files}
   */
-  readonly files?: AppEngineStandardAppVersionDeploymentFiles[] | cdktf.IResolvable;
+  readonly files?: AppEngineStandardAppVersionDeploymentFiles[] | cdktn.IResolvable;
   /**
   * zip block
   *
@@ -1046,25 +1046,25 @@ export interface AppEngineStandardAppVersionDeployment {
 }
 
 export function appEngineStandardAppVersionDeploymentToTerraform(struct?: AppEngineStandardAppVersionDeploymentOutputReference | AppEngineStandardAppVersionDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    files: cdktf.listMapper(appEngineStandardAppVersionDeploymentFilesToTerraform, true)(struct!.files),
+    files: cdktn.listMapper(appEngineStandardAppVersionDeploymentFilesToTerraform, true)(struct!.files),
     zip: appEngineStandardAppVersionDeploymentZipToTerraform(struct!.zip),
   }
 }
 
 
 export function appEngineStandardAppVersionDeploymentToHclTerraform(struct?: AppEngineStandardAppVersionDeploymentOutputReference | AppEngineStandardAppVersionDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     files: {
-      value: cdktf.listMapperHcl(appEngineStandardAppVersionDeploymentFilesToHclTerraform, true)(struct!.files),
+      value: cdktn.listMapperHcl(appEngineStandardAppVersionDeploymentFilesToHclTerraform, true)(struct!.files),
       isBlock: true,
       type: "set",
       storageClassType: "AppEngineStandardAppVersionDeploymentFilesList",
@@ -1081,14 +1081,14 @@ export function appEngineStandardAppVersionDeploymentToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionDeploymentOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1124,7 +1124,7 @@ export class AppEngineStandardAppVersionDeploymentOutputReference extends cdktf.
   public get files() {
     return this._files;
   }
-  public putFiles(value: AppEngineStandardAppVersionDeploymentFiles[] | cdktf.IResolvable) {
+  public putFiles(value: AppEngineStandardAppVersionDeploymentFiles[] | cdktn.IResolvable) {
     this._files.internalValue = value;
   }
   public resetFiles() {
@@ -1161,24 +1161,24 @@ export interface AppEngineStandardAppVersionEntrypoint {
 }
 
 export function appEngineStandardAppVersionEntrypointToTerraform(struct?: AppEngineStandardAppVersionEntrypointOutputReference | AppEngineStandardAppVersionEntrypoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    shell: cdktf.stringToTerraform(struct!.shell),
+    shell: cdktn.stringToTerraform(struct!.shell),
   }
 }
 
 
 export function appEngineStandardAppVersionEntrypointToHclTerraform(struct?: AppEngineStandardAppVersionEntrypointOutputReference | AppEngineStandardAppVersionEntrypoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     shell: {
-      value: cdktf.stringToHclTerraform(struct!.shell),
+      value: cdktn.stringToHclTerraform(struct!.shell),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1189,14 +1189,14 @@ export function appEngineStandardAppVersionEntrypointToHclTerraform(struct?: App
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionEntrypointOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionEntrypointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1244,24 +1244,24 @@ export interface AppEngineStandardAppVersionHandlersScript {
 }
 
 export function appEngineStandardAppVersionHandlersScriptToTerraform(struct?: AppEngineStandardAppVersionHandlersScriptOutputReference | AppEngineStandardAppVersionHandlersScript): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    script_path: cdktf.stringToTerraform(struct!.scriptPath),
+    script_path: cdktn.stringToTerraform(struct!.scriptPath),
   }
 }
 
 
 export function appEngineStandardAppVersionHandlersScriptToHclTerraform(struct?: AppEngineStandardAppVersionHandlersScriptOutputReference | AppEngineStandardAppVersionHandlersScript): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     script_path: {
-      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      value: cdktn.stringToHclTerraform(struct!.scriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1272,14 +1272,14 @@ export function appEngineStandardAppVersionHandlersScriptToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionHandlersScriptOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionHandlersScriptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1325,7 +1325,7 @@ export interface AppEngineStandardAppVersionHandlersStaticFiles {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#application_readable AppEngineStandardAppVersion#application_readable}
   */
-  readonly applicationReadable?: boolean | cdktf.IResolvable;
+  readonly applicationReadable?: boolean | cdktn.IResolvable;
   /**
   * Time a static file served by this handler should be cached by web proxies and browsers.
   * A duration in seconds with up to nine fractional digits, terminated by 's'. Example "3.5s".
@@ -1358,7 +1358,7 @@ export interface AppEngineStandardAppVersionHandlersStaticFiles {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#require_matching_file AppEngineStandardAppVersion#require_matching_file}
   */
-  readonly requireMatchingFile?: boolean | cdktf.IResolvable;
+  readonly requireMatchingFile?: boolean | cdktn.IResolvable;
   /**
   * Regular expression that matches the file paths for all files that should be referenced by this handler.
   *
@@ -1368,66 +1368,66 @@ export interface AppEngineStandardAppVersionHandlersStaticFiles {
 }
 
 export function appEngineStandardAppVersionHandlersStaticFilesToTerraform(struct?: AppEngineStandardAppVersionHandlersStaticFilesOutputReference | AppEngineStandardAppVersionHandlersStaticFiles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    application_readable: cdktf.booleanToTerraform(struct!.applicationReadable),
-    expiration: cdktf.stringToTerraform(struct!.expiration),
-    http_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.httpHeaders),
-    mime_type: cdktf.stringToTerraform(struct!.mimeType),
-    path: cdktf.stringToTerraform(struct!.path),
-    require_matching_file: cdktf.booleanToTerraform(struct!.requireMatchingFile),
-    upload_path_regex: cdktf.stringToTerraform(struct!.uploadPathRegex),
+    application_readable: cdktn.booleanToTerraform(struct!.applicationReadable),
+    expiration: cdktn.stringToTerraform(struct!.expiration),
+    http_headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.httpHeaders),
+    mime_type: cdktn.stringToTerraform(struct!.mimeType),
+    path: cdktn.stringToTerraform(struct!.path),
+    require_matching_file: cdktn.booleanToTerraform(struct!.requireMatchingFile),
+    upload_path_regex: cdktn.stringToTerraform(struct!.uploadPathRegex),
   }
 }
 
 
 export function appEngineStandardAppVersionHandlersStaticFilesToHclTerraform(struct?: AppEngineStandardAppVersionHandlersStaticFilesOutputReference | AppEngineStandardAppVersionHandlersStaticFiles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     application_readable: {
-      value: cdktf.booleanToHclTerraform(struct!.applicationReadable),
+      value: cdktn.booleanToHclTerraform(struct!.applicationReadable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expiration: {
-      value: cdktf.stringToHclTerraform(struct!.expiration),
+      value: cdktn.stringToHclTerraform(struct!.expiration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     http_headers: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.httpHeaders),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.httpHeaders),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     mime_type: {
-      value: cdktf.stringToHclTerraform(struct!.mimeType),
+      value: cdktn.stringToHclTerraform(struct!.mimeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_matching_file: {
-      value: cdktf.booleanToHclTerraform(struct!.requireMatchingFile),
+      value: cdktn.booleanToHclTerraform(struct!.requireMatchingFile),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     upload_path_regex: {
-      value: cdktf.stringToHclTerraform(struct!.uploadPathRegex),
+      value: cdktn.stringToHclTerraform(struct!.uploadPathRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1438,14 +1438,14 @@ export function appEngineStandardAppVersionHandlersStaticFilesToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionHandlersStaticFilesOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionHandlersStaticFilesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1507,11 +1507,11 @@ export class AppEngineStandardAppVersionHandlersStaticFilesOutputReference exten
   }
 
   // application_readable - computed: false, optional: true, required: false
-  private _applicationReadable?: boolean | cdktf.IResolvable; 
+  private _applicationReadable?: boolean | cdktn.IResolvable; 
   public get applicationReadable() {
     return this.getBooleanAttribute('application_readable');
   }
-  public set applicationReadable(value: boolean | cdktf.IResolvable) {
+  public set applicationReadable(value: boolean | cdktn.IResolvable) {
     this._applicationReadable = value;
   }
   public resetApplicationReadable() {
@@ -1587,11 +1587,11 @@ export class AppEngineStandardAppVersionHandlersStaticFilesOutputReference exten
   }
 
   // require_matching_file - computed: false, optional: true, required: false
-  private _requireMatchingFile?: boolean | cdktf.IResolvable; 
+  private _requireMatchingFile?: boolean | cdktn.IResolvable; 
   public get requireMatchingFile() {
     return this.getBooleanAttribute('require_matching_file');
   }
-  public set requireMatchingFile(value: boolean | cdktf.IResolvable) {
+  public set requireMatchingFile(value: boolean | cdktn.IResolvable) {
     this._requireMatchingFile = value;
   }
   public resetRequireMatchingFile() {
@@ -1664,55 +1664,55 @@ export interface AppEngineStandardAppVersionHandlers {
   readonly staticFiles?: AppEngineStandardAppVersionHandlersStaticFiles;
 }
 
-export function appEngineStandardAppVersionHandlersToTerraform(struct?: AppEngineStandardAppVersionHandlers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionHandlersToTerraform(struct?: AppEngineStandardAppVersionHandlers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_fail_action: cdktf.stringToTerraform(struct!.authFailAction),
-    login: cdktf.stringToTerraform(struct!.login),
-    redirect_http_response_code: cdktf.stringToTerraform(struct!.redirectHttpResponseCode),
-    security_level: cdktf.stringToTerraform(struct!.securityLevel),
-    url_regex: cdktf.stringToTerraform(struct!.urlRegex),
+    auth_fail_action: cdktn.stringToTerraform(struct!.authFailAction),
+    login: cdktn.stringToTerraform(struct!.login),
+    redirect_http_response_code: cdktn.stringToTerraform(struct!.redirectHttpResponseCode),
+    security_level: cdktn.stringToTerraform(struct!.securityLevel),
+    url_regex: cdktn.stringToTerraform(struct!.urlRegex),
     script: appEngineStandardAppVersionHandlersScriptToTerraform(struct!.script),
     static_files: appEngineStandardAppVersionHandlersStaticFilesToTerraform(struct!.staticFiles),
   }
 }
 
 
-export function appEngineStandardAppVersionHandlersToHclTerraform(struct?: AppEngineStandardAppVersionHandlers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionHandlersToHclTerraform(struct?: AppEngineStandardAppVersionHandlers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_fail_action: {
-      value: cdktf.stringToHclTerraform(struct!.authFailAction),
+      value: cdktn.stringToHclTerraform(struct!.authFailAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     login: {
-      value: cdktf.stringToHclTerraform(struct!.login),
+      value: cdktn.stringToHclTerraform(struct!.login),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirect_http_response_code: {
-      value: cdktf.stringToHclTerraform(struct!.redirectHttpResponseCode),
+      value: cdktn.stringToHclTerraform(struct!.redirectHttpResponseCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_level: {
-      value: cdktf.stringToHclTerraform(struct!.securityLevel),
+      value: cdktn.stringToHclTerraform(struct!.securityLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url_regex: {
-      value: cdktf.stringToHclTerraform(struct!.urlRegex),
+      value: cdktn.stringToHclTerraform(struct!.urlRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1735,9 +1735,9 @@ export function appEngineStandardAppVersionHandlersToHclTerraform(struct?: AppEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionHandlersOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionHandlersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1745,11 +1745,11 @@ export class AppEngineStandardAppVersionHandlersOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppEngineStandardAppVersionHandlers | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineStandardAppVersionHandlers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1786,7 +1786,7 @@ export class AppEngineStandardAppVersionHandlersOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineStandardAppVersionHandlers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineStandardAppVersionHandlers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1798,7 +1798,7 @@ export class AppEngineStandardAppVersionHandlersOutputReference extends cdktf.Co
       this._script.internalValue = undefined;
       this._staticFiles.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1928,15 +1928,15 @@ export class AppEngineStandardAppVersionHandlersOutputReference extends cdktf.Co
   }
 }
 
-export class AppEngineStandardAppVersionHandlersList extends cdktf.ComplexList {
-  public internalValue? : AppEngineStandardAppVersionHandlers[] | cdktf.IResolvable
+export class AppEngineStandardAppVersionHandlersList extends cdktn.ComplexList {
+  public internalValue? : AppEngineStandardAppVersionHandlers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1962,32 +1962,32 @@ export interface AppEngineStandardAppVersionLibraries {
   readonly version?: string;
 }
 
-export function appEngineStandardAppVersionLibrariesToTerraform(struct?: AppEngineStandardAppVersionLibraries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionLibrariesToTerraform(struct?: AppEngineStandardAppVersionLibraries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    version: cdktf.stringToTerraform(struct!.version),
+    name: cdktn.stringToTerraform(struct!.name),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function appEngineStandardAppVersionLibrariesToHclTerraform(struct?: AppEngineStandardAppVersionLibraries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionLibrariesToHclTerraform(struct?: AppEngineStandardAppVersionLibraries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1998,9 +1998,9 @@ export function appEngineStandardAppVersionLibrariesToHclTerraform(struct?: AppE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionLibrariesOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionLibrariesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2008,11 +2008,11 @@ export class AppEngineStandardAppVersionLibrariesOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppEngineStandardAppVersionLibraries | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineStandardAppVersionLibraries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2029,14 +2029,14 @@ export class AppEngineStandardAppVersionLibrariesOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineStandardAppVersionLibraries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineStandardAppVersionLibraries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2081,15 +2081,15 @@ export class AppEngineStandardAppVersionLibrariesOutputReference extends cdktf.C
   }
 }
 
-export class AppEngineStandardAppVersionLibrariesList extends cdktf.ComplexList {
-  public internalValue? : AppEngineStandardAppVersionLibraries[] | cdktf.IResolvable
+export class AppEngineStandardAppVersionLibrariesList extends cdktn.ComplexList {
+  public internalValue? : AppEngineStandardAppVersionLibraries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2113,24 +2113,24 @@ export interface AppEngineStandardAppVersionManualScaling {
 }
 
 export function appEngineStandardAppVersionManualScalingToTerraform(struct?: AppEngineStandardAppVersionManualScalingOutputReference | AppEngineStandardAppVersionManualScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instances: cdktf.numberToTerraform(struct!.instances),
+    instances: cdktn.numberToTerraform(struct!.instances),
   }
 }
 
 
 export function appEngineStandardAppVersionManualScalingToHclTerraform(struct?: AppEngineStandardAppVersionManualScalingOutputReference | AppEngineStandardAppVersionManualScaling): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instances: {
-      value: cdktf.numberToHclTerraform(struct!.instances),
+      value: cdktn.numberToHclTerraform(struct!.instances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2141,14 +2141,14 @@ export function appEngineStandardAppVersionManualScalingToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionManualScalingOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionManualScalingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2201,39 +2201,39 @@ export interface AppEngineStandardAppVersionTimeouts {
   readonly update?: string;
 }
 
-export function appEngineStandardAppVersionTimeoutsToTerraform(struct?: AppEngineStandardAppVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionTimeoutsToTerraform(struct?: AppEngineStandardAppVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appEngineStandardAppVersionTimeoutsToHclTerraform(struct?: AppEngineStandardAppVersionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineStandardAppVersionTimeoutsToHclTerraform(struct?: AppEngineStandardAppVersionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2244,19 +2244,19 @@ export function appEngineStandardAppVersionTimeoutsToHclTerraform(struct?: AppEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppEngineStandardAppVersionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineStandardAppVersionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2277,7 +2277,7 @@ export class AppEngineStandardAppVersionTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineStandardAppVersionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineStandardAppVersionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2285,7 +2285,7 @@ export class AppEngineStandardAppVersionTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2362,31 +2362,31 @@ export interface AppEngineStandardAppVersionVpcAccessConnector {
 }
 
 export function appEngineStandardAppVersionVpcAccessConnectorToTerraform(struct?: AppEngineStandardAppVersionVpcAccessConnectorOutputReference | AppEngineStandardAppVersionVpcAccessConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egress_setting: cdktf.stringToTerraform(struct!.egressSetting),
-    name: cdktf.stringToTerraform(struct!.name),
+    egress_setting: cdktn.stringToTerraform(struct!.egressSetting),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function appEngineStandardAppVersionVpcAccessConnectorToHclTerraform(struct?: AppEngineStandardAppVersionVpcAccessConnectorOutputReference | AppEngineStandardAppVersionVpcAccessConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egress_setting: {
-      value: cdktf.stringToHclTerraform(struct!.egressSetting),
+      value: cdktn.stringToHclTerraform(struct!.egressSetting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2397,14 +2397,14 @@ export function appEngineStandardAppVersionVpcAccessConnectorToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineStandardAppVersionVpcAccessConnectorOutputReference extends cdktf.ComplexObject {
+export class AppEngineStandardAppVersionVpcAccessConnectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2468,7 +2468,7 @@ export class AppEngineStandardAppVersionVpcAccessConnectorOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version google_app_engine_standard_app_version}
 */
-export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
+export class AppEngineStandardAppVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2479,14 +2479,14 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppEngineStandardAppVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppEngineStandardAppVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppEngineStandardAppVersion to import
   * @param importFromId The id of the existing AppEngineStandardAppVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppEngineStandardAppVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_standard_app_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_standard_app_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -2546,11 +2546,11 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   // ==========
 
   // app_engine_apis - computed: false, optional: true, required: false
-  private _appEngineApis?: boolean | cdktf.IResolvable; 
+  private _appEngineApis?: boolean | cdktn.IResolvable; 
   public get appEngineApis() {
     return this.getBooleanAttribute('app_engine_apis');
   }
-  public set appEngineApis(value: boolean | cdktf.IResolvable) {
+  public set appEngineApis(value: boolean | cdktn.IResolvable) {
     this._appEngineApis = value;
   }
   public resetAppEngineApis() {
@@ -2562,11 +2562,11 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   }
 
   // delete_service_on_destroy - computed: false, optional: true, required: false
-  private _deleteServiceOnDestroy?: boolean | cdktf.IResolvable; 
+  private _deleteServiceOnDestroy?: boolean | cdktn.IResolvable; 
   public get deleteServiceOnDestroy() {
     return this.getBooleanAttribute('delete_service_on_destroy');
   }
-  public set deleteServiceOnDestroy(value: boolean | cdktf.IResolvable) {
+  public set deleteServiceOnDestroy(value: boolean | cdktn.IResolvable) {
     this._deleteServiceOnDestroy = value;
   }
   public resetDeleteServiceOnDestroy() {
@@ -2612,7 +2612,7 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   // inbound_services - computed: false, optional: true, required: false
   private _inboundServices?: string[]; 
   public get inboundServices() {
-    return cdktf.Fn.tolist(this.getListAttribute('inbound_services'));
+    return cdktn.Fn.tolist(this.getListAttribute('inbound_services'));
   }
   public set inboundServices(value: string[]) {
     this._inboundServices = value;
@@ -2647,11 +2647,11 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   }
 
   // noop_on_destroy - computed: false, optional: true, required: false
-  private _noopOnDestroy?: boolean | cdktf.IResolvable; 
+  private _noopOnDestroy?: boolean | cdktn.IResolvable; 
   public get noopOnDestroy() {
     return this.getBooleanAttribute('noop_on_destroy');
   }
-  public set noopOnDestroy(value: boolean | cdktf.IResolvable) {
+  public set noopOnDestroy(value: boolean | cdktn.IResolvable) {
     this._noopOnDestroy = value;
   }
   public resetNoopOnDestroy() {
@@ -2737,11 +2737,11 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   }
 
   // threadsafe - computed: false, optional: true, required: false
-  private _threadsafe?: boolean | cdktf.IResolvable; 
+  private _threadsafe?: boolean | cdktn.IResolvable; 
   public get threadsafe() {
     return this.getBooleanAttribute('threadsafe');
   }
-  public set threadsafe(value: boolean | cdktf.IResolvable) {
+  public set threadsafe(value: boolean | cdktn.IResolvable) {
     this._threadsafe = value;
   }
   public resetThreadsafe() {
@@ -2831,7 +2831,7 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   public get handlers() {
     return this._handlers;
   }
-  public putHandlers(value: AppEngineStandardAppVersionHandlers[] | cdktf.IResolvable) {
+  public putHandlers(value: AppEngineStandardAppVersionHandlers[] | cdktn.IResolvable) {
     this._handlers.internalValue = value;
   }
   public resetHandlers() {
@@ -2847,7 +2847,7 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   public get libraries() {
     return this._libraries;
   }
-  public putLibraries(value: AppEngineStandardAppVersionLibraries[] | cdktf.IResolvable) {
+  public putLibraries(value: AppEngineStandardAppVersionLibraries[] | cdktn.IResolvable) {
     this._libraries.internalValue = value;
   }
   public resetLibraries() {
@@ -2912,26 +2912,26 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_engine_apis: cdktf.booleanToTerraform(this._appEngineApis),
-      delete_service_on_destroy: cdktf.booleanToTerraform(this._deleteServiceOnDestroy),
-      env_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._envVariables),
-      id: cdktf.stringToTerraform(this._id),
-      inbound_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._inboundServices),
-      instance_class: cdktf.stringToTerraform(this._instanceClass),
-      noop_on_destroy: cdktf.booleanToTerraform(this._noopOnDestroy),
-      project: cdktf.stringToTerraform(this._project),
-      runtime: cdktf.stringToTerraform(this._runtime),
-      runtime_api_version: cdktf.stringToTerraform(this._runtimeApiVersion),
-      service: cdktf.stringToTerraform(this._service),
-      service_account: cdktf.stringToTerraform(this._serviceAccount),
-      threadsafe: cdktf.booleanToTerraform(this._threadsafe),
-      version_id: cdktf.stringToTerraform(this._versionId),
+      app_engine_apis: cdktn.booleanToTerraform(this._appEngineApis),
+      delete_service_on_destroy: cdktn.booleanToTerraform(this._deleteServiceOnDestroy),
+      env_variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._envVariables),
+      id: cdktn.stringToTerraform(this._id),
+      inbound_services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._inboundServices),
+      instance_class: cdktn.stringToTerraform(this._instanceClass),
+      noop_on_destroy: cdktn.booleanToTerraform(this._noopOnDestroy),
+      project: cdktn.stringToTerraform(this._project),
+      runtime: cdktn.stringToTerraform(this._runtime),
+      runtime_api_version: cdktn.stringToTerraform(this._runtimeApiVersion),
+      service: cdktn.stringToTerraform(this._service),
+      service_account: cdktn.stringToTerraform(this._serviceAccount),
+      threadsafe: cdktn.booleanToTerraform(this._threadsafe),
+      version_id: cdktn.stringToTerraform(this._versionId),
       automatic_scaling: appEngineStandardAppVersionAutomaticScalingToTerraform(this._automaticScaling.internalValue),
       basic_scaling: appEngineStandardAppVersionBasicScalingToTerraform(this._basicScaling.internalValue),
       deployment: appEngineStandardAppVersionDeploymentToTerraform(this._deployment.internalValue),
       entrypoint: appEngineStandardAppVersionEntrypointToTerraform(this._entrypoint.internalValue),
-      handlers: cdktf.listMapper(appEngineStandardAppVersionHandlersToTerraform, true)(this._handlers.internalValue),
-      libraries: cdktf.listMapper(appEngineStandardAppVersionLibrariesToTerraform, true)(this._libraries.internalValue),
+      handlers: cdktn.listMapper(appEngineStandardAppVersionHandlersToTerraform, true)(this._handlers.internalValue),
+      libraries: cdktn.listMapper(appEngineStandardAppVersionLibrariesToTerraform, true)(this._libraries.internalValue),
       manual_scaling: appEngineStandardAppVersionManualScalingToTerraform(this._manualScaling.internalValue),
       timeouts: appEngineStandardAppVersionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_access_connector: appEngineStandardAppVersionVpcAccessConnectorToTerraform(this._vpcAccessConnector.internalValue),
@@ -2941,85 +2941,85 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_engine_apis: {
-        value: cdktf.booleanToHclTerraform(this._appEngineApis),
+        value: cdktn.booleanToHclTerraform(this._appEngineApis),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       delete_service_on_destroy: {
-        value: cdktf.booleanToHclTerraform(this._deleteServiceOnDestroy),
+        value: cdktn.booleanToHclTerraform(this._deleteServiceOnDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       env_variables: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._envVariables),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._envVariables),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inbound_services: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._inboundServices),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._inboundServices),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       instance_class: {
-        value: cdktf.stringToHclTerraform(this._instanceClass),
+        value: cdktn.stringToHclTerraform(this._instanceClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       noop_on_destroy: {
-        value: cdktf.booleanToHclTerraform(this._noopOnDestroy),
+        value: cdktn.booleanToHclTerraform(this._noopOnDestroy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime: {
-        value: cdktf.stringToHclTerraform(this._runtime),
+        value: cdktn.stringToHclTerraform(this._runtime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_api_version: {
-        value: cdktf.stringToHclTerraform(this._runtimeApiVersion),
+        value: cdktn.stringToHclTerraform(this._runtimeApiVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account: {
-        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        value: cdktn.stringToHclTerraform(this._serviceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       threadsafe: {
-        value: cdktf.booleanToHclTerraform(this._threadsafe),
+        value: cdktn.booleanToHclTerraform(this._threadsafe),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       version_id: {
-        value: cdktf.stringToHclTerraform(this._versionId),
+        value: cdktn.stringToHclTerraform(this._versionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3049,13 +3049,13 @@ export class AppEngineStandardAppVersion extends cdktf.TerraformResource {
         storageClassType: "AppEngineStandardAppVersionEntrypointList",
       },
       handlers: {
-        value: cdktf.listMapperHcl(appEngineStandardAppVersionHandlersToHclTerraform, true)(this._handlers.internalValue),
+        value: cdktn.listMapperHcl(appEngineStandardAppVersionHandlersToHclTerraform, true)(this._handlers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppEngineStandardAppVersionHandlersList",
       },
       libraries: {
-        value: cdktf.listMapperHcl(appEngineStandardAppVersionLibrariesToHclTerraform, true)(this._libraries.internalValue),
+        value: cdktn.listMapperHcl(appEngineStandardAppVersionLibrariesToHclTerraform, true)(this._libraries.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppEngineStandardAppVersionLibrariesList",

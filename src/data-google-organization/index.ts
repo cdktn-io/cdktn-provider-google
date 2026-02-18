@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleOrganizationConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization#domain DataGoogleOrganization#domain}
   */
@@ -32,7 +32,7 @@ export interface DataGoogleOrganizationConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization google_organization}
 */
-export class DataGoogleOrganization extends cdktf.TerraformDataSource {
+export class DataGoogleOrganization extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleOrganization extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleOrganization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOrganization to import
   * @param importFromId The id of the existing DataGoogleOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOrganization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_organization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_organization", importId: importFromId, provider });
       }
 
   // ===========
@@ -168,28 +168,28 @@ export class DataGoogleOrganization extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domain: cdktf.stringToTerraform(this._domain),
-      id: cdktf.stringToTerraform(this._id),
-      organization: cdktf.stringToTerraform(this._organization),
+      domain: cdktn.stringToTerraform(this._domain),
+      id: cdktn.stringToTerraform(this._id),
+      organization: cdktn.stringToTerraform(this._organization),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

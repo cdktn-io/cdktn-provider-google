@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleBillingAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleBillingAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account#billing_account DataGoogleBillingAccount#billing_account}
   */
@@ -30,17 +30,17 @@ export interface DataGoogleBillingAccountConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account#lookup_projects DataGoogleBillingAccount#lookup_projects}
   */
-  readonly lookupProjects?: boolean | cdktf.IResolvable;
+  readonly lookupProjects?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account#open DataGoogleBillingAccount#open}
   */
-  readonly open?: boolean | cdktf.IResolvable;
+  readonly open?: boolean | cdktn.IResolvable;
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account google_billing_account}
 */
-export class DataGoogleBillingAccount extends cdktf.TerraformDataSource {
+export class DataGoogleBillingAccount extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DataGoogleBillingAccount extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleBillingAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleBillingAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBillingAccount to import
   * @param importFromId The id of the existing DataGoogleBillingAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBillingAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -153,11 +153,11 @@ export class DataGoogleBillingAccount extends cdktf.TerraformDataSource {
   }
 
   // lookup_projects - computed: false, optional: true, required: false
-  private _lookupProjects?: boolean | cdktf.IResolvable; 
+  private _lookupProjects?: boolean | cdktn.IResolvable; 
   public get lookupProjects() {
     return this.getBooleanAttribute('lookup_projects');
   }
-  public set lookupProjects(value: boolean | cdktf.IResolvable) {
+  public set lookupProjects(value: boolean | cdktn.IResolvable) {
     this._lookupProjects = value;
   }
   public resetLookupProjects() {
@@ -174,11 +174,11 @@ export class DataGoogleBillingAccount extends cdktf.TerraformDataSource {
   }
 
   // open - computed: true, optional: true, required: false
-  private _open?: boolean | cdktf.IResolvable; 
+  private _open?: boolean | cdktn.IResolvable; 
   public get open() {
     return this.getBooleanAttribute('open');
   }
-  public set open(value: boolean | cdktf.IResolvable) {
+  public set open(value: boolean | cdktn.IResolvable) {
     this._open = value;
   }
   public resetOpen() {
@@ -191,7 +191,7 @@ export class DataGoogleBillingAccount extends cdktf.TerraformDataSource {
 
   // project_ids - computed: true, optional: false, required: false
   public get projectIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('project_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('project_ids'));
   }
 
   // =========
@@ -200,42 +200,42 @@ export class DataGoogleBillingAccount extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_account: cdktf.stringToTerraform(this._billingAccount),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      lookup_projects: cdktf.booleanToTerraform(this._lookupProjects),
-      open: cdktf.booleanToTerraform(this._open),
+      billing_account: cdktn.stringToTerraform(this._billingAccount),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      lookup_projects: cdktn.booleanToTerraform(this._lookupProjects),
+      open: cdktn.booleanToTerraform(this._open),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_account: {
-        value: cdktf.stringToHclTerraform(this._billingAccount),
+        value: cdktn.stringToHclTerraform(this._billingAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lookup_projects: {
-        value: cdktf.booleanToHclTerraform(this._lookupProjects),
+        value: cdktn.booleanToHclTerraform(this._lookupProjects),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       open: {
-        value: cdktf.booleanToHclTerraform(this._open),
+        value: cdktn.booleanToHclTerraform(this._open),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

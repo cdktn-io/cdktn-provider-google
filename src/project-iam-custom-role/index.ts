@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ProjectIamCustomRoleConfig extends cdktf.TerraformMetaArguments {
+export interface ProjectIamCustomRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable description for the role.
   *
@@ -60,7 +60,7 @@ export interface ProjectIamCustomRoleConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_custom_role google_project_iam_custom_role}
 */
-export class ProjectIamCustomRole extends cdktf.TerraformResource {
+export class ProjectIamCustomRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class ProjectIamCustomRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ProjectIamCustomRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ProjectIamCustomRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectIamCustomRole to import
   * @param importFromId The id of the existing ProjectIamCustomRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_custom_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectIamCustomRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_project_iam_custom_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_project_iam_custom_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -166,7 +166,7 @@ export class ProjectIamCustomRole extends cdktf.TerraformResource {
   // permissions - computed: false, optional: false, required: true
   private _permissions?: string[]; 
   public get permissions() {
-    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+    return cdktn.Fn.tolist(this.getListAttribute('permissions'));
   }
   public set permissions(value: string[]) {
     this._permissions = value;
@@ -240,56 +240,56 @@ export class ProjectIamCustomRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permissions),
-      project: cdktf.stringToTerraform(this._project),
-      role_id: cdktf.stringToTerraform(this._roleId),
-      stage: cdktf.stringToTerraform(this._stage),
-      title: cdktf.stringToTerraform(this._title),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._permissions),
+      project: cdktn.stringToTerraform(this._project),
+      role_id: cdktn.stringToTerraform(this._roleId),
+      stage: cdktn.stringToTerraform(this._stage),
+      title: cdktn.stringToTerraform(this._title),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permissions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permissions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._permissions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_id: {
-        value: cdktf.stringToHclTerraform(this._roleId),
+        value: cdktn.stringToHclTerraform(this._roleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stage: {
-        value: cdktf.stringToHclTerraform(this._stage),
+        value: cdktn.stringToHclTerraform(this._stage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

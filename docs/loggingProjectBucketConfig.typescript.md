@@ -299,7 +299,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -393,7 +393,7 @@ public putIndexConfigs(value: IResolvable | LoggingProjectBucketConfigIndexConfi
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.putIndexConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
 
 ---
 
@@ -446,7 +446,7 @@ public resetRetentionDays(): void
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a LoggingProjectBucketConfig resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a LoggingProjectBucketConfig resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -518,7 +518,7 @@ import { loggingProjectBucketConfig } from '@cdktn/provider-google'
 loggingProjectBucketConfig.LoggingProjectBucketConfig.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a LoggingProjectBucketConfig resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a LoggingProjectBucketConfig resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.generateConfigForImport.parameter.scope"></a>
 
@@ -548,7 +548,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the LoggingProjectBucketConfig to import is found.
 
@@ -559,19 +559,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.cmekSettings">cmekSettings</a></code> | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference">LoggingProjectBucketConfigCmekSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.indexConfigs">indexConfigs</a></code> | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList">LoggingProjectBucketConfigIndexConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.lifecycleState">lifecycleState</a></code> | <code>string</code> | *No description.* |
@@ -579,19 +579,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.bucketIdInput">bucketIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.cmekSettingsInput">cmekSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings">LoggingProjectBucketConfigCmekSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.enableAnalyticsInput">enableAnalyticsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.enableAnalyticsInput">enableAnalyticsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.indexConfigsInput">indexConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.indexConfigsInput">indexConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.lockedInput">lockedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.lockedInput">lockedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.retentionDaysInput">retentionDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.bucketId">bucketId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.enableAnalytics">enableAnalytics</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.enableAnalytics">enableAnalytics</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.location">location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.locked">locked</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.locked">locked</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfig.property.retentionDays">retentionDays</a></code> | <code>number</code> | *No description.* |
 
@@ -615,7 +615,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -665,7 +665,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -675,7 +675,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -685,7 +685,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -705,7 +705,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -715,7 +715,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -725,7 +725,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -735,7 +735,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -815,7 +815,7 @@ public readonly descriptionInput: string;
 public readonly enableAnalyticsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -835,7 +835,7 @@ public readonly idInput: string;
 public readonly indexConfigsInput: IResolvable | LoggingProjectBucketConfigIndexConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
 
 ---
 
@@ -855,7 +855,7 @@ public readonly locationInput: string;
 public readonly lockedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -905,7 +905,7 @@ public readonly description: string;
 public readonly enableAnalytics: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -935,7 +935,7 @@ public readonly location: string;
 public readonly locked: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1031,22 +1031,22 @@ const loggingProjectBucketConfigConfig: loggingProjectBucketConfig.LoggingProjec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.bucketId">bucketId</a></code> | <code>string</code> | The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.location">location</a></code> | <code>string</code> | The location of the bucket. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.project">project</a></code> | <code>string</code> | The parent project that contains the logging bucket. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.cmekSettings">cmekSettings</a></code> | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettings">LoggingProjectBucketConfigCmekSettings</a></code> | cmek_settings block. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.description">description</a></code> | <code>string</code> | An optional description for this bucket. |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.enableAnalytics">enableAnalytics</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable log analytics for the bucket. Cannot be disabled once enabled. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.enableAnalytics">enableAnalytics</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable log analytics for the bucket. Cannot be disabled once enabled. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_project_bucket_config#id LoggingProjectBucketConfig#id}. |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.indexConfigs">indexConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]</code> | index_configs block. |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.locked">locked</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the bucket is locked. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.indexConfigs">indexConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]</code> | index_configs block. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.locked">locked</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the bucket is locked. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigConfig.property.retentionDays">retentionDays</a></code> | <code>number</code> | Logs will be retained by default for this amount of time, after which they will automatically be deleted. |
 
 ---
@@ -1057,7 +1057,7 @@ const loggingProjectBucketConfigConfig: loggingProjectBucketConfig.LoggingProjec
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1077,7 +1077,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1087,7 +1087,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1107,7 +1107,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1117,7 +1117,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableAnalytics: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable log analytics for the bucket. Cannot be disabled once enabled.
 
@@ -1226,7 +1226,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly indexConfigs: IResolvable | LoggingProjectBucketConfigIndexConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
 
 index_configs block.
 
@@ -1240,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly locked: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the bucket is locked.
 
@@ -1330,14 +1330,14 @@ new loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1507,7 +1507,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigCmekSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1634,7 +1634,7 @@ new loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1642,7 +1642,7 @@ new loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1708,7 +1708,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1743,7 +1743,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -1777,7 +1777,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LoggingProjectBucketConfigIndexConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>[]
 
 ---
 
@@ -1794,7 +1794,7 @@ new loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1803,7 +1803,7 @@ new loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1989,7 +1989,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2014,7 +2014,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.property.fieldPath">fieldPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a></code> | *No description.* |
 
 ---
 
@@ -2088,7 +2088,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | LoggingProjectBucketConfigIndexConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.loggingProjectBucketConfig.LoggingProjectBucketConfigIndexConfigs">LoggingProjectBucketConfigIndexConfigs</a>
 
 ---
 

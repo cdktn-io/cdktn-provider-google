@@ -312,7 +312,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -567,7 +567,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AlloydbInstance resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a AlloydbInstance resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -639,7 +639,7 @@ import { alloydbInstance } from '@cdktn/provider-google'
 alloydbInstance.AlloydbInstance.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a AlloydbInstance resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AlloydbInstance resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.generateConfigForImport.parameter.scope"></a>
 
@@ -669,7 +669,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AlloydbInstance to import is found.
 
@@ -680,23 +680,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.clientConnectionConfig">clientConnectionConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference">AlloydbInstanceClientConnectionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.machineConfig">machineConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference">AlloydbInstanceMachineConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -706,9 +706,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.publicIpAddress">publicIpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.queryInsightsConfig">queryInsightsConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference">AlloydbInstanceQueryInsightsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.readPoolConfig">readPoolConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference">AlloydbInstanceReadPoolConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.reconciling">reconciling</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.reconciling">reconciling</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.state">state</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference">AlloydbInstanceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
@@ -729,7 +729,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.pscInstanceConfigInput">pscInstanceConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig">AlloydbInstancePscInstanceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.queryInsightsConfigInput">queryInsightsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig">AlloydbInstanceQueryInsightsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.readPoolConfigInput">readPoolConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfig">AlloydbInstanceReadPoolConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.activationPolicy">activationPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.availabilityType">availabilityType</a></code> | <code>string</code> | *No description.* |
@@ -762,7 +762,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -812,7 +812,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -822,7 +822,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -832,7 +832,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -852,7 +852,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -862,7 +862,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -872,7 +872,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -882,7 +882,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -912,7 +912,7 @@ public readonly createTime: string;
 public readonly effectiveAnnotations: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -922,7 +922,7 @@ public readonly effectiveAnnotations: StringMap;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly readPoolConfig: AlloydbInstanceReadPoolConfigOutputReference;
 public readonly reconciling: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly state: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1252,7 +1252,7 @@ public readonly readPoolConfigInput: AlloydbInstanceReadPoolConfig;
 public readonly timeoutsInput: IResolvable | AlloydbInstanceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a>
 
 ---
 
@@ -1400,7 +1400,7 @@ const alloydbInstanceClientConnectionConfig: alloydbInstance.AlloydbInstanceClie
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig.property.requireConnectors">requireConnectors</a></code> | <code>boolean \| cdktf.IResolvable</code> | Configuration to enforce connectors only (ex: AuthProxy) connections to the database. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig.property.requireConnectors">requireConnectors</a></code> | <code>boolean \| cdktn.IResolvable</code> | Configuration to enforce connectors only (ex: AuthProxy) connections to the database. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig.property.sslConfig">sslConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig">AlloydbInstanceClientConnectionConfigSslConfig</a></code> | ssl_config block. |
 
 ---
@@ -1411,7 +1411,7 @@ const alloydbInstanceClientConnectionConfig: alloydbInstance.AlloydbInstanceClie
 public readonly requireConnectors: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Configuration to enforce connectors only (ex: AuthProxy) connections to the database.
 
@@ -1479,13 +1479,13 @@ const alloydbInstanceConfig: alloydbInstance.AlloydbInstanceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.cluster">cluster</a></code> | <code>string</code> | Identifies the alloydb cluster. Must be in the format 'projects/{project}/locations/{location}/clusters/{cluster_id}'. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.instanceId">instanceId</a></code> | <code>string</code> | The ID of the alloydb instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.instanceType">instanceType</a></code> | <code>string</code> | The type of the instance. |
@@ -1513,7 +1513,7 @@ const alloydbInstanceConfig: alloydbInstance.AlloydbInstanceConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1523,7 +1523,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1533,7 +1533,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1543,7 +1543,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1553,7 +1553,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1563,7 +1563,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1573,7 +1573,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1923,9 +1923,9 @@ const alloydbInstanceNetworkConfig: alloydbInstance.AlloydbInstanceNetworkConfig
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.property.allocatedIpRangeOverride">allocatedIpRangeOverride</a></code> | <code>string</code> | Name of the allocated IP range for the private IP AlloyDB instance, for example: "google-managed-services-default". |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.property.authorizedExternalNetworks">authorizedExternalNetworks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]</code> | authorized_external_networks block. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.property.enableOutboundPublicIp">enableOutboundPublicIp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enabling outbound public ip for the instance. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.property.enablePublicIp">enablePublicIp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enabling public ip for the instance. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.property.authorizedExternalNetworks">authorizedExternalNetworks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]</code> | authorized_external_networks block. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.property.enableOutboundPublicIp">enableOutboundPublicIp</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enabling outbound public ip for the instance. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.property.enablePublicIp">enablePublicIp</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enabling public ip for the instance. |
 
 ---
 
@@ -1952,7 +1952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly authorizedExternalNetworks: IResolvable | AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
 
 authorized_external_networks block.
 
@@ -1966,7 +1966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableOutboundPublicIp: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enabling outbound public ip for the instance.
 
@@ -1980,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enablePublicIp: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enabling public ip for the instance.
 
@@ -2039,8 +2039,8 @@ const alloydbInstancePscInstanceConfig: alloydbInstance.AlloydbInstancePscInstan
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig.property.allowedConsumerProjects">allowedConsumerProjects</a></code> | <code>string[]</code> | List of consumer projects that are allowed to create PSC endpoints to service-attachments to this instance. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig.property.pscAutoConnections">pscAutoConnections</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]</code> | psc_auto_connections block. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig.property.pscInterfaceConfigs">pscInterfaceConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]</code> | psc_interface_configs block. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig.property.pscAutoConnections">pscAutoConnections</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]</code> | psc_auto_connections block. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig.property.pscInterfaceConfigs">pscInterfaceConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]</code> | psc_interface_configs block. |
 
 ---
 
@@ -2066,7 +2066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pscAutoConnections: IResolvable | AlloydbInstancePscInstanceConfigPscAutoConnections[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
 
 psc_auto_connections block.
 
@@ -2080,7 +2080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pscInterfaceConfigs: IResolvable | AlloydbInstancePscInstanceConfigPscInterfaceConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
 
 psc_interface_configs block.
 
@@ -2193,8 +2193,8 @@ const alloydbInstanceQueryInsightsConfig: alloydbInstance.AlloydbInstanceQueryIn
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig.property.queryPlansPerMinute">queryPlansPerMinute</a></code> | <code>number</code> | Number of query execution plans captured by Insights per minute for all queries combined. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig.property.queryStringLength">queryStringLength</a></code> | <code>number</code> | Query string length. The default value is 1024. Any integer between 256 and 4500 is considered valid. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktf.IResolvable</code> | Record application tags for an instance. This flag is turned "on" by default. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktf.IResolvable</code> | Record client address for an instance. Client address is PII information. This flag is turned "on" by default. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktn.IResolvable</code> | Record application tags for an instance. This flag is turned "on" by default. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktn.IResolvable</code> | Record client address for an instance. Client address is PII information. This flag is turned "on" by default. |
 
 ---
 
@@ -2234,7 +2234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly recordApplicationTags: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Record application tags for an instance. This flag is turned "on" by default.
 
@@ -2248,7 +2248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly recordClientAddress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Record client address for an instance. Client address is PII information. This flag is turned "on" by default.
 
@@ -2358,14 +2358,14 @@ new alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2538,7 +2538,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2584,9 +2584,9 @@ public resetSslConfig(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.sslConfig">sslConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference">AlloydbInstanceClientConnectionConfigSslConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.requireConnectorsInput">requireConnectorsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.requireConnectorsInput">requireConnectorsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.sslConfigInput">sslConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig">AlloydbInstanceClientConnectionConfigSslConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.requireConnectors">requireConnectors</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.requireConnectors">requireConnectors</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig">AlloydbInstanceClientConnectionConfig</a></code> | *No description.* |
 
 ---
@@ -2631,7 +2631,7 @@ public readonly sslConfig: AlloydbInstanceClientConnectionConfigSslConfigOutputR
 public readonly requireConnectorsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2651,7 +2651,7 @@ public readonly sslConfigInput: AlloydbInstanceClientConnectionConfigSslConfig;
 public readonly requireConnectors: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2678,14 +2678,14 @@ new alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2856,7 +2856,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2956,14 +2956,14 @@ new alloydbInstance.AlloydbInstanceMachineConfigOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3135,7 +3135,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3263,7 +3263,7 @@ new alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3271,7 +3271,7 @@ new alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3337,7 +3337,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3372,7 +3372,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]</code> | *No description.* |
 
 ---
 
@@ -3406,7 +3406,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
 
 ---
 
@@ -3423,7 +3423,7 @@ new alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3432,7 +3432,7 @@ new alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3619,7 +3619,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3648,7 +3648,7 @@ public resetCidrRange(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.property.cidrRangeInput">cidrRangeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.property.cidrRange">cidrRange</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a></code> | *No description.* |
 
 ---
 
@@ -3702,7 +3702,7 @@ public readonly cidrRange: string;
 public readonly internalValue: IResolvable | AlloydbInstanceNetworkConfigAuthorizedExternalNetworks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>
 
 ---
 
@@ -3719,14 +3719,14 @@ new alloydbInstance.AlloydbInstanceNetworkConfigOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3901,7 +3901,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3923,7 +3923,7 @@ public putAuthorizedExternalNetworks(value: IResolvable | AlloydbInstanceNetwork
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.putAuthorizedExternalNetworks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
 
 ---
 
@@ -3960,12 +3960,12 @@ public resetEnablePublicIp(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.authorizedExternalNetworks">authorizedExternalNetworks</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList">AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.allocatedIpRangeOverrideInput">allocatedIpRangeOverrideInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.authorizedExternalNetworksInput">authorizedExternalNetworksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enableOutboundPublicIpInput">enableOutboundPublicIpInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enablePublicIpInput">enablePublicIpInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.authorizedExternalNetworksInput">authorizedExternalNetworksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enableOutboundPublicIpInput">enableOutboundPublicIpInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enablePublicIpInput">enablePublicIpInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.allocatedIpRangeOverride">allocatedIpRangeOverride</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enableOutboundPublicIp">enableOutboundPublicIp</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enablePublicIp">enablePublicIp</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enableOutboundPublicIp">enableOutboundPublicIp</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.enablePublicIp">enablePublicIp</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig">AlloydbInstanceNetworkConfig</a></code> | *No description.* |
 
 ---
@@ -4020,7 +4020,7 @@ public readonly allocatedIpRangeOverrideInput: string;
 public readonly authorizedExternalNetworksInput: IResolvable | AlloydbInstanceNetworkConfigAuthorizedExternalNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks">AlloydbInstanceNetworkConfigAuthorizedExternalNetworks</a>[]
 
 ---
 
@@ -4030,7 +4030,7 @@ public readonly authorizedExternalNetworksInput: IResolvable | AlloydbInstanceNe
 public readonly enableOutboundPublicIpInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4040,7 +4040,7 @@ public readonly enableOutboundPublicIpInput: boolean | IResolvable;
 public readonly enablePublicIpInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4060,7 +4060,7 @@ public readonly allocatedIpRangeOverride: string;
 public readonly enableOutboundPublicIp: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4070,7 +4070,7 @@ public readonly enableOutboundPublicIp: boolean | IResolvable;
 public readonly enablePublicIp: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4097,14 +4097,14 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4279,7 +4279,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4301,7 +4301,7 @@ public putPscAutoConnections(value: IResolvable | AlloydbInstancePscInstanceConf
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.putPscAutoConnections.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
 
 ---
 
@@ -4313,7 +4313,7 @@ public putPscInterfaceConfigs(value: IResolvable | AlloydbInstancePscInstanceCon
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.putPscInterfaceConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
 
 ---
 
@@ -4347,8 +4347,8 @@ public resetPscInterfaceConfigs(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.pscInterfaceConfigs">pscInterfaceConfigs</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList">AlloydbInstancePscInstanceConfigPscInterfaceConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.serviceAttachmentLink">serviceAttachmentLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.allowedConsumerProjectsInput">allowedConsumerProjectsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.pscAutoConnectionsInput">pscAutoConnectionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.pscInterfaceConfigsInput">pscInterfaceConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.pscAutoConnectionsInput">pscAutoConnectionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.pscInterfaceConfigsInput">pscInterfaceConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.allowedConsumerProjects">allowedConsumerProjects</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig">AlloydbInstancePscInstanceConfig</a></code> | *No description.* |
 
@@ -4434,7 +4434,7 @@ public readonly allowedConsumerProjectsInput: string[];
 public readonly pscAutoConnectionsInput: IResolvable | AlloydbInstancePscInstanceConfigPscAutoConnections[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
 
 ---
 
@@ -4444,7 +4444,7 @@ public readonly pscAutoConnectionsInput: IResolvable | AlloydbInstancePscInstanc
 public readonly pscInterfaceConfigsInput: IResolvable | AlloydbInstancePscInstanceConfigPscInterfaceConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
 
 ---
 
@@ -4481,7 +4481,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4489,7 +4489,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4555,7 +4555,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4590,7 +4590,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]</code> | *No description.* |
 
 ---
 
@@ -4624,7 +4624,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | AlloydbInstancePscInstanceConfigPscAutoConnections[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>[]
 
 ---
 
@@ -4641,7 +4641,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4650,7 +4650,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4838,7 +4838,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4878,7 +4878,7 @@ public resetConsumerProject(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.property.consumerProjectInput">consumerProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.property.consumerNetwork">consumerNetwork</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.property.consumerProject">consumerProject</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a></code> | *No description.* |
 
 ---
 
@@ -4982,7 +4982,7 @@ public readonly consumerProject: string;
 public readonly internalValue: IResolvable | AlloydbInstancePscInstanceConfigPscAutoConnections;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections">AlloydbInstancePscInstanceConfigPscAutoConnections</a>
 
 ---
 
@@ -4999,7 +4999,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5007,7 +5007,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5073,7 +5073,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5108,7 +5108,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -5142,7 +5142,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | AlloydbInstancePscInstanceConfigPscInterfaceConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>[]
 
 ---
 
@@ -5159,7 +5159,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5168,7 +5168,7 @@ new alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5355,7 +5355,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5384,7 +5384,7 @@ public resetNetworkAttachmentResource(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.property.networkAttachmentResourceInput">networkAttachmentResourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.property.networkAttachmentResource">networkAttachmentResource</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a></code> | *No description.* |
 
 ---
 
@@ -5438,7 +5438,7 @@ public readonly networkAttachmentResource: string;
 public readonly internalValue: IResolvable | AlloydbInstancePscInstanceConfigPscInterfaceConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs">AlloydbInstancePscInstanceConfigPscInterfaceConfigs</a>
 
 ---
 
@@ -5455,14 +5455,14 @@ new alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5636,7 +5636,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5683,12 +5683,12 @@ public resetRecordClientAddress(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.queryPlansPerMinuteInput">queryPlansPerMinuteInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.queryStringLengthInput">queryStringLengthInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordApplicationTagsInput">recordApplicationTagsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordClientAddressInput">recordClientAddressInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordApplicationTagsInput">recordApplicationTagsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordClientAddressInput">recordClientAddressInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.queryPlansPerMinute">queryPlansPerMinute</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.queryStringLength">queryStringLength</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig">AlloydbInstanceQueryInsightsConfig</a></code> | *No description.* |
 
 ---
@@ -5743,7 +5743,7 @@ public readonly queryStringLengthInput: number;
 public readonly recordApplicationTagsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5753,7 +5753,7 @@ public readonly recordApplicationTagsInput: boolean | IResolvable;
 public readonly recordClientAddressInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5783,7 +5783,7 @@ public readonly queryStringLength: number;
 public readonly recordApplicationTags: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5793,7 +5793,7 @@ public readonly recordApplicationTags: boolean | IResolvable;
 public readonly recordClientAddress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5820,14 +5820,14 @@ new alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5998,7 +5998,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6098,14 +6098,14 @@ new alloydbInstance.AlloydbInstanceTimeoutsOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6278,7 +6278,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6323,7 +6323,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6417,7 +6417,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | AlloydbInstanceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts">AlloydbInstanceTimeouts</a>
 
 ---
 

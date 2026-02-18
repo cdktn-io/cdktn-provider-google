@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeEnvironmentIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeEnvironmentIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_iam_member#env_id ApigeeEnvironmentIamMember#env_id}
   */
@@ -58,38 +58,38 @@ export interface ApigeeEnvironmentIamMemberCondition {
 }
 
 export function apigeeEnvironmentIamMemberConditionToTerraform(struct?: ApigeeEnvironmentIamMemberConditionOutputReference | ApigeeEnvironmentIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function apigeeEnvironmentIamMemberConditionToHclTerraform(struct?: ApigeeEnvironmentIamMemberConditionOutputReference | ApigeeEnvironmentIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function apigeeEnvironmentIamMemberConditionToHclTerraform(struct?: Apige
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeEnvironmentIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class ApigeeEnvironmentIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -190,7 +190,7 @@ export class ApigeeEnvironmentIamMemberConditionOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_iam_member google_apigee_environment_iam_member}
 */
-export class ApigeeEnvironmentIamMember extends cdktf.TerraformResource {
+export class ApigeeEnvironmentIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -201,14 +201,14 @@ export class ApigeeEnvironmentIamMember extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeEnvironmentIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeEnvironmentIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeEnvironmentIamMember to import
   * @param importFromId The id of the existing ApigeeEnvironmentIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeEnvironmentIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_environment_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_environment_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -345,11 +345,11 @@ export class ApigeeEnvironmentIamMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      env_id: cdktf.stringToTerraform(this._envId),
-      id: cdktf.stringToTerraform(this._id),
-      member: cdktf.stringToTerraform(this._member),
-      org_id: cdktf.stringToTerraform(this._orgId),
-      role: cdktf.stringToTerraform(this._role),
+      env_id: cdktn.stringToTerraform(this._envId),
+      id: cdktn.stringToTerraform(this._id),
+      member: cdktn.stringToTerraform(this._member),
+      org_id: cdktn.stringToTerraform(this._orgId),
+      role: cdktn.stringToTerraform(this._role),
       condition: apigeeEnvironmentIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -357,31 +357,31 @@ export class ApigeeEnvironmentIamMember extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       env_id: {
-        value: cdktf.stringToHclTerraform(this._envId),
+        value: cdktn.stringToHclTerraform(this._envId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_id: {
-        value: cdktf.stringToHclTerraform(this._orgId),
+        value: cdktn.stringToHclTerraform(this._orgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

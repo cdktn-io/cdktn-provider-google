@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleSpannerInstanceIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleSpannerInstanceIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/spanner_instance_iam_policy#id DataGoogleSpannerInstanceIamPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface DataGoogleSpannerInstanceIamPolicyConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/spanner_instance_iam_policy google_spanner_instance_iam_policy}
 */
-export class DataGoogleSpannerInstanceIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleSpannerInstanceIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleSpannerInstanceIamPolicy extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleSpannerInstanceIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleSpannerInstanceIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSpannerInstanceIamPolicy to import
   * @param importFromId The id of the existing DataGoogleSpannerInstanceIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/spanner_instance_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSpannerInstanceIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_spanner_instance_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_spanner_instance_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -150,28 +150,28 @@ export class DataGoogleSpannerInstanceIamPolicy extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

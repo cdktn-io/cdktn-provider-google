@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleParameterManagerParameterVersionRenderConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleParameterManagerParameterVersionRenderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameter_version_render#id DataGoogleParameterManagerParameterVersionRender#id}
   *
@@ -36,7 +36,7 @@ export interface DataGoogleParameterManagerParameterVersionRenderConfig extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameter_version_render google_parameter_manager_parameter_version_render}
 */
-export class DataGoogleParameterManagerParameterVersionRender extends cdktf.TerraformDataSource {
+export class DataGoogleParameterManagerParameterVersionRender extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataGoogleParameterManagerParameterVersionRender extends cdktf.Terr
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleParameterManagerParameterVersionRender resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleParameterManagerParameterVersionRender resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleParameterManagerParameterVersionRender to import
   * @param importFromId The id of the existing DataGoogleParameterManagerParameterVersionRender that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameter_version_render#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleParameterManagerParameterVersionRender to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_parameter_manager_parameter_version_render", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_parameter_manager_parameter_version_render", importId: importFromId, provider });
       }
 
   // ===========
@@ -178,35 +178,35 @@ export class DataGoogleParameterManagerParameterVersionRender extends cdktf.Terr
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      parameter: cdktf.stringToTerraform(this._parameter),
-      parameter_version_id: cdktf.stringToTerraform(this._parameterVersionId),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      parameter: cdktn.stringToTerraform(this._parameter),
+      parameter_version_id: cdktn.stringToTerraform(this._parameterVersionId),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter: {
-        value: cdktf.stringToHclTerraform(this._parameter),
+        value: cdktn.stringToHclTerraform(this._parameter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter_version_id: {
-        value: cdktf.stringToHclTerraform(this._parameterVersionId),
+        value: cdktn.stringToHclTerraform(this._parameterVersionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

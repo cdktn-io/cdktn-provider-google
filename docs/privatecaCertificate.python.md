@@ -40,13 +40,13 @@ privatecaCertificate.PrivatecaCertificate(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.location">location</a></code> | <code>str</code> | Location of the Certificate. A full list of valid locations can be found by running 'gcloud privateca locations list'. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | The name for this Certificate. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.pool">pool</a></code> | <code>str</code> | The name of the CaPool this Certificate belongs to. |
@@ -82,43 +82,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -543,7 +543,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -772,7 +772,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a PrivatecaCertificate resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a PrivatecaCertificate resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -855,7 +855,7 @@ privatecaCertificate.PrivatecaCertificate.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a PrivatecaCertificate resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a PrivatecaCertificate resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.generateConfigForImport.parameter.scope"></a>
 
@@ -885,7 +885,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the PrivatecaCertificate to import is found.
 
@@ -896,28 +896,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.certificateDescription">certificate_description</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList">PrivatecaCertificateCertificateDescriptionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference">PrivatecaCertificateConfigAOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.issuerCertificateAuthority">issuer_certificate_authority</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.pemCertificate">pem_certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.pemCertificateChain">pem_certificate_chain</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.revocationDetails">revocation_details</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList">PrivatecaCertificateRevocationDetailsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference">PrivatecaCertificateTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.certificateAuthorityInput">certificate_authority_input</a></code> | <code>str</code> | *No description.* |
@@ -931,7 +931,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.pemCsrInput">pem_csr_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.poolInput">pool_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.certificateAuthority">certificate_authority</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.certificateTemplate">certificate_template</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificate.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -963,7 +963,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1013,7 +1013,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1023,7 +1023,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1033,7 +1033,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1053,7 +1053,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1063,7 +1063,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1073,7 +1073,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1083,7 +1083,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1123,7 +1123,7 @@ create_time: str
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1173,7 +1173,7 @@ revocation_details: PrivatecaCertificateRevocationDetailsList
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1313,7 +1313,7 @@ project_input: str
 timeouts_input: IResolvable | PrivatecaCertificateTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a>
 
 ---
 
@@ -1691,13 +1691,13 @@ privatecaCertificate.PrivatecaCertificateConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.location">location</a></code> | <code>str</code> | Location of the Certificate. A full list of valid locations can be found by running 'gcloud privateca locations list'. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.name">name</a></code> | <code>str</code> | The name for this Certificate. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfig.property.pool">pool</a></code> | <code>str</code> | The name of the CaPool this Certificate belongs to. |
@@ -1719,7 +1719,7 @@ privatecaCertificate.PrivatecaCertificateConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1729,7 +1729,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1739,7 +1739,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1749,7 +1749,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1759,7 +1759,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1769,7 +1769,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1779,7 +1779,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2437,11 +2437,11 @@ privatecaCertificate.PrivatecaCertificateConfigX509Config(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.keyUsage">key_usage</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsage</a></code> | key_usage block. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.additionalExtensions">additional_extensions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]</code> | additional_extensions block. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.additionalExtensions">additional_extensions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]</code> | additional_extensions block. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.aiaOcspServers">aia_ocsp_servers</a></code> | <code>typing.List[str]</code> | Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the "Authority Information Access" extension in the certificate. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.caOptions">ca_options</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions">PrivatecaCertificateConfigX509ConfigCaOptions</a></code> | ca_options block. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.nameConstraints">name_constraints</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints">PrivatecaCertificateConfigX509ConfigNameConstraints</a></code> | name_constraints block. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.policyIds">policy_ids</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]</code> | policy_ids block. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config.property.policyIds">policy_ids</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]</code> | policy_ids block. |
 
 ---
 
@@ -2465,7 +2465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 additional_extensions: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigAdditionalExtensions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
 
 additional_extensions block.
 
@@ -2521,7 +2521,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 policy_ids: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigPolicyIds]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
 
 policy_ids block.
 
@@ -2547,7 +2547,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions.property.critical">critical</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error). |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions.property.critical">critical</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error). |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions.property.objectId">object_id</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId">PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId</a></code> | object_id block. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions.property.value">value</a></code> | <code>str</code> | The value of this X.509 extension. A base64-encoded string. |
 
@@ -2559,7 +2559,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions(
 critical: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error).
 
@@ -2648,10 +2648,10 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions.property.isCa">is_ca</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, the "CA" in Basic Constraints extension will be set to true. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions.property.isCa">is_ca</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the "CA" in Basic Constraints extension will be set to true. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions.property.maxIssuerPathLength">max_issuer_path_length</a></code> | <code>typing.Union[int, float]</code> | Refers to the "path length constraint" in Basic Constraints extension. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions.property.nonCa">non_ca</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, the "CA" in Basic Constraints extension will be set to false. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions.property.zeroMaxIssuerPathLength">zero_max_issuer_path_length</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, the "path length constraint" in Basic Constraints extension will be set to 0. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions.property.nonCa">non_ca</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the "CA" in Basic Constraints extension will be set to false. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions.property.zeroMaxIssuerPathLength">zero_max_issuer_path_length</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the "path length constraint" in Basic Constraints extension will be set to 0. |
 
 ---
 
@@ -2661,7 +2661,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions(
 is_ca: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the "CA" in Basic Constraints extension will be set to true.
 
@@ -2692,7 +2692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 non_ca: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the "CA" in Basic Constraints extension will be set to false.
 
@@ -2708,7 +2708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 zero_max_issuer_path_length: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the "path length constraint" in Basic Constraints extension will be set to 0.
 
@@ -2739,7 +2739,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage.property.baseKeyUsage">base_key_usage</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage</a></code> | base_key_usage block. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage.property.extendedKeyUsage">extended_key_usage</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage</a></code> | extended_key_usage block. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage.property.unknownExtendedKeyUsages">unknown_extended_key_usages</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]</code> | unknown_extended_key_usages block. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage.property.unknownExtendedKeyUsages">unknown_extended_key_usages</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]</code> | unknown_extended_key_usages block. |
 
 ---
 
@@ -2777,7 +2777,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 unknown_extended_key_usages: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
 
 unknown_extended_key_usages block.
 
@@ -2809,15 +2809,15 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.certSign">cert_sign</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used to sign certificates. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.contentCommitment">content_commitment</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation". |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.crlSign">crl_sign</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used sign certificate revocation lists. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.dataEncipherment">data_encipherment</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used to encipher data. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.decipherOnly">decipher_only</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used to decipher only. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.digitalSignature">digital_signature</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used for digital signatures. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.encipherOnly">encipher_only</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used to encipher only. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.keyAgreement">key_agreement</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used in a key agreement protocol. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.keyEncipherment">key_encipherment</a></code> | <code>bool \| cdktf.IResolvable</code> | The key may be used to encipher other keys. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.certSign">cert_sign</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used to sign certificates. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.contentCommitment">content_commitment</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation". |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.crlSign">crl_sign</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used sign certificate revocation lists. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.dataEncipherment">data_encipherment</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used to encipher data. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.decipherOnly">decipher_only</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used to decipher only. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.digitalSignature">digital_signature</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used for digital signatures. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.encipherOnly">encipher_only</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used to encipher only. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.keyAgreement">key_agreement</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used in a key agreement protocol. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage.property.keyEncipherment">key_encipherment</a></code> | <code>bool \| cdktn.IResolvable</code> | The key may be used to encipher other keys. |
 
 ---
 
@@ -2827,7 +2827,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage(
 cert_sign: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to sign certificates.
 
@@ -2841,7 +2841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 content_commitment: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation".
 
@@ -2855,7 +2855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 crl_sign: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used sign certificate revocation lists.
 
@@ -2869,7 +2869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 data_encipherment: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to encipher data.
 
@@ -2883,7 +2883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 decipher_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to decipher only.
 
@@ -2897,7 +2897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 digital_signature: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used for digital signatures.
 
@@ -2911,7 +2911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 encipher_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to encipher only.
 
@@ -2925,7 +2925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 key_agreement: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used in a key agreement protocol.
 
@@ -2939,7 +2939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 key_encipherment: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to encipher other keys.
 
@@ -2968,12 +2968,12 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.clientAuth">client_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW client authentication", though regularly used for non-WWW TLS. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.codeSigning">code_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication". |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.emailProtection">email_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection". |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.ocspSigning">ocsp_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses". |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.serverAuth">server_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS. |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.timeStamping">time_stamping</a></code> | <code>bool \| cdktf.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time". |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.clientAuth">client_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW client authentication", though regularly used for non-WWW TLS. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.codeSigning">code_signing</a></code> | <code>bool \| cdktn.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication". |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.emailProtection">email_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection". |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.ocspSigning">ocsp_signing</a></code> | <code>bool \| cdktn.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses". |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.serverAuth">server_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage.property.timeStamping">time_stamping</a></code> | <code>bool \| cdktn.IResolvable</code> | Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time". |
 
 ---
 
@@ -2983,7 +2983,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsag
 client_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW client authentication", though regularly used for non-WWW TLS.
 
@@ -2997,7 +2997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 code_signing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication".
 
@@ -3011,7 +3011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 email_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection".
 
@@ -3025,7 +3025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ocsp_signing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses".
 
@@ -3039,7 +3039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 server_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS.
 
@@ -3053,7 +3053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 time_stamping: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time".
 
@@ -3119,7 +3119,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints.property.critical">critical</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether or not the name constraints are marked critical. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints.property.critical">critical</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether or not the name constraints are marked critical. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints.property.excludedDnsNames">excluded_dns_names</a></code> | <code>typing.List[str]</code> | Contains excluded DNS names. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints.property.excludedEmailAddresses">excluded_email_addresses</a></code> | <code>typing.List[str]</code> | Contains the excluded email addresses. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints.property.excludedIpRanges">excluded_ip_ranges</a></code> | <code>typing.List[str]</code> | Contains the excluded IP ranges. |
@@ -3137,7 +3137,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints(
 critical: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether or not the name constraints are marked critical.
 
@@ -3418,7 +3418,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3426,7 +3426,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdLis
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3496,7 +3496,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3578,7 +3578,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3587,7 +3587,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOut
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3795,7 +3795,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionAuthorityKeyIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3882,7 +3882,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3890,7 +3890,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintLi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3960,7 +3960,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4042,7 +4042,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4051,7 +4051,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOu
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4259,7 +4259,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionCertFingerprintOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4346,7 +4346,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4354,7 +4354,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4424,7 +4424,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4506,7 +4506,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4515,7 +4515,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4723,7 +4723,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4887,7 +4887,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4895,7 +4895,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4965,7 +4965,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5047,7 +5047,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5056,7 +5056,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputRe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5264,7 +5264,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionPublicKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5362,7 +5362,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5370,7 +5370,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5440,7 +5440,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5522,7 +5522,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5531,7 +5531,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5739,7 +5739,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5881,7 +5881,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5889,7 +5889,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5959,7 +5959,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6040,7 +6040,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6048,7 +6048,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6118,7 +6118,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6200,7 +6200,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6209,7 +6209,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6417,7 +6417,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6505,7 +6505,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6514,7 +6514,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6722,7 +6722,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6743,7 +6743,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.property.critical">critical</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.property.critical">critical</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.property.obectId">obect_id</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList">PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansObectIdList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSansOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSans">PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameCustomSans</a></code> | *No description.* |
@@ -6780,7 +6780,7 @@ fqn: str
 critical: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -6831,7 +6831,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6839,7 +6839,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6909,7 +6909,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6991,7 +6991,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7000,7 +7000,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7208,7 +7208,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectAltNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7339,7 +7339,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7347,7 +7347,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7417,7 +7417,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7499,7 +7499,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7508,7 +7508,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptio
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7716,7 +7716,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectDescriptionSubjectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7880,7 +7880,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7888,7 +7888,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7958,7 +7958,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8040,7 +8040,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8049,7 +8049,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutpu
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8257,7 +8257,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8344,7 +8344,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8352,7 +8352,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8422,7 +8422,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8503,7 +8503,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8511,7 +8511,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8581,7 +8581,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8663,7 +8663,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8672,7 +8672,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8880,7 +8880,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8968,7 +8968,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8977,7 +8977,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAd
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9185,7 +9185,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9206,7 +9206,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.property.critical">critical</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.property.critical">critical</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.property.objectId">object_id</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList">PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions">PrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions</a></code> | *No description.* |
@@ -9243,7 +9243,7 @@ fqn: str
 critical: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -9294,7 +9294,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9302,7 +9302,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9372,7 +9372,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9454,7 +9454,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9463,7 +9463,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9671,7 +9671,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9692,7 +9692,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.property.isCa">is_ca</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.property.isCa">is_ca</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.property.maxIssuerPathLength">max_issuer_path_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions">PrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions</a></code> | *No description.* |
 
@@ -9728,7 +9728,7 @@ fqn: str
 is_ca: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -9769,7 +9769,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9777,7 +9777,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9847,7 +9847,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9929,7 +9929,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9938,7 +9938,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10146,7 +10146,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10167,15 +10167,15 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.certSign">cert_sign</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.contentCommitment">content_commitment</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.crlSign">crl_sign</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.dataEncipherment">data_encipherment</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.decipherOnly">decipher_only</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.digitalSignature">digital_signature</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.encipherOnly">encipher_only</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.keyAgreement">key_agreement</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.keyEncipherment">key_encipherment</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.certSign">cert_sign</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.contentCommitment">content_commitment</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.crlSign">crl_sign</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.dataEncipherment">data_encipherment</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.decipherOnly">decipher_only</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.digitalSignature">digital_signature</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.encipherOnly">encipher_only</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.keyAgreement">key_agreement</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.keyEncipherment">key_encipherment</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage">PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage</a></code> | *No description.* |
 
 ---
@@ -10210,7 +10210,7 @@ fqn: str
 cert_sign: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10220,7 +10220,7 @@ cert_sign: IResolvable
 content_commitment: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10230,7 +10230,7 @@ content_commitment: IResolvable
 crl_sign: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10240,7 +10240,7 @@ crl_sign: IResolvable
 data_encipherment: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10250,7 +10250,7 @@ data_encipherment: IResolvable
 decipher_only: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10260,7 +10260,7 @@ decipher_only: IResolvable
 digital_signature: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10270,7 +10270,7 @@ digital_signature: IResolvable
 encipher_only: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10280,7 +10280,7 @@ encipher_only: IResolvable
 key_agreement: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10290,7 +10290,7 @@ key_agreement: IResolvable
 key_encipherment: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10321,7 +10321,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10329,7 +10329,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10399,7 +10399,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10481,7 +10481,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10490,7 +10490,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10698,7 +10698,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10719,12 +10719,12 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.clientAuth">client_auth</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.codeSigning">code_signing</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.emailProtection">email_protection</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.ocspSigning">ocsp_signing</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.serverAuth">server_auth</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.timeStamping">time_stamping</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.clientAuth">client_auth</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.codeSigning">code_signing</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.emailProtection">email_protection</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.ocspSigning">ocsp_signing</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.serverAuth">server_auth</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.timeStamping">time_stamping</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage">PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage</a></code> | *No description.* |
 
 ---
@@ -10759,7 +10759,7 @@ fqn: str
 client_auth: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10769,7 +10769,7 @@ client_auth: IResolvable
 code_signing: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10779,7 +10779,7 @@ code_signing: IResolvable
 email_protection: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10789,7 +10789,7 @@ email_protection: IResolvable
 ocsp_signing: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10799,7 +10799,7 @@ ocsp_signing: IResolvable
 server_auth: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10809,7 +10809,7 @@ server_auth: IResolvable
 time_stamping: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -10840,7 +10840,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10848,7 +10848,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10918,7 +10918,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11000,7 +11000,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11009,7 +11009,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11217,7 +11217,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11326,7 +11326,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11334,7 +11334,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11404,7 +11404,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11486,7 +11486,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11495,7 +11495,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11703,7 +11703,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11790,7 +11790,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11798,7 +11798,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionLi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11868,7 +11868,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11949,7 +11949,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11957,7 +11957,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12027,7 +12027,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12109,7 +12109,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12118,7 +12118,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNa
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12326,7 +12326,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12347,7 +12347,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.property.critical">critical</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.property.critical">critical</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.property.excludedDnsNames">excluded_dns_names</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.property.excludedEmailAddresses">excluded_email_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsOutputReference.property.excludedIpRanges">excluded_ip_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -12390,7 +12390,7 @@ fqn: str
 critical: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -12502,7 +12502,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12511,7 +12511,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOu
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12719,7 +12719,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12861,7 +12861,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12869,7 +12869,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPo
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12939,7 +12939,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13021,7 +13021,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13030,7 +13030,7 @@ privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPo
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13238,7 +13238,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13324,14 +13324,14 @@ privatecaCertificate.PrivatecaCertificateConfigAOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13528,7 +13528,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13645,7 +13645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `additional_extensions`<sup>Optional</sup> <a name="additional_extensions" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference.putX509Config.parameter.additionalExtensions"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
 
 additional_extensions block.
 
@@ -13685,7 +13685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `policy_ids`<sup>Optional</sup> <a name="policy_ids" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigAOutputReference.putX509Config.parameter.policyIds"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
 
 policy_ids block.
 
@@ -13848,14 +13848,14 @@ privatecaCertificate.PrivatecaCertificateConfigPublicKeyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigPublicKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigPublicKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigPublicKeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigPublicKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14048,7 +14048,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigPublicKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14173,14 +14173,14 @@ privatecaCertificate.PrivatecaCertificateConfigSubjectConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14375,7 +14375,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14646,14 +14646,14 @@ privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14849,7 +14849,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectAltNameOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15036,14 +15036,14 @@ privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15241,7 +15241,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectConfigSubjectOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15528,14 +15528,14 @@ privatecaCertificate.PrivatecaCertificateConfigSubjectKeyIdOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectKeyIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectKeyIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectKeyIdOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectKeyIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15728,7 +15728,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigSubjectKeyIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15832,7 +15832,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15840,7 +15840,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsLis
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15910,7 +15910,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15947,7 +15947,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]</code> | *No description.* |
 
 ---
 
@@ -15981,7 +15981,7 @@ fqn: str
 internal_value: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigAdditionalExtensions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
 
 ---
 
@@ -16001,14 +16001,14 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16200,7 +16200,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16299,7 +16299,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16308,7 +16308,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOut
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16517,7 +16517,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16557,12 +16557,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.objectId">object_id</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference">PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.criticalInput">critical_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.criticalInput">critical_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.objectIdInput">object_id_input</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId">PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.critical">critical</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.critical">critical</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a></code> | *No description.* |
 
 ---
 
@@ -16606,7 +16606,7 @@ object_id: PrivatecaCertificateConfigX509ConfigAdditionalExtensionsObjectIdOutpu
 critical_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16636,7 +16636,7 @@ value_input: str
 critical: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16656,7 +16656,7 @@ value: str
 internal_value: IResolvable | PrivatecaCertificateConfigX509ConfigAdditionalExtensions
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>
 
 ---
 
@@ -16676,14 +16676,14 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16879,7 +16879,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16924,14 +16924,14 @@ def reset_zero_max_issuer_path_length() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.isCaInput">is_ca_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.isCaInput">is_ca_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.maxIssuerPathLengthInput">max_issuer_path_length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.nonCaInput">non_ca_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.zeroMaxIssuerPathLengthInput">zero_max_issuer_path_length_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.isCa">is_ca</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.nonCaInput">non_ca_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.zeroMaxIssuerPathLengthInput">zero_max_issuer_path_length_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.isCa">is_ca</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.maxIssuerPathLength">max_issuer_path_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.nonCa">non_ca</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.zeroMaxIssuerPathLength">zero_max_issuer_path_length</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.nonCa">non_ca</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.zeroMaxIssuerPathLength">zero_max_issuer_path_length</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions">PrivatecaCertificateConfigX509ConfigCaOptions</a></code> | *No description.* |
 
 ---
@@ -16966,7 +16966,7 @@ fqn: str
 is_ca_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16986,7 +16986,7 @@ max_issuer_path_length_input: typing.Union[int, float]
 non_ca_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16996,7 +16996,7 @@ non_ca_input: bool | IResolvable
 zero_max_issuer_path_length_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17006,7 +17006,7 @@ zero_max_issuer_path_length_input: bool | IResolvable
 is_ca: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17026,7 +17026,7 @@ max_issuer_path_length: typing.Union[int, float]
 non_ca: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17036,7 +17036,7 @@ non_ca: bool | IResolvable
 zero_max_issuer_path_length: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17066,14 +17066,14 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17274,7 +17274,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17349,24 +17349,24 @@ def reset_key_encipherment() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.certSignInput">cert_sign_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.contentCommitmentInput">content_commitment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.crlSignInput">crl_sign_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.dataEnciphermentInput">data_encipherment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.decipherOnlyInput">decipher_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.digitalSignatureInput">digital_signature_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.encipherOnlyInput">encipher_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyAgreementInput">key_agreement_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyEnciphermentInput">key_encipherment_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.certSign">cert_sign</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.contentCommitment">content_commitment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.crlSign">crl_sign</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.dataEncipherment">data_encipherment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.decipherOnly">decipher_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.digitalSignature">digital_signature</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.encipherOnly">encipher_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyAgreement">key_agreement</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyEncipherment">key_encipherment</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.certSignInput">cert_sign_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.contentCommitmentInput">content_commitment_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.crlSignInput">crl_sign_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.dataEnciphermentInput">data_encipherment_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.decipherOnlyInput">decipher_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.digitalSignatureInput">digital_signature_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.encipherOnlyInput">encipher_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyAgreementInput">key_agreement_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyEnciphermentInput">key_encipherment_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.certSign">cert_sign</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.contentCommitment">content_commitment</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.crlSign">crl_sign</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.dataEncipherment">data_encipherment</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.decipherOnly">decipher_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.digitalSignature">digital_signature</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.encipherOnly">encipher_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyAgreement">key_agreement</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.keyEncipherment">key_encipherment</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage</a></code> | *No description.* |
 
 ---
@@ -17401,7 +17401,7 @@ fqn: str
 cert_sign_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17411,7 +17411,7 @@ cert_sign_input: bool | IResolvable
 content_commitment_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17421,7 +17421,7 @@ content_commitment_input: bool | IResolvable
 crl_sign_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17431,7 +17431,7 @@ crl_sign_input: bool | IResolvable
 data_encipherment_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17441,7 +17441,7 @@ data_encipherment_input: bool | IResolvable
 decipher_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17451,7 +17451,7 @@ decipher_only_input: bool | IResolvable
 digital_signature_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17461,7 +17461,7 @@ digital_signature_input: bool | IResolvable
 encipher_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17471,7 +17471,7 @@ encipher_only_input: bool | IResolvable
 key_agreement_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17481,7 +17481,7 @@ key_agreement_input: bool | IResolvable
 key_encipherment_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17491,7 +17491,7 @@ key_encipherment_input: bool | IResolvable
 cert_sign: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17501,7 +17501,7 @@ cert_sign: bool | IResolvable
 content_commitment: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17511,7 +17511,7 @@ content_commitment: bool | IResolvable
 crl_sign: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17521,7 +17521,7 @@ crl_sign: bool | IResolvable
 data_encipherment: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17531,7 +17531,7 @@ data_encipherment: bool | IResolvable
 decipher_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17541,7 +17541,7 @@ decipher_only: bool | IResolvable
 digital_signature: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17551,7 +17551,7 @@ digital_signature: bool | IResolvable
 encipher_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17561,7 +17561,7 @@ encipher_only: bool | IResolvable
 key_agreement: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17571,7 +17571,7 @@ key_agreement: bool | IResolvable
 key_encipherment: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17601,14 +17601,14 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17806,7 +17806,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17863,18 +17863,18 @@ def reset_time_stamping() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.clientAuthInput">client_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.codeSigningInput">code_signing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.emailProtectionInput">email_protection_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.ocspSigningInput">ocsp_signing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.serverAuthInput">server_auth_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.timeStampingInput">time_stamping_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.clientAuth">client_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.codeSigning">code_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.emailProtection">email_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.ocspSigning">ocsp_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.serverAuth">server_auth</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.timeStamping">time_stamping</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.clientAuthInput">client_auth_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.codeSigningInput">code_signing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.emailProtectionInput">email_protection_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.ocspSigningInput">ocsp_signing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.serverAuthInput">server_auth_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.timeStampingInput">time_stamping_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.clientAuth">client_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.codeSigning">code_signing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.emailProtection">email_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.ocspSigning">ocsp_signing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.serverAuth">server_auth</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.timeStamping">time_stamping</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage</a></code> | *No description.* |
 
 ---
@@ -17909,7 +17909,7 @@ fqn: str
 client_auth_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17919,7 +17919,7 @@ client_auth_input: bool | IResolvable
 code_signing_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17929,7 +17929,7 @@ code_signing_input: bool | IResolvable
 email_protection_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17939,7 +17939,7 @@ email_protection_input: bool | IResolvable
 ocsp_signing_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17949,7 +17949,7 @@ ocsp_signing_input: bool | IResolvable
 server_auth_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17959,7 +17959,7 @@ server_auth_input: bool | IResolvable
 time_stamping_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17969,7 +17969,7 @@ time_stamping_input: bool | IResolvable
 client_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17979,7 +17979,7 @@ client_auth: bool | IResolvable
 code_signing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17989,7 +17989,7 @@ code_signing: bool | IResolvable
 email_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17999,7 +17999,7 @@ email_protection: bool | IResolvable
 ocsp_signing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18009,7 +18009,7 @@ ocsp_signing: bool | IResolvable
 server_auth: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18019,7 +18019,7 @@ server_auth: bool | IResolvable
 time_stamping: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18049,14 +18049,14 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18252,7 +18252,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18284,7 +18284,7 @@ def put_base_key_usage(
 
 ###### `cert_sign`<sup>Optional</sup> <a name="cert_sign" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.certSign"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to sign certificates.
 
@@ -18294,7 +18294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `content_commitment`<sup>Optional</sup> <a name="content_commitment" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.contentCommitment"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation".
 
@@ -18304,7 +18304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `crl_sign`<sup>Optional</sup> <a name="crl_sign" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.crlSign"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used sign certificate revocation lists.
 
@@ -18314,7 +18314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `data_encipherment`<sup>Optional</sup> <a name="data_encipherment" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.dataEncipherment"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to encipher data.
 
@@ -18324,7 +18324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `decipher_only`<sup>Optional</sup> <a name="decipher_only" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.decipherOnly"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to decipher only.
 
@@ -18334,7 +18334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `digital_signature`<sup>Optional</sup> <a name="digital_signature" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.digitalSignature"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used for digital signatures.
 
@@ -18344,7 +18344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `encipher_only`<sup>Optional</sup> <a name="encipher_only" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.encipherOnly"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to encipher only.
 
@@ -18354,7 +18354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `key_agreement`<sup>Optional</sup> <a name="key_agreement" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.keyAgreement"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used in a key agreement protocol.
 
@@ -18364,7 +18364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `key_encipherment`<sup>Optional</sup> <a name="key_encipherment" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putBaseKeyUsage.parameter.keyEncipherment"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The key may be used to encipher other keys.
 
@@ -18387,7 +18387,7 @@ def put_extended_key_usage(
 
 ###### `client_auth`<sup>Optional</sup> <a name="client_auth" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putExtendedKeyUsage.parameter.clientAuth"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW client authentication", though regularly used for non-WWW TLS.
 
@@ -18397,7 +18397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `code_signing`<sup>Optional</sup> <a name="code_signing" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putExtendedKeyUsage.parameter.codeSigning"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication".
 
@@ -18407,7 +18407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `email_protection`<sup>Optional</sup> <a name="email_protection" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putExtendedKeyUsage.parameter.emailProtection"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection".
 
@@ -18417,7 +18417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `ocsp_signing`<sup>Optional</sup> <a name="ocsp_signing" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putExtendedKeyUsage.parameter.ocspSigning"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses".
 
@@ -18427,7 +18427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `server_auth`<sup>Optional</sup> <a name="server_auth" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putExtendedKeyUsage.parameter.serverAuth"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS.
 
@@ -18437,7 +18437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `time_stamping`<sup>Optional</sup> <a name="time_stamping" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putExtendedKeyUsage.parameter.timeStamping"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time".
 
@@ -18455,7 +18455,7 @@ def put_unknown_extended_key_usages(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.putUnknownExtendedKeyUsages.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
 
 ---
 
@@ -18477,7 +18477,7 @@ def reset_unknown_extended_key_usages() -> None
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.property.unknownExtendedKeyUsages">unknown_extended_key_usages</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.property.baseKeyUsageInput">base_key_usage_input</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.property.extendedKeyUsageInput">extended_key_usage_input</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsage</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.property.unknownExtendedKeyUsagesInput">unknown_extended_key_usages_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.property.unknownExtendedKeyUsagesInput">unknown_extended_key_usages_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsage</a></code> | *No description.* |
 
 ---
@@ -18562,7 +18562,7 @@ extended_key_usage_input: PrivatecaCertificateConfigX509ConfigKeyUsageExtendedKe
 unknown_extended_key_usages_input: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
 
 ---
 
@@ -18593,7 +18593,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtended
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18601,7 +18601,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtended
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18671,7 +18671,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18708,7 +18708,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]</code> | *No description.* |
 
 ---
 
@@ -18742,7 +18742,7 @@ fqn: str
 internal_value: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
 
 ---
 
@@ -18764,7 +18764,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtended
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18773,7 +18773,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtended
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18981,7 +18981,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19004,7 +19004,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.property.objectIdPathInput">object_id_path_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.property.objectIdPath">object_id_path</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a></code> | *No description.* |
 
 ---
 
@@ -19058,7 +19058,7 @@ object_id_path: typing.List[typing.Union[int, float]]
 internal_value: IResolvable | PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>
 
 ---
 
@@ -19078,14 +19078,14 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19285,7 +19285,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19354,7 +19354,7 @@ def reset_permitted_uris() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.criticalInput">critical_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.criticalInput">critical_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.excludedDnsNamesInput">excluded_dns_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.excludedEmailAddressesInput">excluded_email_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.excludedIpRangesInput">excluded_ip_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -19363,7 +19363,7 @@ def reset_permitted_uris() -> None
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.permittedEmailAddressesInput">permitted_email_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.permittedIpRangesInput">permitted_ip_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.permittedUrisInput">permitted_uris_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.critical">critical</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.critical">critical</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.excludedDnsNames">excluded_dns_names</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.excludedEmailAddresses">excluded_email_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference.property.excludedIpRanges">excluded_ip_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -19406,7 +19406,7 @@ fqn: str
 critical_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19496,7 +19496,7 @@ permitted_uris_input: typing.List[str]
 critical: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19606,14 +19606,14 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19815,7 +19815,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19839,7 +19839,7 @@ def put_additional_extensions(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.putAdditionalExtensions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
 
 ---
 
@@ -19856,7 +19856,7 @@ def put_ca_options(
 
 ###### `is_ca`<sup>Optional</sup> <a name="is_ca" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.putCaOptions.parameter.isCa"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the "CA" in Basic Constraints extension will be set to true.
 
@@ -19879,7 +19879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `non_ca`<sup>Optional</sup> <a name="non_ca" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.putCaOptions.parameter.nonCa"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the "CA" in Basic Constraints extension will be set to false.
 
@@ -19891,7 +19891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `zero_max_issuer_path_length`<sup>Optional</sup> <a name="zero_max_issuer_path_length" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.putCaOptions.parameter.zeroMaxIssuerPathLength"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, the "path length constraint" in Basic Constraints extension will be set to 0.
 
@@ -19934,7 +19934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `unknown_extended_key_usages`<sup>Optional</sup> <a name="unknown_extended_key_usages" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.putKeyUsage.parameter.unknownExtendedKeyUsages"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages">PrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsages</a>]
 
 unknown_extended_key_usages block.
 
@@ -19960,7 +19960,7 @@ def put_name_constraints(
 
 ###### `critical`<sup>Required</sup> <a name="critical" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.putNameConstraints.parameter.critical"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether or not the name constraints are marked critical.
 
@@ -20096,7 +20096,7 @@ def put_policy_ids(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.putPolicyIds.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
 
 ---
 
@@ -20142,12 +20142,12 @@ def reset_policy_ids() -> None
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.keyUsage">key_usage</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference">PrivatecaCertificateConfigX509ConfigKeyUsageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.nameConstraints">name_constraints</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference">PrivatecaCertificateConfigX509ConfigNameConstraintsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.policyIds">policy_ids</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList">PrivatecaCertificateConfigX509ConfigPolicyIdsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.additionalExtensionsInput">additional_extensions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.additionalExtensionsInput">additional_extensions_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.aiaOcspServersInput">aia_ocsp_servers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.caOptionsInput">ca_options_input</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigCaOptions">PrivatecaCertificateConfigX509ConfigCaOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.keyUsageInput">key_usage_input</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigKeyUsage">PrivatecaCertificateConfigX509ConfigKeyUsage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.nameConstraintsInput">name_constraints_input</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigNameConstraints">PrivatecaCertificateConfigX509ConfigNameConstraints</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.policyIdsInput">policy_ids_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.policyIdsInput">policy_ids_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.aiaOcspServers">aia_ocsp_servers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509Config">PrivatecaCertificateConfigX509Config</a></code> | *No description.* |
 
@@ -20233,7 +20233,7 @@ policy_ids: PrivatecaCertificateConfigX509ConfigPolicyIdsList
 additional_extensions_input: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigAdditionalExtensions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigAdditionalExtensions">PrivatecaCertificateConfigX509ConfigAdditionalExtensions</a>]
 
 ---
 
@@ -20283,7 +20283,7 @@ name_constraints_input: PrivatecaCertificateConfigX509ConfigNameConstraints
 policy_ids_input: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigPolicyIds]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
 
 ---
 
@@ -20324,7 +20324,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20332,7 +20332,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20402,7 +20402,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20439,7 +20439,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]</code> | *No description.* |
 
 ---
 
@@ -20473,7 +20473,7 @@ fqn: str
 internal_value: IResolvable | typing.List[PrivatecaCertificateConfigX509ConfigPolicyIds]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>]
 
 ---
 
@@ -20495,7 +20495,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20504,7 +20504,7 @@ privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReferenc
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20712,7 +20712,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20735,7 +20735,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.property.objectIdPathInput">object_id_path_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.property.objectIdPath">object_id_path</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIdsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a></code> | *No description.* |
 
 ---
 
@@ -20789,7 +20789,7 @@ object_id_path: typing.List[typing.Union[int, float]]
 internal_value: IResolvable | PrivatecaCertificateConfigX509ConfigPolicyIds
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateConfigX509ConfigPolicyIds">PrivatecaCertificateConfigX509ConfigPolicyIds</a>
 
 ---
 
@@ -20810,7 +20810,7 @@ privatecaCertificate.PrivatecaCertificateRevocationDetailsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20818,7 +20818,7 @@ privatecaCertificate.PrivatecaCertificateRevocationDetailsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20888,7 +20888,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20970,7 +20970,7 @@ privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20979,7 +20979,7 @@ privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21187,7 +21187,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateRevocationDetailsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21284,14 +21284,14 @@ privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21486,7 +21486,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21531,7 +21531,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -21625,7 +21625,7 @@ update: str
 internal_value: IResolvable | PrivatecaCertificateTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.privatecaCertificate.PrivatecaCertificateTimeouts">PrivatecaCertificateTimeouts</a>
 
 ---
 

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeSharedVpcHostProjectConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeSharedVpcHostProjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#id ComputeSharedVpcHostProject#id}
   *
@@ -43,32 +43,32 @@ export interface ComputeSharedVpcHostProjectTimeouts {
   readonly delete?: string;
 }
 
-export function computeSharedVpcHostProjectTimeoutsToTerraform(struct?: ComputeSharedVpcHostProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSharedVpcHostProjectTimeoutsToTerraform(struct?: ComputeSharedVpcHostProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function computeSharedVpcHostProjectTimeoutsToHclTerraform(struct?: ComputeSharedVpcHostProjectTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeSharedVpcHostProjectTimeoutsToHclTerraform(struct?: ComputeSharedVpcHostProjectTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -79,19 +79,19 @@ export function computeSharedVpcHostProjectTimeoutsToHclTerraform(struct?: Compu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeSharedVpcHostProjectTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeSharedVpcHostProjectTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeSharedVpcHostProjectTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeSharedVpcHostProjectTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,14 +108,14 @@ export class ComputeSharedVpcHostProjectTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeSharedVpcHostProjectTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeSharedVpcHostProjectTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,7 +163,7 @@ export class ComputeSharedVpcHostProjectTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project google_compute_shared_vpc_host_project}
 */
-export class ComputeSharedVpcHostProject extends cdktf.TerraformResource {
+export class ComputeSharedVpcHostProject extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -174,14 +174,14 @@ export class ComputeSharedVpcHostProject extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeSharedVpcHostProject resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeSharedVpcHostProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSharedVpcHostProject to import
   * @param importFromId The id of the existing ComputeSharedVpcHostProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSharedVpcHostProject to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_shared_vpc_host_project", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_shared_vpc_host_project", importId: importFromId, provider });
       }
 
   // ===========
@@ -271,8 +271,8 @@ export class ComputeSharedVpcHostProject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: computeSharedVpcHostProjectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -280,13 +280,13 @@ export class ComputeSharedVpcHostProject extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

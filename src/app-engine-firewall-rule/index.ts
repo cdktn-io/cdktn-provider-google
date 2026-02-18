@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppEngineFirewallRuleConfig extends cdktf.TerraformMetaArguments {
+export interface AppEngineFirewallRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The action to take if this rule matches. Possible values: ["UNSPECIFIED_ACTION", "ALLOW", "DENY"]
   *
@@ -74,39 +74,39 @@ export interface AppEngineFirewallRuleTimeouts {
   readonly update?: string;
 }
 
-export function appEngineFirewallRuleTimeoutsToTerraform(struct?: AppEngineFirewallRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineFirewallRuleTimeoutsToTerraform(struct?: AppEngineFirewallRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appEngineFirewallRuleTimeoutsToHclTerraform(struct?: AppEngineFirewallRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineFirewallRuleTimeoutsToHclTerraform(struct?: AppEngineFirewallRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,19 +117,19 @@ export function appEngineFirewallRuleTimeoutsToHclTerraform(struct?: AppEngineFi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineFirewallRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppEngineFirewallRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppEngineFirewallRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineFirewallRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class AppEngineFirewallRuleTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineFirewallRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineFirewallRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -158,7 +158,7 @@ export class AppEngineFirewallRuleTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,7 +223,7 @@ export class AppEngineFirewallRuleTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_firewall_rule google_app_engine_firewall_rule}
 */
-export class AppEngineFirewallRule extends cdktf.TerraformResource {
+export class AppEngineFirewallRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class AppEngineFirewallRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppEngineFirewallRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppEngineFirewallRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppEngineFirewallRule to import
   * @param importFromId The id of the existing AppEngineFirewallRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_firewall_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppEngineFirewallRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_firewall_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_firewall_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -396,12 +396,12 @@ export class AppEngineFirewallRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      priority: cdktf.numberToTerraform(this._priority),
-      project: cdktf.stringToTerraform(this._project),
-      source_range: cdktf.stringToTerraform(this._sourceRange),
+      action: cdktn.stringToTerraform(this._action),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      priority: cdktn.numberToTerraform(this._priority),
+      project: cdktn.stringToTerraform(this._project),
+      source_range: cdktn.stringToTerraform(this._sourceRange),
       timeouts: appEngineFirewallRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -409,37 +409,37 @@ export class AppEngineFirewallRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_range: {
-        value: cdktf.stringToHclTerraform(this._sourceRange),
+        value: cdktn.stringToHclTerraform(this._sourceRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleServiceAccountIdTokenConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleServiceAccountIdTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_id_token#delegates DataGoogleServiceAccountIdToken#delegates}
   */
@@ -26,7 +26,7 @@ export interface DataGoogleServiceAccountIdTokenConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_id_token#include_email DataGoogleServiceAccountIdToken#include_email}
   */
-  readonly includeEmail?: boolean | cdktf.IResolvable;
+  readonly includeEmail?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_id_token#target_audience DataGoogleServiceAccountIdToken#target_audience}
   */
@@ -40,7 +40,7 @@ export interface DataGoogleServiceAccountIdTokenConfig extends cdktf.TerraformMe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_id_token google_service_account_id_token}
 */
-export class DataGoogleServiceAccountIdToken extends cdktf.TerraformDataSource {
+export class DataGoogleServiceAccountIdToken extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DataGoogleServiceAccountIdToken extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleServiceAccountIdToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleServiceAccountIdToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleServiceAccountIdToken to import
   * @param importFromId The id of the existing DataGoogleServiceAccountIdToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_id_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleServiceAccountIdToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_service_account_id_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_service_account_id_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -102,7 +102,7 @@ export class DataGoogleServiceAccountIdToken extends cdktf.TerraformDataSource {
   // delegates - computed: false, optional: true, required: false
   private _delegates?: string[]; 
   public get delegates() {
-    return cdktf.Fn.tolist(this.getListAttribute('delegates'));
+    return cdktn.Fn.tolist(this.getListAttribute('delegates'));
   }
   public set delegates(value: string[]) {
     this._delegates = value;
@@ -137,11 +137,11 @@ export class DataGoogleServiceAccountIdToken extends cdktf.TerraformDataSource {
   }
 
   // include_email - computed: false, optional: true, required: false
-  private _includeEmail?: boolean | cdktf.IResolvable; 
+  private _includeEmail?: boolean | cdktn.IResolvable; 
   public get includeEmail() {
     return this.getBooleanAttribute('include_email');
   }
-  public set includeEmail(value: boolean | cdktf.IResolvable) {
+  public set includeEmail(value: boolean | cdktn.IResolvable) {
     this._includeEmail = value;
   }
   public resetIncludeEmail() {
@@ -187,42 +187,42 @@ export class DataGoogleServiceAccountIdToken extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delegates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegates),
-      id: cdktf.stringToTerraform(this._id),
-      include_email: cdktf.booleanToTerraform(this._includeEmail),
-      target_audience: cdktf.stringToTerraform(this._targetAudience),
-      target_service_account: cdktf.stringToTerraform(this._targetServiceAccount),
+      delegates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegates),
+      id: cdktn.stringToTerraform(this._id),
+      include_email: cdktn.booleanToTerraform(this._includeEmail),
+      target_audience: cdktn.stringToTerraform(this._targetAudience),
+      target_service_account: cdktn.stringToTerraform(this._targetServiceAccount),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delegates: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegates),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._delegates),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_email: {
-        value: cdktf.booleanToHclTerraform(this._includeEmail),
+        value: cdktn.booleanToHclTerraform(this._includeEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       target_audience: {
-        value: cdktf.stringToHclTerraform(this._targetAudience),
+        value: cdktn.stringToHclTerraform(this._targetAudience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_service_account: {
-        value: cdktf.stringToHclTerraform(this._targetServiceAccount),
+        value: cdktn.stringToHclTerraform(this._targetServiceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

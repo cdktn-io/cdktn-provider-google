@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PublicCaExternalAccountKeyConfig extends cdktf.TerraformMetaArguments {
+export interface PublicCaExternalAccountKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#id PublicCaExternalAccountKey#id}
   *
@@ -47,32 +47,32 @@ export interface PublicCaExternalAccountKeyTimeouts {
   readonly delete?: string;
 }
 
-export function publicCaExternalAccountKeyTimeoutsToTerraform(struct?: PublicCaExternalAccountKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function publicCaExternalAccountKeyTimeoutsToTerraform(struct?: PublicCaExternalAccountKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function publicCaExternalAccountKeyTimeoutsToHclTerraform(struct?: PublicCaExternalAccountKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function publicCaExternalAccountKeyTimeoutsToHclTerraform(struct?: PublicCaExternalAccountKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,19 +83,19 @@ export function publicCaExternalAccountKeyTimeoutsToHclTerraform(struct?: Public
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PublicCaExternalAccountKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PublicCaExternalAccountKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PublicCaExternalAccountKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PublicCaExternalAccountKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -112,14 +112,14 @@ export class PublicCaExternalAccountKeyTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PublicCaExternalAccountKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PublicCaExternalAccountKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -167,7 +167,7 @@ export class PublicCaExternalAccountKeyTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key}
 */
-export class PublicCaExternalAccountKey extends cdktf.TerraformResource {
+export class PublicCaExternalAccountKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -178,14 +178,14 @@ export class PublicCaExternalAccountKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PublicCaExternalAccountKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PublicCaExternalAccountKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PublicCaExternalAccountKey to import
   * @param importFromId The id of the existing PublicCaExternalAccountKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PublicCaExternalAccountKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_public_ca_external_account_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_public_ca_external_account_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -315,9 +315,9 @@ export class PublicCaExternalAccountKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: publicCaExternalAccountKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -325,19 +325,19 @@ export class PublicCaExternalAccountKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

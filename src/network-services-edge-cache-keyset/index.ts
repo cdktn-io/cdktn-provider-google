@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkServicesEdgeCacheKeysetConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkServicesEdgeCacheKeysetConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable description of the resource.
   *
@@ -51,7 +51,7 @@ export interface NetworkServicesEdgeCacheKeysetConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_keyset#public_key NetworkServicesEdgeCacheKeyset#public_key}
   */
-  readonly publicKey?: NetworkServicesEdgeCacheKeysetPublicKey[] | cdktf.IResolvable;
+  readonly publicKey?: NetworkServicesEdgeCacheKeysetPublicKey[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,7 +63,7 @@ export interface NetworkServicesEdgeCacheKeysetConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_keyset#validation_shared_keys NetworkServicesEdgeCacheKeyset#validation_shared_keys}
   */
-  readonly validationSharedKeys?: NetworkServicesEdgeCacheKeysetValidationSharedKeys[] | cdktf.IResolvable;
+  readonly validationSharedKeys?: NetworkServicesEdgeCacheKeysetValidationSharedKeys[] | cdktn.IResolvable;
 }
 export interface NetworkServicesEdgeCacheKeysetPublicKey {
   /**
@@ -82,7 +82,7 @@ export interface NetworkServicesEdgeCacheKeysetPublicKey {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_keyset#managed NetworkServicesEdgeCacheKeyset#managed}
   */
-  readonly managed?: boolean | cdktf.IResolvable;
+  readonly managed?: boolean | cdktn.IResolvable;
   /**
   * The base64-encoded value of the Ed25519 public key. The base64 encoding can be padded (44 bytes) or unpadded (43 bytes).
   * Representations or encodings of the public key other than this will be rejected with an error.
@@ -92,39 +92,39 @@ export interface NetworkServicesEdgeCacheKeysetPublicKey {
   readonly value?: string;
 }
 
-export function networkServicesEdgeCacheKeysetPublicKeyToTerraform(struct?: NetworkServicesEdgeCacheKeysetPublicKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheKeysetPublicKeyToTerraform(struct?: NetworkServicesEdgeCacheKeysetPublicKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    managed: cdktf.booleanToTerraform(struct!.managed),
-    value: cdktf.stringToTerraform(struct!.value),
+    id: cdktn.stringToTerraform(struct!.id),
+    managed: cdktn.booleanToTerraform(struct!.managed),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function networkServicesEdgeCacheKeysetPublicKeyToHclTerraform(struct?: NetworkServicesEdgeCacheKeysetPublicKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheKeysetPublicKeyToHclTerraform(struct?: NetworkServicesEdgeCacheKeysetPublicKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     managed: {
-      value: cdktf.booleanToHclTerraform(struct!.managed),
+      value: cdktn.booleanToHclTerraform(struct!.managed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,9 +135,9 @@ export function networkServicesEdgeCacheKeysetPublicKeyToHclTerraform(struct?: N
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheKeysetPublicKeyOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheKeysetPublicKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -145,11 +145,11 @@ export class NetworkServicesEdgeCacheKeysetPublicKeyOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesEdgeCacheKeysetPublicKey | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesEdgeCacheKeysetPublicKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -170,7 +170,7 @@ export class NetworkServicesEdgeCacheKeysetPublicKeyOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesEdgeCacheKeysetPublicKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesEdgeCacheKeysetPublicKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -178,7 +178,7 @@ export class NetworkServicesEdgeCacheKeysetPublicKeyOutputReference extends cdkt
       this._managed = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -205,11 +205,11 @@ export class NetworkServicesEdgeCacheKeysetPublicKeyOutputReference extends cdkt
   }
 
   // managed - computed: false, optional: true, required: false
-  private _managed?: boolean | cdktf.IResolvable; 
+  private _managed?: boolean | cdktn.IResolvable; 
   public get managed() {
     return this.getBooleanAttribute('managed');
   }
-  public set managed(value: boolean | cdktf.IResolvable) {
+  public set managed(value: boolean | cdktn.IResolvable) {
     this._managed = value;
   }
   public resetManaged() {
@@ -237,15 +237,15 @@ export class NetworkServicesEdgeCacheKeysetPublicKeyOutputReference extends cdkt
   }
 }
 
-export class NetworkServicesEdgeCacheKeysetPublicKeyList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesEdgeCacheKeysetPublicKey[] | cdktf.IResolvable
+export class NetworkServicesEdgeCacheKeysetPublicKeyList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesEdgeCacheKeysetPublicKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -271,39 +271,39 @@ export interface NetworkServicesEdgeCacheKeysetTimeouts {
   readonly update?: string;
 }
 
-export function networkServicesEdgeCacheKeysetTimeoutsToTerraform(struct?: NetworkServicesEdgeCacheKeysetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheKeysetTimeoutsToTerraform(struct?: NetworkServicesEdgeCacheKeysetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkServicesEdgeCacheKeysetTimeoutsToHclTerraform(struct?: NetworkServicesEdgeCacheKeysetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheKeysetTimeoutsToHclTerraform(struct?: NetworkServicesEdgeCacheKeysetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -314,19 +314,19 @@ export function networkServicesEdgeCacheKeysetTimeoutsToHclTerraform(struct?: Ne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheKeysetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheKeysetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkServicesEdgeCacheKeysetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesEdgeCacheKeysetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -347,7 +347,7 @@ export class NetworkServicesEdgeCacheKeysetTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesEdgeCacheKeysetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesEdgeCacheKeysetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -355,7 +355,7 @@ export class NetworkServicesEdgeCacheKeysetTimeoutsOutputReference extends cdktf
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -433,25 +433,25 @@ export interface NetworkServicesEdgeCacheKeysetValidationSharedKeys {
   readonly secretVersion: string;
 }
 
-export function networkServicesEdgeCacheKeysetValidationSharedKeysToTerraform(struct?: NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheKeysetValidationSharedKeysToTerraform(struct?: NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
-export function networkServicesEdgeCacheKeysetValidationSharedKeysToHclTerraform(struct?: NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesEdgeCacheKeysetValidationSharedKeysToHclTerraform(struct?: NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -462,9 +462,9 @@ export function networkServicesEdgeCacheKeysetValidationSharedKeysToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -472,11 +472,11 @@ export class NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -489,13 +489,13 @@ export class NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesEdgeCacheKeysetValidationSharedKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._secretVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -520,15 +520,15 @@ export class NetworkServicesEdgeCacheKeysetValidationSharedKeysOutputReference e
   }
 }
 
-export class NetworkServicesEdgeCacheKeysetValidationSharedKeysList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesEdgeCacheKeysetValidationSharedKeys[] | cdktf.IResolvable
+export class NetworkServicesEdgeCacheKeysetValidationSharedKeysList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesEdgeCacheKeysetValidationSharedKeys[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -543,7 +543,7 @@ export class NetworkServicesEdgeCacheKeysetValidationSharedKeysList extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_keyset google_network_services_edge_cache_keyset}
 */
-export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
+export class NetworkServicesEdgeCacheKeyset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -554,14 +554,14 @@ export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkServicesEdgeCacheKeyset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkServicesEdgeCacheKeyset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesEdgeCacheKeyset to import
   * @param importFromId The id of the existing NetworkServicesEdgeCacheKeyset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_edge_cache_keyset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesEdgeCacheKeyset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_edge_cache_keyset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_edge_cache_keyset", importId: importFromId, provider });
       }
 
   // ===========
@@ -622,7 +622,7 @@ export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -689,7 +689,7 @@ export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -699,7 +699,7 @@ export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
   public get publicKey() {
     return this._publicKey;
   }
-  public putPublicKey(value: NetworkServicesEdgeCacheKeysetPublicKey[] | cdktf.IResolvable) {
+  public putPublicKey(value: NetworkServicesEdgeCacheKeysetPublicKey[] | cdktn.IResolvable) {
     this._publicKey.internalValue = value;
   }
   public resetPublicKey() {
@@ -731,7 +731,7 @@ export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
   public get validationSharedKeys() {
     return this._validationSharedKeys;
   }
-  public putValidationSharedKeys(value: NetworkServicesEdgeCacheKeysetValidationSharedKeys[] | cdktf.IResolvable) {
+  public putValidationSharedKeys(value: NetworkServicesEdgeCacheKeysetValidationSharedKeys[] | cdktn.IResolvable) {
     this._validationSharedKeys.internalValue = value;
   }
   public resetValidationSharedKeys() {
@@ -748,51 +748,51 @@ export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      public_key: cdktf.listMapper(networkServicesEdgeCacheKeysetPublicKeyToTerraform, true)(this._publicKey.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      public_key: cdktn.listMapper(networkServicesEdgeCacheKeysetPublicKeyToTerraform, true)(this._publicKey.internalValue),
       timeouts: networkServicesEdgeCacheKeysetTimeoutsToTerraform(this._timeouts.internalValue),
-      validation_shared_keys: cdktf.listMapper(networkServicesEdgeCacheKeysetValidationSharedKeysToTerraform, true)(this._validationSharedKeys.internalValue),
+      validation_shared_keys: cdktn.listMapper(networkServicesEdgeCacheKeysetValidationSharedKeysToTerraform, true)(this._validationSharedKeys.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_key: {
-        value: cdktf.listMapperHcl(networkServicesEdgeCacheKeysetPublicKeyToHclTerraform, true)(this._publicKey.internalValue),
+        value: cdktn.listMapperHcl(networkServicesEdgeCacheKeysetPublicKeyToHclTerraform, true)(this._publicKey.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkServicesEdgeCacheKeysetPublicKeyList",
@@ -804,7 +804,7 @@ export class NetworkServicesEdgeCacheKeyset extends cdktf.TerraformResource {
         storageClassType: "NetworkServicesEdgeCacheKeysetTimeouts",
       },
       validation_shared_keys: {
-        value: cdktf.listMapperHcl(networkServicesEdgeCacheKeysetValidationSharedKeysToHclTerraform, true)(this._validationSharedKeys.internalValue),
+        value: cdktn.listMapperHcl(networkServicesEdgeCacheKeysetValidationSharedKeysToHclTerraform, true)(this._validationSharedKeys.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkServicesEdgeCacheKeysetValidationSharedKeysList",

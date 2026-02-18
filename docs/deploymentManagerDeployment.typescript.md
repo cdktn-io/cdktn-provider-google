@@ -301,7 +301,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -383,7 +383,7 @@ public putLabels(value: IResolvable | DeploymentManagerDeploymentLabels[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.putLabels.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
 
 ---
 
@@ -466,7 +466,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DeploymentManagerDeployment resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DeploymentManagerDeployment resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -538,7 +538,7 @@ import { deploymentManagerDeployment } from '@cdktn/provider-google'
 deploymentManagerDeployment.DeploymentManagerDeployment.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DeploymentManagerDeployment resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DeploymentManagerDeployment resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.generateConfigForImport.parameter.scope"></a>
 
@@ -568,7 +568,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DeploymentManagerDeployment to import is found.
 
@@ -579,19 +579,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deploymentId">deploymentId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.labels">labels</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList">DeploymentManagerDeploymentLabelsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.manifest">manifest</a></code> | <code>string</code> | *No description.* |
@@ -602,18 +602,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletePolicyInput">deletePolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.labelsInput">labelsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.labelsInput">labelsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.previewInput">previewInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.previewInput">previewInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.targetInput">targetInput</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget">DeploymentManagerDeploymentTarget</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.createPolicy">createPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.deletePolicy">deletePolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.preview">preview</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.preview">preview</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeployment.property.project">project</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -636,7 +636,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -686,7 +686,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -696,7 +696,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -706,7 +706,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -726,7 +726,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -736,7 +736,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -746,7 +746,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -756,7 +756,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -866,7 +866,7 @@ public readonly idInput: string;
 public readonly labelsInput: IResolvable | DeploymentManagerDeploymentLabels[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
 
 ---
 
@@ -886,7 +886,7 @@ public readonly nameInput: string;
 public readonly previewInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -916,7 +916,7 @@ public readonly targetInput: DeploymentManagerDeploymentTarget;
 public readonly timeoutsInput: IResolvable | DeploymentManagerDeploymentTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a>
 
 ---
 
@@ -976,7 +976,7 @@ public readonly name: string;
 public readonly preview: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1024,21 +1024,21 @@ const deploymentManagerDeploymentConfig: deploymentManagerDeployment.DeploymentM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.name">name</a></code> | <code>string</code> | Unique name for the deployment. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.target">target</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget">DeploymentManagerDeploymentTarget</a></code> | target block. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.createPolicy">createPolicy</a></code> | <code>string</code> | Set the policy to use for creating new resources. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.deletePolicy">deletePolicy</a></code> | <code>string</code> | Set the policy to use for deleting new resources on update/delete. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.description">description</a></code> | <code>string</code> | Optional user-provided description of deployment. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment#id DeploymentManagerDeployment#id}. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.labels">labels</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]</code> | labels block. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.preview">preview</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, a deployment is created with "shell" resources that are not actually instantiated. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.labels">labels</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]</code> | labels block. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.preview">preview</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, a deployment is created with "shell" resources that are not actually instantiated. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/deployment_manager_deployment#project DeploymentManagerDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | timeouts block. |
 
@@ -1050,7 +1050,7 @@ const deploymentManagerDeploymentConfig: deploymentManagerDeployment.DeploymentM
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1090,7 +1090,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1217,7 +1217,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly labels: IResolvable | DeploymentManagerDeploymentLabels[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
 
 labels block.
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly preview: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, a deployment is created with "shell" resources that are not actually instantiated.
 
@@ -1335,7 +1335,7 @@ const deploymentManagerDeploymentTarget: deploymentManagerDeployment.DeploymentM
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfig">DeploymentManagerDeploymentTargetConfig</a></code> | config block. |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget.property.imports">imports</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]</code> | imports block. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget.property.imports">imports</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]</code> | imports block. |
 
 ---
 
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly imports: IResolvable | DeploymentManagerDeploymentTargetImports[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
 
 imports block.
 
@@ -1516,7 +1516,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1524,7 +1524,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1590,7 +1590,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1625,7 +1625,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]</code> | *No description.* |
 
 ---
 
@@ -1659,7 +1659,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DeploymentManagerDeploymentLabels[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>[]
 
 ---
 
@@ -1676,7 +1676,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1685,7 +1685,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1873,7 +1873,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1910,7 +1910,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabelsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a></code> | *No description.* |
 
 ---
 
@@ -1984,7 +1984,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | DeploymentManagerDeploymentLabels;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentLabels">DeploymentManagerDeploymentLabels</a>
 
 ---
 
@@ -2001,14 +2001,14 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2178,7 +2178,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2272,7 +2272,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2280,7 +2280,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2346,7 +2346,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2381,7 +2381,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]</code> | *No description.* |
 
 ---
 
@@ -2415,7 +2415,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DeploymentManagerDeploymentTargetImports[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
 
 ---
 
@@ -2432,7 +2432,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2441,7 +2441,7 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2629,7 +2629,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2666,7 +2666,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.property.content">content</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a></code> | *No description.* |
 
 ---
 
@@ -2740,7 +2740,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | DeploymentManagerDeploymentTargetImports;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>
 
 ---
 
@@ -2757,14 +2757,14 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2937,7 +2937,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2971,7 +2971,7 @@ public putImports(value: IResolvable | DeploymentManagerDeploymentTargetImports[
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.putImports.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
 
 ---
 
@@ -2991,7 +2991,7 @@ public resetImports(): void
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfigOutputReference">DeploymentManagerDeploymentTargetConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.property.imports">imports</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImportsList">DeploymentManagerDeploymentTargetImportsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.property.configInput">configInput</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetConfig">DeploymentManagerDeploymentTargetConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.property.importsInput">importsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.property.importsInput">importsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTarget">DeploymentManagerDeploymentTarget</a></code> | *No description.* |
 
 ---
@@ -3056,7 +3056,7 @@ public readonly configInput: DeploymentManagerDeploymentTargetConfig;
 public readonly importsInput: IResolvable | DeploymentManagerDeploymentTargetImports[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTargetImports">DeploymentManagerDeploymentTargetImports</a>[]
 
 ---
 
@@ -3083,14 +3083,14 @@ new deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3263,7 +3263,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3308,7 +3308,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3402,7 +3402,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | DeploymentManagerDeploymentTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.deploymentManagerDeployment.DeploymentManagerDeploymentTimeouts">DeploymentManagerDeploymentTimeouts</a>
 
 ---
 

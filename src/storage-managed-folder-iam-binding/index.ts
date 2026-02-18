@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageManagedFolderIamBindingConfig extends cdktf.TerraformMetaArguments {
+export interface StorageManagedFolderIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_managed_folder_iam_binding#bucket StorageManagedFolderIamBinding#bucket}
   */
@@ -58,38 +58,38 @@ export interface StorageManagedFolderIamBindingCondition {
 }
 
 export function storageManagedFolderIamBindingConditionToTerraform(struct?: StorageManagedFolderIamBindingConditionOutputReference | StorageManagedFolderIamBindingCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function storageManagedFolderIamBindingConditionToHclTerraform(struct?: StorageManagedFolderIamBindingConditionOutputReference | StorageManagedFolderIamBindingCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function storageManagedFolderIamBindingConditionToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageManagedFolderIamBindingConditionOutputReference extends cdktf.ComplexObject {
+export class StorageManagedFolderIamBindingConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -190,7 +190,7 @@ export class StorageManagedFolderIamBindingConditionOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_managed_folder_iam_binding google_storage_managed_folder_iam_binding}
 */
-export class StorageManagedFolderIamBinding extends cdktf.TerraformResource {
+export class StorageManagedFolderIamBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -201,14 +201,14 @@ export class StorageManagedFolderIamBinding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageManagedFolderIamBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageManagedFolderIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageManagedFolderIamBinding to import
   * @param importFromId The id of the existing StorageManagedFolderIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_managed_folder_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageManagedFolderIamBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_managed_folder_iam_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_managed_folder_iam_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -300,7 +300,7 @@ export class StorageManagedFolderIamBinding extends cdktf.TerraformResource {
   // members - computed: false, optional: false, required: true
   private _members?: string[]; 
   public get members() {
-    return cdktf.Fn.tolist(this.getListAttribute('members'));
+    return cdktn.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;
@@ -345,11 +345,11 @@ export class StorageManagedFolderIamBinding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      id: cdktf.stringToTerraform(this._id),
-      managed_folder: cdktf.stringToTerraform(this._managedFolder),
-      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
-      role: cdktf.stringToTerraform(this._role),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      id: cdktn.stringToTerraform(this._id),
+      managed_folder: cdktn.stringToTerraform(this._managedFolder),
+      members: cdktn.listMapper(cdktn.stringToTerraform, false)(this._members),
+      role: cdktn.stringToTerraform(this._role),
       condition: storageManagedFolderIamBindingConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -357,31 +357,31 @@ export class StorageManagedFolderIamBinding extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_folder: {
-        value: cdktf.stringToHclTerraform(this._managedFolder),
+        value: cdktn.stringToHclTerraform(this._managedFolder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       members: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._members),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeGlobalAddressConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeGlobalAddressConfig extends cdktn.TerraformMetaArguments {
   /**
   * The IP address or beginning of the address range represented by this
   * resource. This can be supplied as an input to reserve a specific
@@ -126,39 +126,39 @@ export interface ComputeGlobalAddressTimeouts {
   readonly update?: string;
 }
 
-export function computeGlobalAddressTimeoutsToTerraform(struct?: ComputeGlobalAddressTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalAddressTimeoutsToTerraform(struct?: ComputeGlobalAddressTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeGlobalAddressTimeoutsToHclTerraform(struct?: ComputeGlobalAddressTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeGlobalAddressTimeoutsToHclTerraform(struct?: ComputeGlobalAddressTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -169,19 +169,19 @@ export function computeGlobalAddressTimeoutsToHclTerraform(struct?: ComputeGloba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeGlobalAddressTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeGlobalAddressTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeGlobalAddressTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeGlobalAddressTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -202,7 +202,7 @@ export class ComputeGlobalAddressTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeGlobalAddressTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeGlobalAddressTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -210,7 +210,7 @@ export class ComputeGlobalAddressTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,7 +275,7 @@ export class ComputeGlobalAddressTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_address google_compute_global_address}
 */
-export class ComputeGlobalAddress extends cdktf.TerraformResource {
+export class ComputeGlobalAddress extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -286,14 +286,14 @@ export class ComputeGlobalAddress extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeGlobalAddress resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeGlobalAddress resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeGlobalAddress to import
   * @param importFromId The id of the existing ComputeGlobalAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeGlobalAddress to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_global_address", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_global_address", importId: importFromId, provider });
       }
 
   // ===========
@@ -395,7 +395,7 @@ export class ComputeGlobalAddress extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -536,7 +536,7 @@ export class ComputeGlobalAddress extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -563,17 +563,17 @@ export class ComputeGlobalAddress extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address: cdktf.stringToTerraform(this._address),
-      address_type: cdktf.stringToTerraform(this._addressType),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      ip_version: cdktf.stringToTerraform(this._ipVersion),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      prefix_length: cdktf.numberToTerraform(this._prefixLength),
-      project: cdktf.stringToTerraform(this._project),
-      purpose: cdktf.stringToTerraform(this._purpose),
+      address: cdktn.stringToTerraform(this._address),
+      address_type: cdktn.stringToTerraform(this._addressType),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      ip_version: cdktn.stringToTerraform(this._ipVersion),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      prefix_length: cdktn.numberToTerraform(this._prefixLength),
+      project: cdktn.stringToTerraform(this._project),
+      purpose: cdktn.stringToTerraform(this._purpose),
       timeouts: computeGlobalAddressTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -581,67 +581,67 @@ export class ComputeGlobalAddress extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address: {
-        value: cdktf.stringToHclTerraform(this._address),
+        value: cdktn.stringToHclTerraform(this._address),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       address_type: {
-        value: cdktf.stringToHclTerraform(this._addressType),
+        value: cdktn.stringToHclTerraform(this._addressType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_version: {
-        value: cdktf.stringToHclTerraform(this._ipVersion),
+        value: cdktn.stringToHclTerraform(this._ipVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix_length: {
-        value: cdktf.numberToHclTerraform(this._prefixLength),
+        value: cdktn.numberToHclTerraform(this._prefixLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       purpose: {
-        value: cdktf.stringToHclTerraform(this._purpose),
+        value: cdktn.stringToHclTerraform(this._purpose),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleAccessContextManagerAccessPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleAccessContextManagerAccessPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_context_manager_access_policy#id DataGoogleAccessContextManagerAccessPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface DataGoogleAccessContextManagerAccessPolicyConfig extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_context_manager_access_policy google_access_context_manager_access_policy}
 */
-export class DataGoogleAccessContextManagerAccessPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleAccessContextManagerAccessPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleAccessContextManagerAccessPolicy extends cdktf.TerraformD
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleAccessContextManagerAccessPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleAccessContextManagerAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleAccessContextManagerAccessPolicy to import
   * @param importFromId The id of the existing DataGoogleAccessContextManagerAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_context_manager_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleAccessContextManagerAccessPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -150,28 +150,28 @@ export class DataGoogleAccessContextManagerAccessPolicy extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

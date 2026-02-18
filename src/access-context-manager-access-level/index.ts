@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessContextManagerAccessLevelConfig extends cdktf.TerraformMetaArguments {
+export interface AccessContextManagerAccessLevelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the AccessLevel and its use. Does not affect behavior.
   *
@@ -85,42 +85,42 @@ export interface AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsCon
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#require_verified_chrome_os AccessContextManagerAccessLevel#require_verified_chrome_os}
   */
-  readonly requireVerifiedChromeOs?: boolean | cdktf.IResolvable;
+  readonly requireVerifiedChromeOs?: boolean | cdktn.IResolvable;
 }
 
-export function accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_version: cdktf.stringToTerraform(struct!.minimumVersion),
-    os_type: cdktf.stringToTerraform(struct!.osType),
-    require_verified_chrome_os: cdktf.booleanToTerraform(struct!.requireVerifiedChromeOs),
+    minimum_version: cdktn.stringToTerraform(struct!.minimumVersion),
+    os_type: cdktn.stringToTerraform(struct!.osType),
+    require_verified_chrome_os: cdktn.booleanToTerraform(struct!.requireVerifiedChromeOs),
   }
 }
 
 
-export function accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_version: {
-      value: cdktf.stringToHclTerraform(struct!.minimumVersion),
+      value: cdktn.stringToHclTerraform(struct!.minimumVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     os_type: {
-      value: cdktf.stringToHclTerraform(struct!.osType),
+      value: cdktn.stringToHclTerraform(struct!.osType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_verified_chrome_os: {
-      value: cdktf.booleanToHclTerraform(struct!.requireVerifiedChromeOs),
+      value: cdktn.booleanToHclTerraform(struct!.requireVerifiedChromeOs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -131,9 +131,9 @@ export function accessContextManagerAccessLevelBasicConditionsDevicePolicyOsCons
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -141,11 +141,11 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstra
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -166,7 +166,7 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstra
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -174,7 +174,7 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstra
       this._osType = undefined;
       this._requireVerifiedChromeOs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -217,11 +217,11 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstra
   }
 
   // require_verified_chrome_os - computed: false, optional: true, required: false
-  private _requireVerifiedChromeOs?: boolean | cdktf.IResolvable; 
+  private _requireVerifiedChromeOs?: boolean | cdktn.IResolvable; 
   public get requireVerifiedChromeOs() {
     return this.getBooleanAttribute('require_verified_chrome_os');
   }
-  public set requireVerifiedChromeOs(value: boolean | cdktf.IResolvable) {
+  public set requireVerifiedChromeOs(value: boolean | cdktn.IResolvable) {
     this._requireVerifiedChromeOs = value;
   }
   public resetRequireVerifiedChromeOs() {
@@ -233,15 +233,15 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstra
   }
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints[] | cdktf.IResolvable
+export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -272,82 +272,82 @@ export interface AccessContextManagerAccessLevelBasicConditionsDevicePolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#require_admin_approval AccessContextManagerAccessLevel#require_admin_approval}
   */
-  readonly requireAdminApproval?: boolean | cdktf.IResolvable;
+  readonly requireAdminApproval?: boolean | cdktn.IResolvable;
   /**
   * Whether the device needs to be corp owned.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#require_corp_owned AccessContextManagerAccessLevel#require_corp_owned}
   */
-  readonly requireCorpOwned?: boolean | cdktf.IResolvable;
+  readonly requireCorpOwned?: boolean | cdktn.IResolvable;
   /**
   * Whether or not screenlock is required for the DevicePolicy
   * to be true. Defaults to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#require_screen_lock AccessContextManagerAccessLevel#require_screen_lock}
   */
-  readonly requireScreenLock?: boolean | cdktf.IResolvable;
+  readonly requireScreenLock?: boolean | cdktn.IResolvable;
   /**
   * os_constraints block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#os_constraints AccessContextManagerAccessLevel#os_constraints}
   */
-  readonly osConstraints?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints[] | cdktf.IResolvable;
+  readonly osConstraints?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerAccessLevelBasicConditionsDevicePolicyToTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference | AccessContextManagerAccessLevelBasicConditionsDevicePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_device_management_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedDeviceManagementLevels),
-    allowed_encryption_statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedEncryptionStatuses),
-    require_admin_approval: cdktf.booleanToTerraform(struct!.requireAdminApproval),
-    require_corp_owned: cdktf.booleanToTerraform(struct!.requireCorpOwned),
-    require_screen_lock: cdktf.booleanToTerraform(struct!.requireScreenLock),
-    os_constraints: cdktf.listMapper(accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToTerraform, true)(struct!.osConstraints),
+    allowed_device_management_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedDeviceManagementLevels),
+    allowed_encryption_statuses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedEncryptionStatuses),
+    require_admin_approval: cdktn.booleanToTerraform(struct!.requireAdminApproval),
+    require_corp_owned: cdktn.booleanToTerraform(struct!.requireCorpOwned),
+    require_screen_lock: cdktn.booleanToTerraform(struct!.requireScreenLock),
+    os_constraints: cdktn.listMapper(accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToTerraform, true)(struct!.osConstraints),
   }
 }
 
 
 export function accessContextManagerAccessLevelBasicConditionsDevicePolicyToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference | AccessContextManagerAccessLevelBasicConditionsDevicePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_device_management_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedDeviceManagementLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedDeviceManagementLevels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_encryption_statuses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedEncryptionStatuses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedEncryptionStatuses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     require_admin_approval: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAdminApproval),
+      value: cdktn.booleanToHclTerraform(struct!.requireAdminApproval),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_corp_owned: {
-      value: cdktf.booleanToHclTerraform(struct!.requireCorpOwned),
+      value: cdktn.booleanToHclTerraform(struct!.requireCorpOwned),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     require_screen_lock: {
-      value: cdktf.booleanToHclTerraform(struct!.requireScreenLock),
+      value: cdktn.booleanToHclTerraform(struct!.requireScreenLock),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     os_constraints: {
-      value: cdktf.listMapperHcl(accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToHclTerraform, true)(struct!.osConstraints),
+      value: cdktn.listMapperHcl(accessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsToHclTerraform, true)(struct!.osConstraints),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraintsList",
@@ -358,14 +358,14 @@ export function accessContextManagerAccessLevelBasicConditionsDevicePolicyToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -453,11 +453,11 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputRef
   }
 
   // require_admin_approval - computed: false, optional: true, required: false
-  private _requireAdminApproval?: boolean | cdktf.IResolvable; 
+  private _requireAdminApproval?: boolean | cdktn.IResolvable; 
   public get requireAdminApproval() {
     return this.getBooleanAttribute('require_admin_approval');
   }
-  public set requireAdminApproval(value: boolean | cdktf.IResolvable) {
+  public set requireAdminApproval(value: boolean | cdktn.IResolvable) {
     this._requireAdminApproval = value;
   }
   public resetRequireAdminApproval() {
@@ -469,11 +469,11 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputRef
   }
 
   // require_corp_owned - computed: false, optional: true, required: false
-  private _requireCorpOwned?: boolean | cdktf.IResolvable; 
+  private _requireCorpOwned?: boolean | cdktn.IResolvable; 
   public get requireCorpOwned() {
     return this.getBooleanAttribute('require_corp_owned');
   }
-  public set requireCorpOwned(value: boolean | cdktf.IResolvable) {
+  public set requireCorpOwned(value: boolean | cdktn.IResolvable) {
     this._requireCorpOwned = value;
   }
   public resetRequireCorpOwned() {
@@ -485,11 +485,11 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputRef
   }
 
   // require_screen_lock - computed: false, optional: true, required: false
-  private _requireScreenLock?: boolean | cdktf.IResolvable; 
+  private _requireScreenLock?: boolean | cdktn.IResolvable; 
   public get requireScreenLock() {
     return this.getBooleanAttribute('require_screen_lock');
   }
-  public set requireScreenLock(value: boolean | cdktf.IResolvable) {
+  public set requireScreenLock(value: boolean | cdktn.IResolvable) {
     this._requireScreenLock = value;
   }
   public resetRequireScreenLock() {
@@ -505,7 +505,7 @@ export class AccessContextManagerAccessLevelBasicConditionsDevicePolicyOutputRef
   public get osConstraints() {
     return this._osConstraints;
   }
-  public putOsConstraints(value: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints[] | cdktf.IResolvable) {
+  public putOsConstraints(value: AccessContextManagerAccessLevelBasicConditionsDevicePolicyOsConstraints[] | cdktn.IResolvable) {
     this._osConstraints.internalValue = value;
   }
   public resetOsConstraints() {
@@ -532,31 +532,31 @@ export interface AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources
 }
 
 export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkToTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference | AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
-    vpc_ip_subnetworks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.vpcIpSubnetworks),
+    network: cdktn.stringToTerraform(struct!.network),
+    vpc_ip_subnetworks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.vpcIpSubnetworks),
   }
 }
 
 
 export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference | AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vpc_ip_subnetworks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.vpcIpSubnetworks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.vpcIpSubnetworks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -567,14 +567,14 @@ export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -643,9 +643,9 @@ export interface AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources
   readonly vpcSubnetwork?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesVpcSubnetwork;
 }
 
-export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -654,9 +654,9 @@ export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesT
 }
 
 
-export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -672,9 +672,9 @@ export function accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -682,11 +682,11 @@ export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -699,13 +699,13 @@ export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._vpcSubnetwork.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -733,15 +733,15 @@ export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesOutp
   }
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources[] | cdktf.IResolvable
+export class AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -788,7 +788,7 @@ export interface AccessContextManagerAccessLevelBasicConditions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#negate AccessContextManagerAccessLevel#negate}
   */
-  readonly negate?: boolean | cdktf.IResolvable;
+  readonly negate?: boolean | cdktn.IResolvable;
   /**
   * The request must originate from one of the provided
   * countries/regions.
@@ -818,58 +818,58 @@ export interface AccessContextManagerAccessLevelBasicConditions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#vpc_network_sources AccessContextManagerAccessLevel#vpc_network_sources}
   */
-  readonly vpcNetworkSources?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources[] | cdktf.IResolvable;
+  readonly vpcNetworkSources?: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources[] | cdktn.IResolvable;
 }
 
-export function accessContextManagerAccessLevelBasicConditionsToTerraform(struct?: AccessContextManagerAccessLevelBasicConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelBasicConditionsToTerraform(struct?: AccessContextManagerAccessLevelBasicConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_subnetworks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipSubnetworks),
-    members: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.members),
-    negate: cdktf.booleanToTerraform(struct!.negate),
-    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
-    required_access_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requiredAccessLevels),
+    ip_subnetworks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipSubnetworks),
+    members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.members),
+    negate: cdktn.booleanToTerraform(struct!.negate),
+    regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.regions),
+    required_access_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requiredAccessLevels),
     device_policy: accessContextManagerAccessLevelBasicConditionsDevicePolicyToTerraform(struct!.devicePolicy),
-    vpc_network_sources: cdktf.listMapper(accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToTerraform, true)(struct!.vpcNetworkSources),
+    vpc_network_sources: cdktn.listMapper(accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToTerraform, true)(struct!.vpcNetworkSources),
   }
 }
 
 
-export function accessContextManagerAccessLevelBasicConditionsToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelBasicConditionsToHclTerraform(struct?: AccessContextManagerAccessLevelBasicConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_subnetworks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipSubnetworks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipSubnetworks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     members: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.members),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.members),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     negate: {
-      value: cdktf.booleanToHclTerraform(struct!.negate),
+      value: cdktn.booleanToHclTerraform(struct!.negate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.regions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.regions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     required_access_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requiredAccessLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requiredAccessLevels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -881,7 +881,7 @@ export function accessContextManagerAccessLevelBasicConditionsToHclTerraform(str
       storageClassType: "AccessContextManagerAccessLevelBasicConditionsDevicePolicyList",
     },
     vpc_network_sources: {
-      value: cdktf.listMapperHcl(accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToHclTerraform, true)(struct!.vpcNetworkSources),
+      value: cdktn.listMapperHcl(accessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesToHclTerraform, true)(struct!.vpcNetworkSources),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerAccessLevelBasicConditionsVpcNetworkSourcesList",
@@ -892,9 +892,9 @@ export function accessContextManagerAccessLevelBasicConditionsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelBasicConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -902,11 +902,11 @@ export class AccessContextManagerAccessLevelBasicConditionsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerAccessLevelBasicConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerAccessLevelBasicConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -943,7 +943,7 @@ export class AccessContextManagerAccessLevelBasicConditionsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerAccessLevelBasicConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerAccessLevelBasicConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -955,7 +955,7 @@ export class AccessContextManagerAccessLevelBasicConditionsOutputReference exten
       this._devicePolicy.internalValue = undefined;
       this._vpcNetworkSources.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1005,11 +1005,11 @@ export class AccessContextManagerAccessLevelBasicConditionsOutputReference exten
   }
 
   // negate - computed: false, optional: true, required: false
-  private _negate?: boolean | cdktf.IResolvable; 
+  private _negate?: boolean | cdktn.IResolvable; 
   public get negate() {
     return this.getBooleanAttribute('negate');
   }
-  public set negate(value: boolean | cdktf.IResolvable) {
+  public set negate(value: boolean | cdktn.IResolvable) {
     this._negate = value;
   }
   public resetNegate() {
@@ -1073,7 +1073,7 @@ export class AccessContextManagerAccessLevelBasicConditionsOutputReference exten
   public get vpcNetworkSources() {
     return this._vpcNetworkSources;
   }
-  public putVpcNetworkSources(value: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources[] | cdktf.IResolvable) {
+  public putVpcNetworkSources(value: AccessContextManagerAccessLevelBasicConditionsVpcNetworkSources[] | cdktn.IResolvable) {
     this._vpcNetworkSources.internalValue = value;
   }
   public resetVpcNetworkSources() {
@@ -1085,15 +1085,15 @@ export class AccessContextManagerAccessLevelBasicConditionsOutputReference exten
   }
 }
 
-export class AccessContextManagerAccessLevelBasicConditionsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerAccessLevelBasicConditions[] | cdktf.IResolvable
+export class AccessContextManagerAccessLevelBasicConditionsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerAccessLevelBasicConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1120,35 +1120,35 @@ export interface AccessContextManagerAccessLevelBasic {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#conditions AccessContextManagerAccessLevel#conditions}
   */
-  readonly conditions: AccessContextManagerAccessLevelBasicConditions[] | cdktf.IResolvable;
+  readonly conditions: AccessContextManagerAccessLevelBasicConditions[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerAccessLevelBasicToTerraform(struct?: AccessContextManagerAccessLevelBasicOutputReference | AccessContextManagerAccessLevelBasic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    combining_function: cdktf.stringToTerraform(struct!.combiningFunction),
-    conditions: cdktf.listMapper(accessContextManagerAccessLevelBasicConditionsToTerraform, true)(struct!.conditions),
+    combining_function: cdktn.stringToTerraform(struct!.combiningFunction),
+    conditions: cdktn.listMapper(accessContextManagerAccessLevelBasicConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
 
 export function accessContextManagerAccessLevelBasicToHclTerraform(struct?: AccessContextManagerAccessLevelBasicOutputReference | AccessContextManagerAccessLevelBasic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     combining_function: {
-      value: cdktf.stringToHclTerraform(struct!.combiningFunction),
+      value: cdktn.stringToHclTerraform(struct!.combiningFunction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditions: {
-      value: cdktf.listMapperHcl(accessContextManagerAccessLevelBasicConditionsToHclTerraform, true)(struct!.conditions),
+      value: cdktn.listMapperHcl(accessContextManagerAccessLevelBasicConditionsToHclTerraform, true)(struct!.conditions),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerAccessLevelBasicConditionsList",
@@ -1159,14 +1159,14 @@ export function accessContextManagerAccessLevelBasicToHclTerraform(struct?: Acce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelBasicOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelBasicOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1218,7 +1218,7 @@ export class AccessContextManagerAccessLevelBasicOutputReference extends cdktf.C
   public get conditions() {
     return this._conditions;
   }
-  public putConditions(value: AccessContextManagerAccessLevelBasicConditions[] | cdktf.IResolvable) {
+  public putConditions(value: AccessContextManagerAccessLevelBasicConditions[] | cdktn.IResolvable) {
     this._conditions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1254,45 +1254,45 @@ export interface AccessContextManagerAccessLevelCustomExpr {
 }
 
 export function accessContextManagerAccessLevelCustomExprToTerraform(struct?: AccessContextManagerAccessLevelCustomExprOutputReference | AccessContextManagerAccessLevelCustomExpr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function accessContextManagerAccessLevelCustomExprToHclTerraform(struct?: AccessContextManagerAccessLevelCustomExprOutputReference | AccessContextManagerAccessLevelCustomExpr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1303,14 +1303,14 @@ export function accessContextManagerAccessLevelCustomExprToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelCustomExprOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelCustomExprOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1424,8 +1424,8 @@ export interface AccessContextManagerAccessLevelCustom {
 }
 
 export function accessContextManagerAccessLevelCustomToTerraform(struct?: AccessContextManagerAccessLevelCustomOutputReference | AccessContextManagerAccessLevelCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1435,8 +1435,8 @@ export function accessContextManagerAccessLevelCustomToTerraform(struct?: Access
 
 
 export function accessContextManagerAccessLevelCustomToHclTerraform(struct?: AccessContextManagerAccessLevelCustomOutputReference | AccessContextManagerAccessLevelCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1452,14 +1452,14 @@ export function accessContextManagerAccessLevelCustomToHclTerraform(struct?: Acc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelCustomOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelCustomOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1512,39 +1512,39 @@ export interface AccessContextManagerAccessLevelTimeouts {
   readonly update?: string;
 }
 
-export function accessContextManagerAccessLevelTimeoutsToTerraform(struct?: AccessContextManagerAccessLevelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelTimeoutsToTerraform(struct?: AccessContextManagerAccessLevelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function accessContextManagerAccessLevelTimeoutsToHclTerraform(struct?: AccessContextManagerAccessLevelTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerAccessLevelTimeoutsToHclTerraform(struct?: AccessContextManagerAccessLevelTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1555,19 +1555,19 @@ export function accessContextManagerAccessLevelTimeoutsToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerAccessLevelTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerAccessLevelTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccessContextManagerAccessLevelTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerAccessLevelTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1588,7 +1588,7 @@ export class AccessContextManagerAccessLevelTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerAccessLevelTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerAccessLevelTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1596,7 +1596,7 @@ export class AccessContextManagerAccessLevelTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1661,7 +1661,7 @@ export class AccessContextManagerAccessLevelTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level google_access_context_manager_access_level}
 */
-export class AccessContextManagerAccessLevel extends cdktf.TerraformResource {
+export class AccessContextManagerAccessLevel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1672,14 +1672,14 @@ export class AccessContextManagerAccessLevel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessContextManagerAccessLevel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessContextManagerAccessLevel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessContextManagerAccessLevel to import
   * @param importFromId The id of the existing AccessContextManagerAccessLevel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_level#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessContextManagerAccessLevel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_level", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_level", importId: importFromId, provider });
       }
 
   // ===========
@@ -1848,11 +1848,11 @@ export class AccessContextManagerAccessLevel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      parent: cdktf.stringToTerraform(this._parent),
-      title: cdktf.stringToTerraform(this._title),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      parent: cdktn.stringToTerraform(this._parent),
+      title: cdktn.stringToTerraform(this._title),
       basic: accessContextManagerAccessLevelBasicToTerraform(this._basic.internalValue),
       custom: accessContextManagerAccessLevelCustomToTerraform(this._custom.internalValue),
       timeouts: accessContextManagerAccessLevelTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1862,31 +1862,31 @@ export class AccessContextManagerAccessLevel extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

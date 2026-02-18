@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleSecretManagerRegionalSecretsConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleSecretManagerRegionalSecretsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Filter string, adhering to the rules in List-operation filtering (https://cloud.google.com/secret-manager/docs/filtering).
   * List only secrets matching the filter. If filter is empty, all regional secrets are listed from the specified location.
@@ -39,8 +39,8 @@ export interface DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEnc
 }
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionToTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -49,8 +49,8 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncr
 
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionToHclTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -58,7 +58,7 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncr
   return attrs;
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionOutputReference extends cdktf.ComplexObject {
+export class DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -67,7 +67,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncrypt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -92,14 +92,14 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncrypt
   }
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList extends cdktf.ComplexList {
+export class DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -114,8 +114,8 @@ export interface DataGoogleSecretManagerRegionalSecretsSecretsRotation {
 }
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsRotationToTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecretsRotation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsRotationToTerraform
 
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsRotationToHclTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecretsRotation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsRotationToHclTerraf
   return attrs;
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference extends cdktf.ComplexObject {
+export class DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,14 +172,14 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsRotationOutputReferenc
   }
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsRotationList extends cdktf.ComplexList {
+export class DataGoogleSecretManagerRegionalSecretsSecretsRotationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,8 +194,8 @@ export interface DataGoogleSecretManagerRegionalSecretsSecretsTopics {
 }
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsTopicsToTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecretsTopics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -204,8 +204,8 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsTopicsToTerraform(s
 
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsTopicsToHclTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecretsTopics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -213,7 +213,7 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsTopicsToHclTerrafor
   return attrs;
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -222,7 +222,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -247,14 +247,14 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsTopicsOutputReference 
   }
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsTopicsList extends cdktf.ComplexList {
+export class DataGoogleSecretManagerRegionalSecretsSecretsTopicsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -269,8 +269,8 @@ export interface DataGoogleSecretManagerRegionalSecretsSecrets {
 }
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsToTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -279,8 +279,8 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsToTerraform(struct?
 
 
 export function dataGoogleSecretManagerRegionalSecretsSecretsToHclTerraform(struct?: DataGoogleSecretManagerRegionalSecretsSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -288,7 +288,7 @@ export function dataGoogleSecretManagerRegionalSecretsSecretsToHclTerraform(stru
   return attrs;
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -297,7 +297,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -317,7 +317,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extend
   }
 
   // annotations - computed: true, optional: false, required: false
-  private _annotations = new cdktf.StringMap(this, "annotations");
+  private _annotations = new cdktn.StringMap(this, "annotations");
   public get annotations() {
     return this._annotations;
   }
@@ -339,13 +339,13 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extend
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -356,7 +356,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extend
   }
 
   // labels - computed: true, optional: false, required: false
-  private _labels = new cdktf.StringMap(this, "labels");
+  private _labels = new cdktn.StringMap(this, "labels");
   public get labels() {
     return this._labels;
   }
@@ -388,13 +388,13 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extend
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -411,7 +411,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extend
   }
 
   // version_aliases - computed: true, optional: false, required: false
-  private _versionAliases = new cdktf.StringMap(this, "version_aliases");
+  private _versionAliases = new cdktn.StringMap(this, "version_aliases");
   public get versionAliases() {
     return this._versionAliases;
   }
@@ -422,14 +422,14 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsOutputReference extend
   }
 }
 
-export class DataGoogleSecretManagerRegionalSecretsSecretsList extends cdktf.ComplexList {
+export class DataGoogleSecretManagerRegionalSecretsSecretsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -444,7 +444,7 @@ export class DataGoogleSecretManagerRegionalSecretsSecretsList extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_regional_secrets google_secret_manager_regional_secrets}
 */
-export class DataGoogleSecretManagerRegionalSecrets extends cdktf.TerraformDataSource {
+export class DataGoogleSecretManagerRegionalSecrets extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -455,14 +455,14 @@ export class DataGoogleSecretManagerRegionalSecrets extends cdktf.TerraformDataS
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleSecretManagerRegionalSecrets resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleSecretManagerRegionalSecrets resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSecretManagerRegionalSecrets to import
   * @param importFromId The id of the existing DataGoogleSecretManagerRegionalSecrets that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_regional_secrets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSecretManagerRegionalSecrets to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_regional_secrets", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_regional_secrets", importId: importFromId, provider });
       }
 
   // ===========
@@ -575,35 +575,35 @@ export class DataGoogleSecretManagerRegionalSecrets extends cdktf.TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

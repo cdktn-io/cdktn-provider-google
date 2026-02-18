@@ -44,13 +44,13 @@ apigeeOrganization.ApigeeOrganization(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.projectId">project_id</a></code> | <code>str</code> | The project ID associated with the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.analyticsRegion">analytics_region</a></code> | <code>str</code> | Primary GCP region for analytics data storage. For valid values, see [Create an Apigee organization](https://cloud.google.com/apigee/docs/api-platform/get-started/create-org). |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.apiConsumerDataEncryptionKeyName">api_consumer_data_encryption_key_name</a></code> | <code>str</code> | Cloud KMS key name used for encrypting API consumer data. |
@@ -59,7 +59,7 @@ apigeeOrganization.ApigeeOrganization(
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.billingType">billing_type</a></code> | <code>str</code> | Billing type of the Apigee organization. See [Apigee pricing](https://cloud.google.com/apigee/pricing). |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.controlPlaneEncryptionKeyName">control_plane_encryption_key_name</a></code> | <code>str</code> | Cloud KMS key name used for encrypting control plane data that is stored in a multi region. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the Apigee organization. |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.disableVpcPeering">disable_vpc_peering</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.disableVpcPeering">disable_vpc_peering</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name of the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_organization#id ApigeeOrganization#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.properties">properties</a></code> | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationProperties">ApigeeOrganizationProperties</a></code> | properties block. |
@@ -90,43 +90,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_vpc_peering`<sup>Optional</sup> <a name="disable_vpc_peering" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.Initializer.parameter.disableVpcPeering"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee.
 
@@ -602,7 +602,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -695,7 +695,7 @@ def put_properties(
 
 ###### `property`<sup>Optional</sup> <a name="property" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.putProperties.parameter.property"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
 
 property block.
 
@@ -834,7 +834,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ApigeeOrganization resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ApigeeOrganization resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -917,7 +917,7 @@ apigeeOrganization.ApigeeOrganization.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ApigeeOrganization resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApigeeOrganization resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.generateConfigForImport.parameter.scope"></a>
 
@@ -947,7 +947,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApigeeOrganization to import is found.
 
@@ -958,19 +958,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.apigeeProjectId">apigee_project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.caCertificate">ca_certificate</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -984,7 +984,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.billingTypeInput">billing_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.controlPlaneEncryptionKeyNameInput">control_plane_encryption_key_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.disableVpcPeeringInput">disable_vpc_peering_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.disableVpcPeeringInput">disable_vpc_peering_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
@@ -992,7 +992,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.retentionInput">retention_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.runtimeDatabaseEncryptionKeyNameInput">runtime_database_encryption_key_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.runtimeTypeInput">runtime_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.analyticsRegion">analytics_region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.apiConsumerDataEncryptionKeyName">api_consumer_data_encryption_key_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.apiConsumerDataLocation">api_consumer_data_location</a></code> | <code>str</code> | *No description.* |
@@ -1000,7 +1000,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.billingType">billing_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.controlPlaneEncryptionKeyName">control_plane_encryption_key_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.disableVpcPeering">disable_vpc_peering</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.disableVpcPeering">disable_vpc_peering</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganization.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
@@ -1028,7 +1028,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1078,7 +1078,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1088,7 +1088,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1098,7 +1098,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1118,7 +1118,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1128,7 +1128,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1138,7 +1138,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1148,7 +1148,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1288,7 +1288,7 @@ description_input: str
 disable_vpc_peering_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1368,7 +1368,7 @@ runtime_type_input: str
 timeouts_input: IResolvable | ApigeeOrganizationTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a>
 
 ---
 
@@ -1448,7 +1448,7 @@ description: str
 disable_vpc_peering: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1570,13 +1570,13 @@ apigeeOrganization.ApigeeOrganizationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.projectId">project_id</a></code> | <code>str</code> | The project ID associated with the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.analyticsRegion">analytics_region</a></code> | <code>str</code> | Primary GCP region for analytics data storage. For valid values, see [Create an Apigee organization](https://cloud.google.com/apigee/docs/api-platform/get-started/create-org). |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.apiConsumerDataEncryptionKeyName">api_consumer_data_encryption_key_name</a></code> | <code>str</code> | Cloud KMS key name used for encrypting API consumer data. |
@@ -1585,7 +1585,7 @@ apigeeOrganization.ApigeeOrganizationConfig(
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.billingType">billing_type</a></code> | <code>str</code> | Billing type of the Apigee organization. See [Apigee pricing](https://cloud.google.com/apigee/pricing). |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.controlPlaneEncryptionKeyName">control_plane_encryption_key_name</a></code> | <code>str</code> | Cloud KMS key name used for encrypting control plane data that is stored in a multi region. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.description">description</a></code> | <code>str</code> | Description of the Apigee organization. |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.disableVpcPeering">disable_vpc_peering</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.disableVpcPeering">disable_vpc_peering</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name of the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_organization#id ApigeeOrganization#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationConfig.property.properties">properties</a></code> | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationProperties">ApigeeOrganizationProperties</a></code> | properties block. |
@@ -1602,7 +1602,7 @@ apigeeOrganization.ApigeeOrganizationConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1612,7 +1612,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1622,7 +1622,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1632,7 +1632,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1642,7 +1642,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1652,7 +1652,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1662,7 +1662,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1792,7 +1792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 disable_vpc_peering: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Flag that specifies whether the VPC Peering through Private Google Access should be disabled between the consumer network and Apigee.
 
@@ -1929,7 +1929,7 @@ apigeeOrganization.ApigeeOrganizationProperties(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationProperties.property.property">property</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]</code> | property block. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationProperties.property.property">property</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]</code> | property block. |
 
 ---
 
@@ -1939,7 +1939,7 @@ apigeeOrganization.ApigeeOrganizationProperties(
 property: IResolvable | typing.List[ApigeeOrganizationPropertiesProperty]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
 
 property block.
 
@@ -2074,14 +2074,14 @@ apigeeOrganization.ApigeeOrganizationPropertiesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2275,7 +2275,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2299,7 +2299,7 @@ def put_property(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.putProperty.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
 
 ---
 
@@ -2317,7 +2317,7 @@ def reset_property() -> None
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.property.property">property</a></code> | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList">ApigeeOrganizationPropertiesPropertyList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.property.propertyInput">property_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.property.propertyInput">property_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationProperties">ApigeeOrganizationProperties</a></code> | *No description.* |
 
 ---
@@ -2362,7 +2362,7 @@ property: ApigeeOrganizationPropertiesPropertyList
 property_input: IResolvable | typing.List[ApigeeOrganizationPropertiesProperty]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
 
 ---
 
@@ -2393,7 +2393,7 @@ apigeeOrganization.ApigeeOrganizationPropertiesPropertyList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2401,7 +2401,7 @@ apigeeOrganization.ApigeeOrganizationPropertiesPropertyList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2471,7 +2471,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2508,7 +2508,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]</code> | *No description.* |
 
 ---
 
@@ -2542,7 +2542,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ApigeeOrganizationPropertiesProperty]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>]
 
 ---
 
@@ -2564,7 +2564,7 @@ apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2573,7 +2573,7 @@ apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2783,7 +2783,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2820,7 +2820,7 @@ def reset_value() -> None
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesPropertyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a></code> | *No description.* |
 
 ---
 
@@ -2894,7 +2894,7 @@ value: str
 internal_value: IResolvable | ApigeeOrganizationPropertiesProperty
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationPropertiesProperty">ApigeeOrganizationPropertiesProperty</a>
 
 ---
 
@@ -2914,14 +2914,14 @@ apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3116,7 +3116,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3161,7 +3161,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3255,7 +3255,7 @@ update: str
 internal_value: IResolvable | ApigeeOrganizationTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeOrganization.ApigeeOrganizationTimeouts">ApigeeOrganizationTimeouts</a>
 
 ---
 

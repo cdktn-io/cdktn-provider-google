@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpannerBackupScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface SpannerBackupScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The database to create the backup schedule on.
   *
@@ -108,38 +108,38 @@ export interface SpannerBackupScheduleEncryptionConfig {
 }
 
 export function spannerBackupScheduleEncryptionConfigToTerraform(struct?: SpannerBackupScheduleEncryptionConfigOutputReference | SpannerBackupScheduleEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    kms_key_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.kmsKeyNames),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    kms_key_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.kmsKeyNames),
   }
 }
 
 
 export function spannerBackupScheduleEncryptionConfigToHclTerraform(struct?: SpannerBackupScheduleEncryptionConfigOutputReference | SpannerBackupScheduleEncryptionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.kmsKeyNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.kmsKeyNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -150,14 +150,14 @@ export function spannerBackupScheduleEncryptionConfigToHclTerraform(struct?: Spa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpannerBackupScheduleEncryptionConfigOutputReference extends cdktf.ComplexObject {
+export class SpannerBackupScheduleEncryptionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -243,8 +243,8 @@ export interface SpannerBackupScheduleFullBackupSpec {
 }
 
 export function spannerBackupScheduleFullBackupSpecToTerraform(struct?: SpannerBackupScheduleFullBackupSpecOutputReference | SpannerBackupScheduleFullBackupSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -253,8 +253,8 @@ export function spannerBackupScheduleFullBackupSpecToTerraform(struct?: SpannerB
 
 
 export function spannerBackupScheduleFullBackupSpecToHclTerraform(struct?: SpannerBackupScheduleFullBackupSpecOutputReference | SpannerBackupScheduleFullBackupSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -262,14 +262,14 @@ export function spannerBackupScheduleFullBackupSpecToHclTerraform(struct?: Spann
   return attrs;
 }
 
-export class SpannerBackupScheduleFullBackupSpecOutputReference extends cdktf.ComplexObject {
+export class SpannerBackupScheduleFullBackupSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -292,8 +292,8 @@ export interface SpannerBackupScheduleIncrementalBackupSpec {
 }
 
 export function spannerBackupScheduleIncrementalBackupSpecToTerraform(struct?: SpannerBackupScheduleIncrementalBackupSpecOutputReference | SpannerBackupScheduleIncrementalBackupSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -302,8 +302,8 @@ export function spannerBackupScheduleIncrementalBackupSpecToTerraform(struct?: S
 
 
 export function spannerBackupScheduleIncrementalBackupSpecToHclTerraform(struct?: SpannerBackupScheduleIncrementalBackupSpecOutputReference | SpannerBackupScheduleIncrementalBackupSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -311,14 +311,14 @@ export function spannerBackupScheduleIncrementalBackupSpecToHclTerraform(struct?
   return attrs;
 }
 
-export class SpannerBackupScheduleIncrementalBackupSpecOutputReference extends cdktf.ComplexObject {
+export class SpannerBackupScheduleIncrementalBackupSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -357,24 +357,24 @@ export interface SpannerBackupScheduleSpecCronSpec {
 }
 
 export function spannerBackupScheduleSpecCronSpecToTerraform(struct?: SpannerBackupScheduleSpecCronSpecOutputReference | SpannerBackupScheduleSpecCronSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.stringToTerraform(struct!.text),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
 export function spannerBackupScheduleSpecCronSpecToHclTerraform(struct?: SpannerBackupScheduleSpecCronSpecOutputReference | SpannerBackupScheduleSpecCronSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -385,14 +385,14 @@ export function spannerBackupScheduleSpecCronSpecToHclTerraform(struct?: Spanner
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpannerBackupScheduleSpecCronSpecOutputReference extends cdktf.ComplexObject {
+export class SpannerBackupScheduleSpecCronSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -443,8 +443,8 @@ export interface SpannerBackupScheduleSpec {
 }
 
 export function spannerBackupScheduleSpecToTerraform(struct?: SpannerBackupScheduleSpecOutputReference | SpannerBackupScheduleSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -454,8 +454,8 @@ export function spannerBackupScheduleSpecToTerraform(struct?: SpannerBackupSched
 
 
 export function spannerBackupScheduleSpecToHclTerraform(struct?: SpannerBackupScheduleSpecOutputReference | SpannerBackupScheduleSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -471,14 +471,14 @@ export function spannerBackupScheduleSpecToHclTerraform(struct?: SpannerBackupSc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpannerBackupScheduleSpecOutputReference extends cdktf.ComplexObject {
+export class SpannerBackupScheduleSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -534,39 +534,39 @@ export interface SpannerBackupScheduleTimeouts {
   readonly update?: string;
 }
 
-export function spannerBackupScheduleTimeoutsToTerraform(struct?: SpannerBackupScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spannerBackupScheduleTimeoutsToTerraform(struct?: SpannerBackupScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function spannerBackupScheduleTimeoutsToHclTerraform(struct?: SpannerBackupScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spannerBackupScheduleTimeoutsToHclTerraform(struct?: SpannerBackupScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -577,19 +577,19 @@ export function spannerBackupScheduleTimeoutsToHclTerraform(struct?: SpannerBack
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpannerBackupScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpannerBackupScheduleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpannerBackupScheduleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpannerBackupScheduleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -610,7 +610,7 @@ export class SpannerBackupScheduleTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpannerBackupScheduleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpannerBackupScheduleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -618,7 +618,7 @@ export class SpannerBackupScheduleTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -683,7 +683,7 @@ export class SpannerBackupScheduleTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_backup_schedule google_spanner_backup_schedule}
 */
-export class SpannerBackupSchedule extends cdktf.TerraformResource {
+export class SpannerBackupSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -694,14 +694,14 @@ export class SpannerBackupSchedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpannerBackupSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpannerBackupSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpannerBackupSchedule to import
   * @param importFromId The id of the existing SpannerBackupSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_backup_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpannerBackupSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_spanner_backup_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_spanner_backup_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -921,12 +921,12 @@ export class SpannerBackupSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database: cdktf.stringToTerraform(this._database),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      retention_duration: cdktf.stringToTerraform(this._retentionDuration),
+      database: cdktn.stringToTerraform(this._database),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      retention_duration: cdktn.stringToTerraform(this._retentionDuration),
       encryption_config: spannerBackupScheduleEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
       full_backup_spec: spannerBackupScheduleFullBackupSpecToTerraform(this._fullBackupSpec.internalValue),
       incremental_backup_spec: spannerBackupScheduleIncrementalBackupSpecToTerraform(this._incrementalBackupSpec.internalValue),
@@ -938,37 +938,37 @@ export class SpannerBackupSchedule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_duration: {
-        value: cdktf.stringToHclTerraform(this._retentionDuration),
+        value: cdktn.stringToHclTerraform(this._retentionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

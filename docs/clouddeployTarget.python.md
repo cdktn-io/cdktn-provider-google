@@ -45,28 +45,28 @@ clouddeployTarget.ClouddeployTarget(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the `Target`. Format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.anthosCluster">anthos_cluster</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosCluster">ClouddeployTargetAnthosCluster</a></code> | anthos_cluster block. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.associatedEntities">associated_entities</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | associated_entities block. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.associatedEntities">associated_entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | associated_entities block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.customTarget">custom_target</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTarget">ClouddeployTargetCustomTarget</a></code> | custom_target block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.deployParameters">deploy_parameters</a></code> | <code>typing.Mapping[str]</code> | Optional. The deploy parameters to use for this target. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.description">description</a></code> | <code>str</code> | Optional. Description of the `Target`. Max length is 255 characters. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.executionConfigs">execution_configs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | execution_configs block. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.executionConfigs">execution_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | execution_configs block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.gke">gke</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke">ClouddeployTargetGke</a></code> | gke block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#id ClouddeployTarget#id}. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.multiTarget">multi_target</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTarget">ClouddeployTargetMultiTarget</a></code> | multi_target block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.project">project</a></code> | <code>str</code> | The project for the resource. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.requireApproval">require_approval</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. Whether or not the `Target` requires approval. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.requireApproval">require_approval</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Whether or not the `Target` requires approval. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.run">run</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRun">ClouddeployTargetRun</a></code> | run block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a></code> | timeouts block. |
 
@@ -92,43 +92,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `associated_entities`<sup>Optional</sup> <a name="associated_entities" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.associatedEntities"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
 
 associated_entities block.
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `execution_configs`<sup>Optional</sup> <a name="execution_configs" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.executionConfigs"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
 
 execution_configs block.
 
@@ -285,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `require_approval`<sup>Optional</sup> <a name="require_approval" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer.parameter.requireApproval"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional. Whether or not the `Target` requires approval.
 
@@ -608,7 +608,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -719,7 +719,7 @@ def put_associated_entities(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.putAssociatedEntities.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
 
 ---
 
@@ -751,7 +751,7 @@ def put_execution_configs(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.putExecutionConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
 
 ---
 
@@ -778,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `dns_endpoint`<sup>Optional</sup> <a name="dns_endpoint" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.putGke.parameter.dnsEndpoint"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -790,7 +790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `internal_ip`<sup>Optional</sup> <a name="internal_ip" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.putGke.parameter.internalIp"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -977,7 +977,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ClouddeployTarget resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ClouddeployTarget resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1060,7 +1060,7 @@ clouddeployTarget.ClouddeployTarget.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ClouddeployTarget resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ClouddeployTarget resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.generateConfigForImport.parameter.scope"></a>
 
@@ -1090,7 +1090,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ClouddeployTarget to import is found.
 
@@ -1101,42 +1101,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.anthosCluster">anthos_cluster</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference">ClouddeployTargetAnthosClusterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.associatedEntities">associated_entities</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList">ClouddeployTargetAssociatedEntitiesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.customTarget">custom_target</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference">ClouddeployTargetCustomTargetOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.effectiveAnnotations">effective_annotations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.effectiveAnnotations">effective_annotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.executionConfigs">execution_configs</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList">ClouddeployTargetExecutionConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.gke">gke</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference">ClouddeployTargetGkeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.multiTarget">multi_target</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference">ClouddeployTargetMultiTargetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.run">run</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference">ClouddeployTargetRunOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.targetId">target_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference">ClouddeployTargetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.annotationsInput">annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.anthosClusterInput">anthos_cluster_input</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosCluster">ClouddeployTargetAnthosCluster</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.associatedEntitiesInput">associated_entities_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.associatedEntitiesInput">associated_entities_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.customTargetInput">custom_target_input</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTarget">ClouddeployTargetCustomTarget</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.deployParametersInput">deploy_parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.executionConfigsInput">execution_configs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.executionConfigsInput">execution_configs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.gkeInput">gke_input</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke">ClouddeployTargetGke</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1144,9 +1144,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.multiTargetInput">multi_target_input</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTarget">ClouddeployTargetMultiTarget</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.requireApprovalInput">require_approval_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.requireApprovalInput">require_approval_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.runInput">run_input</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRun">ClouddeployTargetRun</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.deployParameters">deploy_parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -1155,7 +1155,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.requireApproval">require_approval</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.property.requireApproval">require_approval</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1177,7 +1177,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1227,7 +1227,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1237,7 +1237,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1247,7 +1247,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1267,7 +1267,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1277,7 +1277,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1287,7 +1287,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1297,7 +1297,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1347,7 +1347,7 @@ custom_target: ClouddeployTargetCustomTargetOutputReference
 effective_annotations: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1357,7 +1357,7 @@ effective_annotations: StringMap
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1427,7 +1427,7 @@ target_id: str
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1487,7 +1487,7 @@ anthos_cluster_input: ClouddeployTargetAnthosCluster
 associated_entities_input: IResolvable | typing.List[ClouddeployTargetAssociatedEntities]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
 
 ---
 
@@ -1527,7 +1527,7 @@ description_input: str
 execution_configs_input: IResolvable | typing.List[ClouddeployTargetExecutionConfigs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
 
 ---
 
@@ -1607,7 +1607,7 @@ project_input: str
 require_approval_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1627,7 +1627,7 @@ run_input: ClouddeployTargetRun
 timeouts_input: IResolvable | ClouddeployTargetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a>
 
 ---
 
@@ -1717,7 +1717,7 @@ project: str
 require_approval: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1794,8 +1794,8 @@ clouddeployTarget.ClouddeployTargetAssociatedEntities(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities.property.entityId">entity_id</a></code> | <code>str</code> | The name for the key in the map for which this object is mapped to in the API. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities.property.anthosClusters">anthos_clusters</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]</code> | anthos_clusters block. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities.property.gkeClusters">gke_clusters</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]</code> | gke_clusters block. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities.property.anthosClusters">anthos_clusters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]</code> | anthos_clusters block. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities.property.gkeClusters">gke_clusters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]</code> | gke_clusters block. |
 
 ---
 
@@ -1819,7 +1819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 anthos_clusters: IResolvable | typing.List[ClouddeployTargetAssociatedEntitiesAnthosClusters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
 
 anthos_clusters block.
 
@@ -1833,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 gke_clusters: IResolvable | typing.List[ClouddeployTargetAssociatedEntitiesGkeClusters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
 
 gke_clusters block.
 
@@ -1894,7 +1894,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters.property.cluster">cluster</a></code> | <code>str</code> | Optional. Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}`. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters.property.internalIp">internal_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters.property.internalIp">internal_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters.property.proxyUrl">proxy_url</a></code> | <code>str</code> | Optional. If set, used to configure a [proxy](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#proxy) to the Kubernetes server. |
 
 ---
@@ -1919,7 +1919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 internal_ip: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -1982,28 +1982,28 @@ clouddeployTarget.ClouddeployTargetConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.location">location</a></code> | <code>str</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.name">name</a></code> | <code>str</code> | Name of the `Target`. Format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.anthosCluster">anthos_cluster</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosCluster">ClouddeployTargetAnthosCluster</a></code> | anthos_cluster block. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.associatedEntities">associated_entities</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | associated_entities block. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.associatedEntities">associated_entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | associated_entities block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.customTarget">custom_target</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTarget">ClouddeployTargetCustomTarget</a></code> | custom_target block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.deployParameters">deploy_parameters</a></code> | <code>typing.Mapping[str]</code> | Optional. The deploy parameters to use for this target. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.description">description</a></code> | <code>str</code> | Optional. Description of the `Target`. Max length is 255 characters. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.executionConfigs">execution_configs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | execution_configs block. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.executionConfigs">execution_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | execution_configs block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.gke">gke</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke">ClouddeployTargetGke</a></code> | gke block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#id ClouddeployTarget#id}. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.multiTarget">multi_target</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTarget">ClouddeployTargetMultiTarget</a></code> | multi_target block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.project">project</a></code> | <code>str</code> | The project for the resource. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.requireApproval">require_approval</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. Whether or not the `Target` requires approval. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.requireApproval">require_approval</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Whether or not the `Target` requires approval. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.run">run</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRun">ClouddeployTargetRun</a></code> | run block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a></code> | timeouts block. |
 
@@ -2015,7 +2015,7 @@ clouddeployTarget.ClouddeployTargetConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2025,7 +2025,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2035,7 +2035,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2045,7 +2045,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2055,7 +2055,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2065,7 +2065,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2075,7 +2075,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2146,7 +2146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 associated_entities: IResolvable | typing.List[ClouddeployTargetAssociatedEntities]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
 
 associated_entities block.
 
@@ -2202,7 +2202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 execution_configs: IResolvable | typing.List[ClouddeployTargetExecutionConfigs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
 
 execution_configs block.
 
@@ -2292,7 +2292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 require_approval: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional. Whether or not the `Target` requires approval.
 
@@ -2387,7 +2387,7 @@ clouddeployTarget.ClouddeployTargetExecutionConfigs(
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.artifactStorage">artifact_storage</a></code> | <code>str</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.executionTimeout">execution_timeout</a></code> | <code>str</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.serviceAccount">service_account</a></code> | <code>str</code> | Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) is used. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.verbose">verbose</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. If true, additional logging will be enabled when running builds in this execution environment. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.verbose">verbose</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. If true, additional logging will be enabled when running builds in this execution environment. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.workerPool">worker_pool</a></code> | <code>str</code> | Optional. |
 
 ---
@@ -2458,7 +2458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 verbose: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional. If true, additional logging will be enabled when running builds in this execution environment.
 
@@ -2502,8 +2502,8 @@ clouddeployTarget.ClouddeployTargetGke(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.property.cluster">cluster</a></code> | <code>str</code> | Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.property.dnsEndpoint">dns_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.property.internalIp">internal_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.property.dnsEndpoint">dns_endpoint</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.property.internalIp">internal_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.property.proxyUrl">proxy_url</a></code> | <code>str</code> | Optional. If set, used to configure a [proxy](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#proxy) to the Kubernetes server. |
 
 ---
@@ -2528,7 +2528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 dns_endpoint: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -2544,7 +2544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 internal_ip: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Optional.
 
@@ -2713,14 +2713,14 @@ clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2913,7 +2913,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3017,7 +3017,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3025,7 +3025,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3095,7 +3095,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3132,7 +3132,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]</code> | *No description.* |
 
 ---
 
@@ -3166,7 +3166,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ClouddeployTargetAssociatedEntitiesAnthosClusters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
 
 ---
 
@@ -3188,7 +3188,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3197,7 +3197,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReferen
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3406,7 +3406,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3435,7 +3435,7 @@ def reset_membership() -> None
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.property.membershipInput">membership_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.property.membership">membership</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a></code> | *No description.* |
 
 ---
 
@@ -3489,7 +3489,7 @@ membership: str
 internal_value: IResolvable | ClouddeployTargetAssociatedEntitiesAnthosClusters
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>
 
 ---
 
@@ -3510,7 +3510,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3518,7 +3518,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3588,7 +3588,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3625,7 +3625,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]</code> | *No description.* |
 
 ---
 
@@ -3659,7 +3659,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ClouddeployTargetAssociatedEntitiesGkeClusters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
 
 ---
 
@@ -3681,7 +3681,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3690,7 +3690,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3901,7 +3901,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3941,12 +3941,12 @@ def reset_proxy_url() -> None
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.internalIpInput">internal_ip_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.internalIpInput">internal_ip_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.proxyUrlInput">proxy_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.internalIp">internal_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.internalIp">internal_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.proxyUrl">proxy_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a></code> | *No description.* |
 
 ---
 
@@ -3990,7 +3990,7 @@ cluster_input: str
 internal_ip_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4020,7 +4020,7 @@ cluster: str
 internal_ip: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -4040,7 +4040,7 @@ proxy_url: str
 internal_value: IResolvable | ClouddeployTargetAssociatedEntitiesGkeClusters
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>
 
 ---
 
@@ -4061,7 +4061,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4069,7 +4069,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4139,7 +4139,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4176,7 +4176,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]</code> | *No description.* |
 
 ---
 
@@ -4210,7 +4210,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ClouddeployTargetAssociatedEntities]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>]
 
 ---
 
@@ -4232,7 +4232,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4241,7 +4241,7 @@ clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4453,7 +4453,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4477,7 +4477,7 @@ def put_anthos_clusters(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.putAnthosClusters.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
 
 ---
 
@@ -4491,7 +4491,7 @@ def put_gke_clusters(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.putGkeClusters.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
 
 ---
 
@@ -4516,11 +4516,11 @@ def reset_gke_clusters() -> None
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.anthosClusters">anthos_clusters</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList">ClouddeployTargetAssociatedEntitiesAnthosClustersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.gkeClusters">gke_clusters</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList">ClouddeployTargetAssociatedEntitiesGkeClustersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.anthosClustersInput">anthos_clusters_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.anthosClustersInput">anthos_clusters_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.entityIdInput">entity_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.gkeClustersInput">gke_clusters_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.gkeClustersInput">gke_clusters_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.entityId">entity_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a></code> | *No description.* |
 
 ---
 
@@ -4574,7 +4574,7 @@ gke_clusters: ClouddeployTargetAssociatedEntitiesGkeClustersList
 anthos_clusters_input: IResolvable | typing.List[ClouddeployTargetAssociatedEntitiesAnthosClusters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters">ClouddeployTargetAssociatedEntitiesAnthosClusters</a>]
 
 ---
 
@@ -4594,7 +4594,7 @@ entity_id_input: str
 gke_clusters_input: IResolvable | typing.List[ClouddeployTargetAssociatedEntitiesGkeClusters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters">ClouddeployTargetAssociatedEntitiesGkeClusters</a>]
 
 ---
 
@@ -4614,7 +4614,7 @@ entity_id: str
 internal_value: IResolvable | ClouddeployTargetAssociatedEntities
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities">ClouddeployTargetAssociatedEntities</a>
 
 ---
 
@@ -4634,14 +4634,14 @@ clouddeployTarget.ClouddeployTargetCustomTargetOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4833,7 +4833,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4931,7 +4931,7 @@ clouddeployTarget.ClouddeployTargetExecutionConfigsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4939,7 +4939,7 @@ clouddeployTarget.ClouddeployTargetExecutionConfigsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5009,7 +5009,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5046,7 +5046,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]</code> | *No description.* |
 
 ---
 
@@ -5080,7 +5080,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ClouddeployTargetExecutionConfigs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>]
 
 ---
 
@@ -5102,7 +5102,7 @@ clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5111,7 +5111,7 @@ clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5324,7 +5324,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5379,15 +5379,15 @@ def reset_worker_pool() -> None
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.executionTimeoutInput">execution_timeout_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.serviceAccountInput">service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.usagesInput">usages_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.verboseInput">verbose_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.verboseInput">verbose_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.workerPoolInput">worker_pool_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.artifactStorage">artifact_storage</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.executionTimeout">execution_timeout</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.usages">usages</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.verbose">verbose</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.verbose">verbose</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.workerPool">worker_pool</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a></code> | *No description.* |
 
 ---
 
@@ -5461,7 +5461,7 @@ usages_input: typing.List[str]
 verbose_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5521,7 +5521,7 @@ usages: typing.List[str]
 verbose: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5541,7 +5541,7 @@ worker_pool: str
 internal_value: IResolvable | ClouddeployTargetExecutionConfigs
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs">ClouddeployTargetExecutionConfigs</a>
 
 ---
 
@@ -5561,14 +5561,14 @@ clouddeployTarget.ClouddeployTargetGkeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5764,7 +5764,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5810,12 +5810,12 @@ def reset_proxy_url() -> None
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.dnsEndpointInput">dns_endpoint_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.internalIpInput">internal_ip_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.dnsEndpointInput">dns_endpoint_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.internalIpInput">internal_ip_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.proxyUrlInput">proxy_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.dnsEndpoint">dns_endpoint</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.internalIp">internal_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.dnsEndpoint">dns_endpoint</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.internalIp">internal_ip</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.proxyUrl">proxy_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke">ClouddeployTargetGke</a></code> | *No description.* |
 
@@ -5861,7 +5861,7 @@ cluster_input: str
 dns_endpoint_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5871,7 +5871,7 @@ dns_endpoint_input: bool | IResolvable
 internal_ip_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5901,7 +5901,7 @@ cluster: str
 dns_endpoint: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5911,7 +5911,7 @@ dns_endpoint: bool | IResolvable
 internal_ip: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -5951,14 +5951,14 @@ clouddeployTarget.ClouddeployTargetMultiTargetOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6150,7 +6150,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6247,14 +6247,14 @@ clouddeployTarget.ClouddeployTargetRunOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6446,7 +6446,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6543,14 +6543,14 @@ clouddeployTarget.ClouddeployTargetTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6745,7 +6745,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6790,7 +6790,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6884,7 +6884,7 @@ update: str
 internal_value: IResolvable | ClouddeployTargetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts">ClouddeployTargetTimeouts</a>
 
 ---
 

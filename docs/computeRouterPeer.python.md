@@ -58,27 +58,27 @@ computeRouterPeer.ComputeRouterPeer(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.interface">interface</a></code> | <code>str</code> | Name of the interface the BGP peer is associated with. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of this BGP peer. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.peerAsn">peer_asn</a></code> | <code>typing.Union[int, float]</code> | Peer BGP Autonomous System Number (ASN). Each BGP interface may use a different value. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.router">router</a></code> | <code>str</code> | The name of the Cloud Router in which this BgpPeer will be configured. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.advertisedGroups">advertised_groups</a></code> | <code>typing.List[str]</code> | User-specified list of prefix groups to advertise in custom mode, which currently supports the following option:. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.advertisedIpRanges">advertised_ip_ranges</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | advertised_ip_ranges block. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.advertisedIpRanges">advertised_ip_ranges</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | advertised_ip_ranges block. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.advertisedRoutePriority">advertised_route_priority</a></code> | <code>typing.Union[int, float]</code> | The priority of routes advertised to this BGP peer. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.advertiseMode">advertise_mode</a></code> | <code>str</code> | User-specified flag to indicate which mode to use for advertisement. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.bfd">bfd</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfd">ComputeRouterPeerBfd</a></code> | bfd block. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.customLearnedIpRanges">custom_learned_ip_ranges</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | custom_learned_ip_ranges block. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.customLearnedIpRanges">custom_learned_ip_ranges</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | custom_learned_ip_ranges block. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.customLearnedRoutePriority">custom_learned_route_priority</a></code> | <code>typing.Union[int, float]</code> | The user-defined custom learned route priority for a BGP session. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | The status of the BGP peer connection. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enableIpv4">enable_ipv4</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enableIpv6">enable_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enable">enable</a></code> | <code>bool \| cdktn.IResolvable</code> | The status of the BGP peer connection. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enableIpv4">enable_ipv4</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enableIpv6">enable_ipv6</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.exportPolicies">export_policies</a></code> | <code>typing.List[str]</code> | routers.list of export policies applied to this peer, in the order they must be evaluated.  The name must correspond to an existing policy that has ROUTE_POLICY_TYPE_EXPORT type. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#id ComputeRouterPeer#id}. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.importPolicies">import_policies</a></code> | <code>typing.List[str]</code> | routers.list of import policies applied to this peer, in the order they must be evaluated.  The name must correspond to an existing policy that has ROUTE_POLICY_TYPE_IMPORT type. |
@@ -93,8 +93,8 @@ computeRouterPeer.ComputeRouterPeer(
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where the router and BgpPeer reside. If it is not provided, the provider region is used. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.routerApplianceInstance">router_appliance_instance</a></code> | <code>str</code> | The URI of the VM instance that is used as third-party router appliances such as Next Gen Firewalls, Virtual Routers, or Router Appliances. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.zeroAdvertisedRoutePriority">zero_advertised_route_priority</a></code> | <code>bool \| cdktf.IResolvable</code> | Force the advertised_route_priority to be 0. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.zeroCustomLearnedRoutePriority">zero_custom_learned_route_priority</a></code> | <code>bool \| cdktf.IResolvable</code> | Force the custom_learned_route_priority to be 0. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.zeroAdvertisedRoutePriority">zero_advertised_route_priority</a></code> | <code>bool \| cdktn.IResolvable</code> | Force the advertised_route_priority to be 0. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.zeroCustomLearnedRoutePriority">zero_custom_learned_route_priority</a></code> | <code>bool \| cdktn.IResolvable</code> | Force the custom_learned_route_priority to be 0. |
 
 ---
 
@@ -118,43 +118,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `advertised_ip_ranges`<sup>Optional</sup> <a name="advertised_ip_ranges" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.advertisedIpRanges"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
 
 advertised_ip_ranges block.
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `custom_learned_ip_ranges`<sup>Optional</sup> <a name="custom_learned_ip_ranges" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.customLearnedIpRanges"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
 
 custom_learned_ip_ranges block.
 
@@ -294,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable`<sup>Optional</sup> <a name="enable" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enable"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The status of the BGP peer connection.
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_ipv4`<sup>Optional</sup> <a name="enable_ipv4" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enableIpv4"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4.
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enable_ipv6`<sup>Optional</sup> <a name="enable_ipv6" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.enableIpv6"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default.
 
@@ -479,7 +479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `zero_advertised_route_priority`<sup>Optional</sup> <a name="zero_advertised_route_priority" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.zeroAdvertisedRoutePriority"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Force the advertised_route_priority to be 0.
 
@@ -489,7 +489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `zero_custom_learned_route_priority`<sup>Optional</sup> <a name="zero_custom_learned_route_priority" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.Initializer.parameter.zeroCustomLearnedRoutePriority"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Force the custom_learned_route_priority to be 0.
 
@@ -800,7 +800,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -893,7 +893,7 @@ def put_advertised_ip_ranges(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.putAdvertisedIpRanges.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
 
 ---
 
@@ -976,7 +976,7 @@ def put_custom_learned_ip_ranges(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.putCustomLearnedIpRanges.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
 
 ---
 
@@ -1208,7 +1208,7 @@ def reset_zero_custom_learned_route_priority() -> None
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeRouterPeer resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ComputeRouterPeer resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1291,7 +1291,7 @@ computeRouterPeer.ComputeRouterPeer.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ComputeRouterPeer resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeRouterPeer resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.generateConfigForImport.parameter.scope"></a>
 
@@ -1321,7 +1321,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeRouterPeer to import is found.
 
@@ -1332,37 +1332,37 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertisedIpRanges">advertised_ip_ranges</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList">ComputeRouterPeerAdvertisedIpRangesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.bfd">bfd</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference">ComputeRouterPeerBfdOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.customLearnedIpRanges">custom_learned_ip_ranges</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList">ComputeRouterPeerCustomLearnedIpRangesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.isAdvertisedRoutePrioritySet">is_advertised_route_priority_set</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.isCustomLearnedPrioritySet">is_custom_learned_priority_set</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.isAdvertisedRoutePrioritySet">is_advertised_route_priority_set</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.isCustomLearnedPrioritySet">is_custom_learned_priority_set</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.managementType">management_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.md5AuthenticationKey">md5_authentication_key</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference">ComputeRouterPeerMd5AuthenticationKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference">ComputeRouterPeerTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertisedGroupsInput">advertised_groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertisedIpRangesInput">advertised_ip_ranges_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertisedIpRangesInput">advertised_ip_ranges_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertisedRoutePriorityInput">advertised_route_priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertiseModeInput">advertise_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.bfdInput">bfd_input</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfd">ComputeRouterPeerBfd</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.customLearnedIpRangesInput">custom_learned_ip_ranges_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.customLearnedIpRangesInput">custom_learned_ip_ranges_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.customLearnedRoutePriorityInput">custom_learned_route_priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableInput">enable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv4Input">enable_ipv4_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv6Input">enable_ipv6_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableInput">enable_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv4Input">enable_ipv4_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv6Input">enable_ipv6_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.exportPoliciesInput">export_policies_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.importPoliciesInput">import_policies_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1380,16 +1380,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.routerApplianceInstanceInput">router_appliance_instance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.routerInput">router_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroAdvertisedRoutePriorityInput">zero_advertised_route_priority_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroCustomLearnedRoutePriorityInput">zero_custom_learned_route_priority_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroAdvertisedRoutePriorityInput">zero_advertised_route_priority_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroCustomLearnedRoutePriorityInput">zero_custom_learned_route_priority_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertisedGroups">advertised_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertisedRoutePriority">advertised_route_priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.advertiseMode">advertise_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.customLearnedRoutePriority">custom_learned_route_priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv4">enable_ipv4</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv6">enable_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enable">enable</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv4">enable_ipv4</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.enableIpv6">enable_ipv6</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.exportPolicies">export_policies</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.importPolicies">import_policies</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1406,8 +1406,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.router">router</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.routerApplianceInstance">router_appliance_instance</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroAdvertisedRoutePriority">zero_advertised_route_priority</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroCustomLearnedRoutePriority">zero_custom_learned_route_priority</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroAdvertisedRoutePriority">zero_advertised_route_priority</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer.property.zeroCustomLearnedRoutePriority">zero_custom_learned_route_priority</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1429,7 +1429,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1479,7 +1479,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1489,7 +1489,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1499,7 +1499,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1519,7 +1519,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1529,7 +1529,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1539,7 +1539,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1549,7 +1549,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1589,7 +1589,7 @@ custom_learned_ip_ranges: ComputeRouterPeerCustomLearnedIpRangesList
 is_advertised_route_priority_set: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1599,7 +1599,7 @@ is_advertised_route_priority_set: IResolvable
 is_custom_learned_priority_set: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1649,7 +1649,7 @@ advertised_groups_input: typing.List[str]
 advertised_ip_ranges_input: IResolvable | typing.List[ComputeRouterPeerAdvertisedIpRanges]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
 
 ---
 
@@ -1689,7 +1689,7 @@ bfd_input: ComputeRouterPeerBfd
 custom_learned_ip_ranges_input: IResolvable | typing.List[ComputeRouterPeerCustomLearnedIpRanges]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
 
 ---
 
@@ -1709,7 +1709,7 @@ custom_learned_route_priority_input: typing.Union[int, float]
 enable_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1719,7 +1719,7 @@ enable_input: bool | IResolvable
 enable_ipv4_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1729,7 +1729,7 @@ enable_ipv4_input: bool | IResolvable
 enable_ipv6_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1909,7 +1909,7 @@ router_input: str
 timeouts_input: IResolvable | ComputeRouterPeerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a>
 
 ---
 
@@ -1919,7 +1919,7 @@ timeouts_input: IResolvable | ComputeRouterPeerTimeouts
 zero_advertised_route_priority_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1929,7 +1929,7 @@ zero_advertised_route_priority_input: bool | IResolvable
 zero_custom_learned_route_priority_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1979,7 +1979,7 @@ custom_learned_route_priority: typing.Union[int, float]
 enable: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1989,7 +1989,7 @@ enable: bool | IResolvable
 enable_ipv4: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1999,7 +1999,7 @@ enable_ipv4: bool | IResolvable
 enable_ipv6: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2169,7 +2169,7 @@ router_appliance_instance: str
 zero_advertised_route_priority: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2179,7 +2179,7 @@ zero_advertised_route_priority: bool | IResolvable
 zero_custom_learned_route_priority: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2405,27 +2405,27 @@ computeRouterPeer.ComputeRouterPeerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.interface">interface</a></code> | <code>str</code> | Name of the interface the BGP peer is associated with. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.name">name</a></code> | <code>str</code> | Name of this BGP peer. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.peerAsn">peer_asn</a></code> | <code>typing.Union[int, float]</code> | Peer BGP Autonomous System Number (ASN). Each BGP interface may use a different value. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.router">router</a></code> | <code>str</code> | The name of the Cloud Router in which this BgpPeer will be configured. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.advertisedGroups">advertised_groups</a></code> | <code>typing.List[str]</code> | User-specified list of prefix groups to advertise in custom mode, which currently supports the following option:. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.advertisedIpRanges">advertised_ip_ranges</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | advertised_ip_ranges block. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.advertisedIpRanges">advertised_ip_ranges</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | advertised_ip_ranges block. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.advertisedRoutePriority">advertised_route_priority</a></code> | <code>typing.Union[int, float]</code> | The priority of routes advertised to this BGP peer. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.advertiseMode">advertise_mode</a></code> | <code>str</code> | User-specified flag to indicate which mode to use for advertisement. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.bfd">bfd</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfd">ComputeRouterPeerBfd</a></code> | bfd block. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.customLearnedIpRanges">custom_learned_ip_ranges</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | custom_learned_ip_ranges block. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.customLearnedIpRanges">custom_learned_ip_ranges</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | custom_learned_ip_ranges block. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.customLearnedRoutePriority">custom_learned_route_priority</a></code> | <code>typing.Union[int, float]</code> | The user-defined custom learned route priority for a BGP session. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.enable">enable</a></code> | <code>bool \| cdktf.IResolvable</code> | The status of the BGP peer connection. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.enableIpv4">enable_ipv4</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.enableIpv6">enable_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.enable">enable</a></code> | <code>bool \| cdktn.IResolvable</code> | The status of the BGP peer connection. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.enableIpv4">enable_ipv4</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.enableIpv6">enable_ipv6</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.exportPolicies">export_policies</a></code> | <code>typing.List[str]</code> | routers.list of export policies applied to this peer, in the order they must be evaluated.  The name must correspond to an existing policy that has ROUTE_POLICY_TYPE_EXPORT type. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_peer#id ComputeRouterPeer#id}. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.importPolicies">import_policies</a></code> | <code>typing.List[str]</code> | routers.list of import policies applied to this peer, in the order they must be evaluated.  The name must correspond to an existing policy that has ROUTE_POLICY_TYPE_IMPORT type. |
@@ -2440,8 +2440,8 @@ computeRouterPeer.ComputeRouterPeerConfig(
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.region">region</a></code> | <code>str</code> | Region where the router and BgpPeer reside. If it is not provided, the provider region is used. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.routerApplianceInstance">router_appliance_instance</a></code> | <code>str</code> | The URI of the VM instance that is used as third-party router appliances such as Next Gen Firewalls, Virtual Routers, or Router Appliances. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.zeroAdvertisedRoutePriority">zero_advertised_route_priority</a></code> | <code>bool \| cdktf.IResolvable</code> | Force the advertised_route_priority to be 0. |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.zeroCustomLearnedRoutePriority">zero_custom_learned_route_priority</a></code> | <code>bool \| cdktf.IResolvable</code> | Force the custom_learned_route_priority to be 0. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.zeroAdvertisedRoutePriority">zero_advertised_route_priority</a></code> | <code>bool \| cdktn.IResolvable</code> | Force the advertised_route_priority to be 0. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig.property.zeroCustomLearnedRoutePriority">zero_custom_learned_route_priority</a></code> | <code>bool \| cdktn.IResolvable</code> | Force the custom_learned_route_priority to be 0. |
 
 ---
 
@@ -2451,7 +2451,7 @@ computeRouterPeer.ComputeRouterPeerConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2461,7 +2461,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2471,7 +2471,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2481,7 +2481,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2491,7 +2491,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2501,7 +2501,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2511,7 +2511,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2607,7 +2607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 advertised_ip_ranges: IResolvable | typing.List[ComputeRouterPeerAdvertisedIpRanges]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
 
 advertised_ip_ranges block.
 
@@ -2668,7 +2668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 custom_learned_ip_ranges: IResolvable | typing.List[ComputeRouterPeerCustomLearnedIpRanges]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
 
 custom_learned_ip_ranges block.
 
@@ -2699,7 +2699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The status of the BGP peer connection.
 
@@ -2718,7 +2718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_ipv4: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable IPv4 traffic over BGP Peer. It is enabled by default if the peerIpAddress is version 4.
 
@@ -2732,7 +2732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_ipv6: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable IPv6 traffic over BGP Peer. If not specified, it is disabled by default.
 
@@ -2952,7 +2952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 zero_advertised_route_priority: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Force the advertised_route_priority to be 0.
 
@@ -2966,7 +2966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 zero_custom_learned_route_priority: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Force the custom_learned_route_priority to be 0.
 
@@ -3138,7 +3138,7 @@ computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3146,7 +3146,7 @@ computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3216,7 +3216,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3253,7 +3253,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]</code> | *No description.* |
 
 ---
 
@@ -3287,7 +3287,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeRouterPeerAdvertisedIpRanges]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>]
 
 ---
 
@@ -3309,7 +3309,7 @@ computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3318,7 +3318,7 @@ computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3527,7 +3527,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3558,7 +3558,7 @@ def reset_description() -> None
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.property.rangeInput">range_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.property.range">range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a></code> | *No description.* |
 
 ---
 
@@ -3632,7 +3632,7 @@ range: str
 internal_value: IResolvable | ComputeRouterPeerAdvertisedIpRanges
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges">ComputeRouterPeerAdvertisedIpRanges</a>
 
 ---
 
@@ -3652,14 +3652,14 @@ computeRouterPeer.ComputeRouterPeerBfdOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3854,7 +3854,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4036,7 +4036,7 @@ computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4044,7 +4044,7 @@ computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4114,7 +4114,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4151,7 +4151,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]</code> | *No description.* |
 
 ---
 
@@ -4185,7 +4185,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeRouterPeerCustomLearnedIpRanges]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>]
 
 ---
 
@@ -4207,7 +4207,7 @@ computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4216,7 +4216,7 @@ computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4424,7 +4424,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4447,7 +4447,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.property.rangeInput">range_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.property.range">range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a></code> | *No description.* |
 
 ---
 
@@ -4501,7 +4501,7 @@ range: str
 internal_value: IResolvable | ComputeRouterPeerCustomLearnedIpRanges
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges">ComputeRouterPeerCustomLearnedIpRanges</a>
 
 ---
 
@@ -4521,14 +4521,14 @@ computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4720,7 +4720,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4839,14 +4839,14 @@ computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5041,7 +5041,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5086,7 +5086,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -5180,7 +5180,7 @@ update: str
 internal_value: IResolvable | ComputeRouterPeerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts">ComputeRouterPeerTimeouts</a>
 
 ---
 

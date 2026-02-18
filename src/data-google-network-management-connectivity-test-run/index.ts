@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleNetworkManagementConnectivityTestRunConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleNetworkManagementConnectivityTestRunConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/network_management_connectivity_test_run#id DataGoogleNetworkManagementConnectivityTestRun#id}
   *
@@ -34,8 +34,8 @@ export interface DataGoogleNetworkManagementConnectivityTestRunReachabilityDetai
 }
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoToTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
 
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoToHclTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
   return attrs;
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoOutputReference extends cdktf.ComplexObject {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -122,14 +122,14 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTr
   }
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoList extends cdktf.ComplexList {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -144,8 +144,8 @@ export interface DataGoogleNetworkManagementConnectivityTestRunReachabilityDetai
 }
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsToTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesSteps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -154,8 +154,8 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
 
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsToHclTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesSteps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -163,7 +163,7 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
   return attrs;
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -172,7 +172,7 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -212,14 +212,14 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTr
   }
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsList extends cdktf.ComplexList {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,8 +234,8 @@ export interface DataGoogleNetworkManagementConnectivityTestRunReachabilityDetai
 }
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesToTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTraces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -244,8 +244,8 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
 
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesToHclTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTraces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -253,7 +253,7 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
   return attrs;
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -262,7 +262,7 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -299,14 +299,14 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTr
   }
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesList extends cdktf.ComplexList {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -321,8 +321,8 @@ export interface DataGoogleNetworkManagementConnectivityTestRunReachabilityDetai
 }
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsToTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -331,8 +331,8 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
 
 
 export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsToHclTerraform(struct?: DataGoogleNetworkManagementConnectivityTestRunReachabilityDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -340,7 +340,7 @@ export function dataGoogleNetworkManagementConnectivityTestRunReachabilityDetail
   return attrs;
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -349,7 +349,7 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -385,14 +385,14 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOu
   }
 }
 
-export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsList extends cdktf.ComplexList {
+export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -407,7 +407,7 @@ export class DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsLi
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/network_management_connectivity_test_run google_network_management_connectivity_test_run}
 */
-export class DataGoogleNetworkManagementConnectivityTestRun extends cdktf.TerraformDataSource {
+export class DataGoogleNetworkManagementConnectivityTestRun extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -418,14 +418,14 @@ export class DataGoogleNetworkManagementConnectivityTestRun extends cdktf.Terraf
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleNetworkManagementConnectivityTestRun resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleNetworkManagementConnectivityTestRun resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleNetworkManagementConnectivityTestRun to import
   * @param importFromId The id of the existing DataGoogleNetworkManagementConnectivityTestRun that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/network_management_connectivity_test_run#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleNetworkManagementConnectivityTestRun to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_management_connectivity_test_run", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_management_connectivity_test_run", importId: importFromId, provider });
       }
 
   // ===========
@@ -521,28 +521,28 @@ export class DataGoogleNetworkManagementConnectivityTestRun extends cdktf.Terraf
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

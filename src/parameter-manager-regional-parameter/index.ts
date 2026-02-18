@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ParameterManagerRegionalParameterConfig extends cdktf.TerraformMetaArguments {
+export interface ParameterManagerRegionalParameterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The format type of the regional parameter. Default value: "UNFORMATTED" Possible values: ["UNFORMATTED", "YAML", "JSON"]
   *
@@ -80,8 +80,8 @@ export interface ParameterManagerRegionalParameterPolicyMember {
 }
 
 export function parameterManagerRegionalParameterPolicyMemberToTerraform(struct?: ParameterManagerRegionalParameterPolicyMember): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -90,8 +90,8 @@ export function parameterManagerRegionalParameterPolicyMemberToTerraform(struct?
 
 
 export function parameterManagerRegionalParameterPolicyMemberToHclTerraform(struct?: ParameterManagerRegionalParameterPolicyMember): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -99,7 +99,7 @@ export function parameterManagerRegionalParameterPolicyMemberToHclTerraform(stru
   return attrs;
 }
 
-export class ParameterManagerRegionalParameterPolicyMemberOutputReference extends cdktf.ComplexObject {
+export class ParameterManagerRegionalParameterPolicyMemberOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -108,7 +108,7 @@ export class ParameterManagerRegionalParameterPolicyMemberOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -138,14 +138,14 @@ export class ParameterManagerRegionalParameterPolicyMemberOutputReference extend
   }
 }
 
-export class ParameterManagerRegionalParameterPolicyMemberList extends cdktf.ComplexList {
+export class ParameterManagerRegionalParameterPolicyMemberList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -171,39 +171,39 @@ export interface ParameterManagerRegionalParameterTimeouts {
   readonly update?: string;
 }
 
-export function parameterManagerRegionalParameterTimeoutsToTerraform(struct?: ParameterManagerRegionalParameterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function parameterManagerRegionalParameterTimeoutsToTerraform(struct?: ParameterManagerRegionalParameterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function parameterManagerRegionalParameterTimeoutsToHclTerraform(struct?: ParameterManagerRegionalParameterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function parameterManagerRegionalParameterTimeoutsToHclTerraform(struct?: ParameterManagerRegionalParameterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -214,19 +214,19 @@ export function parameterManagerRegionalParameterTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ParameterManagerRegionalParameterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ParameterManagerRegionalParameterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ParameterManagerRegionalParameterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ParameterManagerRegionalParameterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -247,7 +247,7 @@ export class ParameterManagerRegionalParameterTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ParameterManagerRegionalParameterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ParameterManagerRegionalParameterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -255,7 +255,7 @@ export class ParameterManagerRegionalParameterTimeoutsOutputReference extends cd
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -320,7 +320,7 @@ export class ParameterManagerRegionalParameterTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}
 */
-export class ParameterManagerRegionalParameter extends cdktf.TerraformResource {
+export class ParameterManagerRegionalParameter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -331,14 +331,14 @@ export class ParameterManagerRegionalParameter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ParameterManagerRegionalParameter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ParameterManagerRegionalParameter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ParameterManagerRegionalParameter to import
   * @param importFromId The id of the existing ParameterManagerRegionalParameter that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_regional_parameter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ParameterManagerRegionalParameter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_parameter_manager_regional_parameter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_parameter_manager_regional_parameter", importId: importFromId, provider });
       }
 
   // ===========
@@ -388,7 +388,7 @@ export class ParameterManagerRegionalParameter extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -511,7 +511,7 @@ export class ParameterManagerRegionalParameter extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -543,13 +543,13 @@ export class ParameterManagerRegionalParameter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      format: cdktf.stringToTerraform(this._format),
-      id: cdktf.stringToTerraform(this._id),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      parameter_id: cdktf.stringToTerraform(this._parameterId),
-      project: cdktf.stringToTerraform(this._project),
+      format: cdktn.stringToTerraform(this._format),
+      id: cdktn.stringToTerraform(this._id),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      parameter_id: cdktn.stringToTerraform(this._parameterId),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: parameterManagerRegionalParameterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -557,43 +557,43 @@ export class ParameterManagerRegionalParameter extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       format: {
-        value: cdktf.stringToHclTerraform(this._format),
+        value: cdktn.stringToHclTerraform(this._format),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter_id: {
-        value: cdktf.stringToHclTerraform(this._parameterId),
+        value: cdktn.stringToHclTerraform(this._parameterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

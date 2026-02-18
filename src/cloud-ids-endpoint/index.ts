@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudIdsEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface CloudIdsEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of the endpoint.
   *
@@ -81,39 +81,39 @@ export interface CloudIdsEndpointTimeouts {
   readonly update?: string;
 }
 
-export function cloudIdsEndpointTimeoutsToTerraform(struct?: CloudIdsEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudIdsEndpointTimeoutsToTerraform(struct?: CloudIdsEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudIdsEndpointTimeoutsToHclTerraform(struct?: CloudIdsEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudIdsEndpointTimeoutsToHclTerraform(struct?: CloudIdsEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,19 +124,19 @@ export function cloudIdsEndpointTimeoutsToHclTerraform(struct?: CloudIdsEndpoint
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudIdsEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudIdsEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudIdsEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudIdsEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class CloudIdsEndpointTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudIdsEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudIdsEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class CloudIdsEndpointTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -230,7 +230,7 @@ export class CloudIdsEndpointTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_ids_endpoint google_cloud_ids_endpoint}
 */
-export class CloudIdsEndpoint extends cdktf.TerraformResource {
+export class CloudIdsEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -241,14 +241,14 @@ export class CloudIdsEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudIdsEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudIdsEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudIdsEndpoint to import
   * @param importFromId The id of the existing CloudIdsEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_ids_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudIdsEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_ids_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_ids_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -451,14 +451,14 @@ export class CloudIdsEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network: cdktf.stringToTerraform(this._network),
-      project: cdktf.stringToTerraform(this._project),
-      severity: cdktf.stringToTerraform(this._severity),
-      threat_exceptions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._threatExceptions),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network: cdktn.stringToTerraform(this._network),
+      project: cdktn.stringToTerraform(this._project),
+      severity: cdktn.stringToTerraform(this._severity),
+      threat_exceptions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._threatExceptions),
       timeouts: cloudIdsEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -466,49 +466,49 @@ export class CloudIdsEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network: {
-        value: cdktf.stringToHclTerraform(this._network),
+        value: cdktn.stringToHclTerraform(this._network),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       severity: {
-        value: cdktf.stringToHclTerraform(this._severity),
+        value: cdktn.stringToHclTerraform(this._severity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       threat_exceptions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._threatExceptions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._threatExceptions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageDefaultObjectAccessControlConfig extends cdktf.TerraformMetaArguments {
+export interface StorageDefaultObjectAccessControlConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the bucket.
   *
@@ -62,8 +62,8 @@ export interface StorageDefaultObjectAccessControlProjectTeam {
 }
 
 export function storageDefaultObjectAccessControlProjectTeamToTerraform(struct?: StorageDefaultObjectAccessControlProjectTeam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -72,8 +72,8 @@ export function storageDefaultObjectAccessControlProjectTeamToTerraform(struct?:
 
 
 export function storageDefaultObjectAccessControlProjectTeamToHclTerraform(struct?: StorageDefaultObjectAccessControlProjectTeam): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -81,7 +81,7 @@ export function storageDefaultObjectAccessControlProjectTeamToHclTerraform(struc
   return attrs;
 }
 
-export class StorageDefaultObjectAccessControlProjectTeamOutputReference extends cdktf.ComplexObject {
+export class StorageDefaultObjectAccessControlProjectTeamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -90,7 +90,7 @@ export class StorageDefaultObjectAccessControlProjectTeamOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -120,14 +120,14 @@ export class StorageDefaultObjectAccessControlProjectTeamOutputReference extends
   }
 }
 
-export class StorageDefaultObjectAccessControlProjectTeamList extends cdktf.ComplexList {
+export class StorageDefaultObjectAccessControlProjectTeamList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -153,39 +153,39 @@ export interface StorageDefaultObjectAccessControlTimeouts {
   readonly update?: string;
 }
 
-export function storageDefaultObjectAccessControlTimeoutsToTerraform(struct?: StorageDefaultObjectAccessControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageDefaultObjectAccessControlTimeoutsToTerraform(struct?: StorageDefaultObjectAccessControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageDefaultObjectAccessControlTimeoutsToHclTerraform(struct?: StorageDefaultObjectAccessControlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageDefaultObjectAccessControlTimeoutsToHclTerraform(struct?: StorageDefaultObjectAccessControlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -196,19 +196,19 @@ export function storageDefaultObjectAccessControlTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageDefaultObjectAccessControlTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageDefaultObjectAccessControlTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageDefaultObjectAccessControlTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageDefaultObjectAccessControlTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -229,7 +229,7 @@ export class StorageDefaultObjectAccessControlTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageDefaultObjectAccessControlTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageDefaultObjectAccessControlTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -237,7 +237,7 @@ export class StorageDefaultObjectAccessControlTimeoutsOutputReference extends cd
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -302,7 +302,7 @@ export class StorageDefaultObjectAccessControlTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_default_object_access_control google_storage_default_object_access_control}
 */
-export class StorageDefaultObjectAccessControl extends cdktf.TerraformResource {
+export class StorageDefaultObjectAccessControl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -313,14 +313,14 @@ export class StorageDefaultObjectAccessControl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageDefaultObjectAccessControl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageDefaultObjectAccessControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageDefaultObjectAccessControl to import
   * @param importFromId The id of the existing StorageDefaultObjectAccessControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_default_object_access_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageDefaultObjectAccessControl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_default_object_access_control", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_default_object_access_control", importId: importFromId, provider });
       }
 
   // ===========
@@ -481,11 +481,11 @@ export class StorageDefaultObjectAccessControl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      entity: cdktf.stringToTerraform(this._entity),
-      id: cdktf.stringToTerraform(this._id),
-      object: cdktf.stringToTerraform(this._object),
-      role: cdktf.stringToTerraform(this._role),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      entity: cdktn.stringToTerraform(this._entity),
+      id: cdktn.stringToTerraform(this._id),
+      object: cdktn.stringToTerraform(this._object),
+      role: cdktn.stringToTerraform(this._role),
       timeouts: storageDefaultObjectAccessControlTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -493,31 +493,31 @@ export class StorageDefaultObjectAccessControl extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity: {
-        value: cdktf.stringToHclTerraform(this._entity),
+        value: cdktn.stringToHclTerraform(this._entity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object: {
-        value: cdktf.stringToHclTerraform(this._object),
+        value: cdktn.stringToHclTerraform(this._object),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

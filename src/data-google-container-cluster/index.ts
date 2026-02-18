@@ -49,8 +49,8 @@ DataGoogleContainerClusterVerticalPodAutoscalingList,
 DataGoogleContainerClusterWorkloadIdentityConfigList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface DataGoogleContainerClusterConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface DataGoogleContainerClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_cluster#id DataGoogleContainerCluster#id}
   *
@@ -81,7 +81,7 @@ export interface DataGoogleContainerClusterConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_cluster google_container_cluster}
 */
-export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
+export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -92,14 +92,14 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleContainerCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleContainerCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleContainerCluster to import
   * @param importFromId The id of the existing DataGoogleContainerCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleContainerCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_container_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_container_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -241,7 +241,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -489,7 +489,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
 
   // node_locations - computed: true, optional: false, required: false
   public get nodeLocations() {
-    return cdktf.Fn.tolist(this.getListAttribute('node_locations'));
+    return cdktn.Fn.tolist(this.getListAttribute('node_locations'));
   }
 
   // node_pool - computed: true, optional: false, required: false
@@ -577,7 +577,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
   }
 
   // resource_labels - computed: true, optional: false, required: false
-  private _resourceLabels = new cdktf.StringMap(this, "resource_labels");
+  private _resourceLabels = new cdktn.StringMap(this, "resource_labels");
   public get resourceLabels() {
     return this._resourceLabels;
   }
@@ -622,7 +622,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -656,35 +656,35 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

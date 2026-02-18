@@ -35,17 +35,17 @@ backupDrManagementServer.BackupDrManagementServer(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the management server (management console). |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of management server (management console). |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server#id BackupDrManagementServer#id}. |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.networks">networks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | networks block. |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.networks">networks</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | networks block. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server#project BackupDrManagementServer#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of management server (management console). Default value: "BACKUP_RESTORE" Possible values: ["BACKUP_RESTORE"]. |
@@ -72,43 +72,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `networks`<sup>Optional</sup> <a name="networks" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.Initializer.parameter.networks"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
 
 networks block.
 
@@ -460,7 +460,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -553,7 +553,7 @@ def put_networks(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.putNetworks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
 
 ---
 
@@ -619,7 +619,7 @@ def reset_type() -> None
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BackupDrManagementServer resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a BackupDrManagementServer resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -702,7 +702,7 @@ backupDrManagementServer.BackupDrManagementServer.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a BackupDrManagementServer resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BackupDrManagementServer resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.generateConfigForImport.parameter.scope"></a>
 
@@ -732,7 +732,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BackupDrManagementServer to import is found.
 
@@ -743,19 +743,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.managementUri">management_uri</a></code> | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList">BackupDrManagementServerManagementUriList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.networks">networks</a></code> | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList">BackupDrManagementServerNetworksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.oauth2ClientId">oauth2_client_id</a></code> | <code>str</code> | *No description.* |
@@ -763,9 +763,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.networksInput">networks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.networksInput">networks_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServer.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -793,7 +793,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -843,7 +843,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -853,7 +853,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -863,7 +863,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -883,7 +883,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -893,7 +893,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -903,7 +903,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -913,7 +913,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -993,7 +993,7 @@ name_input: str
 networks_input: IResolvable | typing.List[BackupDrManagementServerNetworks]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
 
 ---
 
@@ -1013,7 +1013,7 @@ project_input: str
 timeouts_input: IResolvable | BackupDrManagementServerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a>
 
 ---
 
@@ -1126,17 +1126,17 @@ backupDrManagementServer.BackupDrManagementServerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.location">location</a></code> | <code>str</code> | The location for the management server (management console). |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.name">name</a></code> | <code>str</code> | The name of management server (management console). |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server#id BackupDrManagementServer#id}. |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.networks">networks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | networks block. |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.networks">networks</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | networks block. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_management_server#project BackupDrManagementServer#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerConfig.property.type">type</a></code> | <code>str</code> | The type of management server (management console). Default value: "BACKUP_RESTORE" Possible values: ["BACKUP_RESTORE"]. |
@@ -1149,7 +1149,7 @@ backupDrManagementServer.BackupDrManagementServerConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1159,7 +1159,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1169,7 +1169,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1179,7 +1179,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1189,7 +1189,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1199,7 +1199,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1209,7 +1209,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1262,7 +1262,7 @@ If you experience problems setting this value it might not be settable. Please t
 networks: IResolvable | typing.List[BackupDrManagementServerNetworks]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
 
 networks block.
 
@@ -1435,7 +1435,7 @@ backupDrManagementServer.BackupDrManagementServerManagementUriList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1443,7 +1443,7 @@ backupDrManagementServer.BackupDrManagementServerManagementUriList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1513,7 +1513,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1595,7 +1595,7 @@ backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1604,7 +1604,7 @@ backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1812,7 +1812,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerManagementUriOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1910,7 +1910,7 @@ backupDrManagementServer.BackupDrManagementServerNetworksList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1918,7 +1918,7 @@ backupDrManagementServer.BackupDrManagementServerNetworksList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1988,7 +1988,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2025,7 +2025,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]</code> | *No description.* |
 
 ---
 
@@ -2059,7 +2059,7 @@ fqn: str
 internal_value: IResolvable | typing.List[BackupDrManagementServerNetworks]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>]
 
 ---
 
@@ -2081,7 +2081,7 @@ backupDrManagementServer.BackupDrManagementServerNetworksOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2090,7 +2090,7 @@ backupDrManagementServer.BackupDrManagementServerNetworksOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2299,7 +2299,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2330,7 +2330,7 @@ def reset_peering_mode() -> None
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.property.peeringModeInput">peering_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.property.network">network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.property.peeringMode">peering_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a></code> | *No description.* |
 
 ---
 
@@ -2404,7 +2404,7 @@ peering_mode: str
 internal_value: IResolvable | BackupDrManagementServerNetworks
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerNetworks">BackupDrManagementServerNetworks</a>
 
 ---
 
@@ -2424,14 +2424,14 @@ backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2625,7 +2625,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2662,7 +2662,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2736,7 +2736,7 @@ delete: str
 internal_value: IResolvable | BackupDrManagementServerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.backupDrManagementServer.BackupDrManagementServerTimeouts">BackupDrManagementServerTimeouts</a>
 
 ---
 

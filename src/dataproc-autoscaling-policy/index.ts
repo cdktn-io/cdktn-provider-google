@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataprocAutoscalingPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataprocAutoscalingPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_autoscaling_policy#id DataprocAutoscalingPolicy#id}
   *
@@ -123,52 +123,52 @@ export interface DataprocAutoscalingPolicyBasicAlgorithmYarnConfig {
 }
 
 export function dataprocAutoscalingPolicyBasicAlgorithmYarnConfigToTerraform(struct?: DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference | DataprocAutoscalingPolicyBasicAlgorithmYarnConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    graceful_decommission_timeout: cdktf.stringToTerraform(struct!.gracefulDecommissionTimeout),
-    scale_down_factor: cdktf.numberToTerraform(struct!.scaleDownFactor),
-    scale_down_min_worker_fraction: cdktf.numberToTerraform(struct!.scaleDownMinWorkerFraction),
-    scale_up_factor: cdktf.numberToTerraform(struct!.scaleUpFactor),
-    scale_up_min_worker_fraction: cdktf.numberToTerraform(struct!.scaleUpMinWorkerFraction),
+    graceful_decommission_timeout: cdktn.stringToTerraform(struct!.gracefulDecommissionTimeout),
+    scale_down_factor: cdktn.numberToTerraform(struct!.scaleDownFactor),
+    scale_down_min_worker_fraction: cdktn.numberToTerraform(struct!.scaleDownMinWorkerFraction),
+    scale_up_factor: cdktn.numberToTerraform(struct!.scaleUpFactor),
+    scale_up_min_worker_fraction: cdktn.numberToTerraform(struct!.scaleUpMinWorkerFraction),
   }
 }
 
 
 export function dataprocAutoscalingPolicyBasicAlgorithmYarnConfigToHclTerraform(struct?: DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference | DataprocAutoscalingPolicyBasicAlgorithmYarnConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     graceful_decommission_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.gracefulDecommissionTimeout),
+      value: cdktn.stringToHclTerraform(struct!.gracefulDecommissionTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scale_down_factor: {
-      value: cdktf.numberToHclTerraform(struct!.scaleDownFactor),
+      value: cdktn.numberToHclTerraform(struct!.scaleDownFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scale_down_min_worker_fraction: {
-      value: cdktf.numberToHclTerraform(struct!.scaleDownMinWorkerFraction),
+      value: cdktn.numberToHclTerraform(struct!.scaleDownMinWorkerFraction),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scale_up_factor: {
-      value: cdktf.numberToHclTerraform(struct!.scaleUpFactor),
+      value: cdktn.numberToHclTerraform(struct!.scaleUpFactor),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scale_up_min_worker_fraction: {
-      value: cdktf.numberToHclTerraform(struct!.scaleUpMinWorkerFraction),
+      value: cdktn.numberToHclTerraform(struct!.scaleUpMinWorkerFraction),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -179,14 +179,14 @@ export function dataprocAutoscalingPolicyBasicAlgorithmYarnConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -325,25 +325,25 @@ export interface DataprocAutoscalingPolicyBasicAlgorithm {
 }
 
 export function dataprocAutoscalingPolicyBasicAlgorithmToTerraform(struct?: DataprocAutoscalingPolicyBasicAlgorithmOutputReference | DataprocAutoscalingPolicyBasicAlgorithm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cooldown_period: cdktf.stringToTerraform(struct!.cooldownPeriod),
+    cooldown_period: cdktn.stringToTerraform(struct!.cooldownPeriod),
     yarn_config: dataprocAutoscalingPolicyBasicAlgorithmYarnConfigToTerraform(struct!.yarnConfig),
   }
 }
 
 
 export function dataprocAutoscalingPolicyBasicAlgorithmToHclTerraform(struct?: DataprocAutoscalingPolicyBasicAlgorithmOutputReference | DataprocAutoscalingPolicyBasicAlgorithm): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cooldown_period: {
-      value: cdktf.stringToHclTerraform(struct!.cooldownPeriod),
+      value: cdktn.stringToHclTerraform(struct!.cooldownPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -360,14 +360,14 @@ export function dataprocAutoscalingPolicyBasicAlgorithmToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocAutoscalingPolicyBasicAlgorithmOutputReference extends cdktf.ComplexObject {
+export class DataprocAutoscalingPolicyBasicAlgorithmOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -464,38 +464,38 @@ export interface DataprocAutoscalingPolicySecondaryWorkerConfig {
 }
 
 export function dataprocAutoscalingPolicySecondaryWorkerConfigToTerraform(struct?: DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference | DataprocAutoscalingPolicySecondaryWorkerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_instances: cdktf.numberToTerraform(struct!.maxInstances),
-    min_instances: cdktf.numberToTerraform(struct!.minInstances),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    max_instances: cdktn.numberToTerraform(struct!.maxInstances),
+    min_instances: cdktn.numberToTerraform(struct!.minInstances),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
 export function dataprocAutoscalingPolicySecondaryWorkerConfigToHclTerraform(struct?: DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference | DataprocAutoscalingPolicySecondaryWorkerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_instances: {
-      value: cdktf.numberToHclTerraform(struct!.maxInstances),
+      value: cdktn.numberToHclTerraform(struct!.maxInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_instances: {
-      value: cdktf.numberToHclTerraform(struct!.minInstances),
+      value: cdktn.numberToHclTerraform(struct!.minInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -506,14 +506,14 @@ export function dataprocAutoscalingPolicySecondaryWorkerConfigToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocAutoscalingPolicySecondaryWorkerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -613,39 +613,39 @@ export interface DataprocAutoscalingPolicyTimeouts {
   readonly update?: string;
 }
 
-export function dataprocAutoscalingPolicyTimeoutsToTerraform(struct?: DataprocAutoscalingPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocAutoscalingPolicyTimeoutsToTerraform(struct?: DataprocAutoscalingPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataprocAutoscalingPolicyTimeoutsToHclTerraform(struct?: DataprocAutoscalingPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocAutoscalingPolicyTimeoutsToHclTerraform(struct?: DataprocAutoscalingPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -656,19 +656,19 @@ export function dataprocAutoscalingPolicyTimeoutsToHclTerraform(struct?: Datapro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocAutoscalingPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataprocAutoscalingPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataprocAutoscalingPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataprocAutoscalingPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -689,7 +689,7 @@ export class DataprocAutoscalingPolicyTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataprocAutoscalingPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataprocAutoscalingPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -697,7 +697,7 @@ export class DataprocAutoscalingPolicyTimeoutsOutputReference extends cdktf.Comp
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -793,38 +793,38 @@ export interface DataprocAutoscalingPolicyWorkerConfig {
 }
 
 export function dataprocAutoscalingPolicyWorkerConfigToTerraform(struct?: DataprocAutoscalingPolicyWorkerConfigOutputReference | DataprocAutoscalingPolicyWorkerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_instances: cdktf.numberToTerraform(struct!.maxInstances),
-    min_instances: cdktf.numberToTerraform(struct!.minInstances),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    max_instances: cdktn.numberToTerraform(struct!.maxInstances),
+    min_instances: cdktn.numberToTerraform(struct!.minInstances),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
 export function dataprocAutoscalingPolicyWorkerConfigToHclTerraform(struct?: DataprocAutoscalingPolicyWorkerConfigOutputReference | DataprocAutoscalingPolicyWorkerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_instances: {
-      value: cdktf.numberToHclTerraform(struct!.maxInstances),
+      value: cdktn.numberToHclTerraform(struct!.maxInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_instances: {
-      value: cdktf.numberToHclTerraform(struct!.minInstances),
+      value: cdktn.numberToHclTerraform(struct!.minInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -835,14 +835,14 @@ export function dataprocAutoscalingPolicyWorkerConfigToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocAutoscalingPolicyWorkerConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocAutoscalingPolicyWorkerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -928,7 +928,7 @@ export class DataprocAutoscalingPolicyWorkerConfigOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_autoscaling_policy google_dataproc_autoscaling_policy}
 */
-export class DataprocAutoscalingPolicy extends cdktf.TerraformResource {
+export class DataprocAutoscalingPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -939,14 +939,14 @@ export class DataprocAutoscalingPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataprocAutoscalingPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataprocAutoscalingPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataprocAutoscalingPolicy to import
   * @param importFromId The id of the existing DataprocAutoscalingPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_autoscaling_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataprocAutoscalingPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_autoscaling_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_autoscaling_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -1126,10 +1126,10 @@ export class DataprocAutoscalingPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      policy_id: cdktn.stringToTerraform(this._policyId),
+      project: cdktn.stringToTerraform(this._project),
       basic_algorithm: dataprocAutoscalingPolicyBasicAlgorithmToTerraform(this._basicAlgorithm.internalValue),
       secondary_worker_config: dataprocAutoscalingPolicySecondaryWorkerConfigToTerraform(this._secondaryWorkerConfig.internalValue),
       timeouts: dataprocAutoscalingPolicyTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1140,25 +1140,25 @@ export class DataprocAutoscalingPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_id: {
-        value: cdktf.stringToHclTerraform(this._policyId),
+        value: cdktn.stringToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

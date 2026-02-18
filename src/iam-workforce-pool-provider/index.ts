@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IamWorkforcePoolProviderConfig extends cdktf.TerraformMetaArguments {
+export interface IamWorkforcePoolProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * A [Common Expression Language](https://opensource.google/projects/cel) expression, in
   * plain text, to restrict what otherwise valid authentication credentials issued by the
@@ -104,7 +104,7 @@ export interface IamWorkforcePoolProviderConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * A user-specified display name for the provider. Cannot exceed 32 characters.
   *
@@ -176,24 +176,24 @@ export interface IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret
 }
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueToTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    plain_text: cdktf.stringToTerraform(struct!.plainText),
+    plain_text: cdktn.stringToTerraform(struct!.plainText),
   }
 }
 
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueToHclTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     plain_text: {
-      value: cdktf.stringToHclTerraform(struct!.plainText),
+      value: cdktn.stringToHclTerraform(struct!.plainText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -204,14 +204,14 @@ export function iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -264,8 +264,8 @@ export interface IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret
 }
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretToTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -275,8 +275,8 @@ export function iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretT
 
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretToHclTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -292,14 +292,14 @@ export function iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -352,24 +352,24 @@ export interface IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParamet
 }
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersToTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.stringToTerraform(struct!.filter),
+    filter: cdktn.stringToTerraform(struct!.filter),
   }
 }
 
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersToHclTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -380,14 +380,14 @@ export function iamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParamete
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -474,14 +474,14 @@ export interface IamWorkforcePoolProviderExtraAttributesOauth2Client {
 }
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientToTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2Client): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attributes_type: cdktf.stringToTerraform(struct!.attributesType),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    issuer_uri: cdktf.stringToTerraform(struct!.issuerUri),
+    attributes_type: cdktn.stringToTerraform(struct!.attributesType),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    issuer_uri: cdktn.stringToTerraform(struct!.issuerUri),
     client_secret: iamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretToTerraform(struct!.clientSecret),
     query_parameters: iamWorkforcePoolProviderExtraAttributesOauth2ClientQueryParametersToTerraform(struct!.queryParameters),
   }
@@ -489,25 +489,25 @@ export function iamWorkforcePoolProviderExtraAttributesOauth2ClientToTerraform(s
 
 
 export function iamWorkforcePoolProviderExtraAttributesOauth2ClientToHclTerraform(struct?: IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference | IamWorkforcePoolProviderExtraAttributesOauth2Client): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attributes_type: {
-      value: cdktf.stringToHclTerraform(struct!.attributesType),
+      value: cdktn.stringToHclTerraform(struct!.attributesType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      value: cdktn.stringToHclTerraform(struct!.issuerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -530,14 +530,14 @@ export function iamWorkforcePoolProviderExtraAttributesOauth2ClientToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -664,24 +664,24 @@ export interface IamWorkforcePoolProviderOidcClientSecretValue {
 }
 
 export function iamWorkforcePoolProviderOidcClientSecretValueToTerraform(struct?: IamWorkforcePoolProviderOidcClientSecretValueOutputReference | IamWorkforcePoolProviderOidcClientSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    plain_text: cdktf.stringToTerraform(struct!.plainText),
+    plain_text: cdktn.stringToTerraform(struct!.plainText),
   }
 }
 
 
 export function iamWorkforcePoolProviderOidcClientSecretValueToHclTerraform(struct?: IamWorkforcePoolProviderOidcClientSecretValueOutputReference | IamWorkforcePoolProviderOidcClientSecretValue): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     plain_text: {
-      value: cdktf.stringToHclTerraform(struct!.plainText),
+      value: cdktn.stringToHclTerraform(struct!.plainText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -692,14 +692,14 @@ export function iamWorkforcePoolProviderOidcClientSecretValueToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderOidcClientSecretValueOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderOidcClientSecretValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -752,8 +752,8 @@ export interface IamWorkforcePoolProviderOidcClientSecret {
 }
 
 export function iamWorkforcePoolProviderOidcClientSecretToTerraform(struct?: IamWorkforcePoolProviderOidcClientSecretOutputReference | IamWorkforcePoolProviderOidcClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -763,8 +763,8 @@ export function iamWorkforcePoolProviderOidcClientSecretToTerraform(struct?: Iam
 
 
 export function iamWorkforcePoolProviderOidcClientSecretToHclTerraform(struct?: IamWorkforcePoolProviderOidcClientSecretOutputReference | IamWorkforcePoolProviderOidcClientSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -780,14 +780,14 @@ export function iamWorkforcePoolProviderOidcClientSecretToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderOidcClientSecretOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderOidcClientSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -857,38 +857,38 @@ export interface IamWorkforcePoolProviderOidcWebSsoConfig {
 }
 
 export function iamWorkforcePoolProviderOidcWebSsoConfigToTerraform(struct?: IamWorkforcePoolProviderOidcWebSsoConfigOutputReference | IamWorkforcePoolProviderOidcWebSsoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalScopes),
-    assertion_claims_behavior: cdktf.stringToTerraform(struct!.assertionClaimsBehavior),
-    response_type: cdktf.stringToTerraform(struct!.responseType),
+    additional_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalScopes),
+    assertion_claims_behavior: cdktn.stringToTerraform(struct!.assertionClaimsBehavior),
+    response_type: cdktn.stringToTerraform(struct!.responseType),
   }
 }
 
 
 export function iamWorkforcePoolProviderOidcWebSsoConfigToHclTerraform(struct?: IamWorkforcePoolProviderOidcWebSsoConfigOutputReference | IamWorkforcePoolProviderOidcWebSsoConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalScopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalScopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     assertion_claims_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.assertionClaimsBehavior),
+      value: cdktn.stringToHclTerraform(struct!.assertionClaimsBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     response_type: {
-      value: cdktf.stringToHclTerraform(struct!.responseType),
+      value: cdktn.stringToHclTerraform(struct!.responseType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -899,14 +899,14 @@ export function iamWorkforcePoolProviderOidcWebSsoConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderOidcWebSsoConfigOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderOidcWebSsoConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1041,14 +1041,14 @@ export interface IamWorkforcePoolProviderOidc {
 }
 
 export function iamWorkforcePoolProviderOidcToTerraform(struct?: IamWorkforcePoolProviderOidcOutputReference | IamWorkforcePoolProviderOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    issuer_uri: cdktf.stringToTerraform(struct!.issuerUri),
-    jwks_json: cdktf.stringToTerraform(struct!.jwksJson),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    issuer_uri: cdktn.stringToTerraform(struct!.issuerUri),
+    jwks_json: cdktn.stringToTerraform(struct!.jwksJson),
     client_secret: iamWorkforcePoolProviderOidcClientSecretToTerraform(struct!.clientSecret),
     web_sso_config: iamWorkforcePoolProviderOidcWebSsoConfigToTerraform(struct!.webSsoConfig),
   }
@@ -1056,25 +1056,25 @@ export function iamWorkforcePoolProviderOidcToTerraform(struct?: IamWorkforcePoo
 
 
 export function iamWorkforcePoolProviderOidcToHclTerraform(struct?: IamWorkforcePoolProviderOidcOutputReference | IamWorkforcePoolProviderOidc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      value: cdktn.stringToHclTerraform(struct!.issuerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwks_json: {
-      value: cdktf.stringToHclTerraform(struct!.jwksJson),
+      value: cdktn.stringToHclTerraform(struct!.jwksJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1097,14 +1097,14 @@ export function iamWorkforcePoolProviderOidcToHclTerraform(struct?: IamWorkforce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderOidcOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1251,24 +1251,24 @@ export interface IamWorkforcePoolProviderSaml {
 }
 
 export function iamWorkforcePoolProviderSamlToTerraform(struct?: IamWorkforcePoolProviderSamlOutputReference | IamWorkforcePoolProviderSaml): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    idp_metadata_xml: cdktf.stringToTerraform(struct!.idpMetadataXml),
+    idp_metadata_xml: cdktn.stringToTerraform(struct!.idpMetadataXml),
   }
 }
 
 
 export function iamWorkforcePoolProviderSamlToHclTerraform(struct?: IamWorkforcePoolProviderSamlOutputReference | IamWorkforcePoolProviderSaml): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     idp_metadata_xml: {
-      value: cdktf.stringToHclTerraform(struct!.idpMetadataXml),
+      value: cdktn.stringToHclTerraform(struct!.idpMetadataXml),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1279,14 +1279,14 @@ export function iamWorkforcePoolProviderSamlToHclTerraform(struct?: IamWorkforce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderSamlOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderSamlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1339,39 +1339,39 @@ export interface IamWorkforcePoolProviderTimeouts {
   readonly update?: string;
 }
 
-export function iamWorkforcePoolProviderTimeoutsToTerraform(struct?: IamWorkforcePoolProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkforcePoolProviderTimeoutsToTerraform(struct?: IamWorkforcePoolProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iamWorkforcePoolProviderTimeoutsToHclTerraform(struct?: IamWorkforcePoolProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iamWorkforcePoolProviderTimeoutsToHclTerraform(struct?: IamWorkforcePoolProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1382,19 +1382,19 @@ export function iamWorkforcePoolProviderTimeoutsToHclTerraform(struct?: IamWorkf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IamWorkforcePoolProviderTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IamWorkforcePoolProviderTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IamWorkforcePoolProviderTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IamWorkforcePoolProviderTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1415,7 +1415,7 @@ export class IamWorkforcePoolProviderTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IamWorkforcePoolProviderTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IamWorkforcePoolProviderTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1423,7 +1423,7 @@ export class IamWorkforcePoolProviderTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1488,7 +1488,7 @@ export class IamWorkforcePoolProviderTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}
 */
-export class IamWorkforcePoolProvider extends cdktf.TerraformResource {
+export class IamWorkforcePoolProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1499,14 +1499,14 @@ export class IamWorkforcePoolProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IamWorkforcePoolProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IamWorkforcePoolProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IamWorkforcePoolProvider to import
   * @param importFromId The id of the existing IamWorkforcePoolProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IamWorkforcePoolProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_workforce_pool_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_workforce_pool_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -1604,11 +1604,11 @@ export class IamWorkforcePoolProvider extends cdktf.TerraformResource {
   }
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -1770,15 +1770,15 @@ export class IamWorkforcePoolProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      attribute_condition: cdktf.stringToTerraform(this._attributeCondition),
-      attribute_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(this._attributeMapping),
-      description: cdktf.stringToTerraform(this._description),
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      provider_id: cdktf.stringToTerraform(this._providerId),
-      workforce_pool_id: cdktf.stringToTerraform(this._workforcePoolId),
+      attribute_condition: cdktn.stringToTerraform(this._attributeCondition),
+      attribute_mapping: cdktn.hashMapper(cdktn.stringToTerraform)(this._attributeMapping),
+      description: cdktn.stringToTerraform(this._description),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      provider_id: cdktn.stringToTerraform(this._providerId),
+      workforce_pool_id: cdktn.stringToTerraform(this._workforcePoolId),
       extra_attributes_oauth2_client: iamWorkforcePoolProviderExtraAttributesOauth2ClientToTerraform(this._extraAttributesOauth2Client.internalValue),
       oidc: iamWorkforcePoolProviderOidcToTerraform(this._oidc.internalValue),
       saml: iamWorkforcePoolProviderSamlToTerraform(this._saml.internalValue),
@@ -1789,55 +1789,55 @@ export class IamWorkforcePoolProvider extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       attribute_condition: {
-        value: cdktf.stringToHclTerraform(this._attributeCondition),
+        value: cdktn.stringToHclTerraform(this._attributeCondition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       attribute_mapping: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._attributeMapping),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._attributeMapping),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_id: {
-        value: cdktf.stringToHclTerraform(this._providerId),
+        value: cdktn.stringToHclTerraform(this._providerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workforce_pool_id: {
-        value: cdktf.stringToHclTerraform(this._workforcePoolId),
+        value: cdktn.stringToHclTerraform(this._workforcePoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FolderConfig extends cdktf.TerraformMetaArguments {
+export interface FolderConfig extends cdktn.TerraformMetaArguments {
   /**
   * When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the instance will fail. When the field is set to false, deleting the instance is allowed.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/folder#deletion_protection Folder#deletion_protection}
   */
-  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * The folder's display name. A folder's display name must be unique amongst its siblings, e.g. no two folders with the same parent can share the same display name. The display name must start and end with a letter or digit, may contain letters, digits, spaces, hyphens and underscores and can be no longer than 30 characters.
   *
@@ -69,46 +69,46 @@ export interface FolderTimeouts {
   readonly update?: string;
 }
 
-export function folderTimeoutsToTerraform(struct?: FolderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function folderTimeoutsToTerraform(struct?: FolderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function folderTimeoutsToHclTerraform(struct?: FolderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function folderTimeoutsToHclTerraform(struct?: FolderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function folderTimeoutsToHclTerraform(struct?: FolderTimeouts | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FolderTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FolderTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FolderTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FolderTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class FolderTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FolderTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FolderTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class FolderTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class FolderTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/folder google_folder}
 */
-export class Folder extends cdktf.TerraformResource {
+export class Folder extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class Folder extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Folder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Folder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Folder to import
   * @param importFromId The id of the existing Folder that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/folder#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Folder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_folder", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_folder", importId: importFromId, provider });
       }
 
   // ===========
@@ -318,11 +318,11 @@ export class Folder extends cdktf.TerraformResource {
   }
 
   // deletion_protection - computed: false, optional: true, required: false
-  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  private _deletionProtection?: boolean | cdktn.IResolvable; 
   public get deletionProtection() {
     return this.getBooleanAttribute('deletion_protection');
   }
-  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+  public set deletionProtection(value: boolean | cdktn.IResolvable) {
     this._deletionProtection = value;
   }
   public resetDeletionProtection() {
@@ -433,11 +433,11 @@ export class Folder extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      deletion_protection: cdktn.booleanToTerraform(this._deletionProtection),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: folderTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -445,31 +445,31 @@ export class Folder extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_protection: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtection),
+        value: cdktn.booleanToHclTerraform(this._deletionProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

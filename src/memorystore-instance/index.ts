@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MemorystoreInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface MemorystoreInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Allows customers to specify if they are okay with deploying a multi-zone
   * instance in less than 3 zones. Once set, if there is a zonal outage during
@@ -20,7 +20,7 @@ export interface MemorystoreInstanceConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance#allow_fewer_zones_deployment MemorystoreInstance#allow_fewer_zones_deployment}
   */
-  readonly allowFewerZonesDeployment?: boolean | cdktf.IResolvable;
+  readonly allowFewerZonesDeployment?: boolean | cdktn.IResolvable;
   /**
   * Optional. Immutable. Authorization mode of the instance. Possible values:
   *  AUTH_DISABLED
@@ -34,7 +34,7 @@ export interface MemorystoreInstanceConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance#deletion_protection_enabled MemorystoreInstance#deletion_protection_enabled}
   */
-  readonly deletionProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Optional. User-provided engine configurations for the instance.
   *
@@ -152,13 +152,13 @@ export interface MemorystoreInstanceConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance#desired_auto_created_endpoints MemorystoreInstance#desired_auto_created_endpoints}
   */
-  readonly desiredAutoCreatedEndpoints?: MemorystoreInstanceDesiredAutoCreatedEndpoints[] | cdktf.IResolvable;
+  readonly desiredAutoCreatedEndpoints?: MemorystoreInstanceDesiredAutoCreatedEndpoints[] | cdktn.IResolvable;
   /**
   * desired_psc_auto_connections block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance#desired_psc_auto_connections MemorystoreInstance#desired_psc_auto_connections}
   */
-  readonly desiredPscAutoConnections?: MemorystoreInstanceDesiredPscAutoConnections[] | cdktf.IResolvable;
+  readonly desiredPscAutoConnections?: MemorystoreInstanceDesiredPscAutoConnections[] | cdktn.IResolvable;
   /**
   * gcs_source block
   *
@@ -200,8 +200,8 @@ export interface MemorystoreInstanceDiscoveryEndpoints {
 }
 
 export function memorystoreInstanceDiscoveryEndpointsToTerraform(struct?: MemorystoreInstanceDiscoveryEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -210,8 +210,8 @@ export function memorystoreInstanceDiscoveryEndpointsToTerraform(struct?: Memory
 
 
 export function memorystoreInstanceDiscoveryEndpointsToHclTerraform(struct?: MemorystoreInstanceDiscoveryEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -219,7 +219,7 @@ export function memorystoreInstanceDiscoveryEndpointsToHclTerraform(struct?: Mem
   return attrs;
 }
 
-export class MemorystoreInstanceDiscoveryEndpointsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceDiscoveryEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -228,7 +228,7 @@ export class MemorystoreInstanceDiscoveryEndpointsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -263,14 +263,14 @@ export class MemorystoreInstanceDiscoveryEndpointsOutputReference extends cdktf.
   }
 }
 
-export class MemorystoreInstanceDiscoveryEndpointsList extends cdktf.ComplexList {
+export class MemorystoreInstanceDiscoveryEndpointsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -285,8 +285,8 @@ export interface MemorystoreInstanceEndpointsConnectionsPscAutoConnection {
 }
 
 export function memorystoreInstanceEndpointsConnectionsPscAutoConnectionToTerraform(struct?: MemorystoreInstanceEndpointsConnectionsPscAutoConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -295,8 +295,8 @@ export function memorystoreInstanceEndpointsConnectionsPscAutoConnectionToTerraf
 
 
 export function memorystoreInstanceEndpointsConnectionsPscAutoConnectionToHclTerraform(struct?: MemorystoreInstanceEndpointsConnectionsPscAutoConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -304,7 +304,7 @@ export function memorystoreInstanceEndpointsConnectionsPscAutoConnectionToHclTer
   return attrs;
 }
 
-export class MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -313,7 +313,7 @@ export class MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -373,14 +373,14 @@ export class MemorystoreInstanceEndpointsConnectionsPscAutoConnectionOutputRefer
   }
 }
 
-export class MemorystoreInstanceEndpointsConnectionsPscAutoConnectionList extends cdktf.ComplexList {
+export class MemorystoreInstanceEndpointsConnectionsPscAutoConnectionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -395,8 +395,8 @@ export interface MemorystoreInstanceEndpointsConnections {
 }
 
 export function memorystoreInstanceEndpointsConnectionsToTerraform(struct?: MemorystoreInstanceEndpointsConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -405,8 +405,8 @@ export function memorystoreInstanceEndpointsConnectionsToTerraform(struct?: Memo
 
 
 export function memorystoreInstanceEndpointsConnectionsToHclTerraform(struct?: MemorystoreInstanceEndpointsConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -414,7 +414,7 @@ export function memorystoreInstanceEndpointsConnectionsToHclTerraform(struct?: M
   return attrs;
 }
 
-export class MemorystoreInstanceEndpointsConnectionsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceEndpointsConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -423,7 +423,7 @@ export class MemorystoreInstanceEndpointsConnectionsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -449,14 +449,14 @@ export class MemorystoreInstanceEndpointsConnectionsOutputReference extends cdkt
   }
 }
 
-export class MemorystoreInstanceEndpointsConnectionsList extends cdktf.ComplexList {
+export class MemorystoreInstanceEndpointsConnectionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -471,8 +471,8 @@ export interface MemorystoreInstanceEndpoints {
 }
 
 export function memorystoreInstanceEndpointsToTerraform(struct?: MemorystoreInstanceEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -481,8 +481,8 @@ export function memorystoreInstanceEndpointsToTerraform(struct?: MemorystoreInst
 
 
 export function memorystoreInstanceEndpointsToHclTerraform(struct?: MemorystoreInstanceEndpoints): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -490,7 +490,7 @@ export function memorystoreInstanceEndpointsToHclTerraform(struct?: MemorystoreI
   return attrs;
 }
 
-export class MemorystoreInstanceEndpointsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -499,7 +499,7 @@ export class MemorystoreInstanceEndpointsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -525,14 +525,14 @@ export class MemorystoreInstanceEndpointsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class MemorystoreInstanceEndpointsList extends cdktf.ComplexList {
+export class MemorystoreInstanceEndpointsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -547,8 +547,8 @@ export interface MemorystoreInstanceMaintenanceSchedule {
 }
 
 export function memorystoreInstanceMaintenanceScheduleToTerraform(struct?: MemorystoreInstanceMaintenanceSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -557,8 +557,8 @@ export function memorystoreInstanceMaintenanceScheduleToTerraform(struct?: Memor
 
 
 export function memorystoreInstanceMaintenanceScheduleToHclTerraform(struct?: MemorystoreInstanceMaintenanceSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -566,7 +566,7 @@ export function memorystoreInstanceMaintenanceScheduleToHclTerraform(struct?: Me
   return attrs;
 }
 
-export class MemorystoreInstanceMaintenanceScheduleOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceMaintenanceScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -575,7 +575,7 @@ export class MemorystoreInstanceMaintenanceScheduleOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -610,14 +610,14 @@ export class MemorystoreInstanceMaintenanceScheduleOutputReference extends cdktf
   }
 }
 
-export class MemorystoreInstanceMaintenanceScheduleList extends cdktf.ComplexList {
+export class MemorystoreInstanceMaintenanceScheduleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -632,8 +632,8 @@ export interface MemorystoreInstanceManagedServerCaCaCerts {
 }
 
 export function memorystoreInstanceManagedServerCaCaCertsToTerraform(struct?: MemorystoreInstanceManagedServerCaCaCerts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -642,8 +642,8 @@ export function memorystoreInstanceManagedServerCaCaCertsToTerraform(struct?: Me
 
 
 export function memorystoreInstanceManagedServerCaCaCertsToHclTerraform(struct?: MemorystoreInstanceManagedServerCaCaCerts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -651,7 +651,7 @@ export function memorystoreInstanceManagedServerCaCaCertsToHclTerraform(struct?:
   return attrs;
 }
 
-export class MemorystoreInstanceManagedServerCaCaCertsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceManagedServerCaCaCertsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -660,7 +660,7 @@ export class MemorystoreInstanceManagedServerCaCaCertsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -685,14 +685,14 @@ export class MemorystoreInstanceManagedServerCaCaCertsOutputReference extends cd
   }
 }
 
-export class MemorystoreInstanceManagedServerCaCaCertsList extends cdktf.ComplexList {
+export class MemorystoreInstanceManagedServerCaCaCertsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -707,8 +707,8 @@ export interface MemorystoreInstanceManagedServerCa {
 }
 
 export function memorystoreInstanceManagedServerCaToTerraform(struct?: MemorystoreInstanceManagedServerCa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -717,8 +717,8 @@ export function memorystoreInstanceManagedServerCaToTerraform(struct?: Memorysto
 
 
 export function memorystoreInstanceManagedServerCaToHclTerraform(struct?: MemorystoreInstanceManagedServerCa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -726,7 +726,7 @@ export function memorystoreInstanceManagedServerCaToHclTerraform(struct?: Memory
   return attrs;
 }
 
-export class MemorystoreInstanceManagedServerCaOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceManagedServerCaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -735,7 +735,7 @@ export class MemorystoreInstanceManagedServerCaOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -761,14 +761,14 @@ export class MemorystoreInstanceManagedServerCaOutputReference extends cdktf.Com
   }
 }
 
-export class MemorystoreInstanceManagedServerCaList extends cdktf.ComplexList {
+export class MemorystoreInstanceManagedServerCaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -783,8 +783,8 @@ export interface MemorystoreInstanceNodeConfig {
 }
 
 export function memorystoreInstanceNodeConfigToTerraform(struct?: MemorystoreInstanceNodeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -793,8 +793,8 @@ export function memorystoreInstanceNodeConfigToTerraform(struct?: MemorystoreIns
 
 
 export function memorystoreInstanceNodeConfigToHclTerraform(struct?: MemorystoreInstanceNodeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -802,7 +802,7 @@ export function memorystoreInstanceNodeConfigToHclTerraform(struct?: Memorystore
   return attrs;
 }
 
-export class MemorystoreInstanceNodeConfigOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceNodeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -811,7 +811,7 @@ export class MemorystoreInstanceNodeConfigOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -836,14 +836,14 @@ export class MemorystoreInstanceNodeConfigOutputReference extends cdktf.ComplexO
   }
 }
 
-export class MemorystoreInstanceNodeConfigList extends cdktf.ComplexList {
+export class MemorystoreInstanceNodeConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -858,8 +858,8 @@ export interface MemorystoreInstancePscAttachmentDetails {
 }
 
 export function memorystoreInstancePscAttachmentDetailsToTerraform(struct?: MemorystoreInstancePscAttachmentDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -868,8 +868,8 @@ export function memorystoreInstancePscAttachmentDetailsToTerraform(struct?: Memo
 
 
 export function memorystoreInstancePscAttachmentDetailsToHclTerraform(struct?: MemorystoreInstancePscAttachmentDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -877,7 +877,7 @@ export function memorystoreInstancePscAttachmentDetailsToHclTerraform(struct?: M
   return attrs;
 }
 
-export class MemorystoreInstancePscAttachmentDetailsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstancePscAttachmentDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -886,7 +886,7 @@ export class MemorystoreInstancePscAttachmentDetailsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -916,14 +916,14 @@ export class MemorystoreInstancePscAttachmentDetailsOutputReference extends cdkt
   }
 }
 
-export class MemorystoreInstancePscAttachmentDetailsList extends cdktf.ComplexList {
+export class MemorystoreInstancePscAttachmentDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -938,8 +938,8 @@ export interface MemorystoreInstancePscAutoConnections {
 }
 
 export function memorystoreInstancePscAutoConnectionsToTerraform(struct?: MemorystoreInstancePscAutoConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -948,8 +948,8 @@ export function memorystoreInstancePscAutoConnectionsToTerraform(struct?: Memory
 
 
 export function memorystoreInstancePscAutoConnectionsToHclTerraform(struct?: MemorystoreInstancePscAutoConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -957,7 +957,7 @@ export function memorystoreInstancePscAutoConnectionsToHclTerraform(struct?: Mem
   return attrs;
 }
 
-export class MemorystoreInstancePscAutoConnectionsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstancePscAutoConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -966,7 +966,7 @@ export class MemorystoreInstancePscAutoConnectionsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1031,14 +1031,14 @@ export class MemorystoreInstancePscAutoConnectionsOutputReference extends cdktf.
   }
 }
 
-export class MemorystoreInstancePscAutoConnectionsList extends cdktf.ComplexList {
+export class MemorystoreInstancePscAutoConnectionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1053,8 +1053,8 @@ export interface MemorystoreInstanceStateInfoUpdateInfo {
 }
 
 export function memorystoreInstanceStateInfoUpdateInfoToTerraform(struct?: MemorystoreInstanceStateInfoUpdateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1063,8 +1063,8 @@ export function memorystoreInstanceStateInfoUpdateInfoToTerraform(struct?: Memor
 
 
 export function memorystoreInstanceStateInfoUpdateInfoToHclTerraform(struct?: MemorystoreInstanceStateInfoUpdateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1072,7 +1072,7 @@ export function memorystoreInstanceStateInfoUpdateInfoToHclTerraform(struct?: Me
   return attrs;
 }
 
-export class MemorystoreInstanceStateInfoUpdateInfoOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceStateInfoUpdateInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1081,7 +1081,7 @@ export class MemorystoreInstanceStateInfoUpdateInfoOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1121,14 +1121,14 @@ export class MemorystoreInstanceStateInfoUpdateInfoOutputReference extends cdktf
   }
 }
 
-export class MemorystoreInstanceStateInfoUpdateInfoList extends cdktf.ComplexList {
+export class MemorystoreInstanceStateInfoUpdateInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1143,8 +1143,8 @@ export interface MemorystoreInstanceStateInfo {
 }
 
 export function memorystoreInstanceStateInfoToTerraform(struct?: MemorystoreInstanceStateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1153,8 +1153,8 @@ export function memorystoreInstanceStateInfoToTerraform(struct?: MemorystoreInst
 
 
 export function memorystoreInstanceStateInfoToHclTerraform(struct?: MemorystoreInstanceStateInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1162,7 +1162,7 @@ export function memorystoreInstanceStateInfoToHclTerraform(struct?: MemorystoreI
   return attrs;
 }
 
-export class MemorystoreInstanceStateInfoOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceStateInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1171,7 +1171,7 @@ export class MemorystoreInstanceStateInfoOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1197,14 +1197,14 @@ export class MemorystoreInstanceStateInfoOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class MemorystoreInstanceStateInfoList extends cdktf.ComplexList {
+export class MemorystoreInstanceStateInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1226,24 +1226,24 @@ export interface MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleS
 }
 
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeToTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
+    hours: cdktn.numberToTerraform(struct!.hours),
   }
 }
 
 
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeToHclTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1254,14 +1254,14 @@ export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1309,8 +1309,8 @@ export interface MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule 
 }
 
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleToTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1320,8 +1320,8 @@ export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleTo
 
 
 export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleToHclTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference | MemorystoreInstanceAutomatedBackupConfigFixedFrequencySchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1337,14 +1337,14 @@ export function memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1400,25 +1400,25 @@ export interface MemorystoreInstanceAutomatedBackupConfig {
 }
 
 export function memorystoreInstanceAutomatedBackupConfigToTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigOutputReference | MemorystoreInstanceAutomatedBackupConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    retention: cdktf.stringToTerraform(struct!.retention),
+    retention: cdktn.stringToTerraform(struct!.retention),
     fixed_frequency_schedule: memorystoreInstanceAutomatedBackupConfigFixedFrequencyScheduleToTerraform(struct!.fixedFrequencySchedule),
   }
 }
 
 
 export function memorystoreInstanceAutomatedBackupConfigToHclTerraform(struct?: MemorystoreInstanceAutomatedBackupConfigOutputReference | MemorystoreInstanceAutomatedBackupConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     retention: {
-      value: cdktf.stringToHclTerraform(struct!.retention),
+      value: cdktn.stringToHclTerraform(struct!.retention),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1435,14 +1435,14 @@ export function memorystoreInstanceAutomatedBackupConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceAutomatedBackupConfigOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceAutomatedBackupConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1503,8 +1503,8 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrim
 }
 
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1513,8 +1513,8 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipPrima
 
 
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1522,7 +1522,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipPrima
   return attrs;
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1531,7 +1531,7 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryI
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1561,14 +1561,14 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryI
   }
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList extends cdktf.ComplexList {
+export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipPrimaryInstanceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1583,8 +1583,8 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigMembershipSeco
 }
 
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1593,8 +1593,8 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipSecon
 
 
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1602,7 +1602,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipSecon
   return attrs;
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1611,7 +1611,7 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondar
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1641,14 +1641,14 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondar
   }
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList extends cdktf.ComplexList {
+export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipSecondaryInstanceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1663,8 +1663,8 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigMembership {
 }
 
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1673,8 +1673,8 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipToTer
 
 
 export function memorystoreInstanceCrossInstanceReplicationConfigMembershipToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigMembership): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1682,7 +1682,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigMembershipToHcl
   return attrs;
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1691,7 +1691,7 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1723,14 +1723,14 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputRe
   }
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipList extends cdktf.ComplexList {
+export class MemorystoreInstanceCrossInstanceReplicationConfigMembershipList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1751,24 +1751,24 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanc
 }
 
 export function memorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference | MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance: cdktf.stringToTerraform(struct!.instance),
+    instance: cdktn.stringToTerraform(struct!.instance),
   }
 }
 
 
 export function memorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference | MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance: {
-      value: cdktf.stringToHclTerraform(struct!.instance),
+      value: cdktn.stringToHclTerraform(struct!.instance),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1779,14 +1779,14 @@ export function memorystoreInstanceCrossInstanceReplicationConfigPrimaryInstance
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1841,25 +1841,25 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInsta
   readonly instance?: string;
 }
 
-export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance: cdktf.stringToTerraform(struct!.instance),
+    instance: cdktn.stringToTerraform(struct!.instance),
   }
 }
 
 
-export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance: {
-      value: cdktf.stringToHclTerraform(struct!.instance),
+      value: cdktn.stringToHclTerraform(struct!.instance),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1870,9 +1870,9 @@ export function memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1880,11 +1880,11 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable | undefined {
+  public get internalValue(): MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1897,13 +1897,13 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._instance = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1936,15 +1936,15 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances
   }
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList extends cdktf.ComplexList {
-  public internalValue? : MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktf.IResolvable
+export class MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList extends cdktn.ComplexList {
+  public internalValue? : MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1977,30 +1977,30 @@ export interface MemorystoreInstanceCrossInstanceReplicationConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance#secondary_instances MemorystoreInstance#secondary_instances}
   */
-  readonly secondaryInstances?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktf.IResolvable;
+  readonly secondaryInstances?: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktn.IResolvable;
 }
 
 export function memorystoreInstanceCrossInstanceReplicationConfigToTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigOutputReference | MemorystoreInstanceCrossInstanceReplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_role: cdktf.stringToTerraform(struct!.instanceRole),
+    instance_role: cdktn.stringToTerraform(struct!.instanceRole),
     primary_instance: memorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceToTerraform(struct!.primaryInstance),
-    secondary_instances: cdktf.listMapper(memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToTerraform, true)(struct!.secondaryInstances),
+    secondary_instances: cdktn.listMapper(memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToTerraform, true)(struct!.secondaryInstances),
   }
 }
 
 
 export function memorystoreInstanceCrossInstanceReplicationConfigToHclTerraform(struct?: MemorystoreInstanceCrossInstanceReplicationConfigOutputReference | MemorystoreInstanceCrossInstanceReplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_role: {
-      value: cdktf.stringToHclTerraform(struct!.instanceRole),
+      value: cdktn.stringToHclTerraform(struct!.instanceRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2012,7 +2012,7 @@ export function memorystoreInstanceCrossInstanceReplicationConfigToHclTerraform(
       storageClassType: "MemorystoreInstanceCrossInstanceReplicationConfigPrimaryInstanceList",
     },
     secondary_instances: {
-      value: cdktf.listMapperHcl(memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToHclTerraform, true)(struct!.secondaryInstances),
+      value: cdktn.listMapperHcl(memorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesToHclTerraform, true)(struct!.secondaryInstances),
       isBlock: true,
       type: "list",
       storageClassType: "MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstancesList",
@@ -2023,14 +2023,14 @@ export function memorystoreInstanceCrossInstanceReplicationConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceCrossInstanceReplicationConfigOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceCrossInstanceReplicationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2115,7 +2115,7 @@ export class MemorystoreInstanceCrossInstanceReplicationConfigOutputReference ex
   public get secondaryInstances() {
     return this._secondaryInstances;
   }
-  public putSecondaryInstances(value: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktf.IResolvable) {
+  public putSecondaryInstances(value: MemorystoreInstanceCrossInstanceReplicationConfigSecondaryInstances[] | cdktn.IResolvable) {
     this._secondaryInstances.internalValue = value;
   }
   public resetSecondaryInstances() {
@@ -2142,32 +2142,32 @@ export interface MemorystoreInstanceDesiredAutoCreatedEndpoints {
   readonly projectId: string;
 }
 
-export function memorystoreInstanceDesiredAutoCreatedEndpointsToTerraform(struct?: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceDesiredAutoCreatedEndpointsToTerraform(struct?: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    network: cdktn.stringToTerraform(struct!.network),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
-export function memorystoreInstanceDesiredAutoCreatedEndpointsToHclTerraform(struct?: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceDesiredAutoCreatedEndpointsToHclTerraform(struct?: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2178,9 +2178,9 @@ export function memorystoreInstanceDesiredAutoCreatedEndpointsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2188,11 +2188,11 @@ export class MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktf.IResolvable | undefined {
+  public get internalValue(): MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2209,14 +2209,14 @@ export class MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MemorystoreInstanceDesiredAutoCreatedEndpoints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
       this._projectId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2255,15 +2255,15 @@ export class MemorystoreInstanceDesiredAutoCreatedEndpointsOutputReference exten
   }
 }
 
-export class MemorystoreInstanceDesiredAutoCreatedEndpointsList extends cdktf.ComplexList {
-  public internalValue? : MemorystoreInstanceDesiredAutoCreatedEndpoints[] | cdktf.IResolvable
+export class MemorystoreInstanceDesiredAutoCreatedEndpointsList extends cdktn.ComplexList {
+  public internalValue? : MemorystoreInstanceDesiredAutoCreatedEndpoints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2290,32 +2290,32 @@ export interface MemorystoreInstanceDesiredPscAutoConnections {
   readonly projectId: string;
 }
 
-export function memorystoreInstanceDesiredPscAutoConnectionsToTerraform(struct?: MemorystoreInstanceDesiredPscAutoConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceDesiredPscAutoConnectionsToTerraform(struct?: MemorystoreInstanceDesiredPscAutoConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    network: cdktn.stringToTerraform(struct!.network),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
-export function memorystoreInstanceDesiredPscAutoConnectionsToHclTerraform(struct?: MemorystoreInstanceDesiredPscAutoConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceDesiredPscAutoConnectionsToHclTerraform(struct?: MemorystoreInstanceDesiredPscAutoConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2326,9 +2326,9 @@ export function memorystoreInstanceDesiredPscAutoConnectionsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceDesiredPscAutoConnectionsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceDesiredPscAutoConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2336,11 +2336,11 @@ export class MemorystoreInstanceDesiredPscAutoConnectionsOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MemorystoreInstanceDesiredPscAutoConnections | cdktf.IResolvable | undefined {
+  public get internalValue(): MemorystoreInstanceDesiredPscAutoConnections | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2357,14 +2357,14 @@ export class MemorystoreInstanceDesiredPscAutoConnectionsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MemorystoreInstanceDesiredPscAutoConnections | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MemorystoreInstanceDesiredPscAutoConnections | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
       this._projectId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2403,15 +2403,15 @@ export class MemorystoreInstanceDesiredPscAutoConnectionsOutputReference extends
   }
 }
 
-export class MemorystoreInstanceDesiredPscAutoConnectionsList extends cdktf.ComplexList {
-  public internalValue? : MemorystoreInstanceDesiredPscAutoConnections[] | cdktf.IResolvable
+export class MemorystoreInstanceDesiredPscAutoConnectionsList extends cdktn.ComplexList {
+  public internalValue? : MemorystoreInstanceDesiredPscAutoConnections[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2433,24 +2433,24 @@ export interface MemorystoreInstanceGcsSource {
 }
 
 export function memorystoreInstanceGcsSourceToTerraform(struct?: MemorystoreInstanceGcsSourceOutputReference | MemorystoreInstanceGcsSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
+    uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.uris),
   }
 }
 
 
 export function memorystoreInstanceGcsSourceToHclTerraform(struct?: MemorystoreInstanceGcsSourceOutputReference | MemorystoreInstanceGcsSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.uris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.uris),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -2461,14 +2461,14 @@ export function memorystoreInstanceGcsSourceToHclTerraform(struct?: MemorystoreI
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceGcsSourceOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceGcsSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2496,7 +2496,7 @@ export class MemorystoreInstanceGcsSourceOutputReference extends cdktf.ComplexOb
   // uris - computed: false, optional: false, required: true
   private _uris?: string[]; 
   public get uris() {
-    return cdktf.Fn.tolist(this.getListAttribute('uris'));
+    return cdktn.Fn.tolist(this.getListAttribute('uris'));
   }
   public set uris(value: string[]) {
     this._uris = value;
@@ -2536,45 +2536,45 @@ export interface MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStar
 }
 
 export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeToTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference | MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hours: cdktf.numberToTerraform(struct!.hours),
-    minutes: cdktf.numberToTerraform(struct!.minutes),
-    nanos: cdktf.numberToTerraform(struct!.nanos),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
 export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeToHclTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference | MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hours: {
-      value: cdktf.numberToHclTerraform(struct!.hours),
+      value: cdktn.numberToHclTerraform(struct!.hours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minutes: {
-      value: cdktf.numberToHclTerraform(struct!.minutes),
+      value: cdktn.numberToHclTerraform(struct!.minutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     nanos: {
-      value: cdktf.numberToHclTerraform(struct!.nanos),
+      value: cdktn.numberToHclTerraform(struct!.nanos),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2585,14 +2585,14 @@ export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStart
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2723,26 +2723,26 @@ export interface MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow {
   readonly startTime: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime;
 }
 
-export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day: cdktf.stringToTerraform(struct!.day),
+    day: cdktn.stringToTerraform(struct!.day),
     start_time: memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeToTerraform(struct!.startTime),
   }
 }
 
 
-export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform(struct?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day: {
-      value: cdktf.stringToHclTerraform(struct!.day),
+      value: cdktn.stringToHclTerraform(struct!.day),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2759,9 +2759,9 @@ export function memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2769,11 +2769,11 @@ export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable | undefined {
+  public get internalValue(): MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2790,14 +2790,14 @@ export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._day = undefined;
       this._startTime.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2841,15 +2841,15 @@ export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputRe
   }
 }
 
-export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList extends cdktf.ComplexList {
-  public internalValue? : MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable
+export class MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList extends cdktn.ComplexList {
+  public internalValue? : MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2866,28 +2866,28 @@ export interface MemorystoreInstanceMaintenancePolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance#weekly_maintenance_window MemorystoreInstance#weekly_maintenance_window}
   */
-  readonly weeklyMaintenanceWindow?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable;
+  readonly weeklyMaintenanceWindow?: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktn.IResolvable;
 }
 
 export function memorystoreInstanceMaintenancePolicyToTerraform(struct?: MemorystoreInstanceMaintenancePolicyOutputReference | MemorystoreInstanceMaintenancePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    weekly_maintenance_window: cdktf.listMapper(memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform, true)(struct!.weeklyMaintenanceWindow),
+    weekly_maintenance_window: cdktn.listMapper(memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform, true)(struct!.weeklyMaintenanceWindow),
   }
 }
 
 
 export function memorystoreInstanceMaintenancePolicyToHclTerraform(struct?: MemorystoreInstanceMaintenancePolicyOutputReference | MemorystoreInstanceMaintenancePolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     weekly_maintenance_window: {
-      value: cdktf.listMapperHcl(memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform, true)(struct!.weeklyMaintenanceWindow),
+      value: cdktn.listMapperHcl(memorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowToHclTerraform, true)(struct!.weeklyMaintenanceWindow),
       isBlock: true,
       type: "list",
       storageClassType: "MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
@@ -2898,14 +2898,14 @@ export function memorystoreInstanceMaintenancePolicyToHclTerraform(struct?: Memo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceMaintenancePolicyOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceMaintenancePolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2945,7 +2945,7 @@ export class MemorystoreInstanceMaintenancePolicyOutputReference extends cdktf.C
   public get weeklyMaintenanceWindow() {
     return this._weeklyMaintenanceWindow;
   }
-  public putWeeklyMaintenanceWindow(value: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktf.IResolvable) {
+  public putWeeklyMaintenanceWindow(value: MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindow[] | cdktn.IResolvable) {
     this._weeklyMaintenanceWindow.internalValue = value;
   }
   public resetWeeklyMaintenanceWindow() {
@@ -2966,24 +2966,24 @@ export interface MemorystoreInstanceManagedBackupSource {
 }
 
 export function memorystoreInstanceManagedBackupSourceToTerraform(struct?: MemorystoreInstanceManagedBackupSourceOutputReference | MemorystoreInstanceManagedBackupSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup: cdktf.stringToTerraform(struct!.backup),
+    backup: cdktn.stringToTerraform(struct!.backup),
   }
 }
 
 
 export function memorystoreInstanceManagedBackupSourceToHclTerraform(struct?: MemorystoreInstanceManagedBackupSourceOutputReference | MemorystoreInstanceManagedBackupSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup: {
-      value: cdktf.stringToHclTerraform(struct!.backup),
+      value: cdktn.stringToHclTerraform(struct!.backup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2994,14 +2994,14 @@ export function memorystoreInstanceManagedBackupSourceToHclTerraform(struct?: Me
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceManagedBackupSourceOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceManagedBackupSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3053,24 +3053,24 @@ export interface MemorystoreInstancePersistenceConfigAofConfig {
 }
 
 export function memorystoreInstancePersistenceConfigAofConfigToTerraform(struct?: MemorystoreInstancePersistenceConfigAofConfigOutputReference | MemorystoreInstancePersistenceConfigAofConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    append_fsync: cdktf.stringToTerraform(struct!.appendFsync),
+    append_fsync: cdktn.stringToTerraform(struct!.appendFsync),
   }
 }
 
 
 export function memorystoreInstancePersistenceConfigAofConfigToHclTerraform(struct?: MemorystoreInstancePersistenceConfigAofConfigOutputReference | MemorystoreInstancePersistenceConfigAofConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     append_fsync: {
-      value: cdktf.stringToHclTerraform(struct!.appendFsync),
+      value: cdktn.stringToHclTerraform(struct!.appendFsync),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3081,14 +3081,14 @@ export function memorystoreInstancePersistenceConfigAofConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstancePersistenceConfigAofConfigOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstancePersistenceConfigAofConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3152,31 +3152,31 @@ export interface MemorystoreInstancePersistenceConfigRdbConfig {
 }
 
 export function memorystoreInstancePersistenceConfigRdbConfigToTerraform(struct?: MemorystoreInstancePersistenceConfigRdbConfigOutputReference | MemorystoreInstancePersistenceConfigRdbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rdb_snapshot_period: cdktf.stringToTerraform(struct!.rdbSnapshotPeriod),
-    rdb_snapshot_start_time: cdktf.stringToTerraform(struct!.rdbSnapshotStartTime),
+    rdb_snapshot_period: cdktn.stringToTerraform(struct!.rdbSnapshotPeriod),
+    rdb_snapshot_start_time: cdktn.stringToTerraform(struct!.rdbSnapshotStartTime),
   }
 }
 
 
 export function memorystoreInstancePersistenceConfigRdbConfigToHclTerraform(struct?: MemorystoreInstancePersistenceConfigRdbConfigOutputReference | MemorystoreInstancePersistenceConfigRdbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rdb_snapshot_period: {
-      value: cdktf.stringToHclTerraform(struct!.rdbSnapshotPeriod),
+      value: cdktn.stringToHclTerraform(struct!.rdbSnapshotPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rdb_snapshot_start_time: {
-      value: cdktf.stringToHclTerraform(struct!.rdbSnapshotStartTime),
+      value: cdktn.stringToHclTerraform(struct!.rdbSnapshotStartTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3187,14 +3187,14 @@ export function memorystoreInstancePersistenceConfigRdbConfigToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstancePersistenceConfigRdbConfigOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstancePersistenceConfigRdbConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3283,12 +3283,12 @@ export interface MemorystoreInstancePersistenceConfig {
 }
 
 export function memorystoreInstancePersistenceConfigToTerraform(struct?: MemorystoreInstancePersistenceConfigOutputReference | MemorystoreInstancePersistenceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
     aof_config: memorystoreInstancePersistenceConfigAofConfigToTerraform(struct!.aofConfig),
     rdb_config: memorystoreInstancePersistenceConfigRdbConfigToTerraform(struct!.rdbConfig),
   }
@@ -3296,13 +3296,13 @@ export function memorystoreInstancePersistenceConfigToTerraform(struct?: Memorys
 
 
 export function memorystoreInstancePersistenceConfigToHclTerraform(struct?: MemorystoreInstancePersistenceConfigOutputReference | MemorystoreInstancePersistenceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3325,14 +3325,14 @@ export function memorystoreInstancePersistenceConfigToHclTerraform(struct?: Memo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstancePersistenceConfigOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstancePersistenceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3432,39 +3432,39 @@ export interface MemorystoreInstanceTimeouts {
   readonly update?: string;
 }
 
-export function memorystoreInstanceTimeoutsToTerraform(struct?: MemorystoreInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceTimeoutsToTerraform(struct?: MemorystoreInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function memorystoreInstanceTimeoutsToHclTerraform(struct?: MemorystoreInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function memorystoreInstanceTimeoutsToHclTerraform(struct?: MemorystoreInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3475,19 +3475,19 @@ export function memorystoreInstanceTimeoutsToHclTerraform(struct?: MemorystoreIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MemorystoreInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MemorystoreInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3508,7 +3508,7 @@ export class MemorystoreInstanceTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MemorystoreInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MemorystoreInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3516,7 +3516,7 @@ export class MemorystoreInstanceTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3597,31 +3597,31 @@ export interface MemorystoreInstanceZoneDistributionConfig {
 }
 
 export function memorystoreInstanceZoneDistributionConfigToTerraform(struct?: MemorystoreInstanceZoneDistributionConfigOutputReference | MemorystoreInstanceZoneDistributionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    zone: cdktf.stringToTerraform(struct!.zone),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    zone: cdktn.stringToTerraform(struct!.zone),
   }
 }
 
 
 export function memorystoreInstanceZoneDistributionConfigToHclTerraform(struct?: MemorystoreInstanceZoneDistributionConfigOutputReference | MemorystoreInstanceZoneDistributionConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone: {
-      value: cdktf.stringToHclTerraform(struct!.zone),
+      value: cdktn.stringToHclTerraform(struct!.zone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3632,14 +3632,14 @@ export function memorystoreInstanceZoneDistributionConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MemorystoreInstanceZoneDistributionConfigOutputReference extends cdktf.ComplexObject {
+export class MemorystoreInstanceZoneDistributionConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3706,7 +3706,7 @@ export class MemorystoreInstanceZoneDistributionConfigOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance google_memorystore_instance}
 */
-export class MemorystoreInstance extends cdktf.TerraformResource {
+export class MemorystoreInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3717,14 +3717,14 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MemorystoreInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MemorystoreInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MemorystoreInstance to import
   * @param importFromId The id of the existing MemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/memorystore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MemorystoreInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_memorystore_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_memorystore_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -3787,11 +3787,11 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   // ==========
 
   // allow_fewer_zones_deployment - computed: false, optional: true, required: false
-  private _allowFewerZonesDeployment?: boolean | cdktf.IResolvable; 
+  private _allowFewerZonesDeployment?: boolean | cdktn.IResolvable; 
   public get allowFewerZonesDeployment() {
     return this.getBooleanAttribute('allow_fewer_zones_deployment');
   }
-  public set allowFewerZonesDeployment(value: boolean | cdktf.IResolvable) {
+  public set allowFewerZonesDeployment(value: boolean | cdktn.IResolvable) {
     this._allowFewerZonesDeployment = value;
   }
   public resetAllowFewerZonesDeployment() {
@@ -3829,11 +3829,11 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   }
 
   // deletion_protection_enabled - computed: false, optional: true, required: false
-  private _deletionProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _deletionProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get deletionProtectionEnabled() {
     return this.getBooleanAttribute('deletion_protection_enabled');
   }
-  public set deletionProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set deletionProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._deletionProtectionEnabled = value;
   }
   public resetDeletionProtectionEnabled() {
@@ -3851,7 +3851,7 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -4092,7 +4092,7 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -4160,7 +4160,7 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   public get desiredAutoCreatedEndpoints() {
     return this._desiredAutoCreatedEndpoints;
   }
-  public putDesiredAutoCreatedEndpoints(value: MemorystoreInstanceDesiredAutoCreatedEndpoints[] | cdktf.IResolvable) {
+  public putDesiredAutoCreatedEndpoints(value: MemorystoreInstanceDesiredAutoCreatedEndpoints[] | cdktn.IResolvable) {
     this._desiredAutoCreatedEndpoints.internalValue = value;
   }
   public resetDesiredAutoCreatedEndpoints() {
@@ -4176,7 +4176,7 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   public get desiredPscAutoConnections() {
     return this._desiredPscAutoConnections;
   }
-  public putDesiredPscAutoConnections(value: MemorystoreInstanceDesiredPscAutoConnections[] | cdktf.IResolvable) {
+  public putDesiredPscAutoConnections(value: MemorystoreInstanceDesiredPscAutoConnections[] | cdktn.IResolvable) {
     this._desiredPscAutoConnections.internalValue = value;
   }
   public resetDesiredPscAutoConnections() {
@@ -4289,26 +4289,26 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_fewer_zones_deployment: cdktf.booleanToTerraform(this._allowFewerZonesDeployment),
-      authorization_mode: cdktf.stringToTerraform(this._authorizationMode),
-      deletion_protection_enabled: cdktf.booleanToTerraform(this._deletionProtectionEnabled),
-      engine_configs: cdktf.hashMapper(cdktf.stringToTerraform)(this._engineConfigs),
-      engine_version: cdktf.stringToTerraform(this._engineVersion),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      kms_key: cdktf.stringToTerraform(this._kmsKey),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      mode: cdktf.stringToTerraform(this._mode),
-      node_type: cdktf.stringToTerraform(this._nodeType),
-      project: cdktf.stringToTerraform(this._project),
-      replica_count: cdktf.numberToTerraform(this._replicaCount),
-      shard_count: cdktf.numberToTerraform(this._shardCount),
-      transit_encryption_mode: cdktf.stringToTerraform(this._transitEncryptionMode),
+      allow_fewer_zones_deployment: cdktn.booleanToTerraform(this._allowFewerZonesDeployment),
+      authorization_mode: cdktn.stringToTerraform(this._authorizationMode),
+      deletion_protection_enabled: cdktn.booleanToTerraform(this._deletionProtectionEnabled),
+      engine_configs: cdktn.hashMapper(cdktn.stringToTerraform)(this._engineConfigs),
+      engine_version: cdktn.stringToTerraform(this._engineVersion),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      kms_key: cdktn.stringToTerraform(this._kmsKey),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      mode: cdktn.stringToTerraform(this._mode),
+      node_type: cdktn.stringToTerraform(this._nodeType),
+      project: cdktn.stringToTerraform(this._project),
+      replica_count: cdktn.numberToTerraform(this._replicaCount),
+      shard_count: cdktn.numberToTerraform(this._shardCount),
+      transit_encryption_mode: cdktn.stringToTerraform(this._transitEncryptionMode),
       automated_backup_config: memorystoreInstanceAutomatedBackupConfigToTerraform(this._automatedBackupConfig.internalValue),
       cross_instance_replication_config: memorystoreInstanceCrossInstanceReplicationConfigToTerraform(this._crossInstanceReplicationConfig.internalValue),
-      desired_auto_created_endpoints: cdktf.listMapper(memorystoreInstanceDesiredAutoCreatedEndpointsToTerraform, true)(this._desiredAutoCreatedEndpoints.internalValue),
-      desired_psc_auto_connections: cdktf.listMapper(memorystoreInstanceDesiredPscAutoConnectionsToTerraform, true)(this._desiredPscAutoConnections.internalValue),
+      desired_auto_created_endpoints: cdktn.listMapper(memorystoreInstanceDesiredAutoCreatedEndpointsToTerraform, true)(this._desiredAutoCreatedEndpoints.internalValue),
+      desired_psc_auto_connections: cdktn.listMapper(memorystoreInstanceDesiredPscAutoConnectionsToTerraform, true)(this._desiredPscAutoConnections.internalValue),
       gcs_source: memorystoreInstanceGcsSourceToTerraform(this._gcsSource.internalValue),
       maintenance_policy: memorystoreInstanceMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
       managed_backup_source: memorystoreInstanceManagedBackupSourceToTerraform(this._managedBackupSource.internalValue),
@@ -4321,97 +4321,97 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_fewer_zones_deployment: {
-        value: cdktf.booleanToHclTerraform(this._allowFewerZonesDeployment),
+        value: cdktn.booleanToHclTerraform(this._allowFewerZonesDeployment),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       authorization_mode: {
-        value: cdktf.stringToHclTerraform(this._authorizationMode),
+        value: cdktn.stringToHclTerraform(this._authorizationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deletion_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deletionProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._deletionProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       engine_configs: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._engineConfigs),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._engineConfigs),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       engine_version: {
-        value: cdktf.stringToHclTerraform(this._engineVersion),
+        value: cdktn.stringToHclTerraform(this._engineVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key: {
-        value: cdktf.stringToHclTerraform(this._kmsKey),
+        value: cdktn.stringToHclTerraform(this._kmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       node_type: {
-        value: cdktf.stringToHclTerraform(this._nodeType),
+        value: cdktn.stringToHclTerraform(this._nodeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replica_count: {
-        value: cdktf.numberToHclTerraform(this._replicaCount),
+        value: cdktn.numberToHclTerraform(this._replicaCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       shard_count: {
-        value: cdktf.numberToHclTerraform(this._shardCount),
+        value: cdktn.numberToHclTerraform(this._shardCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       transit_encryption_mode: {
-        value: cdktf.stringToHclTerraform(this._transitEncryptionMode),
+        value: cdktn.stringToHclTerraform(this._transitEncryptionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -4429,13 +4429,13 @@ export class MemorystoreInstance extends cdktf.TerraformResource {
         storageClassType: "MemorystoreInstanceCrossInstanceReplicationConfigList",
       },
       desired_auto_created_endpoints: {
-        value: cdktf.listMapperHcl(memorystoreInstanceDesiredAutoCreatedEndpointsToHclTerraform, true)(this._desiredAutoCreatedEndpoints.internalValue),
+        value: cdktn.listMapperHcl(memorystoreInstanceDesiredAutoCreatedEndpointsToHclTerraform, true)(this._desiredAutoCreatedEndpoints.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MemorystoreInstanceDesiredAutoCreatedEndpointsList",
       },
       desired_psc_auto_connections: {
-        value: cdktf.listMapperHcl(memorystoreInstanceDesiredPscAutoConnectionsToHclTerraform, true)(this._desiredPscAutoConnections.internalValue),
+        value: cdktn.listMapperHcl(memorystoreInstanceDesiredPscAutoConnectionsToHclTerraform, true)(this._desiredPscAutoConnections.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MemorystoreInstanceDesiredPscAutoConnectionsList",

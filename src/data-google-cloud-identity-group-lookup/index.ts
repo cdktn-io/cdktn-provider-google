@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleCloudIdentityGroupLookupConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleCloudIdentityGroupLookupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloud_identity_group_lookup#id DataGoogleCloudIdentityGroupLookup#id}
   *
@@ -48,31 +48,31 @@ export interface DataGoogleCloudIdentityGroupLookupGroupKey {
 }
 
 export function dataGoogleCloudIdentityGroupLookupGroupKeyToTerraform(struct?: DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference | DataGoogleCloudIdentityGroupLookupGroupKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
+    id: cdktn.stringToTerraform(struct!.id),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
   }
 }
 
 
 export function dataGoogleCloudIdentityGroupLookupGroupKeyToHclTerraform(struct?: DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference | DataGoogleCloudIdentityGroupLookupGroupKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -83,14 +83,14 @@ export function dataGoogleCloudIdentityGroupLookupGroupKeyToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -154,7 +154,7 @@ export class DataGoogleCloudIdentityGroupLookupGroupKeyOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloud_identity_group_lookup google_cloud_identity_group_lookup}
 */
-export class DataGoogleCloudIdentityGroupLookup extends cdktf.TerraformDataSource {
+export class DataGoogleCloudIdentityGroupLookup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -165,14 +165,14 @@ export class DataGoogleCloudIdentityGroupLookup extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleCloudIdentityGroupLookup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleCloudIdentityGroupLookup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudIdentityGroupLookup to import
   * @param importFromId The id of the existing DataGoogleCloudIdentityGroupLookup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloud_identity_group_lookup#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudIdentityGroupLookup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_identity_group_lookup", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloud_identity_group_lookup", importId: importFromId, provider });
       }
 
   // ===========
@@ -250,7 +250,7 @@ export class DataGoogleCloudIdentityGroupLookup extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       group_key: dataGoogleCloudIdentityGroupLookupGroupKeyToTerraform(this._groupKey.internalValue),
     };
   }
@@ -258,7 +258,7 @@ export class DataGoogleCloudIdentityGroupLookup extends cdktf.TerraformDataSourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

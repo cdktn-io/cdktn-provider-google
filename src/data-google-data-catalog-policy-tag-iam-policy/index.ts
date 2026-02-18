@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleDataCatalogPolicyTagIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleDataCatalogPolicyTagIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/data_catalog_policy_tag_iam_policy#id DataGoogleDataCatalogPolicyTagIamPolicy#id}
   *
@@ -28,7 +28,7 @@ export interface DataGoogleDataCatalogPolicyTagIamPolicyConfig extends cdktf.Ter
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/data_catalog_policy_tag_iam_policy google_data_catalog_policy_tag_iam_policy}
 */
-export class DataGoogleDataCatalogPolicyTagIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleDataCatalogPolicyTagIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataGoogleDataCatalogPolicyTagIamPolicy extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleDataCatalogPolicyTagIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleDataCatalogPolicyTagIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleDataCatalogPolicyTagIamPolicy to import
   * @param importFromId The id of the existing DataGoogleDataCatalogPolicyTagIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/data_catalog_policy_tag_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleDataCatalogPolicyTagIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_data_catalog_policy_tag_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_data_catalog_policy_tag_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,21 +129,21 @@ export class DataGoogleDataCatalogPolicyTagIamPolicy extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      policy_tag: cdktf.stringToTerraform(this._policyTag),
+      id: cdktn.stringToTerraform(this._id),
+      policy_tag: cdktn.stringToTerraform(this._policyTag),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_tag: {
-        value: cdktf.stringToHclTerraform(this._policyTag),
+        value: cdktn.stringToHclTerraform(this._policyTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

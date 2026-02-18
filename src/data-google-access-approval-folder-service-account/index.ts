@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleAccessApprovalFolderServiceAccountConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleAccessApprovalFolderServiceAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_folder_service_account#folder_id DataGoogleAccessApprovalFolderServiceAccount#folder_id}
   */
@@ -28,7 +28,7 @@ export interface DataGoogleAccessApprovalFolderServiceAccountConfig extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_folder_service_account google_access_approval_folder_service_account}
 */
-export class DataGoogleAccessApprovalFolderServiceAccount extends cdktf.TerraformDataSource {
+export class DataGoogleAccessApprovalFolderServiceAccount extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataGoogleAccessApprovalFolderServiceAccount extends cdktf.Terrafor
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleAccessApprovalFolderServiceAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleAccessApprovalFolderServiceAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleAccessApprovalFolderServiceAccount to import
   * @param importFromId The id of the existing DataGoogleAccessApprovalFolderServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_folder_service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleAccessApprovalFolderServiceAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_access_approval_folder_service_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_access_approval_folder_service_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,21 +129,21 @@ export class DataGoogleAccessApprovalFolderServiceAccount extends cdktf.Terrafor
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      folder_id: cdktf.stringToTerraform(this._folderId),
-      id: cdktf.stringToTerraform(this._id),
+      folder_id: cdktn.stringToTerraform(this._folderId),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       folder_id: {
-        value: cdktf.stringToHclTerraform(this._folderId),
+        value: cdktn.stringToHclTerraform(this._folderId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

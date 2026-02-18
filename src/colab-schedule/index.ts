@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ColabScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface ColabScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether new scheduled runs can be queued when max_concurrent_runs limit is reached. If set to true, new runs will be queued instead of skipped. Default to false.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_schedule#allow_queueing ColabSchedule#allow_queueing}
   */
-  readonly allowQueueing?: boolean | cdktf.IResolvable;
+  readonly allowQueueing?: boolean | cdktn.IResolvable;
   /**
   * Cron schedule (https://en.wikipedia.org/wiki/Cron) to launch scheduled runs.
   *
@@ -106,31 +106,31 @@ export interface ColabScheduleCreateNotebookExecutionJobRequestNotebookExecution
 }
 
 export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceToTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference | ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commit_sha: cdktf.stringToTerraform(struct!.commitSha),
-    dataform_repository_resource_name: cdktf.stringToTerraform(struct!.dataformRepositoryResourceName),
+    commit_sha: cdktn.stringToTerraform(struct!.commitSha),
+    dataform_repository_resource_name: cdktn.stringToTerraform(struct!.dataformRepositoryResourceName),
   }
 }
 
 
 export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceToHclTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference | ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commit_sha: {
-      value: cdktf.stringToHclTerraform(struct!.commitSha),
+      value: cdktn.stringToHclTerraform(struct!.commitSha),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dataform_repository_resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.dataformRepositoryResourceName),
+      value: cdktn.stringToHclTerraform(struct!.dataformRepositoryResourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -141,14 +141,14 @@ export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference extends cdktf.ComplexObject {
+export class ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -224,31 +224,31 @@ export interface ColabScheduleCreateNotebookExecutionJobRequestNotebookExecution
 }
 
 export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceToTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference | ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    generation: cdktf.stringToTerraform(struct!.generation),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    generation: cdktn.stringToTerraform(struct!.generation),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceToHclTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference | ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     generation: {
-      value: cdktf.stringToHclTerraform(struct!.generation),
+      value: cdktn.stringToHclTerraform(struct!.generation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -259,14 +259,14 @@ export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference extends cdktf.ComplexObject {
+export class ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -378,17 +378,17 @@ export interface ColabScheduleCreateNotebookExecutionJobRequestNotebookExecution
 }
 
 export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobToTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference | ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    execution_timeout: cdktf.stringToTerraform(struct!.executionTimeout),
-    execution_user: cdktf.stringToTerraform(struct!.executionUser),
-    gcs_output_uri: cdktf.stringToTerraform(struct!.gcsOutputUri),
-    notebook_runtime_template_resource_name: cdktf.stringToTerraform(struct!.notebookRuntimeTemplateResourceName),
-    service_account: cdktf.stringToTerraform(struct!.serviceAccount),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    execution_timeout: cdktn.stringToTerraform(struct!.executionTimeout),
+    execution_user: cdktn.stringToTerraform(struct!.executionUser),
+    gcs_output_uri: cdktn.stringToTerraform(struct!.gcsOutputUri),
+    notebook_runtime_template_resource_name: cdktn.stringToTerraform(struct!.notebookRuntimeTemplateResourceName),
+    service_account: cdktn.stringToTerraform(struct!.serviceAccount),
     dataform_repository_source: colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobDataformRepositorySourceToTerraform(struct!.dataformRepositorySource),
     gcs_notebook_source: colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobGcsNotebookSourceToTerraform(struct!.gcsNotebookSource),
   }
@@ -396,43 +396,43 @@ export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJ
 
 
 export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobToHclTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference | ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJob): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.executionTimeout),
+      value: cdktn.stringToHclTerraform(struct!.executionTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     execution_user: {
-      value: cdktf.stringToHclTerraform(struct!.executionUser),
+      value: cdktn.stringToHclTerraform(struct!.executionUser),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gcs_output_uri: {
-      value: cdktf.stringToHclTerraform(struct!.gcsOutputUri),
+      value: cdktn.stringToHclTerraform(struct!.gcsOutputUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notebook_runtime_template_resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.notebookRuntimeTemplateResourceName),
+      value: cdktn.stringToHclTerraform(struct!.notebookRuntimeTemplateResourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -455,14 +455,14 @@ export function colabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference extends cdktf.ComplexObject {
+export class ColabScheduleCreateNotebookExecutionJobRequestNotebookExecutionJobOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -658,8 +658,8 @@ export interface ColabScheduleCreateNotebookExecutionJobRequest {
 }
 
 export function colabScheduleCreateNotebookExecutionJobRequestToTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestOutputReference | ColabScheduleCreateNotebookExecutionJobRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -669,8 +669,8 @@ export function colabScheduleCreateNotebookExecutionJobRequestToTerraform(struct
 
 
 export function colabScheduleCreateNotebookExecutionJobRequestToHclTerraform(struct?: ColabScheduleCreateNotebookExecutionJobRequestOutputReference | ColabScheduleCreateNotebookExecutionJobRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -686,14 +686,14 @@ export function colabScheduleCreateNotebookExecutionJobRequestToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabScheduleCreateNotebookExecutionJobRequestOutputReference extends cdktf.ComplexObject {
+export class ColabScheduleCreateNotebookExecutionJobRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -746,39 +746,39 @@ export interface ColabScheduleTimeouts {
   readonly update?: string;
 }
 
-export function colabScheduleTimeoutsToTerraform(struct?: ColabScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function colabScheduleTimeoutsToTerraform(struct?: ColabScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function colabScheduleTimeoutsToHclTerraform(struct?: ColabScheduleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function colabScheduleTimeoutsToHclTerraform(struct?: ColabScheduleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -789,19 +789,19 @@ export function colabScheduleTimeoutsToHclTerraform(struct?: ColabScheduleTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ColabScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ColabScheduleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ColabScheduleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ColabScheduleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -822,7 +822,7 @@ export class ColabScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ColabScheduleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ColabScheduleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -830,7 +830,7 @@ export class ColabScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -895,7 +895,7 @@ export class ColabScheduleTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_schedule google_colab_schedule}
 */
-export class ColabSchedule extends cdktf.TerraformResource {
+export class ColabSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -906,14 +906,14 @@ export class ColabSchedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ColabSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ColabSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ColabSchedule to import
   * @param importFromId The id of the existing ColabSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ColabSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_colab_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_colab_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -963,11 +963,11 @@ export class ColabSchedule extends cdktf.TerraformResource {
   // ==========
 
   // allow_queueing - computed: false, optional: true, required: false
-  private _allowQueueing?: boolean | cdktf.IResolvable; 
+  private _allowQueueing?: boolean | cdktn.IResolvable; 
   public get allowQueueing() {
     return this.getBooleanAttribute('allow_queueing');
   }
-  public set allowQueueing(value: boolean | cdktf.IResolvable) {
+  public set allowQueueing(value: boolean | cdktn.IResolvable) {
     this._allowQueueing = value;
   }
   public resetAllowQueueing() {
@@ -1171,17 +1171,17 @@ export class ColabSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_queueing: cdktf.booleanToTerraform(this._allowQueueing),
-      cron: cdktf.stringToTerraform(this._cron),
-      desired_state: cdktf.stringToTerraform(this._desiredState),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      end_time: cdktf.stringToTerraform(this._endTime),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      max_concurrent_run_count: cdktf.stringToTerraform(this._maxConcurrentRunCount),
-      max_run_count: cdktf.stringToTerraform(this._maxRunCount),
-      project: cdktf.stringToTerraform(this._project),
-      start_time: cdktf.stringToTerraform(this._startTime),
+      allow_queueing: cdktn.booleanToTerraform(this._allowQueueing),
+      cron: cdktn.stringToTerraform(this._cron),
+      desired_state: cdktn.stringToTerraform(this._desiredState),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      max_concurrent_run_count: cdktn.stringToTerraform(this._maxConcurrentRunCount),
+      max_run_count: cdktn.stringToTerraform(this._maxRunCount),
+      project: cdktn.stringToTerraform(this._project),
+      start_time: cdktn.stringToTerraform(this._startTime),
       create_notebook_execution_job_request: colabScheduleCreateNotebookExecutionJobRequestToTerraform(this._createNotebookExecutionJobRequest.internalValue),
       timeouts: colabScheduleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1190,67 +1190,67 @@ export class ColabSchedule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_queueing: {
-        value: cdktf.booleanToHclTerraform(this._allowQueueing),
+        value: cdktn.booleanToHclTerraform(this._allowQueueing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cron: {
-        value: cdktf.stringToHclTerraform(this._cron),
+        value: cdktn.stringToHclTerraform(this._cron),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       desired_state: {
-        value: cdktf.stringToHclTerraform(this._desiredState),
+        value: cdktn.stringToHclTerraform(this._desiredState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_concurrent_run_count: {
-        value: cdktf.stringToHclTerraform(this._maxConcurrentRunCount),
+        value: cdktn.stringToHclTerraform(this._maxConcurrentRunCount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_run_count: {
-        value: cdktf.stringToHclTerraform(this._maxRunCount),
+        value: cdktn.stringToHclTerraform(this._maxRunCount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

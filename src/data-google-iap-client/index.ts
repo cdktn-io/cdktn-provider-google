@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleIapClientConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleIapClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier of the brand to which this client
   * is attached to. The format is
@@ -38,7 +38,7 @@ export interface DataGoogleIapClientConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iap_client google_iap_client}
 */
-export class DataGoogleIapClient extends cdktf.TerraformDataSource {
+export class DataGoogleIapClient extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataGoogleIapClient extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleIapClient resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleIapClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIapClient to import
   * @param importFromId The id of the existing DataGoogleIapClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iap_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIapClient to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iap_client", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iap_client", importId: importFromId, provider });
       }
 
   // ===========
@@ -153,28 +153,28 @@ export class DataGoogleIapClient extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      brand: cdktf.stringToTerraform(this._brand),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      id: cdktf.stringToTerraform(this._id),
+      brand: cdktn.stringToTerraform(this._brand),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       brand: {
-        value: cdktf.stringToHclTerraform(this._brand),
+        value: cdktn.stringToHclTerraform(this._brand),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

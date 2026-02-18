@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SiteVerificationWebResourceConfig extends cdktf.TerraformMetaArguments {
+export interface SiteVerificationWebResourceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}
   *
@@ -56,31 +56,31 @@ export interface SiteVerificationWebResourceSite {
 }
 
 export function siteVerificationWebResourceSiteToTerraform(struct?: SiteVerificationWebResourceSiteOutputReference | SiteVerificationWebResourceSite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identifier: cdktf.stringToTerraform(struct!.identifier),
-    type: cdktf.stringToTerraform(struct!.type),
+    identifier: cdktn.stringToTerraform(struct!.identifier),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function siteVerificationWebResourceSiteToHclTerraform(struct?: SiteVerificationWebResourceSiteOutputReference | SiteVerificationWebResourceSite): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identifier: {
-      value: cdktf.stringToHclTerraform(struct!.identifier),
+      value: cdktn.stringToHclTerraform(struct!.identifier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,14 +91,14 @@ export function siteVerificationWebResourceSiteToHclTerraform(struct?: SiteVerif
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteVerificationWebResourceSiteOutputReference extends cdktf.ComplexObject {
+export class SiteVerificationWebResourceSiteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -166,32 +166,32 @@ export interface SiteVerificationWebResourceTimeouts {
   readonly delete?: string;
 }
 
-export function siteVerificationWebResourceTimeoutsToTerraform(struct?: SiteVerificationWebResourceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteVerificationWebResourceTimeoutsToTerraform(struct?: SiteVerificationWebResourceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function siteVerificationWebResourceTimeoutsToHclTerraform(struct?: SiteVerificationWebResourceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteVerificationWebResourceTimeoutsToHclTerraform(struct?: SiteVerificationWebResourceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -202,19 +202,19 @@ export function siteVerificationWebResourceTimeoutsToHclTerraform(struct?: SiteV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteVerificationWebResourceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SiteVerificationWebResourceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SiteVerificationWebResourceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteVerificationWebResourceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -231,14 +231,14 @@ export class SiteVerificationWebResourceTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteVerificationWebResourceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteVerificationWebResourceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -286,7 +286,7 @@ export class SiteVerificationWebResourceTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource google_site_verification_web_resource}
 */
-export class SiteVerificationWebResource extends cdktf.TerraformResource {
+export class SiteVerificationWebResource extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -297,14 +297,14 @@ export class SiteVerificationWebResource extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SiteVerificationWebResource resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SiteVerificationWebResource resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SiteVerificationWebResource to import
   * @param importFromId The id of the existing SiteVerificationWebResource that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SiteVerificationWebResource to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_site_verification_web_resource", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_site_verification_web_resource", importId: importFromId, provider });
       }
 
   // ===========
@@ -418,8 +418,8 @@ export class SiteVerificationWebResource extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      verification_method: cdktf.stringToTerraform(this._verificationMethod),
+      id: cdktn.stringToTerraform(this._id),
+      verification_method: cdktn.stringToTerraform(this._verificationMethod),
       site: siteVerificationWebResourceSiteToTerraform(this._site.internalValue),
       timeouts: siteVerificationWebResourceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -428,13 +428,13 @@ export class SiteVerificationWebResource extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       verification_method: {
-        value: cdktf.stringToHclTerraform(this._verificationMethod),
+        value: cdktn.stringToHclTerraform(this._verificationMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

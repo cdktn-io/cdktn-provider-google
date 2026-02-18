@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleArtifactRegistryPackageConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleArtifactRegistryPackageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#id DataGoogleArtifactRegistryPackage#id}
   *
@@ -40,7 +40,7 @@ export interface DataGoogleArtifactRegistryPackageConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package google_artifact_registry_package}
 */
-export class DataGoogleArtifactRegistryPackage extends cdktf.TerraformDataSource {
+export class DataGoogleArtifactRegistryPackage extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DataGoogleArtifactRegistryPackage extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleArtifactRegistryPackage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleArtifactRegistryPackage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleArtifactRegistryPackage to import
   * @param importFromId The id of the existing DataGoogleArtifactRegistryPackage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleArtifactRegistryPackage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_package", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_package", importId: importFromId, provider });
       }
 
   // ===========
@@ -100,7 +100,7 @@ export class DataGoogleArtifactRegistryPackage extends cdktf.TerraformDataSource
   // ==========
 
   // annotations - computed: true, optional: false, required: false
-  private _annotations = new cdktf.StringMap(this, "annotations");
+  private _annotations = new cdktn.StringMap(this, "annotations");
   public get annotations() {
     return this._annotations;
   }
@@ -197,42 +197,42 @@ export class DataGoogleArtifactRegistryPackage extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      repository_id: cdktf.stringToTerraform(this._repositoryId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      repository_id: cdktn.stringToTerraform(this._repositoryId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_id: {
-        value: cdktf.stringToHclTerraform(this._repositoryId),
+        value: cdktn.stringToHclTerraform(this._repositoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

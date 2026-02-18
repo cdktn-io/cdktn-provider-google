@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeEnvironmentAddonsConfigConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeEnvironmentAddonsConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Flag to enable/disable Analytics.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_addons_config#analytics_enabled ApigeeEnvironmentAddonsConfig#analytics_enabled}
   */
-  readonly analyticsEnabled?: boolean | cdktf.IResolvable;
+  readonly analyticsEnabled?: boolean | cdktn.IResolvable;
   /**
   * The Apigee environment group associated with the Apigee environment,
   * in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
@@ -54,39 +54,39 @@ export interface ApigeeEnvironmentAddonsConfigTimeouts {
   readonly update?: string;
 }
 
-export function apigeeEnvironmentAddonsConfigTimeoutsToTerraform(struct?: ApigeeEnvironmentAddonsConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeEnvironmentAddonsConfigTimeoutsToTerraform(struct?: ApigeeEnvironmentAddonsConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigeeEnvironmentAddonsConfigTimeoutsToHclTerraform(struct?: ApigeeEnvironmentAddonsConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeEnvironmentAddonsConfigTimeoutsToHclTerraform(struct?: ApigeeEnvironmentAddonsConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -97,19 +97,19 @@ export function apigeeEnvironmentAddonsConfigTimeoutsToHclTerraform(struct?: Api
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeEnvironmentAddonsConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeEnvironmentAddonsConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeEnvironmentAddonsConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeEnvironmentAddonsConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,7 +130,7 @@ export class ApigeeEnvironmentAddonsConfigTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeEnvironmentAddonsConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeEnvironmentAddonsConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -138,7 +138,7 @@ export class ApigeeEnvironmentAddonsConfigTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -203,7 +203,7 @@ export class ApigeeEnvironmentAddonsConfigTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_addons_config google_apigee_environment_addons_config}
 */
-export class ApigeeEnvironmentAddonsConfig extends cdktf.TerraformResource {
+export class ApigeeEnvironmentAddonsConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -214,14 +214,14 @@ export class ApigeeEnvironmentAddonsConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeEnvironmentAddonsConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeEnvironmentAddonsConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeEnvironmentAddonsConfig to import
   * @param importFromId The id of the existing ApigeeEnvironmentAddonsConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_environment_addons_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeEnvironmentAddonsConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_environment_addons_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_environment_addons_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -262,11 +262,11 @@ export class ApigeeEnvironmentAddonsConfig extends cdktf.TerraformResource {
   // ==========
 
   // analytics_enabled - computed: false, optional: true, required: false
-  private _analyticsEnabled?: boolean | cdktf.IResolvable; 
+  private _analyticsEnabled?: boolean | cdktn.IResolvable; 
   public get analyticsEnabled() {
     return this.getBooleanAttribute('analytics_enabled');
   }
-  public set analyticsEnabled(value: boolean | cdktf.IResolvable) {
+  public set analyticsEnabled(value: boolean | cdktn.IResolvable) {
     this._analyticsEnabled = value;
   }
   public resetAnalyticsEnabled() {
@@ -328,9 +328,9 @@ export class ApigeeEnvironmentAddonsConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      analytics_enabled: cdktf.booleanToTerraform(this._analyticsEnabled),
-      env_id: cdktf.stringToTerraform(this._envId),
-      id: cdktf.stringToTerraform(this._id),
+      analytics_enabled: cdktn.booleanToTerraform(this._analyticsEnabled),
+      env_id: cdktn.stringToTerraform(this._envId),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: apigeeEnvironmentAddonsConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -338,19 +338,19 @@ export class ApigeeEnvironmentAddonsConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       analytics_enabled: {
-        value: cdktf.booleanToHclTerraform(this._analyticsEnabled),
+        value: cdktn.booleanToHclTerraform(this._analyticsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       env_id: {
-        value: cdktf.stringToHclTerraform(this._envId),
+        value: cdktn.stringToHclTerraform(this._envId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

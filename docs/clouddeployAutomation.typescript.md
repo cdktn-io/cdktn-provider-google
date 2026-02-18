@@ -300,7 +300,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -382,7 +382,7 @@ public putRules(value: IResolvable | ClouddeployAutomationRules[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.putRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
 
 ---
 
@@ -459,7 +459,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ClouddeployAutomation resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ClouddeployAutomation resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -531,7 +531,7 @@ import { clouddeployAutomation } from '@cdktn/provider-google'
 clouddeployAutomation.ClouddeployAutomation.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ClouddeployAutomation resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ClouddeployAutomation resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.generateConfigForImport.parameter.scope"></a>
 
@@ -561,7 +561,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ClouddeployAutomation to import is found.
 
@@ -572,26 +572,26 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList">ClouddeployAutomationRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.selector">selector</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference">ClouddeployAutomationSelectorOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference">ClouddeployAutomationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
@@ -603,11 +603,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.rulesInput">rulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.rulesInput">rulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.selectorInput">selectorInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelector">ClouddeployAutomationSelector</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.suspendedInput">suspendedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.suspendedInput">suspendedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.deliveryPipeline">deliveryPipeline</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.description">description</a></code> | <code>string</code> | *No description.* |
@@ -617,7 +617,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.suspended">suspended</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomation.property.suspended">suspended</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -639,7 +639,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -689,7 +689,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -699,7 +699,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -709,7 +709,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -729,7 +729,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -739,7 +739,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -749,7 +749,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -759,7 +759,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -779,7 +779,7 @@ public readonly createTime: string;
 public readonly effectiveAnnotations: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -789,7 +789,7 @@ public readonly effectiveAnnotations: StringMap;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -829,7 +829,7 @@ public readonly selector: ClouddeployAutomationSelectorOutputReference;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -949,7 +949,7 @@ public readonly projectInput: string;
 public readonly rulesInput: IResolvable | ClouddeployAutomationRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
 
 ---
 
@@ -979,7 +979,7 @@ public readonly serviceAccountInput: string;
 public readonly suspendedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -989,7 +989,7 @@ public readonly suspendedInput: boolean | IResolvable;
 public readonly timeoutsInput: IResolvable | ClouddeployAutomationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a>
 
 ---
 
@@ -1089,7 +1089,7 @@ public readonly serviceAccount: string;
 public readonly suspended: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1127,17 +1127,17 @@ const clouddeployAutomationConfig: clouddeployAutomation.ClouddeployAutomationCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.deliveryPipeline">deliveryPipeline</a></code> | <code>string</code> | The delivery_pipeline for the resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.location">location</a></code> | <code>string</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.name">name</a></code> | <code>string</code> | Name of the 'Automation'. |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.rules">rules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]</code> | rules block. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.selector">selector</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelector">ClouddeployAutomationSelector</a></code> | selector block. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | Required. Email address of the user-managed IAM service account that creates Cloud Deploy release and rollout resources. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | Optional. |
@@ -1145,7 +1145,7 @@ const clouddeployAutomationConfig: clouddeployAutomation.ClouddeployAutomationCo
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_automation#id ClouddeployAutomation#id}. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_automation#project ClouddeployAutomation#project}. |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.suspended">suspended</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. When Suspended, automation is deactivated from execution. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.suspended">suspended</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. When Suspended, automation is deactivated from execution. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1156,7 +1156,7 @@ const clouddeployAutomationConfig: clouddeployAutomation.ClouddeployAutomationCo
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1176,7 +1176,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1196,7 +1196,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1206,7 +1206,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1268,7 +1268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rules: IResolvable | ClouddeployAutomationRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
 
 rules block.
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly suspended: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional. When Suspended, automation is deactivated from execution.
 
@@ -1658,7 +1658,7 @@ const clouddeployAutomationRulesRepairRolloutRule: clouddeployAutomation.Cloudde
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule.property.id">id</a></code> | <code>string</code> | Required. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule.property.jobs">jobs</a></code> | <code>string[]</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule.property.phases">phases</a></code> | <code>string[]</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule.property.repairPhases">repairPhases</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]</code> | repair_phases block. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule.property.repairPhases">repairPhases</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]</code> | repair_phases block. |
 
 ---
 
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly repairPhases: IResolvable | ClouddeployAutomationRulesRepairRolloutRuleRepairPhases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
 
 repair_phases block.
 
@@ -1857,7 +1857,7 @@ const clouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback: clouddepl
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback.property.destinationPhase">destinationPhase</a></code> | <code>string</code> | Optional. The starting phase ID for the Rollout. If unspecified, the Rollout will start in the stable phase. |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback.property.disableRollbackIfRolloutPending">disableRollbackIfRolloutPending</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. If pending rollout exists on the target, the rollback operation will be aborted. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback.property.disableRollbackIfRolloutPending">disableRollbackIfRolloutPending</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. If pending rollout exists on the target, the rollback operation will be aborted. |
 
 ---
 
@@ -1881,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disableRollbackIfRolloutPending: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional. If pending rollout exists on the target, the rollback operation will be aborted.
 
@@ -2004,7 +2004,7 @@ const clouddeployAutomationSelector: clouddeployAutomation.ClouddeployAutomation
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelector.property.targets">targets</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]</code> | targets block. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelector.property.targets">targets</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]</code> | targets block. |
 
 ---
 
@@ -2014,7 +2014,7 @@ const clouddeployAutomationSelector: clouddeployAutomation.ClouddeployAutomation
 public readonly targets: IResolvable | ClouddeployAutomationSelectorTargets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
 
 targets block.
 
@@ -2144,14 +2144,14 @@ new clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRuleOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2323,7 +2323,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesAdvanceRolloutRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2473,7 +2473,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesList(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2481,7 +2481,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesList(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2547,7 +2547,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2582,7 +2582,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -2616,7 +2616,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ClouddeployAutomationRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>[]
 
 ---
 
@@ -2633,7 +2633,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2642,7 +2642,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesOutputReference(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2836,7 +2836,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2937,7 +2937,7 @@ public resetTimedPromoteReleaseRule(): void
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.property.promoteReleaseRuleInput">promoteReleaseRuleInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRule">ClouddeployAutomationRulesPromoteReleaseRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.property.repairRolloutRuleInput">repairRolloutRuleInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRule">ClouddeployAutomationRulesRepairRolloutRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.property.timedPromoteReleaseRuleInput">timedPromoteReleaseRuleInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRule">ClouddeployAutomationRulesTimedPromoteReleaseRule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a></code> | *No description.* |
 
 ---
 
@@ -3051,7 +3051,7 @@ public readonly timedPromoteReleaseRuleInput: ClouddeployAutomationRulesTimedPro
 public readonly internalValue: IResolvable | ClouddeployAutomationRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRules">ClouddeployAutomationRules</a>
 
 ---
 
@@ -3068,14 +3068,14 @@ new clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRuleOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3248,7 +3248,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesPromoteReleaseRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3426,14 +3426,14 @@ new clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3607,7 +3607,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3629,7 +3629,7 @@ public putRepairPhases(value: IResolvable | ClouddeployAutomationRulesRepairRoll
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.putRepairPhases.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
 
 ---
 
@@ -3662,7 +3662,7 @@ public resetRepairPhases(): void
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.jobsInput">jobsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.phasesInput">phasesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.repairPhasesInput">repairPhasesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.repairPhasesInput">repairPhasesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.jobs">jobs</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleOutputReference.property.phases">phases</a></code> | <code>string[]</code> | *No description.* |
@@ -3740,7 +3740,7 @@ public readonly phasesInput: string[];
 public readonly repairPhasesInput: IResolvable | ClouddeployAutomationRulesRepairRolloutRuleRepairPhases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
 
 ---
 
@@ -3797,7 +3797,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhase
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3805,7 +3805,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhase
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3871,7 +3871,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3906,7 +3906,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]</code> | *No description.* |
 
 ---
 
@@ -3940,7 +3940,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ClouddeployAutomationRulesRepairRolloutRuleRepairPhases[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>[]
 
 ---
 
@@ -3957,7 +3957,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhase
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3966,7 +3966,7 @@ new clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhase
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4156,7 +4156,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4217,7 +4217,7 @@ public resetRollback(): void
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.property.rollback">rollback</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference">ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.property.retryInput">retryInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetry">ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetry</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.property.rollbackInput">rollbackInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback">ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a></code> | *No description.* |
 
 ---
 
@@ -4291,7 +4291,7 @@ public readonly rollbackInput: ClouddeployAutomationRulesRepairRolloutRuleRepair
 public readonly internalValue: IResolvable | ClouddeployAutomationRulesRepairRolloutRuleRepairPhases;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhases">ClouddeployAutomationRulesRepairRolloutRuleRepairPhases</a>
 
 ---
 
@@ -4308,14 +4308,14 @@ new clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhase
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4487,7 +4487,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4637,14 +4637,14 @@ new clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhase
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4816,7 +4816,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4850,9 +4850,9 @@ public resetDisableRollbackIfRolloutPending(): void
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.destinationPhaseInput">destinationPhaseInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.disableRollbackIfRolloutPendingInput">disableRollbackIfRolloutPendingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.disableRollbackIfRolloutPendingInput">disableRollbackIfRolloutPendingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.destinationPhase">destinationPhase</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.disableRollbackIfRolloutPending">disableRollbackIfRolloutPending</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.disableRollbackIfRolloutPending">disableRollbackIfRolloutPending</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollbackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback">ClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRollback</a></code> | *No description.* |
 
 ---
@@ -4897,7 +4897,7 @@ public readonly destinationPhaseInput: string;
 public readonly disableRollbackIfRolloutPendingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4917,7 +4917,7 @@ public readonly destinationPhase: string;
 public readonly disableRollbackIfRolloutPending: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4944,14 +4944,14 @@ new clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRuleOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5123,7 +5123,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationRulesTimedPromoteReleaseRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5317,14 +5317,14 @@ new clouddeployAutomation.ClouddeployAutomationSelectorOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5495,7 +5495,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5517,7 +5517,7 @@ public putTargets(value: IResolvable | ClouddeployAutomationSelectorTargets[]): 
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.putTargets.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
 
 ---
 
@@ -5529,7 +5529,7 @@ public putTargets(value: IResolvable | ClouddeployAutomationSelectorTargets[]): 
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.property.targets">targets</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList">ClouddeployAutomationSelectorTargetsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.property.targetsInput">targetsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.property.targetsInput">targetsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelector">ClouddeployAutomationSelector</a></code> | *No description.* |
 
 ---
@@ -5574,7 +5574,7 @@ public readonly targets: ClouddeployAutomationSelectorTargetsList;
 public readonly targetsInput: IResolvable | ClouddeployAutomationSelectorTargets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
 
 ---
 
@@ -5601,7 +5601,7 @@ new clouddeployAutomation.ClouddeployAutomationSelectorTargetsList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5609,7 +5609,7 @@ new clouddeployAutomation.ClouddeployAutomationSelectorTargetsList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5675,7 +5675,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5710,7 +5710,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]</code> | *No description.* |
 
 ---
 
@@ -5744,7 +5744,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ClouddeployAutomationSelectorTargets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>[]
 
 ---
 
@@ -5761,7 +5761,7 @@ new clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5770,7 +5770,7 @@ new clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5958,7 +5958,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5995,7 +5995,7 @@ public resetLabels(): void
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargetsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a></code> | *No description.* |
 
 ---
 
@@ -6069,7 +6069,7 @@ public readonly labels: {[ key: string ]: string};
 public readonly internalValue: IResolvable | ClouddeployAutomationSelectorTargets;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationSelectorTargets">ClouddeployAutomationSelectorTargets</a>
 
 ---
 
@@ -6086,14 +6086,14 @@ new clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6266,7 +6266,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6311,7 +6311,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6405,7 +6405,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ClouddeployAutomationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.clouddeployAutomation.ClouddeployAutomationTimeouts">ClouddeployAutomationTimeouts</a>
 
 ---
 

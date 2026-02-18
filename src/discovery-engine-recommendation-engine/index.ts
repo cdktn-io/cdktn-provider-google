@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DiscoveryEngineRecommendationEngineConfig extends cdktf.TerraformMetaArguments {
+export interface DiscoveryEngineRecommendationEngineConfig extends cdktn.TerraformMetaArguments {
   /**
   * The data stores associated with this engine. For SOLUTION_TYPE_RECOMMENDATION type of engines, they can only associate with at most one data store.
   *
@@ -83,24 +83,24 @@ export interface DiscoveryEngineRecommendationEngineCommonConfig {
 }
 
 export function discoveryEngineRecommendationEngineCommonConfigToTerraform(struct?: DiscoveryEngineRecommendationEngineCommonConfigOutputReference | DiscoveryEngineRecommendationEngineCommonConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    company_name: cdktf.stringToTerraform(struct!.companyName),
+    company_name: cdktn.stringToTerraform(struct!.companyName),
   }
 }
 
 
 export function discoveryEngineRecommendationEngineCommonConfigToHclTerraform(struct?: DiscoveryEngineRecommendationEngineCommonConfigOutputReference | DiscoveryEngineRecommendationEngineCommonConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     company_name: {
-      value: cdktf.stringToHclTerraform(struct!.companyName),
+      value: cdktn.stringToHclTerraform(struct!.companyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,14 +111,14 @@ export function discoveryEngineRecommendationEngineCommonConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineRecommendationEngineCommonConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineRecommendationEngineCommonConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -172,24 +172,24 @@ export interface DiscoveryEngineRecommendationEngineMediaRecommendationEngineCon
 }
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigToTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    time_window_days: cdktf.numberToTerraform(struct!.timeWindowDays),
+    time_window_days: cdktn.numberToTerraform(struct!.timeWindowDays),
   }
 }
 
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigToHclTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     time_window_days: {
-      value: cdktf.numberToHclTerraform(struct!.timeWindowDays),
+      value: cdktn.numberToHclTerraform(struct!.timeWindowDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -200,14 +200,14 @@ export function discoveryEngineRecommendationEngineMediaRecommendationEngineConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigMostPopularConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -264,24 +264,24 @@ export interface DiscoveryEngineRecommendationEngineMediaRecommendationEngineCon
 }
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigToTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    context_event_type: cdktf.stringToTerraform(struct!.contextEventType),
+    context_event_type: cdktn.stringToTerraform(struct!.contextEventType),
   }
 }
 
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigToHclTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     context_event_type: {
-      value: cdktf.stringToHclTerraform(struct!.contextEventType),
+      value: cdktn.stringToHclTerraform(struct!.contextEventType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -292,14 +292,14 @@ export function discoveryEngineRecommendationEngineMediaRecommendationEngineConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigRecommendedForYouConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -356,8 +356,8 @@ export interface DiscoveryEngineRecommendationEngineMediaRecommendationEngineCon
 }
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigToTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -368,8 +368,8 @@ export function discoveryEngineRecommendationEngineMediaRecommendationEngineConf
 
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigToHclTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -391,14 +391,14 @@ export function discoveryEngineRecommendationEngineMediaRecommendationEngineConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -477,31 +477,31 @@ export interface DiscoveryEngineRecommendationEngineMediaRecommendationEngineCon
 }
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigToTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_field: cdktf.stringToTerraform(struct!.targetField),
-    target_field_value_float: cdktf.numberToTerraform(struct!.targetFieldValueFloat),
+    target_field: cdktn.stringToTerraform(struct!.targetField),
+    target_field_value_float: cdktn.numberToTerraform(struct!.targetFieldValueFloat),
   }
 }
 
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigToHclTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_field: {
-      value: cdktf.stringToHclTerraform(struct!.targetField),
+      value: cdktn.stringToHclTerraform(struct!.targetField),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_field_value_float: {
-      value: cdktf.numberToHclTerraform(struct!.targetFieldValueFloat),
+      value: cdktn.numberToHclTerraform(struct!.targetFieldValueFloat),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -512,14 +512,14 @@ export function discoveryEngineRecommendationEngineMediaRecommendationEngineConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -631,14 +631,14 @@ export interface DiscoveryEngineRecommendationEngineMediaRecommendationEngineCon
 }
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigToTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    optimization_objective: cdktf.stringToTerraform(struct!.optimizationObjective),
-    training_state: cdktf.stringToTerraform(struct!.trainingState),
-    type: cdktf.stringToTerraform(struct!.type),
+    optimization_objective: cdktn.stringToTerraform(struct!.optimizationObjective),
+    training_state: cdktn.stringToTerraform(struct!.trainingState),
+    type: cdktn.stringToTerraform(struct!.type),
     engine_features_config: discoveryEngineRecommendationEngineMediaRecommendationEngineConfigEngineFeaturesConfigToTerraform(struct!.engineFeaturesConfig),
     optimization_objective_config: discoveryEngineRecommendationEngineMediaRecommendationEngineConfigOptimizationObjectiveConfigToTerraform(struct!.optimizationObjectiveConfig),
   }
@@ -646,25 +646,25 @@ export function discoveryEngineRecommendationEngineMediaRecommendationEngineConf
 
 
 export function discoveryEngineRecommendationEngineMediaRecommendationEngineConfigToHclTerraform(struct?: DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference | DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     optimization_objective: {
-      value: cdktf.stringToHclTerraform(struct!.optimizationObjective),
+      value: cdktn.stringToHclTerraform(struct!.optimizationObjective),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     training_state: {
-      value: cdktf.stringToHclTerraform(struct!.trainingState),
+      value: cdktn.stringToHclTerraform(struct!.trainingState),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -687,14 +687,14 @@ export function discoveryEngineRecommendationEngineMediaRecommendationEngineConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineRecommendationEngineMediaRecommendationEngineConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -838,39 +838,39 @@ export interface DiscoveryEngineRecommendationEngineTimeouts {
   readonly update?: string;
 }
 
-export function discoveryEngineRecommendationEngineTimeoutsToTerraform(struct?: DiscoveryEngineRecommendationEngineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineRecommendationEngineTimeoutsToTerraform(struct?: DiscoveryEngineRecommendationEngineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function discoveryEngineRecommendationEngineTimeoutsToHclTerraform(struct?: DiscoveryEngineRecommendationEngineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineRecommendationEngineTimeoutsToHclTerraform(struct?: DiscoveryEngineRecommendationEngineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -881,19 +881,19 @@ export function discoveryEngineRecommendationEngineTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineRecommendationEngineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineRecommendationEngineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DiscoveryEngineRecommendationEngineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DiscoveryEngineRecommendationEngineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -914,7 +914,7 @@ export class DiscoveryEngineRecommendationEngineTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DiscoveryEngineRecommendationEngineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DiscoveryEngineRecommendationEngineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -922,7 +922,7 @@ export class DiscoveryEngineRecommendationEngineTimeoutsOutputReference extends 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -987,7 +987,7 @@ export class DiscoveryEngineRecommendationEngineTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine}
 */
-export class DiscoveryEngineRecommendationEngine extends cdktf.TerraformResource {
+export class DiscoveryEngineRecommendationEngine extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -998,14 +998,14 @@ export class DiscoveryEngineRecommendationEngine extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DiscoveryEngineRecommendationEngine resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DiscoveryEngineRecommendationEngine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineRecommendationEngine to import
   * @param importFromId The id of the existing DiscoveryEngineRecommendationEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_recommendation_engine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineRecommendationEngine to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_discovery_engine_recommendation_engine", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_discovery_engine_recommendation_engine", importId: importFromId, provider });
       }
 
   // ===========
@@ -1220,13 +1220,13 @@ export class DiscoveryEngineRecommendationEngine extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_store_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dataStoreIds),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      engine_id: cdktf.stringToTerraform(this._engineId),
-      id: cdktf.stringToTerraform(this._id),
-      industry_vertical: cdktf.stringToTerraform(this._industryVertical),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      data_store_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dataStoreIds),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      engine_id: cdktn.stringToTerraform(this._engineId),
+      id: cdktn.stringToTerraform(this._id),
+      industry_vertical: cdktn.stringToTerraform(this._industryVertical),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       common_config: discoveryEngineRecommendationEngineCommonConfigToTerraform(this._commonConfig.internalValue),
       media_recommendation_engine_config: discoveryEngineRecommendationEngineMediaRecommendationEngineConfigToTerraform(this._mediaRecommendationEngineConfig.internalValue),
       timeouts: discoveryEngineRecommendationEngineTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1236,43 +1236,43 @@ export class DiscoveryEngineRecommendationEngine extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_store_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dataStoreIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dataStoreIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       engine_id: {
-        value: cdktf.stringToHclTerraform(this._engineId),
+        value: cdktn.stringToHclTerraform(this._engineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       industry_vertical: {
-        value: cdktf.stringToHclTerraform(this._industryVertical),
+        value: cdktn.stringToHclTerraform(this._industryVertical),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

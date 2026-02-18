@@ -327,7 +327,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryTable.BigqueryTable.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -696,7 +696,7 @@ public resetView(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BigqueryTable resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a BigqueryTable resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -768,7 +768,7 @@ import { bigqueryTable } from '@cdktn/provider-google'
 bigqueryTable.BigqueryTable.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a BigqueryTable resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BigqueryTable resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigqueryTable.BigqueryTable.generateConfigForImport.parameter.scope"></a>
 
@@ -798,7 +798,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryTable.BigqueryTable.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BigqueryTable to import is found.
 
@@ -809,22 +809,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.biglakeConfiguration">biglakeConfiguration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfigurationOutputReference">BigqueryTableBiglakeConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.creationTime">creationTime</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.encryptionConfiguration">encryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference">BigqueryTableEncryptionConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.externalCatalogTableOptions">externalCatalogTableOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsOutputReference">BigqueryTableExternalCatalogTableOptionsOutputReference</a></code> | *No description.* |
@@ -841,14 +841,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.tableConstraints">tableConstraints</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference">BigqueryTableTableConstraintsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.tableReplicationInfo">tableReplicationInfo</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference">BigqueryTableTableReplicationInfoOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.timePartitioning">timePartitioning</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference">BigqueryTableTimePartitioningOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.view">view</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference">BigqueryTableViewOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.biglakeConfigurationInput">biglakeConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfiguration">BigqueryTableBiglakeConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.clusteringInput">clusteringInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.datasetIdInput">datasetIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.encryptionConfigurationInput">encryptionConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfiguration">BigqueryTableEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.expirationTimeInput">expirationTimeInput</a></code> | <code>number</code> | *No description.* |
@@ -856,14 +856,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.externalDataConfigurationInput">externalDataConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration">BigqueryTableExternalDataConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.friendlyNameInput">friendlyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.ignoreAutoGeneratedSchemaInput">ignoreAutoGeneratedSchemaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.ignoreAutoGeneratedSchemaInput">ignoreAutoGeneratedSchemaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.ignoreSchemaChangesInput">ignoreSchemaChangesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.materializedViewInput">materializedViewInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView">BigqueryTableMaterializedView</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.maxStalenessInput">maxStalenessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.rangePartitioningInput">rangePartitioningInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioning">BigqueryTableRangePartitioning</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.requirePartitionFilterInput">requirePartitionFilterInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.requirePartitionFilterInput">requirePartitionFilterInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.resourceTagsInput">resourceTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.schemaForeignTypeInfoInput">schemaForeignTypeInfoInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableSchemaForeignTypeInfo">BigqueryTableSchemaForeignTypeInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
@@ -875,17 +875,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.viewInput">viewInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableView">BigqueryTableView</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.clustering">clustering</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.datasetId">datasetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.expirationTime">expirationTime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.friendlyName">friendlyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.ignoreAutoGeneratedSchema">ignoreAutoGeneratedSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.ignoreAutoGeneratedSchema">ignoreAutoGeneratedSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.ignoreSchemaChanges">ignoreSchemaChanges</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.maxStaleness">maxStaleness</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.resourceTags">resourceTags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTable.property.tableId">tableId</a></code> | <code>string</code> | *No description.* |
@@ -911,7 +911,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -961,7 +961,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -971,7 +971,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -981,7 +981,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly creationTime: number;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly tableReplicationInfo: BigqueryTableTableReplicationInfoOutputRef
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1301,7 +1301,7 @@ public readonly datasetIdInput: string;
 public readonly deletionProtectionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1381,7 +1381,7 @@ public readonly idInput: string;
 public readonly ignoreAutoGeneratedSchemaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1451,7 +1451,7 @@ public readonly rangePartitioningInput: BigqueryTableRangePartitioning;
 public readonly requirePartitionFilterInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1571,7 +1571,7 @@ public readonly datasetId: string;
 public readonly deletionProtection: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1621,7 +1621,7 @@ public readonly id: string;
 public readonly ignoreAutoGeneratedSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1671,7 +1671,7 @@ public readonly project: string;
 public readonly requirePartitionFilter: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1830,18 +1830,18 @@ const bigqueryTableConfig: bigqueryTable.BigqueryTableConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.datasetId">datasetId</a></code> | <code>string</code> | The dataset ID to create the table in. Changing this forces a new resource to be created. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.tableId">tableId</a></code> | <code>string</code> | A unique ID for the resource. Changing this forces a new resource to be created. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.biglakeConfiguration">biglakeConfiguration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfiguration">BigqueryTableBiglakeConfiguration</a></code> | biglake_configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.clustering">clustering</a></code> | <code>string[]</code> | Specifies column names to use for data clustering. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.description">description</a></code> | <code>string</code> | The field description. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.encryptionConfiguration">encryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfiguration">BigqueryTableEncryptionConfiguration</a></code> | encryption_configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.expirationTime">expirationTime</a></code> | <code>number</code> | The time when this table expires, in milliseconds since the epoch. |
@@ -1849,14 +1849,14 @@ const bigqueryTableConfig: bigqueryTable.BigqueryTableConfig = { ... }
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.externalDataConfiguration">externalDataConfiguration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration">BigqueryTableExternalDataConfiguration</a></code> | external_data_configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.friendlyName">friendlyName</a></code> | <code>string</code> | A descriptive name for the table. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_table#id BigqueryTable#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.ignoreAutoGeneratedSchema">ignoreAutoGeneratedSchema</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Terraform will prevent implicitly added columns in schema from showing diff. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.ignoreAutoGeneratedSchema">ignoreAutoGeneratedSchema</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Terraform will prevent implicitly added columns in schema from showing diff. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.ignoreSchemaChanges">ignoreSchemaChanges</a></code> | <code>string[]</code> | Mention which fields in schema are to be ignored. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | A mapping of labels to assign to the resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.materializedView">materializedView</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView">BigqueryTableMaterializedView</a></code> | materialized_view block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.maxStaleness">maxStaleness</a></code> | <code>string</code> | The maximum staleness of data that could be returned when the table (or stale MV) is queried. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.rangePartitioning">rangePartitioning</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioning">BigqueryTableRangePartitioning</a></code> | range_partitioning block. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.resourceTags">resourceTags</a></code> | <code>{[ key: string ]: string}</code> | The tags attached to this table. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.schema">schema</a></code> | <code>string</code> | A JSON schema for the table. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableConfig.property.schemaForeignTypeInfo">schemaForeignTypeInfo</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableSchemaForeignTypeInfo">BigqueryTableSchemaForeignTypeInfo</a></code> | schema_foreign_type_info block. |
@@ -1874,7 +1874,7 @@ const bigqueryTableConfig: bigqueryTable.BigqueryTableConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1884,7 +1884,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1894,7 +1894,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1904,7 +1904,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1914,7 +1914,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1924,7 +1924,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1934,7 +1934,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -2002,7 +2002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly deletionProtection: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Terraform will be prevented from destroying the instance.
 
@@ -2119,7 +2119,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly ignoreAutoGeneratedSchema: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Terraform will prevent implicitly added columns in schema from showing diff.
 
@@ -2222,7 +2222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requirePartitionFilter: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
 
@@ -2601,7 +2601,7 @@ const bigqueryTableExternalDataConfiguration: bigqueryTable.BigqueryTableExterna
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.autodetect">autodetect</a></code> | <code>boolean \| cdktf.IResolvable</code> | Let BigQuery try to autodetect the schema and format of the table. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.autodetect">autodetect</a></code> | <code>boolean \| cdktn.IResolvable</code> | Let BigQuery try to autodetect the schema and format of the table. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.sourceUris">sourceUris</a></code> | <code>string[]</code> | A list of the fully-qualified URIs that point to your data in Google Cloud. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.avroOptions">avroOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptions">BigqueryTableExternalDataConfigurationAvroOptions</a></code> | avro_options block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.bigtableOptions">bigtableOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions">BigqueryTableExternalDataConfigurationBigtableOptions</a></code> | bigtable_options block. |
@@ -2611,7 +2611,7 @@ const bigqueryTableExternalDataConfiguration: bigqueryTable.BigqueryTableExterna
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.fileSetSpecType">fileSetSpecType</a></code> | <code>string</code> | Specifies how source URIs are interpreted for constructing the file set to load. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.googleSheetsOptions">googleSheetsOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptions">BigqueryTableExternalDataConfigurationGoogleSheetsOptions</a></code> | google_sheets_options block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.hivePartitioningOptions">hivePartitioningOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions">BigqueryTableExternalDataConfigurationHivePartitioningOptions</a></code> | hive_partitioning_options block. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.ignoreUnknownValues">ignoreUnknownValues</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates if BigQuery should allow extra values that are not represented in the table schema. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.ignoreUnknownValues">ignoreUnknownValues</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if BigQuery should allow extra values that are not represented in the table schema. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.jsonExtension">jsonExtension</a></code> | <code>string</code> | Load option to be used together with sourceFormat newline-delimited JSON to indicate that a variant of JSON is being loaded. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptions">BigqueryTableExternalDataConfigurationJsonOptions</a></code> | json_options block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfiguration.property.maxBadRecords">maxBadRecords</a></code> | <code>number</code> | The maximum number of bad records that BigQuery can ignore when reading data. |
@@ -2630,7 +2630,7 @@ const bigqueryTableExternalDataConfiguration: bigqueryTable.BigqueryTableExterna
 public readonly autodetect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Let BigQuery try to autodetect the schema and format of the table.
 
@@ -2774,7 +2774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ignoreUnknownValues: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates if BigQuery should allow extra values that are not represented in the table schema.
 
@@ -2932,7 +2932,7 @@ const bigqueryTableExternalDataConfigurationAvroOptions: bigqueryTable.BigqueryT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptions.property.useAvroLogicalTypes">useAvroLogicalTypes</a></code> | <code>boolean \| cdktf.IResolvable</code> | If sourceFormat is set to "AVRO", indicates whether to interpret logical types as the corresponding BigQuery data type (for example, TIMESTAMP), instead of using the raw type (for example, INTEGER). |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptions.property.useAvroLogicalTypes">useAvroLogicalTypes</a></code> | <code>boolean \| cdktn.IResolvable</code> | If sourceFormat is set to "AVRO", indicates whether to interpret logical types as the corresponding BigQuery data type (for example, TIMESTAMP), instead of using the raw type (for example, INTEGER). |
 
 ---
 
@@ -2942,7 +2942,7 @@ const bigqueryTableExternalDataConfigurationAvroOptions: bigqueryTable.BigqueryT
 public readonly useAvroLogicalTypes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If sourceFormat is set to "AVRO", indicates whether to interpret logical types as the corresponding BigQuery data type (for example, TIMESTAMP), instead of using the raw type (for example, INTEGER).
 
@@ -2964,10 +2964,10 @@ const bigqueryTableExternalDataConfigurationBigtableOptions: bigqueryTable.Bigqu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.columnFamily">columnFamily</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]</code> | column_family block. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.ignoreUnspecifiedColumnFamilies">ignoreUnspecifiedColumnFamilies</a></code> | <code>boolean \| cdktf.IResolvable</code> | If field is true, then the column families that are not specified in columnFamilies list are not exposed in the table schema. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.outputColumnFamiliesAsJson">outputColumnFamiliesAsJson</a></code> | <code>boolean \| cdktf.IResolvable</code> | If field is true, then each column family will be read as a single JSON column. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.readRowkeyAsString">readRowkeyAsString</a></code> | <code>boolean \| cdktf.IResolvable</code> | If field is true, then the rowkey column families will be read and converted to string. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.columnFamily">columnFamily</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]</code> | column_family block. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.ignoreUnspecifiedColumnFamilies">ignoreUnspecifiedColumnFamilies</a></code> | <code>boolean \| cdktn.IResolvable</code> | If field is true, then the column families that are not specified in columnFamilies list are not exposed in the table schema. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.outputColumnFamiliesAsJson">outputColumnFamiliesAsJson</a></code> | <code>boolean \| cdktn.IResolvable</code> | If field is true, then each column family will be read as a single JSON column. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions.property.readRowkeyAsString">readRowkeyAsString</a></code> | <code>boolean \| cdktn.IResolvable</code> | If field is true, then the rowkey column families will be read and converted to string. |
 
 ---
 
@@ -2977,7 +2977,7 @@ const bigqueryTableExternalDataConfigurationBigtableOptions: bigqueryTable.Bigqu
 public readonly columnFamily: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
 
 column_family block.
 
@@ -2991,7 +2991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ignoreUnspecifiedColumnFamilies: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If field is true, then the column families that are not specified in columnFamilies list are not exposed in the table schema.
 
@@ -3007,7 +3007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly outputColumnFamiliesAsJson: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If field is true, then each column family will be read as a single JSON column.
 
@@ -3023,7 +3023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly readRowkeyAsString: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If field is true, then the rowkey column families will be read and converted to string.
 
@@ -3047,10 +3047,10 @@ const bigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily: bigquer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily.property.column">column</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]</code> | column block. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily.property.column">column</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]</code> | column block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily.property.encoding">encoding</a></code> | <code>string</code> | The encoding of the values when the type is not STRING. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily.property.familyId">familyId</a></code> | <code>string</code> | Identifier of the column family. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktf.IResolvable</code> | If this is set only the latest version of value are exposed for all columns in this column family. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktn.IResolvable</code> | If this is set only the latest version of value are exposed for all columns in this column family. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily.property.type">type</a></code> | <code>string</code> | The type to convert the value in cells of this column family. |
 
 ---
@@ -3061,7 +3061,7 @@ const bigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily: bigquer
 public readonly column: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
 
 column block.
 
@@ -3105,7 +3105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly onlyReadLatest: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If this is set only the latest version of value are exposed for all columns in this column family.
 
@@ -3147,7 +3147,7 @@ const bigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn: b
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn.property.encoding">encoding</a></code> | <code>string</code> | The encoding of the values when the type is not STRING. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn.property.fieldName">fieldName</a></code> | <code>string</code> | If the qualifier is not a valid BigQuery field identifier i.e. does not match [a-zA-Z][a-zA-Z0-9_]*, a valid identifier must be provided as the column field name and is used as field name in queries. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktf.IResolvable</code> | If this is set, only the latest version of value in this column are exposed. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktn.IResolvable</code> | If this is set, only the latest version of value in this column are exposed. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn.property.qualifierEncoded">qualifierEncoded</a></code> | <code>string</code> | Qualifier of the column. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn.property.qualifierString">qualifierString</a></code> | <code>string</code> | Qualifier string. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn.property.type">type</a></code> | <code>string</code> | The type to convert the value in cells of this column. |
@@ -3190,7 +3190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly onlyReadLatest: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If this is set, only the latest version of value in this column are exposed.
 
@@ -3261,8 +3261,8 @@ const bigqueryTableExternalDataConfigurationCsvOptions: bigqueryTable.BigqueryTa
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.quote">quote</a></code> | <code>string</code> | The value that is used to quote data sections in a CSV file. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.allowJaggedRows">allowJaggedRows</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates if BigQuery should accept rows that are missing trailing optional columns. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.allowQuotedNewlines">allowQuotedNewlines</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.allowJaggedRows">allowJaggedRows</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if BigQuery should accept rows that are missing trailing optional columns. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.allowQuotedNewlines">allowQuotedNewlines</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.encoding">encoding</a></code> | <code>string</code> | The character encoding of the data. The supported values are UTF-8 or ISO-8859-1. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.fieldDelimiter">fieldDelimiter</a></code> | <code>string</code> | The separator for fields in a CSV file. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptions.property.skipLeadingRows">skipLeadingRows</a></code> | <code>number</code> | The number of rows at the top of a CSV file that BigQuery will skip when reading the data. |
@@ -3291,7 +3291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowJaggedRows: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates if BigQuery should accept rows that are missing trailing optional columns.
 
@@ -3305,7 +3305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowQuotedNewlines: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file.
 
@@ -3423,7 +3423,7 @@ const bigqueryTableExternalDataConfigurationHivePartitioningOptions: bigqueryTab
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions.property.mode">mode</a></code> | <code>string</code> | When set, what mode of hive partitioning to use when reading data. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions.property.sourceUriPrefix">sourceUriPrefix</a></code> | <code>string</code> | When hive partition detection is requested, a common for all source uris must be required. |
 
 ---
@@ -3448,7 +3448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requirePartitionFilter: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
 
@@ -3520,8 +3520,8 @@ const bigqueryTableExternalDataConfigurationParquetOptions: bigqueryTable.Bigque
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptions.property.enableListInference">enableListInference</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether to use schema inference specifically for Parquet LIST logical type. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptions.property.enumAsString">enumAsString</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether to infer Parquet ENUM logical type as STRING instead of BYTES by default. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptions.property.enableListInference">enableListInference</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether to use schema inference specifically for Parquet LIST logical type. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptions.property.enumAsString">enumAsString</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether to infer Parquet ENUM logical type as STRING instead of BYTES by default. |
 
 ---
 
@@ -3531,7 +3531,7 @@ const bigqueryTableExternalDataConfigurationParquetOptions: bigqueryTable.Bigque
 public readonly enableListInference: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates whether to use schema inference specifically for Parquet LIST logical type.
 
@@ -3545,7 +3545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enumAsString: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates whether to infer Parquet ENUM logical type as STRING instead of BYTES by default.
 
@@ -3568,8 +3568,8 @@ const bigqueryTableMaterializedView: bigqueryTable.BigqueryTableMaterializedView
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView.property.query">query</a></code> | <code>string</code> | A query whose result is persisted. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView.property.allowNonIncrementalDefinition">allowNonIncrementalDefinition</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow non incremental materialized view definition. The default value is false. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView.property.enableRefresh">enableRefresh</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if BigQuery should automatically refresh materialized view when the base table is updated. The default is true. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView.property.allowNonIncrementalDefinition">allowNonIncrementalDefinition</a></code> | <code>boolean \| cdktn.IResolvable</code> | Allow non incremental materialized view definition. The default value is false. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView.property.enableRefresh">enableRefresh</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies if BigQuery should automatically refresh materialized view when the base table is updated. The default is true. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView.property.refreshIntervalMs">refreshIntervalMs</a></code> | <code>number</code> | Specifies maximum frequency at which this materialized view will be refreshed. The default is 1800000. |
 
 ---
@@ -3594,7 +3594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowNonIncrementalDefinition: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Allow non incremental materialized view definition. The default value is false.
 
@@ -3608,7 +3608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableRefresh: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies if BigQuery should automatically refresh materialized view when the base table is updated. The default is true.
 
@@ -3785,7 +3785,7 @@ const bigqueryTableTableConstraints: bigqueryTable.BigqueryTableTableConstraints
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraints.property.foreignKeys">foreignKeys</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]</code> | foreign_keys block. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraints.property.foreignKeys">foreignKeys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]</code> | foreign_keys block. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraints.property.primaryKey">primaryKey</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKey">BigqueryTableTableConstraintsPrimaryKey</a></code> | primary_key block. |
 
 ---
@@ -3796,7 +3796,7 @@ const bigqueryTableTableConstraints: bigqueryTable.BigqueryTableTableConstraints
 public readonly foreignKeys: IResolvable | BigqueryTableTableConstraintsForeignKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
 
 foreign_keys block.
 
@@ -4117,7 +4117,7 @@ const bigqueryTableTimePartitioning: bigqueryTable.BigqueryTableTimePartitioning
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioning.property.type">type</a></code> | <code>string</code> | The supported types are DAY, HOUR, MONTH, and YEAR, which will generate one partition per day, hour, month, and year, respectively. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioning.property.expirationMs">expirationMs</a></code> | <code>number</code> | Number of milliseconds for which to keep the storage for a partition. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioning.property.field">field</a></code> | <code>string</code> | The field used to determine how to create a time-based partition. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioning.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioning.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified. |
 
 ---
 
@@ -4171,7 +4171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requirePartitionFilter: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
 
@@ -4194,7 +4194,7 @@ const bigqueryTableView: bigqueryTable.BigqueryTableView = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableView.property.query">query</a></code> | <code>string</code> | A query that BigQuery executes when the view is referenced. |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableView.property.useLegacySql">useLegacySql</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether to use BigQuery's legacy SQL for this view. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableView.property.useLegacySql">useLegacySql</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether to use BigQuery's legacy SQL for this view. |
 
 ---
 
@@ -4218,7 +4218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useLegacySql: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether to use BigQuery's legacy SQL for this view.
 
@@ -4242,14 +4242,14 @@ new bigqueryTable.BigqueryTableBiglakeConfigurationOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4419,7 +4419,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableBiglakeConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4579,14 +4579,14 @@ new bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4756,7 +4756,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableEncryptionConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4861,14 +4861,14 @@ new bigqueryTable.BigqueryTableExternalCatalogTableOptionsOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5042,7 +5042,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5210,14 +5210,14 @@ new bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5392,7 +5392,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5588,14 +5588,14 @@ new bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5767,7 +5767,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalCatalogTableOptionsStorageDescriptorSerdeInfoOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5917,14 +5917,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6094,7 +6094,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6115,8 +6115,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.property.useAvroLogicalTypesInput">useAvroLogicalTypesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.property.useAvroLogicalTypes">useAvroLogicalTypes</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.property.useAvroLogicalTypesInput">useAvroLogicalTypesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.property.useAvroLogicalTypes">useAvroLogicalTypes</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptions">BigqueryTableExternalDataConfigurationAvroOptions</a></code> | *No description.* |
 
 ---
@@ -6151,7 +6151,7 @@ public readonly fqn: string;
 public readonly useAvroLogicalTypesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6161,7 +6161,7 @@ public readonly useAvroLogicalTypesInput: boolean | IResolvable;
 public readonly useAvroLogicalTypes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6188,7 +6188,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6196,7 +6196,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6262,7 +6262,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6297,7 +6297,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]</code> | *No description.* |
 
 ---
 
@@ -6331,7 +6331,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
 
 ---
 
@@ -6348,7 +6348,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6357,7 +6357,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6549,7 +6549,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6608,17 +6608,17 @@ public resetType(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.encodingInput">encodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.fieldNameInput">fieldNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.onlyReadLatestInput">onlyReadLatestInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.onlyReadLatestInput">onlyReadLatestInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.qualifierEncodedInput">qualifierEncodedInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.qualifierStringInput">qualifierStringInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.encoding">encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.fieldName">fieldName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.qualifierEncoded">qualifierEncoded</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.qualifierString">qualifierString</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a></code> | *No description.* |
 
 ---
 
@@ -6672,7 +6672,7 @@ public readonly fieldNameInput: string;
 public readonly onlyReadLatestInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6732,7 +6732,7 @@ public readonly fieldName: string;
 public readonly onlyReadLatest: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6772,7 +6772,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>
 
 ---
 
@@ -6789,7 +6789,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6797,7 +6797,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6863,7 +6863,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6898,7 +6898,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]</code> | *No description.* |
 
 ---
 
@@ -6932,7 +6932,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
 
 ---
 
@@ -6949,7 +6949,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6958,7 +6958,7 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7150,7 +7150,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7172,7 +7172,7 @@ public putColumn(value: IResolvable | BigqueryTableExternalDataConfigurationBigt
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.putColumn.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
 
 ---
 
@@ -7214,16 +7214,16 @@ public resetType(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.column">column</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumnList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.columnInput">columnInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.columnInput">columnInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.encodingInput">encodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.familyIdInput">familyIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.onlyReadLatestInput">onlyReadLatestInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.onlyReadLatestInput">onlyReadLatestInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.encoding">encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.familyId">familyId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.onlyReadLatest">onlyReadLatest</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a></code> | *No description.* |
 
 ---
 
@@ -7267,7 +7267,7 @@ public readonly column: BigqueryTableExternalDataConfigurationBigtableOptionsCol
 public readonly columnInput: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyColumn</a>[]
 
 ---
 
@@ -7297,7 +7297,7 @@ public readonly familyIdInput: string;
 public readonly onlyReadLatestInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7337,7 +7337,7 @@ public readonly familyId: string;
 public readonly onlyReadLatest: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7357,7 +7357,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>
 
 ---
 
@@ -7374,14 +7374,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7556,7 +7556,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7578,7 +7578,7 @@ public putColumnFamily(value: IResolvable | BigqueryTableExternalDataConfigurati
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.putColumnFamily.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
 
 ---
 
@@ -7614,13 +7614,13 @@ public resetReadRowkeyAsString(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.columnFamily">columnFamily</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamilyList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.columnFamilyInput">columnFamilyInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.ignoreUnspecifiedColumnFamiliesInput">ignoreUnspecifiedColumnFamiliesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.outputColumnFamiliesAsJsonInput">outputColumnFamiliesAsJsonInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.readRowkeyAsStringInput">readRowkeyAsStringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.ignoreUnspecifiedColumnFamilies">ignoreUnspecifiedColumnFamilies</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.outputColumnFamiliesAsJson">outputColumnFamiliesAsJson</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.readRowkeyAsString">readRowkeyAsString</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.columnFamilyInput">columnFamilyInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.ignoreUnspecifiedColumnFamiliesInput">ignoreUnspecifiedColumnFamiliesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.outputColumnFamiliesAsJsonInput">outputColumnFamiliesAsJsonInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.readRowkeyAsStringInput">readRowkeyAsStringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.ignoreUnspecifiedColumnFamilies">ignoreUnspecifiedColumnFamilies</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.outputColumnFamiliesAsJson">outputColumnFamiliesAsJson</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.readRowkeyAsString">readRowkeyAsString</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions">BigqueryTableExternalDataConfigurationBigtableOptions</a></code> | *No description.* |
 
 ---
@@ -7665,7 +7665,7 @@ public readonly columnFamily: BigqueryTableExternalDataConfigurationBigtableOpti
 public readonly columnFamilyInput: IResolvable | BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily">BigqueryTableExternalDataConfigurationBigtableOptionsColumnFamily</a>[]
 
 ---
 
@@ -7675,7 +7675,7 @@ public readonly columnFamilyInput: IResolvable | BigqueryTableExternalDataConfig
 public readonly ignoreUnspecifiedColumnFamiliesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7685,7 +7685,7 @@ public readonly ignoreUnspecifiedColumnFamiliesInput: boolean | IResolvable;
 public readonly outputColumnFamiliesAsJsonInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7695,7 +7695,7 @@ public readonly outputColumnFamiliesAsJsonInput: boolean | IResolvable;
 public readonly readRowkeyAsStringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7705,7 +7705,7 @@ public readonly readRowkeyAsStringInput: boolean | IResolvable;
 public readonly ignoreUnspecifiedColumnFamilies: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7715,7 +7715,7 @@ public readonly ignoreUnspecifiedColumnFamilies: boolean | IResolvable;
 public readonly outputColumnFamiliesAsJson: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7725,7 +7725,7 @@ public readonly outputColumnFamiliesAsJson: boolean | IResolvable;
 public readonly readRowkeyAsString: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7752,14 +7752,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7934,7 +7934,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7985,14 +7985,14 @@ public resetSkipLeadingRows(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowJaggedRowsInput">allowJaggedRowsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowQuotedNewlinesInput">allowQuotedNewlinesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowJaggedRowsInput">allowJaggedRowsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowQuotedNewlinesInput">allowQuotedNewlinesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.encodingInput">encodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.fieldDelimiterInput">fieldDelimiterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.quoteInput">quoteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.skipLeadingRowsInput">skipLeadingRowsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowJaggedRows">allowJaggedRows</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowQuotedNewlines">allowQuotedNewlines</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowJaggedRows">allowJaggedRows</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.allowQuotedNewlines">allowQuotedNewlines</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.encoding">encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.fieldDelimiter">fieldDelimiter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationCsvOptionsOutputReference.property.quote">quote</a></code> | <code>string</code> | *No description.* |
@@ -8031,7 +8031,7 @@ public readonly fqn: string;
 public readonly allowJaggedRowsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8041,7 +8041,7 @@ public readonly allowJaggedRowsInput: boolean | IResolvable;
 public readonly allowQuotedNewlinesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8091,7 +8091,7 @@ public readonly skipLeadingRowsInput: number;
 public readonly allowJaggedRows: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8101,7 +8101,7 @@ public readonly allowJaggedRows: boolean | IResolvable;
 public readonly allowQuotedNewlines: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8168,14 +8168,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8347,7 +8347,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8475,14 +8475,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8655,7 +8655,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8695,10 +8695,10 @@ public resetSourceUriPrefix(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.requirePartitionFilterInput">requirePartitionFilterInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.requirePartitionFilterInput">requirePartitionFilterInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.sourceUriPrefixInput">sourceUriPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.sourceUriPrefix">sourceUriPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions">BigqueryTableExternalDataConfigurationHivePartitioningOptions</a></code> | *No description.* |
 
@@ -8744,7 +8744,7 @@ public readonly modeInput: string;
 public readonly requirePartitionFilterInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8774,7 +8774,7 @@ public readonly mode: string;
 public readonly requirePartitionFilter: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8811,14 +8811,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8989,7 +8989,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9089,14 +9089,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9291,7 +9291,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9511,7 +9511,7 @@ public resetSourceFormat(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.hivePartitioningOptions">hivePartitioningOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference">BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.jsonOptions">jsonOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptionsOutputReference">BigqueryTableExternalDataConfigurationJsonOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.parquetOptions">parquetOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference">BigqueryTableExternalDataConfigurationParquetOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.autodetectInput">autodetectInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.autodetectInput">autodetectInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.avroOptionsInput">avroOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptions">BigqueryTableExternalDataConfigurationAvroOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.bigtableOptionsInput">bigtableOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationBigtableOptions">BigqueryTableExternalDataConfigurationBigtableOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.compressionInput">compressionInput</a></code> | <code>string</code> | *No description.* |
@@ -9520,7 +9520,7 @@ public resetSourceFormat(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.fileSetSpecTypeInput">fileSetSpecTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.googleSheetsOptionsInput">googleSheetsOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationGoogleSheetsOptions">BigqueryTableExternalDataConfigurationGoogleSheetsOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.hivePartitioningOptionsInput">hivePartitioningOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationHivePartitioningOptions">BigqueryTableExternalDataConfigurationHivePartitioningOptions</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.ignoreUnknownValuesInput">ignoreUnknownValuesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.ignoreUnknownValuesInput">ignoreUnknownValuesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.jsonExtensionInput">jsonExtensionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.jsonOptionsInput">jsonOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationJsonOptions">BigqueryTableExternalDataConfigurationJsonOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.maxBadRecordsInput">maxBadRecordsInput</a></code> | <code>number</code> | *No description.* |
@@ -9531,11 +9531,11 @@ public resetSourceFormat(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.sourceFormatInput">sourceFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.sourceUrisInput">sourceUrisInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.autodetect">autodetect</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.autodetect">autodetect</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.compression">compression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.connectionId">connectionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.fileSetSpecType">fileSetSpecType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.ignoreUnknownValues">ignoreUnknownValues</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.ignoreUnknownValues">ignoreUnknownValues</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.jsonExtension">jsonExtension</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.maxBadRecords">maxBadRecords</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationOutputReference.property.metadataCacheMode">metadataCacheMode</a></code> | <code>string</code> | *No description.* |
@@ -9648,7 +9648,7 @@ public readonly parquetOptions: BigqueryTableExternalDataConfigurationParquetOpt
 public readonly autodetectInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9738,7 +9738,7 @@ public readonly hivePartitioningOptionsInput: BigqueryTableExternalDataConfigura
 public readonly ignoreUnknownValuesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9848,7 +9848,7 @@ public readonly sourceUrisInput: string[];
 public readonly autodetect: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9888,7 +9888,7 @@ public readonly fileSetSpecType: string;
 public readonly ignoreUnknownValues: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9995,14 +9995,14 @@ new bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10174,7 +10174,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10207,10 +10207,10 @@ public resetEnumAsString(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enableListInferenceInput">enableListInferenceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enumAsStringInput">enumAsStringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enableListInference">enableListInference</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enumAsString">enumAsString</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enableListInferenceInput">enableListInferenceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enumAsStringInput">enumAsStringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enableListInference">enableListInference</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.enumAsString">enumAsString</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationParquetOptions">BigqueryTableExternalDataConfigurationParquetOptions</a></code> | *No description.* |
 
 ---
@@ -10245,7 +10245,7 @@ public readonly fqn: string;
 public readonly enableListInferenceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10255,7 +10255,7 @@ public readonly enableListInferenceInput: boolean | IResolvable;
 public readonly enumAsStringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10265,7 +10265,7 @@ public readonly enumAsStringInput: boolean | IResolvable;
 public readonly enableListInference: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10275,7 +10275,7 @@ public readonly enableListInference: boolean | IResolvable;
 public readonly enumAsString: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10302,14 +10302,14 @@ new bigqueryTable.BigqueryTableMaterializedViewOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10482,7 +10482,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10521,12 +10521,12 @@ public resetRefreshIntervalMs(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.allowNonIncrementalDefinitionInput">allowNonIncrementalDefinitionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.enableRefreshInput">enableRefreshInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.allowNonIncrementalDefinitionInput">allowNonIncrementalDefinitionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.enableRefreshInput">enableRefreshInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.queryInput">queryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.refreshIntervalMsInput">refreshIntervalMsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.allowNonIncrementalDefinition">allowNonIncrementalDefinition</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.enableRefresh">enableRefresh</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.allowNonIncrementalDefinition">allowNonIncrementalDefinition</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.enableRefresh">enableRefresh</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.query">query</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.refreshIntervalMs">refreshIntervalMs</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedViewOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableMaterializedView">BigqueryTableMaterializedView</a></code> | *No description.* |
@@ -10563,7 +10563,7 @@ public readonly fqn: string;
 public readonly allowNonIncrementalDefinitionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10573,7 +10573,7 @@ public readonly allowNonIncrementalDefinitionInput: boolean | IResolvable;
 public readonly enableRefreshInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10603,7 +10603,7 @@ public readonly refreshIntervalMsInput: number;
 public readonly allowNonIncrementalDefinition: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10613,7 +10613,7 @@ public readonly allowNonIncrementalDefinition: boolean | IResolvable;
 public readonly enableRefresh: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10660,14 +10660,14 @@ new bigqueryTable.BigqueryTableRangePartitioningOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10838,7 +10838,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10966,14 +10966,14 @@ new bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11143,7 +11143,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11281,14 +11281,14 @@ new bigqueryTable.BigqueryTableSchemaForeignTypeInfoOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableSchemaForeignTypeInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableSchemaForeignTypeInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableSchemaForeignTypeInfoOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableSchemaForeignTypeInfoOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11458,7 +11458,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableSchemaForeignTypeInfoOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11552,14 +11552,14 @@ new bigqueryTable.BigqueryTableTableConstraintsForeignKeysColumnReferencesOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11729,7 +11729,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11845,7 +11845,7 @@ new bigqueryTable.BigqueryTableTableConstraintsForeignKeysList(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11853,7 +11853,7 @@ new bigqueryTable.BigqueryTableTableConstraintsForeignKeysList(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11919,7 +11919,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11954,7 +11954,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]</code> | *No description.* |
 
 ---
 
@@ -11988,7 +11988,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BigqueryTableTableConstraintsForeignKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
 
 ---
 
@@ -12005,7 +12005,7 @@ new bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12014,7 +12014,7 @@ new bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12203,7 +12203,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12260,7 +12260,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.property.referencedTableInput">referencedTableInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysReferencedTable">BigqueryTableTableConstraintsForeignKeysReferencedTable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a></code> | *No description.* |
 
 ---
 
@@ -12354,7 +12354,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | BigqueryTableTableConstraintsForeignKeys;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>
 
 ---
 
@@ -12371,14 +12371,14 @@ new bigqueryTable.BigqueryTableTableConstraintsForeignKeysReferencedTableOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12548,7 +12548,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12686,14 +12686,14 @@ new bigqueryTable.BigqueryTableTableConstraintsOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12867,7 +12867,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12889,7 +12889,7 @@ public putForeignKeys(value: IResolvable | BigqueryTableTableConstraintsForeignK
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.putForeignKeys.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
 
 ---
 
@@ -12926,7 +12926,7 @@ public resetPrimaryKey(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.property.foreignKeys">foreignKeys</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeysList">BigqueryTableTableConstraintsForeignKeysList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.property.primaryKey">primaryKey</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKeyOutputReference">BigqueryTableTableConstraintsPrimaryKeyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.property.foreignKeysInput">foreignKeysInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.property.foreignKeysInput">foreignKeysInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.property.primaryKeyInput">primaryKeyInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKey">BigqueryTableTableConstraintsPrimaryKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraints">BigqueryTableTableConstraints</a></code> | *No description.* |
 
@@ -12982,7 +12982,7 @@ public readonly primaryKey: BigqueryTableTableConstraintsPrimaryKeyOutputReferen
 public readonly foreignKeysInput: IResolvable | BigqueryTableTableConstraintsForeignKeys[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsForeignKeys">BigqueryTableTableConstraintsForeignKeys</a>[]
 
 ---
 
@@ -13019,14 +13019,14 @@ new bigqueryTable.BigqueryTableTableConstraintsPrimaryKeyOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13196,7 +13196,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableConstraintsPrimaryKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13290,14 +13290,14 @@ new bigqueryTable.BigqueryTableTableReplicationInfoOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13468,7 +13468,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTableReplicationInfoOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13634,14 +13634,14 @@ new bigqueryTable.BigqueryTableTimePartitioningOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13814,7 +13814,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13855,11 +13855,11 @@ public resetRequirePartitionFilter(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.expirationMsInput">expirationMsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.fieldInput">fieldInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.requirePartitionFilterInput">requirePartitionFilterInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.requirePartitionFilterInput">requirePartitionFilterInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.expirationMs">expirationMs</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.field">field</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.requirePartitionFilter">requirePartitionFilter</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioningOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableTimePartitioning">BigqueryTableTimePartitioning</a></code> | *No description.* |
 
@@ -13915,7 +13915,7 @@ public readonly fieldInput: string;
 public readonly requirePartitionFilterInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13955,7 +13955,7 @@ public readonly field: string;
 public readonly requirePartitionFilter: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13992,14 +13992,14 @@ new bigqueryTable.BigqueryTableViewOutputReference(terraformResource: IInterpola
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14170,7 +14170,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14198,9 +14198,9 @@ public resetUseLegacySql(): void
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.queryInput">queryInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.useLegacySqlInput">useLegacySqlInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.useLegacySqlInput">useLegacySqlInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.query">query</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.useLegacySql">useLegacySql</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.useLegacySql">useLegacySql</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableViewOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryTable.BigqueryTableView">BigqueryTableView</a></code> | *No description.* |
 
 ---
@@ -14245,7 +14245,7 @@ public readonly queryInput: string;
 public readonly useLegacySqlInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14265,7 +14265,7 @@ public readonly query: string;
 public readonly useLegacySql: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 

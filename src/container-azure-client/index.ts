@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ContainerAzureClientConfig extends cdktf.TerraformMetaArguments {
+export interface ContainerAzureClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Azure Active Directory Application ID.
   *
@@ -67,32 +67,32 @@ export interface ContainerAzureClientTimeouts {
   readonly delete?: string;
 }
 
-export function containerAzureClientTimeoutsToTerraform(struct?: ContainerAzureClientTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAzureClientTimeoutsToTerraform(struct?: ContainerAzureClientTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function containerAzureClientTimeoutsToHclTerraform(struct?: ContainerAzureClientTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function containerAzureClientTimeoutsToHclTerraform(struct?: ContainerAzureClientTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function containerAzureClientTimeoutsToHclTerraform(struct?: ContainerAzu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContainerAzureClientTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ContainerAzureClientTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ContainerAzureClientTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ContainerAzureClientTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class ContainerAzureClientTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContainerAzureClientTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContainerAzureClientTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,7 +187,7 @@ export class ContainerAzureClientTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_azure_client google_container_azure_client}
 */
-export class ContainerAzureClient extends cdktf.TerraformResource {
+export class ContainerAzureClient extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -198,14 +198,14 @@ export class ContainerAzureClient extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ContainerAzureClient resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ContainerAzureClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerAzureClient to import
   * @param importFromId The id of the existing ContainerAzureClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_azure_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerAzureClient to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_container_azure_client", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_container_azure_client", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,12 +369,12 @@ export class ContainerAzureClient extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
       timeouts: containerAzureClientTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -382,37 +382,37 @@ export class ContainerAzureClient extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

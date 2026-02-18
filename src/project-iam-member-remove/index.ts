@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ProjectIamMemberRemoveConfig extends cdktf.TerraformMetaArguments {
+export interface ProjectIamMemberRemoveConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member_remove#id ProjectIamMemberRemove#id}
   *
@@ -42,7 +42,7 @@ export interface ProjectIamMemberRemoveConfig extends cdktf.TerraformMetaArgumen
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member_remove google_project_iam_member_remove}
 */
-export class ProjectIamMemberRemove extends cdktf.TerraformResource {
+export class ProjectIamMemberRemove extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class ProjectIamMemberRemove extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ProjectIamMemberRemove resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ProjectIamMemberRemove resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ProjectIamMemberRemove to import
   * @param importFromId The id of the existing ProjectIamMemberRemove that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member_remove#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ProjectIamMemberRemove to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_project_iam_member_remove", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_project_iam_member_remove", importId: importFromId, provider });
       }
 
   // ===========
@@ -161,35 +161,35 @@ export class ProjectIamMemberRemove extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      member: cdktf.stringToTerraform(this._member),
-      project: cdktf.stringToTerraform(this._project),
-      role: cdktf.stringToTerraform(this._role),
+      id: cdktn.stringToTerraform(this._id),
+      member: cdktn.stringToTerraform(this._member),
+      project: cdktn.stringToTerraform(this._project),
+      role: cdktn.stringToTerraform(this._role),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

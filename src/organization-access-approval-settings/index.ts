@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationAccessApprovalSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationAccessApprovalSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The asymmetric crypto key version to use for signing approval requests.
   * Empty active_key_version indicates that a Google-managed key should be used for signing.
@@ -45,7 +45,7 @@ export interface OrganizationAccessApprovalSettingsConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/organization_access_approval_settings#enrolled_services OrganizationAccessApprovalSettings#enrolled_services}
   */
-  readonly enrolledServices: OrganizationAccessApprovalSettingsEnrolledServices[] | cdktf.IResolvable;
+  readonly enrolledServices: OrganizationAccessApprovalSettingsEnrolledServices[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -78,32 +78,32 @@ export interface OrganizationAccessApprovalSettingsEnrolledServices {
   readonly enrollmentLevel?: string;
 }
 
-export function organizationAccessApprovalSettingsEnrolledServicesToTerraform(struct?: OrganizationAccessApprovalSettingsEnrolledServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationAccessApprovalSettingsEnrolledServicesToTerraform(struct?: OrganizationAccessApprovalSettingsEnrolledServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_product: cdktf.stringToTerraform(struct!.cloudProduct),
-    enrollment_level: cdktf.stringToTerraform(struct!.enrollmentLevel),
+    cloud_product: cdktn.stringToTerraform(struct!.cloudProduct),
+    enrollment_level: cdktn.stringToTerraform(struct!.enrollmentLevel),
   }
 }
 
 
-export function organizationAccessApprovalSettingsEnrolledServicesToHclTerraform(struct?: OrganizationAccessApprovalSettingsEnrolledServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationAccessApprovalSettingsEnrolledServicesToHclTerraform(struct?: OrganizationAccessApprovalSettingsEnrolledServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_product: {
-      value: cdktf.stringToHclTerraform(struct!.cloudProduct),
+      value: cdktn.stringToHclTerraform(struct!.cloudProduct),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enrollment_level: {
-      value: cdktf.stringToHclTerraform(struct!.enrollmentLevel),
+      value: cdktn.stringToHclTerraform(struct!.enrollmentLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -114,9 +114,9 @@ export function organizationAccessApprovalSettingsEnrolledServicesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationAccessApprovalSettingsEnrolledServicesOutputReference extends cdktf.ComplexObject {
+export class OrganizationAccessApprovalSettingsEnrolledServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -124,11 +124,11 @@ export class OrganizationAccessApprovalSettingsEnrolledServicesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrganizationAccessApprovalSettingsEnrolledServices | cdktf.IResolvable | undefined {
+  public get internalValue(): OrganizationAccessApprovalSettingsEnrolledServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,14 +145,14 @@ export class OrganizationAccessApprovalSettingsEnrolledServicesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrganizationAccessApprovalSettingsEnrolledServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrganizationAccessApprovalSettingsEnrolledServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cloudProduct = undefined;
       this._enrollmentLevel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,15 +194,15 @@ export class OrganizationAccessApprovalSettingsEnrolledServicesOutputReference e
   }
 }
 
-export class OrganizationAccessApprovalSettingsEnrolledServicesList extends cdktf.ComplexList {
-  public internalValue? : OrganizationAccessApprovalSettingsEnrolledServices[] | cdktf.IResolvable
+export class OrganizationAccessApprovalSettingsEnrolledServicesList extends cdktn.ComplexList {
+  public internalValue? : OrganizationAccessApprovalSettingsEnrolledServices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,39 +228,39 @@ export interface OrganizationAccessApprovalSettingsTimeouts {
   readonly update?: string;
 }
 
-export function organizationAccessApprovalSettingsTimeoutsToTerraform(struct?: OrganizationAccessApprovalSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationAccessApprovalSettingsTimeoutsToTerraform(struct?: OrganizationAccessApprovalSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function organizationAccessApprovalSettingsTimeoutsToHclTerraform(struct?: OrganizationAccessApprovalSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationAccessApprovalSettingsTimeoutsToHclTerraform(struct?: OrganizationAccessApprovalSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,19 +271,19 @@ export function organizationAccessApprovalSettingsTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationAccessApprovalSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OrganizationAccessApprovalSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrganizationAccessApprovalSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OrganizationAccessApprovalSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,7 +304,7 @@ export class OrganizationAccessApprovalSettingsTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrganizationAccessApprovalSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrganizationAccessApprovalSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -312,7 +312,7 @@ export class OrganizationAccessApprovalSettingsTimeoutsOutputReference extends c
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -377,7 +377,7 @@ export class OrganizationAccessApprovalSettingsTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/organization_access_approval_settings google_organization_access_approval_settings}
 */
-export class OrganizationAccessApprovalSettings extends cdktf.TerraformResource {
+export class OrganizationAccessApprovalSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -388,14 +388,14 @@ export class OrganizationAccessApprovalSettings extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationAccessApprovalSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationAccessApprovalSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationAccessApprovalSettings to import
   * @param importFromId The id of the existing OrganizationAccessApprovalSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/organization_access_approval_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationAccessApprovalSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_access_approval_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_organization_access_approval_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -492,7 +492,7 @@ export class OrganizationAccessApprovalSettings extends cdktf.TerraformResource 
   // notification_emails - computed: true, optional: true, required: false
   private _notificationEmails?: string[]; 
   public get notificationEmails() {
-    return cdktf.Fn.tolist(this.getListAttribute('notification_emails'));
+    return cdktn.Fn.tolist(this.getListAttribute('notification_emails'));
   }
   public set notificationEmails(value: string[]) {
     this._notificationEmails = value;
@@ -523,7 +523,7 @@ export class OrganizationAccessApprovalSettings extends cdktf.TerraformResource 
   public get enrolledServices() {
     return this._enrolledServices;
   }
-  public putEnrolledServices(value: OrganizationAccessApprovalSettingsEnrolledServices[] | cdktf.IResolvable) {
+  public putEnrolledServices(value: OrganizationAccessApprovalSettingsEnrolledServices[] | cdktn.IResolvable) {
     this._enrolledServices.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -553,11 +553,11 @@ export class OrganizationAccessApprovalSettings extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active_key_version: cdktf.stringToTerraform(this._activeKeyVersion),
-      id: cdktf.stringToTerraform(this._id),
-      notification_emails: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationEmails),
-      organization_id: cdktf.stringToTerraform(this._organizationId),
-      enrolled_services: cdktf.listMapper(organizationAccessApprovalSettingsEnrolledServicesToTerraform, true)(this._enrolledServices.internalValue),
+      active_key_version: cdktn.stringToTerraform(this._activeKeyVersion),
+      id: cdktn.stringToTerraform(this._id),
+      notification_emails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notificationEmails),
+      organization_id: cdktn.stringToTerraform(this._organizationId),
+      enrolled_services: cdktn.listMapper(organizationAccessApprovalSettingsEnrolledServicesToTerraform, true)(this._enrolledServices.internalValue),
       timeouts: organizationAccessApprovalSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -565,31 +565,31 @@ export class OrganizationAccessApprovalSettings extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active_key_version: {
-        value: cdktf.stringToHclTerraform(this._activeKeyVersion),
+        value: cdktn.stringToHclTerraform(this._activeKeyVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_emails: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notificationEmails),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notificationEmails),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       organization_id: {
-        value: cdktf.stringToHclTerraform(this._organizationId),
+        value: cdktn.stringToHclTerraform(this._organizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enrolled_services: {
-        value: cdktf.listMapperHcl(organizationAccessApprovalSettingsEnrolledServicesToHclTerraform, true)(this._enrolledServices.internalValue),
+        value: cdktn.listMapperHcl(organizationAccessApprovalSettingsEnrolledServicesToHclTerraform, true)(this._enrolledServices.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "OrganizationAccessApprovalSettingsEnrolledServicesList",

@@ -314,7 +314,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryDataset.BigqueryDataset.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -396,7 +396,7 @@ public putAccess(value: IResolvable | BigqueryDatasetAccess[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryDataset.BigqueryDataset.putAccess.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
 
 ---
 
@@ -569,7 +569,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BigqueryDataset resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a BigqueryDataset resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -641,7 +641,7 @@ import { bigqueryDataset } from '@cdktn/provider-google'
 bigqueryDataset.BigqueryDataset.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a BigqueryDataset resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BigqueryDataset resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigqueryDataset.BigqueryDataset.generateConfigForImport.parameter.scope"></a>
 
@@ -671,7 +671,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryDataset.BigqueryDataset.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BigqueryDataset to import is found.
 
@@ -682,59 +682,59 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.access">access</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList">BigqueryDatasetAccessList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.creationTime">creationTime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultEncryptionConfiguration">defaultEncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference">BigqueryDatasetDefaultEncryptionConfigurationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.externalCatalogDatasetOptions">externalCatalogDatasetOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference">BigqueryDatasetExternalCatalogDatasetOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.externalDatasetReference">externalDatasetReference</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReferenceOutputReference">BigqueryDatasetExternalDatasetReferenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.lastModifiedTime">lastModifiedTime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference">BigqueryDatasetTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.accessInput">accessInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.accessInput">accessInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.datasetIdInput">datasetIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultCollationInput">defaultCollationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultEncryptionConfigurationInput">defaultEncryptionConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfiguration">BigqueryDatasetDefaultEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultPartitionExpirationMsInput">defaultPartitionExpirationMsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultTableExpirationMsInput">defaultTableExpirationMsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.deleteContentsOnDestroyInput">deleteContentsOnDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.deleteContentsOnDestroyInput">deleteContentsOnDestroyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.externalCatalogDatasetOptionsInput">externalCatalogDatasetOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptions">BigqueryDatasetExternalCatalogDatasetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.externalDatasetReferenceInput">externalDatasetReferenceInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReference">BigqueryDatasetExternalDatasetReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.friendlyNameInput">friendlyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.isCaseInsensitiveInput">isCaseInsensitiveInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.isCaseInsensitiveInput">isCaseInsensitiveInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.maxTimeTravelHoursInput">maxTimeTravelHoursInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.resourceTagsInput">resourceTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.storageBillingModelInput">storageBillingModelInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.datasetId">datasetId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultCollation">defaultCollation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultPartitionExpirationMs">defaultPartitionExpirationMs</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.defaultTableExpirationMs">defaultTableExpirationMs</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.deleteContentsOnDestroy">deleteContentsOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.deleteContentsOnDestroy">deleteContentsOnDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.friendlyName">friendlyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.isCaseInsensitive">isCaseInsensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.isCaseInsensitive">isCaseInsensitive</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDataset.property.maxTimeTravelHours">maxTimeTravelHours</a></code> | <code>string</code> | *No description.* |
@@ -762,7 +762,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -812,7 +812,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -822,7 +822,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -832,7 +832,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -852,7 +852,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -862,7 +862,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -872,7 +872,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -882,7 +882,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -922,7 +922,7 @@ public readonly defaultEncryptionConfiguration: BigqueryDatasetDefaultEncryption
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -982,7 +982,7 @@ public readonly selfLink: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly timeouts: BigqueryDatasetTimeoutsOutputReference;
 public readonly accessInput: IResolvable | BigqueryDatasetAccess[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly defaultTableExpirationMsInput: number;
 public readonly deleteContentsOnDestroyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1122,7 +1122,7 @@ public readonly idInput: string;
 public readonly isCaseInsensitiveInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1192,7 +1192,7 @@ public readonly storageBillingModelInput: string;
 public readonly timeoutsInput: IResolvable | BigqueryDatasetTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a>
 
 ---
 
@@ -1242,7 +1242,7 @@ public readonly defaultTableExpirationMs: number;
 public readonly deleteContentsOnDestroy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly id: string;
 public readonly isCaseInsensitive: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1869,26 +1869,26 @@ const bigqueryDatasetConfig: bigqueryDataset.BigqueryDatasetConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.datasetId">datasetId</a></code> | <code>string</code> | A unique ID for this dataset, without the project name. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.access">access</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]</code> | access block. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.access">access</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]</code> | access block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.defaultCollation">defaultCollation</a></code> | <code>string</code> | Defines the default collation specification of future tables created in the dataset. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.defaultEncryptionConfiguration">defaultEncryptionConfiguration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfiguration">BigqueryDatasetDefaultEncryptionConfiguration</a></code> | default_encryption_configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.defaultPartitionExpirationMs">defaultPartitionExpirationMs</a></code> | <code>number</code> | The default partition expiration for all partitioned tables in the dataset, in milliseconds. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.defaultTableExpirationMs">defaultTableExpirationMs</a></code> | <code>number</code> | The default lifetime of all tables in the dataset, in milliseconds. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.deleteContentsOnDestroy">deleteContentsOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to 'true', delete all the tables in the dataset when destroying the resource; |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.deleteContentsOnDestroy">deleteContentsOnDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to 'true', delete all the tables in the dataset when destroying the resource; |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.description">description</a></code> | <code>string</code> | A user-friendly description of the dataset. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.externalCatalogDatasetOptions">externalCatalogDatasetOptions</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptions">BigqueryDatasetExternalCatalogDatasetOptions</a></code> | external_catalog_dataset_options block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.externalDatasetReference">externalDatasetReference</a></code> | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReference">BigqueryDatasetExternalDatasetReference</a></code> | external_dataset_reference block. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.friendlyName">friendlyName</a></code> | <code>string</code> | A descriptive name for the dataset. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_dataset#id BigqueryDataset#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.isCaseInsensitive">isCaseInsensitive</a></code> | <code>boolean \| cdktf.IResolvable</code> | TRUE if the dataset and its table names are case-insensitive, otherwise FALSE. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.isCaseInsensitive">isCaseInsensitive</a></code> | <code>boolean \| cdktn.IResolvable</code> | TRUE if the dataset and its table names are case-insensitive, otherwise FALSE. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | The labels associated with this dataset. You can use these to organize and group your datasets. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.location">location</a></code> | <code>string</code> | The geographic location where the dataset should reside. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetConfig.property.maxTimeTravelHours">maxTimeTravelHours</a></code> | <code>string</code> | Defines the time travel window in hours. |
@@ -1905,7 +1905,7 @@ const bigqueryDatasetConfig: bigqueryDataset.BigqueryDatasetConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1915,7 +1915,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1925,7 +1925,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1935,7 +1935,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1945,7 +1945,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1955,7 +1955,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1965,7 +1965,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1993,7 +1993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly access: IResolvable | BigqueryDatasetAccess[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
 
 access block.
 
@@ -2096,7 +2096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly deleteContentsOnDestroy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to 'true', delete all the tables in the dataset when destroying the resource;
 
@@ -2184,7 +2184,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly isCaseInsensitive: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 TRUE if the dataset and its table names are case-insensitive, otherwise FALSE.
 
@@ -2517,14 +2517,14 @@ new bigqueryDataset.BigqueryDatasetAccessConditionOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessConditionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2697,7 +2697,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessConditionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2875,14 +2875,14 @@ new bigqueryDataset.BigqueryDatasetAccessDatasetDatasetOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetDatasetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetDatasetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetDatasetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetDatasetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3052,7 +3052,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetDatasetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3168,14 +3168,14 @@ new bigqueryDataset.BigqueryDatasetAccessDatasetOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3346,7 +3346,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessDatasetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3474,7 +3474,7 @@ new bigqueryDataset.BigqueryDatasetAccessList(terraformResource: IInterpolatingP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3482,7 +3482,7 @@ new bigqueryDataset.BigqueryDatasetAccessList(terraformResource: IInterpolatingP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3548,7 +3548,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3583,7 +3583,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]</code> | *No description.* |
 
 ---
 
@@ -3617,7 +3617,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BigqueryDatasetAccess[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>[]
 
 ---
 
@@ -3634,7 +3634,7 @@ new bigqueryDataset.BigqueryDatasetAccessOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3643,7 +3643,7 @@ new bigqueryDataset.BigqueryDatasetAccessOutputReference(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3843,7 +3843,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3992,7 +3992,7 @@ public resetView(): void
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.property.role">role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.property.specialGroup">specialGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.property.userByEmail">userByEmail</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a></code> | *No description.* |
 
 ---
 
@@ -4226,7 +4226,7 @@ public readonly userByEmail: string;
 public readonly internalValue: IResolvable | BigqueryDatasetAccess;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccess">BigqueryDatasetAccess</a>
 
 ---
 
@@ -4243,14 +4243,14 @@ new bigqueryDataset.BigqueryDatasetAccessRoutineOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessRoutineOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessRoutineOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessRoutineOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessRoutineOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4420,7 +4420,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessRoutineOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4558,14 +4558,14 @@ new bigqueryDataset.BigqueryDatasetAccessViewOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessViewOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessViewOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4735,7 +4735,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetAccessViewOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4873,14 +4873,14 @@ new bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5050,7 +5050,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetDefaultEncryptionConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5144,14 +5144,14 @@ new bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5323,7 +5323,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalCatalogDatasetOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5451,14 +5451,14 @@ new bigqueryDataset.BigqueryDatasetExternalDatasetReferenceOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReferenceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5628,7 +5628,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetExternalDatasetReferenceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5744,14 +5744,14 @@ new bigqueryDataset.BigqueryDatasetTimeoutsOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5924,7 +5924,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5969,7 +5969,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6063,7 +6063,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | BigqueryDatasetTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigqueryDataset.BigqueryDatasetTimeouts">BigqueryDatasetTimeouts</a>
 
 ---
 

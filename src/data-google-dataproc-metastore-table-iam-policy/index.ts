@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleDataprocMetastoreTableIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleDataprocMetastoreTableIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataproc_metastore_table_iam_policy#database_id DataGoogleDataprocMetastoreTableIamPolicy#database_id}
   */
@@ -44,7 +44,7 @@ export interface DataGoogleDataprocMetastoreTableIamPolicyConfig extends cdktf.T
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy}
 */
-export class DataGoogleDataprocMetastoreTableIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleDataprocMetastoreTableIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class DataGoogleDataprocMetastoreTableIamPolicy extends cdktf.TerraformDa
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleDataprocMetastoreTableIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleDataprocMetastoreTableIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleDataprocMetastoreTableIamPolicy to import
   * @param importFromId The id of the existing DataGoogleDataprocMetastoreTableIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dataproc_metastore_table_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleDataprocMetastoreTableIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_metastore_table_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_metastore_table_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -207,49 +207,49 @@ export class DataGoogleDataprocMetastoreTableIamPolicy extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_id: cdktf.stringToTerraform(this._databaseId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      service_id: cdktf.stringToTerraform(this._serviceId),
-      table: cdktf.stringToTerraform(this._table),
+      database_id: cdktn.stringToTerraform(this._databaseId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      service_id: cdktn.stringToTerraform(this._serviceId),
+      table: cdktn.stringToTerraform(this._table),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database_id: {
-        value: cdktf.stringToHclTerraform(this._databaseId),
+        value: cdktn.stringToHclTerraform(this._databaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_id: {
-        value: cdktf.stringToHclTerraform(this._serviceId),
+        value: cdktn.stringToHclTerraform(this._serviceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table: {
-        value: cdktf.stringToHclTerraform(this._table),
+        value: cdktn.stringToHclTerraform(this._table),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

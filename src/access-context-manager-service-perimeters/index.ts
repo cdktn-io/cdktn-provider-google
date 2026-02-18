@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessContextManagerServicePerimetersConfig extends cdktf.TerraformMetaArguments {
+export interface AccessContextManagerServicePerimetersConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#id AccessContextManagerServicePerimeters#id}
   *
@@ -31,7 +31,7 @@ export interface AccessContextManagerServicePerimetersConfig extends cdktf.Terra
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#service_perimeters AccessContextManagerServicePerimeters#service_perimeters}
   */
-  readonly servicePerimeters?: AccessContextManagerServicePerimetersServicePerimeters[] | cdktf.IResolvable;
+  readonly servicePerimeters?: AccessContextManagerServicePerimetersServicePerimeters[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -59,32 +59,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   readonly resource?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_level: cdktf.stringToTerraform(struct!.accessLevel),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    access_level: cdktn.stringToTerraform(struct!.accessLevel),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_level: {
-      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      value: cdktn.stringToHclTerraform(struct!.accessLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,9 +95,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,11 +105,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -126,14 +126,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -178,15 +178,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -227,49 +227,49 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
-  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources[] | cdktf.IResolvable;
+  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identities),
-    identity_type: cdktf.stringToTerraform(struct!.identityType),
-    source_restriction: cdktf.stringToTerraform(struct!.sourceRestriction),
-    sources: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToTerraform, true)(struct!.sources),
+    identities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identities),
+    identity_type: cdktn.stringToTerraform(struct!.identityType),
+    source_restriction: cdktn.stringToTerraform(struct!.sourceRestriction),
+    sources: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToTerraform, true)(struct!.sources),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identities),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     identity_type: {
-      value: cdktf.stringToHclTerraform(struct!.identityType),
+      value: cdktn.stringToHclTerraform(struct!.identityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_restriction: {
-      value: cdktf.stringToHclTerraform(struct!.sourceRestriction),
+      value: cdktn.stringToHclTerraform(struct!.sourceRestriction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToHclTerraform, true)(struct!.sources),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesToHclTerraform, true)(struct!.sources),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSourcesList",
@@ -280,14 +280,14 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -333,7 +333,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   // identities - computed: false, optional: true, required: false
   private _identities?: string[]; 
   public get identities() {
-    return cdktf.Fn.tolist(this.getListAttribute('identities'));
+    return cdktn.Fn.tolist(this.getListAttribute('identities'));
   }
   public set identities(value: string[]) {
     this._identities = value;
@@ -383,7 +383,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   public get sources() {
     return this._sources;
   }
-  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources[] | cdktf.IResolvable) {
+  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromSources[] | cdktn.IResolvable) {
     this._sources.internalValue = value;
   }
   public resetSources() {
@@ -412,32 +412,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   readonly permission?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    permission: cdktf.stringToTerraform(struct!.permission),
+    method: cdktn.stringToTerraform(struct!.method),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -448,9 +448,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -458,11 +458,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -479,14 +479,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._method = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -531,15 +531,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -564,35 +564,35 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
-  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors[] | cdktf.IResolvable;
+  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
-    method_selectors: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
+    method_selectors: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method_selectors: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectorsList",
@@ -603,9 +603,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -613,11 +613,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -634,14 +634,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceName = undefined;
       this._methodSelectors.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -674,7 +674,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   public get methodSelectors() {
     return this._methodSelectors;
   }
-  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors[] | cdktf.IResolvable) {
+  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable) {
     this._methodSelectors.internalValue = value;
   }
   public resetMethodSelectors() {
@@ -686,15 +686,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -737,49 +737,49 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
-  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations[] | cdktf.IResolvable;
+  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalResources),
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
-    operations: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToTerraform, true)(struct!.operations),
+    external_resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalResources),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
+    operations: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToTerraform, true)(struct!.operations),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalResources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalResources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     operations: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToHclTerraform, true)(struct!.operations),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsToHclTerraform, true)(struct!.operations),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperationsList",
@@ -790,14 +790,14 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -843,7 +843,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   // external_resources - computed: false, optional: true, required: false
   private _externalResources?: string[]; 
   public get externalResources() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_resources'));
   }
   public set externalResources(value: string[]) {
     this._externalResources = value;
@@ -859,7 +859,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -875,7 +875,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -893,7 +893,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   public get operations() {
     return this._operations;
   }
-  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations[] | cdktf.IResolvable) {
+  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToOperations[] | cdktn.IResolvable) {
     this._operations.internalValue = value;
   }
   public resetOperations() {
@@ -925,27 +925,27 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecEgres
   readonly egressTo?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressTo;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    title: cdktf.stringToTerraform(struct!.title),
+    title: cdktn.stringToTerraform(struct!.title),
     egress_from: accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressFromToTerraform(struct!.egressFrom),
     egress_to: accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesEgressToToTerraform(struct!.egressTo),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -968,9 +968,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecEgress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -978,11 +978,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1003,7 +1003,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1011,7 +1011,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
       this._egressFrom.internalValue = undefined;
       this._egressTo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1073,15 +1073,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPol
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1119,32 +1119,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   readonly resource?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_level: cdktf.stringToTerraform(struct!.accessLevel),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    access_level: cdktn.stringToTerraform(struct!.accessLevel),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_level: {
-      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      value: cdktn.stringToHclTerraform(struct!.accessLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1155,9 +1155,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1165,11 +1165,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1186,14 +1186,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1238,15 +1238,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1279,42 +1279,42 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
-  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources[] | cdktf.IResolvable;
+  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identities),
-    identity_type: cdktf.stringToTerraform(struct!.identityType),
-    sources: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToTerraform, true)(struct!.sources),
+    identities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identities),
+    identity_type: cdktn.stringToTerraform(struct!.identityType),
+    sources: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToTerraform, true)(struct!.sources),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identities),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     identity_type: {
-      value: cdktf.stringToHclTerraform(struct!.identityType),
+      value: cdktn.stringToHclTerraform(struct!.identityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToHclTerraform, true)(struct!.sources),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesToHclTerraform, true)(struct!.sources),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSourcesList",
@@ -1325,14 +1325,14 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1372,7 +1372,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   // identities - computed: false, optional: true, required: false
   private _identities?: string[]; 
   public get identities() {
-    return cdktf.Fn.tolist(this.getListAttribute('identities'));
+    return cdktn.Fn.tolist(this.getListAttribute('identities'));
   }
   public set identities(value: string[]) {
     this._identities = value;
@@ -1406,7 +1406,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   public get sources() {
     return this._sources;
   }
-  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources[] | cdktf.IResolvable) {
+  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromSources[] | cdktn.IResolvable) {
     this._sources.internalValue = value;
   }
   public resetSources() {
@@ -1435,32 +1435,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   readonly permission?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    permission: cdktf.stringToTerraform(struct!.permission),
+    method: cdktn.stringToTerraform(struct!.method),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1471,9 +1471,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1481,11 +1481,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1502,14 +1502,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._method = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1554,15 +1554,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1587,35 +1587,35 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
-  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors[] | cdktf.IResolvable;
+  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
-    method_selectors: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
+    method_selectors: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method_selectors: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectorsList",
@@ -1626,9 +1626,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1636,11 +1636,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1657,14 +1657,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceName = undefined;
       this._methodSelectors.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1697,7 +1697,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   public get methodSelectors() {
     return this._methodSelectors;
   }
-  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors[] | cdktf.IResolvable) {
+  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable) {
     this._methodSelectors.internalValue = value;
   }
   public resetMethodSelectors() {
@@ -1709,15 +1709,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1755,42 +1755,42 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
-  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations[] | cdktf.IResolvable;
+  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
-    operations: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToTerraform, true)(struct!.operations),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
+    operations: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToTerraform, true)(struct!.operations),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     operations: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToHclTerraform, true)(struct!.operations),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsToHclTerraform, true)(struct!.operations),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperationsList",
@@ -1801,14 +1801,14 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1848,7 +1848,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -1864,7 +1864,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -1882,7 +1882,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   public get operations() {
     return this._operations;
   }
-  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations[] | cdktf.IResolvable) {
+  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToOperations[] | cdktn.IResolvable) {
     this._operations.internalValue = value;
   }
   public resetOperations() {
@@ -1914,27 +1914,27 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecIngre
   readonly ingressTo?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressTo;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    title: cdktf.stringToTerraform(struct!.title),
+    title: cdktn.stringToTerraform(struct!.title),
     ingress_from: accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressFromToTerraform(struct!.ingressFrom),
     ingress_to: accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesIngressToToTerraform(struct!.ingressTo),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1957,9 +1957,9 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecIngres
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1967,11 +1967,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1992,7 +1992,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2000,7 +2000,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
       this._ingressFrom.internalValue = undefined;
       this._ingressTo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2062,15 +2062,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPo
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2095,35 +2095,35 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpecVpcAc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#enable_restriction AccessContextManagerServicePerimeters#enable_restriction}
   */
-  readonly enableRestriction?: boolean | cdktf.IResolvable;
+  readonly enableRestriction?: boolean | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedServices),
-    enable_restriction: cdktf.booleanToTerraform(struct!.enableRestriction),
+    allowed_services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedServices),
+    enable_restriction: cdktn.booleanToTerraform(struct!.enableRestriction),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedServices),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedServices),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     enable_restriction: {
-      value: cdktf.booleanToHclTerraform(struct!.enableRestriction),
+      value: cdktn.booleanToHclTerraform(struct!.enableRestriction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2134,14 +2134,14 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecVpcAcc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2175,7 +2175,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccess
   // allowed_services - computed: false, optional: true, required: false
   private _allowedServices?: string[]; 
   public get allowedServices() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_services'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_services'));
   }
   public set allowedServices(value: string[]) {
     this._allowedServices = value;
@@ -2189,11 +2189,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecVpcAccess
   }
 
   // enable_restriction - computed: false, optional: true, required: false
-  private _enableRestriction?: boolean | cdktf.IResolvable; 
+  private _enableRestriction?: boolean | cdktn.IResolvable; 
   public get enableRestriction() {
     return this.getBooleanAttribute('enable_restriction');
   }
-  public set enableRestriction(value: boolean | cdktf.IResolvable) {
+  public set enableRestriction(value: boolean | cdktn.IResolvable) {
     this._enableRestriction = value;
   }
   public resetEnableRestriction() {
@@ -2243,13 +2243,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpec {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#egress_policies AccessContextManagerServicePerimeters#egress_policies}
   */
-  readonly egressPolicies?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies[] | cdktf.IResolvable;
+  readonly egressPolicies?: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies[] | cdktn.IResolvable;
   /**
   * ingress_policies block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#ingress_policies AccessContextManagerServicePerimeters#ingress_policies}
   */
-  readonly ingressPolicies?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies[] | cdktf.IResolvable;
+  readonly ingressPolicies?: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies[] | cdktn.IResolvable;
   /**
   * vpc_accessible_services block
   *
@@ -2259,53 +2259,53 @@ export interface AccessContextManagerServicePerimetersServicePerimetersSpec {
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accessLevels),
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    restricted_services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restrictedServices),
-    egress_policies: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToTerraform, true)(struct!.egressPolicies),
-    ingress_policies: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToTerraform, true)(struct!.ingressPolicies),
+    access_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accessLevels),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    restricted_services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.restrictedServices),
+    egress_policies: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToTerraform, true)(struct!.egressPolicies),
+    ingress_policies: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToTerraform, true)(struct!.ingressPolicies),
     vpc_accessible_services: accessContextManagerServicePerimetersServicePerimetersSpecVpcAccessibleServicesToTerraform(struct!.vpcAccessibleServices),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersSpecToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference | AccessContextManagerServicePerimetersServicePerimetersSpec): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accessLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accessLevels),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     restricted_services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.restrictedServices),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.restrictedServices),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     egress_policies: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToHclTerraform, true)(struct!.egressPolicies),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesToHclTerraform, true)(struct!.egressPolicies),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecEgressPoliciesList",
     },
     ingress_policies: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToHclTerraform, true)(struct!.ingressPolicies),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesToHclTerraform, true)(struct!.ingressPolicies),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersSpecIngressPoliciesList",
@@ -2322,14 +2322,14 @@ export function accessContextManagerServicePerimetersServicePerimetersSpecToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2387,7 +2387,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputRef
   // access_levels - computed: false, optional: true, required: false
   private _accessLevels?: string[]; 
   public get accessLevels() {
-    return cdktf.Fn.tolist(this.getListAttribute('access_levels'));
+    return cdktn.Fn.tolist(this.getListAttribute('access_levels'));
   }
   public set accessLevels(value: string[]) {
     this._accessLevels = value;
@@ -2403,7 +2403,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputRef
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -2419,7 +2419,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputRef
   // restricted_services - computed: false, optional: true, required: false
   private _restrictedServices?: string[]; 
   public get restrictedServices() {
-    return cdktf.Fn.tolist(this.getListAttribute('restricted_services'));
+    return cdktn.Fn.tolist(this.getListAttribute('restricted_services'));
   }
   public set restrictedServices(value: string[]) {
     this._restrictedServices = value;
@@ -2437,7 +2437,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputRef
   public get egressPolicies() {
     return this._egressPolicies;
   }
-  public putEgressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies[] | cdktf.IResolvable) {
+  public putEgressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersSpecEgressPolicies[] | cdktn.IResolvable) {
     this._egressPolicies.internalValue = value;
   }
   public resetEgressPolicies() {
@@ -2453,7 +2453,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersSpecOutputRef
   public get ingressPolicies() {
     return this._ingressPolicies;
   }
-  public putIngressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies[] | cdktf.IResolvable) {
+  public putIngressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersSpecIngressPolicies[] | cdktn.IResolvable) {
     this._ingressPolicies.internalValue = value;
   }
   public resetIngressPolicies() {
@@ -2500,32 +2500,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   readonly resource?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_level: cdktf.stringToTerraform(struct!.accessLevel),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    access_level: cdktn.stringToTerraform(struct!.accessLevel),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_level: {
-      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      value: cdktn.stringToHclTerraform(struct!.accessLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2536,9 +2536,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2546,11 +2546,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2567,14 +2567,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2619,15 +2619,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2666,49 +2666,49 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
-  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources[] | cdktf.IResolvable;
+  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identities),
-    identity_type: cdktf.stringToTerraform(struct!.identityType),
-    source_restriction: cdktf.stringToTerraform(struct!.sourceRestriction),
-    sources: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToTerraform, true)(struct!.sources),
+    identities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identities),
+    identity_type: cdktn.stringToTerraform(struct!.identityType),
+    source_restriction: cdktn.stringToTerraform(struct!.sourceRestriction),
+    sources: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToTerraform, true)(struct!.sources),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identities),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     identity_type: {
-      value: cdktf.stringToHclTerraform(struct!.identityType),
+      value: cdktn.stringToHclTerraform(struct!.identityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_restriction: {
-      value: cdktf.stringToHclTerraform(struct!.sourceRestriction),
+      value: cdktn.stringToHclTerraform(struct!.sourceRestriction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToHclTerraform, true)(struct!.sources),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesToHclTerraform, true)(struct!.sources),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSourcesList",
@@ -2719,14 +2719,14 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2772,7 +2772,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   // identities - computed: false, optional: true, required: false
   private _identities?: string[]; 
   public get identities() {
-    return cdktf.Fn.tolist(this.getListAttribute('identities'));
+    return cdktn.Fn.tolist(this.getListAttribute('identities'));
   }
   public set identities(value: string[]) {
     this._identities = value;
@@ -2822,7 +2822,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   public get sources() {
     return this._sources;
   }
-  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources[] | cdktf.IResolvable) {
+  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromSources[] | cdktn.IResolvable) {
     this._sources.internalValue = value;
   }
   public resetSources() {
@@ -2851,32 +2851,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   readonly permission?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    permission: cdktf.stringToTerraform(struct!.permission),
+    method: cdktn.stringToTerraform(struct!.method),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2887,9 +2887,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2897,11 +2897,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2918,14 +2918,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._method = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2970,15 +2970,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3003,35 +3003,35 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
-  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors[] | cdktf.IResolvable;
+  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
-    method_selectors: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
+    method_selectors: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method_selectors: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectorsList",
@@ -3042,9 +3042,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3052,11 +3052,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3073,14 +3073,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceName = undefined;
       this._methodSelectors.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3113,7 +3113,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   public get methodSelectors() {
     return this._methodSelectors;
   }
-  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors[] | cdktf.IResolvable) {
+  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsMethodSelectors[] | cdktn.IResolvable) {
     this._methodSelectors.internalValue = value;
   }
   public resetMethodSelectors() {
@@ -3125,15 +3125,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3176,49 +3176,49 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
-  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations[] | cdktf.IResolvable;
+  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalResources),
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
-    operations: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToTerraform, true)(struct!.operations),
+    external_resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalResources),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
+    operations: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToTerraform, true)(struct!.operations),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalResources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalResources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     operations: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToHclTerraform, true)(struct!.operations),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsToHclTerraform, true)(struct!.operations),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperationsList",
@@ -3229,14 +3229,14 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3282,7 +3282,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   // external_resources - computed: false, optional: true, required: false
   private _externalResources?: string[]; 
   public get externalResources() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_resources'));
   }
   public set externalResources(value: string[]) {
     this._externalResources = value;
@@ -3298,7 +3298,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -3314,7 +3314,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -3332,7 +3332,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   public get operations() {
     return this._operations;
   }
-  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations[] | cdktf.IResolvable) {
+  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToOperations[] | cdktn.IResolvable) {
     this._operations.internalValue = value;
   }
   public resetOperations() {
@@ -3364,27 +3364,27 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusEgr
   readonly egressTo?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressTo;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    title: cdktf.stringToTerraform(struct!.title),
+    title: cdktn.stringToTerraform(struct!.title),
     egress_from: accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressFromToTerraform(struct!.egressFrom),
     egress_to: accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesEgressToToTerraform(struct!.egressTo),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3407,9 +3407,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusEgre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3417,11 +3417,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3442,7 +3442,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3450,7 +3450,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
       this._egressFrom.internalValue = undefined;
       this._egressTo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3512,15 +3512,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressP
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3558,32 +3558,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   readonly resource?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_level: cdktf.stringToTerraform(struct!.accessLevel),
-    resource: cdktf.stringToTerraform(struct!.resource),
+    access_level: cdktn.stringToTerraform(struct!.accessLevel),
+    resource: cdktn.stringToTerraform(struct!.resource),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_level: {
-      value: cdktf.stringToHclTerraform(struct!.accessLevel),
+      value: cdktn.stringToHclTerraform(struct!.accessLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3594,9 +3594,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3604,11 +3604,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3625,14 +3625,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessLevel = undefined;
       this._resource = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3677,15 +3677,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3718,42 +3718,42 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#sources AccessContextManagerServicePerimeters#sources}
   */
-  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources[] | cdktf.IResolvable;
+  readonly sources?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identities),
-    identity_type: cdktf.stringToTerraform(struct!.identityType),
-    sources: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToTerraform, true)(struct!.sources),
+    identities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identities),
+    identity_type: cdktn.stringToTerraform(struct!.identityType),
+    sources: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToTerraform, true)(struct!.sources),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFrom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identities),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     identity_type: {
-      value: cdktf.stringToHclTerraform(struct!.identityType),
+      value: cdktn.stringToHclTerraform(struct!.identityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToHclTerraform, true)(struct!.sources),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesToHclTerraform, true)(struct!.sources),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSourcesList",
@@ -3764,14 +3764,14 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3811,7 +3811,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   // identities - computed: false, optional: true, required: false
   private _identities?: string[]; 
   public get identities() {
-    return cdktf.Fn.tolist(this.getListAttribute('identities'));
+    return cdktn.Fn.tolist(this.getListAttribute('identities'));
   }
   public set identities(value: string[]) {
     this._identities = value;
@@ -3845,7 +3845,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   public get sources() {
     return this._sources;
   }
-  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources[] | cdktf.IResolvable) {
+  public putSources(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromSources[] | cdktn.IResolvable) {
     this._sources.internalValue = value;
   }
   public resetSources() {
@@ -3874,32 +3874,32 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   readonly permission?: string;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    permission: cdktf.stringToTerraform(struct!.permission),
+    method: cdktn.stringToTerraform(struct!.method),
+    permission: cdktn.stringToTerraform(struct!.permission),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission: {
-      value: cdktf.stringToHclTerraform(struct!.permission),
+      value: cdktn.stringToHclTerraform(struct!.permission),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3910,9 +3910,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3920,11 +3920,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3941,14 +3941,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._method = undefined;
       this._permission = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3993,15 +3993,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4026,35 +4026,35 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#method_selectors AccessContextManagerServicePerimeters#method_selectors}
   */
-  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors[] | cdktf.IResolvable;
+  readonly methodSelectors?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
-    method_selectors: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
+    method_selectors: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToTerraform, true)(struct!.methodSelectors),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method_selectors: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsToHclTerraform, true)(struct!.methodSelectors),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectorsList",
@@ -4065,9 +4065,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4075,11 +4075,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4096,14 +4096,14 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceName = undefined;
       this._methodSelectors.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4136,7 +4136,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   public get methodSelectors() {
     return this._methodSelectors;
   }
-  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors[] | cdktf.IResolvable) {
+  public putMethodSelectors(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsMethodSelectors[] | cdktn.IResolvable) {
     this._methodSelectors.internalValue = value;
   }
   public resetMethodSelectors() {
@@ -4148,15 +4148,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4194,42 +4194,42 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#operations AccessContextManagerServicePerimeters#operations}
   */
-  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations[] | cdktf.IResolvable;
+  readonly operations?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations[] | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
-    operations: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToTerraform, true)(struct!.operations),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
+    operations: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToTerraform, true)(struct!.operations),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressTo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     operations: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToHclTerraform, true)(struct!.operations),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsToHclTerraform, true)(struct!.operations),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperationsList",
@@ -4240,14 +4240,14 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4287,7 +4287,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -4303,7 +4303,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   // roles - computed: false, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -4321,7 +4321,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   public get operations() {
     return this._operations;
   }
-  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations[] | cdktf.IResolvable) {
+  public putOperations(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToOperations[] | cdktn.IResolvable) {
     this._operations.internalValue = value;
   }
   public resetOperations() {
@@ -4353,27 +4353,27 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusIng
   readonly ingressTo?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressTo;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    title: cdktf.stringToTerraform(struct!.title),
+    title: cdktn.stringToTerraform(struct!.title),
     ingress_from: accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressFromToTerraform(struct!.ingressFrom),
     ingress_to: accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesIngressToToTerraform(struct!.ingressTo),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4396,9 +4396,9 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusIngr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4406,11 +4406,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4431,7 +4431,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4439,7 +4439,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
       this._ingressFrom.internalValue = undefined;
       this._ingressTo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4501,15 +4501,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusIngress
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4534,35 +4534,35 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatusVpc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#enable_restriction AccessContextManagerServicePerimeters#enable_restriction}
   */
-  readonly enableRestriction?: boolean | cdktf.IResolvable;
+  readonly enableRestriction?: boolean | cdktn.IResolvable;
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedServices),
-    enable_restriction: cdktf.booleanToTerraform(struct!.enableRestriction),
+    allowed_services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedServices),
+    enable_restriction: cdktn.booleanToTerraform(struct!.enableRestriction),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedServices),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedServices),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     enable_restriction: {
-      value: cdktf.booleanToHclTerraform(struct!.enableRestriction),
+      value: cdktn.booleanToHclTerraform(struct!.enableRestriction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4573,14 +4573,14 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusVpcA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4614,7 +4614,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAcce
   // allowed_services - computed: false, optional: true, required: false
   private _allowedServices?: string[]; 
   public get allowedServices() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_services'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_services'));
   }
   public set allowedServices(value: string[]) {
     this._allowedServices = value;
@@ -4628,11 +4628,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusVpcAcce
   }
 
   // enable_restriction - computed: false, optional: true, required: false
-  private _enableRestriction?: boolean | cdktf.IResolvable; 
+  private _enableRestriction?: boolean | cdktn.IResolvable; 
   public get enableRestriction() {
     return this.getBooleanAttribute('enable_restriction');
   }
-  public set enableRestriction(value: boolean | cdktf.IResolvable) {
+  public set enableRestriction(value: boolean | cdktn.IResolvable) {
     this._enableRestriction = value;
   }
   public resetEnableRestriction() {
@@ -4682,13 +4682,13 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatus {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#egress_policies AccessContextManagerServicePerimeters#egress_policies}
   */
-  readonly egressPolicies?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies[] | cdktf.IResolvable;
+  readonly egressPolicies?: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies[] | cdktn.IResolvable;
   /**
   * ingress_policies block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#ingress_policies AccessContextManagerServicePerimeters#ingress_policies}
   */
-  readonly ingressPolicies?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies[] | cdktf.IResolvable;
+  readonly ingressPolicies?: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies[] | cdktn.IResolvable;
   /**
   * vpc_accessible_services block
   *
@@ -4698,53 +4698,53 @@ export interface AccessContextManagerServicePerimetersServicePerimetersStatus {
 }
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.accessLevels),
-    resources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resources),
-    restricted_services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.restrictedServices),
-    egress_policies: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToTerraform, true)(struct!.egressPolicies),
-    ingress_policies: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToTerraform, true)(struct!.ingressPolicies),
+    access_levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.accessLevels),
+    resources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resources),
+    restricted_services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.restrictedServices),
+    egress_policies: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToTerraform, true)(struct!.egressPolicies),
+    ingress_policies: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToTerraform, true)(struct!.ingressPolicies),
     vpc_accessible_services: accessContextManagerServicePerimetersServicePerimetersStatusVpcAccessibleServicesToTerraform(struct!.vpcAccessibleServices),
   }
 }
 
 
 export function accessContextManagerServicePerimetersServicePerimetersStatusToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimetersStatusOutputReference | AccessContextManagerServicePerimetersServicePerimetersStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.accessLevels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.accessLevels),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     resources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resources),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     restricted_services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.restrictedServices),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.restrictedServices),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     egress_policies: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToHclTerraform, true)(struct!.egressPolicies),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesToHclTerraform, true)(struct!.egressPolicies),
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusEgressPoliciesList",
     },
     ingress_policies: {
-      value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToHclTerraform, true)(struct!.ingressPolicies),
+      value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesToHclTerraform, true)(struct!.ingressPolicies),
       isBlock: true,
       type: "set",
       storageClassType: "AccessContextManagerServicePerimetersServicePerimetersStatusIngressPoliciesList",
@@ -4761,14 +4761,14 @@ export function accessContextManagerServicePerimetersServicePerimetersStatusToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersStatusOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4826,7 +4826,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusOutputR
   // access_levels - computed: false, optional: true, required: false
   private _accessLevels?: string[]; 
   public get accessLevels() {
-    return cdktf.Fn.tolist(this.getListAttribute('access_levels'));
+    return cdktn.Fn.tolist(this.getListAttribute('access_levels'));
   }
   public set accessLevels(value: string[]) {
     this._accessLevels = value;
@@ -4842,7 +4842,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusOutputR
   // resources - computed: false, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -4858,7 +4858,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusOutputR
   // restricted_services - computed: false, optional: true, required: false
   private _restrictedServices?: string[]; 
   public get restrictedServices() {
-    return cdktf.Fn.tolist(this.getListAttribute('restricted_services'));
+    return cdktn.Fn.tolist(this.getListAttribute('restricted_services'));
   }
   public set restrictedServices(value: string[]) {
     this._restrictedServices = value;
@@ -4876,7 +4876,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusOutputR
   public get egressPolicies() {
     return this._egressPolicies;
   }
-  public putEgressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies[] | cdktf.IResolvable) {
+  public putEgressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersStatusEgressPolicies[] | cdktn.IResolvable) {
     this._egressPolicies.internalValue = value;
   }
   public resetEgressPolicies() {
@@ -4892,7 +4892,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersStatusOutputR
   public get ingressPolicies() {
     return this._ingressPolicies;
   }
-  public putIngressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies[] | cdktf.IResolvable) {
+  public putIngressPolicies(value: AccessContextManagerServicePerimetersServicePerimetersStatusIngressPolicies[] | cdktn.IResolvable) {
     this._ingressPolicies.internalValue = value;
   }
   public resetIngressPolicies() {
@@ -4975,7 +4975,7 @@ export interface AccessContextManagerServicePerimetersServicePerimeters {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#use_explicit_dry_run_spec AccessContextManagerServicePerimeters#use_explicit_dry_run_spec}
   */
-  readonly useExplicitDryRunSpec?: boolean | cdktf.IResolvable;
+  readonly useExplicitDryRunSpec?: boolean | cdktn.IResolvable;
   /**
   * spec block
   *
@@ -4990,55 +4990,55 @@ export interface AccessContextManagerServicePerimetersServicePerimeters {
   readonly status?: AccessContextManagerServicePerimetersServicePerimetersStatus;
 }
 
-export function accessContextManagerServicePerimetersServicePerimetersToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimeters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersToTerraform(struct?: AccessContextManagerServicePerimetersServicePerimeters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    perimeter_type: cdktf.stringToTerraform(struct!.perimeterType),
-    title: cdktf.stringToTerraform(struct!.title),
-    use_explicit_dry_run_spec: cdktf.booleanToTerraform(struct!.useExplicitDryRunSpec),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    perimeter_type: cdktn.stringToTerraform(struct!.perimeterType),
+    title: cdktn.stringToTerraform(struct!.title),
+    use_explicit_dry_run_spec: cdktn.booleanToTerraform(struct!.useExplicitDryRunSpec),
     spec: accessContextManagerServicePerimetersServicePerimetersSpecToTerraform(struct!.spec),
     status: accessContextManagerServicePerimetersServicePerimetersStatusToTerraform(struct!.status),
   }
 }
 
 
-export function accessContextManagerServicePerimetersServicePerimetersToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimeters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersServicePerimetersToHclTerraform(struct?: AccessContextManagerServicePerimetersServicePerimeters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     perimeter_type: {
-      value: cdktf.stringToHclTerraform(struct!.perimeterType),
+      value: cdktn.stringToHclTerraform(struct!.perimeterType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_explicit_dry_run_spec: {
-      value: cdktf.booleanToHclTerraform(struct!.useExplicitDryRunSpec),
+      value: cdktn.booleanToHclTerraform(struct!.useExplicitDryRunSpec),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -5061,9 +5061,9 @@ export function accessContextManagerServicePerimetersServicePerimetersToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersServicePerimetersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5071,11 +5071,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersServicePerimeters | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersServicePerimeters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5112,7 +5112,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimeters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersServicePerimeters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5124,7 +5124,7 @@ export class AccessContextManagerServicePerimetersServicePerimetersOutputReferen
       this._spec.internalValue = undefined;
       this._status.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5210,11 +5210,11 @@ export class AccessContextManagerServicePerimetersServicePerimetersOutputReferen
   }
 
   // use_explicit_dry_run_spec - computed: false, optional: true, required: false
-  private _useExplicitDryRunSpec?: boolean | cdktf.IResolvable; 
+  private _useExplicitDryRunSpec?: boolean | cdktn.IResolvable; 
   public get useExplicitDryRunSpec() {
     return this.getBooleanAttribute('use_explicit_dry_run_spec');
   }
-  public set useExplicitDryRunSpec(value: boolean | cdktf.IResolvable) {
+  public set useExplicitDryRunSpec(value: boolean | cdktn.IResolvable) {
     this._useExplicitDryRunSpec = value;
   }
   public resetUseExplicitDryRunSpec() {
@@ -5258,15 +5258,15 @@ export class AccessContextManagerServicePerimetersServicePerimetersOutputReferen
   }
 }
 
-export class AccessContextManagerServicePerimetersServicePerimetersList extends cdktf.ComplexList {
-  public internalValue? : AccessContextManagerServicePerimetersServicePerimeters[] | cdktf.IResolvable
+export class AccessContextManagerServicePerimetersServicePerimetersList extends cdktn.ComplexList {
+  public internalValue? : AccessContextManagerServicePerimetersServicePerimeters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5292,39 +5292,39 @@ export interface AccessContextManagerServicePerimetersTimeouts {
   readonly update?: string;
 }
 
-export function accessContextManagerServicePerimetersTimeoutsToTerraform(struct?: AccessContextManagerServicePerimetersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersTimeoutsToTerraform(struct?: AccessContextManagerServicePerimetersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function accessContextManagerServicePerimetersTimeoutsToHclTerraform(struct?: AccessContextManagerServicePerimetersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accessContextManagerServicePerimetersTimeoutsToHclTerraform(struct?: AccessContextManagerServicePerimetersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5335,19 +5335,19 @@ export function accessContextManagerServicePerimetersTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccessContextManagerServicePerimetersTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AccessContextManagerServicePerimetersTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccessContextManagerServicePerimetersTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AccessContextManagerServicePerimetersTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5368,7 +5368,7 @@ export class AccessContextManagerServicePerimetersTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccessContextManagerServicePerimetersTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccessContextManagerServicePerimetersTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5376,7 +5376,7 @@ export class AccessContextManagerServicePerimetersTimeoutsOutputReference extend
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5441,7 +5441,7 @@ export class AccessContextManagerServicePerimetersTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters google_access_context_manager_service_perimeters}
 */
-export class AccessContextManagerServicePerimeters extends cdktf.TerraformResource {
+export class AccessContextManagerServicePerimeters extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5452,14 +5452,14 @@ export class AccessContextManagerServicePerimeters extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessContextManagerServicePerimeters resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessContextManagerServicePerimeters resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessContextManagerServicePerimeters to import
   * @param importFromId The id of the existing AccessContextManagerServicePerimeters that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_service_perimeters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessContextManagerServicePerimeters to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_service_perimeters", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_service_perimeters", importId: importFromId, provider });
       }
 
   // ===========
@@ -5533,7 +5533,7 @@ export class AccessContextManagerServicePerimeters extends cdktf.TerraformResour
   public get servicePerimeters() {
     return this._servicePerimeters;
   }
-  public putServicePerimeters(value: AccessContextManagerServicePerimetersServicePerimeters[] | cdktf.IResolvable) {
+  public putServicePerimeters(value: AccessContextManagerServicePerimetersServicePerimeters[] | cdktn.IResolvable) {
     this._servicePerimeters.internalValue = value;
   }
   public resetServicePerimeters() {
@@ -5566,9 +5566,9 @@ export class AccessContextManagerServicePerimeters extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      service_perimeters: cdktf.listMapper(accessContextManagerServicePerimetersServicePerimetersToTerraform, true)(this._servicePerimeters.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      service_perimeters: cdktn.listMapper(accessContextManagerServicePerimetersServicePerimetersToTerraform, true)(this._servicePerimeters.internalValue),
       timeouts: accessContextManagerServicePerimetersTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -5576,19 +5576,19 @@ export class AccessContextManagerServicePerimeters extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_perimeters: {
-        value: cdktf.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersToHclTerraform, true)(this._servicePerimeters.internalValue),
+        value: cdktn.listMapperHcl(accessContextManagerServicePerimetersServicePerimetersToHclTerraform, true)(this._servicePerimeters.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AccessContextManagerServicePerimetersServicePerimetersList",

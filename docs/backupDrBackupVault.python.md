@@ -45,27 +45,27 @@ backupDrBackupVault.BackupDrBackupVault(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.backupMinimumEnforcedRetentionDuration">backup_minimum_enforced_retention_duration</a></code> | <code>str</code> | Required. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.backupVaultId">backup_vault_id</a></code> | <code>str</code> | Required. ID of the requesting object. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.location">location</a></code> | <code>str</code> | The GCP location for the backup vault. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.accessRestriction">access_restriction</a></code> | <code>str</code> | Access restriction for the backup vault. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.allowMissing">allow_missing</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.allowMissing">allow_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Optional. User annotations. See https://google.aip.dev/128#annotations Stores small amounts of arbitrary data. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.backupRetentionInheritance">backup_retention_inheritance</a></code> | <code>str</code> | How a backup's enforced retention end time is inherited. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.description">description</a></code> | <code>str</code> | Optional. The description of the BackupVault instance (2048 characters or less). |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.effectiveTime">effective_time</a></code> | <code>str</code> | Optional. Time after which the BackupVault resource is locked. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceUpdate">force_update</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceUpdate">force_update</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional. Resource labels to represent user provided metadata. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | timeouts block. |
@@ -92,43 +92,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `allow_missing`<sup>Optional</sup> <a name="allow_missing" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.allowMissing"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceDelete"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
@@ -245,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `force_update`<sup>Optional</sup> <a name="force_update" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceUpdate"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, allow update to extend the minimum enforced retention for backup vault.
 
@@ -271,7 +271,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignore_backup_plan_references`<sup>Optional</sup> <a name="ignore_backup_plan_references" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreBackupPlanReferences"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan.
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ignore_inactive_datasources`<sup>Optional</sup> <a name="ignore_inactive_datasources" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreInactiveDatasources"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
@@ -607,7 +607,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -815,7 +815,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BackupDrBackupVault resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a BackupDrBackupVault resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -898,7 +898,7 @@ backupDrBackupVault.BackupDrBackupVault.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a BackupDrBackupVault resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BackupDrBackupVault resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.generateConfigForImport.parameter.scope"></a>
 
@@ -928,7 +928,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BackupDrBackupVault to import is found.
 
@@ -939,63 +939,63 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupCount">backup_count</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.deletable">deletable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveAnnotations">effective_annotations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.deletable">deletable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveAnnotations">effective_annotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference">BackupDrBackupVaultTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.totalStoredBytes">total_stored_bytes</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.accessRestrictionInput">access_restriction_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.allowMissingInput">allow_missing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.allowMissingInput">allow_missing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.annotationsInput">annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupMinimumEnforcedRetentionDurationInput">backup_minimum_enforced_retention_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupRetentionInheritanceInput">backup_retention_inheritance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupVaultIdInput">backup_vault_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveTimeInput">effective_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceDeleteInput">force_delete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceUpdateInput">force_update_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceDeleteInput">force_delete_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceUpdateInput">force_update_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreBackupPlanReferencesInput">ignore_backup_plan_references_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreInactiveDatasourcesInput">ignore_inactive_datasources_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreBackupPlanReferencesInput">ignore_backup_plan_references_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreInactiveDatasourcesInput">ignore_inactive_datasources_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.accessRestriction">access_restriction</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.allowMissing">allow_missing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.allowMissing">allow_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupMinimumEnforcedRetentionDuration">backup_minimum_enforced_retention_duration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupRetentionInheritance">backup_retention_inheritance</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupVaultId">backup_vault_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveTime">effective_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceUpdate">force_update</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceUpdate">force_update</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -1020,7 +1020,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1070,7 +1070,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1080,7 +1080,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1090,7 +1090,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1110,7 +1110,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1120,7 +1120,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1130,7 +1130,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1140,7 +1140,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1170,7 +1170,7 @@ create_time: str
 deletable: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -1180,7 +1180,7 @@ deletable: IResolvable
 effective_annotations: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1190,7 +1190,7 @@ effective_annotations: StringMap
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1240,7 +1240,7 @@ state: str
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1300,7 +1300,7 @@ access_restriction_input: str
 allow_missing_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1370,7 +1370,7 @@ effective_time_input: str
 force_delete_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1380,7 +1380,7 @@ force_delete_input: bool | IResolvable
 force_update_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1400,7 +1400,7 @@ id_input: str
 ignore_backup_plan_references_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1410,7 +1410,7 @@ ignore_backup_plan_references_input: bool | IResolvable
 ignore_inactive_datasources_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1450,7 +1450,7 @@ project_input: str
 timeouts_input: IResolvable | BackupDrBackupVaultTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a>
 
 ---
 
@@ -1470,7 +1470,7 @@ access_restriction: str
 allow_missing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1540,7 +1540,7 @@ effective_time: str
 force_delete: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1550,7 +1550,7 @@ force_delete: bool | IResolvable
 force_update: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1570,7 +1570,7 @@ id: str
 ignore_backup_plan_references: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1580,7 +1580,7 @@ ignore_backup_plan_references: bool | IResolvable
 ignore_inactive_datasources: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1673,27 +1673,27 @@ backupDrBackupVault.BackupDrBackupVaultConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.backupMinimumEnforcedRetentionDuration">backup_minimum_enforced_retention_duration</a></code> | <code>str</code> | Required. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.backupVaultId">backup_vault_id</a></code> | <code>str</code> | Required. ID of the requesting object. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.location">location</a></code> | <code>str</code> | The GCP location for the backup vault. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.accessRestriction">access_restriction</a></code> | <code>str</code> | Access restriction for the backup vault. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.allowMissing">allow_missing</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.allowMissing">allow_missing</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Optional. User annotations. See https://google.aip.dev/128#annotations Stores small amounts of arbitrary data. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.backupRetentionInheritance">backup_retention_inheritance</a></code> | <code>str</code> | How a backup's enforced retention end time is inherited. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.description">description</a></code> | <code>str</code> | Optional. The description of the BackupVault instance (2048 characters or less). |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.effectiveTime">effective_time</a></code> | <code>str</code> | Optional. Time after which the BackupVault resource is locked. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceUpdate">force_update</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceUpdate">force_update</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreBackupPlanReferences">ignore_backup_plan_references</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreInactiveDatasources">ignore_inactive_datasources</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional. Resource labels to represent user provided metadata. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | timeouts block. |
@@ -1706,7 +1706,7 @@ backupDrBackupVault.BackupDrBackupVaultConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1716,7 +1716,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1726,7 +1726,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1736,7 +1736,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1746,7 +1746,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1756,7 +1756,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1766,7 +1766,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 allow_missing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
 
@@ -1911,7 +1911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 force_delete: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
@@ -1927,7 +1927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 force_update: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, allow update to extend the minimum enforced retention for backup vault.
 
@@ -1961,7 +1961,7 @@ If you experience problems setting this value it might not be settable. Please t
 ignore_backup_plan_references: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan.
 
@@ -1975,7 +1975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ignore_inactive_datasources: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
@@ -2103,14 +2103,14 @@ backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2305,7 +2305,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2350,7 +2350,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2444,7 +2444,7 @@ update: str
 internal_value: IResolvable | BackupDrBackupVaultTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a>
 
 ---
 

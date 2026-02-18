@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleGkeHubScopeIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleGkeHubScopeIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_scope_iam_policy#id DataGoogleGkeHubScopeIamPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface DataGoogleGkeHubScopeIamPolicyConfig extends cdktf.TerraformMet
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy}
 */
-export class DataGoogleGkeHubScopeIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleGkeHubScopeIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleGkeHubScopeIamPolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleGkeHubScopeIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleGkeHubScopeIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleGkeHubScopeIamPolicy to import
   * @param importFromId The id of the existing DataGoogleGkeHubScopeIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_scope_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleGkeHubScopeIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_hub_scope_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_hub_scope_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -150,28 +150,28 @@ export class DataGoogleGkeHubScopeIamPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
-      scope_id: cdktf.stringToTerraform(this._scopeId),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
+      scope_id: cdktn.stringToTerraform(this._scopeId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope_id: {
-        value: cdktf.stringToHclTerraform(this._scopeId),
+        value: cdktn.stringToHclTerraform(this._scopeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

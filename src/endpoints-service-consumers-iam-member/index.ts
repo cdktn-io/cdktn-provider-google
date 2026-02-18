@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EndpointsServiceConsumersIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface EndpointsServiceConsumersIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/endpoints_service_consumers_iam_member#consumer_project EndpointsServiceConsumersIamMember#consumer_project}
   */
@@ -58,38 +58,38 @@ export interface EndpointsServiceConsumersIamMemberCondition {
 }
 
 export function endpointsServiceConsumersIamMemberConditionToTerraform(struct?: EndpointsServiceConsumersIamMemberConditionOutputReference | EndpointsServiceConsumersIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function endpointsServiceConsumersIamMemberConditionToHclTerraform(struct?: EndpointsServiceConsumersIamMemberConditionOutputReference | EndpointsServiceConsumersIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,14 +100,14 @@ export function endpointsServiceConsumersIamMemberConditionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EndpointsServiceConsumersIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class EndpointsServiceConsumersIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -190,7 +190,7 @@ export class EndpointsServiceConsumersIamMemberConditionOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member}
 */
-export class EndpointsServiceConsumersIamMember extends cdktf.TerraformResource {
+export class EndpointsServiceConsumersIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -201,14 +201,14 @@ export class EndpointsServiceConsumersIamMember extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EndpointsServiceConsumersIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EndpointsServiceConsumersIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EndpointsServiceConsumersIamMember to import
   * @param importFromId The id of the existing EndpointsServiceConsumersIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/endpoints_service_consumers_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EndpointsServiceConsumersIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_endpoints_service_consumers_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_endpoints_service_consumers_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -345,11 +345,11 @@ export class EndpointsServiceConsumersIamMember extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      consumer_project: cdktf.stringToTerraform(this._consumerProject),
-      id: cdktf.stringToTerraform(this._id),
-      member: cdktf.stringToTerraform(this._member),
-      role: cdktf.stringToTerraform(this._role),
-      service_name: cdktf.stringToTerraform(this._serviceName),
+      consumer_project: cdktn.stringToTerraform(this._consumerProject),
+      id: cdktn.stringToTerraform(this._id),
+      member: cdktn.stringToTerraform(this._member),
+      role: cdktn.stringToTerraform(this._role),
+      service_name: cdktn.stringToTerraform(this._serviceName),
       condition: endpointsServiceConsumersIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -357,31 +357,31 @@ export class EndpointsServiceConsumersIamMember extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       consumer_project: {
-        value: cdktf.stringToHclTerraform(this._consumerProject),
+        value: cdktn.stringToHclTerraform(this._consumerProject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_name: {
-        value: cdktf.stringToHclTerraform(this._serviceName),
+        value: cdktn.stringToHclTerraform(this._serviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

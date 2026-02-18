@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxPlaybookConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxPlaybookConfig extends cdktn.TerraformMetaArguments {
   /**
   * The human-readable name of the playbook, unique within an agent.
   *
@@ -86,32 +86,32 @@ export interface DialogflowCxPlaybookInstructionSteps {
   readonly text?: string;
 }
 
-export function dialogflowCxPlaybookInstructionStepsToTerraform(struct?: DialogflowCxPlaybookInstructionSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxPlaybookInstructionStepsToTerraform(struct?: DialogflowCxPlaybookInstructionSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    steps: cdktf.stringToTerraform(struct!.steps),
-    text: cdktf.stringToTerraform(struct!.text),
+    steps: cdktn.stringToTerraform(struct!.steps),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
-export function dialogflowCxPlaybookInstructionStepsToHclTerraform(struct?: DialogflowCxPlaybookInstructionSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxPlaybookInstructionStepsToHclTerraform(struct?: DialogflowCxPlaybookInstructionSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     steps: {
-      value: cdktf.stringToHclTerraform(struct!.steps),
+      value: cdktn.stringToHclTerraform(struct!.steps),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,9 +122,9 @@ export function dialogflowCxPlaybookInstructionStepsToHclTerraform(struct?: Dial
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxPlaybookInstructionStepsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxPlaybookInstructionStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -132,11 +132,11 @@ export class DialogflowCxPlaybookInstructionStepsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxPlaybookInstructionSteps | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxPlaybookInstructionSteps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,14 +153,14 @@ export class DialogflowCxPlaybookInstructionStepsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxPlaybookInstructionSteps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxPlaybookInstructionSteps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._steps = undefined;
       this._text = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -205,15 +205,15 @@ export class DialogflowCxPlaybookInstructionStepsOutputReference extends cdktf.C
   }
 }
 
-export class DialogflowCxPlaybookInstructionStepsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxPlaybookInstructionSteps[] | cdktf.IResolvable
+export class DialogflowCxPlaybookInstructionStepsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxPlaybookInstructionSteps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,35 +236,35 @@ export interface DialogflowCxPlaybookInstruction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook#steps DialogflowCxPlaybook#steps}
   */
-  readonly steps?: DialogflowCxPlaybookInstructionSteps[] | cdktf.IResolvable;
+  readonly steps?: DialogflowCxPlaybookInstructionSteps[] | cdktn.IResolvable;
 }
 
 export function dialogflowCxPlaybookInstructionToTerraform(struct?: DialogflowCxPlaybookInstructionOutputReference | DialogflowCxPlaybookInstruction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    guidelines: cdktf.stringToTerraform(struct!.guidelines),
-    steps: cdktf.listMapper(dialogflowCxPlaybookInstructionStepsToTerraform, true)(struct!.steps),
+    guidelines: cdktn.stringToTerraform(struct!.guidelines),
+    steps: cdktn.listMapper(dialogflowCxPlaybookInstructionStepsToTerraform, true)(struct!.steps),
   }
 }
 
 
 export function dialogflowCxPlaybookInstructionToHclTerraform(struct?: DialogflowCxPlaybookInstructionOutputReference | DialogflowCxPlaybookInstruction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     guidelines: {
-      value: cdktf.stringToHclTerraform(struct!.guidelines),
+      value: cdktn.stringToHclTerraform(struct!.guidelines),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     steps: {
-      value: cdktf.listMapperHcl(dialogflowCxPlaybookInstructionStepsToHclTerraform, true)(struct!.steps),
+      value: cdktn.listMapperHcl(dialogflowCxPlaybookInstructionStepsToHclTerraform, true)(struct!.steps),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxPlaybookInstructionStepsList",
@@ -275,14 +275,14 @@ export function dialogflowCxPlaybookInstructionToHclTerraform(struct?: Dialogflo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxPlaybookInstructionOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxPlaybookInstructionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -334,7 +334,7 @@ export class DialogflowCxPlaybookInstructionOutputReference extends cdktf.Comple
   public get steps() {
     return this._steps;
   }
-  public putSteps(value: DialogflowCxPlaybookInstructionSteps[] | cdktf.IResolvable) {
+  public putSteps(value: DialogflowCxPlaybookInstructionSteps[] | cdktn.IResolvable) {
     this._steps.internalValue = value;
   }
   public resetSteps() {
@@ -361,31 +361,31 @@ export interface DialogflowCxPlaybookLlmModelSettings {
 }
 
 export function dialogflowCxPlaybookLlmModelSettingsToTerraform(struct?: DialogflowCxPlaybookLlmModelSettingsOutputReference | DialogflowCxPlaybookLlmModelSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    model: cdktf.stringToTerraform(struct!.model),
-    prompt_text: cdktf.stringToTerraform(struct!.promptText),
+    model: cdktn.stringToTerraform(struct!.model),
+    prompt_text: cdktn.stringToTerraform(struct!.promptText),
   }
 }
 
 
 export function dialogflowCxPlaybookLlmModelSettingsToHclTerraform(struct?: DialogflowCxPlaybookLlmModelSettingsOutputReference | DialogflowCxPlaybookLlmModelSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     model: {
-      value: cdktf.stringToHclTerraform(struct!.model),
+      value: cdktn.stringToHclTerraform(struct!.model),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prompt_text: {
-      value: cdktf.stringToHclTerraform(struct!.promptText),
+      value: cdktn.stringToHclTerraform(struct!.promptText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -396,14 +396,14 @@ export function dialogflowCxPlaybookLlmModelSettingsToHclTerraform(struct?: Dial
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxPlaybookLlmModelSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxPlaybookLlmModelSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -481,39 +481,39 @@ export interface DialogflowCxPlaybookTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxPlaybookTimeoutsToTerraform(struct?: DialogflowCxPlaybookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxPlaybookTimeoutsToTerraform(struct?: DialogflowCxPlaybookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxPlaybookTimeoutsToHclTerraform(struct?: DialogflowCxPlaybookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxPlaybookTimeoutsToHclTerraform(struct?: DialogflowCxPlaybookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -524,19 +524,19 @@ export function dialogflowCxPlaybookTimeoutsToHclTerraform(struct?: DialogflowCx
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxPlaybookTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxPlaybookTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxPlaybookTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxPlaybookTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -557,7 +557,7 @@ export class DialogflowCxPlaybookTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxPlaybookTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxPlaybookTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -565,7 +565,7 @@ export class DialogflowCxPlaybookTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -630,7 +630,7 @@ export class DialogflowCxPlaybookTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook google_dialogflow_cx_playbook}
 */
-export class DialogflowCxPlaybook extends cdktf.TerraformResource {
+export class DialogflowCxPlaybook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -641,14 +641,14 @@ export class DialogflowCxPlaybook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxPlaybook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxPlaybook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxPlaybook to import
   * @param importFromId The id of the existing DialogflowCxPlaybook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_playbook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxPlaybook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_playbook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_playbook", importId: importFromId, provider });
       }
 
   // ===========
@@ -867,12 +867,12 @@ export class DialogflowCxPlaybook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      goal: cdktf.stringToTerraform(this._goal),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      playbook_type: cdktf.stringToTerraform(this._playbookType),
-      referenced_tools: cdktf.listMapper(cdktf.stringToTerraform, false)(this._referencedTools),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      goal: cdktn.stringToTerraform(this._goal),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      playbook_type: cdktn.stringToTerraform(this._playbookType),
+      referenced_tools: cdktn.listMapper(cdktn.stringToTerraform, false)(this._referencedTools),
       instruction: dialogflowCxPlaybookInstructionToTerraform(this._instruction.internalValue),
       llm_model_settings: dialogflowCxPlaybookLlmModelSettingsToTerraform(this._llmModelSettings.internalValue),
       timeouts: dialogflowCxPlaybookTimeoutsToTerraform(this._timeouts.internalValue),
@@ -882,37 +882,37 @@ export class DialogflowCxPlaybook extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       goal: {
-        value: cdktf.stringToHclTerraform(this._goal),
+        value: cdktn.stringToHclTerraform(this._goal),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       playbook_type: {
-        value: cdktf.stringToHclTerraform(this._playbookType),
+        value: cdktn.stringToHclTerraform(this._playbookType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       referenced_tools: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._referencedTools),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._referencedTools),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

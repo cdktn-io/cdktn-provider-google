@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppEngineServiceNetworkSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface AppEngineServiceNetworkSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_service_network_settings#id AppEngineServiceNetworkSettings#id}
   *
@@ -52,24 +52,24 @@ export interface AppEngineServiceNetworkSettingsNetworkSettings {
 }
 
 export function appEngineServiceNetworkSettingsNetworkSettingsToTerraform(struct?: AppEngineServiceNetworkSettingsNetworkSettingsOutputReference | AppEngineServiceNetworkSettingsNetworkSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ingress_traffic_allowed: cdktf.stringToTerraform(struct!.ingressTrafficAllowed),
+    ingress_traffic_allowed: cdktn.stringToTerraform(struct!.ingressTrafficAllowed),
   }
 }
 
 
 export function appEngineServiceNetworkSettingsNetworkSettingsToHclTerraform(struct?: AppEngineServiceNetworkSettingsNetworkSettingsOutputReference | AppEngineServiceNetworkSettingsNetworkSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ingress_traffic_allowed: {
-      value: cdktf.stringToHclTerraform(struct!.ingressTrafficAllowed),
+      value: cdktn.stringToHclTerraform(struct!.ingressTrafficAllowed),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -80,14 +80,14 @@ export function appEngineServiceNetworkSettingsNetworkSettingsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineServiceNetworkSettingsNetworkSettingsOutputReference extends cdktf.ComplexObject {
+export class AppEngineServiceNetworkSettingsNetworkSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -143,39 +143,39 @@ export interface AppEngineServiceNetworkSettingsTimeouts {
   readonly update?: string;
 }
 
-export function appEngineServiceNetworkSettingsTimeoutsToTerraform(struct?: AppEngineServiceNetworkSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineServiceNetworkSettingsTimeoutsToTerraform(struct?: AppEngineServiceNetworkSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appEngineServiceNetworkSettingsTimeoutsToHclTerraform(struct?: AppEngineServiceNetworkSettingsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appEngineServiceNetworkSettingsTimeoutsToHclTerraform(struct?: AppEngineServiceNetworkSettingsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -186,19 +186,19 @@ export function appEngineServiceNetworkSettingsTimeoutsToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppEngineServiceNetworkSettingsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppEngineServiceNetworkSettingsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppEngineServiceNetworkSettingsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppEngineServiceNetworkSettingsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -219,7 +219,7 @@ export class AppEngineServiceNetworkSettingsTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppEngineServiceNetworkSettingsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppEngineServiceNetworkSettingsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -227,7 +227,7 @@ export class AppEngineServiceNetworkSettingsTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -292,7 +292,7 @@ export class AppEngineServiceNetworkSettingsTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_service_network_settings google_app_engine_service_network_settings}
 */
-export class AppEngineServiceNetworkSettings extends cdktf.TerraformResource {
+export class AppEngineServiceNetworkSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -303,14 +303,14 @@ export class AppEngineServiceNetworkSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppEngineServiceNetworkSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppEngineServiceNetworkSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppEngineServiceNetworkSettings to import
   * @param importFromId The id of the existing AppEngineServiceNetworkSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_service_network_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppEngineServiceNetworkSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_service_network_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_app_engine_service_network_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -431,9 +431,9 @@ export class AppEngineServiceNetworkSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
-      service: cdktf.stringToTerraform(this._service),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
+      service: cdktn.stringToTerraform(this._service),
       network_settings: appEngineServiceNetworkSettingsNetworkSettingsToTerraform(this._networkSettings.internalValue),
       timeouts: appEngineServiceNetworkSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -442,19 +442,19 @@ export class AppEngineServiceNetworkSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service: {
-        value: cdktf.stringToHclTerraform(this._service),
+        value: cdktn.stringToHclTerraform(this._service),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

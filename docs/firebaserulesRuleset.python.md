@@ -32,13 +32,13 @@ firebaserulesRuleset.FirebaserulesRuleset(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | source block. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.project">project</a></code> | <code>str</code> | The project for the resource. |
@@ -66,43 +66,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -424,7 +424,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -518,7 +518,7 @@ def put_source(
 
 ###### `files`<sup>Required</sup> <a name="files" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.putSource.parameter.files"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
 
 files block.
 
@@ -586,7 +586,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a FirebaserulesRuleset resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a FirebaserulesRuleset resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -669,7 +669,7 @@ firebaserulesRuleset.FirebaserulesRuleset.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a FirebaserulesRuleset resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a FirebaserulesRuleset resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.generateConfigForImport.parameter.scope"></a>
 
@@ -699,7 +699,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the FirebaserulesRuleset to import is found.
 
@@ -710,19 +710,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList">FirebaserulesRulesetMetadataList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -731,7 +731,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.sourceInput">source_input</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.property.project">project</a></code> | <code>str</code> | *No description.* |
 
@@ -755,7 +755,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -805,7 +805,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -815,7 +815,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -825,7 +825,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -845,7 +845,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -855,7 +855,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -865,7 +865,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -875,7 +875,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -965,7 +965,7 @@ source_input: FirebaserulesRulesetSource
 timeouts_input: IResolvable | FirebaserulesRulesetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a>
 
 ---
 
@@ -1035,13 +1035,13 @@ firebaserulesRuleset.FirebaserulesRulesetConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | source block. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.project">project</a></code> | <code>str</code> | The project for the resource. |
@@ -1055,7 +1055,7 @@ firebaserulesRuleset.FirebaserulesRulesetConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1065,7 +1065,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1075,7 +1075,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1085,7 +1085,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1095,7 +1095,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1105,7 +1105,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1115,7 +1115,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1204,7 +1204,7 @@ firebaserulesRuleset.FirebaserulesRulesetSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource.property.files">files</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]</code> | files block. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource.property.files">files</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]</code> | files block. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource.property.language">language</a></code> | <code>str</code> | `Language` of the `Source` bundle. If unspecified, the language will default to `FIREBASE_RULES`. Possible values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS. |
 
 ---
@@ -1215,7 +1215,7 @@ firebaserulesRuleset.FirebaserulesRulesetSource(
 files: IResolvable | typing.List[FirebaserulesRulesetSourceFiles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
 
 files block.
 
@@ -1367,7 +1367,7 @@ firebaserulesRuleset.FirebaserulesRulesetMetadataList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1375,7 +1375,7 @@ firebaserulesRuleset.FirebaserulesRulesetMetadataList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1445,7 +1445,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1527,7 +1527,7 @@ firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1536,7 +1536,7 @@ firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1744,7 +1744,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1831,7 +1831,7 @@ firebaserulesRuleset.FirebaserulesRulesetSourceFilesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1839,7 +1839,7 @@ firebaserulesRuleset.FirebaserulesRulesetSourceFilesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1909,7 +1909,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1946,7 +1946,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]</code> | *No description.* |
 
 ---
 
@@ -1980,7 +1980,7 @@ fqn: str
 internal_value: IResolvable | typing.List[FirebaserulesRulesetSourceFiles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
 
 ---
 
@@ -2002,7 +2002,7 @@ firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2011,7 +2011,7 @@ firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2220,7 +2220,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2253,7 +2253,7 @@ def reset_fingerprint() -> None
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.property.fingerprint">fingerprint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a></code> | *No description.* |
 
 ---
 
@@ -2347,7 +2347,7 @@ name: str
 internal_value: IResolvable | FirebaserulesRulesetSourceFiles
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>
 
 ---
 
@@ -2367,14 +2367,14 @@ firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2568,7 +2568,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2592,7 +2592,7 @@ def put_files(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.putFiles.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
 
 ---
 
@@ -2610,7 +2610,7 @@ def reset_language() -> None
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.files">files</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList">FirebaserulesRulesetSourceFilesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.filesInput">files_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.filesInput">files_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.languageInput">language_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.language">language</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | *No description.* |
@@ -2657,7 +2657,7 @@ files: FirebaserulesRulesetSourceFilesList
 files_input: IResolvable | typing.List[FirebaserulesRulesetSourceFiles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles">FirebaserulesRulesetSourceFiles</a>]
 
 ---
 
@@ -2707,14 +2707,14 @@ firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2908,7 +2908,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2945,7 +2945,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3019,7 +3019,7 @@ delete: str
 internal_value: IResolvable | FirebaserulesRulesetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a>
 
 ---
 

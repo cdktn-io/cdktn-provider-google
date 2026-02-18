@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeRegionSecurityPolicyRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeRegionSecurityPolicyRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Action to perform when the rule is matched. The following are the valid actions:
   * 
@@ -46,7 +46,7 @@ export interface ComputeRegionSecurityPolicyRuleConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#preview ComputeRegionSecurityPolicyRule#preview}
   */
-  readonly preview?: boolean | cdktf.IResolvable;
+  readonly preview?: boolean | cdktn.IResolvable;
   /**
   * An integer indicating the priority of a rule in the list.
   * The priority must be a positive value between 0 and 2147483647.
@@ -112,24 +112,24 @@ export interface ComputeRegionSecurityPolicyRuleMatchConfig {
 }
 
 export function computeRegionSecurityPolicyRuleMatchConfigToTerraform(struct?: ComputeRegionSecurityPolicyRuleMatchConfigOutputReference | ComputeRegionSecurityPolicyRuleMatchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    src_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcIpRanges),
+    src_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.srcIpRanges),
   }
 }
 
 
 export function computeRegionSecurityPolicyRuleMatchConfigToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleMatchConfigOutputReference | ComputeRegionSecurityPolicyRuleMatchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     src_ip_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.srcIpRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.srcIpRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -140,14 +140,14 @@ export function computeRegionSecurityPolicyRuleMatchConfigToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleMatchConfigOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleMatchConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -198,24 +198,24 @@ export interface ComputeRegionSecurityPolicyRuleMatchExpr {
 }
 
 export function computeRegionSecurityPolicyRuleMatchExprToTerraform(struct?: ComputeRegionSecurityPolicyRuleMatchExprOutputReference | ComputeRegionSecurityPolicyRuleMatchExpr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expression: cdktf.stringToTerraform(struct!.expression),
+    expression: cdktn.stringToTerraform(struct!.expression),
   }
 }
 
 
 export function computeRegionSecurityPolicyRuleMatchExprToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleMatchExprOutputReference | ComputeRegionSecurityPolicyRuleMatchExpr): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -226,14 +226,14 @@ export function computeRegionSecurityPolicyRuleMatchExprToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleMatchExprOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleMatchExprOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -294,12 +294,12 @@ export interface ComputeRegionSecurityPolicyRuleMatch {
 }
 
 export function computeRegionSecurityPolicyRuleMatchToTerraform(struct?: ComputeRegionSecurityPolicyRuleMatchOutputReference | ComputeRegionSecurityPolicyRuleMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    versioned_expr: cdktf.stringToTerraform(struct!.versionedExpr),
+    versioned_expr: cdktn.stringToTerraform(struct!.versionedExpr),
     config: computeRegionSecurityPolicyRuleMatchConfigToTerraform(struct!.config),
     expr: computeRegionSecurityPolicyRuleMatchExprToTerraform(struct!.expr),
   }
@@ -307,13 +307,13 @@ export function computeRegionSecurityPolicyRuleMatchToTerraform(struct?: Compute
 
 
 export function computeRegionSecurityPolicyRuleMatchToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleMatchOutputReference | ComputeRegionSecurityPolicyRuleMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     versioned_expr: {
-      value: cdktf.stringToHclTerraform(struct!.versionedExpr),
+      value: cdktn.stringToHclTerraform(struct!.versionedExpr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -336,14 +336,14 @@ export function computeRegionSecurityPolicyRuleMatchToHclTerraform(struct?: Comp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleMatchOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -443,32 +443,32 @@ export interface ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields {
   readonly values?: string[];
 }
 
-export function computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToTerraform(struct?: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToTerraform(struct?: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -479,9 +479,9 @@ export function computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -489,11 +489,11 @@ export class ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -510,14 +510,14 @@ export class ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -562,15 +562,15 @@ export class ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputR
   }
 }
 
-export class ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields[] | cdktf.IResolvable
+export class ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -629,77 +629,77 @@ export interface ComputeRegionSecurityPolicyRuleNetworkMatch {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#user_defined_fields ComputeRegionSecurityPolicyRule#user_defined_fields}
   */
-  readonly userDefinedFields?: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields[] | cdktf.IResolvable;
+  readonly userDefinedFields?: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields[] | cdktn.IResolvable;
 }
 
 export function computeRegionSecurityPolicyRuleNetworkMatchToTerraform(struct?: ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference | ComputeRegionSecurityPolicyRuleNetworkMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dest_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destIpRanges),
-    dest_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destPorts),
-    ip_protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipProtocols),
-    src_asns: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.srcAsns),
-    src_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcIpRanges),
-    src_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcPorts),
-    src_region_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcRegionCodes),
-    user_defined_fields: cdktf.listMapper(computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToTerraform, true)(struct!.userDefinedFields),
+    dest_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destIpRanges),
+    dest_ports: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destPorts),
+    ip_protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipProtocols),
+    src_asns: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.srcAsns),
+    src_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.srcIpRanges),
+    src_ports: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.srcPorts),
+    src_region_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.srcRegionCodes),
+    user_defined_fields: cdktn.listMapper(computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToTerraform, true)(struct!.userDefinedFields),
   }
 }
 
 
 export function computeRegionSecurityPolicyRuleNetworkMatchToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference | ComputeRegionSecurityPolicyRuleNetworkMatch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dest_ip_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destIpRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destIpRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     dest_ports: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destPorts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destPorts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ip_protocols: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipProtocols),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipProtocols),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     src_asns: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.srcAsns),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.srcAsns),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     src_ip_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.srcIpRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.srcIpRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     src_ports: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.srcPorts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.srcPorts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     src_region_codes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.srcRegionCodes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.srcRegionCodes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     user_defined_fields: {
-      value: cdktf.listMapperHcl(computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToHclTerraform, true)(struct!.userDefinedFields),
+      value: cdktn.listMapperHcl(computeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsToHclTerraform, true)(struct!.userDefinedFields),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsList",
@@ -710,14 +710,14 @@ export function computeRegionSecurityPolicyRuleNetworkMatchToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -901,7 +901,7 @@ export class ComputeRegionSecurityPolicyRuleNetworkMatchOutputReference extends 
   public get userDefinedFields() {
     return this._userDefinedFields;
   }
-  public putUserDefinedFields(value: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields[] | cdktf.IResolvable) {
+  public putUserDefinedFields(value: ComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFields[] | cdktn.IResolvable) {
     this._userDefinedFields.internalValue = value;
   }
   public resetUserDefinedFields() {
@@ -934,32 +934,32 @@ export interface ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionR
   readonly value?: string;
 }
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    value: cdktf.stringToTerraform(struct!.value),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -970,9 +970,9 @@ export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -980,11 +980,11 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1001,14 +1001,14 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._operator = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1050,15 +1050,15 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   }
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktf.IResolvable
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1091,32 +1091,32 @@ export interface ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionR
   readonly value?: string;
 }
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    value: cdktf.stringToTerraform(struct!.value),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1127,9 +1127,9 @@ export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1137,11 +1137,11 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1158,14 +1158,14 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._operator = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1207,15 +1207,15 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   }
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktf.IResolvable
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1248,32 +1248,32 @@ export interface ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionR
   readonly value?: string;
 }
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    value: cdktf.stringToTerraform(struct!.value),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1284,9 +1284,9 @@ export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1294,11 +1294,11 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1315,14 +1315,14 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._operator = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1364,15 +1364,15 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   }
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktf.IResolvable
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1405,32 +1405,32 @@ export interface ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionR
   readonly value?: string;
 }
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    value: cdktf.stringToTerraform(struct!.value),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1441,9 +1441,9 @@ export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1451,11 +1451,11 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1472,14 +1472,14 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._operator = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1521,15 +1521,15 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionReque
   }
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktf.IResolvable
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1559,81 +1559,81 @@ export interface ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#request_cookie ComputeRegionSecurityPolicyRule#request_cookie}
   */
-  readonly requestCookie?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktf.IResolvable;
+  readonly requestCookie?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktn.IResolvable;
   /**
   * request_header block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#request_header ComputeRegionSecurityPolicyRule#request_header}
   */
-  readonly requestHeader?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktf.IResolvable;
+  readonly requestHeader?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktn.IResolvable;
   /**
   * request_query_param block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#request_query_param ComputeRegionSecurityPolicyRule#request_query_param}
   */
-  readonly requestQueryParam?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktf.IResolvable;
+  readonly requestQueryParam?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktn.IResolvable;
   /**
   * request_uri block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#request_uri ComputeRegionSecurityPolicyRule#request_uri}
   */
-  readonly requestUri?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktf.IResolvable;
+  readonly requestUri?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktn.IResolvable;
 }
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_rule_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetRuleIds),
-    target_rule_set: cdktf.stringToTerraform(struct!.targetRuleSet),
-    request_cookie: cdktf.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToTerraform, true)(struct!.requestCookie),
-    request_header: cdktf.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToTerraform, true)(struct!.requestHeader),
-    request_query_param: cdktf.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToTerraform, true)(struct!.requestQueryParam),
-    request_uri: cdktf.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToTerraform, true)(struct!.requestUri),
+    target_rule_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetRuleIds),
+    target_rule_set: cdktn.stringToTerraform(struct!.targetRuleSet),
+    request_cookie: cdktn.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToTerraform, true)(struct!.requestCookie),
+    request_header: cdktn.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToTerraform, true)(struct!.requestHeader),
+    request_query_param: cdktn.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToTerraform, true)(struct!.requestQueryParam),
+    request_uri: cdktn.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToTerraform, true)(struct!.requestUri),
   }
 }
 
 
-export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target_rule_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetRuleIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetRuleIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target_rule_set: {
-      value: cdktf.stringToHclTerraform(struct!.targetRuleSet),
+      value: cdktn.stringToHclTerraform(struct!.targetRuleSet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request_cookie: {
-      value: cdktf.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToHclTerraform, true)(struct!.requestCookie),
+      value: cdktn.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToHclTerraform, true)(struct!.requestCookie),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList",
     },
     request_header: {
-      value: cdktf.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToHclTerraform, true)(struct!.requestHeader),
+      value: cdktn.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToHclTerraform, true)(struct!.requestHeader),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList",
     },
     request_query_param: {
-      value: cdktf.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToHclTerraform, true)(struct!.requestQueryParam),
+      value: cdktn.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToHclTerraform, true)(struct!.requestQueryParam),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList",
     },
     request_uri: {
-      value: cdktf.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToHclTerraform, true)(struct!.requestUri),
+      value: cdktn.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToHclTerraform, true)(struct!.requestUri),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList",
@@ -1644,9 +1644,9 @@ export function computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1654,11 +1654,11 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1691,7 +1691,7 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1702,7 +1702,7 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
       this._requestQueryParam.internalValue = undefined;
       this._requestUri.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1752,7 +1752,7 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
   public get requestCookie() {
     return this._requestCookie;
   }
-  public putRequestCookie(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktf.IResolvable) {
+  public putRequestCookie(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktn.IResolvable) {
     this._requestCookie.internalValue = value;
   }
   public resetRequestCookie() {
@@ -1768,7 +1768,7 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
   public get requestHeader() {
     return this._requestHeader;
   }
-  public putRequestHeader(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktf.IResolvable) {
+  public putRequestHeader(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktn.IResolvable) {
     this._requestHeader.internalValue = value;
   }
   public resetRequestHeader() {
@@ -1784,7 +1784,7 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
   public get requestQueryParam() {
     return this._requestQueryParam;
   }
-  public putRequestQueryParam(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktf.IResolvable) {
+  public putRequestQueryParam(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktn.IResolvable) {
     this._requestQueryParam.internalValue = value;
   }
   public resetRequestQueryParam() {
@@ -1800,7 +1800,7 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
   public get requestUri() {
     return this._requestUri;
   }
-  public putRequestUri(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktf.IResolvable) {
+  public putRequestUri(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktn.IResolvable) {
     this._requestUri.internalValue = value;
   }
   public resetRequestUri() {
@@ -1812,15 +1812,15 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionOutpu
   }
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktf.IResolvable
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1837,28 +1837,28 @@ export interface ComputeRegionSecurityPolicyRulePreconfiguredWafConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#exclusion ComputeRegionSecurityPolicyRule#exclusion}
   */
-  readonly exclusion?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktf.IResolvable;
+  readonly exclusion?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktn.IResolvable;
 }
 
 export function computeRegionSecurityPolicyRulePreconfiguredWafConfigToTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference | ComputeRegionSecurityPolicyRulePreconfiguredWafConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclusion: cdktf.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform, true)(struct!.exclusion),
+    exclusion: cdktn.listMapper(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform, true)(struct!.exclusion),
   }
 }
 
 
 export function computeRegionSecurityPolicyRulePreconfiguredWafConfigToHclTerraform(struct?: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference | ComputeRegionSecurityPolicyRulePreconfiguredWafConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclusion: {
-      value: cdktf.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToHclTerraform, true)(struct!.exclusion),
+      value: cdktn.listMapperHcl(computeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionToHclTerraform, true)(struct!.exclusion),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionList",
@@ -1869,14 +1869,14 @@ export function computeRegionSecurityPolicyRulePreconfiguredWafConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1906,7 +1906,7 @@ export class ComputeRegionSecurityPolicyRulePreconfiguredWafConfigOutputReferenc
   public get exclusion() {
     return this._exclusion;
   }
-  public putExclusion(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktf.IResolvable) {
+  public putExclusion(value: ComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktn.IResolvable) {
     this._exclusion.internalValue = value;
   }
   public resetExclusion() {
@@ -1933,31 +1933,31 @@ export interface ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThreshold {
 }
 
 export function computeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdToTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference | ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThreshold): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval_sec: cdktf.numberToTerraform(struct!.intervalSec),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval_sec: cdktn.numberToTerraform(struct!.intervalSec),
   }
 }
 
 
 export function computeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference | ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThreshold): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_sec: {
-      value: cdktf.numberToHclTerraform(struct!.intervalSec),
+      value: cdktn.numberToHclTerraform(struct!.intervalSec),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1968,14 +1968,14 @@ export function computeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2066,32 +2066,32 @@ export interface ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConf
   readonly enforceOnKeyType?: string;
 }
 
-export function computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enforce_on_key_name: cdktf.stringToTerraform(struct!.enforceOnKeyName),
-    enforce_on_key_type: cdktf.stringToTerraform(struct!.enforceOnKeyType),
+    enforce_on_key_name: cdktn.stringToTerraform(struct!.enforceOnKeyName),
+    enforce_on_key_type: cdktn.stringToTerraform(struct!.enforceOnKeyType),
   }
 }
 
 
-export function computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enforce_on_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.enforceOnKeyName),
+      value: cdktn.stringToHclTerraform(struct!.enforceOnKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enforce_on_key_type: {
-      value: cdktf.stringToHclTerraform(struct!.enforceOnKeyType),
+      value: cdktn.stringToHclTerraform(struct!.enforceOnKeyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2102,9 +2102,9 @@ export function computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2112,11 +2112,11 @@ export class ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2133,14 +2133,14 @@ export class ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enforceOnKeyName = undefined;
       this._enforceOnKeyType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2185,15 +2185,15 @@ export class ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsO
   }
 }
 
-export class ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList extends cdktf.ComplexList {
-  public internalValue? : ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktf.IResolvable
+export class ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2220,31 +2220,31 @@ export interface ComputeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresho
 }
 
 export function computeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresholdToTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference | ComputeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThreshold): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    interval_sec: cdktf.numberToTerraform(struct!.intervalSec),
+    count: cdktn.numberToTerraform(struct!.count),
+    interval_sec: cdktn.numberToTerraform(struct!.intervalSec),
   }
 }
 
 
 export function computeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresholdToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference | ComputeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThreshold): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     interval_sec: {
-      value: cdktf.numberToHclTerraform(struct!.intervalSec),
+      value: cdktn.numberToHclTerraform(struct!.intervalSec),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2255,14 +2255,14 @@ export function computeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThreshol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresholdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2383,7 +2383,7 @@ export interface ComputeRegionSecurityPolicyRuleRateLimitOptions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#enforce_on_key_configs ComputeRegionSecurityPolicyRule#enforce_on_key_configs}
   */
-  readonly enforceOnKeyConfigs?: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktf.IResolvable;
+  readonly enforceOnKeyConfigs?: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktn.IResolvable;
   /**
   * rate_limit_threshold block
   *
@@ -2393,55 +2393,55 @@ export interface ComputeRegionSecurityPolicyRuleRateLimitOptions {
 }
 
 export function computeRegionSecurityPolicyRuleRateLimitOptionsToTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference | ComputeRegionSecurityPolicyRuleRateLimitOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ban_duration_sec: cdktf.numberToTerraform(struct!.banDurationSec),
-    conform_action: cdktf.stringToTerraform(struct!.conformAction),
-    enforce_on_key: cdktf.stringToTerraform(struct!.enforceOnKey),
-    enforce_on_key_name: cdktf.stringToTerraform(struct!.enforceOnKeyName),
-    exceed_action: cdktf.stringToTerraform(struct!.exceedAction),
+    ban_duration_sec: cdktn.numberToTerraform(struct!.banDurationSec),
+    conform_action: cdktn.stringToTerraform(struct!.conformAction),
+    enforce_on_key: cdktn.stringToTerraform(struct!.enforceOnKey),
+    enforce_on_key_name: cdktn.stringToTerraform(struct!.enforceOnKeyName),
+    exceed_action: cdktn.stringToTerraform(struct!.exceedAction),
     ban_threshold: computeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdToTerraform(struct!.banThreshold),
-    enforce_on_key_configs: cdktf.listMapper(computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTerraform, true)(struct!.enforceOnKeyConfigs),
+    enforce_on_key_configs: cdktn.listMapper(computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTerraform, true)(struct!.enforceOnKeyConfigs),
     rate_limit_threshold: computeRegionSecurityPolicyRuleRateLimitOptionsRateLimitThresholdToTerraform(struct!.rateLimitThreshold),
   }
 }
 
 
 export function computeRegionSecurityPolicyRuleRateLimitOptionsToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference | ComputeRegionSecurityPolicyRuleRateLimitOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ban_duration_sec: {
-      value: cdktf.numberToHclTerraform(struct!.banDurationSec),
+      value: cdktn.numberToHclTerraform(struct!.banDurationSec),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     conform_action: {
-      value: cdktf.stringToHclTerraform(struct!.conformAction),
+      value: cdktn.stringToHclTerraform(struct!.conformAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enforce_on_key: {
-      value: cdktf.stringToHclTerraform(struct!.enforceOnKey),
+      value: cdktn.stringToHclTerraform(struct!.enforceOnKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enforce_on_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.enforceOnKeyName),
+      value: cdktn.stringToHclTerraform(struct!.enforceOnKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exceed_action: {
-      value: cdktf.stringToHclTerraform(struct!.exceedAction),
+      value: cdktn.stringToHclTerraform(struct!.exceedAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2453,7 +2453,7 @@ export function computeRegionSecurityPolicyRuleRateLimitOptionsToHclTerraform(st
       storageClassType: "ComputeRegionSecurityPolicyRuleRateLimitOptionsBanThresholdList",
     },
     enforce_on_key_configs: {
-      value: cdktf.listMapperHcl(computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToHclTerraform, true)(struct!.enforceOnKeyConfigs),
+      value: cdktn.listMapperHcl(computeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToHclTerraform, true)(struct!.enforceOnKeyConfigs),
       isBlock: true,
       type: "list",
       storageClassType: "ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList",
@@ -2470,14 +2470,14 @@ export function computeRegionSecurityPolicyRuleRateLimitOptionsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2645,7 +2645,7 @@ export class ComputeRegionSecurityPolicyRuleRateLimitOptionsOutputReference exte
   public get enforceOnKeyConfigs() {
     return this._enforceOnKeyConfigs;
   }
-  public putEnforceOnKeyConfigs(value: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktf.IResolvable) {
+  public putEnforceOnKeyConfigs(value: ComputeRegionSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktn.IResolvable) {
     this._enforceOnKeyConfigs.internalValue = value;
   }
   public resetEnforceOnKeyConfigs() {
@@ -2687,39 +2687,39 @@ export interface ComputeRegionSecurityPolicyRuleTimeouts {
   readonly update?: string;
 }
 
-export function computeRegionSecurityPolicyRuleTimeoutsToTerraform(struct?: ComputeRegionSecurityPolicyRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRuleTimeoutsToTerraform(struct?: ComputeRegionSecurityPolicyRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function computeRegionSecurityPolicyRuleTimeoutsToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRegionSecurityPolicyRuleTimeoutsToHclTerraform(struct?: ComputeRegionSecurityPolicyRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2730,19 +2730,19 @@ export function computeRegionSecurityPolicyRuleTimeoutsToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRegionSecurityPolicyRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeRegionSecurityPolicyRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeRegionSecurityPolicyRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRegionSecurityPolicyRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2763,7 +2763,7 @@ export class ComputeRegionSecurityPolicyRuleTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRegionSecurityPolicyRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRegionSecurityPolicyRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2771,7 +2771,7 @@ export class ComputeRegionSecurityPolicyRuleTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2836,7 +2836,7 @@ export class ComputeRegionSecurityPolicyRuleTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule google_compute_region_security_policy_rule}
 */
-export class ComputeRegionSecurityPolicyRule extends cdktf.TerraformResource {
+export class ComputeRegionSecurityPolicyRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2847,14 +2847,14 @@ export class ComputeRegionSecurityPolicyRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeRegionSecurityPolicyRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeRegionSecurityPolicyRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionSecurityPolicyRule to import
   * @param importFromId The id of the existing ComputeRegionSecurityPolicyRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_security_policy_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionSecurityPolicyRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_security_policy_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_region_security_policy_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -2949,11 +2949,11 @@ export class ComputeRegionSecurityPolicyRule extends cdktf.TerraformResource {
   }
 
   // preview - computed: false, optional: true, required: false
-  private _preview?: boolean | cdktf.IResolvable; 
+  private _preview?: boolean | cdktn.IResolvable; 
   public get preview() {
     return this.getBooleanAttribute('preview');
   }
-  public set preview(value: boolean | cdktf.IResolvable) {
+  public set preview(value: boolean | cdktn.IResolvable) {
     this._preview = value;
   }
   public resetPreview() {
@@ -3105,14 +3105,14 @@ export class ComputeRegionSecurityPolicyRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      preview: cdktf.booleanToTerraform(this._preview),
-      priority: cdktf.numberToTerraform(this._priority),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      security_policy: cdktf.stringToTerraform(this._securityPolicy),
+      action: cdktn.stringToTerraform(this._action),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      preview: cdktn.booleanToTerraform(this._preview),
+      priority: cdktn.numberToTerraform(this._priority),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      security_policy: cdktn.stringToTerraform(this._securityPolicy),
       match: computeRegionSecurityPolicyRuleMatchToTerraform(this._match.internalValue),
       network_match: computeRegionSecurityPolicyRuleNetworkMatchToTerraform(this._networkMatch.internalValue),
       preconfigured_waf_config: computeRegionSecurityPolicyRulePreconfiguredWafConfigToTerraform(this._preconfiguredWafConfig.internalValue),
@@ -3124,49 +3124,49 @@ export class ComputeRegionSecurityPolicyRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preview: {
-        value: cdktf.booleanToHclTerraform(this._preview),
+        value: cdktn.booleanToHclTerraform(this._preview),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_policy: {
-        value: cdktf.stringToHclTerraform(this._securityPolicy),
+        value: cdktn.stringToHclTerraform(this._securityPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

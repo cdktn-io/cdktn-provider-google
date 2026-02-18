@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleKmsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleKmsSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/kms_secret#additional_authenticated_data DataGoogleKmsSecret#additional_authenticated_data}
   */
@@ -36,7 +36,7 @@ export interface DataGoogleKmsSecretConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/kms_secret google_kms_secret}
 */
-export class DataGoogleKmsSecret extends cdktf.TerraformDataSource {
+export class DataGoogleKmsSecret extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataGoogleKmsSecret extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleKmsSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleKmsSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleKmsSecret to import
   * @param importFromId The id of the existing DataGoogleKmsSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/kms_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleKmsSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_kms_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -163,35 +163,35 @@ export class DataGoogleKmsSecret extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_authenticated_data: cdktf.stringToTerraform(this._additionalAuthenticatedData),
-      ciphertext: cdktf.stringToTerraform(this._ciphertext),
-      crypto_key: cdktf.stringToTerraform(this._cryptoKey),
-      id: cdktf.stringToTerraform(this._id),
+      additional_authenticated_data: cdktn.stringToTerraform(this._additionalAuthenticatedData),
+      ciphertext: cdktn.stringToTerraform(this._ciphertext),
+      crypto_key: cdktn.stringToTerraform(this._cryptoKey),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_authenticated_data: {
-        value: cdktf.stringToHclTerraform(this._additionalAuthenticatedData),
+        value: cdktn.stringToHclTerraform(this._additionalAuthenticatedData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ciphertext: {
-        value: cdktf.stringToHclTerraform(this._ciphertext),
+        value: cdktn.stringToHclTerraform(this._ciphertext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       crypto_key: {
-        value: cdktf.stringToHclTerraform(this._cryptoKey),
+        value: cdktn.stringToHclTerraform(this._cryptoKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

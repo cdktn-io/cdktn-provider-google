@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleTagsTagKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}
   */
@@ -25,7 +25,7 @@ export interface DataGoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key google_tags_tag_key}
 */
-export class DataGoogleTagsTagKey extends cdktf.TerraformDataSource {
+export class DataGoogleTagsTagKey extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -36,14 +36,14 @@ export class DataGoogleTagsTagKey extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleTagsTagKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleTagsTagKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleTagsTagKey to import
   * @param importFromId The id of the existing DataGoogleTagsTagKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleTagsTagKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_tags_tag_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_tags_tag_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -143,21 +143,21 @@ export class DataGoogleTagsTagKey extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      parent: cdktf.stringToTerraform(this._parent),
-      short_name: cdktf.stringToTerraform(this._shortName),
+      parent: cdktn.stringToTerraform(this._parent),
+      short_name: cdktn.stringToTerraform(this._shortName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       short_name: {
-        value: cdktf.stringToHclTerraform(this._shortName),
+        value: cdktn.stringToHclTerraform(this._shortName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -303,7 +303,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -397,7 +397,7 @@ public putJobs(value: IResolvable | DataprocWorkflowTemplateJobs[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.putJobs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
 
 ---
 
@@ -409,7 +409,7 @@ public putParameters(value: IResolvable | DataprocWorkflowTemplateParameters[]):
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.putParameters.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
 
 ---
 
@@ -492,7 +492,7 @@ public resetVersion(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataprocWorkflowTemplate resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DataprocWorkflowTemplate resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -564,7 +564,7 @@ import { dataprocWorkflowTemplate } from '@cdktn/provider-google'
 dataprocWorkflowTemplate.DataprocWorkflowTemplate.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DataprocWorkflowTemplate resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataprocWorkflowTemplate resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.generateConfigForImport.parameter.scope"></a>
 
@@ -594,7 +594,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataprocWorkflowTemplate to import is found.
 
@@ -605,39 +605,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputReference">DataprocWorkflowTemplateEncryptionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.jobs">jobs</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList">DataprocWorkflowTemplateJobsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.parameters">parameters</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList">DataprocWorkflowTemplateParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.placement">placement</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference">DataprocWorkflowTemplatePlacementOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference">DataprocWorkflowTemplateTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.dagTimeoutInput">dagTimeoutInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.encryptionConfigInput">encryptionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfig">DataprocWorkflowTemplateEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.jobsInput">jobsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.jobsInput">jobsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.parametersInput">parametersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.parametersInput">parametersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.placementInput">placementInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacement">DataprocWorkflowTemplatePlacement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.versionInput">versionInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.dagTimeout">dagTimeout</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplate.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -667,7 +667,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -717,7 +717,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -727,7 +727,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -737,7 +737,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -757,7 +757,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -767,7 +767,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -777,7 +777,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -787,7 +787,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -807,7 +807,7 @@ public readonly createTime: string;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -857,7 +857,7 @@ public readonly placement: DataprocWorkflowTemplatePlacementOutputReference;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -917,7 +917,7 @@ public readonly idInput: string;
 public readonly jobsInput: IResolvable | DataprocWorkflowTemplateJobs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
 
 ---
 
@@ -957,7 +957,7 @@ public readonly nameInput: string;
 public readonly parametersInput: IResolvable | DataprocWorkflowTemplateParameters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
 
 ---
 
@@ -987,7 +987,7 @@ public readonly projectInput: string;
 public readonly timeoutsInput: IResolvable | DataprocWorkflowTemplateTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a>
 
 ---
 
@@ -1105,14 +1105,14 @@ const dataprocWorkflowTemplateConfig: dataprocWorkflowTemplate.DataprocWorkflowT
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.jobs">jobs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]</code> | jobs block. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.jobs">jobs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]</code> | jobs block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.location">location</a></code> | <code>string</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.name">name</a></code> | <code>string</code> | Output only. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.placement">placement</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacement">DataprocWorkflowTemplatePlacement</a></code> | placement block. |
@@ -1120,7 +1120,7 @@ const dataprocWorkflowTemplateConfig: dataprocWorkflowTemplate.DataprocWorkflowT
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfig">DataprocWorkflowTemplateEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_workflow_template#id DataprocWorkflowTemplate#id}. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.parameters">parameters</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]</code> | parameters block. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.parameters">parameters</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]</code> | parameters block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.project">project</a></code> | <code>string</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateConfig.property.version">version</a></code> | <code>number</code> | Output only. The current version of this workflow template. |
@@ -1133,7 +1133,7 @@ const dataprocWorkflowTemplateConfig: dataprocWorkflowTemplate.DataprocWorkflowT
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1143,7 +1143,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1153,7 +1153,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1163,7 +1163,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1193,7 +1193,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 public readonly jobs: IResolvable | DataprocWorkflowTemplateJobs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
 
 jobs block.
 
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly parameters: IResolvable | DataprocWorkflowTemplateParameters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
 
 parameters block.
 
@@ -1805,7 +1805,7 @@ const dataprocWorkflowTemplateJobsHiveJob: dataprocWorkflowTemplate.DataprocWork
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJob.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJob.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJob.property.jarFileUris">jarFileUris</a></code> | <code>string[]</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJob.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJob.property.queryFileUri">queryFileUri</a></code> | <code>string</code> | The HCFS URI of the script that contains Hive queries. |
@@ -1820,7 +1820,7 @@ const dataprocWorkflowTemplateJobsHiveJob: dataprocWorkflowTemplate.DataprocWork
 public readonly continueOnFailure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -1952,7 +1952,7 @@ const dataprocWorkflowTemplateJobsPigJob: dataprocWorkflowTemplate.DataprocWorkf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJob.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJob.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJob.property.jarFileUris">jarFileUris</a></code> | <code>string[]</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJob.property.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfig">DataprocWorkflowTemplateJobsPigJobLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJob.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Optional. |
@@ -1968,7 +1968,7 @@ const dataprocWorkflowTemplateJobsPigJob: dataprocWorkflowTemplate.DataprocWorkf
 public readonly continueOnFailure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -2149,7 +2149,7 @@ const dataprocWorkflowTemplateJobsPrestoJob: dataprocWorkflowTemplate.DataprocWo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJob.property.clientTags">clientTags</a></code> | <code>string[]</code> | Optional. Presto client tags to attach to this query. |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJob.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJob.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJob.property.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfig">DataprocWorkflowTemplateJobsPrestoJobLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJob.property.outputFormat">outputFormat</a></code> | <code>string</code> | Optional. The format in which query output will be displayed. See the Presto documentation for supported output formats. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJob.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | Optional. |
@@ -2178,7 +2178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly continueOnFailure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -3441,7 +3441,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfig: dataprocWorkflowTem
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.endpointConfig">endpointConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig</a></code> | endpoint_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.gceClusterConfig">gceClusterConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig</a></code> | gce_cluster_config block. |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.initializationActions">initializationActions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]</code> | initialization_actions block. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.initializationActions">initializationActions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]</code> | initialization_actions block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.lifecycleConfig">lifecycleConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig</a></code> | lifecycle_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.masterConfig">masterConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig</a></code> | master_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfig.property.secondaryWorkerConfig">secondaryWorkerConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig</a></code> | secondary_worker_config block. |
@@ -3515,7 +3515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly initializationActions: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
 
 initialization_actions block.
 
@@ -3719,7 +3719,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig: datap
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig.property.enableHttpPortAccess">enableHttpPortAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. If true, enable http access to specific ports on the cluster from external sources. Defaults to false. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig.property.enableHttpPortAccess">enableHttpPortAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. If true, enable http access to specific ports on the cluster from external sources. Defaults to false. |
 
 ---
 
@@ -3729,7 +3729,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig: datap
 public readonly enableHttpPortAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional. If true, enable http access to specific ports on the cluster from external sources. Defaults to false.
 
@@ -3751,7 +3751,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig: dat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig.property.internalIpOnly">internalIpOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig.property.internalIpOnly">internalIpOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | The Compute Engine metadata entries to add to all instances (see [Project and instance metadata](https://cloud.google.com/compute/docs/storing-retrieving-metadata#project_and_instance_metadata)). |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig.property.network">network</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig.property.nodeGroupAffinity">nodeGroupAffinity</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity</a></code> | node_group_affinity block. |
@@ -3772,7 +3772,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig: dat
 public readonly internalIpOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -4056,9 +4056,9 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShiel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableVtpm">enableVtpm</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableVtpm">enableVtpm</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
 
 ---
 
@@ -4068,7 +4068,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShiel
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -4084,7 +4084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -4100,7 +4100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableVtpm: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -4239,7 +4239,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig: datapro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]</code> | accelerators block. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig.property.accelerators">accelerators</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]</code> | accelerators block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig.property.image">image</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig.property.machineType">machineType</a></code> | <code>string</code> | Optional. |
@@ -4255,7 +4255,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig: datapro
 public readonly accelerators: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
 
 accelerators block.
 
@@ -4495,7 +4495,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]</code> | accelerators block. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig.property.accelerators">accelerators</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]</code> | accelerators block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig.property.image">image</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig.property.machineType">machineType</a></code> | <code>string</code> | Optional. |
@@ -4511,7 +4511,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig
 public readonly accelerators: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
 
 accelerators block.
 
@@ -4787,7 +4787,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerbero
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustKdc">crossRealmTrustKdc</a></code> | <code>string</code> | Optional. The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustRealm">crossRealmTrustRealm</a></code> | <code>string</code> | Optional. The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustSharedPassword">crossRealmTrustSharedPassword</a></code> | <code>string</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.enableKerberos">enableKerberos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.enableKerberos">enableKerberos</a></code> | <code>boolean \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.kdcDbKey">kdcDbKey</a></code> | <code>string</code> | Optional. The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.keyPassword">keyPassword</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfig.property.keystore">keystore</a></code> | <code>string</code> | Optional. |
@@ -4865,7 +4865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableKerberos: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Optional.
 
@@ -5109,7 +5109,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig: datapro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]</code> | accelerators block. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig.property.accelerators">accelerators</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]</code> | accelerators block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig.property.image">image</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig.property.machineType">machineType</a></code> | <code>string</code> | Optional. |
@@ -5125,7 +5125,7 @@ const dataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfig: datapro
 public readonly accelerators: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
 
 accelerators block.
 
@@ -5421,14 +5421,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5599,7 +5599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateEncryptionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5699,14 +5699,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5877,7 +5877,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5977,14 +5977,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6163,7 +6163,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6471,14 +6471,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6655,7 +6655,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6725,13 +6725,13 @@ public resetScriptVariables(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.queryList">queryList</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference">DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.continueOnFailureInput">continueOnFailureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.continueOnFailureInput">continueOnFailureInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.jarFileUrisInput">jarFileUrisInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.propertiesInput">propertiesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.queryFileUriInput">queryFileUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.queryListInput">queryListInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStruct">DataprocWorkflowTemplateJobsHiveJobQueryListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.scriptVariablesInput">scriptVariablesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.jarFileUris">jarFileUris</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobOutputReference.property.queryFileUri">queryFileUri</a></code> | <code>string</code> | *No description.* |
@@ -6780,7 +6780,7 @@ public readonly queryList: DataprocWorkflowTemplateJobsHiveJobQueryListStructOut
 public readonly continueOnFailureInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6840,7 +6840,7 @@ public readonly scriptVariablesInput: {[ key: string ]: string};
 public readonly continueOnFailure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6907,14 +6907,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7084,7 +7084,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7178,7 +7178,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7186,7 +7186,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList(terraformResource:
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7252,7 +7252,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7287,7 +7287,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]</code> | *No description.* |
 
 ---
 
@@ -7321,7 +7321,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplateJobs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>[]
 
 ---
 
@@ -7338,7 +7338,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7347,7 +7347,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7553,7 +7553,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7772,7 +7772,7 @@ public resetSparkSqlJob(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.property.prerequisiteStepIds">prerequisiteStepIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.property.stepId">stepId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a></code> | *No description.* |
 
 ---
 
@@ -8046,7 +8046,7 @@ public readonly stepId: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplateJobs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobs">DataprocWorkflowTemplateJobs</a>
 
 ---
 
@@ -8063,14 +8063,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8241,7 +8241,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8341,14 +8341,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8527,7 +8527,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8616,14 +8616,14 @@ public resetScriptVariables(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference">DataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.queryList">queryList</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference">DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.continueOnFailureInput">continueOnFailureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.continueOnFailureInput">continueOnFailureInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.jarFileUrisInput">jarFileUrisInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.loggingConfigInput">loggingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobLoggingConfig">DataprocWorkflowTemplateJobsPigJobLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.propertiesInput">propertiesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.queryFileUriInput">queryFileUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.queryListInput">queryListInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStruct">DataprocWorkflowTemplateJobsPigJobQueryListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.scriptVariablesInput">scriptVariablesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.jarFileUris">jarFileUris</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobOutputReference.property.queryFileUri">queryFileUri</a></code> | <code>string</code> | *No description.* |
@@ -8682,7 +8682,7 @@ public readonly queryList: DataprocWorkflowTemplateJobsPigJobQueryListStructOutp
 public readonly continueOnFailureInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8752,7 +8752,7 @@ public readonly scriptVariablesInput: {[ key: string ]: string};
 public readonly continueOnFailure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8819,14 +8819,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8996,7 +8996,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9090,14 +9090,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9268,7 +9268,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9368,14 +9368,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9554,7 +9554,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9644,14 +9644,14 @@ public resetQueryList(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference">DataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.queryList">queryList</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference">DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.clientTagsInput">clientTagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.continueOnFailureInput">continueOnFailureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.continueOnFailureInput">continueOnFailureInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.loggingConfigInput">loggingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobLoggingConfig">DataprocWorkflowTemplateJobsPrestoJobLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.outputFormatInput">outputFormatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.propertiesInput">propertiesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.queryFileUriInput">queryFileUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.queryListInput">queryListInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStruct">DataprocWorkflowTemplateJobsPrestoJobQueryListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.clientTags">clientTags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.continueOnFailure">continueOnFailure</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.outputFormat">outputFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobOutputReference.property.queryFileUri">queryFileUri</a></code> | <code>string</code> | *No description.* |
@@ -9719,7 +9719,7 @@ public readonly clientTagsInput: string[];
 public readonly continueOnFailureInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9789,7 +9789,7 @@ public readonly clientTags: string[];
 public readonly continueOnFailure: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9846,14 +9846,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStruc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10023,7 +10023,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10117,14 +10117,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10295,7 +10295,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10395,14 +10395,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10580,7 +10580,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsPysparkJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10882,14 +10882,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11061,7 +11061,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSchedulingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11189,14 +11189,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfigOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11367,7 +11367,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11467,14 +11467,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11653,7 +11653,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11961,14 +11961,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12139,7 +12139,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12239,14 +12239,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12422,7 +12422,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkRJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12668,14 +12668,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12846,7 +12846,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12946,14 +12946,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13131,7 +13131,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13395,14 +13395,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13572,7 +13572,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13666,7 +13666,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13674,7 +13674,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13740,7 +13740,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13775,7 +13775,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]</code> | *No description.* |
 
 ---
 
@@ -13809,7 +13809,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplateParameters[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>[]
 
 ---
 
@@ -13826,7 +13826,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13835,7 +13835,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14024,7 +14024,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14077,7 +14077,7 @@ public resetValidation(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.property.fields">fields</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a></code> | *No description.* |
 
 ---
 
@@ -14191,7 +14191,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplateParameters;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParameters">DataprocWorkflowTemplateParameters</a>
 
 ---
 
@@ -14208,14 +14208,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14389,7 +14389,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14541,14 +14541,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegexOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegexOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegexOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegexOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegexOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14718,7 +14718,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationRegexOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14812,14 +14812,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValuesO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValuesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValuesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValuesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14989,7 +14989,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateParametersValidationValuesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15083,14 +15083,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelectorOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelectorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelectorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelectorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelectorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15261,7 +15261,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementClusterSelectorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15383,14 +15383,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15561,7 +15561,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigAutoscalingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15661,14 +15661,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15839,7 +15839,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15939,14 +15939,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16117,7 +16117,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16144,9 +16144,9 @@ public resetEnableHttpPortAccess(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.httpPorts">httpPorts</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccessInput">enableHttpPortAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccess">enableHttpPortAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.httpPorts">httpPorts</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccessInput">enableHttpPortAccessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccess">enableHttpPortAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig</a></code> | *No description.* |
 
 ---
@@ -16181,7 +16181,7 @@ public readonly fqn: string;
 public readonly httpPorts: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -16191,7 +16191,7 @@ public readonly httpPorts: StringMap;
 public readonly enableHttpPortAccessInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16201,7 +16201,7 @@ public readonly enableHttpPortAccessInput: boolean | IResolvable;
 public readonly enableHttpPortAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16228,14 +16228,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16405,7 +16405,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16499,14 +16499,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16691,7 +16691,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16823,7 +16823,7 @@ public resetZone(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.nodeGroupAffinity">nodeGroupAffinity</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.internalIpOnlyInput">internalIpOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.internalIpOnlyInput">internalIpOnlyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.nodeGroupAffinityInput">nodeGroupAffinityInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity</a></code> | *No description.* |
@@ -16835,7 +16835,7 @@ public resetZone(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.internalIpOnly">internalIpOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.internalIpOnly">internalIpOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigOutputReference.property.privateIpv6GoogleAccess">privateIpv6GoogleAccess</a></code> | <code>string</code> | *No description.* |
@@ -16908,7 +16908,7 @@ public readonly shieldedInstanceConfig: DataprocWorkflowTemplatePlacementManaged
 public readonly internalIpOnlyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17028,7 +17028,7 @@ public readonly zoneInput: string;
 public readonly internalIpOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17135,14 +17135,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17315,7 +17315,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17471,14 +17471,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17651,7 +17651,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17690,12 +17690,12 @@ public resetEnableVtpm(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpmInput">enableVtpmInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpm">enableVtpm</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpmInput">enableVtpmInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpm">enableVtpm</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -17730,7 +17730,7 @@ public readonly fqn: string;
 public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17740,7 +17740,7 @@ public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 public readonly enableSecureBootInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17750,7 +17750,7 @@ public readonly enableSecureBootInput: boolean | IResolvable;
 public readonly enableVtpmInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17760,7 +17760,7 @@ public readonly enableVtpmInput: boolean | IResolvable;
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17770,7 +17770,7 @@ public readonly enableIntegrityMonitoring: boolean | IResolvable;
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17780,7 +17780,7 @@ public readonly enableSecureBoot: boolean | IResolvable;
 public readonly enableVtpm: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17807,7 +17807,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17815,7 +17815,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17881,7 +17881,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17916,7 +17916,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]</code> | *No description.* |
 
 ---
 
@@ -17950,7 +17950,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
 
 ---
 
@@ -17967,7 +17967,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17976,7 +17976,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18164,7 +18164,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18201,7 +18201,7 @@ public resetExecutionTimeout(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.property.executionTimeoutInput">executionTimeoutInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.property.executableFile">executableFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.property.executionTimeout">executionTimeout</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a></code> | *No description.* |
 
 ---
 
@@ -18275,7 +18275,7 @@ public readonly executionTimeout: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>
 
 ---
 
@@ -18292,14 +18292,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18472,7 +18472,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18639,7 +18639,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18647,7 +18647,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18713,7 +18713,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18748,7 +18748,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]</code> | *No description.* |
 
 ---
 
@@ -18782,7 +18782,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
 
 ---
 
@@ -18799,7 +18799,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18808,7 +18808,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18996,7 +18996,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19033,7 +19033,7 @@ public resetAcceleratorType(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorTypeInput">acceleratorTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorCount">acceleratorCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorType">acceleratorType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a></code> | *No description.* |
 
 ---
 
@@ -19107,7 +19107,7 @@ public readonly acceleratorType: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>
 
 ---
 
@@ -19124,14 +19124,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19304,7 +19304,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19460,7 +19460,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19468,7 +19468,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19534,7 +19534,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19609,7 +19609,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19618,7 +19618,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19804,7 +19804,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19898,14 +19898,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20084,7 +20084,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20106,7 +20106,7 @@ public putAccelerators(value: IResolvable | DataprocWorkflowTemplatePlacementMan
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.putAccelerators.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
 
 ---
 
@@ -20174,9 +20174,9 @@ public resetPreemptibility(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.instanceNames">instanceNames</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.isPreemptible">isPreemptible</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.isPreemptible">isPreemptible</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.managedGroupConfig">managedGroupConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigManagedGroupConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.diskConfigInput">diskConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -20252,7 +20252,7 @@ public readonly instanceNames: string[];
 public readonly isPreemptible: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -20272,7 +20272,7 @@ public readonly managedGroupConfig: DataprocWorkflowTemplatePlacementManagedClus
 public readonly acceleratorsInput: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators</a>[]
 
 ---
 
@@ -20409,14 +20409,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20610,7 +20610,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20680,7 +20680,7 @@ public putInitializationActions(value: IResolvable | DataprocWorkflowTemplatePla
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.putInitializationActions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
 
 ---
 
@@ -20856,7 +20856,7 @@ public resetWorkerConfig(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.encryptionConfigInput">encryptionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.endpointConfigInput">endpointConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.gceClusterConfigInput">gceClusterConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.initializationActionsInput">initializationActionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.initializationActionsInput">initializationActionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.lifecycleConfigInput">lifecycleConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.masterConfigInput">masterConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigOutputReference.property.secondaryWorkerConfigInput">secondaryWorkerConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfig</a></code> | *No description.* |
@@ -21051,7 +21051,7 @@ public readonly gceClusterConfigInput: DataprocWorkflowTemplatePlacementManagedC
 public readonly initializationActionsInput: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions">DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions</a>[]
 
 ---
 
@@ -21178,7 +21178,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21186,7 +21186,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21252,7 +21252,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21287,7 +21287,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]</code> | *No description.* |
 
 ---
 
@@ -21321,7 +21321,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
 
 ---
 
@@ -21338,7 +21338,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21347,7 +21347,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21535,7 +21535,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21572,7 +21572,7 @@ public resetAcceleratorType(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.property.acceleratorTypeInput">acceleratorTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.property.acceleratorCount">acceleratorCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.property.acceleratorType">acceleratorType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a></code> | *No description.* |
 
 ---
 
@@ -21646,7 +21646,7 @@ public readonly acceleratorType: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>
 
 ---
 
@@ -21663,14 +21663,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21843,7 +21843,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21999,7 +21999,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22007,7 +22007,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22073,7 +22073,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22148,7 +22148,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22157,7 +22157,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22343,7 +22343,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22437,14 +22437,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22623,7 +22623,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22645,7 +22645,7 @@ public putAccelerators(value: IResolvable | DataprocWorkflowTemplatePlacementMan
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.putAccelerators.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
 
 ---
 
@@ -22713,9 +22713,9 @@ public resetPreemptibility(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.instanceNames">instanceNames</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.isPreemptible">isPreemptible</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.isPreemptible">isPreemptible</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.managedGroupConfig">managedGroupConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigManagedGroupConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.diskConfigInput">diskConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -22791,7 +22791,7 @@ public readonly instanceNames: string[];
 public readonly isPreemptible: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -22811,7 +22811,7 @@ public readonly managedGroupConfig: DataprocWorkflowTemplatePlacementManagedClus
 public readonly acceleratorsInput: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators</a>[]
 
 ---
 
@@ -22948,14 +22948,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23140,7 +23140,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23255,7 +23255,7 @@ public resetTruststorePassword(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdcInput">crossRealmTrustKdcInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealmInput">crossRealmTrustRealmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPasswordInput">crossRealmTrustSharedPasswordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberosInput">enableKerberosInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberosInput">enableKerberosInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKeyInput">kdcDbKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPasswordInput">keyPasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystoreInput">keystoreInput</a></code> | <code>string</code> | *No description.* |
@@ -23270,7 +23270,7 @@ public resetTruststorePassword(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdc">crossRealmTrustKdc</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealm">crossRealmTrustRealm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPassword">crossRealmTrustSharedPassword</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberos">enableKerberos</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberos">enableKerberos</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKey">kdcDbKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPassword">keyPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystore">keystore</a></code> | <code>string</code> | *No description.* |
@@ -23355,7 +23355,7 @@ public readonly crossRealmTrustSharedPasswordInput: string;
 public readonly enableKerberosInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23505,7 +23505,7 @@ public readonly crossRealmTrustSharedPassword: string;
 public readonly enableKerberos: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23632,14 +23632,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23811,7 +23811,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSecurityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23923,14 +23923,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24103,7 +24103,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigSoftwareConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24259,7 +24259,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24267,7 +24267,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24333,7 +24333,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24368,7 +24368,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]</code> | *No description.* |
 
 ---
 
@@ -24402,7 +24402,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
 
 ---
 
@@ -24419,7 +24419,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24428,7 +24428,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24616,7 +24616,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24653,7 +24653,7 @@ public resetAcceleratorType(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorTypeInput">acceleratorTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorCount">acceleratorCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorType">acceleratorType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a></code> | *No description.* |
 
 ---
 
@@ -24727,7 +24727,7 @@ public readonly acceleratorType: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>
 
 ---
 
@@ -24744,14 +24744,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24924,7 +24924,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25080,7 +25080,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25088,7 +25088,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25154,7 +25154,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25229,7 +25229,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25238,7 +25238,7 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25424,7 +25424,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25518,14 +25518,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25704,7 +25704,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25726,7 +25726,7 @@ public putAccelerators(value: IResolvable | DataprocWorkflowTemplatePlacementMan
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.putAccelerators.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
 
 ---
 
@@ -25794,9 +25794,9 @@ public resetPreemptibility(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.instanceNames">instanceNames</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.isPreemptible">isPreemptible</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.isPreemptible">isPreemptible</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.managedGroupConfig">managedGroupConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigManagedGroupConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.diskConfigInput">diskConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -25872,7 +25872,7 @@ public readonly instanceNames: string[];
 public readonly isPreemptible: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -25892,7 +25892,7 @@ public readonly managedGroupConfig: DataprocWorkflowTemplatePlacementManagedClus
 public readonly acceleratorsInput: IResolvable | DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators">DataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators</a>[]
 
 ---
 
@@ -26029,14 +26029,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26208,7 +26208,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementManagedClusterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26364,14 +26364,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26545,7 +26545,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplatePlacementOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26697,14 +26697,14 @@ new dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26877,7 +26877,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26922,7 +26922,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -27016,7 +27016,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | DataprocWorkflowTemplateTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateTimeouts">DataprocWorkflowTemplateTimeouts</a>
 
 ---
 

@@ -314,7 +314,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -575,7 +575,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SqlDatabaseInstance resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a SqlDatabaseInstance resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -647,7 +647,7 @@ import { sqlDatabaseInstance } from '@cdktn/provider-google'
 sqlDatabaseInstance.SqlDatabaseInstance.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a SqlDatabaseInstance resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a SqlDatabaseInstance resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.generateConfigForImport.parameter.scope"></a>
 
@@ -677,7 +677,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the SqlDatabaseInstance to import is found.
 
@@ -688,19 +688,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.availableMaintenanceVersions">availableMaintenanceVersions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.clone">clone</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference">SqlDatabaseInstanceCloneOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.connectionName">connectionName</a></code> | <code>string</code> | *No description.* |
@@ -721,7 +721,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference">SqlDatabaseInstanceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.cloneInput">cloneInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone">SqlDatabaseInstanceClone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.databaseVersionInput">databaseVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.encryptionKeyNameInput">encryptionKeyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.instanceTypeInput">instanceTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -737,9 +737,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.restoreBackupContextInput">restoreBackupContextInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContext">SqlDatabaseInstanceRestoreBackupContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordInput">rootPasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.settingsInput">settingsInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings">SqlDatabaseInstanceSettings</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.databaseVersion">databaseVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.encryptionKeyName">encryptionKeyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.instanceType">instanceType</a></code> | <code>string</code> | *No description.* |
@@ -772,7 +772,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -822,7 +822,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -832,7 +832,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -842,7 +842,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -862,7 +862,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -872,7 +872,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -882,7 +882,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -892,7 +892,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly databaseVersionInput: string;
 public readonly deletionProtectionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly settingsInput: SqlDatabaseInstanceSettings;
 public readonly timeoutsInput: IResolvable | SqlDatabaseInstanceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a>
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly databaseVersion: string;
 public readonly deletionProtection: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1528,16 +1528,16 @@ const sqlDatabaseInstanceConfig: sqlDatabaseInstance.SqlDatabaseInstanceConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.databaseVersion">databaseVersion</a></code> | <code>string</code> | The MySQL, PostgreSQL or SQL Server (beta) version to use. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.clone">clone</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone">SqlDatabaseInstanceClone</a></code> | clone block. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | Used to block Terraform from deleting a SQL Instance. Defaults to true. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Used to block Terraform from deleting a SQL Instance. Defaults to true. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.encryptionKeyName">encryptionKeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.instanceType">instanceType</a></code> | <code>string</code> | The type of the instance. See https://cloud.google.com/sql/docs/mysql/admin-api/rest/v1/instances#SqlInstanceType for supported values. |
@@ -1563,7 +1563,7 @@ const sqlDatabaseInstanceConfig: sqlDatabaseInstance.SqlDatabaseInstanceConfig =
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1573,7 +1573,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1583,7 +1583,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1593,7 +1593,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1603,7 +1603,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1613,7 +1613,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1623,7 +1623,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly deletionProtection: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Used to block Terraform from deleting a SQL Instance. Defaults to true.
 
@@ -1939,17 +1939,17 @@ const sqlDatabaseInstanceReplicaConfiguration: sqlDatabaseInstance.SqlDatabaseIn
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.caCertificate">caCertificate</a></code> | <code>string</code> | PEM representation of the trusted CA's x509 certificate. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.cascadableReplica">cascadableReplica</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if a SQL Server replica is a cascadable replica. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.cascadableReplica">cascadableReplica</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies if a SQL Server replica is a cascadable replica. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | PEM representation of the replica's x509 certificate. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.clientKey">clientKey</a></code> | <code>string</code> | PEM representation of the replica's private key. The corresponding public key in encoded in the client_certificate. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.connectRetryInterval">connectRetryInterval</a></code> | <code>number</code> | The number of seconds between connect retries. MySQL's default is 60 seconds. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.dumpFilePath">dumpFilePath</a></code> | <code>string</code> | Path to a SQL file in Google Cloud Storage from which replica instances are created. Format is gs://bucket/filename. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.failoverTarget">failoverTarget</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if the replica is the failover target. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.failoverTarget">failoverTarget</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies if the replica is the failover target. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.masterHeartbeatPeriod">masterHeartbeatPeriod</a></code> | <code>number</code> | Time in ms between replication heartbeats. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.password">password</a></code> | <code>string</code> | Password for the replication connection. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.sslCipher">sslCipher</a></code> | <code>string</code> | Permissible ciphers for use in SSL encryption. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.username">username</a></code> | <code>string</code> | Username for replication connection. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.verifyServerCertificate">verifyServerCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | True if the master's common name value is checked during the SSL handshake. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration.property.verifyServerCertificate">verifyServerCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if the master's common name value is checked during the SSL handshake. |
 
 ---
 
@@ -1973,7 +1973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly cascadableReplica: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies if a SQL Server replica is a cascadable replica.
 
@@ -2045,7 +2045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly failoverTarget: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies if the replica is the failover target.
 
@@ -2117,7 +2117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly verifyServerCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 True if the master's common name value is checked during the SSL handshake.
 
@@ -2270,26 +2270,26 @@ const sqlDatabaseInstanceSettings: sqlDatabaseInstance.SqlDatabaseInstanceSettin
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.availabilityType">availabilityType</a></code> | <code>string</code> | The availability type of the Cloud SQL instance, high availability (REGIONAL) or single zone (ZONAL). |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.backupConfiguration">backupConfiguration</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration">SqlDatabaseInstanceSettingsBackupConfiguration</a></code> | backup_configuration block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.collation">collation</a></code> | <code>string</code> | The name of server instance collation. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.connectionPoolConfig">connectionPoolConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | connection_pool_config block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.connectionPoolConfig">connectionPoolConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | connection_pool_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.connectorEnforcement">connectorEnforcement</a></code> | <code>string</code> | Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all the connections. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.databaseFlags">databaseFlags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | database_flags block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.databaseFlags">databaseFlags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | database_flags block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.dataCacheConfig">dataCacheConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig">SqlDatabaseInstanceSettingsDataCacheConfig</a></code> | data_cache_config block. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Configuration to protect against accidental instance deletion. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Configuration to protect against accidental instance deletion. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.denyMaintenancePeriod">denyMaintenancePeriod</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriod">SqlDatabaseInstanceSettingsDenyMaintenancePeriod</a></code> | deny_maintenance_period block. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.diskAutoresize">diskAutoresize</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables auto-resizing of the storage size. Defaults to true. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.diskAutoresize">diskAutoresize</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables auto-resizing of the storage size. Defaults to true. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.diskAutoresizeLimit">diskAutoresizeLimit</a></code> | <code>number</code> | The maximum size, in GB, to which storage capacity can be automatically increased. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.diskSize">diskSize</a></code> | <code>number</code> | The size of data disk, in GB. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.diskType">diskType</a></code> | <code>string</code> | The type of supported data disk is tier dependent and can be PD_SSD or PD_HDD or HYPERDISK_BALANCED. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.edition">edition</a></code> | <code>string</code> | The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.enableDataplexIntegration">enableDataplexIntegration</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables Dataplex Integration. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.enableGoogleMlIntegration">enableGoogleMlIntegration</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables Vertex AI Integration. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.enableDataplexIntegration">enableDataplexIntegration</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Dataplex Integration. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.enableGoogleMlIntegration">enableGoogleMlIntegration</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Vertex AI Integration. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.insightsConfig">insightsConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig">SqlDatabaseInstanceSettingsInsightsConfig</a></code> | insights_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.ipConfiguration">ipConfiguration</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration">SqlDatabaseInstanceSettingsIpConfiguration</a></code> | ip_configuration block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.locationPreference">locationPreference</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreference">SqlDatabaseInstanceSettingsLocationPreference</a></code> | location_preference block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindow">SqlDatabaseInstanceSettingsMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.passwordValidationPolicy">passwordValidationPolicy</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy">SqlDatabaseInstanceSettingsPasswordValidationPolicy</a></code> | password_validation_policy block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | Pricing plan for this instance, can only be PER_USE. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.retainBackupsOnDelete">retainBackupsOnDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.retainBackupsOnDelete">retainBackupsOnDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.sqlServerAuditConfig">sqlServerAuditConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfig">SqlDatabaseInstanceSettingsSqlServerAuditConfig</a></code> | sql_server_audit_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.timeZone">timeZone</a></code> | <code>string</code> | The time_zone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.userLabels">userLabels</a></code> | <code>{[ key: string ]: string}</code> | A set of key/value user label pairs to assign to the instance. |
@@ -2410,7 +2410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly connectionPoolConfig: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
 
 connection_pool_config block.
 
@@ -2440,7 +2440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly databaseFlags: IResolvable | SqlDatabaseInstanceSettingsDatabaseFlags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
 
 database_flags block.
 
@@ -2468,7 +2468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly deletionProtectionEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Configuration to protect against accidental instance deletion.
 
@@ -2496,7 +2496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly diskAutoresize: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables auto-resizing of the storage size. Defaults to true.
 
@@ -2570,7 +2570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableDataplexIntegration: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables Dataplex Integration.
 
@@ -2584,7 +2584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableGoogleMlIntegration: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables Vertex AI Integration.
 
@@ -2682,7 +2682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly retainBackupsOnDelete: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted.
 
@@ -2813,10 +2813,10 @@ const sqlDatabaseInstanceSettingsBackupConfiguration: sqlDatabaseInstance.SqlDat
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.backupRetentionSettings">backupRetentionSettings</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings">SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings</a></code> | backup_retention_settings block. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.binaryLogEnabled">binaryLogEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | True if binary logging is enabled. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | True if backup configuration is enabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.binaryLogEnabled">binaryLogEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if binary logging is enabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if backup configuration is enabled. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.location">location</a></code> | <code>string</code> | Location of the backup configuration. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.pointInTimeRecoveryEnabled">pointInTimeRecoveryEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | True if Point-in-time recovery is enabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.pointInTimeRecoveryEnabled">pointInTimeRecoveryEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Point-in-time recovery is enabled. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.startTime">startTime</a></code> | <code>string</code> | HH:MM format time indicating when backup configuration starts. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration.property.transactionLogRetentionDays">transactionLogRetentionDays</a></code> | <code>number</code> | The number of days of transaction logs we retain for point in time restore, from 1-7. |
 
@@ -2842,7 +2842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly binaryLogEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 True if binary logging is enabled.
 
@@ -2858,7 +2858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 True if backup configuration is enabled.
 
@@ -2886,7 +2886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pointInTimeRecoveryEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 True if Point-in-time recovery is enabled.
 
@@ -2985,8 +2985,8 @@ const sqlDatabaseInstanceSettingsConnectionPoolConfig: sqlDatabaseInstance.SqlDa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig.property.connectionPoolingEnabled">connectionPoolingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Managed Connection Pool is enabled for this instance. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig.property.flags">flags</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]</code> | flags block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig.property.connectionPoolingEnabled">connectionPoolingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Managed Connection Pool is enabled for this instance. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig.property.flags">flags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]</code> | flags block. |
 
 ---
 
@@ -2996,7 +2996,7 @@ const sqlDatabaseInstanceSettingsConnectionPoolConfig: sqlDatabaseInstance.SqlDa
 public readonly connectionPoolingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Managed Connection Pool is enabled for this instance.
 
@@ -3010,7 +3010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly flags: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfigFlags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
 
 flags block.
 
@@ -3126,7 +3126,7 @@ const sqlDatabaseInstanceSettingsDataCacheConfig: sqlDatabaseInstance.SqlDatabas
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig.property.dataCacheEnabled">dataCacheEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether data cache is enabled for the instance. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig.property.dataCacheEnabled">dataCacheEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether data cache is enabled for the instance. |
 
 ---
 
@@ -3136,7 +3136,7 @@ const sqlDatabaseInstanceSettingsDataCacheConfig: sqlDatabaseInstance.SqlDatabas
 public readonly dataCacheEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether data cache is enabled for the instance.
 
@@ -3226,11 +3226,11 @@ const sqlDatabaseInstanceSettingsInsightsConfig: sqlDatabaseInstance.SqlDatabase
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.queryInsightsEnabled">queryInsightsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | True if Query Insights feature is enabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.queryInsightsEnabled">queryInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Query Insights feature is enabled. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.queryPlansPerMinute">queryPlansPerMinute</a></code> | <code>number</code> | Number of query execution plans captured by Insights per minute for all queries combined. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.queryStringLength">queryStringLength</a></code> | <code>number</code> | Maximum query length stored in bytes. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktf.IResolvable</code> | True if Query Insights will record application tags from query when enabled. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktf.IResolvable</code> | True if Query Insights will record client address when enabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Query Insights will record application tags from query when enabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Query Insights will record client address when enabled. |
 
 ---
 
@@ -3240,7 +3240,7 @@ const sqlDatabaseInstanceSettingsInsightsConfig: sqlDatabaseInstance.SqlDatabase
 public readonly queryInsightsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 True if Query Insights feature is enabled.
 
@@ -3286,7 +3286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly recordApplicationTags: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 True if Query Insights will record application tags from query when enabled.
 
@@ -3300,7 +3300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly recordClientAddress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 True if Query Insights will record client address when enabled.
 
@@ -3323,12 +3323,12 @@ const sqlDatabaseInstanceSettingsIpConfiguration: sqlDatabaseInstance.SqlDatabas
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.allocatedIpRange">allocatedIpRange</a></code> | <code>string</code> | The name of the allocated ip range for the private ip CloudSQL instance. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.authorizedNetworks">authorizedNetworks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]</code> | authorized_networks block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.authorizedNetworks">authorizedNetworks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]</code> | authorized_networks block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.customSubjectAlternativeNames">customSubjectAlternativeNames</a></code> | <code>string[]</code> | The custom subject alternative names for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode". |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.enablePrivatePathForGoogleCloudServices">enablePrivatePathForGoogleCloudServices</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Google Cloud services such as BigQuery are allowed to access data in this Cloud SQL instance over a private IP connection. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.ipv4Enabled">ipv4Enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether this Cloud SQL instance should be assigned a public IPV4 address. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.enablePrivatePathForGoogleCloudServices">enablePrivatePathForGoogleCloudServices</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Google Cloud services such as BigQuery are allowed to access data in this Cloud SQL instance over a private IP connection. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.ipv4Enabled">ipv4Enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether this Cloud SQL instance should be assigned a public IPV4 address. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.privateNetwork">privateNetwork</a></code> | <code>string</code> | The VPC network from which the Cloud SQL instance is accessible for private IP. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.pscConfig">pscConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | psc_config block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.pscConfig">pscConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | psc_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.serverCaMode">serverCaMode</a></code> | <code>string</code> | Specify how the server certificate's Certificate Authority is hosted. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.serverCaPool">serverCaPool</a></code> | <code>string</code> | The resource name of the server CA pool for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode". |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.sslMode">sslMode</a></code> | <code>string</code> | Specify how SSL connection should be enforced in DB connections. |
@@ -3357,7 +3357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly authorizedNetworks: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
 
 authorized_networks block.
 
@@ -3385,7 +3385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enablePrivatePathForGoogleCloudServices: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Google Cloud services such as BigQuery are allowed to access data in this Cloud SQL instance over a private IP connection.
 
@@ -3401,7 +3401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ipv4Enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether this Cloud SQL instance should be assigned a public IPV4 address.
 
@@ -3433,7 +3433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pscConfig: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
 
 psc_config block.
 
@@ -3555,8 +3555,8 @@ const sqlDatabaseInstanceSettingsIpConfigurationPscConfig: sqlDatabaseInstance.S
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig.property.allowedConsumerProjects">allowedConsumerProjects</a></code> | <code>string[]</code> | List of consumer projects that are allow-listed for PSC connections to this instance. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig.property.networkAttachmentUri">networkAttachmentUri</a></code> | <code>string</code> | Name of network attachment resource used to authorize a producer service to connect a PSC interface to the consumer's VPC. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig.property.pscAutoConnections">pscAutoConnections</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]</code> | psc_auto_connections block. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig.property.pscEnabled">pscEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether PSC connectivity is enabled for this instance. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig.property.pscAutoConnections">pscAutoConnections</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]</code> | psc_auto_connections block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig.property.pscEnabled">pscEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether PSC connectivity is enabled for this instance. |
 
 ---
 
@@ -3598,7 +3598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pscAutoConnections: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
 
 psc_auto_connections block.
 
@@ -3612,7 +3612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pscEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether PSC connectivity is enabled for this instance.
 
@@ -3807,9 +3807,9 @@ const sqlDatabaseInstanceSettingsPasswordValidationPolicy: sqlDatabaseInstance.S
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.enablePasswordPolicy">enablePasswordPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the password policy is enabled or not. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.enablePasswordPolicy">enablePasswordPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the password policy is enabled or not. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.complexity">complexity</a></code> | <code>string</code> | Password complexity. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.disallowUsernameSubstring">disallowUsernameSubstring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Disallow username as a part of the password. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.disallowUsernameSubstring">disallowUsernameSubstring</a></code> | <code>boolean \| cdktn.IResolvable</code> | Disallow username as a part of the password. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.minLength">minLength</a></code> | <code>number</code> | Minimum number of characters allowed. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.passwordChangeInterval">passwordChangeInterval</a></code> | <code>string</code> | Minimum interval after which the password can be changed. This flag is only supported for PostgresSQL. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy.property.reuseInterval">reuseInterval</a></code> | <code>number</code> | Number of previous passwords that cannot be reused. |
@@ -3822,7 +3822,7 @@ const sqlDatabaseInstanceSettingsPasswordValidationPolicy: sqlDatabaseInstance.S
 public readonly enablePasswordPolicy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the password policy is enabled or not.
 
@@ -3850,7 +3850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disallowUsernameSubstring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Disallow username as a part of the password.
 
@@ -4036,14 +4036,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4217,7 +4217,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4423,7 +4423,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4431,7 +4431,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4497,7 +4497,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4572,7 +4572,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4581,7 +4581,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4767,7 +4767,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4872,7 +4872,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4880,7 +4880,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4946,7 +4946,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5021,7 +5021,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5030,7 +5030,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5216,7 +5216,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5321,14 +5321,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5510,7 +5510,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5604,29 +5604,29 @@ public resetVerifyServerCertificate(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.caCertificateInput">caCertificateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.cascadableReplicaInput">cascadableReplicaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.cascadableReplicaInput">cascadableReplicaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.clientCertificateInput">clientCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.clientKeyInput">clientKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.connectRetryIntervalInput">connectRetryIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.dumpFilePathInput">dumpFilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.failoverTargetInput">failoverTargetInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.failoverTargetInput">failoverTargetInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.masterHeartbeatPeriodInput">masterHeartbeatPeriodInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.sslCipherInput">sslCipherInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.verifyServerCertificateInput">verifyServerCertificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.verifyServerCertificateInput">verifyServerCertificateInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.caCertificate">caCertificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.cascadableReplica">cascadableReplica</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.cascadableReplica">cascadableReplica</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.clientCertificate">clientCertificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.clientKey">clientKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.connectRetryInterval">connectRetryInterval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.dumpFilePath">dumpFilePath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.failoverTarget">failoverTarget</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.failoverTarget">failoverTarget</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.masterHeartbeatPeriod">masterHeartbeatPeriod</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.sslCipher">sslCipher</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.verifyServerCertificate">verifyServerCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.verifyServerCertificate">verifyServerCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration">SqlDatabaseInstanceReplicaConfiguration</a></code> | *No description.* |
 
 ---
@@ -5671,7 +5671,7 @@ public readonly caCertificateInput: string;
 public readonly cascadableReplicaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5721,7 +5721,7 @@ public readonly dumpFilePathInput: string;
 public readonly failoverTargetInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5771,7 +5771,7 @@ public readonly usernameInput: string;
 public readonly verifyServerCertificateInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5791,7 +5791,7 @@ public readonly caCertificate: string;
 public readonly cascadableReplica: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5841,7 +5841,7 @@ public readonly dumpFilePath: string;
 public readonly failoverTarget: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5891,7 +5891,7 @@ public readonly username: string;
 public readonly verifyServerCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5918,14 +5918,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6097,7 +6097,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6130,7 +6130,7 @@ public resetPsaWriteEndpoint(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.property.drReplica">drReplica</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.property.drReplica">drReplica</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.property.failoverDrReplicaNameInput">failoverDrReplicaNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.property.psaWriteEndpointInput">psaWriteEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationClusterOutputReference.property.failoverDrReplicaName">failoverDrReplicaName</a></code> | <code>string</code> | *No description.* |
@@ -6169,7 +6169,7 @@ public readonly fqn: string;
 public readonly drReplica: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -6236,14 +6236,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6415,7 +6415,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContextOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6565,7 +6565,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList(terraformResource: I
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6573,7 +6573,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList(terraformResource: I
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6639,7 +6639,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6714,7 +6714,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6723,7 +6723,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6909,7 +6909,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceServerCaCertOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7036,14 +7036,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7213,7 +7213,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7307,14 +7307,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7485,7 +7485,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeaturesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7585,14 +7585,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRete
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7763,7 +7763,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7885,14 +7885,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8070,7 +8070,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8147,16 +8147,16 @@ public resetTransactionLogRetentionDays(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.backupRetentionSettings">backupRetentionSettings</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference">SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.backupRetentionSettingsInput">backupRetentionSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings">SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.binaryLogEnabledInput">binaryLogEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.binaryLogEnabledInput">binaryLogEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.pointInTimeRecoveryEnabledInput">pointInTimeRecoveryEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.pointInTimeRecoveryEnabledInput">pointInTimeRecoveryEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.transactionLogRetentionDaysInput">transactionLogRetentionDaysInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.binaryLogEnabled">binaryLogEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.binaryLogEnabled">binaryLogEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.location">location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.pointInTimeRecoveryEnabled">pointInTimeRecoveryEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.pointInTimeRecoveryEnabled">pointInTimeRecoveryEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.startTime">startTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.transactionLogRetentionDays">transactionLogRetentionDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration">SqlDatabaseInstanceSettingsBackupConfiguration</a></code> | *No description.* |
@@ -8213,7 +8213,7 @@ public readonly backupRetentionSettingsInput: SqlDatabaseInstanceSettingsBackupC
 public readonly binaryLogEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8223,7 +8223,7 @@ public readonly binaryLogEnabledInput: boolean | IResolvable;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8243,7 +8243,7 @@ public readonly locationInput: string;
 public readonly pointInTimeRecoveryEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8273,7 +8273,7 @@ public readonly transactionLogRetentionDaysInput: number;
 public readonly binaryLogEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8283,7 +8283,7 @@ public readonly binaryLogEnabled: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8303,7 +8303,7 @@ public readonly location: string;
 public readonly pointInTimeRecoveryEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8350,7 +8350,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8358,7 +8358,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8424,7 +8424,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8459,7 +8459,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]</code> | *No description.* |
 
 ---
 
@@ -8493,7 +8493,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfigFlags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
 
 ---
 
@@ -8510,7 +8510,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8519,7 +8519,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8705,7 +8705,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8730,7 +8730,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a></code> | *No description.* |
 
 ---
 
@@ -8804,7 +8804,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfigFlags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>
 
 ---
 
@@ -8821,7 +8821,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8829,7 +8829,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8895,7 +8895,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8930,7 +8930,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -8964,7 +8964,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
 
 ---
 
@@ -8981,7 +8981,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8990,7 +8990,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9179,7 +9179,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9201,7 +9201,7 @@ public putFlags(value: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolCo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.putFlags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
 
 ---
 
@@ -9225,10 +9225,10 @@ public resetFlags(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.flags">flags</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList">SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.connectionPoolingEnabledInput">connectionPoolingEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.flagsInput">flagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.connectionPoolingEnabled">connectionPoolingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.connectionPoolingEnabledInput">connectionPoolingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.flagsInput">flagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.connectionPoolingEnabled">connectionPoolingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a></code> | *No description.* |
 
 ---
 
@@ -9272,7 +9272,7 @@ public readonly flags: SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsList;
 public readonly connectionPoolingEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9282,7 +9282,7 @@ public readonly connectionPoolingEnabledInput: boolean | IResolvable;
 public readonly flagsInput: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfigFlags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfigFlags">SqlDatabaseInstanceSettingsConnectionPoolConfigFlags</a>[]
 
 ---
 
@@ -9292,7 +9292,7 @@ public readonly flagsInput: IResolvable | SqlDatabaseInstanceSettingsConnectionP
 public readonly connectionPoolingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9302,7 +9302,7 @@ public readonly connectionPoolingEnabled: boolean | IResolvable;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>
 
 ---
 
@@ -9319,7 +9319,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9327,7 +9327,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9393,7 +9393,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9428,7 +9428,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | *No description.* |
 
 ---
 
@@ -9462,7 +9462,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsDatabaseFlags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
 
 ---
 
@@ -9479,7 +9479,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9488,7 +9488,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9674,7 +9674,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9699,7 +9699,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlagsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a></code> | *No description.* |
 
 ---
 
@@ -9773,7 +9773,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsDatabaseFlags;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>
 
 ---
 
@@ -9790,14 +9790,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9968,7 +9968,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9995,8 +9995,8 @@ public resetDataCacheEnabled(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.property.dataCacheEnabledInput">dataCacheEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.property.dataCacheEnabled">dataCacheEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.property.dataCacheEnabledInput">dataCacheEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.property.dataCacheEnabled">dataCacheEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig">SqlDatabaseInstanceSettingsDataCacheConfig</a></code> | *No description.* |
 
 ---
@@ -10031,7 +10031,7 @@ public readonly fqn: string;
 public readonly dataCacheEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10041,7 +10041,7 @@ public readonly dataCacheEnabledInput: boolean | IResolvable;
 public readonly dataCacheEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10068,14 +10068,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10245,7 +10245,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10383,14 +10383,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10565,7 +10565,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10616,16 +10616,16 @@ public resetRecordClientAddress(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryInsightsEnabledInput">queryInsightsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryInsightsEnabledInput">queryInsightsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryPlansPerMinuteInput">queryPlansPerMinuteInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryStringLengthInput">queryStringLengthInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordApplicationTagsInput">recordApplicationTagsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordClientAddressInput">recordClientAddressInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryInsightsEnabled">queryInsightsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordApplicationTagsInput">recordApplicationTagsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordClientAddressInput">recordClientAddressInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryInsightsEnabled">queryInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryPlansPerMinute">queryPlansPerMinute</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryStringLength">queryStringLength</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig">SqlDatabaseInstanceSettingsInsightsConfig</a></code> | *No description.* |
 
 ---
@@ -10660,7 +10660,7 @@ public readonly fqn: string;
 public readonly queryInsightsEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10690,7 +10690,7 @@ public readonly queryStringLengthInput: number;
 public readonly recordApplicationTagsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10700,7 +10700,7 @@ public readonly recordApplicationTagsInput: boolean | IResolvable;
 public readonly recordClientAddressInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10710,7 +10710,7 @@ public readonly recordClientAddressInput: boolean | IResolvable;
 public readonly queryInsightsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10740,7 +10740,7 @@ public readonly queryStringLength: number;
 public readonly recordApplicationTags: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10750,7 +10750,7 @@ public readonly recordApplicationTags: boolean | IResolvable;
 public readonly recordClientAddress: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10777,7 +10777,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetw
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10785,7 +10785,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetw
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10851,7 +10851,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10886,7 +10886,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]</code> | *No description.* |
 
 ---
 
@@ -10920,7 +10920,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
 
 ---
 
@@ -10937,7 +10937,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetw
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10946,7 +10946,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetw
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11134,7 +11134,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11173,7 +11173,7 @@ public resetName(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.property.expirationTime">expirationTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a></code> | *No description.* |
 
 ---
 
@@ -11267,7 +11267,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>
 
 ---
 
@@ -11284,14 +11284,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11473,7 +11473,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11495,7 +11495,7 @@ public putAuthorizedNetworks(value: IResolvable | SqlDatabaseInstanceSettingsIpC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.putAuthorizedNetworks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
 
 ---
 
@@ -11507,7 +11507,7 @@ public putPscConfig(value: IResolvable | SqlDatabaseInstanceSettingsIpConfigurat
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.putPscConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
 
 ---
 
@@ -11581,19 +11581,19 @@ public resetSslMode(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.authorizedNetworks">authorizedNetworks</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.pscConfig">pscConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList">SqlDatabaseInstanceSettingsIpConfigurationPscConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.allocatedIpRangeInput">allocatedIpRangeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.authorizedNetworksInput">authorizedNetworksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.authorizedNetworksInput">authorizedNetworksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.customSubjectAlternativeNamesInput">customSubjectAlternativeNamesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.enablePrivatePathForGoogleCloudServicesInput">enablePrivatePathForGoogleCloudServicesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.ipv4EnabledInput">ipv4EnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.enablePrivatePathForGoogleCloudServicesInput">enablePrivatePathForGoogleCloudServicesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.ipv4EnabledInput">ipv4EnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.privateNetworkInput">privateNetworkInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.pscConfigInput">pscConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.pscConfigInput">pscConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaModeInput">serverCaModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaPoolInput">serverCaPoolInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.sslModeInput">sslModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.allocatedIpRange">allocatedIpRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.customSubjectAlternativeNames">customSubjectAlternativeNames</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.enablePrivatePathForGoogleCloudServices">enablePrivatePathForGoogleCloudServices</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.ipv4Enabled">ipv4Enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.enablePrivatePathForGoogleCloudServices">enablePrivatePathForGoogleCloudServices</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.ipv4Enabled">ipv4Enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.privateNetwork">privateNetwork</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaMode">serverCaMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaPool">serverCaPool</a></code> | <code>string</code> | *No description.* |
@@ -11662,7 +11662,7 @@ public readonly allocatedIpRangeInput: string;
 public readonly authorizedNetworksInput: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks">SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks</a>[]
 
 ---
 
@@ -11682,7 +11682,7 @@ public readonly customSubjectAlternativeNamesInput: string[];
 public readonly enablePrivatePathForGoogleCloudServicesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11692,7 +11692,7 @@ public readonly enablePrivatePathForGoogleCloudServicesInput: boolean | IResolva
 public readonly ipv4EnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11712,7 +11712,7 @@ public readonly privateNetworkInput: string;
 public readonly pscConfigInput: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
 
 ---
 
@@ -11772,7 +11772,7 @@ public readonly customSubjectAlternativeNames: string[];
 public readonly enablePrivatePathForGoogleCloudServices: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11782,7 +11782,7 @@ public readonly enablePrivatePathForGoogleCloudServices: boolean | IResolvable;
 public readonly ipv4Enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11849,7 +11849,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11857,7 +11857,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11923,7 +11923,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11958,7 +11958,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -11992,7 +11992,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]
 
 ---
 
@@ -12009,7 +12009,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12018,7 +12018,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12209,7 +12209,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12231,7 +12231,7 @@ public putPscAutoConnections(value: IResolvable | SqlDatabaseInstanceSettingsIpC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.putPscAutoConnections.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
 
 ---
 
@@ -12269,12 +12269,12 @@ public resetPscEnabled(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.pscAutoConnections">pscAutoConnections</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.allowedConsumerProjectsInput">allowedConsumerProjectsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.networkAttachmentUriInput">networkAttachmentUriInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.pscAutoConnectionsInput">pscAutoConnectionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.pscEnabledInput">pscEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.pscAutoConnectionsInput">pscAutoConnectionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.pscEnabledInput">pscEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.allowedConsumerProjects">allowedConsumerProjects</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.networkAttachmentUri">networkAttachmentUri</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.pscEnabled">pscEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.pscEnabled">pscEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a></code> | *No description.* |
 
 ---
 
@@ -12338,7 +12338,7 @@ public readonly networkAttachmentUriInput: string;
 public readonly pscAutoConnectionsInput: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
 
 ---
 
@@ -12348,7 +12348,7 @@ public readonly pscAutoConnectionsInput: IResolvable | SqlDatabaseInstanceSettin
 public readonly pscEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12378,7 +12378,7 @@ public readonly networkAttachmentUri: string;
 public readonly pscEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12388,7 +12388,7 @@ public readonly pscEnabled: boolean | IResolvable;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>
 
 ---
 
@@ -12405,7 +12405,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12413,7 +12413,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12479,7 +12479,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12514,7 +12514,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]</code> | *No description.* |
 
 ---
 
@@ -12548,7 +12548,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>[]
 
 ---
 
@@ -12565,7 +12565,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12574,7 +12574,7 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12761,7 +12761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12792,7 +12792,7 @@ public resetConsumerServiceProjectId(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerServiceProjectIdInput">consumerServiceProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetwork">consumerNetwork</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerServiceProjectId">consumerServiceProjectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a></code> | *No description.* |
 
 ---
 
@@ -12866,7 +12866,7 @@ public readonly consumerServiceProjectId: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections">SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnections</a>
 
 ---
 
@@ -12883,14 +12883,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13063,7 +13063,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13219,14 +13219,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13399,7 +13399,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13555,14 +13555,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13774,7 +13774,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13832,7 +13832,7 @@ public putConnectionPoolConfig(value: IResolvable | SqlDatabaseInstanceSettingsC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putConnectionPoolConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
 
 ---
 
@@ -13844,7 +13844,7 @@ public putDatabaseFlags(value: IResolvable | SqlDatabaseInstanceSettingsDatabase
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putDatabaseFlags.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
 
 ---
 
@@ -14146,26 +14146,26 @@ public resetUserLabels(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.availabilityTypeInput">availabilityTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.backupConfigurationInput">backupConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration">SqlDatabaseInstanceSettingsBackupConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.collationInput">collationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.connectionPoolConfigInput">connectionPoolConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.connectionPoolConfigInput">connectionPoolConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.connectorEnforcementInput">connectorEnforcementInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.databaseFlagsInput">databaseFlagsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.databaseFlagsInput">databaseFlagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.dataCacheConfigInput">dataCacheConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig">SqlDatabaseInstanceSettingsDataCacheConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.deletionProtectionEnabledInput">deletionProtectionEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.deletionProtectionEnabledInput">deletionProtectionEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.denyMaintenancePeriodInput">denyMaintenancePeriodInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriod">SqlDatabaseInstanceSettingsDenyMaintenancePeriod</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresizeInput">diskAutoresizeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresizeInput">diskAutoresizeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresizeLimitInput">diskAutoresizeLimitInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskSizeInput">diskSizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskTypeInput">diskTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.editionInput">editionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableDataplexIntegrationInput">enableDataplexIntegrationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableGoogleMlIntegrationInput">enableGoogleMlIntegrationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableDataplexIntegrationInput">enableDataplexIntegrationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableGoogleMlIntegrationInput">enableGoogleMlIntegrationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.insightsConfigInput">insightsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig">SqlDatabaseInstanceSettingsInsightsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.ipConfigurationInput">ipConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration">SqlDatabaseInstanceSettingsIpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.locationPreferenceInput">locationPreferenceInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreference">SqlDatabaseInstanceSettingsLocationPreference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.maintenanceWindowInput">maintenanceWindowInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindow">SqlDatabaseInstanceSettingsMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.passwordValidationPolicyInput">passwordValidationPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy">SqlDatabaseInstanceSettingsPasswordValidationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.pricingPlanInput">pricingPlanInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.retainBackupsOnDeleteInput">retainBackupsOnDeleteInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.retainBackupsOnDeleteInput">retainBackupsOnDeleteInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.sqlServerAuditConfigInput">sqlServerAuditConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfig">SqlDatabaseInstanceSettingsSqlServerAuditConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.tierInput">tierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.timeZoneInput">timeZoneInput</a></code> | <code>string</code> | *No description.* |
@@ -14174,16 +14174,16 @@ public resetUserLabels(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.availabilityType">availabilityType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.collation">collation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.connectorEnforcement">connectorEnforcement</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresize">diskAutoresize</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresize">diskAutoresize</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresizeLimit">diskAutoresizeLimit</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskSize">diskSize</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskType">diskType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.edition">edition</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableDataplexIntegration">enableDataplexIntegration</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableGoogleMlIntegration">enableGoogleMlIntegration</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableDataplexIntegration">enableDataplexIntegration</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableGoogleMlIntegration">enableGoogleMlIntegration</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.retainBackupsOnDelete">retainBackupsOnDelete</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.retainBackupsOnDelete">retainBackupsOnDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.tier">tier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.timeZone">timeZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.userLabels">userLabels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -14431,7 +14431,7 @@ public readonly collationInput: string;
 public readonly connectionPoolConfigInput: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]
 
 ---
 
@@ -14451,7 +14451,7 @@ public readonly connectorEnforcementInput: string;
 public readonly databaseFlagsInput: IResolvable | SqlDatabaseInstanceSettingsDatabaseFlags[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]
 
 ---
 
@@ -14471,7 +14471,7 @@ public readonly dataCacheConfigInput: SqlDatabaseInstanceSettingsDataCacheConfig
 public readonly deletionProtectionEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14491,7 +14491,7 @@ public readonly denyMaintenancePeriodInput: SqlDatabaseInstanceSettingsDenyMaint
 public readonly diskAutoresizeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14541,7 +14541,7 @@ public readonly editionInput: string;
 public readonly enableDataplexIntegrationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14551,7 +14551,7 @@ public readonly enableDataplexIntegrationInput: boolean | IResolvable;
 public readonly enableGoogleMlIntegrationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14621,7 +14621,7 @@ public readonly pricingPlanInput: string;
 public readonly retainBackupsOnDeleteInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14711,7 +14711,7 @@ public readonly connectorEnforcement: string;
 public readonly deletionProtectionEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14721,7 +14721,7 @@ public readonly deletionProtectionEnabled: boolean | IResolvable;
 public readonly diskAutoresize: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14771,7 +14771,7 @@ public readonly edition: string;
 public readonly enableDataplexIntegration: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14781,7 +14781,7 @@ public readonly enableDataplexIntegration: boolean | IResolvable;
 public readonly enableGoogleMlIntegration: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14801,7 +14801,7 @@ public readonly pricingPlan: string;
 public readonly retainBackupsOnDelete: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14858,14 +14858,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15040,7 +15040,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15092,14 +15092,14 @@ public resetReuseInterval(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.complexityInput">complexityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.disallowUsernameSubstringInput">disallowUsernameSubstringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.enablePasswordPolicyInput">enablePasswordPolicyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.disallowUsernameSubstringInput">disallowUsernameSubstringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.enablePasswordPolicyInput">enablePasswordPolicyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.minLengthInput">minLengthInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.passwordChangeIntervalInput">passwordChangeIntervalInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.reuseIntervalInput">reuseIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.complexity">complexity</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.disallowUsernameSubstring">disallowUsernameSubstring</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.enablePasswordPolicy">enablePasswordPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.disallowUsernameSubstring">disallowUsernameSubstring</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.enablePasswordPolicy">enablePasswordPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.minLength">minLength</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.passwordChangeInterval">passwordChangeInterval</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference.property.reuseInterval">reuseInterval</a></code> | <code>number</code> | *No description.* |
@@ -15147,7 +15147,7 @@ public readonly complexityInput: string;
 public readonly disallowUsernameSubstringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15157,7 +15157,7 @@ public readonly disallowUsernameSubstringInput: boolean | IResolvable;
 public readonly enablePasswordPolicyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15207,7 +15207,7 @@ public readonly complexity: string;
 public readonly disallowUsernameSubstring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15217,7 +15217,7 @@ public readonly disallowUsernameSubstring: boolean | IResolvable;
 public readonly enablePasswordPolicy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15274,14 +15274,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15454,7 +15454,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15610,14 +15610,14 @@ new sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15790,7 +15790,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15835,7 +15835,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -15929,7 +15929,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | SqlDatabaseInstanceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a>
 
 ---
 

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleComputeInstanceIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleComputeInstanceIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_instance_iam_policy#id DataGoogleComputeInstanceIamPolicy#id}
   *
@@ -36,7 +36,7 @@ export interface DataGoogleComputeInstanceIamPolicyConfig extends cdktf.Terrafor
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_instance_iam_policy google_compute_instance_iam_policy}
 */
-export class DataGoogleComputeInstanceIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleComputeInstanceIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class DataGoogleComputeInstanceIamPolicy extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleComputeInstanceIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleComputeInstanceIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeInstanceIamPolicy to import
   * @param importFromId The id of the existing DataGoogleComputeInstanceIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_instance_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeInstanceIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_instance_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_instance_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -171,35 +171,35 @@ export class DataGoogleComputeInstanceIamPolicy extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_name: cdktf.stringToTerraform(this._instanceName),
-      project: cdktf.stringToTerraform(this._project),
-      zone: cdktf.stringToTerraform(this._zone),
+      id: cdktn.stringToTerraform(this._id),
+      instance_name: cdktn.stringToTerraform(this._instanceName),
+      project: cdktn.stringToTerraform(this._project),
+      zone: cdktn.stringToTerraform(this._zone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_name: {
-        value: cdktf.stringToHclTerraform(this._instanceName),
+        value: cdktn.stringToHclTerraform(this._instanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

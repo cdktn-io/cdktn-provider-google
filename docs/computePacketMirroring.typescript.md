@@ -302,7 +302,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -485,7 +485,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputePacketMirroring resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ComputePacketMirroring resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -557,7 +557,7 @@ import { computePacketMirroring } from '@cdktn/provider-google'
 computePacketMirroring.ComputePacketMirroring.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ComputePacketMirroring resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputePacketMirroring resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.generateConfigForImport.parameter.scope"></a>
 
@@ -587,7 +587,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputePacketMirroring to import is found.
 
@@ -598,19 +598,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.collectorIlb">collectorIlb</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringCollectorIlbOutputReference">ComputePacketMirroringCollectorIlbOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference">ComputePacketMirroringFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.mirroredResources">mirroredResources</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference">ComputePacketMirroringMirroredResourcesOutputReference</a></code> | *No description.* |
@@ -626,7 +626,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroring.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -654,7 +654,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -704,7 +704,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -714,7 +714,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -724,7 +724,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -744,7 +744,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -754,7 +754,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -764,7 +764,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -774,7 +774,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -934,7 +934,7 @@ public readonly regionInput: string;
 public readonly timeoutsInput: IResolvable | ComputePacketMirroringTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a>
 
 ---
 
@@ -1064,13 +1064,13 @@ const computePacketMirroringConfig: computePacketMirroring.ComputePacketMirrorin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.collectorIlb">collectorIlb</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringCollectorIlb">ComputePacketMirroringCollectorIlb</a></code> | collector_ilb block. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.mirroredResources">mirroredResources</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResources">ComputePacketMirroringMirroredResources</a></code> | mirrored_resources block. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringConfig.property.name">name</a></code> | <code>string</code> | The name of the packet mirroring rule. |
@@ -1091,7 +1091,7 @@ const computePacketMirroringConfig: computePacketMirroring.ComputePacketMirrorin
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1111,7 +1111,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1131,7 +1131,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1151,7 +1151,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1386,8 +1386,8 @@ const computePacketMirroringMirroredResources: computePacketMirroring.ComputePac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResources.property.instances">instances</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]</code> | instances block. |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResources.property.subnetworks">subnetworks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]</code> | subnetworks block. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResources.property.instances">instances</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]</code> | instances block. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResources.property.subnetworks">subnetworks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]</code> | subnetworks block. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResources.property.tags">tags</a></code> | <code>string[]</code> | All instances with these tags will be mirrored. |
 
 ---
@@ -1398,7 +1398,7 @@ const computePacketMirroringMirroredResources: computePacketMirroring.ComputePac
 public readonly instances: IResolvable | ComputePacketMirroringMirroredResourcesInstances[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
 
 instances block.
 
@@ -1412,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly subnetworks: IResolvable | ComputePacketMirroringMirroredResourcesSubnetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
 
 subnetworks block.
 
@@ -1600,14 +1600,14 @@ new computePacketMirroring.ComputePacketMirroringCollectorIlbOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringCollectorIlbOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringCollectorIlbOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringCollectorIlbOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringCollectorIlbOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1777,7 +1777,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringCollectorIlbOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1871,14 +1871,14 @@ new computePacketMirroring.ComputePacketMirroringFilterOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2051,7 +2051,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringFilterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2207,7 +2207,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2215,7 +2215,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2281,7 +2281,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2316,7 +2316,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]</code> | *No description.* |
 
 ---
 
@@ -2350,7 +2350,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputePacketMirroringMirroredResourcesInstances[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
 
 ---
 
@@ -2367,7 +2367,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2376,7 +2376,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2562,7 +2562,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2585,7 +2585,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.property.url">url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a></code> | *No description.* |
 
 ---
 
@@ -2639,7 +2639,7 @@ public readonly url: string;
 public readonly internalValue: IResolvable | ComputePacketMirroringMirroredResourcesInstances;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>
 
 ---
 
@@ -2656,14 +2656,14 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2838,7 +2838,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2860,7 +2860,7 @@ public putInstances(value: IResolvable | ComputePacketMirroringMirroredResources
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.putInstances.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
 
 ---
 
@@ -2872,7 +2872,7 @@ public putSubnetworks(value: IResolvable | ComputePacketMirroringMirroredResourc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.putSubnetworks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
 
 ---
 
@@ -2903,8 +2903,8 @@ public resetTags(): void
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.instances">instances</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstancesList">ComputePacketMirroringMirroredResourcesInstancesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.subnetworks">subnetworks</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList">ComputePacketMirroringMirroredResourcesSubnetworksList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.instancesInput">instancesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.subnetworksInput">subnetworksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.instancesInput">instancesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.subnetworksInput">subnetworksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResources">ComputePacketMirroringMirroredResources</a></code> | *No description.* |
@@ -2961,7 +2961,7 @@ public readonly subnetworks: ComputePacketMirroringMirroredResourcesSubnetworksL
 public readonly instancesInput: IResolvable | ComputePacketMirroringMirroredResourcesInstances[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesInstances">ComputePacketMirroringMirroredResourcesInstances</a>[]
 
 ---
 
@@ -2971,7 +2971,7 @@ public readonly instancesInput: IResolvable | ComputePacketMirroringMirroredReso
 public readonly subnetworksInput: IResolvable | ComputePacketMirroringMirroredResourcesSubnetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
 
 ---
 
@@ -3018,7 +3018,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3026,7 +3026,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3092,7 +3092,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3127,7 +3127,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]</code> | *No description.* |
 
 ---
 
@@ -3161,7 +3161,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputePacketMirroringMirroredResourcesSubnetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>[]
 
 ---
 
@@ -3178,7 +3178,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3187,7 +3187,7 @@ new computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3373,7 +3373,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3396,7 +3396,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.property.url">url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a></code> | *No description.* |
 
 ---
 
@@ -3450,7 +3450,7 @@ public readonly url: string;
 public readonly internalValue: IResolvable | ComputePacketMirroringMirroredResourcesSubnetworks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringMirroredResourcesSubnetworks">ComputePacketMirroringMirroredResourcesSubnetworks</a>
 
 ---
 
@@ -3467,14 +3467,14 @@ new computePacketMirroring.ComputePacketMirroringNetworkOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringNetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringNetworkOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3644,7 +3644,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringNetworkOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3738,14 +3738,14 @@ new computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3918,7 +3918,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3963,7 +3963,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4057,7 +4057,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ComputePacketMirroringTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computePacketMirroring.ComputePacketMirroringTimeouts">ComputePacketMirroringTimeouts</a>
 
 ---
 

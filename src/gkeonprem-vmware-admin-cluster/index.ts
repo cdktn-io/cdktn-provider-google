@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GkeonpremVmwareAdminClusterConfig extends cdktf.TerraformMetaArguments {
+export interface GkeonpremVmwareAdminClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Annotations on the VMware Admin Cluster.
   * This field has the same restrictions as Kubernetes annotations.
@@ -46,7 +46,7 @@ export interface GkeonpremVmwareAdminClusterConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#enable_advanced_cluster GkeonpremVmwareAdminCluster#enable_advanced_cluster}
   */
-  readonly enableAdvancedCluster?: boolean | cdktf.IResolvable;
+  readonly enableAdvancedCluster?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#id GkeonpremVmwareAdminCluster#id}
   *
@@ -153,8 +153,8 @@ export interface GkeonpremVmwareAdminClusterFleet {
 }
 
 export function gkeonpremVmwareAdminClusterFleetToTerraform(struct?: GkeonpremVmwareAdminClusterFleet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -163,8 +163,8 @@ export function gkeonpremVmwareAdminClusterFleetToTerraform(struct?: GkeonpremVm
 
 
 export function gkeonpremVmwareAdminClusterFleetToHclTerraform(struct?: GkeonpremVmwareAdminClusterFleet): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -172,7 +172,7 @@ export function gkeonpremVmwareAdminClusterFleetToHclTerraform(struct?: Gkeonpre
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterFleetOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterFleetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -181,7 +181,7 @@ export class GkeonpremVmwareAdminClusterFleetOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -206,14 +206,14 @@ export class GkeonpremVmwareAdminClusterFleetOutputReference extends cdktf.Compl
   }
 }
 
-export class GkeonpremVmwareAdminClusterFleetList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterFleetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,8 +228,8 @@ export interface GkeonpremVmwareAdminClusterStatusConditions {
 }
 
 export function gkeonpremVmwareAdminClusterStatusConditionsToTerraform(struct?: GkeonpremVmwareAdminClusterStatusConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -238,8 +238,8 @@ export function gkeonpremVmwareAdminClusterStatusConditionsToTerraform(struct?: 
 
 
 export function gkeonpremVmwareAdminClusterStatusConditionsToHclTerraform(struct?: GkeonpremVmwareAdminClusterStatusConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -247,7 +247,7 @@ export function gkeonpremVmwareAdminClusterStatusConditionsToHclTerraform(struct
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterStatusConditionsOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterStatusConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -256,7 +256,7 @@ export class GkeonpremVmwareAdminClusterStatusConditionsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -301,14 +301,14 @@ export class GkeonpremVmwareAdminClusterStatusConditionsOutputReference extends 
   }
 }
 
-export class GkeonpremVmwareAdminClusterStatusConditionsList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterStatusConditionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -323,8 +323,8 @@ export interface GkeonpremVmwareAdminClusterStatus {
 }
 
 export function gkeonpremVmwareAdminClusterStatusToTerraform(struct?: GkeonpremVmwareAdminClusterStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -333,8 +333,8 @@ export function gkeonpremVmwareAdminClusterStatusToTerraform(struct?: GkeonpremV
 
 
 export function gkeonpremVmwareAdminClusterStatusToHclTerraform(struct?: GkeonpremVmwareAdminClusterStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -342,7 +342,7 @@ export function gkeonpremVmwareAdminClusterStatusToHclTerraform(struct?: Gkeonpr
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterStatusOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -351,7 +351,7 @@ export class GkeonpremVmwareAdminClusterStatusOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -382,14 +382,14 @@ export class GkeonpremVmwareAdminClusterStatusOutputReference extends cdktf.Comp
   }
 }
 
-export class GkeonpremVmwareAdminClusterStatusList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -406,28 +406,28 @@ export interface GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#enabled GkeonpremVmwareAdminCluster#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigToTerraform(struct?: GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference | GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference | GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -438,14 +438,14 @@ export function gkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -471,11 +471,11 @@ export class GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -493,8 +493,8 @@ export interface GkeonpremVmwareAdminClusterAddonNode {
 }
 
 export function gkeonpremVmwareAdminClusterAddonNodeToTerraform(struct?: GkeonpremVmwareAdminClusterAddonNodeOutputReference | GkeonpremVmwareAdminClusterAddonNode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -504,8 +504,8 @@ export function gkeonpremVmwareAdminClusterAddonNodeToTerraform(struct?: Gkeonpr
 
 
 export function gkeonpremVmwareAdminClusterAddonNodeToHclTerraform(struct?: GkeonpremVmwareAdminClusterAddonNodeOutputReference | GkeonpremVmwareAdminClusterAddonNode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -521,14 +521,14 @@ export function gkeonpremVmwareAdminClusterAddonNodeToHclTerraform(struct?: Gkeo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterAddonNodeOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterAddonNodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -577,28 +577,28 @@ export interface GkeonpremVmwareAdminClusterAntiAffinityGroups {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#aag_config_disabled GkeonpremVmwareAdminCluster#aag_config_disabled}
   */
-  readonly aagConfigDisabled: boolean | cdktf.IResolvable;
+  readonly aagConfigDisabled: boolean | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterAntiAffinityGroupsToTerraform(struct?: GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference | GkeonpremVmwareAdminClusterAntiAffinityGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aag_config_disabled: cdktf.booleanToTerraform(struct!.aagConfigDisabled),
+    aag_config_disabled: cdktn.booleanToTerraform(struct!.aagConfigDisabled),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterAntiAffinityGroupsToHclTerraform(struct?: GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference | GkeonpremVmwareAdminClusterAntiAffinityGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aag_config_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.aagConfigDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.aagConfigDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -609,14 +609,14 @@ export function gkeonpremVmwareAdminClusterAntiAffinityGroupsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -642,11 +642,11 @@ export class GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference extend
   }
 
   // aag_config_disabled - computed: false, optional: false, required: true
-  private _aagConfigDisabled?: boolean | cdktf.IResolvable; 
+  private _aagConfigDisabled?: boolean | cdktn.IResolvable; 
   public get aagConfigDisabled() {
     return this.getBooleanAttribute('aag_config_disabled');
   }
-  public set aagConfigDisabled(value: boolean | cdktf.IResolvable) {
+  public set aagConfigDisabled(value: boolean | cdktn.IResolvable) {
     this._aagConfigDisabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -663,25 +663,25 @@ export interface GkeonpremVmwareAdminClusterAuthorizationViewerUsers {
   readonly username: string;
 }
 
-export function gkeonpremVmwareAdminClusterAuthorizationViewerUsersToTerraform(struct?: GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterAuthorizationViewerUsersToTerraform(struct?: GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    username: cdktf.stringToTerraform(struct!.username),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function gkeonpremVmwareAdminClusterAuthorizationViewerUsersToHclTerraform(struct?: GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterAuthorizationViewerUsersToHclTerraform(struct?: GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -692,9 +692,9 @@ export function gkeonpremVmwareAdminClusterAuthorizationViewerUsersToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -702,11 +702,11 @@ export class GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -719,13 +719,13 @@ export class GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeonpremVmwareAdminClusterAuthorizationViewerUsers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -750,15 +750,15 @@ export class GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference 
   }
 }
 
-export class GkeonpremVmwareAdminClusterAuthorizationViewerUsersList extends cdktf.ComplexList {
-  public internalValue? : GkeonpremVmwareAdminClusterAuthorizationViewerUsers[] | cdktf.IResolvable
+export class GkeonpremVmwareAdminClusterAuthorizationViewerUsersList extends cdktn.ComplexList {
+  public internalValue? : GkeonpremVmwareAdminClusterAuthorizationViewerUsers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -775,28 +775,28 @@ export interface GkeonpremVmwareAdminClusterAuthorization {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#viewer_users GkeonpremVmwareAdminCluster#viewer_users}
   */
-  readonly viewerUsers?: GkeonpremVmwareAdminClusterAuthorizationViewerUsers[] | cdktf.IResolvable;
+  readonly viewerUsers?: GkeonpremVmwareAdminClusterAuthorizationViewerUsers[] | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterAuthorizationToTerraform(struct?: GkeonpremVmwareAdminClusterAuthorizationOutputReference | GkeonpremVmwareAdminClusterAuthorization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    viewer_users: cdktf.listMapper(gkeonpremVmwareAdminClusterAuthorizationViewerUsersToTerraform, true)(struct!.viewerUsers),
+    viewer_users: cdktn.listMapper(gkeonpremVmwareAdminClusterAuthorizationViewerUsersToTerraform, true)(struct!.viewerUsers),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterAuthorizationToHclTerraform(struct?: GkeonpremVmwareAdminClusterAuthorizationOutputReference | GkeonpremVmwareAdminClusterAuthorization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     viewer_users: {
-      value: cdktf.listMapperHcl(gkeonpremVmwareAdminClusterAuthorizationViewerUsersToHclTerraform, true)(struct!.viewerUsers),
+      value: cdktn.listMapperHcl(gkeonpremVmwareAdminClusterAuthorizationViewerUsersToHclTerraform, true)(struct!.viewerUsers),
       isBlock: true,
       type: "list",
       storageClassType: "GkeonpremVmwareAdminClusterAuthorizationViewerUsersList",
@@ -807,14 +807,14 @@ export function gkeonpremVmwareAdminClusterAuthorizationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterAuthorizationOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterAuthorizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -844,7 +844,7 @@ export class GkeonpremVmwareAdminClusterAuthorizationOutputReference extends cdk
   public get viewerUsers() {
     return this._viewerUsers;
   }
-  public putViewerUsers(value: GkeonpremVmwareAdminClusterAuthorizationViewerUsers[] | cdktf.IResolvable) {
+  public putViewerUsers(value: GkeonpremVmwareAdminClusterAuthorizationViewerUsers[] | cdktn.IResolvable) {
     this._viewerUsers.internalValue = value;
   }
   public resetViewerUsers() {
@@ -861,28 +861,28 @@ export interface GkeonpremVmwareAdminClusterAutoRepairConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#enabled GkeonpremVmwareAdminCluster#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterAutoRepairConfigToTerraform(struct?: GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference | GkeonpremVmwareAdminClusterAutoRepairConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterAutoRepairConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference | GkeonpremVmwareAdminClusterAutoRepairConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -893,14 +893,14 @@ export function gkeonpremVmwareAdminClusterAutoRepairConfigToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -926,11 +926,11 @@ export class GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference extends 
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -960,38 +960,38 @@ export interface GkeonpremVmwareAdminClusterControlPlaneNode {
 }
 
 export function gkeonpremVmwareAdminClusterControlPlaneNodeToTerraform(struct?: GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference | GkeonpremVmwareAdminClusterControlPlaneNode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpus: cdktf.numberToTerraform(struct!.cpus),
-    memory: cdktf.numberToTerraform(struct!.memory),
-    replicas: cdktf.numberToTerraform(struct!.replicas),
+    cpus: cdktn.numberToTerraform(struct!.cpus),
+    memory: cdktn.numberToTerraform(struct!.memory),
+    replicas: cdktn.numberToTerraform(struct!.replicas),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterControlPlaneNodeToHclTerraform(struct?: GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference | GkeonpremVmwareAdminClusterControlPlaneNode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpus: {
-      value: cdktf.numberToHclTerraform(struct!.cpus),
+      value: cdktn.numberToHclTerraform(struct!.cpus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     memory: {
-      value: cdktf.numberToHclTerraform(struct!.memory),
+      value: cdktn.numberToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     replicas: {
-      value: cdktf.numberToHclTerraform(struct!.replicas),
+      value: cdktn.numberToHclTerraform(struct!.replicas),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1002,14 +1002,14 @@ export function gkeonpremVmwareAdminClusterControlPlaneNodeToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1118,38 +1118,38 @@ export interface GkeonpremVmwareAdminClusterLoadBalancerF5Config {
 }
 
 export function gkeonpremVmwareAdminClusterLoadBalancerF5ConfigToTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerF5Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    partition: cdktf.stringToTerraform(struct!.partition),
-    snat_pool: cdktf.stringToTerraform(struct!.snatPool),
+    address: cdktn.stringToTerraform(struct!.address),
+    partition: cdktn.stringToTerraform(struct!.partition),
+    snat_pool: cdktn.stringToTerraform(struct!.snatPool),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterLoadBalancerF5ConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerF5Config): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     partition: {
-      value: cdktf.stringToHclTerraform(struct!.partition),
+      value: cdktn.stringToHclTerraform(struct!.partition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     snat_pool: {
-      value: cdktf.stringToHclTerraform(struct!.snatPool),
+      value: cdktn.stringToHclTerraform(struct!.snatPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1160,14 +1160,14 @@ export function gkeonpremVmwareAdminClusterLoadBalancerF5ConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1290,52 +1290,52 @@ export interface GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig {
 }
 
 export function gkeonpremVmwareAdminClusterLoadBalancerManualLbConfigToTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    addons_node_port: cdktf.numberToTerraform(struct!.addonsNodePort),
-    control_plane_node_port: cdktf.numberToTerraform(struct!.controlPlaneNodePort),
-    ingress_http_node_port: cdktf.numberToTerraform(struct!.ingressHttpNodePort),
-    ingress_https_node_port: cdktf.numberToTerraform(struct!.ingressHttpsNodePort),
-    konnectivity_server_node_port: cdktf.numberToTerraform(struct!.konnectivityServerNodePort),
+    addons_node_port: cdktn.numberToTerraform(struct!.addonsNodePort),
+    control_plane_node_port: cdktn.numberToTerraform(struct!.controlPlaneNodePort),
+    ingress_http_node_port: cdktn.numberToTerraform(struct!.ingressHttpNodePort),
+    ingress_https_node_port: cdktn.numberToTerraform(struct!.ingressHttpsNodePort),
+    konnectivity_server_node_port: cdktn.numberToTerraform(struct!.konnectivityServerNodePort),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterLoadBalancerManualLbConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     addons_node_port: {
-      value: cdktf.numberToHclTerraform(struct!.addonsNodePort),
+      value: cdktn.numberToHclTerraform(struct!.addonsNodePort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     control_plane_node_port: {
-      value: cdktf.numberToHclTerraform(struct!.controlPlaneNodePort),
+      value: cdktn.numberToHclTerraform(struct!.controlPlaneNodePort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ingress_http_node_port: {
-      value: cdktf.numberToHclTerraform(struct!.ingressHttpNodePort),
+      value: cdktn.numberToHclTerraform(struct!.ingressHttpNodePort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     ingress_https_node_port: {
-      value: cdktf.numberToHclTerraform(struct!.ingressHttpsNodePort),
+      value: cdktn.numberToHclTerraform(struct!.ingressHttpsNodePort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     konnectivity_server_node_port: {
-      value: cdktf.numberToHclTerraform(struct!.konnectivityServerNodePort),
+      value: cdktn.numberToHclTerraform(struct!.konnectivityServerNodePort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1346,14 +1346,14 @@ export function gkeonpremVmwareAdminClusterLoadBalancerManualLbConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1488,28 +1488,28 @@ export interface GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#enabled GkeonpremVmwareAdminCluster#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigToTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1520,14 +1520,14 @@ export function gkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1553,11 +1553,11 @@ export class GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1585,31 +1585,31 @@ export interface GkeonpremVmwareAdminClusterLoadBalancerVipConfig {
 }
 
 export function gkeonpremVmwareAdminClusterLoadBalancerVipConfigToTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerVipConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    addons_vip: cdktf.stringToTerraform(struct!.addonsVip),
-    control_plane_vip: cdktf.stringToTerraform(struct!.controlPlaneVip),
+    addons_vip: cdktn.stringToTerraform(struct!.addonsVip),
+    control_plane_vip: cdktn.stringToTerraform(struct!.controlPlaneVip),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterLoadBalancerVipConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference | GkeonpremVmwareAdminClusterLoadBalancerVipConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     addons_vip: {
-      value: cdktf.stringToHclTerraform(struct!.addonsVip),
+      value: cdktn.stringToHclTerraform(struct!.addonsVip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     control_plane_vip: {
-      value: cdktf.stringToHclTerraform(struct!.controlPlaneVip),
+      value: cdktn.stringToHclTerraform(struct!.controlPlaneVip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1620,14 +1620,14 @@ export function gkeonpremVmwareAdminClusterLoadBalancerVipConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1715,8 +1715,8 @@ export interface GkeonpremVmwareAdminClusterLoadBalancer {
 }
 
 export function gkeonpremVmwareAdminClusterLoadBalancerToTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerOutputReference | GkeonpremVmwareAdminClusterLoadBalancer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1729,8 +1729,8 @@ export function gkeonpremVmwareAdminClusterLoadBalancerToTerraform(struct?: Gkeo
 
 
 export function gkeonpremVmwareAdminClusterLoadBalancerToHclTerraform(struct?: GkeonpremVmwareAdminClusterLoadBalancerOutputReference | GkeonpremVmwareAdminClusterLoadBalancer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1764,14 +1764,14 @@ export function gkeonpremVmwareAdminClusterLoadBalancerToHclTerraform(struct?: G
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterLoadBalancerOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterLoadBalancerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1882,28 +1882,28 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#enabled GkeonpremVmwareAdminCluster#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1914,14 +1914,14 @@ export function gkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1947,11 +1947,11 @@ export class GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1974,32 +1974,32 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigCon
   readonly ip: string;
 }
 
-export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    ip: cdktf.stringToTerraform(struct!.ip),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    ip: cdktn.stringToTerraform(struct!.ip),
   }
 }
 
 
-export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2010,9 +2010,9 @@ export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigCont
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2020,11 +2020,11 @@ export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2041,14 +2041,14 @@ export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hostname = undefined;
       this._ip = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2090,15 +2090,15 @@ export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControl
   }
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList extends cdktf.ComplexList {
-  public internalValue? : GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps[] | cdktf.IResolvable
+export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList extends cdktn.ComplexList {
+  public internalValue? : GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2127,42 +2127,42 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigCon
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#ips GkeonpremVmwareAdminCluster#ips}
   */
-  readonly ips: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps[] | cdktf.IResolvable;
+  readonly ips: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps[] | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference | GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gateway: cdktf.stringToTerraform(struct!.gateway),
-    netmask: cdktf.stringToTerraform(struct!.netmask),
-    ips: cdktf.listMapper(gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToTerraform, true)(struct!.ips),
+    gateway: cdktn.stringToTerraform(struct!.gateway),
+    netmask: cdktn.stringToTerraform(struct!.netmask),
+    ips: cdktn.listMapper(gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToTerraform, true)(struct!.ips),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference | GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gateway: {
-      value: cdktf.stringToHclTerraform(struct!.gateway),
+      value: cdktn.stringToHclTerraform(struct!.gateway),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     netmask: {
-      value: cdktf.stringToHclTerraform(struct!.netmask),
+      value: cdktn.stringToHclTerraform(struct!.netmask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ips: {
-      value: cdktf.listMapperHcl(gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToHclTerraform, true)(struct!.ips),
+      value: cdktn.listMapperHcl(gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsToHclTerraform, true)(struct!.ips),
       isBlock: true,
       type: "list",
       storageClassType: "GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList",
@@ -2173,14 +2173,14 @@ export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigCont
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2248,7 +2248,7 @@ export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControl
   public get ips() {
     return this._ips;
   }
-  public putIps(value: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps[] | cdktf.IResolvable) {
+  public putIps(value: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps[] | cdktn.IResolvable) {
     this._ips.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2266,8 +2266,8 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig {
 }
 
 export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2277,8 +2277,8 @@ export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigToTe
 
 
 export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2294,14 +2294,14 @@ export function gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2364,38 +2364,38 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigHostConfig {
 }
 
 export function gkeonpremVmwareAdminClusterNetworkConfigHostConfigToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigHostConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dns_search_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsSearchDomains),
-    dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServers),
-    ntp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ntpServers),
+    dns_search_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsSearchDomains),
+    dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServers),
+    ntp_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ntpServers),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterNetworkConfigHostConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigHostConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dns_search_domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsSearchDomains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsSearchDomains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     dns_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ntp_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ntpServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ntpServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -2406,14 +2406,14 @@ export function gkeonpremVmwareAdminClusterNetworkConfigHostConfigToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2513,32 +2513,32 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksI
   readonly ip: string;
 }
 
-export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    ip: cdktf.stringToTerraform(struct!.ip),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    ip: cdktn.stringToTerraform(struct!.ip),
   }
 }
 
 
-export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2549,9 +2549,9 @@ export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2559,11 +2559,11 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2580,14 +2580,14 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hostname = undefined;
       this._ip = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2629,15 +2629,15 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOu
   }
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList extends cdktf.ComplexList {
-  public internalValue? : GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps[] | cdktf.IResolvable
+export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList extends cdktn.ComplexList {
+  public internalValue? : GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2666,42 +2666,42 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#ips GkeonpremVmwareAdminCluster#ips}
   */
-  readonly ips: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps[] | cdktf.IResolvable;
+  readonly ips: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps[] | cdktn.IResolvable;
 }
 
-export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gateway: cdktf.stringToTerraform(struct!.gateway),
-    netmask: cdktf.stringToTerraform(struct!.netmask),
-    ips: cdktf.listMapper(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToTerraform, true)(struct!.ips),
+    gateway: cdktn.stringToTerraform(struct!.gateway),
+    netmask: cdktn.stringToTerraform(struct!.netmask),
+    ips: cdktn.listMapper(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToTerraform, true)(struct!.ips),
   }
 }
 
 
-export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gateway: {
-      value: cdktf.stringToHclTerraform(struct!.gateway),
+      value: cdktn.stringToHclTerraform(struct!.gateway),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     netmask: {
-      value: cdktf.stringToHclTerraform(struct!.netmask),
+      value: cdktn.stringToHclTerraform(struct!.netmask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ips: {
-      value: cdktf.listMapperHcl(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToHclTerraform, true)(struct!.ips),
+      value: cdktn.listMapperHcl(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsToHclTerraform, true)(struct!.ips),
       isBlock: true,
       type: "list",
       storageClassType: "GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList",
@@ -2712,9 +2712,9 @@ export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2722,11 +2722,11 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2747,7 +2747,7 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2755,7 +2755,7 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutpu
       this._netmask = undefined;
       this._ips.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2799,7 +2799,7 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutpu
   public get ips() {
     return this._ips;
   }
-  public putIps(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps[] | cdktf.IResolvable) {
+  public putIps(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps[] | cdktn.IResolvable) {
     this._ips.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2808,15 +2808,15 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutpu
   }
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList extends cdktf.ComplexList {
-  public internalValue? : GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks[] | cdktf.IResolvable
+export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList extends cdktn.ComplexList {
+  public internalValue? : GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2833,28 +2833,28 @@ export interface GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#ip_blocks GkeonpremVmwareAdminCluster#ip_blocks}
   */
-  readonly ipBlocks?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks[] | cdktf.IResolvable;
+  readonly ipBlocks?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks[] | cdktn.IResolvable;
 }
 
 export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_blocks: cdktf.listMapper(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToTerraform, true)(struct!.ipBlocks),
+    ip_blocks: cdktn.listMapper(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToTerraform, true)(struct!.ipBlocks),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_blocks: {
-      value: cdktf.listMapperHcl(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToHclTerraform, true)(struct!.ipBlocks),
+      value: cdktn.listMapperHcl(gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksToHclTerraform, true)(struct!.ipBlocks),
       isBlock: true,
       type: "list",
       storageClassType: "GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList",
@@ -2865,14 +2865,14 @@ export function gkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2902,7 +2902,7 @@ export class GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReferen
   public get ipBlocks() {
     return this._ipBlocks;
   }
-  public putIpBlocks(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks[] | cdktf.IResolvable) {
+  public putIpBlocks(value: GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks[] | cdktn.IResolvable) {
     this._ipBlocks.internalValue = value;
   }
   public resetIpBlocks() {
@@ -2962,14 +2962,14 @@ export interface GkeonpremVmwareAdminClusterNetworkConfig {
 }
 
 export function gkeonpremVmwareAdminClusterNetworkConfigToTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pod_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.podAddressCidrBlocks),
-    service_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceAddressCidrBlocks),
-    vcenter_network: cdktf.stringToTerraform(struct!.vcenterNetwork),
+    pod_address_cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.podAddressCidrBlocks),
+    service_address_cidr_blocks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.serviceAddressCidrBlocks),
+    vcenter_network: cdktn.stringToTerraform(struct!.vcenterNetwork),
     dhcp_ip_config: gkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigToTerraform(struct!.dhcpIpConfig),
     ha_control_plane_config: gkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigToTerraform(struct!.haControlPlaneConfig),
     host_config: gkeonpremVmwareAdminClusterNetworkConfigHostConfigToTerraform(struct!.hostConfig),
@@ -2979,25 +2979,25 @@ export function gkeonpremVmwareAdminClusterNetworkConfigToTerraform(struct?: Gke
 
 
 export function gkeonpremVmwareAdminClusterNetworkConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterNetworkConfigOutputReference | GkeonpremVmwareAdminClusterNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pod_address_cidr_blocks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.podAddressCidrBlocks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.podAddressCidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     service_address_cidr_blocks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.serviceAddressCidrBlocks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.serviceAddressCidrBlocks),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     vcenter_network: {
-      value: cdktf.stringToHclTerraform(struct!.vcenterNetwork),
+      value: cdktn.stringToHclTerraform(struct!.vcenterNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3032,14 +3032,14 @@ export function gkeonpremVmwareAdminClusterNetworkConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterNetworkConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterNetworkConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3210,8 +3210,8 @@ export interface GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusCondition
 }
 
 export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsToTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3220,8 +3220,8 @@ export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions
 
 
 export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsToHclTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3229,7 +3229,7 @@ export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3238,7 +3238,7 @@ export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3283,14 +3283,14 @@ export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOut
   }
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3305,8 +3305,8 @@ export interface GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus {
 }
 
 export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusToTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3315,8 +3315,8 @@ export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusToTerrafor
 
 
 export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusToHclTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3324,7 +3324,7 @@ export function gkeonpremVmwareAdminClusterPlatformConfigBundlesStatusToHclTerra
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3333,7 +3333,7 @@ export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3364,14 +3364,14 @@ export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReferen
   }
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3386,8 +3386,8 @@ export interface GkeonpremVmwareAdminClusterPlatformConfigBundles {
 }
 
 export function gkeonpremVmwareAdminClusterPlatformConfigBundlesToTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigBundles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3396,8 +3396,8 @@ export function gkeonpremVmwareAdminClusterPlatformConfigBundlesToTerraform(stru
 
 
 export function gkeonpremVmwareAdminClusterPlatformConfigBundlesToHclTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigBundles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3405,7 +3405,7 @@ export function gkeonpremVmwareAdminClusterPlatformConfigBundlesToHclTerraform(s
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3414,7 +3414,7 @@ export class GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3445,14 +3445,14 @@ export class GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference ext
   }
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigBundlesList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterPlatformConfigBundlesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3467,8 +3467,8 @@ export interface GkeonpremVmwareAdminClusterPlatformConfigStatusConditions {
 }
 
 export function gkeonpremVmwareAdminClusterPlatformConfigStatusConditionsToTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigStatusConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3477,8 +3477,8 @@ export function gkeonpremVmwareAdminClusterPlatformConfigStatusConditionsToTerra
 
 
 export function gkeonpremVmwareAdminClusterPlatformConfigStatusConditionsToHclTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigStatusConditions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3486,7 +3486,7 @@ export function gkeonpremVmwareAdminClusterPlatformConfigStatusConditionsToHclTe
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3495,7 +3495,7 @@ export class GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3540,14 +3540,14 @@ export class GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputRefe
   }
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3562,8 +3562,8 @@ export interface GkeonpremVmwareAdminClusterPlatformConfigStatus {
 }
 
 export function gkeonpremVmwareAdminClusterPlatformConfigStatusToTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3572,8 +3572,8 @@ export function gkeonpremVmwareAdminClusterPlatformConfigStatusToTerraform(struc
 
 
 export function gkeonpremVmwareAdminClusterPlatformConfigStatusToHclTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3581,7 +3581,7 @@ export function gkeonpremVmwareAdminClusterPlatformConfigStatusToHclTerraform(st
   return attrs;
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3590,7 +3590,7 @@ export class GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3621,14 +3621,14 @@ export class GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference exte
   }
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigStatusList extends cdktf.ComplexList {
+export class GkeonpremVmwareAdminClusterPlatformConfigStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3653,24 +3653,24 @@ export interface GkeonpremVmwareAdminClusterPlatformConfig {
 }
 
 export function gkeonpremVmwareAdminClusterPlatformConfigToTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigOutputReference | GkeonpremVmwareAdminClusterPlatformConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    required_platform_version: cdktf.stringToTerraform(struct!.requiredPlatformVersion),
+    required_platform_version: cdktn.stringToTerraform(struct!.requiredPlatformVersion),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterPlatformConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterPlatformConfigOutputReference | GkeonpremVmwareAdminClusterPlatformConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     required_platform_version: {
-      value: cdktf.stringToHclTerraform(struct!.requiredPlatformVersion),
+      value: cdktn.stringToHclTerraform(struct!.requiredPlatformVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3681,14 +3681,14 @@ export function gkeonpremVmwareAdminClusterPlatformConfigToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterPlatformConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterPlatformConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3762,31 +3762,31 @@ export interface GkeonpremVmwareAdminClusterPrivateRegistryConfig {
 }
 
 export function gkeonpremVmwareAdminClusterPrivateRegistryConfigToTerraform(struct?: GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference | GkeonpremVmwareAdminClusterPrivateRegistryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    ca_cert: cdktf.stringToTerraform(struct!.caCert),
+    address: cdktn.stringToTerraform(struct!.address),
+    ca_cert: cdktn.stringToTerraform(struct!.caCert),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterPrivateRegistryConfigToHclTerraform(struct?: GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference | GkeonpremVmwareAdminClusterPrivateRegistryConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ca_cert: {
-      value: cdktf.stringToHclTerraform(struct!.caCert),
+      value: cdktn.stringToHclTerraform(struct!.caCert),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3797,14 +3797,14 @@ export function gkeonpremVmwareAdminClusterPrivateRegistryConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3882,39 +3882,39 @@ export interface GkeonpremVmwareAdminClusterTimeouts {
   readonly update?: string;
 }
 
-export function gkeonpremVmwareAdminClusterTimeoutsToTerraform(struct?: GkeonpremVmwareAdminClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterTimeoutsToTerraform(struct?: GkeonpremVmwareAdminClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function gkeonpremVmwareAdminClusterTimeoutsToHclTerraform(struct?: GkeonpremVmwareAdminClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gkeonpremVmwareAdminClusterTimeoutsToHclTerraform(struct?: GkeonpremVmwareAdminClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3925,19 +3925,19 @@ export function gkeonpremVmwareAdminClusterTimeoutsToHclTerraform(struct?: Gkeon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GkeonpremVmwareAdminClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GkeonpremVmwareAdminClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3958,7 +3958,7 @@ export class GkeonpremVmwareAdminClusterTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GkeonpremVmwareAdminClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GkeonpremVmwareAdminClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3966,7 +3966,7 @@ export class GkeonpremVmwareAdminClusterTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4085,80 +4085,80 @@ export interface GkeonpremVmwareAdminClusterVcenter {
 }
 
 export function gkeonpremVmwareAdminClusterVcenterToTerraform(struct?: GkeonpremVmwareAdminClusterVcenterOutputReference | GkeonpremVmwareAdminClusterVcenter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    ca_cert_data: cdktf.stringToTerraform(struct!.caCertData),
-    cluster: cdktf.stringToTerraform(struct!.cluster),
-    data_disk: cdktf.stringToTerraform(struct!.dataDisk),
-    datacenter: cdktf.stringToTerraform(struct!.datacenter),
-    datastore: cdktf.stringToTerraform(struct!.datastore),
-    folder: cdktf.stringToTerraform(struct!.folder),
-    resource_pool: cdktf.stringToTerraform(struct!.resourcePool),
-    storage_policy_name: cdktf.stringToTerraform(struct!.storagePolicyName),
+    address: cdktn.stringToTerraform(struct!.address),
+    ca_cert_data: cdktn.stringToTerraform(struct!.caCertData),
+    cluster: cdktn.stringToTerraform(struct!.cluster),
+    data_disk: cdktn.stringToTerraform(struct!.dataDisk),
+    datacenter: cdktn.stringToTerraform(struct!.datacenter),
+    datastore: cdktn.stringToTerraform(struct!.datastore),
+    folder: cdktn.stringToTerraform(struct!.folder),
+    resource_pool: cdktn.stringToTerraform(struct!.resourcePool),
+    storage_policy_name: cdktn.stringToTerraform(struct!.storagePolicyName),
   }
 }
 
 
 export function gkeonpremVmwareAdminClusterVcenterToHclTerraform(struct?: GkeonpremVmwareAdminClusterVcenterOutputReference | GkeonpremVmwareAdminClusterVcenter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ca_cert_data: {
-      value: cdktf.stringToHclTerraform(struct!.caCertData),
+      value: cdktn.stringToHclTerraform(struct!.caCertData),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster: {
-      value: cdktf.stringToHclTerraform(struct!.cluster),
+      value: cdktn.stringToHclTerraform(struct!.cluster),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk: {
-      value: cdktf.stringToHclTerraform(struct!.dataDisk),
+      value: cdktn.stringToHclTerraform(struct!.dataDisk),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     datacenter: {
-      value: cdktf.stringToHclTerraform(struct!.datacenter),
+      value: cdktn.stringToHclTerraform(struct!.datacenter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     datastore: {
-      value: cdktf.stringToHclTerraform(struct!.datastore),
+      value: cdktn.stringToHclTerraform(struct!.datastore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     folder: {
-      value: cdktf.stringToHclTerraform(struct!.folder),
+      value: cdktn.stringToHclTerraform(struct!.folder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_pool: {
-      value: cdktf.stringToHclTerraform(struct!.resourcePool),
+      value: cdktn.stringToHclTerraform(struct!.resourcePool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.storagePolicyName),
+      value: cdktn.stringToHclTerraform(struct!.storagePolicyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4169,14 +4169,14 @@ export function gkeonpremVmwareAdminClusterVcenterToHclTerraform(struct?: Gkeonp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeonpremVmwareAdminClusterVcenterOutputReference extends cdktf.ComplexObject {
+export class GkeonpremVmwareAdminClusterVcenterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4397,7 +4397,7 @@ export class GkeonpremVmwareAdminClusterVcenterOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}
 */
-export class GkeonpremVmwareAdminCluster extends cdktf.TerraformResource {
+export class GkeonpremVmwareAdminCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4408,14 +4408,14 @@ export class GkeonpremVmwareAdminCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GkeonpremVmwareAdminCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GkeonpremVmwareAdminCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeonpremVmwareAdminCluster to import
   * @param importFromId The id of the existing GkeonpremVmwareAdminCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gkeonprem_vmware_admin_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeonpremVmwareAdminCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_gkeonprem_vmware_admin_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_gkeonprem_vmware_admin_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -4526,17 +4526,17 @@ export class GkeonpremVmwareAdminCluster extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // enable_advanced_cluster - computed: true, optional: true, required: false
-  private _enableAdvancedCluster?: boolean | cdktf.IResolvable; 
+  private _enableAdvancedCluster?: boolean | cdktn.IResolvable; 
   public get enableAdvancedCluster() {
     return this.getBooleanAttribute('enable_advanced_cluster');
   }
-  public set enableAdvancedCluster(value: boolean | cdktf.IResolvable) {
+  public set enableAdvancedCluster(value: boolean | cdktn.IResolvable) {
     this._enableAdvancedCluster = value;
   }
   public resetEnableAdvancedCluster() {
@@ -4863,16 +4863,16 @@ export class GkeonpremVmwareAdminCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      bootstrap_cluster_membership: cdktf.stringToTerraform(this._bootstrapClusterMembership),
-      description: cdktf.stringToTerraform(this._description),
-      enable_advanced_cluster: cdktf.booleanToTerraform(this._enableAdvancedCluster),
-      id: cdktf.stringToTerraform(this._id),
-      image_type: cdktf.stringToTerraform(this._imageType),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      on_prem_version: cdktf.stringToTerraform(this._onPremVersion),
-      project: cdktf.stringToTerraform(this._project),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      bootstrap_cluster_membership: cdktn.stringToTerraform(this._bootstrapClusterMembership),
+      description: cdktn.stringToTerraform(this._description),
+      enable_advanced_cluster: cdktn.booleanToTerraform(this._enableAdvancedCluster),
+      id: cdktn.stringToTerraform(this._id),
+      image_type: cdktn.stringToTerraform(this._imageType),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      on_prem_version: cdktn.stringToTerraform(this._onPremVersion),
+      project: cdktn.stringToTerraform(this._project),
       addon_node: gkeonpremVmwareAdminClusterAddonNodeToTerraform(this._addonNode.internalValue),
       anti_affinity_groups: gkeonpremVmwareAdminClusterAntiAffinityGroupsToTerraform(this._antiAffinityGroups.internalValue),
       authorization: gkeonpremVmwareAdminClusterAuthorizationToTerraform(this._authorization.internalValue),
@@ -4890,61 +4890,61 @@ export class GkeonpremVmwareAdminCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       bootstrap_cluster_membership: {
-        value: cdktf.stringToHclTerraform(this._bootstrapClusterMembership),
+        value: cdktn.stringToHclTerraform(this._bootstrapClusterMembership),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_advanced_cluster: {
-        value: cdktf.booleanToHclTerraform(this._enableAdvancedCluster),
+        value: cdktn.booleanToHclTerraform(this._enableAdvancedCluster),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       image_type: {
-        value: cdktf.stringToHclTerraform(this._imageType),
+        value: cdktn.stringToHclTerraform(this._imageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       on_prem_version: {
-        value: cdktf.stringToHclTerraform(this._onPremVersion),
+        value: cdktn.stringToHclTerraform(this._onPremVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

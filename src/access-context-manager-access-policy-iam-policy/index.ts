@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccessContextManagerAccessPolicyIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface AccessContextManagerAccessPolicyIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_policy_iam_policy#id AccessContextManagerAccessPolicyIamPolicy#id}
   *
@@ -32,7 +32,7 @@ export interface AccessContextManagerAccessPolicyIamPolicyConfig extends cdktf.T
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}
 */
-export class AccessContextManagerAccessPolicyIamPolicy extends cdktf.TerraformResource {
+export class AccessContextManagerAccessPolicyIamPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class AccessContextManagerAccessPolicyIamPolicy extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccessContextManagerAccessPolicyIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccessContextManagerAccessPolicyIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessContextManagerAccessPolicyIamPolicy to import
   * @param importFromId The id of the existing AccessContextManagerAccessPolicyIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/access_context_manager_access_policy_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessContextManagerAccessPolicyIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_policy_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_access_context_manager_access_policy_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -142,28 +142,28 @@ export class AccessContextManagerAccessPolicyIamPolicy extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      policy_data: cdktf.stringToTerraform(this._policyData),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      policy_data: cdktn.stringToTerraform(this._policyData),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_data: {
-        value: cdktf.stringToHclTerraform(this._policyData),
+        value: cdktn.stringToHclTerraform(this._policyData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -297,7 +297,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -432,7 +432,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BigtableAuthorizedView resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a BigtableAuthorizedView resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -504,7 +504,7 @@ import { bigtableAuthorizedView } from '@cdktn/provider-google'
 bigtableAuthorizedView.BigtableAuthorizedView.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a BigtableAuthorizedView resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BigtableAuthorizedView resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.generateConfigForImport.parameter.scope"></a>
 
@@ -534,7 +534,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BigtableAuthorizedView to import is found.
 
@@ -545,19 +545,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.subsetView">subsetView</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference">BigtableAuthorizedViewSubsetViewOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference">BigtableAuthorizedViewTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>string</code> | *No description.* |
@@ -567,7 +567,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.subsetViewInput">subsetViewInput</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView">BigtableAuthorizedViewSubsetView</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.tableNameInput">tableNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.deletionProtection">deletionProtection</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedView.property.instanceName">instanceName</a></code> | <code>string</code> | *No description.* |
@@ -595,7 +595,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -645,7 +645,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -655,7 +655,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -665,7 +665,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -685,7 +685,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -695,7 +695,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -705,7 +705,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -715,7 +715,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -815,7 +815,7 @@ public readonly tableNameInput: string;
 public readonly timeoutsInput: IResolvable | BigtableAuthorizedViewTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a>
 
 ---
 
@@ -913,13 +913,13 @@ const bigtableAuthorizedViewConfig: bigtableAuthorizedView.BigtableAuthorizedVie
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.instanceName">instanceName</a></code> | <code>string</code> | The name of the Bigtable instance in which the authorized view belongs. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.name">name</a></code> | <code>string</code> | The name of the authorized view. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewConfig.property.tableName">tableName</a></code> | <code>string</code> | The name of the Bigtable table in which the authorized view belongs. |
@@ -937,7 +937,7 @@ const bigtableAuthorizedViewConfig: bigtableAuthorizedView.BigtableAuthorizedVie
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -947,7 +947,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -957,7 +957,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -967,7 +967,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -977,7 +977,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -987,7 +987,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -997,7 +997,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1132,7 +1132,7 @@ const bigtableAuthorizedViewSubsetView: bigtableAuthorizedView.BigtableAuthorize
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView.property.familySubsets">familySubsets</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]</code> | family_subsets block. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView.property.familySubsets">familySubsets</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]</code> | family_subsets block. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView.property.rowPrefixes">rowPrefixes</a></code> | <code>string[]</code> | Base64-encoded row prefixes to be included in the authorized view. |
 
 ---
@@ -1143,7 +1143,7 @@ const bigtableAuthorizedViewSubsetView: bigtableAuthorizedView.BigtableAuthorize
 public readonly familySubsets: IResolvable | BigtableAuthorizedViewSubsetViewFamilySubsets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
 
 family_subsets block.
 
@@ -1288,7 +1288,7 @@ new bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1296,7 +1296,7 @@ new bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1362,7 +1362,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1397,7 +1397,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]</code> | *No description.* |
 
 ---
 
@@ -1431,7 +1431,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | BigtableAuthorizedViewSubsetViewFamilySubsets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
 
 ---
 
@@ -1448,7 +1448,7 @@ new bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1457,7 +1457,7 @@ new bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1645,7 +1645,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1684,7 +1684,7 @@ public resetQualifiers(): void
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.property.familyName">familyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.property.qualifierPrefixes">qualifierPrefixes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.property.qualifiers">qualifiers</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a></code> | *No description.* |
 
 ---
 
@@ -1778,7 +1778,7 @@ public readonly qualifiers: string[];
 public readonly internalValue: IResolvable | BigtableAuthorizedViewSubsetViewFamilySubsets;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>
 
 ---
 
@@ -1795,14 +1795,14 @@ new bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1975,7 +1975,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1997,7 +1997,7 @@ public putFamilySubsets(value: IResolvable | BigtableAuthorizedViewSubsetViewFam
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.putFamilySubsets.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
 
 ---
 
@@ -2021,7 +2021,7 @@ public resetRowPrefixes(): void
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.familySubsets">familySubsets</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsetsList">BigtableAuthorizedViewSubsetViewFamilySubsetsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.familySubsetsInput">familySubsetsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.familySubsetsInput">familySubsetsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.rowPrefixesInput">rowPrefixesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.rowPrefixes">rowPrefixes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetView">BigtableAuthorizedViewSubsetView</a></code> | *No description.* |
@@ -2068,7 +2068,7 @@ public readonly familySubsets: BigtableAuthorizedViewSubsetViewFamilySubsetsList
 public readonly familySubsetsInput: IResolvable | BigtableAuthorizedViewSubsetViewFamilySubsets[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewSubsetViewFamilySubsets">BigtableAuthorizedViewSubsetViewFamilySubsets</a>[]
 
 ---
 
@@ -2115,14 +2115,14 @@ new bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2294,7 +2294,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2331,7 +2331,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2405,7 +2405,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | BigtableAuthorizedViewTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAuthorizedView.BigtableAuthorizedViewTimeouts">BigtableAuthorizedViewTimeouts</a>
 
 ---
 

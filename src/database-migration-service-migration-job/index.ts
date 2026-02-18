@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseMigrationServiceMigrationJobConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseMigrationServiceMigrationJobConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the destination connection profile resource in the form of projects/{project}/locations/{location}/connectionProfiles/{destinationConnectionProfile}.
   *
@@ -125,8 +125,8 @@ export interface DatabaseMigrationServiceMigrationJobError {
 }
 
 export function databaseMigrationServiceMigrationJobErrorToTerraform(struct?: DatabaseMigrationServiceMigrationJobError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -135,8 +135,8 @@ export function databaseMigrationServiceMigrationJobErrorToTerraform(struct?: Da
 
 
 export function databaseMigrationServiceMigrationJobErrorToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -144,7 +144,7 @@ export function databaseMigrationServiceMigrationJobErrorToHclTerraform(struct?:
   return attrs;
 }
 
-export class DatabaseMigrationServiceMigrationJobErrorOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -153,7 +153,7 @@ export class DatabaseMigrationServiceMigrationJobErrorOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -178,7 +178,7 @@ export class DatabaseMigrationServiceMigrationJobErrorOutputReference extends cd
   }
 
   // details - computed: true, optional: false, required: false
-  private _details = new cdktf.StringMapList(this, "details", false);
+  private _details = new cdktn.StringMapList(this, "details", false);
   public get details() {
     return this._details;
   }
@@ -189,14 +189,14 @@ export class DatabaseMigrationServiceMigrationJobErrorOutputReference extends cd
   }
 }
 
-export class DatabaseMigrationServiceMigrationJobErrorList extends cdktf.ComplexList {
+export class DatabaseMigrationServiceMigrationJobErrorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,32 +222,32 @@ export interface DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags {
   readonly value?: string;
 }
 
-export function databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToTerraform(struct?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToTerraform(struct?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,9 +258,9 @@ export function databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -268,11 +268,11 @@ export class DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -289,14 +289,14 @@ export class DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -341,15 +341,15 @@ export class DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsOutputReferen
   }
 }
 
-export class DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList extends cdktf.ComplexList {
-  public internalValue? : DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktf.IResolvable
+export class DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList extends cdktn.ComplexList {
+  public internalValue? : DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -366,28 +366,28 @@ export interface DatabaseMigrationServiceMigrationJobDumpFlags {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
   */
-  readonly dumpFlags?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktf.IResolvable;
+  readonly dumpFlags?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktn.IResolvable;
 }
 
 export function databaseMigrationServiceMigrationJobDumpFlagsToTerraform(struct?: DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference | DatabaseMigrationServiceMigrationJobDumpFlags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dump_flags: cdktf.listMapper(databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToTerraform, true)(struct!.dumpFlags),
+    dump_flags: cdktn.listMapper(databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToTerraform, true)(struct!.dumpFlags),
   }
 }
 
 
 export function databaseMigrationServiceMigrationJobDumpFlagsToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference | DatabaseMigrationServiceMigrationJobDumpFlags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dump_flags: {
-      value: cdktf.listMapperHcl(databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToHclTerraform, true)(struct!.dumpFlags),
+      value: cdktn.listMapperHcl(databaseMigrationServiceMigrationJobDumpFlagsDumpFlagsToHclTerraform, true)(struct!.dumpFlags),
       isBlock: true,
       type: "list",
       storageClassType: "DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList",
@@ -398,14 +398,14 @@ export function databaseMigrationServiceMigrationJobDumpFlagsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -435,7 +435,7 @@ export class DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference extend
   public get dumpFlags() {
     return this._dumpFlags;
   }
-  public putDumpFlags(value: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktf.IResolvable) {
+  public putDumpFlags(value: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktn.IResolvable) {
     this._dumpFlags.internalValue = value;
   }
   public resetDumpFlags() {
@@ -456,24 +456,24 @@ export interface DatabaseMigrationServiceMigrationJobPerformanceConfig {
 }
 
 export function databaseMigrationServiceMigrationJobPerformanceConfigToTerraform(struct?: DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference | DatabaseMigrationServiceMigrationJobPerformanceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dump_parallel_level: cdktf.stringToTerraform(struct!.dumpParallelLevel),
+    dump_parallel_level: cdktn.stringToTerraform(struct!.dumpParallelLevel),
   }
 }
 
 
 export function databaseMigrationServiceMigrationJobPerformanceConfigToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference | DatabaseMigrationServiceMigrationJobPerformanceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dump_parallel_level: {
-      value: cdktf.stringToHclTerraform(struct!.dumpParallelLevel),
+      value: cdktn.stringToHclTerraform(struct!.dumpParallelLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -484,14 +484,14 @@ export function databaseMigrationServiceMigrationJobPerformanceConfigToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -563,45 +563,45 @@ export interface DatabaseMigrationServiceMigrationJobReverseSshConnectivity {
 }
 
 export function databaseMigrationServiceMigrationJobReverseSshConnectivityToTerraform(struct?: DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference | DatabaseMigrationServiceMigrationJobReverseSshConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vm: cdktf.stringToTerraform(struct!.vm),
-    vm_ip: cdktf.stringToTerraform(struct!.vmIp),
-    vm_port: cdktf.numberToTerraform(struct!.vmPort),
-    vpc: cdktf.stringToTerraform(struct!.vpc),
+    vm: cdktn.stringToTerraform(struct!.vm),
+    vm_ip: cdktn.stringToTerraform(struct!.vmIp),
+    vm_port: cdktn.numberToTerraform(struct!.vmPort),
+    vpc: cdktn.stringToTerraform(struct!.vpc),
   }
 }
 
 
 export function databaseMigrationServiceMigrationJobReverseSshConnectivityToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference | DatabaseMigrationServiceMigrationJobReverseSshConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vm: {
-      value: cdktf.stringToHclTerraform(struct!.vm),
+      value: cdktn.stringToHclTerraform(struct!.vm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vm_ip: {
-      value: cdktf.stringToHclTerraform(struct!.vmIp),
+      value: cdktn.stringToHclTerraform(struct!.vmIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vm_port: {
-      value: cdktf.numberToHclTerraform(struct!.vmPort),
+      value: cdktn.numberToHclTerraform(struct!.vmPort),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     vpc: {
-      value: cdktf.stringToHclTerraform(struct!.vpc),
+      value: cdktn.stringToHclTerraform(struct!.vpc),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -612,14 +612,14 @@ export function databaseMigrationServiceMigrationJobReverseSshConnectivityToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -730,8 +730,8 @@ export interface DatabaseMigrationServiceMigrationJobStaticIpConnectivity {
 }
 
 export function databaseMigrationServiceMigrationJobStaticIpConnectivityToTerraform(struct?: DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference | DatabaseMigrationServiceMigrationJobStaticIpConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -740,8 +740,8 @@ export function databaseMigrationServiceMigrationJobStaticIpConnectivityToTerraf
 
 
 export function databaseMigrationServiceMigrationJobStaticIpConnectivityToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference | DatabaseMigrationServiceMigrationJobStaticIpConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -749,14 +749,14 @@ export function databaseMigrationServiceMigrationJobStaticIpConnectivityToHclTer
   return attrs;
 }
 
-export class DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -790,39 +790,39 @@ export interface DatabaseMigrationServiceMigrationJobTimeouts {
   readonly update?: string;
 }
 
-export function databaseMigrationServiceMigrationJobTimeoutsToTerraform(struct?: DatabaseMigrationServiceMigrationJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceMigrationJobTimeoutsToTerraform(struct?: DatabaseMigrationServiceMigrationJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function databaseMigrationServiceMigrationJobTimeoutsToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseMigrationServiceMigrationJobTimeoutsToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -833,19 +833,19 @@ export function databaseMigrationServiceMigrationJobTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceMigrationJobTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatabaseMigrationServiceMigrationJobTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseMigrationServiceMigrationJobTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -866,7 +866,7 @@ export class DatabaseMigrationServiceMigrationJobTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseMigrationServiceMigrationJobTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseMigrationServiceMigrationJobTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -874,7 +874,7 @@ export class DatabaseMigrationServiceMigrationJobTimeoutsOutputReference extends
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -945,24 +945,24 @@ export interface DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity {
 }
 
 export function databaseMigrationServiceMigrationJobVpcPeeringConnectivityToTerraform(struct?: DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference | DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    vpc: cdktf.stringToTerraform(struct!.vpc),
+    vpc: cdktn.stringToTerraform(struct!.vpc),
   }
 }
 
 
 export function databaseMigrationServiceMigrationJobVpcPeeringConnectivityToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference | DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     vpc: {
-      value: cdktf.stringToHclTerraform(struct!.vpc),
+      value: cdktn.stringToHclTerraform(struct!.vpc),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -973,14 +973,14 @@ export function databaseMigrationServiceMigrationJobVpcPeeringConnectivityToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference extends cdktf.ComplexObject {
+export class DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1025,7 +1025,7 @@ export class DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputRef
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}
 */
-export class DatabaseMigrationServiceMigrationJob extends cdktf.TerraformResource {
+export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1036,14 +1036,14 @@ export class DatabaseMigrationServiceMigrationJob extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseMigrationServiceMigrationJob resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseMigrationServiceMigrationJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMigrationServiceMigrationJob to import
   * @param importFromId The id of the existing DatabaseMigrationServiceMigrationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMigrationServiceMigrationJob to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_database_migration_service_migration_job", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_database_migration_service_migration_job", importId: importFromId, provider });
       }
 
   // ===========
@@ -1163,7 +1163,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktf.TerraformResourc
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1280,7 +1280,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktf.TerraformResourc
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1400,17 +1400,17 @@ export class DatabaseMigrationServiceMigrationJob extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination: cdktf.stringToTerraform(this._destination),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      dump_path: cdktf.stringToTerraform(this._dumpPath),
-      dump_type: cdktf.stringToTerraform(this._dumpType),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      migration_job_id: cdktf.stringToTerraform(this._migrationJobId),
-      project: cdktf.stringToTerraform(this._project),
-      source: cdktf.stringToTerraform(this._source),
-      type: cdktf.stringToTerraform(this._type),
+      destination: cdktn.stringToTerraform(this._destination),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      dump_path: cdktn.stringToTerraform(this._dumpPath),
+      dump_type: cdktn.stringToTerraform(this._dumpType),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      migration_job_id: cdktn.stringToTerraform(this._migrationJobId),
+      project: cdktn.stringToTerraform(this._project),
+      source: cdktn.stringToTerraform(this._source),
+      type: cdktn.stringToTerraform(this._type),
       dump_flags: databaseMigrationServiceMigrationJobDumpFlagsToTerraform(this._dumpFlags.internalValue),
       performance_config: databaseMigrationServiceMigrationJobPerformanceConfigToTerraform(this._performanceConfig.internalValue),
       reverse_ssh_connectivity: databaseMigrationServiceMigrationJobReverseSshConnectivityToTerraform(this._reverseSshConnectivity.internalValue),
@@ -1423,67 +1423,67 @@ export class DatabaseMigrationServiceMigrationJob extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination: {
-        value: cdktf.stringToHclTerraform(this._destination),
+        value: cdktn.stringToHclTerraform(this._destination),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dump_path: {
-        value: cdktf.stringToHclTerraform(this._dumpPath),
+        value: cdktn.stringToHclTerraform(this._dumpPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dump_type: {
-        value: cdktf.stringToHclTerraform(this._dumpType),
+        value: cdktn.stringToHclTerraform(this._dumpType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       migration_job_id: {
-        value: cdktf.stringToHclTerraform(this._migrationJobId),
+        value: cdktn.stringToHclTerraform(this._migrationJobId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

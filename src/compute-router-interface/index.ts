@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComputeRouterInterfaceConfig extends cdktf.TerraformMetaArguments {
+export interface ComputeRouterInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_interface#id ComputeRouterInterface#id}
   *
@@ -103,32 +103,32 @@ export interface ComputeRouterInterfaceTimeouts {
   readonly delete?: string;
 }
 
-export function computeRouterInterfaceTimeoutsToTerraform(struct?: ComputeRouterInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterInterfaceTimeoutsToTerraform(struct?: ComputeRouterInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function computeRouterInterfaceTimeoutsToHclTerraform(struct?: ComputeRouterInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function computeRouterInterfaceTimeoutsToHclTerraform(struct?: ComputeRouterInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,19 +139,19 @@ export function computeRouterInterfaceTimeoutsToHclTerraform(struct?: ComputeRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComputeRouterInterfaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ComputeRouterInterfaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ComputeRouterInterfaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ComputeRouterInterfaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,14 +168,14 @@ export class ComputeRouterInterfaceTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComputeRouterInterfaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComputeRouterInterfaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,7 +223,7 @@ export class ComputeRouterInterfaceTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_interface google_compute_router_interface}
 */
-export class ComputeRouterInterface extends cdktf.TerraformResource {
+export class ComputeRouterInterface extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class ComputeRouterInterface extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComputeRouterInterface resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComputeRouterInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRouterInterface to import
   * @param importFromId The id of the existing ComputeRouterInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRouterInterface to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_interface", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_compute_router_interface", importId: importFromId, provider });
       }
 
   // ===========
@@ -498,18 +498,18 @@ export class ComputeRouterInterface extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      interconnect_attachment: cdktf.stringToTerraform(this._interconnectAttachment),
-      ip_range: cdktf.stringToTerraform(this._ipRange),
-      ip_version: cdktf.stringToTerraform(this._ipVersion),
-      name: cdktf.stringToTerraform(this._name),
-      private_ip_address: cdktf.stringToTerraform(this._privateIpAddress),
-      project: cdktf.stringToTerraform(this._project),
-      redundant_interface: cdktf.stringToTerraform(this._redundantInterface),
-      region: cdktf.stringToTerraform(this._region),
-      router: cdktf.stringToTerraform(this._router),
-      subnetwork: cdktf.stringToTerraform(this._subnetwork),
-      vpn_tunnel: cdktf.stringToTerraform(this._vpnTunnel),
+      id: cdktn.stringToTerraform(this._id),
+      interconnect_attachment: cdktn.stringToTerraform(this._interconnectAttachment),
+      ip_range: cdktn.stringToTerraform(this._ipRange),
+      ip_version: cdktn.stringToTerraform(this._ipVersion),
+      name: cdktn.stringToTerraform(this._name),
+      private_ip_address: cdktn.stringToTerraform(this._privateIpAddress),
+      project: cdktn.stringToTerraform(this._project),
+      redundant_interface: cdktn.stringToTerraform(this._redundantInterface),
+      region: cdktn.stringToTerraform(this._region),
+      router: cdktn.stringToTerraform(this._router),
+      subnetwork: cdktn.stringToTerraform(this._subnetwork),
+      vpn_tunnel: cdktn.stringToTerraform(this._vpnTunnel),
       timeouts: computeRouterInterfaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -517,73 +517,73 @@ export class ComputeRouterInterface extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       interconnect_attachment: {
-        value: cdktf.stringToHclTerraform(this._interconnectAttachment),
+        value: cdktn.stringToHclTerraform(this._interconnectAttachment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_range: {
-        value: cdktf.stringToHclTerraform(this._ipRange),
+        value: cdktn.stringToHclTerraform(this._ipRange),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_version: {
-        value: cdktf.stringToHclTerraform(this._ipVersion),
+        value: cdktn.stringToHclTerraform(this._ipVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_ip_address: {
-        value: cdktf.stringToHclTerraform(this._privateIpAddress),
+        value: cdktn.stringToHclTerraform(this._privateIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redundant_interface: {
-        value: cdktf.stringToHclTerraform(this._redundantInterface),
+        value: cdktn.stringToHclTerraform(this._redundantInterface),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router: {
-        value: cdktf.stringToHclTerraform(this._router),
+        value: cdktn.stringToHclTerraform(this._router),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnetwork: {
-        value: cdktf.stringToHclTerraform(this._subnetwork),
+        value: cdktn.stringToHclTerraform(this._subnetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpn_tunnel: {
-        value: cdktf.stringToHclTerraform(this._vpnTunnel),
+        value: cdktn.stringToHclTerraform(this._vpnTunnel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

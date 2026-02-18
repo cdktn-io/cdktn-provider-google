@@ -303,7 +303,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -409,7 +409,7 @@ public putNetworks(value: IResolvable | DnsPolicyNetworks[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.putNetworks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
 
 ---
 
@@ -486,7 +486,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DnsPolicy resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DnsPolicy resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -558,7 +558,7 @@ import { dnsPolicy } from '@cdktn/provider-google'
 dnsPolicy.DnsPolicy.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DnsPolicy resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DnsPolicy resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.generateConfigForImport.parameter.scope"></a>
 
@@ -588,7 +588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dnsPolicy.DnsPolicy.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DnsPolicy to import is found.
 
@@ -599,19 +599,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.alternativeNameServerConfig">alternativeNameServerConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference">DnsPolicyAlternativeNameServerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.dns64Config">dns64Config</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference">DnsPolicyDns64ConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.networks">networks</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList">DnsPolicyNetworksList</a></code> | *No description.* |
@@ -619,16 +619,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.alternativeNameServerConfigInput">alternativeNameServerConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig">DnsPolicyAlternativeNameServerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.dns64ConfigInput">dns64ConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64Config">DnsPolicyDns64Config</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableInboundForwardingInput">enableInboundForwardingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableInboundForwardingInput">enableInboundForwardingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableLoggingInput">enableLoggingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.networksInput">networksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.networksInput">networksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableInboundForwarding">enableInboundForwarding</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableInboundForwarding">enableInboundForwarding</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicy.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -653,7 +653,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -703,7 +703,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -713,7 +713,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -723,7 +723,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -743,7 +743,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -753,7 +753,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -763,7 +763,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -773,7 +773,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -853,7 +853,7 @@ public readonly dns64ConfigInput: DnsPolicyDns64Config;
 public readonly enableInboundForwardingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -863,7 +863,7 @@ public readonly enableInboundForwardingInput: boolean | IResolvable;
 public readonly enableLoggingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -893,7 +893,7 @@ public readonly nameInput: string;
 public readonly networksInput: IResolvable | DnsPolicyNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
 
 ---
 
@@ -913,7 +913,7 @@ public readonly projectInput: string;
 public readonly timeoutsInput: IResolvable | DnsPolicyTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a>
 
 ---
 
@@ -933,7 +933,7 @@ public readonly description: string;
 public readonly enableInboundForwarding: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -943,7 +943,7 @@ public readonly enableInboundForwarding: boolean | IResolvable;
 public readonly enableLogging: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1011,7 +1011,7 @@ const dnsPolicyAlternativeNameServerConfig: dnsPolicy.DnsPolicyAlternativeNameSe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig.property.targetNameServers">targetNameServers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | target_name_servers block. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig.property.targetNameServers">targetNameServers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | target_name_servers block. |
 
 ---
 
@@ -1021,7 +1021,7 @@ const dnsPolicyAlternativeNameServerConfig: dnsPolicy.DnsPolicyAlternativeNameSe
 public readonly targetNameServers: IResolvable | DnsPolicyAlternativeNameServerConfigTargetNameServers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
 
 target_name_servers block.
 
@@ -1094,21 +1094,21 @@ const dnsPolicyConfig: dnsPolicy.DnsPolicyConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.name">name</a></code> | <code>string</code> | User assigned name for this policy. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.alternativeNameServerConfig">alternativeNameServerConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig">DnsPolicyAlternativeNameServerConfig</a></code> | alternative_name_server_config block. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.description">description</a></code> | <code>string</code> | A textual description field. Defaults to 'Managed by Terraform'. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.dns64Config">dns64Config</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64Config">DnsPolicyDns64Config</a></code> | dns64_config block. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.enableInboundForwarding">enableInboundForwarding</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.enableInboundForwarding">enableInboundForwarding</a></code> | <code>boolean \| cdktn.IResolvable</code> | Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.enableLogging">enableLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#id DnsPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.networks">networks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]</code> | networks block. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.networks">networks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]</code> | networks block. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_policy#project DnsPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1120,7 +1120,7 @@ const dnsPolicyConfig: dnsPolicy.DnsPolicyConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1130,7 +1130,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1170,7 +1170,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableInboundForwarding: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Allows networks bound to this policy to receive DNS queries sent by VMs or applications over VPN connections.
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableLogging: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether logging is enabled for the networks bound to this policy. Defaults to no logging if not set.
 
@@ -1293,7 +1293,7 @@ If you experience problems setting this value it might not be settable. Please t
 public readonly networks: IResolvable | DnsPolicyNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
 
 networks block.
 
@@ -1373,7 +1373,7 @@ const dnsPolicyDns64ConfigScope: dnsPolicy.DnsPolicyDns64ConfigScope = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScope.property.allQueries">allQueries</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether DNS64 is enabled globally at the network level. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScope.property.allQueries">allQueries</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether DNS64 is enabled globally at the network level. |
 
 ---
 
@@ -1383,7 +1383,7 @@ const dnsPolicyDns64ConfigScope: dnsPolicy.DnsPolicyDns64ConfigScope = { ... }
 public readonly allQueries: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether DNS64 is enabled globally at the network level.
 
@@ -1496,14 +1496,14 @@ new dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1674,7 +1674,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1696,7 +1696,7 @@ public putTargetNameServers(value: IResolvable | DnsPolicyAlternativeNameServerC
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.putTargetNameServers.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
 
 ---
 
@@ -1708,7 +1708,7 @@ public putTargetNameServers(value: IResolvable | DnsPolicyAlternativeNameServerC
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.targetNameServers">targetNameServers</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList">DnsPolicyAlternativeNameServerConfigTargetNameServersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.targetNameServersInput">targetNameServersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.targetNameServersInput">targetNameServersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfig">DnsPolicyAlternativeNameServerConfig</a></code> | *No description.* |
 
 ---
@@ -1753,7 +1753,7 @@ public readonly targetNameServers: DnsPolicyAlternativeNameServerConfigTargetNam
 public readonly targetNameServersInput: IResolvable | DnsPolicyAlternativeNameServerConfigTargetNameServers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
 
 ---
 
@@ -1780,7 +1780,7 @@ new dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1788,7 +1788,7 @@ new dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1854,7 +1854,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1889,7 +1889,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]</code> | *No description.* |
 
 ---
 
@@ -1923,7 +1923,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DnsPolicyAlternativeNameServerConfigTargetNameServers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>[]
 
 ---
 
@@ -1940,7 +1940,7 @@ new dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1949,7 +1949,7 @@ new dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2136,7 +2136,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2167,7 +2167,7 @@ public resetForwardingPath(): void
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.property.ipv4AddressInput">ipv4AddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.property.forwardingPath">forwardingPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.property.ipv4Address">ipv4Address</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a></code> | *No description.* |
 
 ---
 
@@ -2241,7 +2241,7 @@ public readonly ipv4Address: string;
 public readonly internalValue: IResolvable | DnsPolicyAlternativeNameServerConfigTargetNameServers;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyAlternativeNameServerConfigTargetNameServers">DnsPolicyAlternativeNameServerConfigTargetNameServers</a>
 
 ---
 
@@ -2258,14 +2258,14 @@ new dnsPolicy.DnsPolicyDns64ConfigOutputReference(terraformResource: IInterpolat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2436,7 +2436,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2542,14 +2542,14 @@ new dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference(terraformResource: IInter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2720,7 +2720,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2747,8 +2747,8 @@ public resetAllQueries(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.property.allQueriesInput">allQueriesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.property.allQueries">allQueries</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.property.allQueriesInput">allQueriesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.property.allQueries">allQueries</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScopeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyDns64ConfigScope">DnsPolicyDns64ConfigScope</a></code> | *No description.* |
 
 ---
@@ -2783,7 +2783,7 @@ public readonly fqn: string;
 public readonly allQueriesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2793,7 +2793,7 @@ public readonly allQueriesInput: boolean | IResolvable;
 public readonly allQueries: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2820,7 +2820,7 @@ new dnsPolicy.DnsPolicyNetworksList(terraformResource: IInterpolatingParent, ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2828,7 +2828,7 @@ new dnsPolicy.DnsPolicyNetworksList(terraformResource: IInterpolatingParent, ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2894,7 +2894,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2929,7 +2929,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]</code> | *No description.* |
 
 ---
 
@@ -2963,7 +2963,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DnsPolicyNetworks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>[]
 
 ---
 
@@ -2980,7 +2980,7 @@ new dnsPolicy.DnsPolicyNetworksOutputReference(terraformResource: IInterpolating
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2989,7 +2989,7 @@ new dnsPolicy.DnsPolicyNetworksOutputReference(terraformResource: IInterpolating
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3175,7 +3175,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3198,7 +3198,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.property.networkUrlInput">networkUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.property.networkUrl">networkUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a></code> | *No description.* |
 
 ---
 
@@ -3252,7 +3252,7 @@ public readonly networkUrl: string;
 public readonly internalValue: IResolvable | DnsPolicyNetworks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyNetworks">DnsPolicyNetworks</a>
 
 ---
 
@@ -3269,14 +3269,14 @@ new dnsPolicy.DnsPolicyTimeoutsOutputReference(terraformResource: IInterpolating
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3449,7 +3449,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3494,7 +3494,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3588,7 +3588,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | DnsPolicyTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dnsPolicy.DnsPolicyTimeouts">DnsPolicyTimeouts</a>
 
 ---
 

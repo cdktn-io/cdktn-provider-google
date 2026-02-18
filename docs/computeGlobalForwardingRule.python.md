@@ -49,13 +49,13 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRule(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource; |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.target">target</a></code> | <code>str</code> | The URL of the target resource to receive the matched traffic. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
@@ -67,10 +67,10 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRule(
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.ipVersion">ip_version</a></code> | <code>str</code> | The IP Version that will be used by this global forwarding rule. Possible values: ["IPV4", "IPV6"]. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels to apply to this forwarding rule.  A list of key->value pairs. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.loadBalancingScheme">load_balancing_scheme</a></code> | <code>str</code> | Specifies the forwarding rule type. |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.metadataFilters">metadata_filters</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | metadata_filters block. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.metadataFilters">metadata_filters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | metadata_filters block. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.network">network</a></code> | <code>str</code> | This field is not used for external load balancing. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.networkTier">network_tier</a></code> | <code>str</code> | This signifies the networking tier used for configuring this load balancer and can only take the following values: 'PREMIUM', 'STANDARD'. |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.noAutomateDnsZone">no_automate_dns_zone</a></code> | <code>bool \| cdktf.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.noAutomateDnsZone">no_automate_dns_zone</a></code> | <code>bool \| cdktn.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.portRange">port_range</a></code> | <code>str</code> | The 'portRange' field has the following limitations: * It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP, and * It's applicable only to the following products: external passthrough Network Load Balancers, internal and external proxy Network Load Balancers, internal and external Application Load Balancers, external protocol forwarding, and Classic VPN. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_forwarding_rule#project ComputeGlobalForwardingRule#project}. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.serviceDirectoryRegistrations">service_directory_registrations</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrations">ComputeGlobalForwardingRuleServiceDirectoryRegistrations</a></code> | service_directory_registrations block. |
@@ -100,43 +100,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -354,7 +354,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `metadata_filters`<sup>Optional</sup> <a name="metadata_filters" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.metadataFilters"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
 
 metadata_filters block.
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `no_automate_dns_zone`<sup>Optional</sup> <a name="no_automate_dns_zone" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.Initializer.parameter.noAutomateDnsZone"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not.
 
@@ -779,7 +779,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -872,7 +872,7 @@ def put_metadata_filters(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.putMetadataFilters.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
 
 ---
 
@@ -1064,7 +1064,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeGlobalForwardingRule resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ComputeGlobalForwardingRule resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1147,7 +1147,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRule.generate_config_for_impo
 )
 ```
 
-Generates CDKTF code for importing a ComputeGlobalForwardingRule resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeGlobalForwardingRule resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.generateConfigForImport.parameter.scope"></a>
 
@@ -1177,7 +1177,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeGlobalForwardingRule to import is found.
 
@@ -1188,21 +1188,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.baseForwardingRule">base_forwarding_rule</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.forwardingRuleId">forwarding_rule_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.labelFingerprint">label_fingerprint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.metadataFilters">metadata_filters</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList">ComputeGlobalForwardingRuleMetadataFiltersList</a></code> | *No description.* |
@@ -1210,7 +1210,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.pscConnectionStatus">psc_connection_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.serviceDirectoryRegistrations">service_directory_registrations</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference">ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference">ComputeGlobalForwardingRuleTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.externalManagedBackendBucketMigrationStateInput">external_managed_backend_bucket_migration_state_input</a></code> | <code>str</code> | *No description.* |
@@ -1221,18 +1221,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.ipVersionInput">ip_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.loadBalancingSchemeInput">load_balancing_scheme_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.metadataFiltersInput">metadata_filters_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.metadataFiltersInput">metadata_filters_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.networkTierInput">network_tier_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.noAutomateDnsZoneInput">no_automate_dns_zone_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.noAutomateDnsZoneInput">no_automate_dns_zone_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.portRangeInput">port_range_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.serviceDirectoryRegistrationsInput">service_directory_registrations_input</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrations">ComputeGlobalForwardingRuleServiceDirectoryRegistrations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.sourceIpRangesInput">source_ip_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.subnetworkInput">subnetwork_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.targetInput">target_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.externalManagedBackendBucketMigrationState">external_managed_backend_bucket_migration_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.externalManagedBackendBucketMigrationTestingPercentage">external_managed_backend_bucket_migration_testing_percentage</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1245,7 +1245,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.network">network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.networkTier">network_tier</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.noAutomateDnsZone">no_automate_dns_zone</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.noAutomateDnsZone">no_automate_dns_zone</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.portRange">port_range</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRule.property.sourceIpRanges">source_ip_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1272,7 +1272,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1322,7 +1322,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1332,7 +1332,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1342,7 +1342,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1362,7 +1362,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1372,7 +1372,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1382,7 +1382,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1392,7 +1392,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1412,7 +1412,7 @@ base_forwarding_rule: str
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1492,7 +1492,7 @@ service_directory_registrations: ComputeGlobalForwardingRuleServiceDirectoryRegi
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1602,7 +1602,7 @@ load_balancing_scheme_input: str
 metadata_filters_input: IResolvable | typing.List[ComputeGlobalForwardingRuleMetadataFilters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
 
 ---
 
@@ -1642,7 +1642,7 @@ network_tier_input: str
 no_automate_dns_zone_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1712,7 +1712,7 @@ target_input: str
 timeouts_input: IResolvable | ComputeGlobalForwardingRuleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a>
 
 ---
 
@@ -1842,7 +1842,7 @@ network_tier: str
 no_automate_dns_zone: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1959,13 +1959,13 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.name">name</a></code> | <code>str</code> | Name of the resource; |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.target">target</a></code> | <code>str</code> | The URL of the target resource to receive the matched traffic. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
@@ -1977,10 +1977,10 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig(
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.ipVersion">ip_version</a></code> | <code>str</code> | The IP Version that will be used by this global forwarding rule. Possible values: ["IPV4", "IPV6"]. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels to apply to this forwarding rule.  A list of key->value pairs. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.loadBalancingScheme">load_balancing_scheme</a></code> | <code>str</code> | Specifies the forwarding rule type. |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.metadataFilters">metadata_filters</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | metadata_filters block. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.metadataFilters">metadata_filters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | metadata_filters block. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.network">network</a></code> | <code>str</code> | This field is not used for external load balancing. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.networkTier">network_tier</a></code> | <code>str</code> | This signifies the networking tier used for configuring this load balancer and can only take the following values: 'PREMIUM', 'STANDARD'. |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.noAutomateDnsZone">no_automate_dns_zone</a></code> | <code>bool \| cdktf.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.noAutomateDnsZone">no_automate_dns_zone</a></code> | <code>bool \| cdktn.IResolvable</code> | This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.portRange">port_range</a></code> | <code>str</code> | The 'portRange' field has the following limitations: * It requires that the forwarding rule 'IPProtocol' be TCP, UDP, or SCTP, and * It's applicable only to the following products: external passthrough Network Load Balancers, internal and external proxy Network Load Balancers, internal and external Application Load Balancers, external protocol forwarding, and Classic VPN. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_global_forwarding_rule#project ComputeGlobalForwardingRule#project}. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig.property.serviceDirectoryRegistrations">service_directory_registrations</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrations">ComputeGlobalForwardingRuleServiceDirectoryRegistrations</a></code> | service_directory_registrations block. |
@@ -1996,7 +1996,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2006,7 +2006,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2016,7 +2016,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2026,7 +2026,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2036,7 +2036,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2046,7 +2046,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2056,7 +2056,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 metadata_filters: IResolvable | typing.List[ComputeGlobalForwardingRuleMetadataFilters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
 
 metadata_filters block.
 
@@ -2381,7 +2381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 no_automate_dns_zone: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 This is used in PSC consumer ForwardingRule to control whether it should try to auto-generate a DNS zone or not.
 
@@ -2506,7 +2506,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters.property.filterLabels">filter_labels</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]</code> | filter_labels block. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters.property.filterLabels">filter_labels</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]</code> | filter_labels block. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters.property.filterMatchCriteria">filter_match_criteria</a></code> | <code>str</code> | Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match. |
 
 ---
@@ -2517,7 +2517,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters(
 filter_labels: IResolvable | typing.List[ComputeGlobalForwardingRuleMetadataFiltersFilterLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
 
 filter_labels block.
 
@@ -2726,7 +2726,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2734,7 +2734,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2804,7 +2804,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2841,7 +2841,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]</code> | *No description.* |
 
 ---
 
@@ -2875,7 +2875,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeGlobalForwardingRuleMetadataFiltersFilterLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
 
 ---
 
@@ -2897,7 +2897,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2906,7 +2906,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3114,7 +3114,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3139,7 +3139,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a></code> | *No description.* |
 
 ---
 
@@ -3213,7 +3213,7 @@ value: str
 internal_value: IResolvable | ComputeGlobalForwardingRuleMetadataFiltersFilterLabels
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>
 
 ---
 
@@ -3234,7 +3234,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3242,7 +3242,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3312,7 +3312,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3349,7 +3349,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]</code> | *No description.* |
 
 ---
 
@@ -3383,7 +3383,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ComputeGlobalForwardingRuleMetadataFilters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>]
 
 ---
 
@@ -3405,7 +3405,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3414,7 +3414,7 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputRefe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3623,7 +3623,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3647,7 +3647,7 @@ def put_filter_labels(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.putFilterLabels.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
 
 ---
 
@@ -3659,10 +3659,10 @@ def put_filter_labels(
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.filterLabels">filter_labels</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList">ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.filterLabelsInput">filter_labels_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.filterLabelsInput">filter_labels_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.filterMatchCriteriaInput">filter_match_criteria_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.filterMatchCriteria">filter_match_criteria</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a></code> | *No description.* |
 
 ---
 
@@ -3706,7 +3706,7 @@ filter_labels: ComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList
 filter_labels_input: IResolvable | typing.List[ComputeGlobalForwardingRuleMetadataFiltersFilterLabels]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFiltersFilterLabels">ComputeGlobalForwardingRuleMetadataFiltersFilterLabels</a>]
 
 ---
 
@@ -3736,7 +3736,7 @@ filter_match_criteria: str
 internal_value: IResolvable | ComputeGlobalForwardingRuleMetadataFilters
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleMetadataFilters">ComputeGlobalForwardingRuleMetadataFilters</a>
 
 ---
 
@@ -3756,14 +3756,14 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3957,7 +3957,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleServiceDirectoryRegistrationsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4088,14 +4088,14 @@ computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4290,7 +4290,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4335,7 +4335,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4429,7 +4429,7 @@ update: str
 internal_value: IResolvable | ComputeGlobalForwardingRuleTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeGlobalForwardingRule.ComputeGlobalForwardingRuleTimeouts">ComputeGlobalForwardingRuleTimeouts</a>
 
 ---
 

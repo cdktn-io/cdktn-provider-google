@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleSecretManagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleSecretManagerSecretVersionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#fetch_secret_data DataGoogleSecretManagerSecretVersion#fetch_secret_data}
   */
-  readonly fetchSecretData?: boolean | cdktf.IResolvable;
+  readonly fetchSecretData?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#id DataGoogleSecretManagerSecretVersion#id}
   *
@@ -26,7 +26,7 @@ export interface DataGoogleSecretManagerSecretVersionConfig extends cdktf.Terraf
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#is_secret_data_base64 DataGoogleSecretManagerSecretVersion#is_secret_data_base64}
   */
-  readonly isSecretDataBase64?: boolean | cdktf.IResolvable;
+  readonly isSecretDataBase64?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#project DataGoogleSecretManagerSecretVersion#project}
   */
@@ -44,7 +44,7 @@ export interface DataGoogleSecretManagerSecretVersionConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version}
 */
-export class DataGoogleSecretManagerSecretVersion extends cdktf.TerraformDataSource {
+export class DataGoogleSecretManagerSecretVersion extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class DataGoogleSecretManagerSecretVersion extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleSecretManagerSecretVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleSecretManagerSecretVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleSecretManagerSecretVersion to import
   * @param importFromId The id of the existing DataGoogleSecretManagerSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleSecretManagerSecretVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_secret_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_secret_manager_secret_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -120,11 +120,11 @@ export class DataGoogleSecretManagerSecretVersion extends cdktf.TerraformDataSou
   }
 
   // fetch_secret_data - computed: false, optional: true, required: false
-  private _fetchSecretData?: boolean | cdktf.IResolvable; 
+  private _fetchSecretData?: boolean | cdktn.IResolvable; 
   public get fetchSecretData() {
     return this.getBooleanAttribute('fetch_secret_data');
   }
-  public set fetchSecretData(value: boolean | cdktf.IResolvable) {
+  public set fetchSecretData(value: boolean | cdktn.IResolvable) {
     this._fetchSecretData = value;
   }
   public resetFetchSecretData() {
@@ -152,11 +152,11 @@ export class DataGoogleSecretManagerSecretVersion extends cdktf.TerraformDataSou
   }
 
   // is_secret_data_base64 - computed: false, optional: true, required: false
-  private _isSecretDataBase64?: boolean | cdktf.IResolvable; 
+  private _isSecretDataBase64?: boolean | cdktn.IResolvable; 
   public get isSecretDataBase64() {
     return this.getBooleanAttribute('is_secret_data_base64');
   }
-  public set isSecretDataBase64(value: boolean | cdktf.IResolvable) {
+  public set isSecretDataBase64(value: boolean | cdktn.IResolvable) {
     this._isSecretDataBase64 = value;
   }
   public resetIsSecretDataBase64() {
@@ -228,49 +228,49 @@ export class DataGoogleSecretManagerSecretVersion extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      fetch_secret_data: cdktf.booleanToTerraform(this._fetchSecretData),
-      id: cdktf.stringToTerraform(this._id),
-      is_secret_data_base64: cdktf.booleanToTerraform(this._isSecretDataBase64),
-      project: cdktf.stringToTerraform(this._project),
-      secret: cdktf.stringToTerraform(this._secret),
-      version: cdktf.stringToTerraform(this._version),
+      fetch_secret_data: cdktn.booleanToTerraform(this._fetchSecretData),
+      id: cdktn.stringToTerraform(this._id),
+      is_secret_data_base64: cdktn.booleanToTerraform(this._isSecretDataBase64),
+      project: cdktn.stringToTerraform(this._project),
+      secret: cdktn.stringToTerraform(this._secret),
+      version: cdktn.stringToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       fetch_secret_data: {
-        value: cdktf.booleanToHclTerraform(this._fetchSecretData),
+        value: cdktn.booleanToHclTerraform(this._fetchSecretData),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_secret_data_base64: {
-        value: cdktf.booleanToHclTerraform(this._isSecretDataBase64),
+        value: cdktn.booleanToHclTerraform(this._isSecretDataBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret: {
-        value: cdktf.stringToHclTerraform(this._secret),
+        value: cdktn.stringToHclTerraform(this._secret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

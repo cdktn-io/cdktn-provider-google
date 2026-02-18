@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleServiceAccountJwtConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleServiceAccountJwtConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_jwt#delegates DataGoogleServiceAccountJwt#delegates}
   */
@@ -44,7 +44,7 @@ export interface DataGoogleServiceAccountJwtConfig extends cdktf.TerraformMetaAr
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_jwt google_service_account_jwt}
 */
-export class DataGoogleServiceAccountJwt extends cdktf.TerraformDataSource {
+export class DataGoogleServiceAccountJwt extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -55,14 +55,14 @@ export class DataGoogleServiceAccountJwt extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleServiceAccountJwt resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleServiceAccountJwt resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleServiceAccountJwt to import
   * @param importFromId The id of the existing DataGoogleServiceAccountJwt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_jwt#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleServiceAccountJwt to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_service_account_jwt", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_service_account_jwt", importId: importFromId, provider });
       }
 
   // ===========
@@ -106,7 +106,7 @@ export class DataGoogleServiceAccountJwt extends cdktf.TerraformDataSource {
   // delegates - computed: false, optional: true, required: false
   private _delegates?: string[]; 
   public get delegates() {
-    return cdktf.Fn.tolist(this.getListAttribute('delegates'));
+    return cdktn.Fn.tolist(this.getListAttribute('delegates'));
   }
   public set delegates(value: string[]) {
     this._delegates = value;
@@ -188,42 +188,42 @@ export class DataGoogleServiceAccountJwt extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      delegates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegates),
-      expires_in: cdktf.numberToTerraform(this._expiresIn),
-      id: cdktf.stringToTerraform(this._id),
-      payload: cdktf.stringToTerraform(this._payload),
-      target_service_account: cdktf.stringToTerraform(this._targetServiceAccount),
+      delegates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegates),
+      expires_in: cdktn.numberToTerraform(this._expiresIn),
+      id: cdktn.stringToTerraform(this._id),
+      payload: cdktn.stringToTerraform(this._payload),
+      target_service_account: cdktn.stringToTerraform(this._targetServiceAccount),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       delegates: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegates),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._delegates),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       expires_in: {
-        value: cdktf.numberToHclTerraform(this._expiresIn),
+        value: cdktn.numberToHclTerraform(this._expiresIn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       payload: {
-        value: cdktf.stringToHclTerraform(this._payload),
+        value: cdktn.stringToHclTerraform(this._payload),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_service_account: {
-        value: cdktf.stringToHclTerraform(this._targetServiceAccount),
+        value: cdktn.stringToHclTerraform(this._targetServiceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

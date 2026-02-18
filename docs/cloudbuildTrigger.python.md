@@ -53,18 +53,18 @@ cloudbuildTrigger.CloudbuildTrigger(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.approvalConfig">approval_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfig">CloudbuildTriggerApprovalConfig</a></code> | approval_config block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.bitbucketServerTriggerConfig">bitbucket_server_trigger_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfig">CloudbuildTriggerBitbucketServerTriggerConfig</a></code> | bitbucket_server_trigger_config block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.buildAttribute">build_attribute</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild">CloudbuildTriggerBuild</a></code> | build block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-readable description of the trigger. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the trigger is disabled or not. If true, the trigger will never result in a build. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the trigger is disabled or not. If true, the trigger will never result in a build. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.filename">filename</a></code> | <code>str</code> | Path, from the source root, to a file whose contents is used for the template. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.filter">filter</a></code> | <code>str</code> | A Common Expression Language string. Used only with Pub/Sub and Webhook. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.gitFileSource">git_file_source</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSource">CloudbuildTriggerGitFileSource</a></code> | git_file_source block. |
@@ -108,43 +108,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.Initializer.parameter.disabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the trigger is disabled or not. If true, the trigger will never result in a build.
 
@@ -732,7 +732,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -825,7 +825,7 @@ def put_approval_config(
 
 ###### `approval_required`<sup>Optional</sup> <a name="approval_required" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.putApprovalConfig.parameter.approvalRequired"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not approval is needed.
 
@@ -922,7 +922,7 @@ def put_build_attribute(
 
 ###### `step`<sup>Required</sup> <a name="step" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.putBuildAttribute.parameter.step"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
 
 step block.
 
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `secret`<sup>Optional</sup> <a name="secret" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.putBuildAttribute.parameter.secret"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
 
 secret block.
 
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.putTriggerTemplate.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Only trigger a build if the revision regex does NOT match the revision regex.
 
@@ -1654,7 +1654,7 @@ def reset_webhook_config() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a CloudbuildTrigger resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a CloudbuildTrigger resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1737,7 +1737,7 @@ cloudbuildTrigger.CloudbuildTrigger.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a CloudbuildTrigger resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CloudbuildTrigger resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.generateConfigForImport.parameter.scope"></a>
 
@@ -1767,7 +1767,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CloudbuildTrigger to import is found.
 
@@ -1778,19 +1778,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.approvalConfig">approval_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference">CloudbuildTriggerApprovalConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.bitbucketServerTriggerConfig">bitbucket_server_trigger_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference">CloudbuildTriggerBitbucketServerTriggerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.buildAttribute">build_attribute</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference">CloudbuildTriggerBuildOutputReference</a></code> | *No description.* |
@@ -1808,7 +1808,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.bitbucketServerTriggerConfigInput">bitbucket_server_trigger_config_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfig">CloudbuildTriggerBitbucketServerTriggerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.buildAttributeInput">build_attribute_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild">CloudbuildTriggerBuild</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.filenameInput">filename_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.gitFileSourceInput">git_file_source_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSource">CloudbuildTriggerGitFileSource</a></code> | *No description.* |
@@ -1826,11 +1826,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.sourceToBuildInput">source_to_build_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuild">CloudbuildTriggerSourceToBuild</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.substitutionsInput">substitutions_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.triggerTemplateInput">trigger_template_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate">CloudbuildTriggerTriggerTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.webhookConfigInput">webhook_config_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfig">CloudbuildTriggerWebhookConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.filename">filename</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.filter">filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1864,7 +1864,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1914,7 +1914,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1924,7 +1924,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1934,7 +1934,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1954,7 +1954,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1964,7 +1964,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1974,7 +1974,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1984,7 +1984,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2164,7 +2164,7 @@ description_input: str
 disabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2344,7 +2344,7 @@ tags_input: typing.List[str]
 timeouts_input: IResolvable | CloudbuildTriggerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a>
 
 ---
 
@@ -2384,7 +2384,7 @@ description: str
 disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2544,7 +2544,7 @@ cloudbuildTrigger.CloudbuildTriggerApprovalConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfig.property.approvalRequired">approval_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not approval is needed. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfig.property.approvalRequired">approval_required</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not approval is needed. |
 
 ---
 
@@ -2554,7 +2554,7 @@ cloudbuildTrigger.CloudbuildTriggerApprovalConfig(
 approval_required: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not approval is needed.
 
@@ -2686,7 +2686,7 @@ cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest.property.branch">branch</a></code> | <code>str</code> | Regex of branches to match. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest.property.commentControl">comment_control</a></code> | <code>str</code> | Configure builds to run whether a repository owner or collaborator need to comment /gcbrun. Possible values: ["COMMENTS_DISABLED", "COMMENTS_ENABLED", "COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY"]. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, branches that do NOT match the git_ref will trigger a build. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, branches that do NOT match the git_ref will trigger a build. |
 
 ---
 
@@ -2726,7 +2726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, branches that do NOT match the git_ref will trigger a build.
 
@@ -2753,7 +2753,7 @@ cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush.property.branch">branch</a></code> | <code>str</code> | Regex of branches to match.  Specify only one of branch or tag. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, only trigger a build if the revision regex does NOT match the gitRef regex. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, only trigger a build if the revision regex does NOT match the gitRef regex. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush.property.tag">tag</a></code> | <code>str</code> | Regex of tags to match.  Specify only one of branch or tag. |
 
 ---
@@ -2778,7 +2778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, only trigger a build if the revision regex does NOT match the gitRef regex.
 
@@ -2827,14 +2827,14 @@ cloudbuildTrigger.CloudbuildTriggerBuild(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.step">step</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]</code> | step block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.step">step</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]</code> | step block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.artifacts">artifacts</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts">CloudbuildTriggerBuildArtifacts</a></code> | artifacts block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.availableSecrets">available_secrets</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets">CloudbuildTriggerBuildAvailableSecrets</a></code> | available_secrets block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.images">images</a></code> | <code>typing.List[str]</code> | A list of images to be pushed upon the successful completion of all build steps. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.logsBucket">logs_bucket</a></code> | <code>str</code> | Google Cloud Storage bucket where logs should be written. Logs file names will be of the format ${logsBucket}/log-${build_id}.txt. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.options">options</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions">CloudbuildTriggerBuildOptions</a></code> | options block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.queueTtl">queue_ttl</a></code> | <code>str</code> | TTL in queue for this build. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.secret">secret</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]</code> | secret block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.secret">secret</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]</code> | secret block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.source">source</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSource">CloudbuildTriggerBuildSource</a></code> | source block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.substitutions">substitutions</a></code> | <code>typing.Mapping[str]</code> | Substitutions data for Build resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild.property.tags">tags</a></code> | <code>typing.List[str]</code> | Tags for annotation of a Build. These are not docker tags. |
@@ -2848,7 +2848,7 @@ cloudbuildTrigger.CloudbuildTriggerBuild(
 step: IResolvable | typing.List[CloudbuildTriggerBuildStep]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
 
 step block.
 
@@ -2955,7 +2955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 secret: IResolvable | typing.List[CloudbuildTriggerBuildSecret]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
 
 secret block.
 
@@ -3045,10 +3045,10 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifacts(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.images">images</a></code> | <code>typing.List[str]</code> | A list of images to be pushed upon the successful completion of all build steps. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.mavenArtifacts">maven_artifacts</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]</code> | maven_artifacts block. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.npmPackages">npm_packages</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]</code> | npm_packages block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.mavenArtifacts">maven_artifacts</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]</code> | maven_artifacts block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.npmPackages">npm_packages</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]</code> | npm_packages block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.objects">objects</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjects">CloudbuildTriggerBuildArtifactsObjects</a></code> | objects block. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.pythonPackages">python_packages</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]</code> | python_packages block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts.property.pythonPackages">python_packages</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]</code> | python_packages block. |
 
 ---
 
@@ -3078,7 +3078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 maven_artifacts: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsMavenArtifacts]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
 
 maven_artifacts block.
 
@@ -3092,7 +3092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 npm_packages: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsNpmPackages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
 
 npm_packages block.
 
@@ -3120,7 +3120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 python_packages: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsPythonPackages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
 
 python_packages block.
 
@@ -3416,7 +3416,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets.property.secretManager">secret_manager</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]</code> | secret_manager block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets.property.secretManager">secret_manager</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]</code> | secret_manager block. |
 
 ---
 
@@ -3426,7 +3426,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets(
 secret_manager: IResolvable | typing.List[CloudbuildTriggerBuildAvailableSecretsSecretManager]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
 
 secret_manager block.
 
@@ -3518,7 +3518,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildOptions(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | Requested disk size for the VM that runs the build. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.dynamicSubstitutions">dynamic_substitutions</a></code> | <code>bool \| cdktf.IResolvable</code> | Option to specify whether or not to apply bash style string operations to the substitutions. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.dynamicSubstitutions">dynamic_substitutions</a></code> | <code>bool \| cdktn.IResolvable</code> | Option to specify whether or not to apply bash style string operations to the substitutions. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.env">env</a></code> | <code>typing.List[str]</code> | A list of global environment variable definitions that will exist for all build steps in this build. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.logging">logging</a></code> | <code>str</code> | Option to specify the logging mode, which determines if and where build logs are stored. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.logStreamingOption">log_streaming_option</a></code> | <code>str</code> | Option to define build log streaming behavior to Google Cloud Storage. Possible values: ["STREAM_DEFAULT", "STREAM_ON", "STREAM_OFF"]. |
@@ -3527,7 +3527,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildOptions(
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.secretEnv">secret_env</a></code> | <code>typing.List[str]</code> | A list of global environment variables, which are encrypted using a Cloud Key Management Service crypto key. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.sourceProvenanceHash">source_provenance_hash</a></code> | <code>typing.List[str]</code> | Requested hash for SourceProvenance. Possible values: ["NONE", "SHA256", "MD5"]. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.substitutionOption">substitution_option</a></code> | <code>str</code> | Option to specify behavior when there is an error in the substitution checks. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.volumes">volumes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]</code> | volumes block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.volumes">volumes</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]</code> | volumes block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions.property.workerPool">worker_pool</a></code> | <code>str</code> | Option to specify a WorkerPool for the build. Format projects/{project}/workerPools/{workerPool}. |
 
 ---
@@ -3558,7 +3558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 dynamic_substitutions: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Option to specify whether or not to apply bash style string operations to the substitutions.
 
@@ -3699,7 +3699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 volumes: IResolvable | typing.List[CloudbuildTriggerBuildOptionsVolumes]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
 
 volumes block.
 
@@ -3910,7 +3910,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource(
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.branchName">branch_name</a></code> | <code>str</code> | Regex matching branches to build. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.commitSha">commit_sha</a></code> | <code>str</code> | Explicit commit SHA to build. Exactly one a of branch name, tag, or commit SHA must be provided. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.dir">dir</a></code> | <code>str</code> | Directory, relative to the source root, in which to run the build. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | Only trigger a build if the revision regex does NOT match the revision regex. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | Only trigger a build if the revision regex does NOT match the revision regex. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.projectId">project_id</a></code> | <code>str</code> | ID of the project that owns the Cloud Source Repository. If omitted, the project ID requesting the build is assumed. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.substitutions">substitutions</a></code> | <code>typing.Mapping[str]</code> | Substitutions to use in a triggered build. Should only be used with triggers.run. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource.property.tagName">tag_name</a></code> | <code>str</code> | Regex matching tags to build. |
@@ -3986,7 +3986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Only trigger a build if the revision regex does NOT match the revision regex.
 
@@ -4137,7 +4137,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStep(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.name">name</a></code> | <code>str</code> | The name of the container image that will run this particular build step. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.allowExitCodes">allow_exit_codes</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Allow this build step to fail without failing the entire build if and only if the exit code is one of the specified codes. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow this build step to fail without failing the entire build. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow this build step to fail without failing the entire build. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.args">args</a></code> | <code>typing.List[str]</code> | A list of arguments that will be presented to the step when it is started. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.dir">dir</a></code> | <code>str</code> | Working directory to use when running this step's container. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.entrypoint">entrypoint</a></code> | <code>str</code> | Entrypoint to be used instead of the build step image's default entrypoint. If unset, the image's default entrypoint is used. |
@@ -4147,7 +4147,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStep(
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.secretEnv">secret_env</a></code> | <code>typing.List[str]</code> | A list of environment variables which are encrypted using a Cloud Key Management Service crypto key. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.timeout">timeout</a></code> | <code>str</code> | Time limit for executing this build step. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.timing">timing</a></code> | <code>str</code> | Output only. Stores timing information for executing this build step. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.volumes">volumes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]</code> | volumes block. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.volumes">volumes</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]</code> | volumes block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep.property.waitFor">wait_for</a></code> | <code>typing.List[str]</code> | The ID(s) of the step(s) that this build step depends on. |
 
 ---
@@ -4203,7 +4203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 allow_failure: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow this build step to fail without failing the entire build.
 
@@ -4380,7 +4380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 volumes: IResolvable | typing.List[CloudbuildTriggerBuildStepVolumes]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
 
 volumes block.
 
@@ -4510,18 +4510,18 @@ cloudbuildTrigger.CloudbuildTriggerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.approvalConfig">approval_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfig">CloudbuildTriggerApprovalConfig</a></code> | approval_config block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.bitbucketServerTriggerConfig">bitbucket_server_trigger_config</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfig">CloudbuildTriggerBitbucketServerTriggerConfig</a></code> | bitbucket_server_trigger_config block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.buildAttribute">build_attribute</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild">CloudbuildTriggerBuild</a></code> | build block. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.description">description</a></code> | <code>str</code> | Human-readable description of the trigger. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the trigger is disabled or not. If true, the trigger will never result in a build. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the trigger is disabled or not. If true, the trigger will never result in a build. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.filename">filename</a></code> | <code>str</code> | Path, from the source root, to a file whose contents is used for the template. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.filter">filter</a></code> | <code>str</code> | A Common Expression Language string. Used only with Pub/Sub and Webhook. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig.property.gitFileSource">git_file_source</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSource">CloudbuildTriggerGitFileSource</a></code> | git_file_source block. |
@@ -4551,7 +4551,7 @@ cloudbuildTrigger.CloudbuildTriggerConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -4561,7 +4561,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -4571,7 +4571,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -4581,7 +4581,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -4591,7 +4591,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -4601,7 +4601,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -4611,7 +4611,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -4677,7 +4677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the trigger is disabled or not. If true, the trigger will never result in a build.
 
@@ -5248,7 +5248,7 @@ cloudbuildTrigger.CloudbuildTriggerGithubPullRequest(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequest.property.branch">branch</a></code> | <code>str</code> | Regex of branches to match. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequest.property.commentControl">comment_control</a></code> | <code>str</code> | Whether to block builds on a "/gcbrun" comment from a repository owner or collaborator. Possible values: ["COMMENTS_DISABLED", "COMMENTS_ENABLED", "COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY"]. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequest.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, branches that do NOT match the git_ref will trigger a build. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequest.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, branches that do NOT match the git_ref will trigger a build. |
 
 ---
 
@@ -5286,7 +5286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, branches that do NOT match the git_ref will trigger a build.
 
@@ -5313,7 +5313,7 @@ cloudbuildTrigger.CloudbuildTriggerGithubPush(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPush.property.branch">branch</a></code> | <code>str</code> | Regex of branches to match.  Specify only one of branch or tag. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPush.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | When true, only trigger a build if the revision regex does NOT match the git_ref regex. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPush.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, only trigger a build if the revision regex does NOT match the git_ref regex. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPush.property.tag">tag</a></code> | <code>str</code> | Regex of tags to match.  Specify only one of branch or tag. |
 
 ---
@@ -5338,7 +5338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, only trigger a build if the revision regex does NOT match the git_ref regex.
 
@@ -5496,7 +5496,7 @@ cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest.property.branch">branch</a></code> | <code>str</code> | Regex of branches to match. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest.property.commentControl">comment_control</a></code> | <code>str</code> | Configure builds to run whether a repository owner or collaborator need to comment '/gcbrun'. Possible values: ["COMMENTS_DISABLED", "COMMENTS_ENABLED", "COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY"]. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, branches that do NOT match the git_ref will trigger a build. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, branches that do NOT match the git_ref will trigger a build. |
 
 ---
 
@@ -5537,7 +5537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, branches that do NOT match the git_ref will trigger a build.
 
@@ -5564,7 +5564,7 @@ cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush.property.branch">branch</a></code> | <code>str</code> | Regex of branches to match. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, only trigger a build if the revision regex does NOT match the git_ref regex. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, only trigger a build if the revision regex does NOT match the git_ref regex. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush.property.tag">tag</a></code> | <code>str</code> | Regex of tags to match. |
 
 ---
@@ -5592,7 +5592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, only trigger a build if the revision regex does NOT match the git_ref regex.
 
@@ -5816,7 +5816,7 @@ cloudbuildTrigger.CloudbuildTriggerTriggerTemplate(
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.branchName">branch_name</a></code> | <code>str</code> | Name of the branch to build. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.commitSha">commit_sha</a></code> | <code>str</code> | Explicit commit SHA to build. Exactly one of a branch name, tag, or commit SHA must be provided. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.dir">dir</a></code> | <code>str</code> | Directory, relative to the source root, in which to run the build. |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | Only trigger a build if the revision regex does NOT match the revision regex. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | Only trigger a build if the revision regex does NOT match the revision regex. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.projectId">project_id</a></code> | <code>str</code> | ID of the project that owns the Cloud Source Repository. If omitted, the project ID requesting the build is assumed. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.repoName">repo_name</a></code> | <code>str</code> | Name of the Cloud Source Repository. If omitted, the name "default" is assumed. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate.property.tagName">tag_name</a></code> | <code>str</code> | Name of the tag to build. |
@@ -5878,7 +5878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Only trigger a build if the revision regex does NOT match the revision regex.
 
@@ -5982,14 +5982,14 @@ cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6182,7 +6182,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6209,8 +6209,8 @@ def reset_approval_required() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.property.approvalRequiredInput">approval_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.property.approvalRequired">approval_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.property.approvalRequiredInput">approval_required_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.property.approvalRequired">approval_required</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfig">CloudbuildTriggerApprovalConfig</a></code> | *No description.* |
 
 ---
@@ -6245,7 +6245,7 @@ fqn: str
 approval_required_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6255,7 +6255,7 @@ approval_required_input: bool | IResolvable
 approval_required: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -6285,14 +6285,14 @@ cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6488,7 +6488,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6536,7 +6536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference.putPullRequest.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, branches that do NOT match the git_ref will trigger a build.
 
@@ -6566,7 +6566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference.putPush.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, only trigger a build if the revision regex does NOT match the gitRef regex.
 
@@ -6767,14 +6767,14 @@ cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6968,7 +6968,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7003,10 +7003,10 @@ def reset_invert_regex() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.commentControlInput">comment_control_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.commentControl">comment_control</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest">CloudbuildTriggerBitbucketServerTriggerConfigPullRequest</a></code> | *No description.* |
 
 ---
@@ -7061,7 +7061,7 @@ comment_control_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7091,7 +7091,7 @@ comment_control: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7121,14 +7121,14 @@ cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7323,7 +7323,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7363,10 +7363,10 @@ def reset_tag() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.tagInput">tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.tag">tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush">CloudbuildTriggerBitbucketServerTriggerConfigPush</a></code> | *No description.* |
 
@@ -7412,7 +7412,7 @@ branch_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7442,7 +7442,7 @@ branch: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7483,7 +7483,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7491,7 +7491,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7561,7 +7561,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7598,7 +7598,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]</code> | *No description.* |
 
 ---
 
@@ -7632,7 +7632,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsMavenArtifacts]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
 
 ---
 
@@ -7654,7 +7654,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7663,7 +7663,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7876,7 +7876,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7937,7 +7937,7 @@ def reset_version() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.property.repository">repository</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.property.version">version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a></code> | *No description.* |
 
 ---
 
@@ -8071,7 +8071,7 @@ version: str
 internal_value: IResolvable | CloudbuildTriggerBuildArtifactsMavenArtifacts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>
 
 ---
 
@@ -8092,7 +8092,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8100,7 +8100,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8170,7 +8170,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8207,7 +8207,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]</code> | *No description.* |
 
 ---
 
@@ -8241,7 +8241,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsNpmPackages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
 
 ---
 
@@ -8263,7 +8263,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8272,7 +8272,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8482,7 +8482,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8519,7 +8519,7 @@ def reset_repository() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.property.repositoryInput">repository_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.property.packagePath">package_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.property.repository">repository</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a></code> | *No description.* |
 
 ---
 
@@ -8593,7 +8593,7 @@ repository: str
 internal_value: IResolvable | CloudbuildTriggerBuildArtifactsNpmPackages
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>
 
 ---
 
@@ -8613,14 +8613,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8814,7 +8814,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8957,7 +8957,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8965,7 +8965,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9035,7 +9035,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9117,7 +9117,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9126,7 +9126,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9334,7 +9334,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9431,14 +9431,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9639,7 +9639,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9663,7 +9663,7 @@ def put_maven_artifacts(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.putMavenArtifacts.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
 
 ---
 
@@ -9677,7 +9677,7 @@ def put_npm_packages(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.putNpmPackages.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
 
 ---
 
@@ -9723,7 +9723,7 @@ def put_python_packages(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.putPythonPackages.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
 
 ---
 
@@ -9769,10 +9769,10 @@ def reset_python_packages() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.objects">objects</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference">CloudbuildTriggerBuildArtifactsObjectsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.pythonPackages">python_packages</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList">CloudbuildTriggerBuildArtifactsPythonPackagesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.imagesInput">images_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.mavenArtifactsInput">maven_artifacts_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.npmPackagesInput">npm_packages_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.mavenArtifactsInput">maven_artifacts_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.npmPackagesInput">npm_packages_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.objectsInput">objects_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjects">CloudbuildTriggerBuildArtifactsObjects</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.pythonPackagesInput">python_packages_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.pythonPackagesInput">python_packages_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.images">images</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts">CloudbuildTriggerBuildArtifacts</a></code> | *No description.* |
 
@@ -9858,7 +9858,7 @@ images_input: typing.List[str]
 maven_artifacts_input: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsMavenArtifacts]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
 
 ---
 
@@ -9868,7 +9868,7 @@ maven_artifacts_input: IResolvable | typing.List[CloudbuildTriggerBuildArtifacts
 npm_packages_input: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsNpmPackages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
 
 ---
 
@@ -9888,7 +9888,7 @@ objects_input: CloudbuildTriggerBuildArtifactsObjects
 python_packages_input: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsPythonPackages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
 
 ---
 
@@ -9929,7 +9929,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9937,7 +9937,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10007,7 +10007,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10044,7 +10044,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]</code> | *No description.* |
 
 ---
 
@@ -10078,7 +10078,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildArtifactsPythonPackages]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
 
 ---
 
@@ -10100,7 +10100,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10109,7 +10109,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10319,7 +10319,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10356,7 +10356,7 @@ def reset_repository() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.property.repositoryInput">repository_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.property.paths">paths</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.property.repository">repository</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a></code> | *No description.* |
 
 ---
 
@@ -10430,7 +10430,7 @@ repository: str
 internal_value: IResolvable | CloudbuildTriggerBuildArtifactsPythonPackages
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>
 
 ---
 
@@ -10450,14 +10450,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10650,7 +10650,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10674,7 +10674,7 @@ def put_secret_manager(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.putSecretManager.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
 
 ---
 
@@ -10686,7 +10686,7 @@ def put_secret_manager(
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.property.secretManager">secret_manager</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList">CloudbuildTriggerBuildAvailableSecretsSecretManagerList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.property.secretManagerInput">secret_manager_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.property.secretManagerInput">secret_manager_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets">CloudbuildTriggerBuildAvailableSecrets</a></code> | *No description.* |
 
 ---
@@ -10731,7 +10731,7 @@ secret_manager: CloudbuildTriggerBuildAvailableSecretsSecretManagerList
 secret_manager_input: IResolvable | typing.List[CloudbuildTriggerBuildAvailableSecretsSecretManager]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
 
 ---
 
@@ -10762,7 +10762,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10770,7 +10770,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10840,7 +10840,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10877,7 +10877,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]</code> | *No description.* |
 
 ---
 
@@ -10911,7 +10911,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildAvailableSecretsSecretManager]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
 
 ---
 
@@ -10933,7 +10933,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10942,7 +10942,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputRefer
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11150,7 +11150,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11175,7 +11175,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.property.versionNameInput">version_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.property.env">env</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.property.versionName">version_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a></code> | *No description.* |
 
 ---
 
@@ -11249,7 +11249,7 @@ version_name: str
 internal_value: IResolvable | CloudbuildTriggerBuildAvailableSecretsSecretManager
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>
 
 ---
 
@@ -11269,14 +11269,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11481,7 +11481,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11505,7 +11505,7 @@ def put_volumes(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.putVolumes.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
 
 ---
 
@@ -11590,7 +11590,7 @@ def reset_worker_pool() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList">CloudbuildTriggerBuildOptionsVolumesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.diskSizeGbInput">disk_size_gb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.dynamicSubstitutionsInput">dynamic_substitutions_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.dynamicSubstitutionsInput">dynamic_substitutions_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.envInput">env_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.loggingInput">logging_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.logStreamingOptionInput">log_streaming_option_input</a></code> | <code>str</code> | *No description.* |
@@ -11599,10 +11599,10 @@ def reset_worker_pool() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.secretEnvInput">secret_env_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.sourceProvenanceHashInput">source_provenance_hash_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.substitutionOptionInput">substitution_option_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.volumesInput">volumes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.volumesInput">volumes_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.workerPoolInput">worker_pool_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.diskSizeGb">disk_size_gb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.dynamicSubstitutions">dynamic_substitutions</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.dynamicSubstitutions">dynamic_substitutions</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.env">env</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.logging">logging</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference.property.logStreamingOption">log_streaming_option</a></code> | <code>str</code> | *No description.* |
@@ -11666,7 +11666,7 @@ disk_size_gb_input: typing.Union[int, float]
 dynamic_substitutions_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11756,7 +11756,7 @@ substitution_option_input: str
 volumes_input: IResolvable | typing.List[CloudbuildTriggerBuildOptionsVolumes]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
 
 ---
 
@@ -11786,7 +11786,7 @@ disk_size_gb: typing.Union[int, float]
 dynamic_substitutions: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11907,7 +11907,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11915,7 +11915,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11985,7 +11985,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12022,7 +12022,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]</code> | *No description.* |
 
 ---
 
@@ -12056,7 +12056,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildOptionsVolumes]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
 
 ---
 
@@ -12078,7 +12078,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12087,7 +12087,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12297,7 +12297,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12334,7 +12334,7 @@ def reset_path() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a></code> | *No description.* |
 
 ---
 
@@ -12408,7 +12408,7 @@ path: str
 internal_value: IResolvable | CloudbuildTriggerBuildOptionsVolumes
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>
 
 ---
 
@@ -12428,14 +12428,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12644,7 +12644,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12688,7 +12688,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `maven_artifacts`<sup>Optional</sup> <a name="maven_artifacts" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putArtifacts.parameter.mavenArtifacts"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts">CloudbuildTriggerBuildArtifactsMavenArtifacts</a>]
 
 maven_artifacts block.
 
@@ -12698,7 +12698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `npm_packages`<sup>Optional</sup> <a name="npm_packages" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putArtifacts.parameter.npmPackages"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages">CloudbuildTriggerBuildArtifactsNpmPackages</a>]
 
 npm_packages block.
 
@@ -12718,7 +12718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `python_packages`<sup>Optional</sup> <a name="python_packages" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putArtifacts.parameter.pythonPackages"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages">CloudbuildTriggerBuildArtifactsPythonPackages</a>]
 
 python_packages block.
 
@@ -12736,7 +12736,7 @@ def put_available_secrets(
 
 ###### `secret_manager`<sup>Required</sup> <a name="secret_manager" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putAvailableSecrets.parameter.secretManager"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager">CloudbuildTriggerBuildAvailableSecretsSecretManager</a>]
 
 secret_manager block.
 
@@ -12781,7 +12781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `dynamic_substitutions`<sup>Optional</sup> <a name="dynamic_substitutions" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putOptions.parameter.dynamicSubstitutions"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Option to specify whether or not to apply bash style string operations to the substitutions.
 
@@ -12886,7 +12886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `volumes`<sup>Optional</sup> <a name="volumes" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putOptions.parameter.volumes"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes">CloudbuildTriggerBuildOptionsVolumes</a>]
 
 volumes block.
 
@@ -12916,7 +12916,7 @@ def put_secret(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putSecret.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
 
 ---
 
@@ -12959,7 +12959,7 @@ def put_step(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.putStep.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
 
 ---
 
@@ -13048,9 +13048,9 @@ def reset_timeout() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.logsBucketInput">logs_bucket_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.optionsInput">options_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions">CloudbuildTriggerBuildOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.queueTtlInput">queue_ttl_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.secretInput">secret_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.secretInput">secret_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.sourceInput">source_input</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSource">CloudbuildTriggerBuildSource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.stepInput">step_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.stepInput">step_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.substitutionsInput">substitutions_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference.property.timeoutInput">timeout_input</a></code> | <code>str</code> | *No description.* |
@@ -13214,7 +13214,7 @@ queue_ttl_input: str
 secret_input: IResolvable | typing.List[CloudbuildTriggerBuildSecret]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
 
 ---
 
@@ -13234,7 +13234,7 @@ source_input: CloudbuildTriggerBuildSource
 step_input: IResolvable | typing.List[CloudbuildTriggerBuildStep]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
 
 ---
 
@@ -13355,7 +13355,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildSecretList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13363,7 +13363,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildSecretList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13433,7 +13433,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13470,7 +13470,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]</code> | *No description.* |
 
 ---
 
@@ -13504,7 +13504,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildSecret]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>]
 
 ---
 
@@ -13526,7 +13526,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13535,7 +13535,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13744,7 +13744,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13775,7 +13775,7 @@ def reset_secret_env() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.property.secretEnvInput">secret_env_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.property.kmsKeyName">kms_key_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.property.secretEnv">secret_env</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a></code> | *No description.* |
 
 ---
 
@@ -13849,7 +13849,7 @@ secret_env: typing.Mapping[str]
 internal_value: IResolvable | CloudbuildTriggerBuildSecret
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret">CloudbuildTriggerBuildSecret</a>
 
 ---
 
@@ -13869,14 +13869,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14072,7 +14072,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14150,7 +14150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference.putRepoSource.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Only trigger a build if the revision regex does NOT match the revision regex.
 
@@ -14349,14 +14349,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14555,7 +14555,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14621,7 +14621,7 @@ def reset_tag_name() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.branchNameInput">branch_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.commitShaInput">commit_sha_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.dirInput">dir_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.repoNameInput">repo_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.substitutionsInput">substitutions_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -14629,7 +14629,7 @@ def reset_tag_name() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.branchName">branch_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.commitSha">commit_sha</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.dir">dir</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.repoName">repo_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference.property.substitutions">substitutions</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -14698,7 +14698,7 @@ dir_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14778,7 +14778,7 @@ dir: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14848,14 +14848,14 @@ cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15048,7 +15048,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15196,7 +15196,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15204,7 +15204,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15274,7 +15274,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15311,7 +15311,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]</code> | *No description.* |
 
 ---
 
@@ -15345,7 +15345,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildStep]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>]
 
 ---
 
@@ -15367,7 +15367,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15376,7 +15376,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15598,7 +15598,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15622,7 +15622,7 @@ def put_volumes(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.putVolumes.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
 
 ---
 
@@ -15713,7 +15713,7 @@ def reset_wait_for() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList">CloudbuildTriggerBuildStepVolumesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.allowExitCodesInput">allow_exit_codes_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.allowFailureInput">allow_failure_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.argsInput">args_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.dirInput">dir_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.entrypointInput">entrypoint_input</a></code> | <code>str</code> | *No description.* |
@@ -15724,10 +15724,10 @@ def reset_wait_for() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.secretEnvInput">secret_env_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.timeoutInput">timeout_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.timingInput">timing_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.volumesInput">volumes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.volumesInput">volumes_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.waitForInput">wait_for_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.allowExitCodes">allow_exit_codes</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.allowFailure">allow_failure</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.args">args</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.dir">dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.entrypoint">entrypoint</a></code> | <code>str</code> | *No description.* |
@@ -15739,7 +15739,7 @@ def reset_wait_for() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.timeout">timeout</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.timing">timing</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.waitFor">wait_for</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a></code> | *No description.* |
 
 ---
 
@@ -15793,7 +15793,7 @@ allow_exit_codes_input: typing.List[typing.Union[int, float]]
 allow_failure_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15903,7 +15903,7 @@ timing_input: str
 volumes_input: IResolvable | typing.List[CloudbuildTriggerBuildStepVolumes]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
 
 ---
 
@@ -15933,7 +15933,7 @@ allow_exit_codes: typing.List[typing.Union[int, float]]
 allow_failure: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16053,7 +16053,7 @@ wait_for: typing.List[str]
 internal_value: IResolvable | CloudbuildTriggerBuildStep
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep">CloudbuildTriggerBuildStep</a>
 
 ---
 
@@ -16074,7 +16074,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16082,7 +16082,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16152,7 +16152,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16189,7 +16189,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]</code> | *No description.* |
 
 ---
 
@@ -16223,7 +16223,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudbuildTriggerBuildStepVolumes]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>]
 
 ---
 
@@ -16245,7 +16245,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16254,7 +16254,7 @@ cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16462,7 +16462,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16487,7 +16487,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a></code> | *No description.* |
 
 ---
 
@@ -16561,7 +16561,7 @@ path: str
 internal_value: IResolvable | CloudbuildTriggerBuildStepVolumes
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes">CloudbuildTriggerBuildStepVolumes</a>
 
 ---
 
@@ -16581,14 +16581,14 @@ cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16785,7 +16785,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17044,14 +17044,14 @@ cloudbuildTrigger.CloudbuildTriggerGithubOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17250,7 +17250,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17296,7 +17296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference.putPullRequest.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, branches that do NOT match the git_ref will trigger a build.
 
@@ -17326,7 +17326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference.putPush.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When true, only trigger a build if the revision regex does NOT match the git_ref regex.
 
@@ -17545,14 +17545,14 @@ cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17746,7 +17746,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17781,10 +17781,10 @@ def reset_invert_regex() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.commentControlInput">comment_control_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.commentControl">comment_control</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequest">CloudbuildTriggerGithubPullRequest</a></code> | *No description.* |
 
 ---
@@ -17839,7 +17839,7 @@ comment_control_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17869,7 +17869,7 @@ comment_control: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17899,14 +17899,14 @@ cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18101,7 +18101,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18141,10 +18141,10 @@ def reset_tag() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.tagInput">tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.tag">tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPush">CloudbuildTriggerGithubPush</a></code> | *No description.* |
 
@@ -18190,7 +18190,7 @@ branch_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18220,7 +18220,7 @@ branch: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18260,14 +18260,14 @@ cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18460,7 +18460,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18607,14 +18607,14 @@ cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18811,7 +18811,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18860,7 +18860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference.putPullRequest.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, branches that do NOT match the git_ref will trigger a build.
 
@@ -18893,7 +18893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `invert_regex`<sup>Optional</sup> <a name="invert_regex" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference.putPush.parameter.invertRegex"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, only trigger a build if the revision regex does NOT match the git_ref regex.
 
@@ -19059,14 +19059,14 @@ cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19261,7 +19261,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19302,10 +19302,10 @@ def reset_invert_regex() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.commentControlInput">comment_control_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.commentControl">comment_control</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest">CloudbuildTriggerRepositoryEventConfigPullRequest</a></code> | *No description.* |
 
 ---
@@ -19360,7 +19360,7 @@ comment_control_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19390,7 +19390,7 @@ comment_control: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19420,14 +19420,14 @@ cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19622,7 +19622,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19662,10 +19662,10 @@ def reset_tag() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.tagInput">tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.tag">tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush">CloudbuildTriggerRepositoryEventConfigPush</a></code> | *No description.* |
 
@@ -19711,7 +19711,7 @@ branch_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19741,7 +19741,7 @@ branch: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19781,14 +19781,14 @@ cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19984,7 +19984,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20215,14 +20215,14 @@ cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20417,7 +20417,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20462,7 +20462,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -20556,7 +20556,7 @@ update: str
 internal_value: IResolvable | CloudbuildTriggerTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts">CloudbuildTriggerTimeouts</a>
 
 ---
 
@@ -20576,14 +20576,14 @@ cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20782,7 +20782,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20848,14 +20848,14 @@ def reset_tag_name() -> None
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.branchNameInput">branch_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.commitShaInput">commit_sha_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.dirInput">dir_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.invertRegexInput">invert_regex_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.projectIdInput">project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.repoNameInput">repo_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.tagNameInput">tag_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.branchName">branch_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.commitSha">commit_sha</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.dir">dir</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.invertRegex">invert_regex</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.projectId">project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.repoName">repo_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference.property.tagName">tag_name</a></code> | <code>str</code> | *No description.* |
@@ -20923,7 +20923,7 @@ dir_input: str
 invert_regex_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -20993,7 +20993,7 @@ dir: str
 invert_regex: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21053,14 +21053,14 @@ cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21252,7 +21252,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

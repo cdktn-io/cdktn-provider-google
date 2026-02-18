@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GkeBackupRestorePlanIamMemberConfig extends cdktf.TerraformMetaArguments {
+export interface GkeBackupRestorePlanIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_restore_plan_iam_member#id GkeBackupRestorePlanIamMember#id}
   *
@@ -62,38 +62,38 @@ export interface GkeBackupRestorePlanIamMemberCondition {
 }
 
 export function gkeBackupRestorePlanIamMemberConditionToTerraform(struct?: GkeBackupRestorePlanIamMemberConditionOutputReference | GkeBackupRestorePlanIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function gkeBackupRestorePlanIamMemberConditionToHclTerraform(struct?: GkeBackupRestorePlanIamMemberConditionOutputReference | GkeBackupRestorePlanIamMemberCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,14 +104,14 @@ export function gkeBackupRestorePlanIamMemberConditionToHclTerraform(struct?: Gk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GkeBackupRestorePlanIamMemberConditionOutputReference extends cdktf.ComplexObject {
+export class GkeBackupRestorePlanIamMemberConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -194,7 +194,7 @@ export class GkeBackupRestorePlanIamMemberConditionOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_restore_plan_iam_member google_gke_backup_restore_plan_iam_member}
 */
-export class GkeBackupRestorePlanIamMember extends cdktf.TerraformResource {
+export class GkeBackupRestorePlanIamMember extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class GkeBackupRestorePlanIamMember extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GkeBackupRestorePlanIamMember resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GkeBackupRestorePlanIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GkeBackupRestorePlanIamMember to import
   * @param importFromId The id of the existing GkeBackupRestorePlanIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gke_backup_restore_plan_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GkeBackupRestorePlanIamMember to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_backup_restore_plan_iam_member", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_gke_backup_restore_plan_iam_member", importId: importFromId, provider });
       }
 
   // ===========
@@ -369,12 +369,12 @@ export class GkeBackupRestorePlanIamMember extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      member: cdktf.stringToTerraform(this._member),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      role: cdktf.stringToTerraform(this._role),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      member: cdktn.stringToTerraform(this._member),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      role: cdktn.stringToTerraform(this._role),
       condition: gkeBackupRestorePlanIamMemberConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -382,37 +382,37 @@ export class GkeBackupRestorePlanIamMember extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member: {
-        value: cdktf.stringToHclTerraform(this._member),
+        value: cdktn.stringToHclTerraform(this._member),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

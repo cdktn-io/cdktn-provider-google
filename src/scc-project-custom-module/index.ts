@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SccProjectCustomModuleConfig extends cdktf.TerraformMetaArguments {
+export interface SccProjectCustomModuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The display name of the Security Health Analytics custom module. This
   * display name becomes the finding category for all findings that are
@@ -83,45 +83,45 @@ export interface SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueEx
 }
 
 export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionToTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference | SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionToHclTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference | SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -132,14 +132,14 @@ export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference extends cdktf.ComplexObject {
+export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -258,26 +258,26 @@ export interface SccProjectCustomModuleCustomConfigCustomOutputProperties {
   readonly valueExpression?: SccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpression;
 }
 
-export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesToTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesToTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     value_expression: sccProjectCustomModuleCustomConfigCustomOutputPropertiesValueExpressionToTerraform(struct!.valueExpression),
   }
 }
 
 
-export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -294,9 +294,9 @@ export function sccProjectCustomModuleCustomConfigCustomOutputPropertiesToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputReference extends cdktf.ComplexObject {
+export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -304,11 +304,11 @@ export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable | undefined {
+  public get internalValue(): SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -325,14 +325,14 @@ export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SccProjectCustomModuleCustomConfigCustomOutputProperties | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._valueExpression.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -377,15 +377,15 @@ export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesOutputRefer
   }
 }
 
-export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesList extends cdktf.ComplexList {
-  public internalValue? : SccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktf.IResolvable
+export class SccProjectCustomModuleCustomConfigCustomOutputPropertiesList extends cdktn.ComplexList {
+  public internalValue? : SccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -402,28 +402,28 @@ export interface SccProjectCustomModuleCustomConfigCustomOutput {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_project_custom_module#properties SccProjectCustomModule#properties}
   */
-  readonly properties?: SccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktf.IResolvable;
+  readonly properties?: SccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktn.IResolvable;
 }
 
 export function sccProjectCustomModuleCustomConfigCustomOutputToTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputOutputReference | SccProjectCustomModuleCustomConfigCustomOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    properties: cdktf.listMapper(sccProjectCustomModuleCustomConfigCustomOutputPropertiesToTerraform, true)(struct!.properties),
+    properties: cdktn.listMapper(sccProjectCustomModuleCustomConfigCustomOutputPropertiesToTerraform, true)(struct!.properties),
   }
 }
 
 
 export function sccProjectCustomModuleCustomConfigCustomOutputToHclTerraform(struct?: SccProjectCustomModuleCustomConfigCustomOutputOutputReference | SccProjectCustomModuleCustomConfigCustomOutput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     properties: {
-      value: cdktf.listMapperHcl(sccProjectCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform, true)(struct!.properties),
+      value: cdktn.listMapperHcl(sccProjectCustomModuleCustomConfigCustomOutputPropertiesToHclTerraform, true)(struct!.properties),
       isBlock: true,
       type: "list",
       storageClassType: "SccProjectCustomModuleCustomConfigCustomOutputPropertiesList",
@@ -434,14 +434,14 @@ export function sccProjectCustomModuleCustomConfigCustomOutputToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccProjectCustomModuleCustomConfigCustomOutputOutputReference extends cdktf.ComplexObject {
+export class SccProjectCustomModuleCustomConfigCustomOutputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -471,7 +471,7 @@ export class SccProjectCustomModuleCustomConfigCustomOutputOutputReference exten
   public get properties() {
     return this._properties;
   }
-  public putProperties(value: SccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktf.IResolvable) {
+  public putProperties(value: SccProjectCustomModuleCustomConfigCustomOutputProperties[] | cdktn.IResolvable) {
     this._properties.internalValue = value;
   }
   public resetProperties() {
@@ -513,45 +513,45 @@ export interface SccProjectCustomModuleCustomConfigPredicate {
 }
 
 export function sccProjectCustomModuleCustomConfigPredicateToTerraform(struct?: SccProjectCustomModuleCustomConfigPredicateOutputReference | SccProjectCustomModuleCustomConfigPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    location: cdktf.stringToTerraform(struct!.location),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    location: cdktn.stringToTerraform(struct!.location),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function sccProjectCustomModuleCustomConfigPredicateToHclTerraform(struct?: SccProjectCustomModuleCustomConfigPredicateOutputReference | SccProjectCustomModuleCustomConfigPredicate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -562,14 +562,14 @@ export function sccProjectCustomModuleCustomConfigPredicateToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccProjectCustomModuleCustomConfigPredicateOutputReference extends cdktf.ComplexObject {
+export class SccProjectCustomModuleCustomConfigPredicateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -683,24 +683,24 @@ export interface SccProjectCustomModuleCustomConfigResourceSelector {
 }
 
 export function sccProjectCustomModuleCustomConfigResourceSelectorToTerraform(struct?: SccProjectCustomModuleCustomConfigResourceSelectorOutputReference | SccProjectCustomModuleCustomConfigResourceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
   }
 }
 
 
 export function sccProjectCustomModuleCustomConfigResourceSelectorToHclTerraform(struct?: SccProjectCustomModuleCustomConfigResourceSelectorOutputReference | SccProjectCustomModuleCustomConfigResourceSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -711,14 +711,14 @@ export function sccProjectCustomModuleCustomConfigResourceSelectorToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccProjectCustomModuleCustomConfigResourceSelectorOutputReference extends cdktf.ComplexObject {
+export class SccProjectCustomModuleCustomConfigResourceSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -800,14 +800,14 @@ export interface SccProjectCustomModuleCustomConfig {
 }
 
 export function sccProjectCustomModuleCustomConfigToTerraform(struct?: SccProjectCustomModuleCustomConfigOutputReference | SccProjectCustomModuleCustomConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    recommendation: cdktf.stringToTerraform(struct!.recommendation),
-    severity: cdktf.stringToTerraform(struct!.severity),
+    description: cdktn.stringToTerraform(struct!.description),
+    recommendation: cdktn.stringToTerraform(struct!.recommendation),
+    severity: cdktn.stringToTerraform(struct!.severity),
     custom_output: sccProjectCustomModuleCustomConfigCustomOutputToTerraform(struct!.customOutput),
     predicate: sccProjectCustomModuleCustomConfigPredicateToTerraform(struct!.predicate),
     resource_selector: sccProjectCustomModuleCustomConfigResourceSelectorToTerraform(struct!.resourceSelector),
@@ -816,25 +816,25 @@ export function sccProjectCustomModuleCustomConfigToTerraform(struct?: SccProjec
 
 
 export function sccProjectCustomModuleCustomConfigToHclTerraform(struct?: SccProjectCustomModuleCustomConfigOutputReference | SccProjectCustomModuleCustomConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recommendation: {
-      value: cdktf.stringToHclTerraform(struct!.recommendation),
+      value: cdktn.stringToHclTerraform(struct!.recommendation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     severity: {
-      value: cdktf.stringToHclTerraform(struct!.severity),
+      value: cdktn.stringToHclTerraform(struct!.severity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -863,14 +863,14 @@ export function sccProjectCustomModuleCustomConfigToHclTerraform(struct?: SccPro
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccProjectCustomModuleCustomConfigOutputReference extends cdktf.ComplexObject {
+export class SccProjectCustomModuleCustomConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1024,39 +1024,39 @@ export interface SccProjectCustomModuleTimeouts {
   readonly update?: string;
 }
 
-export function sccProjectCustomModuleTimeoutsToTerraform(struct?: SccProjectCustomModuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccProjectCustomModuleTimeoutsToTerraform(struct?: SccProjectCustomModuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sccProjectCustomModuleTimeoutsToHclTerraform(struct?: SccProjectCustomModuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sccProjectCustomModuleTimeoutsToHclTerraform(struct?: SccProjectCustomModuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1067,19 +1067,19 @@ export function sccProjectCustomModuleTimeoutsToHclTerraform(struct?: SccProject
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SccProjectCustomModuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SccProjectCustomModuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SccProjectCustomModuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SccProjectCustomModuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1100,7 +1100,7 @@ export class SccProjectCustomModuleTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SccProjectCustomModuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SccProjectCustomModuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1108,7 +1108,7 @@ export class SccProjectCustomModuleTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1173,7 +1173,7 @@ export class SccProjectCustomModuleTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_project_custom_module google_scc_project_custom_module}
 */
-export class SccProjectCustomModule extends cdktf.TerraformResource {
+export class SccProjectCustomModule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1184,14 +1184,14 @@ export class SccProjectCustomModule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SccProjectCustomModule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SccProjectCustomModule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccProjectCustomModule to import
   * @param importFromId The id of the existing SccProjectCustomModule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_project_custom_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccProjectCustomModule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_project_custom_module", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_scc_project_custom_module", importId: importFromId, provider });
       }
 
   // ===========
@@ -1346,10 +1346,10 @@ export class SccProjectCustomModule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enablement_state: cdktf.stringToTerraform(this._enablementState),
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enablement_state: cdktn.stringToTerraform(this._enablementState),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
       custom_config: sccProjectCustomModuleCustomConfigToTerraform(this._customConfig.internalValue),
       timeouts: sccProjectCustomModuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1358,25 +1358,25 @@ export class SccProjectCustomModule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enablement_state: {
-        value: cdktf.stringToHclTerraform(this._enablementState),
+        value: cdktn.stringToHclTerraform(this._enablementState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

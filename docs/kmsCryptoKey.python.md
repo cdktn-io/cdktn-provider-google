@@ -40,23 +40,23 @@ kmsCryptoKey.KmsCryptoKey(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.keyRing">key_ring</a></code> | <code>str</code> | The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name for the CryptoKey. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.cryptoKeyBackend">crypto_key_backend</a></code> | <code>str</code> | The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.destroyScheduledDuration">destroy_scheduled_duration</a></code> | <code>str</code> | The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.importOnly">import_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this key may contain imported versions only. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.importOnly">import_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this key may contain imported versions only. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels with user-defined metadata to apply to this resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.purpose">purpose</a></code> | <code>str</code> | The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT". |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>str</code> | Every time this period passes, generate a new CryptoKeyVersion and set it as the primary. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.skipInitialVersionCreation">skip_initial_version_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, the request will create a CryptoKey without any CryptoKeyVersions. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.skipInitialVersionCreation">skip_initial_version_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, the request will create a CryptoKey without any CryptoKeyVersions. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.versionTemplate">version_template</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplate">KmsCryptoKeyVersionTemplate</a></code> | version_template block. |
 
@@ -82,43 +82,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `import_only`<sup>Optional</sup> <a name="import_only" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.importOnly"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this key may contain imported versions only.
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_initial_version_creation`<sup>Optional</sup> <a name="skip_initial_version_creation" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer.parameter.skipInitialVersionCreation"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, the request will create a CryptoKey without any CryptoKeyVersions.
 
@@ -544,7 +544,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -759,7 +759,7 @@ def reset_version_template() -> None
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a KmsCryptoKey resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a KmsCryptoKey resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -842,7 +842,7 @@ kmsCryptoKey.KmsCryptoKey.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a KmsCryptoKey resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a KmsCryptoKey resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.generateConfigForImport.parameter.scope"></a>
 
@@ -872,7 +872,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the KmsCryptoKey to import is found.
 
@@ -883,46 +883,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.primary">primary</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList">KmsCryptoKeyPrimaryList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference">KmsCryptoKeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.versionTemplate">version_template</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference">KmsCryptoKeyVersionTemplateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.cryptoKeyBackendInput">crypto_key_backend_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.destroyScheduledDurationInput">destroy_scheduled_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.importOnlyInput">import_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.importOnlyInput">import_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.keyRingInput">key_ring_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.purposeInput">purpose_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.rotationPeriodInput">rotation_period_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.skipInitialVersionCreationInput">skip_initial_version_creation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.skipInitialVersionCreationInput">skip_initial_version_creation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.versionTemplateInput">version_template_input</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplate">KmsCryptoKeyVersionTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.cryptoKeyBackend">crypto_key_backend</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.destroyScheduledDuration">destroy_scheduled_duration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.importOnly">import_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.importOnly">import_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.keyRing">key_ring</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.purpose">purpose</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.rotationPeriod">rotation_period</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.skipInitialVersionCreation">skip_initial_version_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.skipInitialVersionCreation">skip_initial_version_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -944,7 +944,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -994,7 +994,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1004,7 +1004,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1014,7 +1014,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1034,7 +1034,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1044,7 +1044,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1054,7 +1054,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1064,7 +1064,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1074,7 +1074,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1094,7 +1094,7 @@ primary: KmsCryptoKeyPrimaryList
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1154,7 +1154,7 @@ id_input: str
 import_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1214,7 +1214,7 @@ rotation_period_input: str
 skip_initial_version_creation_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1224,7 +1224,7 @@ skip_initial_version_creation_input: bool | IResolvable
 timeouts_input: IResolvable | KmsCryptoKeyTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a>
 
 ---
 
@@ -1274,7 +1274,7 @@ id: str
 import_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1334,7 +1334,7 @@ rotation_period: str
 skip_initial_version_creation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1392,23 +1392,23 @@ kmsCryptoKey.KmsCryptoKeyConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.keyRing">key_ring</a></code> | <code>str</code> | The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.name">name</a></code> | <code>str</code> | The resource name for the CryptoKey. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.cryptoKeyBackend">crypto_key_backend</a></code> | <code>str</code> | The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.destroyScheduledDuration">destroy_scheduled_duration</a></code> | <code>str</code> | The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.importOnly">import_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this key may contain imported versions only. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.importOnly">import_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this key may contain imported versions only. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels with user-defined metadata to apply to this resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.purpose">purpose</a></code> | <code>str</code> | The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT". |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.rotationPeriod">rotation_period</a></code> | <code>str</code> | Every time this period passes, generate a new CryptoKeyVersion and set it as the primary. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.skipInitialVersionCreation">skip_initial_version_creation</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, the request will create a CryptoKey without any CryptoKeyVersions. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.skipInitialVersionCreation">skip_initial_version_creation</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, the request will create a CryptoKey without any CryptoKeyVersions. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.versionTemplate">version_template</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplate">KmsCryptoKeyVersionTemplate</a></code> | version_template block. |
 
@@ -1420,7 +1420,7 @@ kmsCryptoKey.KmsCryptoKeyConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1430,7 +1430,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1440,7 +1440,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1450,7 +1450,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1460,7 +1460,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1470,7 +1470,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1480,7 +1480,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1567,7 +1567,7 @@ If you experience problems setting this value it might not be settable. Please t
 import_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this key may contain imported versions only.
 
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 skip_initial_version_creation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, the request will create a CryptoKey without any CryptoKeyVersions.
 
@@ -1811,7 +1811,7 @@ kmsCryptoKey.KmsCryptoKeyPrimaryList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1819,7 +1819,7 @@ kmsCryptoKey.KmsCryptoKeyPrimaryList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1889,7 +1889,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1971,7 +1971,7 @@ kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1980,7 +1980,7 @@ kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2188,7 +2188,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2285,14 +2285,14 @@ kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2487,7 +2487,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2532,7 +2532,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2626,7 +2626,7 @@ update: str
 internal_value: IResolvable | KmsCryptoKeyTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts">KmsCryptoKeyTimeouts</a>
 
 ---
 
@@ -2646,14 +2646,14 @@ kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2846,7 +2846,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

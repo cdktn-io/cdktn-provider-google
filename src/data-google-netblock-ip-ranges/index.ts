@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleNetblockIpRangesConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleNetblockIpRangesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/netblock_ip_ranges#id DataGoogleNetblockIpRanges#id}
   *
@@ -28,7 +28,7 @@ export interface DataGoogleNetblockIpRangesConfig extends cdktf.TerraformMetaArg
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/netblock_ip_ranges google_netblock_ip_ranges}
 */
-export class DataGoogleNetblockIpRanges extends cdktf.TerraformDataSource {
+export class DataGoogleNetblockIpRanges extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataGoogleNetblockIpRanges extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleNetblockIpRanges resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleNetblockIpRanges resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleNetblockIpRanges to import
   * @param importFromId The id of the existing DataGoogleNetblockIpRanges that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/netblock_ip_ranges#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleNetblockIpRanges to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_netblock_ip_ranges", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_netblock_ip_ranges", importId: importFromId, provider });
       }
 
   // ===========
@@ -137,21 +137,21 @@ export class DataGoogleNetblockIpRanges extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      range_type: cdktf.stringToTerraform(this._rangeType),
+      id: cdktn.stringToTerraform(this._id),
+      range_type: cdktn.stringToTerraform(this._rangeType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       range_type: {
-        value: cdktf.stringToHclTerraform(this._rangeType),
+        value: cdktn.stringToHclTerraform(this._rangeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

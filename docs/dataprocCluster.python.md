@@ -37,13 +37,13 @@ dataprocCluster.DataprocCluster(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the cluster, unique within the project and zone. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.clusterConfig">cluster_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig">DataprocClusterClusterConfig</a></code> | cluster_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.gracefulDecommissionTimeout">graceful_decommission_timeout</a></code> | <code>str</code> | The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply. |
@@ -76,43 +76,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -495,7 +495,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -614,7 +614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `auxiliary_node_groups`<sup>Optional</sup> <a name="auxiliary_node_groups" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.putClusterConfig.parameter.auxiliaryNodeGroups"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
 
 auxiliary_node_groups block.
 
@@ -674,7 +674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `initialization_action`<sup>Optional</sup> <a name="initialization_action" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.putClusterConfig.parameter.initializationAction"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
 
 initialization_action block.
 
@@ -907,7 +907,7 @@ def reset_virtual_cluster_config() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataprocCluster resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DataprocCluster resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -990,7 +990,7 @@ dataprocCluster.DataprocCluster.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DataprocCluster resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataprocCluster resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.generateConfigForImport.parameter.scope"></a>
 
@@ -1020,7 +1020,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocCluster.DataprocCluster.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataprocCluster to import is found.
 
@@ -1031,22 +1031,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.clusterConfig">cluster_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference">DataprocClusterClusterConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference">DataprocClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.virtualClusterConfig">virtual_cluster_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigOutputReference">DataprocClusterVirtualClusterConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.clusterConfigInput">cluster_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig">DataprocClusterClusterConfig</a></code> | *No description.* |
@@ -1056,7 +1056,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.virtualClusterConfigInput">virtual_cluster_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfig">DataprocClusterVirtualClusterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.gracefulDecommissionTimeout">graceful_decommission_timeout</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocCluster.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1085,7 +1085,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1135,7 +1135,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1145,7 +1145,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1155,7 +1155,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1175,7 +1175,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1185,7 +1185,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1195,7 +1195,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1205,7 +1205,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1225,7 +1225,7 @@ cluster_config: DataprocClusterClusterConfigOutputReference
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1235,7 +1235,7 @@ effective_labels: StringMap
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1335,7 +1335,7 @@ region_input: str
 timeouts_input: IResolvable | DataprocClusterTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a>
 
 ---
 
@@ -1462,13 +1462,13 @@ dataprocCluster.DataprocClusterClusterConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.autoscalingConfig">autoscaling_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAutoscalingConfig">DataprocClusterClusterConfigAutoscalingConfig</a></code> | autoscaling_config block. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.auxiliaryNodeGroups">auxiliary_node_groups</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]</code> | auxiliary_node_groups block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.auxiliaryNodeGroups">auxiliary_node_groups</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]</code> | auxiliary_node_groups block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.clusterTier">cluster_tier</a></code> | <code>str</code> | Specifies the tier of the cluster created. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.dataprocMetricConfig">dataproc_metric_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfig">DataprocClusterClusterConfigDataprocMetricConfig</a></code> | dataproc_metric_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.encryptionConfig">encryption_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfig">DataprocClusterClusterConfigEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.endpointConfig">endpoint_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfig">DataprocClusterClusterConfigEndpointConfig</a></code> | endpoint_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.gceClusterConfig">gce_cluster_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig">DataprocClusterClusterConfigGceClusterConfig</a></code> | gce_cluster_config block. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.initializationAction">initialization_action</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]</code> | initialization_action block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.initializationAction">initialization_action</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]</code> | initialization_action block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.lifecycleConfig">lifecycle_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfig">DataprocClusterClusterConfigLifecycleConfig</a></code> | lifecycle_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.masterConfig">master_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfig">DataprocClusterClusterConfigMasterConfig</a></code> | master_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig.property.metastoreConfig">metastore_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMetastoreConfig">DataprocClusterClusterConfigMetastoreConfig</a></code> | metastore_config block. |
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 auxiliary_node_groups: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroups]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
 
 auxiliary_node_groups block.
 
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 initialization_action: IResolvable | typing.List[DataprocClusterClusterConfigInitializationAction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
 
 initialization_action block.
 
@@ -1774,7 +1774,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups.property.nodeGroup">node_group</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]</code> | node_group block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups.property.nodeGroup">node_group</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]</code> | node_group block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups.property.nodeGroupId">node_group_id</a></code> | <code>str</code> | A node group ID. |
 
 ---
@@ -1785,7 +1785,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups(
 node_group: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
 
 node_group block.
 
@@ -1879,7 +1879,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]</code> | accelerators block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig.property.accelerators">accelerators</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]</code> | accelerators block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig.property.diskConfig">disk_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig.property.machineType">machine_type</a></code> | <code>str</code> | The name of a Google Compute Engine machine type to create for the master. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig.property.minCpuPlatform">min_cpu_platform</a></code> | <code>str</code> | The name of a minimum generation of CPU family for the auxiliary node group. |
@@ -1893,7 +1893,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 accelerators: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
 
 accelerators block.
 
@@ -2111,7 +2111,7 @@ dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfig.property.metrics">metrics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]</code> | metrics block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfig.property.metrics">metrics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]</code> | metrics block. |
 
 ---
 
@@ -2121,7 +2121,7 @@ dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfig(
 metrics: IResolvable | typing.List[DataprocClusterClusterConfigDataprocMetricConfigMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
 
 metrics block.
 
@@ -2229,7 +2229,7 @@ dataprocCluster.DataprocClusterClusterConfigEndpointConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfig.property.enableHttpPortAccess">enable_http_port_access</a></code> | <code>bool \| cdktf.IResolvable</code> | The flag to enable http access to specific ports on the cluster from external sources (aka Component Gateway). |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfig.property.enableHttpPortAccess">enable_http_port_access</a></code> | <code>bool \| cdktn.IResolvable</code> | The flag to enable http access to specific ports on the cluster from external sources (aka Component Gateway). |
 
 ---
 
@@ -2239,7 +2239,7 @@ dataprocCluster.DataprocClusterClusterConfigEndpointConfig(
 enable_http_port_access: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The flag to enable http access to specific ports on the cluster from external sources (aka Component Gateway).
 
@@ -2277,7 +2277,7 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig.property.confidentialInstanceConfig">confidential_instance_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig">DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig</a></code> | confidential_instance_config block. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig.property.internalIpOnly">internal_ip_only</a></code> | <code>bool \| cdktf.IResolvable</code> | By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig.property.internalIpOnly">internal_ip_only</a></code> | <code>bool \| cdktn.IResolvable</code> | By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | A map of the Compute Engine metadata entries to add to all instances. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig.property.network">network</a></code> | <code>str</code> | The name or self_link of the Google Compute Engine network to the cluster will be part of. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig.property.nodeGroupAffinity">node_group_affinity</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a></code> | node_group_affinity block. |
@@ -2311,7 +2311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 internal_ip_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance.
 
@@ -2483,7 +2483,7 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig.property.enableConfidentialCompute">enable_confidential_compute</a></code> | <code>bool \| cdktf.IResolvable</code> | Defines whether the instance should have confidential compute enabled. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig.property.enableConfidentialCompute">enable_confidential_compute</a></code> | <code>bool \| cdktn.IResolvable</code> | Defines whether the instance should have confidential compute enabled. |
 
 ---
 
@@ -2493,7 +2493,7 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstance
 enable_confidential_compute: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether the instance should have confidential compute enabled.
 
@@ -2619,9 +2619,9 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enable_integrity_monitoring</a></code> | <code>bool \| cdktf.IResolvable</code> | Defines whether instances have integrity monitoring enabled. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableSecureBoot">enable_secure_boot</a></code> | <code>bool \| cdktf.IResolvable</code> | Defines whether instances have Secure Boot enabled. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableVtpm">enable_vtpm</a></code> | <code>bool \| cdktf.IResolvable</code> | Defines whether instances have the vTPM enabled. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enable_integrity_monitoring</a></code> | <code>bool \| cdktn.IResolvable</code> | Defines whether instances have integrity monitoring enabled. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableSecureBoot">enable_secure_boot</a></code> | <code>bool \| cdktn.IResolvable</code> | Defines whether instances have Secure Boot enabled. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableVtpm">enable_vtpm</a></code> | <code>bool \| cdktn.IResolvable</code> | Defines whether instances have the vTPM enabled. |
 
 ---
 
@@ -2631,7 +2631,7 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConf
 enable_integrity_monitoring: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether instances have integrity monitoring enabled.
 
@@ -2645,7 +2645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_secure_boot: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether instances have Secure Boot enabled.
 
@@ -2659,7 +2659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_vtpm: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether instances have the vTPM enabled.
 
@@ -2794,7 +2794,7 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]</code> | accelerators block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfig.property.accelerators">accelerators</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]</code> | accelerators block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfig.property.diskConfig">disk_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfig">DataprocClusterClusterConfigMasterConfigDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfig.property.imageUri">image_uri</a></code> | <code>str</code> | The URI for the image to use for this master. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfig.property.machineType">machine_type</a></code> | <code>str</code> | The name of a Google Compute Engine machine type to create for the master. |
@@ -2809,7 +2809,7 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfig(
 accelerators: IResolvable | typing.List[DataprocClusterClusterConfigMasterConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
 
 accelerators block.
 
@@ -3244,7 +3244,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy.property.instanceSelectionList">instance_selection_list</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]</code> | instance_selection_list block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy.property.instanceSelectionList">instance_selection_list</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]</code> | instance_selection_list block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy.property.provisioningModelMix">provisioning_model_mix</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix</a></code> | provisioning_model_mix block. |
 
 ---
@@ -3255,7 +3255,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 instance_selection_list: IResolvable | typing.List[DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
 
 instance_selection_list block.
 
@@ -3510,7 +3510,7 @@ dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig(
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustKdc">cross_realm_trust_kdc</a></code> | <code>str</code> | The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustRealm">cross_realm_trust_realm</a></code> | <code>str</code> | The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustSharedPasswordUri">cross_realm_trust_shared_password_uri</a></code> | <code>str</code> | The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.enableKerberos">enable_kerberos</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to indicate whether to Kerberize the cluster. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.enableKerberos">enable_kerberos</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag to indicate whether to Kerberize the cluster. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.kdcDbKeyUri">kdc_db_key_uri</a></code> | <code>str</code> | The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keyPasswordUri">key_password_uri</a></code> | <code>str</code> | The Cloud Storage URI of a KMS encrypted file containing the password to the user provided key. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keystorePasswordUri">keystore_password_uri</a></code> | <code>str</code> | The Cloud Storage URI of a KMS encrypted file containing the password to the user provided keystore. |
@@ -3612,7 +3612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_kerberos: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Flag to indicate whether to Kerberize the cluster.
 
@@ -3833,7 +3833,7 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]</code> | accelerators block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfig.property.accelerators">accelerators</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]</code> | accelerators block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfig.property.diskConfig">disk_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfig">DataprocClusterClusterConfigWorkerConfigDiskConfig</a></code> | disk_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfig.property.imageUri">image_uri</a></code> | <code>str</code> | The URI for the image to use for this master/worker. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfig.property.machineType">machine_type</a></code> | <code>str</code> | The name of a Google Compute Engine machine type to create for the master/worker. |
@@ -3849,7 +3849,7 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfig(
 accelerators: IResolvable | typing.List[DataprocClusterClusterConfigWorkerConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
 
 accelerators block.
 
@@ -4110,13 +4110,13 @@ dataprocCluster.DataprocClusterConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.name">name</a></code> | <code>str</code> | The name of the cluster, unique within the project and zone. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.clusterConfig">cluster_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfig">DataprocClusterClusterConfig</a></code> | cluster_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterConfig.property.gracefulDecommissionTimeout">graceful_decommission_timeout</a></code> | <code>str</code> | The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply. |
@@ -4135,7 +4135,7 @@ dataprocCluster.DataprocClusterConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -4145,7 +4145,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -4155,7 +4155,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -4165,7 +4165,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -4175,7 +4175,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -4185,7 +4185,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -4195,7 +4195,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -4663,7 +4663,7 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.property.gkeClusterTarget">gke_cluster_target</a></code> | <code>str</code> | A target GKE cluster to deploy to. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.property.nodePoolTarget">node_pool_target</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]</code> | node_pool_target block. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.property.nodePoolTarget">node_pool_target</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]</code> | node_pool_target block. |
 
 ---
 
@@ -4689,7 +4689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 node_pool_target: IResolvable | typing.List[DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
 
 node_pool_target block.
 
@@ -4902,8 +4902,8 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.machineType">machine_type</a></code> | <code>str</code> | The name of a Compute Engine machine type. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.minCpuPlatform">min_cpu_platform</a></code> | <code>str</code> | Minimum CPU platform to be used by this instance. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.preemptible">preemptible</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the nodes are created as preemptible VM instances. |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.spot">spot</a></code> | <code>bool \| cdktf.IResolvable</code> | Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.preemptible">preemptible</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the nodes are created as preemptible VM instances. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.spot">spot</a></code> | <code>bool \| cdktn.IResolvable</code> | Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag. |
 
 ---
 
@@ -4957,7 +4957,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 preemptible: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the nodes are created as preemptible VM instances.
 
@@ -4973,7 +4973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 spot: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
 
@@ -5050,14 +5050,14 @@ dataprocCluster.DataprocClusterClusterConfigAutoscalingConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5249,7 +5249,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAutoscalingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5347,7 +5347,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5355,7 +5355,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5425,7 +5425,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5462,7 +5462,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]</code> | *No description.* |
 
 ---
 
@@ -5496,7 +5496,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroups]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
 
 ---
 
@@ -5517,7 +5517,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5525,7 +5525,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5595,7 +5595,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5632,7 +5632,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]</code> | *No description.* |
 
 ---
 
@@ -5666,7 +5666,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
 
 ---
 
@@ -5687,7 +5687,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5695,7 +5695,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5765,7 +5765,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5802,7 +5802,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]</code> | *No description.* |
 
 ---
 
@@ -5836,7 +5836,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
 
 ---
 
@@ -5858,7 +5858,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5867,7 +5867,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6075,7 +6075,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6100,7 +6100,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.property.acceleratorTypeInput">accelerator_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.property.acceleratorCount">accelerator_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.property.acceleratorType">accelerator_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a></code> | *No description.* |
 
 ---
 
@@ -6174,7 +6174,7 @@ accelerator_type: str
 internal_value: IResolvable | DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>
 
 ---
 
@@ -6194,14 +6194,14 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6397,7 +6397,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6584,14 +6584,14 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGrou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6790,7 +6790,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6814,7 +6814,7 @@ def put_accelerators(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.putAccelerators.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
 
 ---
 
@@ -6911,7 +6911,7 @@ def reset_num_instances() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAcceleratorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.diskConfig">disk_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.instanceNames">instance_names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.acceleratorsInput">accelerators_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.acceleratorsInput">accelerators_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.diskConfigInput">disk_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.machineTypeInput">machine_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigOutputReference.property.minCpuPlatformInput">min_cpu_platform_input</a></code> | <code>str</code> | *No description.* |
@@ -6983,7 +6983,7 @@ instance_names: typing.List[str]
 accelerators_input: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
 
 ---
 
@@ -7085,7 +7085,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7094,7 +7094,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputRe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7304,7 +7304,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7332,7 +7332,7 @@ def put_node_group_config(
 
 ###### `accelerators`<sup>Optional</sup> <a name="accelerators" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.putNodeGroupConfig.parameter.accelerators"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfigAccelerators</a>]
 
 accelerators block.
 
@@ -7400,7 +7400,7 @@ def reset_node_group_config() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.property.nodeGroupConfigInput">node_group_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupNodeGroupConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a></code> | *No description.* |
 
 ---
 
@@ -7484,7 +7484,7 @@ roles: typing.List[str]
 internal_value: IResolvable | DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>
 
 ---
 
@@ -7506,7 +7506,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7515,7 +7515,7 @@ dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7725,7 +7725,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7749,7 +7749,7 @@ def put_node_group(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.putNodeGroup.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
 
 ---
 
@@ -7768,9 +7768,9 @@ def reset_node_group_id() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.nodeGroup">node_group</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroupList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.nodeGroupIdInput">node_group_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.nodeGroupInput">node_group_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.nodeGroupInput">node_group_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.nodeGroupId">node_group_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a></code> | *No description.* |
 
 ---
 
@@ -7824,7 +7824,7 @@ node_group_id_input: str
 node_group_input: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup">DataprocClusterClusterConfigAuxiliaryNodeGroupsNodeGroup</a>]
 
 ---
 
@@ -7844,7 +7844,7 @@ node_group_id: str
 internal_value: IResolvable | DataprocClusterClusterConfigAuxiliaryNodeGroups
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>
 
 ---
 
@@ -7865,7 +7865,7 @@ dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7873,7 +7873,7 @@ dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7943,7 +7943,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7980,7 +7980,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]</code> | *No description.* |
 
 ---
 
@@ -8014,7 +8014,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigDataprocMetricConfigMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
 
 ---
 
@@ -8036,7 +8036,7 @@ dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8045,7 +8045,7 @@ dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputRef
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8254,7 +8254,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8285,7 +8285,7 @@ def reset_metric_overrides() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.property.metricSourceInput">metric_source_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.property.metricOverrides">metric_overrides</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.property.metricSource">metric_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a></code> | *No description.* |
 
 ---
 
@@ -8359,7 +8359,7 @@ metric_source: str
 internal_value: IResolvable | DataprocClusterClusterConfigDataprocMetricConfigMetrics
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>
 
 ---
 
@@ -8379,14 +8379,14 @@ dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8579,7 +8579,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8603,7 +8603,7 @@ def put_metrics(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.putMetrics.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
 
 ---
 
@@ -8615,7 +8615,7 @@ def put_metrics(
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.property.metrics">metrics</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetricsList">DataprocClusterClusterConfigDataprocMetricConfigMetricsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.property.metricsInput">metrics_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.property.metricsInput">metrics_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfig">DataprocClusterClusterConfigDataprocMetricConfig</a></code> | *No description.* |
 
 ---
@@ -8660,7 +8660,7 @@ metrics: DataprocClusterClusterConfigDataprocMetricConfigMetricsList
 metrics_input: IResolvable | typing.List[DataprocClusterClusterConfigDataprocMetricConfigMetrics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
 
 ---
 
@@ -8690,14 +8690,14 @@ dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8889,7 +8889,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8986,14 +8986,14 @@ dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9185,7 +9185,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9206,9 +9206,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.httpPorts">http_ports</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccessInput">enable_http_port_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccess">enable_http_port_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.httpPorts">http_ports</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccessInput">enable_http_port_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccess">enable_http_port_access</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfig">DataprocClusterClusterConfigEndpointConfig</a></code> | *No description.* |
 
 ---
@@ -9243,7 +9243,7 @@ fqn: str
 http_ports: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -9253,7 +9253,7 @@ http_ports: StringMap
 enable_http_port_access_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9263,7 +9263,7 @@ enable_http_port_access_input: bool | IResolvable
 enable_http_port_access: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9293,14 +9293,14 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9493,7 +9493,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9520,8 +9520,8 @@ def reset_enable_confidential_compute() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.enableConfidentialComputeInput">enable_confidential_compute_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.enableConfidentialCompute">enable_confidential_compute</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.enableConfidentialComputeInput">enable_confidential_compute_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.enableConfidentialCompute">enable_confidential_compute</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig">DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -9556,7 +9556,7 @@ fqn: str
 enable_confidential_compute_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9566,7 +9566,7 @@ enable_confidential_compute_input: bool | IResolvable
 enable_confidential_compute: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -9596,14 +9596,14 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9795,7 +9795,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9892,14 +9892,14 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10107,7 +10107,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10131,7 +10131,7 @@ def put_confidential_instance_config(
 
 ###### `enable_confidential_compute`<sup>Optional</sup> <a name="enable_confidential_compute" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.putConfidentialInstanceConfig.parameter.enableConfidentialCompute"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether the instance should have confidential compute enabled.
 
@@ -10209,7 +10209,7 @@ def put_shielded_instance_config(
 
 ###### `enable_integrity_monitoring`<sup>Optional</sup> <a name="enable_integrity_monitoring" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.putShieldedInstanceConfig.parameter.enableIntegrityMonitoring"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether instances have integrity monitoring enabled.
 
@@ -10219,7 +10219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_secure_boot`<sup>Optional</sup> <a name="enable_secure_boot" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.putShieldedInstanceConfig.parameter.enableSecureBoot"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether instances have Secure Boot enabled.
 
@@ -10229,7 +10229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_vtpm`<sup>Optional</sup> <a name="enable_vtpm" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.putShieldedInstanceConfig.parameter.enableVtpm"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Defines whether instances have the vTPM enabled.
 
@@ -10321,7 +10321,7 @@ def reset_zone() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.reservationAffinity">reservation_affinity</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference">DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.shieldedInstanceConfig">shielded_instance_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference">DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.confidentialInstanceConfigInput">confidential_instance_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig">DataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnlyInput">internal_ip_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnlyInput">internal_ip_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.metadataInput">metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.nodeGroupAffinityInput">node_group_affinity_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">DataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a></code> | *No description.* |
@@ -10332,7 +10332,7 @@ def reset_zone() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.subnetworkInput">subnetwork_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnly">internal_ip_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnly">internal_ip_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.network">network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
@@ -10424,7 +10424,7 @@ confidential_instance_config_input: DataprocClusterClusterConfigGceClusterConfig
 internal_ip_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -10534,7 +10534,7 @@ zone_input: str
 internal_ip_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -10634,14 +10634,14 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10836,7 +10836,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10995,14 +10995,14 @@ dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11197,7 +11197,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11236,12 +11236,12 @@ def reset_enable_vtpm() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enable_integrity_monitoring_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enable_secure_boot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpmInput">enable_vtpm_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enable_integrity_monitoring</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enable_secure_boot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpm">enable_vtpm</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enable_integrity_monitoring_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enable_secure_boot_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpmInput">enable_vtpm_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enable_integrity_monitoring</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enable_secure_boot</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpm">enable_vtpm</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">DataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -11276,7 +11276,7 @@ fqn: str
 enable_integrity_monitoring_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11286,7 +11286,7 @@ enable_integrity_monitoring_input: bool | IResolvable
 enable_secure_boot_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11296,7 +11296,7 @@ enable_secure_boot_input: bool | IResolvable
 enable_vtpm_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11306,7 +11306,7 @@ enable_vtpm_input: bool | IResolvable
 enable_integrity_monitoring: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11316,7 +11316,7 @@ enable_integrity_monitoring: bool | IResolvable
 enable_secure_boot: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11326,7 +11326,7 @@ enable_secure_boot: bool | IResolvable
 enable_vtpm: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11357,7 +11357,7 @@ dataprocCluster.DataprocClusterClusterConfigInitializationActionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11365,7 +11365,7 @@ dataprocCluster.DataprocClusterClusterConfigInitializationActionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11435,7 +11435,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11472,7 +11472,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]</code> | *No description.* |
 
 ---
 
@@ -11506,7 +11506,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigInitializationAction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
 
 ---
 
@@ -11528,7 +11528,7 @@ dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11537,7 +11537,7 @@ dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11746,7 +11746,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11777,7 +11777,7 @@ def reset_timeout_sec() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.property.timeoutSecInput">timeout_sec_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.property.script">script</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.property.timeoutSec">timeout_sec</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationActionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a></code> | *No description.* |
 
 ---
 
@@ -11851,7 +11851,7 @@ timeout_sec: typing.Union[int, float]
 internal_value: IResolvable | DataprocClusterClusterConfigInitializationAction
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>
 
 ---
 
@@ -11871,14 +11871,14 @@ dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12072,7 +12072,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12215,7 +12215,7 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12223,7 +12223,7 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12293,7 +12293,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12330,7 +12330,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]</code> | *No description.* |
 
 ---
 
@@ -12364,7 +12364,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigMasterConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
 
 ---
 
@@ -12386,7 +12386,7 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12395,7 +12395,7 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputRefere
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12603,7 +12603,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12628,7 +12628,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorTypeInput">accelerator_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorCount">accelerator_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorType">accelerator_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a></code> | *No description.* |
 
 ---
 
@@ -12702,7 +12702,7 @@ accelerator_type: str
 internal_value: IResolvable | DataprocClusterClusterConfigMasterConfigAccelerators
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>
 
 ---
 
@@ -12722,14 +12722,14 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12925,7 +12925,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13112,14 +13112,14 @@ dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13319,7 +13319,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13343,7 +13343,7 @@ def put_accelerators(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.putAccelerators.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
 
 ---
 
@@ -13446,7 +13446,7 @@ def reset_num_instances() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAcceleratorsList">DataprocClusterClusterConfigMasterConfigAcceleratorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.diskConfig">disk_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference">DataprocClusterClusterConfigMasterConfigDiskConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.instanceNames">instance_names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.acceleratorsInput">accelerators_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.acceleratorsInput">accelerators_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.diskConfigInput">disk_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigDiskConfig">DataprocClusterClusterConfigMasterConfigDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.imageUriInput">image_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigOutputReference.property.machineTypeInput">machine_type_input</a></code> | <code>str</code> | *No description.* |
@@ -13520,7 +13520,7 @@ instance_names: typing.List[str]
 accelerators_input: IResolvable | typing.List[DataprocClusterClusterConfigMasterConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
 
 ---
 
@@ -13640,14 +13640,14 @@ dataprocCluster.DataprocClusterClusterConfigMetastoreConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13839,7 +13839,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMetastoreConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13936,14 +13936,14 @@ dataprocCluster.DataprocClusterClusterConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14166,7 +14166,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14208,7 +14208,7 @@ def put_auxiliary_node_groups(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.putAuxiliaryNodeGroups.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
 
 ---
 
@@ -14222,7 +14222,7 @@ def put_dataproc_metric_config(
 
 ###### `metrics`<sup>Required</sup> <a name="metrics" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.putDataprocMetricConfig.parameter.metrics"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfigMetrics">DataprocClusterClusterConfigDataprocMetricConfigMetrics</a>]
 
 metrics block.
 
@@ -14258,7 +14258,7 @@ def put_endpoint_config(
 
 ###### `enable_http_port_access`<sup>Required</sup> <a name="enable_http_port_access" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.putEndpointConfig.parameter.enableHttpPortAccess"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The flag to enable http access to specific ports on the cluster from external sources (aka Component Gateway).
 
@@ -14299,7 +14299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `internal_ip_only`<sup>Optional</sup> <a name="internal_ip_only" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.putGceClusterConfig.parameter.internalIpOnly"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance.
 
@@ -14425,7 +14425,7 @@ def put_initialization_action(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.putInitializationAction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
 
 ---
 
@@ -14475,7 +14475,7 @@ def put_master_config(
 
 ###### `accelerators`<sup>Optional</sup> <a name="accelerators" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.putMasterConfig.parameter.accelerators"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfigAccelerators">DataprocClusterClusterConfigMasterConfigAccelerators</a>]
 
 accelerators block.
 
@@ -14691,7 +14691,7 @@ def put_worker_config(
 
 ###### `accelerators`<sup>Optional</sup> <a name="accelerators" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.putWorkerConfig.parameter.accelerators"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
 
 accelerators block.
 
@@ -14886,13 +14886,13 @@ def reset_worker_config() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.softwareConfig">software_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference">DataprocClusterClusterConfigSoftwareConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.workerConfig">worker_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference">DataprocClusterClusterConfigWorkerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.autoscalingConfigInput">autoscaling_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAutoscalingConfig">DataprocClusterClusterConfigAutoscalingConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.auxiliaryNodeGroupsInput">auxiliary_node_groups_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.auxiliaryNodeGroupsInput">auxiliary_node_groups_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.clusterTierInput">cluster_tier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.dataprocMetricConfigInput">dataproc_metric_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigDataprocMetricConfig">DataprocClusterClusterConfigDataprocMetricConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.encryptionConfigInput">encryption_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEncryptionConfig">DataprocClusterClusterConfigEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.endpointConfigInput">endpoint_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigEndpointConfig">DataprocClusterClusterConfigEndpointConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.gceClusterConfigInput">gce_cluster_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigGceClusterConfig">DataprocClusterClusterConfigGceClusterConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.initializationActionInput">initialization_action_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.initializationActionInput">initialization_action_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.lifecycleConfigInput">lifecycle_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigLifecycleConfig">DataprocClusterClusterConfigLifecycleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.masterConfigInput">master_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMasterConfig">DataprocClusterClusterConfigMasterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference.property.metastoreConfigInput">metastore_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigMetastoreConfig">DataprocClusterClusterConfigMetastoreConfig</a></code> | *No description.* |
@@ -15099,7 +15099,7 @@ autoscaling_config_input: DataprocClusterClusterConfigAutoscalingConfig
 auxiliary_node_groups_input: IResolvable | typing.List[DataprocClusterClusterConfigAuxiliaryNodeGroups]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigAuxiliaryNodeGroups">DataprocClusterClusterConfigAuxiliaryNodeGroups</a>]
 
 ---
 
@@ -15159,7 +15159,7 @@ gce_cluster_config_input: DataprocClusterClusterConfigGceClusterConfig
 initialization_action_input: IResolvable | typing.List[DataprocClusterClusterConfigInitializationAction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigInitializationAction">DataprocClusterClusterConfigInitializationAction</a>]
 
 ---
 
@@ -15309,14 +15309,14 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15512,7 +15512,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15700,7 +15700,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15708,7 +15708,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15778,7 +15778,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15815,7 +15815,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]</code> | *No description.* |
 
 ---
 
@@ -15849,7 +15849,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
 
 ---
 
@@ -15871,7 +15871,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15880,7 +15880,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16090,7 +16090,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16127,7 +16127,7 @@ def reset_rank() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.rankInput">rank_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.machineTypes">machine_types</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.rank">rank</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a></code> | *No description.* |
 
 ---
 
@@ -16201,7 +16201,7 @@ rank: typing.Union[int, float]
 internal_value: IResolvable | DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>
 
 ---
 
@@ -16222,7 +16222,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16230,7 +16230,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16300,7 +16300,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16382,7 +16382,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16391,7 +16391,7 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16599,7 +16599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16696,14 +16696,14 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16899,7 +16899,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16923,7 +16923,7 @@ def put_instance_selection_list(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.putInstanceSelectionList.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
 
 ---
 
@@ -16978,7 +16978,7 @@ def reset_provisioning_model_mix() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.property.instanceSelectionList">instance_selection_list</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStructList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.property.instanceSelectionResults">instance_selection_results</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionResultsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.property.provisioningModelMix">provisioning_model_mix</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.property.instanceSelectionListInput">instance_selection_list_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.property.instanceSelectionListInput">instance_selection_list_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.property.provisioningModelMixInput">provisioning_model_mix_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMix</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicy</a></code> | *No description.* |
 
@@ -17044,7 +17044,7 @@ provisioning_model_mix: DataprocClusterClusterConfigPreemptibleWorkerConfigInsta
 instance_selection_list_input: IResolvable | typing.List[DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
 
 ---
 
@@ -17084,14 +17084,14 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17285,7 +17285,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyProvisioningModelMixOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17416,14 +17416,14 @@ dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17621,7 +17621,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17701,7 +17701,7 @@ def put_instance_flexibility_policy(
 
 ###### `instance_selection_list`<sup>Optional</sup> <a name="instance_selection_list" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.putInstanceFlexibilityPolicy.parameter.instanceSelectionList"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct">DataprocClusterClusterConfigPreemptibleWorkerConfigInstanceFlexibilityPolicyInstanceSelectionListStruct</a>]
 
 instance_selection_list block.
 
@@ -17903,14 +17903,14 @@ dataprocCluster.DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18102,7 +18102,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigIdentityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18199,14 +18199,14 @@ dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18411,7 +18411,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18514,7 +18514,7 @@ def reset_truststore_uri() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdcInput">cross_realm_trust_kdc_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealmInput">cross_realm_trust_realm_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPasswordUriInput">cross_realm_trust_shared_password_uri_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberosInput">enable_kerberos_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberosInput">enable_kerberos_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKeyUriInput">kdc_db_key_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPasswordUriInput">key_password_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystorePasswordUriInput">keystore_password_uri_input</a></code> | <code>str</code> | *No description.* |
@@ -18529,7 +18529,7 @@ def reset_truststore_uri() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdc">cross_realm_trust_kdc</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealm">cross_realm_trust_realm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPasswordUri">cross_realm_trust_shared_password_uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberos">enable_kerberos</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberos">enable_kerberos</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKeyUri">kdc_db_key_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPasswordUri">key_password_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystorePasswordUri">keystore_password_uri</a></code> | <code>str</code> | *No description.* |
@@ -18614,7 +18614,7 @@ cross_realm_trust_shared_password_uri_input: str
 enable_kerberos_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18764,7 +18764,7 @@ cross_realm_trust_shared_password_uri: str
 enable_kerberos: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18894,14 +18894,14 @@ dataprocCluster.DataprocClusterClusterConfigSecurityConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19097,7 +19097,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19213,7 +19213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_kerberos`<sup>Optional</sup> <a name="enable_kerberos" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSecurityConfigOutputReference.putKerberosConfig.parameter.enableKerberos"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Flag to indicate whether to Kerberize the cluster.
 
@@ -19429,14 +19429,14 @@ dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19631,7 +19631,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19670,7 +19670,7 @@ def reset_override_properties() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.property.properties">properties</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.property.properties">properties</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.property.imageVersionInput">image_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.property.optionalComponentsInput">optional_components_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigSoftwareConfigOutputReference.property.overridePropertiesInput">override_properties_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -19711,7 +19711,7 @@ fqn: str
 properties: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -19802,7 +19802,7 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19810,7 +19810,7 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19880,7 +19880,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19917,7 +19917,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]</code> | *No description.* |
 
 ---
 
@@ -19951,7 +19951,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterClusterConfigWorkerConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
 
 ---
 
@@ -19973,7 +19973,7 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19982,7 +19982,7 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputRefere
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20190,7 +20190,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20215,7 +20215,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorTypeInput">accelerator_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorCount">accelerator_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorType">accelerator_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a></code> | *No description.* |
 
 ---
 
@@ -20289,7 +20289,7 @@ accelerator_type: str
 internal_value: IResolvable | DataprocClusterClusterConfigWorkerConfigAccelerators
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>
 
 ---
 
@@ -20309,14 +20309,14 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20512,7 +20512,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20699,14 +20699,14 @@ dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20907,7 +20907,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20931,7 +20931,7 @@ def put_accelerators(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.putAccelerators.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
 
 ---
 
@@ -21040,7 +21040,7 @@ def reset_num_instances() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAcceleratorsList">DataprocClusterClusterConfigWorkerConfigAcceleratorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.diskConfig">disk_config</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference">DataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.instanceNames">instance_names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.acceleratorsInput">accelerators_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.acceleratorsInput">accelerators_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.diskConfigInput">disk_config_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigDiskConfig">DataprocClusterClusterConfigWorkerConfigDiskConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.imageUriInput">image_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigOutputReference.property.machineTypeInput">machine_type_input</a></code> | <code>str</code> | *No description.* |
@@ -21116,7 +21116,7 @@ instance_names: typing.List[str]
 accelerators_input: IResolvable | typing.List[DataprocClusterClusterConfigWorkerConfigAccelerators]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigWorkerConfigAccelerators">DataprocClusterClusterConfigWorkerConfigAccelerators</a>]
 
 ---
 
@@ -21256,14 +21256,14 @@ dataprocCluster.DataprocClusterTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21458,7 +21458,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21503,7 +21503,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -21597,7 +21597,7 @@ update: str
 internal_value: IResolvable | DataprocClusterTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterTimeouts">DataprocClusterTimeouts</a>
 
 ---
 
@@ -21617,14 +21617,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetast
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21817,7 +21817,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21920,14 +21920,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22123,7 +22123,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22290,14 +22290,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkH
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22490,7 +22490,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22594,7 +22594,7 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22602,7 +22602,7 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22672,7 +22672,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22709,7 +22709,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]</code> | *No description.* |
 
 ---
 
@@ -22743,7 +22743,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
 
 ---
 
@@ -22763,14 +22763,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22964,7 +22964,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23095,14 +23095,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23299,7 +23299,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23353,13 +23353,13 @@ def reset_spot() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.localSsdCountInput">local_ssd_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.machineTypeInput">machine_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.minCpuPlatformInput">min_cpu_platform_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptibleInput">preemptible_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spotInput">spot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptibleInput">preemptible_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spotInput">spot_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.localSsdCount">local_ssd_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.machineType">machine_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.minCpuPlatform">min_cpu_platform</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptible">preemptible</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spot">spot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptible">preemptible</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spot">spot</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a></code> | *No description.* |
 
 ---
@@ -23424,7 +23424,7 @@ min_cpu_platform_input: str
 preemptible_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -23434,7 +23434,7 @@ preemptible_input: bool | IResolvable
 spot_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -23474,7 +23474,7 @@ min_cpu_platform: str
 preemptible: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -23484,7 +23484,7 @@ preemptible: bool | IResolvable
 spot: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -23514,14 +23514,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23717,7 +23717,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23806,7 +23806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `preemptible`<sup>Optional</sup> <a name="preemptible" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putConfig.parameter.preemptible"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether the nodes are created as preemptible VM instances.
 
@@ -23818,7 +23818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `spot`<sup>Optional</sup> <a name="spot" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putConfig.parameter.spot"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
 
@@ -23967,7 +23967,7 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23976,7 +23976,7 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24186,7 +24186,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24259,7 +24259,7 @@ def reset_node_pool_config() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.rolesInput">roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePool">node_pool</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.roles">roles</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a></code> | *No description.* |
 
 ---
 
@@ -24353,7 +24353,7 @@ roles: typing.List[str]
 internal_value: IResolvable | DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>
 
 ---
 
@@ -24373,14 +24373,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24575,7 +24575,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24599,7 +24599,7 @@ def put_node_pool_target(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.putNodePoolTarget.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
 
 ---
 
@@ -24624,7 +24624,7 @@ def reset_node_pool_target() -> None
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.nodePoolTarget">node_pool_target</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.gkeClusterTargetInput">gke_cluster_target_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.nodePoolTargetInput">node_pool_target_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.nodePoolTargetInput">node_pool_target_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.gkeClusterTarget">gke_cluster_target</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a></code> | *No description.* |
 
@@ -24680,7 +24680,7 @@ gke_cluster_target_input: str
 node_pool_target_input: IResolvable | typing.List[DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
 
 ---
 
@@ -24720,14 +24720,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigKubern
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24920,7 +24920,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25045,14 +25045,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25247,7 +25247,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25284,7 +25284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `node_pool_target`<sup>Optional</sup> <a name="node_pool_target" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.putGkeClusterConfig.parameter.nodePoolTarget"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">DataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>]
 
 node_pool_target block.
 
@@ -25456,14 +25456,14 @@ dataprocCluster.DataprocClusterVirtualClusterConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25660,7 +25660,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocCluster.DataprocClusterVirtualClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

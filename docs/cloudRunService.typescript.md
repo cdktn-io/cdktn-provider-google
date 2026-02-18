@@ -301,7 +301,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudRunService.CloudRunService.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -419,7 +419,7 @@ public putTraffic(value: IResolvable | CloudRunServiceTraffic[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunService.putTraffic.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
 
 ---
 
@@ -472,7 +472,7 @@ public resetTraffic(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a CloudRunService resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CloudRunService resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -544,7 +544,7 @@ import { cloudRunService } from '@cdktn/provider-google'
 cloudRunService.CloudRunService.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a CloudRunService resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CloudRunService resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.cloudRunService.CloudRunService.generateConfigForImport.parameter.scope"></a>
 
@@ -574,7 +574,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudRunService.CloudRunService.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CloudRunService to import is found.
 
@@ -585,34 +585,34 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference">CloudRunServiceMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.status">status</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusList">CloudRunServiceStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.template">template</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateOutputReference">CloudRunServiceTemplateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference">CloudRunServiceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.traffic">traffic</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList">CloudRunServiceTrafficList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.autogenerateRevisionNameInput">autogenerateRevisionNameInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.autogenerateRevisionNameInput">autogenerateRevisionNameInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.metadataInput">metadataInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadata">CloudRunServiceMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.templateInput">templateInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplate">CloudRunServiceTemplate</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.trafficInput">trafficInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.autogenerateRevisionName">autogenerateRevisionName</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.trafficInput">trafficInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.autogenerateRevisionName">autogenerateRevisionName</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunService.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -638,7 +638,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -688,7 +688,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -698,7 +698,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -708,7 +708,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -728,7 +728,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -738,7 +738,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -748,7 +748,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -758,7 +758,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -818,7 +818,7 @@ public readonly traffic: CloudRunServiceTrafficList;
 public readonly autogenerateRevisionNameInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -888,7 +888,7 @@ public readonly templateInput: CloudRunServiceTemplate;
 public readonly timeoutsInput: IResolvable | CloudRunServiceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a>
 
 ---
 
@@ -898,7 +898,7 @@ public readonly timeoutsInput: IResolvable | CloudRunServiceTimeouts;
 public readonly trafficInput: IResolvable | CloudRunServiceTraffic[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
 
 ---
 
@@ -908,7 +908,7 @@ public readonly trafficInput: IResolvable | CloudRunServiceTraffic[];
 public readonly autogenerateRevisionName: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -986,22 +986,22 @@ const cloudRunServiceConfig: cloudRunService.CloudRunServiceConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.location">location</a></code> | <code>string</code> | The location of the cloud run instance. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.name">name</a></code> | <code>string</code> | Name must be unique within a Google Cloud project and region. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.autogenerateRevisionName">autogenerateRevisionName</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to 'true', the revision name (template.metadata.name) will be omitted and autogenerated by Cloud Run. This cannot be set to 'true' while 'template.metadata.name' is also set. (For legacy support, if 'template.metadata.name' is unset in state while this field is set to false, the revision name will still autogenerate.). |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.autogenerateRevisionName">autogenerateRevisionName</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to 'true', the revision name (template.metadata.name) will be omitted and autogenerated by Cloud Run. This cannot be set to 'true' while 'template.metadata.name' is also set. (For legacy support, if 'template.metadata.name' is unset in state while this field is set to false, the revision name will still autogenerate.). |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_service#id CloudRunService#id}. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadata">CloudRunServiceMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_service#project CloudRunService#project}. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.template">template</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplate">CloudRunServiceTemplate</a></code> | template block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.traffic">traffic</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]</code> | traffic block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceConfig.property.traffic">traffic</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]</code> | traffic block. |
 
 ---
 
@@ -1011,7 +1011,7 @@ const cloudRunServiceConfig: cloudRunService.CloudRunServiceConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1031,7 +1031,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1051,7 +1051,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly autogenerateRevisionName: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to 'true', the revision name (template.metadata.name) will be omitted and autogenerated by Cloud Run. This cannot be set to 'true' while 'template.metadata.name' is also set. (For legacy support, if 'template.metadata.name' is unset in state while this field is set to false, the revision name will still autogenerate.).
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly traffic: IResolvable | CloudRunServiceTraffic[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
 
 traffic block.
 
@@ -1519,11 +1519,11 @@ const cloudRunServiceTemplateSpec: cloudRunService.CloudRunServiceTemplateSpec =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.containerConcurrency">containerConcurrency</a></code> | <code>number</code> | ContainerConcurrency specifies the maximum allowed in-flight (concurrent) requests per container of the Revision. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.containers">containers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]</code> | containers block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.containers">containers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]</code> | containers block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.nodeSelector">nodeSelector</a></code> | <code>{[ key: string ]: string}</code> | Node Selector describes the hardware requirements of the resources. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.serviceAccountName">serviceAccountName</a></code> | <code>string</code> | Email address of the IAM service account associated with the revision of the service. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.timeoutSeconds">timeoutSeconds</a></code> | <code>number</code> | TimeoutSeconds holds the max duration the instance is allowed for responding to a request. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.volumes">volumes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]</code> | volumes block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpec.property.volumes">volumes</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]</code> | volumes block. |
 
 ---
 
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly containers: IResolvable | CloudRunServiceTemplateSpecContainers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
 
 containers block.
 
@@ -1613,7 +1613,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly volumes: IResolvable | CloudRunServiceTemplateSpecVolumes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
 
 volumes block.
 
@@ -1638,14 +1638,14 @@ const cloudRunServiceTemplateSpecContainers: cloudRunService.CloudRunServiceTemp
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.image">image</a></code> | <code>string</code> | Docker image name. This is most often a reference to a container located in the container registry, such as gcr.io/cloudrun/hello. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.args">args</a></code> | <code>string[]</code> | Arguments to the entrypoint. The docker image's CMD is used if this is not provided. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.command">command</a></code> | <code>string[]</code> | Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.env">env</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]</code> | env block. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.envFrom">envFrom</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]</code> | env_from block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.env">env</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]</code> | env block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.envFrom">envFrom</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]</code> | env_from block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.livenessProbe">livenessProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbe">CloudRunServiceTemplateSpecContainersLivenessProbe</a></code> | liveness_probe block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.name">name</a></code> | <code>string</code> | Name of the container. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.ports">ports</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]</code> | ports block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.ports">ports</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]</code> | ports block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResources">CloudRunServiceTemplateSpecContainersResources</a></code> | resources block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbe">CloudRunServiceTemplateSpecContainersStartupProbe</a></code> | startup_probe block. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.volumeMounts">volumeMounts</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]</code> | volume_mounts block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.volumeMounts">volumeMounts</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]</code> | volume_mounts block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers.property.workingDir">workingDir</a></code> | <code>string</code> | Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. |
 
 ---
@@ -1698,7 +1698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly env: IResolvable | CloudRunServiceTemplateSpecContainersEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
 
 env block.
 
@@ -1712,7 +1712,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly envFrom: IResolvable | CloudRunServiceTemplateSpecContainersEnvFrom[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
 
 env_from block.
 
@@ -1754,7 +1754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ports: IResolvable | CloudRunServiceTemplateSpecContainersPorts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
 
 ports block.
 
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly volumeMounts: IResolvable | CloudRunServiceTemplateSpecContainersVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
 
 volume_mounts block.
 
@@ -1957,7 +1957,7 @@ const cloudRunServiceTemplateSpecContainersEnvFromConfigMapRef: cloudRunService.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRef.property.localObjectReference">localObjectReference</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference">CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference</a></code> | local_object_reference block. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRef.property.optional">optional</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specify whether the ConfigMap must be defined. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRef.property.optional">optional</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specify whether the ConfigMap must be defined. |
 
 ---
 
@@ -1981,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly optional: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specify whether the ConfigMap must be defined.
 
@@ -2036,7 +2036,7 @@ const cloudRunServiceTemplateSpecContainersEnvFromSecretRef: cloudRunService.Clo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRef.property.localObjectReference">localObjectReference</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference">CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference</a></code> | local_object_reference block. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRef.property.optional">optional</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specify whether the Secret must be defined. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRef.property.optional">optional</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specify whether the Secret must be defined. |
 
 ---
 
@@ -2060,7 +2060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly optional: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specify whether the Secret must be defined.
 
@@ -2362,7 +2362,7 @@ const cloudRunServiceTemplateSpecContainersLivenessProbeHttpGet: cloudRunService
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGet.property.httpHeaders">httpHeaders</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]</code> | http_headers block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGet.property.httpHeaders">httpHeaders</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]</code> | http_headers block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGet.property.path">path</a></code> | <code>string</code> | Path to access on the HTTP server. If set, it should not be empty string. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGet.property.port">port</a></code> | <code>number</code> | Port number to access on the container. |
 
@@ -2374,7 +2374,7 @@ const cloudRunServiceTemplateSpecContainersLivenessProbeHttpGet: cloudRunService
 public readonly httpHeaders: IResolvable | CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
 
 http_headers block.
 
@@ -2772,7 +2772,7 @@ const cloudRunServiceTemplateSpecContainersStartupProbeHttpGet: cloudRunService.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGet.property.httpHeaders">httpHeaders</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]</code> | http_headers block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGet.property.httpHeaders">httpHeaders</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]</code> | http_headers block. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGet.property.path">path</a></code> | <code>string</code> | Path to access on the HTTP server. If set, it should not be empty string. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGet.property.port">port</a></code> | <code>number</code> | Port number to access on the container. |
 
@@ -2784,7 +2784,7 @@ const cloudRunServiceTemplateSpecContainersStartupProbeHttpGet: cloudRunService.
 public readonly httpHeaders: IResolvable | CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
 
 http_headers block.
 
@@ -3059,7 +3059,7 @@ const cloudRunServiceTemplateSpecVolumesCsi: cloudRunService.CloudRunServiceTemp
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsi.property.driver">driver</a></code> | <code>string</code> | Unique name representing the type of file system to be created. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsi.property.readOnly">readOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, all mounts created from this volume will be read-only. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsi.property.readOnly">readOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, all mounts created from this volume will be read-only. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsi.property.volumeAttributes">volumeAttributes</a></code> | <code>{[ key: string ]: string}</code> | Driver-specific attributes. |
 
 ---
@@ -3088,7 +3088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly readOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, all mounts created from this volume will be read-only.
 
@@ -3181,7 +3181,7 @@ const cloudRunServiceTemplateSpecVolumesNfs: cloudRunService.CloudRunServiceTemp
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfs.property.path">path</a></code> | <code>string</code> | Path exported by the NFS server. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfs.property.server">server</a></code> | <code>string</code> | IP address or hostname of the NFS server. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfs.property.readOnly">readOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, mount the NFS volume as read only in all mounts. Defaults to false. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfs.property.readOnly">readOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, mount the NFS volume as read only in all mounts. Defaults to false. |
 
 ---
 
@@ -3219,7 +3219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly readOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, mount the NFS volume as read only in all mounts. Defaults to false.
 
@@ -3243,7 +3243,7 @@ const cloudRunServiceTemplateSpecVolumesSecret: cloudRunService.CloudRunServiceT
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecret.property.secretName">secretName</a></code> | <code>string</code> | The name of the secret in Cloud Secret Manager. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecret.property.defaultMode">defaultMode</a></code> | <code>number</code> | Mode bits to use on created files by default. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecret.property.items">items</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]</code> | items block. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecret.property.items">items</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]</code> | items block. |
 
 ---
 
@@ -3296,7 +3296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly items: IResolvable | CloudRunServiceTemplateSpecVolumesSecretItems[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
 
 items block.
 
@@ -3446,7 +3446,7 @@ const cloudRunServiceTraffic: cloudRunService.CloudRunServiceTraffic = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic.property.percent">percent</a></code> | <code>number</code> | Percent specifies percent of the traffic to this Revision or Configuration. |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic.property.latestRevision">latestRevision</a></code> | <code>boolean \| cdktf.IResolvable</code> | LatestRevision may be optionally provided to indicate that the latest ready Revision of the Configuration should be used for this traffic target. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic.property.latestRevision">latestRevision</a></code> | <code>boolean \| cdktn.IResolvable</code> | LatestRevision may be optionally provided to indicate that the latest ready Revision of the Configuration should be used for this traffic target. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic.property.revisionName">revisionName</a></code> | <code>string</code> | RevisionName of a specific revision to which to send this portion of traffic. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic.property.tag">tag</a></code> | <code>string</code> | Tag is optionally used to expose a dedicated url for referencing this target exclusively. |
 
@@ -3472,7 +3472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly latestRevision: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 LatestRevision may be optionally provided to indicate that the latest ready Revision of the Configuration should be used for this traffic target.
 
@@ -3526,14 +3526,14 @@ new cloudRunService.CloudRunServiceMetadataOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3706,7 +3706,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3745,12 +3745,12 @@ public resetNamespace(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.generation">generation</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.resourceVersion">resourceVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.annotationsInput">annotationsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceMetadataOutputReference.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -3792,7 +3792,7 @@ public readonly fqn: string;
 public readonly effectiveAnnotations: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -3802,7 +3802,7 @@ public readonly effectiveAnnotations: StringMap;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -3842,7 +3842,7 @@ public readonly selfLink: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -3939,7 +3939,7 @@ new cloudRunService.CloudRunServiceStatusConditionsList(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3947,7 +3947,7 @@ new cloudRunService.CloudRunServiceStatusConditionsList(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4013,7 +4013,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4088,7 +4088,7 @@ new cloudRunService.CloudRunServiceStatusConditionsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4097,7 +4097,7 @@ new cloudRunService.CloudRunServiceStatusConditionsOutputReference(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4283,7 +4283,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusConditionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4399,7 +4399,7 @@ new cloudRunService.CloudRunServiceStatusList(terraformResource: IInterpolatingP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4407,7 +4407,7 @@ new cloudRunService.CloudRunServiceStatusList(terraformResource: IInterpolatingP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4473,7 +4473,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4548,7 +4548,7 @@ new cloudRunService.CloudRunServiceStatusOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4557,7 +4557,7 @@ new cloudRunService.CloudRunServiceStatusOutputReference(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4743,7 +4743,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4881,7 +4881,7 @@ new cloudRunService.CloudRunServiceStatusTrafficList(terraformResource: IInterpo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4889,7 +4889,7 @@ new cloudRunService.CloudRunServiceStatusTrafficList(terraformResource: IInterpo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4955,7 +4955,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5030,7 +5030,7 @@ new cloudRunService.CloudRunServiceStatusTrafficOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5039,7 +5039,7 @@ new cloudRunService.CloudRunServiceStatusTrafficOutputReference(terraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5225,7 +5225,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5246,7 +5246,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.property.latestRevision">latestRevision</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.property.latestRevision">latestRevision</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.property.percent">percent</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.property.revisionName">revisionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceStatusTrafficOutputReference.property.tag">tag</a></code> | <code>string</code> | *No description.* |
@@ -5285,7 +5285,7 @@ public readonly fqn: string;
 public readonly latestRevision: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -5352,14 +5352,14 @@ new cloudRunService.CloudRunServiceTemplateMetadataOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateMetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateMetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateMetadataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5533,7 +5533,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateMetadataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5761,14 +5761,14 @@ new cloudRunService.CloudRunServiceTemplateOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5942,7 +5942,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6094,14 +6094,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLoca
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6271,7 +6271,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6365,14 +6365,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6545,7 +6545,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6592,8 +6592,8 @@ public resetOptional(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.localObjectReference">localObjectReference</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference">CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReferenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.localObjectReferenceInput">localObjectReferenceInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference">CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.optionalInput">optionalInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.optional">optional</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.optionalInput">optionalInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.optional">optional</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromConfigMapRef">CloudRunServiceTemplateSpecContainersEnvFromConfigMapRef</a></code> | *No description.* |
 
 ---
@@ -6648,7 +6648,7 @@ public readonly localObjectReferenceInput: CloudRunServiceTemplateSpecContainers
 public readonly optionalInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6658,7 +6658,7 @@ public readonly optionalInput: boolean | IResolvable;
 public readonly optional: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6685,7 +6685,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6693,7 +6693,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6759,7 +6759,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6794,7 +6794,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]</code> | *No description.* |
 
 ---
 
@@ -6828,7 +6828,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersEnvFrom[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
 
 ---
 
@@ -6845,7 +6845,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6854,7 +6854,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7045,7 +7045,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7114,7 +7114,7 @@ public resetSecretRef(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.property.prefixInput">prefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.property.secretRefInput">secretRefInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRef">CloudRunServiceTemplateSpecContainersEnvFromSecretRef</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.property.prefix">prefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a></code> | *No description.* |
 
 ---
 
@@ -7208,7 +7208,7 @@ public readonly prefix: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersEnvFrom;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>
 
 ---
 
@@ -7225,14 +7225,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalOb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7402,7 +7402,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7496,14 +7496,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7676,7 +7676,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7723,8 +7723,8 @@ public resetOptional(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.localObjectReference">localObjectReference</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference">CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReferenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.localObjectReferenceInput">localObjectReferenceInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference">CloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.optionalInput">optionalInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.optional">optional</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.optionalInput">optionalInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.optional">optional</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRefOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFromSecretRef">CloudRunServiceTemplateSpecContainersEnvFromSecretRef</a></code> | *No description.* |
 
 ---
@@ -7779,7 +7779,7 @@ public readonly localObjectReferenceInput: CloudRunServiceTemplateSpecContainers
 public readonly optionalInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7789,7 +7789,7 @@ public readonly optionalInput: boolean | IResolvable;
 public readonly optional: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7816,7 +7816,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvList(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7824,7 +7824,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvList(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7890,7 +7890,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7925,7 +7925,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -7959,7 +7959,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
 
 ---
 
@@ -7976,7 +7976,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7985,7 +7985,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8175,7 +8175,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8232,7 +8232,7 @@ public resetValueFrom(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a></code> | *No description.* |
 
 ---
 
@@ -8326,7 +8326,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersEnv;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>
 
 ---
 
@@ -8343,14 +8343,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8521,7 +8521,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8627,14 +8627,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8804,7 +8804,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvValueFromSecretKeyRefOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8920,7 +8920,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersList(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8928,7 +8928,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersList(terraformResource:
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8994,7 +8994,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9029,7 +9029,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]</code> | *No description.* |
 
 ---
 
@@ -9063,7 +9063,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
 
 ---
 
@@ -9080,14 +9080,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9259,7 +9259,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9387,7 +9387,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHtt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9395,7 +9395,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHtt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9461,7 +9461,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9496,7 +9496,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
 
 ---
 
@@ -9530,7 +9530,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
 
 ---
 
@@ -9547,7 +9547,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHtt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9556,7 +9556,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHtt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9743,7 +9743,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9774,7 +9774,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a></code> | *No description.* |
 
 ---
 
@@ -9848,7 +9848,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>
 
 ---
 
@@ -9865,14 +9865,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10046,7 +10046,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10068,7 +10068,7 @@ public putHttpHeaders(value: IResolvable | CloudRunServiceTemplateSpecContainers
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.putHttpHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
 
 ---
 
@@ -10098,7 +10098,7 @@ public resetPort(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.httpHeaders">httpHeaders</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeadersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.httpHeadersInput">httpHeadersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.httpHeadersInput">httpHeadersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
@@ -10147,7 +10147,7 @@ public readonly httpHeaders: CloudRunServiceTemplateSpecContainersLivenessProbeH
 public readonly httpHeadersInput: IResolvable | CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders</a>[]
 
 ---
 
@@ -10214,14 +10214,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10399,7 +10399,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10663,7 +10663,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10672,7 +10672,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10876,7 +10876,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10898,7 +10898,7 @@ public putEnv(value: IResolvable | CloudRunServiceTemplateSpecContainersEnv[]): 
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
 
 ---
 
@@ -10910,7 +10910,7 @@ public putEnvFrom(value: IResolvable | CloudRunServiceTemplateSpecContainersEnvF
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.putEnvFrom.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
 
 ---
 
@@ -10934,7 +10934,7 @@ public putPorts(value: IResolvable | CloudRunServiceTemplateSpecContainersPorts[
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.putPorts.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
 
 ---
 
@@ -10970,7 +10970,7 @@ public putVolumeMounts(value: IResolvable | CloudRunServiceTemplateSpecContainer
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.putVolumeMounts.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
 
 ---
 
@@ -11056,22 +11056,22 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.volumeMounts">volumeMounts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList">CloudRunServiceTemplateSpecContainersVolumeMountsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.argsInput">argsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.commandInput">commandInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.envFromInput">envFromInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.envInput">envInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.envFromInput">envFromInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.envInput">envInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.livenessProbeInput">livenessProbeInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersLivenessProbe">CloudRunServiceTemplateSpecContainersLivenessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.portsInput">portsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.portsInput">portsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResources">CloudRunServiceTemplateSpecContainersResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbe">CloudRunServiceTemplateSpecContainersStartupProbe</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.workingDirInput">workingDirInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.args">args</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.command">command</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.workingDir">workingDir</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a></code> | *No description.* |
 
 ---
 
@@ -11195,7 +11195,7 @@ public readonly commandInput: string[];
 public readonly envFromInput: IResolvable | CloudRunServiceTemplateSpecContainersEnvFrom[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnvFrom">CloudRunServiceTemplateSpecContainersEnvFrom</a>[]
 
 ---
 
@@ -11205,7 +11205,7 @@ public readonly envFromInput: IResolvable | CloudRunServiceTemplateSpecContainer
 public readonly envInput: IResolvable | CloudRunServiceTemplateSpecContainersEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersEnv">CloudRunServiceTemplateSpecContainersEnv</a>[]
 
 ---
 
@@ -11245,7 +11245,7 @@ public readonly nameInput: string;
 public readonly portsInput: IResolvable | CloudRunServiceTemplateSpecContainersPorts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
 
 ---
 
@@ -11275,7 +11275,7 @@ public readonly startupProbeInput: CloudRunServiceTemplateSpecContainersStartupP
 public readonly volumeMountsInput: IResolvable | CloudRunServiceTemplateSpecContainersVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
 
 ---
 
@@ -11345,7 +11345,7 @@ public readonly workingDir: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainers;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>
 
 ---
 
@@ -11362,7 +11362,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersPortsList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11370,7 +11370,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersPortsList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11436,7 +11436,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11471,7 +11471,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]</code> | *No description.* |
 
 ---
 
@@ -11505,7 +11505,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersPorts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>[]
 
 ---
 
@@ -11522,7 +11522,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11531,7 +11531,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11720,7 +11720,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11765,7 +11765,7 @@ public resetProtocol(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.property.containerPort">containerPort</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPortsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a></code> | *No description.* |
 
 ---
 
@@ -11859,7 +11859,7 @@ public readonly protocol: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersPorts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersPorts">CloudRunServiceTemplateSpecContainersPorts</a>
 
 ---
 
@@ -11876,14 +11876,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12055,7 +12055,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersResourcesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12183,14 +12183,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12362,7 +12362,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeGrpcOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12490,7 +12490,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12498,7 +12498,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12564,7 +12564,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12599,7 +12599,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
 
 ---
 
@@ -12633,7 +12633,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
 
 ---
 
@@ -12650,7 +12650,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12659,7 +12659,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12846,7 +12846,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12877,7 +12877,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a></code> | *No description.* |
 
 ---
 
@@ -12951,7 +12951,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>
 
 ---
 
@@ -12968,14 +12968,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13149,7 +13149,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13171,7 +13171,7 @@ public putHttpHeaders(value: IResolvable | CloudRunServiceTemplateSpecContainers
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.putHttpHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
 
 ---
 
@@ -13201,7 +13201,7 @@ public resetPort(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.httpHeaders">httpHeaders</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.httpHeadersInput">httpHeadersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.httpHeadersInput">httpHeadersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
@@ -13250,7 +13250,7 @@ public readonly httpHeaders: CloudRunServiceTemplateSpecContainersStartupProbeHt
 public readonly httpHeadersInput: IResolvable | CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders">CloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders</a>[]
 
 ---
 
@@ -13317,14 +13317,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13504,7 +13504,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13808,14 +13808,14 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13986,7 +13986,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14086,7 +14086,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14094,7 +14094,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14160,7 +14160,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14195,7 +14195,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]</code> | *No description.* |
 
 ---
 
@@ -14229,7 +14229,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>[]
 
 ---
 
@@ -14246,7 +14246,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14255,7 +14255,7 @@ new cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14441,7 +14441,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14466,7 +14466,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.property.mountPath">mountPath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a></code> | *No description.* |
 
 ---
 
@@ -14540,7 +14540,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecContainersVolumeMounts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainersVolumeMounts">CloudRunServiceTemplateSpecContainersVolumeMounts</a>
 
 ---
 
@@ -14557,14 +14557,14 @@ new cloudRunService.CloudRunServiceTemplateSpecOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14742,7 +14742,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14764,7 +14764,7 @@ public putContainers(value: IResolvable | CloudRunServiceTemplateSpecContainers[
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.putContainers.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
 
 ---
 
@@ -14776,7 +14776,7 @@ public putVolumes(value: IResolvable | CloudRunServiceTemplateSpecVolumes[]): vo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.putVolumes.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
 
 ---
 
@@ -14827,11 +14827,11 @@ public resetVolumes(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.servingState">servingState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.volumes">volumes</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList">CloudRunServiceTemplateSpecVolumesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.containerConcurrencyInput">containerConcurrencyInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.containersInput">containersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.containersInput">containersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.nodeSelectorInput">nodeSelectorInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.serviceAccountNameInput">serviceAccountNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.timeoutSecondsInput">timeoutSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.volumesInput">volumesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.volumesInput">volumesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.containerConcurrency">containerConcurrency</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.nodeSelector">nodeSelector</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecOutputReference.property.serviceAccountName">serviceAccountName</a></code> | <code>string</code> | *No description.* |
@@ -14910,7 +14910,7 @@ public readonly containerConcurrencyInput: number;
 public readonly containersInput: IResolvable | CloudRunServiceTemplateSpecContainers[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecContainers">CloudRunServiceTemplateSpecContainers</a>[]
 
 ---
 
@@ -14950,7 +14950,7 @@ public readonly timeoutSecondsInput: number;
 public readonly volumesInput: IResolvable | CloudRunServiceTemplateSpecVolumes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
 
 ---
 
@@ -15017,14 +15017,14 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15196,7 +15196,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15230,10 +15230,10 @@ public resetVolumeAttributes(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.driverInput">driverInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.readOnlyInput">readOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.readOnlyInput">readOnlyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.volumeAttributesInput">volumeAttributesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.driver">driver</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.readOnly">readOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.readOnly">readOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.volumeAttributes">volumeAttributes</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsiOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesCsi">CloudRunServiceTemplateSpecVolumesCsi</a></code> | *No description.* |
 
@@ -15279,7 +15279,7 @@ public readonly driverInput: string;
 public readonly readOnlyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15309,7 +15309,7 @@ public readonly driver: string;
 public readonly readOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15346,14 +15346,14 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15525,7 +15525,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesEmptyDirOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15653,7 +15653,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesList(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15661,7 +15661,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesList(terraformResource: II
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15727,7 +15727,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15762,7 +15762,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]</code> | *No description.* |
 
 ---
 
@@ -15796,7 +15796,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecVolumes[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>[]
 
 ---
 
@@ -15813,14 +15813,14 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15991,7 +15991,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16019,10 +16019,10 @@ public resetReadOnly(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.readOnlyInput">readOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.readOnlyInput">readOnlyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.serverInput">serverInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.readOnly">readOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.readOnly">readOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.server">server</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfs">CloudRunServiceTemplateSpecVolumesNfs</a></code> | *No description.* |
 
@@ -16068,7 +16068,7 @@ public readonly pathInput: string;
 public readonly readOnlyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16098,7 +16098,7 @@ public readonly path: string;
 public readonly readOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16135,7 +16135,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16144,7 +16144,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16338,7 +16338,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16441,7 +16441,7 @@ public resetSecret(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.property.nfsInput">nfsInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesNfs">CloudRunServiceTemplateSpecVolumesNfs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.property.secretInput">secretInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecret">CloudRunServiceTemplateSpecVolumesSecret</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a></code> | *No description.* |
 
 ---
 
@@ -16575,7 +16575,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecVolumes;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumes">CloudRunServiceTemplateSpecVolumes</a>
 
 ---
 
@@ -16592,7 +16592,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16600,7 +16600,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16666,7 +16666,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16701,7 +16701,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]</code> | *No description.* |
 
 ---
 
@@ -16735,7 +16735,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecVolumesSecretItems[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
 
 ---
 
@@ -16752,7 +16752,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16761,7 +16761,7 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16948,7 +16948,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16981,7 +16981,7 @@ public resetMode(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.property.mode">mode</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a></code> | *No description.* |
 
 ---
 
@@ -17075,7 +17075,7 @@ public readonly path: string;
 public readonly internalValue: IResolvable | CloudRunServiceTemplateSpecVolumesSecretItems;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>
 
 ---
 
@@ -17092,14 +17092,14 @@ new cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17272,7 +17272,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17294,7 +17294,7 @@ public putItems(value: IResolvable | CloudRunServiceTemplateSpecVolumesSecretIte
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.putItems.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
 
 ---
 
@@ -17319,7 +17319,7 @@ public resetItems(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.items">items</a></code> | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItemsList">CloudRunServiceTemplateSpecVolumesSecretItemsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.defaultModeInput">defaultModeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.itemsInput">itemsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.itemsInput">itemsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.secretNameInput">secretNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.defaultMode">defaultMode</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretOutputReference.property.secretName">secretName</a></code> | <code>string</code> | *No description.* |
@@ -17377,7 +17377,7 @@ public readonly defaultModeInput: number;
 public readonly itemsInput: IResolvable | CloudRunServiceTemplateSpecVolumesSecretItems[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTemplateSpecVolumesSecretItems">CloudRunServiceTemplateSpecVolumesSecretItems</a>[]
 
 ---
 
@@ -17434,14 +17434,14 @@ new cloudRunService.CloudRunServiceTimeoutsOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17614,7 +17614,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17659,7 +17659,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -17753,7 +17753,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | CloudRunServiceTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTimeouts">CloudRunServiceTimeouts</a>
 
 ---
 
@@ -17770,7 +17770,7 @@ new cloudRunService.CloudRunServiceTrafficList(terraformResource: IInterpolating
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17778,7 +17778,7 @@ new cloudRunService.CloudRunServiceTrafficList(terraformResource: IInterpolating
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17844,7 +17844,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17879,7 +17879,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]</code> | *No description.* |
 
 ---
 
@@ -17913,7 +17913,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CloudRunServiceTraffic[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>[]
 
 ---
 
@@ -17930,7 +17930,7 @@ new cloudRunService.CloudRunServiceTrafficOutputReference(terraformResource: IIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17939,7 +17939,7 @@ new cloudRunService.CloudRunServiceTrafficOutputReference(terraformResource: IIn
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18128,7 +18128,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18168,15 +18168,15 @@ public resetTag(): void
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.url">url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.latestRevisionInput">latestRevisionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.latestRevisionInput">latestRevisionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.percentInput">percentInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.revisionNameInput">revisionNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.tagInput">tagInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.latestRevision">latestRevision</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.latestRevision">latestRevision</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.percent">percent</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.revisionName">revisionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.tag">tag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTrafficOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a></code> | *No description.* |
 
 ---
 
@@ -18220,7 +18220,7 @@ public readonly url: string;
 public readonly latestRevisionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18260,7 +18260,7 @@ public readonly tagInput: string;
 public readonly latestRevision: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18300,7 +18300,7 @@ public readonly tag: string;
 public readonly internalValue: IResolvable | CloudRunServiceTraffic;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudRunService.CloudRunServiceTraffic">CloudRunServiceTraffic</a>
 
 ---
 

@@ -301,7 +301,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -395,7 +395,7 @@ public putNotificationConfigs(value: IResolvable | HealthcareHl7V2StoreNotificat
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.putNotificationConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
 
 ---
 
@@ -472,7 +472,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a HealthcareHl7V2Store resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a HealthcareHl7V2Store resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -544,7 +544,7 @@ import { healthcareHl7V2Store } from '@cdktn/provider-google'
 healthcareHl7V2Store.HealthcareHl7V2Store.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a HealthcareHl7V2Store resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a HealthcareHl7V2Store resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.generateConfigForImport.parameter.scope"></a>
 
@@ -574,7 +574,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the HealthcareHl7V2Store to import is found.
 
@@ -585,40 +585,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference">HealthcareHl7V2StoreNotificationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.notificationConfigs">notificationConfigs</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList">HealthcareHl7V2StoreNotificationConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.parserConfig">parserConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference">HealthcareHl7V2StoreParserConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference">HealthcareHl7V2StoreTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.datasetInput">datasetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.notificationConfigInput">notificationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfig">HealthcareHl7V2StoreNotificationConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.notificationConfigsInput">notificationConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.notificationConfigsInput">notificationConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.parserConfigInput">parserConfigInput</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig">HealthcareHl7V2StoreParserConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.rejectDuplicateMessageInput">rejectDuplicateMessageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.rejectDuplicateMessageInput">rejectDuplicateMessageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.dataset">dataset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.rejectDuplicateMessage">rejectDuplicateMessage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2Store.property.rejectDuplicateMessage">rejectDuplicateMessage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -640,7 +640,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -690,7 +690,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -700,7 +700,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -710,7 +710,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -730,7 +730,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -740,7 +740,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -750,7 +750,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -760,7 +760,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -770,7 +770,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -820,7 +820,7 @@ public readonly selfLink: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -890,7 +890,7 @@ public readonly notificationConfigInput: HealthcareHl7V2StoreNotificationConfig;
 public readonly notificationConfigsInput: IResolvable | HealthcareHl7V2StoreNotificationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
 
 ---
 
@@ -910,7 +910,7 @@ public readonly parserConfigInput: HealthcareHl7V2StoreParserConfig;
 public readonly rejectDuplicateMessageInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -920,7 +920,7 @@ public readonly rejectDuplicateMessageInput: boolean | IResolvable;
 public readonly timeoutsInput: IResolvable | HealthcareHl7V2StoreTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a>
 
 ---
 
@@ -970,7 +970,7 @@ public readonly name: string;
 public readonly rejectDuplicateMessage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1008,21 +1008,21 @@ const healthcareHl7V2StoreConfig: healthcareHl7V2Store.HealthcareHl7V2StoreConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.dataset">dataset</a></code> | <code>string</code> | Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.name">name</a></code> | <code>string</code> | The resource name for the Hl7V2Store. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_hl7_v2_store#id HealthcareHl7V2Store#id}. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-supplied key-value pairs used to organize HL7v2 stores. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfig">HealthcareHl7V2StoreNotificationConfig</a></code> | notification_config block. |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.notificationConfigs">notificationConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]</code> | notification_configs block. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.notificationConfigs">notificationConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]</code> | notification_configs block. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.parserConfig">parserConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig">HealthcareHl7V2StoreParserConfig</a></code> | parser_config block. |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.rejectDuplicateMessage">rejectDuplicateMessage</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines whether duplicate messages are allowed. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.rejectDuplicateMessage">rejectDuplicateMessage</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines whether duplicate messages are allowed. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1033,7 +1033,7 @@ const healthcareHl7V2StoreConfig: healthcareHl7V2Store.HealthcareHl7V2StoreConfi
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1083,7 +1083,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly notificationConfigs: IResolvable | HealthcareHl7V2StoreNotificationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
 
 notification_configs block.
 
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rejectDuplicateMessage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Determines whether duplicate messages are allowed.
 
@@ -1359,7 +1359,7 @@ const healthcareHl7V2StoreParserConfig: healthcareHl7V2Store.HealthcareHl7V2Stor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig.property.allowNullHeader">allowNullHeader</a></code> | <code>boolean \| cdktf.IResolvable</code> | Determines whether messages with no header are allowed. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig.property.allowNullHeader">allowNullHeader</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines whether messages with no header are allowed. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig.property.schema">schema</a></code> | <code>string</code> | JSON encoded string for schemas used to parse messages in this store if schematized parsing is desired. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig.property.segmentTerminator">segmentTerminator</a></code> | <code>string</code> | Byte(s) to be used as the segment terminator. If this is unset, '\r' will be used as segment terminator. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfig.property.version">version</a></code> | <code>string</code> | The version of the unschematized parser to be used when a custom 'schema' is not set. |
@@ -1372,7 +1372,7 @@ const healthcareHl7V2StoreParserConfig: healthcareHl7V2Store.HealthcareHl7V2Stor
 public readonly allowNullHeader: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Determines whether messages with no header are allowed.
 
@@ -1496,14 +1496,14 @@ new healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1673,7 +1673,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1767,7 +1767,7 @@ new healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1775,7 +1775,7 @@ new healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1841,7 +1841,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1876,7 +1876,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -1910,7 +1910,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | HealthcareHl7V2StoreNotificationConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>[]
 
 ---
 
@@ -1927,7 +1927,7 @@ new healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1936,7 +1936,7 @@ new healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2123,7 +2123,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2154,7 +2154,7 @@ public resetFilter(): void
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.property.pubsubTopicInput">pubsubTopicInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.property.filter">filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.property.pubsubTopic">pubsubTopic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a></code> | *No description.* |
 
 ---
 
@@ -2228,7 +2228,7 @@ public readonly pubsubTopic: string;
 public readonly internalValue: IResolvable | HealthcareHl7V2StoreNotificationConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreNotificationConfigs">HealthcareHl7V2StoreNotificationConfigs</a>
 
 ---
 
@@ -2245,14 +2245,14 @@ new healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2426,7 +2426,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2471,11 +2471,11 @@ public resetVersion(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.allowNullHeaderInput">allowNullHeaderInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.allowNullHeaderInput">allowNullHeaderInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.schemaInput">schemaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.segmentTerminatorInput">segmentTerminatorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.versionInput">versionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.allowNullHeader">allowNullHeader</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.allowNullHeader">allowNullHeader</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.schema">schema</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.segmentTerminator">segmentTerminator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreParserConfigOutputReference.property.version">version</a></code> | <code>string</code> | *No description.* |
@@ -2513,7 +2513,7 @@ public readonly fqn: string;
 public readonly allowNullHeaderInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2553,7 +2553,7 @@ public readonly versionInput: string;
 public readonly allowNullHeader: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2610,14 +2610,14 @@ new healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2790,7 +2790,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2835,7 +2835,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2929,7 +2929,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | HealthcareHl7V2StoreTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.healthcareHl7V2Store.HealthcareHl7V2StoreTimeouts">HealthcareHl7V2StoreTimeouts</a>
 
 ---
 

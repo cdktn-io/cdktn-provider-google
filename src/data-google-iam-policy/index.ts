@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}
   *
@@ -24,13 +24,13 @@ export interface DataGoogleIamPolicyConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
   */
-  readonly auditConfig?: DataGoogleIamPolicyAuditConfig[] | cdktf.IResolvable;
+  readonly auditConfig?: DataGoogleIamPolicyAuditConfig[] | cdktn.IResolvable;
   /**
   * binding block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
   */
-  readonly binding?: DataGoogleIamPolicyBinding[] | cdktf.IResolvable;
+  readonly binding?: DataGoogleIamPolicyBinding[] | cdktn.IResolvable;
 }
 export interface DataGoogleIamPolicyAuditConfigAuditLogConfigs {
   /**
@@ -43,32 +43,32 @@ export interface DataGoogleIamPolicyAuditConfigAuditLogConfigs {
   readonly logType: string;
 }
 
-export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToTerraform(struct?: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToTerraform(struct?: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exempted_members: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exemptedMembers),
-    log_type: cdktf.stringToTerraform(struct!.logType),
+    exempted_members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exemptedMembers),
+    log_type: cdktn.stringToTerraform(struct!.logType),
   }
 }
 
 
-export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToHclTerraform(struct?: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToHclTerraform(struct?: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exempted_members: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exemptedMembers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exemptedMembers),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     log_type: {
-      value: cdktf.stringToHclTerraform(struct!.logType),
+      value: cdktn.stringToHclTerraform(struct!.logType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -79,9 +79,9 @@ export function dataGoogleIamPolicyAuditConfigAuditLogConfigsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -89,11 +89,11 @@ export class DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,14 +110,14 @@ export class DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataGoogleIamPolicyAuditConfigAuditLogConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._exemptedMembers = undefined;
       this._logType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -132,7 +132,7 @@ export class DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference extend
   // exempted_members - computed: false, optional: true, required: false
   private _exemptedMembers?: string[]; 
   public get exemptedMembers() {
-    return cdktf.Fn.tolist(this.getListAttribute('exempted_members'));
+    return cdktn.Fn.tolist(this.getListAttribute('exempted_members'));
   }
   public set exemptedMembers(value: string[]) {
     this._exemptedMembers = value;
@@ -159,15 +159,15 @@ export class DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference extend
   }
 }
 
-export class DataGoogleIamPolicyAuditConfigAuditLogConfigsList extends cdktf.ComplexList {
-  public internalValue? : DataGoogleIamPolicyAuditConfigAuditLogConfigs[] | cdktf.IResolvable
+export class DataGoogleIamPolicyAuditConfigAuditLogConfigsList extends cdktn.ComplexList {
+  public internalValue? : DataGoogleIamPolicyAuditConfigAuditLogConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -188,35 +188,35 @@ export interface DataGoogleIamPolicyAuditConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_policy#audit_log_configs DataGoogleIamPolicy#audit_log_configs}
   */
-  readonly auditLogConfigs: DataGoogleIamPolicyAuditConfigAuditLogConfigs[] | cdktf.IResolvable;
+  readonly auditLogConfigs: DataGoogleIamPolicyAuditConfigAuditLogConfigs[] | cdktn.IResolvable;
 }
 
-export function dataGoogleIamPolicyAuditConfigToTerraform(struct?: DataGoogleIamPolicyAuditConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleIamPolicyAuditConfigToTerraform(struct?: DataGoogleIamPolicyAuditConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service: cdktf.stringToTerraform(struct!.service),
-    audit_log_configs: cdktf.listMapper(dataGoogleIamPolicyAuditConfigAuditLogConfigsToTerraform, true)(struct!.auditLogConfigs),
+    service: cdktn.stringToTerraform(struct!.service),
+    audit_log_configs: cdktn.listMapper(dataGoogleIamPolicyAuditConfigAuditLogConfigsToTerraform, true)(struct!.auditLogConfigs),
   }
 }
 
 
-export function dataGoogleIamPolicyAuditConfigToHclTerraform(struct?: DataGoogleIamPolicyAuditConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleIamPolicyAuditConfigToHclTerraform(struct?: DataGoogleIamPolicyAuditConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     audit_log_configs: {
-      value: cdktf.listMapperHcl(dataGoogleIamPolicyAuditConfigAuditLogConfigsToHclTerraform, true)(struct!.auditLogConfigs),
+      value: cdktn.listMapperHcl(dataGoogleIamPolicyAuditConfigAuditLogConfigsToHclTerraform, true)(struct!.auditLogConfigs),
       isBlock: true,
       type: "set",
       storageClassType: "DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
@@ -227,9 +227,9 @@ export function dataGoogleIamPolicyAuditConfigToHclTerraform(struct?: DataGoogle
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataGoogleIamPolicyAuditConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleIamPolicyAuditConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -237,11 +237,11 @@ export class DataGoogleIamPolicyAuditConfigOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGoogleIamPolicyAuditConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): DataGoogleIamPolicyAuditConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,14 +258,14 @@ export class DataGoogleIamPolicyAuditConfigOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGoogleIamPolicyAuditConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataGoogleIamPolicyAuditConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._service = undefined;
       this._auditLogConfigs.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -295,7 +295,7 @@ export class DataGoogleIamPolicyAuditConfigOutputReference extends cdktf.Complex
   public get auditLogConfigs() {
     return this._auditLogConfigs;
   }
-  public putAuditLogConfigs(value: DataGoogleIamPolicyAuditConfigAuditLogConfigs[] | cdktf.IResolvable) {
+  public putAuditLogConfigs(value: DataGoogleIamPolicyAuditConfigAuditLogConfigs[] | cdktn.IResolvable) {
     this._auditLogConfigs.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -304,15 +304,15 @@ export class DataGoogleIamPolicyAuditConfigOutputReference extends cdktf.Complex
   }
 }
 
-export class DataGoogleIamPolicyAuditConfigList extends cdktf.ComplexList {
-  public internalValue? : DataGoogleIamPolicyAuditConfig[] | cdktf.IResolvable
+export class DataGoogleIamPolicyAuditConfigList extends cdktn.ComplexList {
+  public internalValue? : DataGoogleIamPolicyAuditConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -339,38 +339,38 @@ export interface DataGoogleIamPolicyBindingCondition {
 }
 
 export function dataGoogleIamPolicyBindingConditionToTerraform(struct?: DataGoogleIamPolicyBindingConditionOutputReference | DataGoogleIamPolicyBindingCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function dataGoogleIamPolicyBindingConditionToHclTerraform(struct?: DataGoogleIamPolicyBindingConditionOutputReference | DataGoogleIamPolicyBindingCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -381,14 +381,14 @@ export function dataGoogleIamPolicyBindingConditionToHclTerraform(struct?: DataG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataGoogleIamPolicyBindingConditionOutputReference extends cdktf.ComplexObject {
+export class DataGoogleIamPolicyBindingConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -484,33 +484,33 @@ export interface DataGoogleIamPolicyBinding {
   readonly condition?: DataGoogleIamPolicyBindingCondition;
 }
 
-export function dataGoogleIamPolicyBindingToTerraform(struct?: DataGoogleIamPolicyBinding | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleIamPolicyBindingToTerraform(struct?: DataGoogleIamPolicyBinding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    members: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.members),
-    role: cdktf.stringToTerraform(struct!.role),
+    members: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.members),
+    role: cdktn.stringToTerraform(struct!.role),
     condition: dataGoogleIamPolicyBindingConditionToTerraform(struct!.condition),
   }
 }
 
 
-export function dataGoogleIamPolicyBindingToHclTerraform(struct?: DataGoogleIamPolicyBinding | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataGoogleIamPolicyBindingToHclTerraform(struct?: DataGoogleIamPolicyBinding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     members: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.members),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.members),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -527,9 +527,9 @@ export function dataGoogleIamPolicyBindingToHclTerraform(struct?: DataGoogleIamP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataGoogleIamPolicyBindingOutputReference extends cdktf.ComplexObject {
+export class DataGoogleIamPolicyBindingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -537,11 +537,11 @@ export class DataGoogleIamPolicyBindingOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGoogleIamPolicyBinding | cdktf.IResolvable | undefined {
+  public get internalValue(): DataGoogleIamPolicyBinding | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -562,7 +562,7 @@ export class DataGoogleIamPolicyBindingOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGoogleIamPolicyBinding | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataGoogleIamPolicyBinding | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -570,7 +570,7 @@ export class DataGoogleIamPolicyBindingOutputReference extends cdktf.ComplexObje
       this._role = undefined;
       this._condition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -586,7 +586,7 @@ export class DataGoogleIamPolicyBindingOutputReference extends cdktf.ComplexObje
   // members - computed: false, optional: false, required: true
   private _members?: string[]; 
   public get members() {
-    return cdktf.Fn.tolist(this.getListAttribute('members'));
+    return cdktn.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;
@@ -626,15 +626,15 @@ export class DataGoogleIamPolicyBindingOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DataGoogleIamPolicyBindingList extends cdktf.ComplexList {
-  public internalValue? : DataGoogleIamPolicyBinding[] | cdktf.IResolvable
+export class DataGoogleIamPolicyBindingList extends cdktn.ComplexList {
+  public internalValue? : DataGoogleIamPolicyBinding[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -649,7 +649,7 @@ export class DataGoogleIamPolicyBindingList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_policy google_iam_policy}
 */
-export class DataGoogleIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -660,14 +660,14 @@ export class DataGoogleIamPolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIamPolicy to import
   * @param importFromId The id of the existing DataGoogleIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -732,7 +732,7 @@ export class DataGoogleIamPolicy extends cdktf.TerraformDataSource {
   public get auditConfig() {
     return this._auditConfig;
   }
-  public putAuditConfig(value: DataGoogleIamPolicyAuditConfig[] | cdktf.IResolvable) {
+  public putAuditConfig(value: DataGoogleIamPolicyAuditConfig[] | cdktn.IResolvable) {
     this._auditConfig.internalValue = value;
   }
   public resetAuditConfig() {
@@ -748,7 +748,7 @@ export class DataGoogleIamPolicy extends cdktf.TerraformDataSource {
   public get binding() {
     return this._binding;
   }
-  public putBinding(value: DataGoogleIamPolicyBinding[] | cdktf.IResolvable) {
+  public putBinding(value: DataGoogleIamPolicyBinding[] | cdktn.IResolvable) {
     this._binding.internalValue = value;
   }
   public resetBinding() {
@@ -765,28 +765,28 @@ export class DataGoogleIamPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      audit_config: cdktf.listMapper(dataGoogleIamPolicyAuditConfigToTerraform, true)(this._auditConfig.internalValue),
-      binding: cdktf.listMapper(dataGoogleIamPolicyBindingToTerraform, true)(this._binding.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      audit_config: cdktn.listMapper(dataGoogleIamPolicyAuditConfigToTerraform, true)(this._auditConfig.internalValue),
+      binding: cdktn.listMapper(dataGoogleIamPolicyBindingToTerraform, true)(this._binding.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       audit_config: {
-        value: cdktf.listMapperHcl(dataGoogleIamPolicyAuditConfigToHclTerraform, true)(this._auditConfig.internalValue),
+        value: cdktn.listMapperHcl(dataGoogleIamPolicyAuditConfigToHclTerraform, true)(this._auditConfig.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataGoogleIamPolicyAuditConfigList",
       },
       binding: {
-        value: cdktf.listMapperHcl(dataGoogleIamPolicyBindingToHclTerraform, true)(this._binding.internalValue),
+        value: cdktn.listMapperHcl(dataGoogleIamPolicyBindingToHclTerraform, true)(this._binding.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataGoogleIamPolicyBindingList",

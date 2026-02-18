@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DiscoveryEngineTargetSiteConfig extends cdktf.TerraformMetaArguments {
+export interface DiscoveryEngineTargetSiteConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique id of the data store.
   *
@@ -28,7 +28,7 @@ export interface DiscoveryEngineTargetSiteConfig extends cdktf.TerraformMetaArgu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_target_site#exact_match DiscoveryEngineTargetSite#exact_match}
   */
-  readonly exactMatch?: boolean | cdktf.IResolvable;
+  readonly exactMatch?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_target_site#id DiscoveryEngineTargetSite#id}
   *
@@ -71,8 +71,8 @@ export interface DiscoveryEngineTargetSiteFailureReasonQuotaFailure {
 }
 
 export function discoveryEngineTargetSiteFailureReasonQuotaFailureToTerraform(struct?: DiscoveryEngineTargetSiteFailureReasonQuotaFailure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -81,8 +81,8 @@ export function discoveryEngineTargetSiteFailureReasonQuotaFailureToTerraform(st
 
 
 export function discoveryEngineTargetSiteFailureReasonQuotaFailureToHclTerraform(struct?: DiscoveryEngineTargetSiteFailureReasonQuotaFailure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -90,7 +90,7 @@ export function discoveryEngineTargetSiteFailureReasonQuotaFailureToHclTerraform
   return attrs;
 }
 
-export class DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -99,7 +99,7 @@ export class DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -124,14 +124,14 @@ export class DiscoveryEngineTargetSiteFailureReasonQuotaFailureOutputReference e
   }
 }
 
-export class DiscoveryEngineTargetSiteFailureReasonQuotaFailureList extends cdktf.ComplexList {
+export class DiscoveryEngineTargetSiteFailureReasonQuotaFailureList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -146,8 +146,8 @@ export interface DiscoveryEngineTargetSiteFailureReason {
 }
 
 export function discoveryEngineTargetSiteFailureReasonToTerraform(struct?: DiscoveryEngineTargetSiteFailureReason): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -156,8 +156,8 @@ export function discoveryEngineTargetSiteFailureReasonToTerraform(struct?: Disco
 
 
 export function discoveryEngineTargetSiteFailureReasonToHclTerraform(struct?: DiscoveryEngineTargetSiteFailureReason): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -165,7 +165,7 @@ export function discoveryEngineTargetSiteFailureReasonToHclTerraform(struct?: Di
   return attrs;
 }
 
-export class DiscoveryEngineTargetSiteFailureReasonOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineTargetSiteFailureReasonOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -174,7 +174,7 @@ export class DiscoveryEngineTargetSiteFailureReasonOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class DiscoveryEngineTargetSiteFailureReasonOutputReference extends cdktf
   }
 }
 
-export class DiscoveryEngineTargetSiteFailureReasonList extends cdktf.ComplexList {
+export class DiscoveryEngineTargetSiteFailureReasonList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,8 +222,8 @@ export interface DiscoveryEngineTargetSiteSiteVerificationInfo {
 }
 
 export function discoveryEngineTargetSiteSiteVerificationInfoToTerraform(struct?: DiscoveryEngineTargetSiteSiteVerificationInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -232,8 +232,8 @@ export function discoveryEngineTargetSiteSiteVerificationInfoToTerraform(struct?
 
 
 export function discoveryEngineTargetSiteSiteVerificationInfoToHclTerraform(struct?: DiscoveryEngineTargetSiteSiteVerificationInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,7 +241,7 @@ export function discoveryEngineTargetSiteSiteVerificationInfoToHclTerraform(stru
   return attrs;
 }
 
-export class DiscoveryEngineTargetSiteSiteVerificationInfoOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineTargetSiteSiteVerificationInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -250,7 +250,7 @@ export class DiscoveryEngineTargetSiteSiteVerificationInfoOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -280,14 +280,14 @@ export class DiscoveryEngineTargetSiteSiteVerificationInfoOutputReference extend
   }
 }
 
-export class DiscoveryEngineTargetSiteSiteVerificationInfoList extends cdktf.ComplexList {
+export class DiscoveryEngineTargetSiteSiteVerificationInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -309,32 +309,32 @@ export interface DiscoveryEngineTargetSiteTimeouts {
   readonly delete?: string;
 }
 
-export function discoveryEngineTargetSiteTimeoutsToTerraform(struct?: DiscoveryEngineTargetSiteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineTargetSiteTimeoutsToTerraform(struct?: DiscoveryEngineTargetSiteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function discoveryEngineTargetSiteTimeoutsToHclTerraform(struct?: DiscoveryEngineTargetSiteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineTargetSiteTimeoutsToHclTerraform(struct?: DiscoveryEngineTargetSiteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -345,19 +345,19 @@ export function discoveryEngineTargetSiteTimeoutsToHclTerraform(struct?: Discove
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineTargetSiteTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineTargetSiteTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DiscoveryEngineTargetSiteTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DiscoveryEngineTargetSiteTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -374,14 +374,14 @@ export class DiscoveryEngineTargetSiteTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DiscoveryEngineTargetSiteTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DiscoveryEngineTargetSiteTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -429,7 +429,7 @@ export class DiscoveryEngineTargetSiteTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_target_site google_discovery_engine_target_site}
 */
-export class DiscoveryEngineTargetSite extends cdktf.TerraformResource {
+export class DiscoveryEngineTargetSite extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -440,14 +440,14 @@ export class DiscoveryEngineTargetSite extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DiscoveryEngineTargetSite resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DiscoveryEngineTargetSite resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineTargetSite to import
   * @param importFromId The id of the existing DiscoveryEngineTargetSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_target_site#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineTargetSite to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_discovery_engine_target_site", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_discovery_engine_target_site", importId: importFromId, provider });
       }
 
   // ===========
@@ -505,11 +505,11 @@ export class DiscoveryEngineTargetSite extends cdktf.TerraformResource {
   }
 
   // exact_match - computed: false, optional: true, required: false
-  private _exactMatch?: boolean | cdktf.IResolvable; 
+  private _exactMatch?: boolean | cdktn.IResolvable; 
   public get exactMatch() {
     return this.getBooleanAttribute('exact_match');
   }
-  public set exactMatch(value: boolean | cdktf.IResolvable) {
+  public set exactMatch(value: boolean | cdktn.IResolvable) {
     this._exactMatch = value;
   }
   public resetExactMatch() {
@@ -658,13 +658,13 @@ export class DiscoveryEngineTargetSite extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_store_id: cdktf.stringToTerraform(this._dataStoreId),
-      exact_match: cdktf.booleanToTerraform(this._exactMatch),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      provided_uri_pattern: cdktf.stringToTerraform(this._providedUriPattern),
-      type: cdktf.stringToTerraform(this._type),
+      data_store_id: cdktn.stringToTerraform(this._dataStoreId),
+      exact_match: cdktn.booleanToTerraform(this._exactMatch),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      provided_uri_pattern: cdktn.stringToTerraform(this._providedUriPattern),
+      type: cdktn.stringToTerraform(this._type),
       timeouts: discoveryEngineTargetSiteTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -672,43 +672,43 @@ export class DiscoveryEngineTargetSite extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_store_id: {
-        value: cdktf.stringToHclTerraform(this._dataStoreId),
+        value: cdktn.stringToHclTerraform(this._dataStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exact_match: {
-        value: cdktf.booleanToHclTerraform(this._exactMatch),
+        value: cdktn.booleanToHclTerraform(this._exactMatch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provided_uri_pattern: {
-        value: cdktf.stringToHclTerraform(this._providedUriPattern),
+        value: cdktn.stringToHclTerraform(this._providedUriPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

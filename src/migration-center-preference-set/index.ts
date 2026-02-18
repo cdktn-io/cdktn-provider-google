@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MigrationCenterPreferenceSetConfig extends cdktf.TerraformMetaArguments {
+export interface MigrationCenterPreferenceSetConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description of the preference set.
   *
@@ -75,39 +75,39 @@ export interface MigrationCenterPreferenceSetTimeouts {
   readonly update?: string;
 }
 
-export function migrationCenterPreferenceSetTimeoutsToTerraform(struct?: MigrationCenterPreferenceSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function migrationCenterPreferenceSetTimeoutsToTerraform(struct?: MigrationCenterPreferenceSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function migrationCenterPreferenceSetTimeoutsToHclTerraform(struct?: MigrationCenterPreferenceSetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function migrationCenterPreferenceSetTimeoutsToHclTerraform(struct?: MigrationCenterPreferenceSetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,19 +118,19 @@ export function migrationCenterPreferenceSetTimeoutsToHclTerraform(struct?: Migr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MigrationCenterPreferenceSetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MigrationCenterPreferenceSetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,7 +151,7 @@ export class MigrationCenterPreferenceSetTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MigrationCenterPreferenceSetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MigrationCenterPreferenceSetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class MigrationCenterPreferenceSetTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -229,25 +229,25 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEng
   readonly code?: string;
 }
 
-export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    code: cdktf.stringToTerraform(struct!.code),
+    code: cdktn.stringToTerraform(struct!.code),
   }
 }
 
 
-export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     code: {
-      value: cdktf.stringToHclTerraform(struct!.code),
+      value: cdktn.stringToHclTerraform(struct!.code),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,9 +258,9 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEngi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -268,11 +268,11 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEngineP
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktf.IResolvable | undefined {
+  public get internalValue(): MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -285,13 +285,13 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEngineP
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._code = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -319,15 +319,15 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEngineP
   }
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList extends cdktf.ComplexList {
-  public internalValue? : MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries[] | cdktf.IResolvable
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList extends cdktn.ComplexList {
+  public internalValue? : MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -344,28 +344,28 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEng
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/migration_center_preference_set#allowed_machine_series MigrationCenterPreferenceSet#allowed_machine_series}
   */
-  readonly allowedMachineSeries?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries[] | cdktf.IResolvable;
+  readonly allowedMachineSeries?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries[] | cdktn.IResolvable;
 }
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_machine_series: cdktf.listMapper(migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToTerraform, true)(struct!.allowedMachineSeries),
+    allowed_machine_series: cdktn.listMapper(migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToTerraform, true)(struct!.allowedMachineSeries),
   }
 }
 
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_machine_series: {
-      value: cdktf.listMapperHcl(migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToHclTerraform, true)(struct!.allowedMachineSeries),
+      value: cdktn.listMapperHcl(migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesToHclTerraform, true)(struct!.allowedMachineSeries),
       isBlock: true,
       type: "list",
       storageClassType: "MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeriesList",
@@ -376,14 +376,14 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEngi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -413,7 +413,7 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEngineP
   public get allowedMachineSeries() {
     return this._allowedMachineSeries;
   }
-  public putAllowedMachineSeries(value: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries[] | cdktf.IResolvable) {
+  public putAllowedMachineSeries(value: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesAllowedMachineSeries[] | cdktn.IResolvable) {
     this._allowedMachineSeries.internalValue = value;
   }
   public resetAllowedMachineSeries() {
@@ -440,25 +440,25 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEng
 }
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    license_type: cdktf.stringToTerraform(struct!.licenseType),
+    license_type: cdktn.stringToTerraform(struct!.licenseType),
     machine_preferences: migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesMachinePreferencesToTerraform(struct!.machinePreferences),
   }
 }
 
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     license_type: {
-      value: cdktf.stringToHclTerraform(struct!.licenseType),
+      value: cdktn.stringToHclTerraform(struct!.licenseType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -475,14 +475,14 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesComputeEngi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -555,24 +555,24 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPref
 }
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preferred_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.preferredRegions),
+    preferred_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.preferredRegions),
   }
 }
 
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preferred_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.preferredRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.preferredRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -583,14 +583,14 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesRegionPrefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -640,25 +640,25 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenanc
   readonly nodeName?: string;
 }
 
-export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    node_name: cdktf.stringToTerraform(struct!.nodeName),
+    node_name: cdktn.stringToTerraform(struct!.nodeName),
   }
 }
 
 
-export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     node_name: {
-      value: cdktf.stringToHclTerraform(struct!.nodeName),
+      value: cdktn.stringToHclTerraform(struct!.nodeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -669,9 +669,9 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -679,11 +679,11 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPre
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktf.IResolvable | undefined {
+  public get internalValue(): MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -696,13 +696,13 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPre
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nodeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -730,15 +730,15 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPre
   }
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList extends cdktf.ComplexList {
-  public internalValue? : MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes[] | cdktf.IResolvable
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList extends cdktn.ComplexList {
+  public internalValue? : MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -773,49 +773,49 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenanc
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/migration_center_preference_set#node_types MigrationCenterPreferenceSet#node_types}
   */
-  readonly nodeTypes?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes[] | cdktf.IResolvable;
+  readonly nodeTypes?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes[] | cdktn.IResolvable;
 }
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commitment_plan: cdktf.stringToTerraform(struct!.commitmentPlan),
-    cpu_overcommit_ratio: cdktf.numberToTerraform(struct!.cpuOvercommitRatio),
-    host_maintenance_policy: cdktf.stringToTerraform(struct!.hostMaintenancePolicy),
-    node_types: cdktf.listMapper(migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToTerraform, true)(struct!.nodeTypes),
+    commitment_plan: cdktn.stringToTerraform(struct!.commitmentPlan),
+    cpu_overcommit_ratio: cdktn.numberToTerraform(struct!.cpuOvercommitRatio),
+    host_maintenance_policy: cdktn.stringToTerraform(struct!.hostMaintenancePolicy),
+    node_types: cdktn.listMapper(migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToTerraform, true)(struct!.nodeTypes),
   }
 }
 
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commitment_plan: {
-      value: cdktf.stringToHclTerraform(struct!.commitmentPlan),
+      value: cdktn.stringToHclTerraform(struct!.commitmentPlan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cpu_overcommit_ratio: {
-      value: cdktf.numberToHclTerraform(struct!.cpuOvercommitRatio),
+      value: cdktn.numberToHclTerraform(struct!.cpuOvercommitRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     host_maintenance_policy: {
-      value: cdktf.stringToHclTerraform(struct!.hostMaintenancePolicy),
+      value: cdktn.stringToHclTerraform(struct!.hostMaintenancePolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     node_types: {
-      value: cdktf.listMapperHcl(migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToHclTerraform, true)(struct!.nodeTypes),
+      value: cdktn.listMapperHcl(migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesToHclTerraform, true)(struct!.nodeTypes),
       isBlock: true,
       type: "list",
       storageClassType: "MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypesList",
@@ -826,14 +826,14 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -929,7 +929,7 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPre
   public get nodeTypes() {
     return this._nodeTypes;
   }
-  public putNodeTypes(value: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes[] | cdktf.IResolvable) {
+  public putNodeTypes(value: MigrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesNodeTypes[] | cdktn.IResolvable) {
     this._nodeTypes.internalValue = value;
   }
   public resetNodeTypes() {
@@ -968,45 +968,45 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEngi
 }
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commitment_plan: cdktf.stringToTerraform(struct!.commitmentPlan),
-    cpu_overcommit_ratio: cdktf.numberToTerraform(struct!.cpuOvercommitRatio),
-    memory_overcommit_ratio: cdktf.numberToTerraform(struct!.memoryOvercommitRatio),
-    storage_deduplication_compression_ratio: cdktf.numberToTerraform(struct!.storageDeduplicationCompressionRatio),
+    commitment_plan: cdktn.stringToTerraform(struct!.commitmentPlan),
+    cpu_overcommit_ratio: cdktn.numberToTerraform(struct!.cpuOvercommitRatio),
+    memory_overcommit_ratio: cdktn.numberToTerraform(struct!.memoryOvercommitRatio),
+    storage_deduplication_compression_ratio: cdktn.numberToTerraform(struct!.storageDeduplicationCompressionRatio),
   }
 }
 
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commitment_plan: {
-      value: cdktf.stringToHclTerraform(struct!.commitmentPlan),
+      value: cdktn.stringToHclTerraform(struct!.commitmentPlan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cpu_overcommit_ratio: {
-      value: cdktf.numberToHclTerraform(struct!.cpuOvercommitRatio),
+      value: cdktn.numberToHclTerraform(struct!.cpuOvercommitRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     memory_overcommit_ratio: {
-      value: cdktf.numberToHclTerraform(struct!.memoryOvercommitRatio),
+      value: cdktn.numberToHclTerraform(struct!.memoryOvercommitRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     storage_deduplication_compression_ratio: {
-      value: cdktf.numberToHclTerraform(struct!.storageDeduplicationCompressionRatio),
+      value: cdktn.numberToHclTerraform(struct!.storageDeduplicationCompressionRatio),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1017,14 +1017,14 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesVmwareEngin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesVmwareEnginePreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1177,14 +1177,14 @@ export interface MigrationCenterPreferenceSetVirtualMachinePreferences {
 }
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesToTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    commitment_plan: cdktf.stringToTerraform(struct!.commitmentPlan),
-    sizing_optimization_strategy: cdktf.stringToTerraform(struct!.sizingOptimizationStrategy),
-    target_product: cdktf.stringToTerraform(struct!.targetProduct),
+    commitment_plan: cdktn.stringToTerraform(struct!.commitmentPlan),
+    sizing_optimization_strategy: cdktn.stringToTerraform(struct!.sizingOptimizationStrategy),
+    target_product: cdktn.stringToTerraform(struct!.targetProduct),
     compute_engine_preferences: migrationCenterPreferenceSetVirtualMachinePreferencesComputeEnginePreferencesToTerraform(struct!.computeEnginePreferences),
     region_preferences: migrationCenterPreferenceSetVirtualMachinePreferencesRegionPreferencesToTerraform(struct!.regionPreferences),
     sole_tenancy_preferences: migrationCenterPreferenceSetVirtualMachinePreferencesSoleTenancyPreferencesToTerraform(struct!.soleTenancyPreferences),
@@ -1194,25 +1194,25 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesToTerraform
 
 
 export function migrationCenterPreferenceSetVirtualMachinePreferencesToHclTerraform(struct?: MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference | MigrationCenterPreferenceSetVirtualMachinePreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     commitment_plan: {
-      value: cdktf.stringToHclTerraform(struct!.commitmentPlan),
+      value: cdktn.stringToHclTerraform(struct!.commitmentPlan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sizing_optimization_strategy: {
-      value: cdktf.stringToHclTerraform(struct!.sizingOptimizationStrategy),
+      value: cdktn.stringToHclTerraform(struct!.sizingOptimizationStrategy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_product: {
-      value: cdktf.stringToHclTerraform(struct!.targetProduct),
+      value: cdktn.stringToHclTerraform(struct!.targetProduct),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1247,14 +1247,14 @@ export function migrationCenterPreferenceSetVirtualMachinePreferencesToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference extends cdktf.ComplexObject {
+export class MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1431,7 +1431,7 @@ export class MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/migration_center_preference_set google_migration_center_preference_set}
 */
-export class MigrationCenterPreferenceSet extends cdktf.TerraformResource {
+export class MigrationCenterPreferenceSet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1442,14 +1442,14 @@ export class MigrationCenterPreferenceSet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MigrationCenterPreferenceSet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MigrationCenterPreferenceSet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MigrationCenterPreferenceSet to import
   * @param importFromId The id of the existing MigrationCenterPreferenceSet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/migration_center_preference_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MigrationCenterPreferenceSet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_migration_center_preference_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_migration_center_preference_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -1636,12 +1636,12 @@ export class MigrationCenterPreferenceSet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      preference_set_id: cdktf.stringToTerraform(this._preferenceSetId),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      preference_set_id: cdktn.stringToTerraform(this._preferenceSetId),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: migrationCenterPreferenceSetTimeoutsToTerraform(this._timeouts.internalValue),
       virtual_machine_preferences: migrationCenterPreferenceSetVirtualMachinePreferencesToTerraform(this._virtualMachinePreferences.internalValue),
     };
@@ -1650,37 +1650,37 @@ export class MigrationCenterPreferenceSet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preference_set_id: {
-        value: cdktf.stringToHclTerraform(this._preferenceSetId),
+        value: cdktn.stringToHclTerraform(this._preferenceSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

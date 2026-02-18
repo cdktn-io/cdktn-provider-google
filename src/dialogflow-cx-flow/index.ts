@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxFlowConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxFlowConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description of the flow. The maximum length is 500 characters. If exceeded, the request is rejected.
   *
@@ -39,7 +39,7 @@ export interface DialogflowCxFlowConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#is_default_start_flow DialogflowCxFlow#is_default_start_flow}
   */
-  readonly isDefaultStartFlow?: boolean | cdktf.IResolvable;
+  readonly isDefaultStartFlow?: boolean | cdktn.IResolvable;
   /**
   * The language of the following fields in flow:
   * Flow.event_handlers.trigger_fulfillment.messages
@@ -78,7 +78,7 @@ export interface DialogflowCxFlowConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#event_handlers DialogflowCxFlow#event_handlers}
   */
-  readonly eventHandlers?: DialogflowCxFlowEventHandlers[] | cdktf.IResolvable;
+  readonly eventHandlers?: DialogflowCxFlowEventHandlers[] | cdktn.IResolvable;
   /**
   * knowledge_connector_settings block
   *
@@ -102,7 +102,7 @@ export interface DialogflowCxFlowConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#transition_routes DialogflowCxFlow#transition_routes}
   */
-  readonly transitionRoutes?: DialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable;
+  readonly transitionRoutes?: DialogflowCxFlowTransitionRoutes[] | cdktn.IResolvable;
 }
 export interface DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination {
   /**
@@ -115,24 +115,24 @@ export interface DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination {
 }
 
 export function dialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationToTerraform(struct?: DialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference | DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function dialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationToHclTerraform(struct?: DialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference | DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -143,14 +143,14 @@ export function dialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -197,7 +197,7 @@ export interface DialogflowCxFlowAdvancedSettingsDtmfSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The digit that terminates a DTMF digit sequence.
   *
@@ -213,38 +213,38 @@ export interface DialogflowCxFlowAdvancedSettingsDtmfSettings {
 }
 
 export function dialogflowCxFlowAdvancedSettingsDtmfSettingsToTerraform(struct?: DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxFlowAdvancedSettingsDtmfSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    finish_digit: cdktf.stringToTerraform(struct!.finishDigit),
-    max_digits: cdktf.numberToTerraform(struct!.maxDigits),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    finish_digit: cdktn.stringToTerraform(struct!.finishDigit),
+    max_digits: cdktn.numberToTerraform(struct!.maxDigits),
   }
 }
 
 
 export function dialogflowCxFlowAdvancedSettingsDtmfSettingsToHclTerraform(struct?: DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxFlowAdvancedSettingsDtmfSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     finish_digit: {
-      value: cdktf.stringToHclTerraform(struct!.finishDigit),
+      value: cdktn.stringToHclTerraform(struct!.finishDigit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_digits: {
-      value: cdktf.numberToHclTerraform(struct!.maxDigits),
+      value: cdktn.numberToHclTerraform(struct!.maxDigits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -255,14 +255,14 @@ export function dialogflowCxFlowAdvancedSettingsDtmfSettingsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -300,11 +300,11 @@ export class DialogflowCxFlowAdvancedSettingsDtmfSettingsOutputReference extends
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -353,54 +353,54 @@ export interface DialogflowCxFlowAdvancedSettingsLoggingSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_consent_based_redaction DialogflowCxFlow#enable_consent_based_redaction}
   */
-  readonly enableConsentBasedRedaction?: boolean | cdktf.IResolvable;
+  readonly enableConsentBasedRedaction?: boolean | cdktn.IResolvable;
   /**
   * Enables DF Interaction logging.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_interaction_logging DialogflowCxFlow#enable_interaction_logging}
   */
-  readonly enableInteractionLogging?: boolean | cdktf.IResolvable;
+  readonly enableInteractionLogging?: boolean | cdktn.IResolvable;
   /**
   * Enables Google Cloud Logging.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_stackdriver_logging DialogflowCxFlow#enable_stackdriver_logging}
   */
-  readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
+  readonly enableStackdriverLogging?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowCxFlowAdvancedSettingsLoggingSettingsToTerraform(struct?: DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference | DialogflowCxFlowAdvancedSettingsLoggingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_consent_based_redaction: cdktf.booleanToTerraform(struct!.enableConsentBasedRedaction),
-    enable_interaction_logging: cdktf.booleanToTerraform(struct!.enableInteractionLogging),
-    enable_stackdriver_logging: cdktf.booleanToTerraform(struct!.enableStackdriverLogging),
+    enable_consent_based_redaction: cdktn.booleanToTerraform(struct!.enableConsentBasedRedaction),
+    enable_interaction_logging: cdktn.booleanToTerraform(struct!.enableInteractionLogging),
+    enable_stackdriver_logging: cdktn.booleanToTerraform(struct!.enableStackdriverLogging),
   }
 }
 
 
 export function dialogflowCxFlowAdvancedSettingsLoggingSettingsToHclTerraform(struct?: DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference | DialogflowCxFlowAdvancedSettingsLoggingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_consent_based_redaction: {
-      value: cdktf.booleanToHclTerraform(struct!.enableConsentBasedRedaction),
+      value: cdktn.booleanToHclTerraform(struct!.enableConsentBasedRedaction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_interaction_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.enableInteractionLogging),
+      value: cdktn.booleanToHclTerraform(struct!.enableInteractionLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_stackdriver_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.enableStackdriverLogging),
+      value: cdktn.booleanToHclTerraform(struct!.enableStackdriverLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -411,14 +411,14 @@ export function dialogflowCxFlowAdvancedSettingsLoggingSettingsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -456,11 +456,11 @@ export class DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference exte
   }
 
   // enable_consent_based_redaction - computed: false, optional: true, required: false
-  private _enableConsentBasedRedaction?: boolean | cdktf.IResolvable; 
+  private _enableConsentBasedRedaction?: boolean | cdktn.IResolvable; 
   public get enableConsentBasedRedaction() {
     return this.getBooleanAttribute('enable_consent_based_redaction');
   }
-  public set enableConsentBasedRedaction(value: boolean | cdktf.IResolvable) {
+  public set enableConsentBasedRedaction(value: boolean | cdktn.IResolvable) {
     this._enableConsentBasedRedaction = value;
   }
   public resetEnableConsentBasedRedaction() {
@@ -472,11 +472,11 @@ export class DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference exte
   }
 
   // enable_interaction_logging - computed: false, optional: true, required: false
-  private _enableInteractionLogging?: boolean | cdktf.IResolvable; 
+  private _enableInteractionLogging?: boolean | cdktn.IResolvable; 
   public get enableInteractionLogging() {
     return this.getBooleanAttribute('enable_interaction_logging');
   }
-  public set enableInteractionLogging(value: boolean | cdktf.IResolvable) {
+  public set enableInteractionLogging(value: boolean | cdktn.IResolvable) {
     this._enableInteractionLogging = value;
   }
   public resetEnableInteractionLogging() {
@@ -488,11 +488,11 @@ export class DialogflowCxFlowAdvancedSettingsLoggingSettingsOutputReference exte
   }
 
   // enable_stackdriver_logging - computed: false, optional: true, required: false
-  private _enableStackdriverLogging?: boolean | cdktf.IResolvable; 
+  private _enableStackdriverLogging?: boolean | cdktn.IResolvable; 
   public get enableStackdriverLogging() {
     return this.getBooleanAttribute('enable_stackdriver_logging');
   }
-  public set enableStackdriverLogging(value: boolean | cdktf.IResolvable) {
+  public set enableStackdriverLogging(value: boolean | cdktn.IResolvable) {
     this._enableStackdriverLogging = value;
   }
   public resetEnableStackdriverLogging() {
@@ -529,49 +529,49 @@ export interface DialogflowCxFlowAdvancedSettingsSpeechSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#use_timeout_based_endpointing DialogflowCxFlow#use_timeout_based_endpointing}
   */
-  readonly useTimeoutBasedEndpointing?: boolean | cdktf.IResolvable;
+  readonly useTimeoutBasedEndpointing?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowCxFlowAdvancedSettingsSpeechSettingsToTerraform(struct?: DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference | DialogflowCxFlowAdvancedSettingsSpeechSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpointer_sensitivity: cdktf.numberToTerraform(struct!.endpointerSensitivity),
-    models: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.models),
-    no_speech_timeout: cdktf.stringToTerraform(struct!.noSpeechTimeout),
-    use_timeout_based_endpointing: cdktf.booleanToTerraform(struct!.useTimeoutBasedEndpointing),
+    endpointer_sensitivity: cdktn.numberToTerraform(struct!.endpointerSensitivity),
+    models: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.models),
+    no_speech_timeout: cdktn.stringToTerraform(struct!.noSpeechTimeout),
+    use_timeout_based_endpointing: cdktn.booleanToTerraform(struct!.useTimeoutBasedEndpointing),
   }
 }
 
 
 export function dialogflowCxFlowAdvancedSettingsSpeechSettingsToHclTerraform(struct?: DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference | DialogflowCxFlowAdvancedSettingsSpeechSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpointer_sensitivity: {
-      value: cdktf.numberToHclTerraform(struct!.endpointerSensitivity),
+      value: cdktn.numberToHclTerraform(struct!.endpointerSensitivity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     models: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.models),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.models),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     no_speech_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.noSpeechTimeout),
+      value: cdktn.stringToHclTerraform(struct!.noSpeechTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_timeout_based_endpointing: {
-      value: cdktf.booleanToHclTerraform(struct!.useTimeoutBasedEndpointing),
+      value: cdktn.booleanToHclTerraform(struct!.useTimeoutBasedEndpointing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -582,14 +582,14 @@ export function dialogflowCxFlowAdvancedSettingsSpeechSettingsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -681,11 +681,11 @@ export class DialogflowCxFlowAdvancedSettingsSpeechSettingsOutputReference exten
   }
 
   // use_timeout_based_endpointing - computed: false, optional: true, required: false
-  private _useTimeoutBasedEndpointing?: boolean | cdktf.IResolvable; 
+  private _useTimeoutBasedEndpointing?: boolean | cdktn.IResolvable; 
   public get useTimeoutBasedEndpointing() {
     return this.getBooleanAttribute('use_timeout_based_endpointing');
   }
-  public set useTimeoutBasedEndpointing(value: boolean | cdktf.IResolvable) {
+  public set useTimeoutBasedEndpointing(value: boolean | cdktn.IResolvable) {
     this._useTimeoutBasedEndpointing = value;
   }
   public resetUseTimeoutBasedEndpointing() {
@@ -724,8 +724,8 @@ export interface DialogflowCxFlowAdvancedSettings {
 }
 
 export function dialogflowCxFlowAdvancedSettingsToTerraform(struct?: DialogflowCxFlowAdvancedSettingsOutputReference | DialogflowCxFlowAdvancedSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -738,8 +738,8 @@ export function dialogflowCxFlowAdvancedSettingsToTerraform(struct?: DialogflowC
 
 
 export function dialogflowCxFlowAdvancedSettingsToHclTerraform(struct?: DialogflowCxFlowAdvancedSettingsOutputReference | DialogflowCxFlowAdvancedSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -773,14 +773,14 @@ export function dialogflowCxFlowAdvancedSettingsToHclTerraform(struct?: Dialogfl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowAdvancedSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowAdvancedSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -897,25 +897,25 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases
   readonly cases?: string;
 }
 
-export function dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cases: cdktf.stringToTerraform(struct!.cases),
+    cases: cdktn.stringToTerraform(struct!.cases),
   }
 }
 
 
-export function dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cases: {
-      value: cdktf.stringToHclTerraform(struct!.cases),
+      value: cdktn.stringToHclTerraform(struct!.cases),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -926,9 +926,9 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -936,11 +936,11 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -953,13 +953,13 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cases = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -987,15 +987,15 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutp
   }
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases[] | cdktf.IResolvable
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1016,24 +1016,24 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversa
 }
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata: cdktf.stringToTerraform(struct!.metadata),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
   }
 }
 
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1044,14 +1044,14 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1102,24 +1102,24 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgen
 }
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata: cdktf.stringToTerraform(struct!.metadata),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
   }
 }
 
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoff): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1130,14 +1130,14 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgent
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1194,31 +1194,31 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAu
 }
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ssml: cdktf.stringToTerraform(struct!.ssml),
-    text: cdktf.stringToTerraform(struct!.text),
+    ssml: cdktn.stringToTerraform(struct!.ssml),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ssml: {
-      value: cdktf.stringToHclTerraform(struct!.ssml),
+      value: cdktn.stringToHclTerraform(struct!.ssml),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1229,14 +1229,14 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1314,24 +1314,24 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudi
 }
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audio_uri: cdktf.stringToTerraform(struct!.audioUri),
+    audio_uri: cdktn.stringToTerraform(struct!.audioUri),
   }
 }
 
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audio_uri: {
-      value: cdktf.stringToHclTerraform(struct!.audioUri),
+      value: cdktn.stringToHclTerraform(struct!.audioUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1342,14 +1342,14 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesPlayAudioOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1402,24 +1402,24 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephon
 }
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
   }
 }
 
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1430,14 +1430,14 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephony
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTelephonyTransferCallOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1485,24 +1485,24 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText {
 }
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.text),
+    text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
   }
 }
 
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.text),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.text),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1513,14 +1513,14 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1617,14 +1617,14 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentMessages {
   readonly text?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText;
 }
 
-export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel: cdktf.stringToTerraform(struct!.channel),
-    payload: cdktf.stringToTerraform(struct!.payload),
+    channel: cdktn.stringToTerraform(struct!.channel),
+    payload: cdktn.stringToTerraform(struct!.payload),
     conversation_success: dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesConversationSuccessToTerraform(struct!.conversationSuccess),
     live_agent_handoff: dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct!.liveAgentHandoff),
     output_audio_text: dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct!.outputAudioText),
@@ -1635,20 +1635,20 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToTerrafo
 }
 
 
-export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel: {
-      value: cdktf.stringToHclTerraform(struct!.channel),
+      value: cdktn.stringToHclTerraform(struct!.channel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1695,9 +1695,9 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1705,11 +1705,11 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1750,7 +1750,7 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1763,7 +1763,7 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputRefere
       this._telephonyTransferCall.internalValue = undefined;
       this._text.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1910,15 +1910,15 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputRefere
   }
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1944,32 +1944,32 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActi
   readonly value?: string;
 }
 
-export function dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter: cdktf.stringToTerraform(struct!.parameter),
-    value: cdktf.stringToTerraform(struct!.value),
+    parameter: cdktn.stringToTerraform(struct!.parameter),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter: {
-      value: cdktf.stringToHclTerraform(struct!.parameter),
+      value: cdktn.stringToHclTerraform(struct!.parameter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1980,9 +1980,9 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1990,11 +1990,11 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2011,14 +2011,14 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameter = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2063,15 +2063,15 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsO
   }
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2090,13 +2090,13 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_generative_fallback DialogflowCxFlow#enable_generative_fallback}
   */
-  readonly enableGenerativeFallback?: boolean | cdktf.IResolvable;
+  readonly enableGenerativeFallback?: boolean | cdktn.IResolvable;
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
   */
-  readonly returnPartialResponses?: boolean | cdktf.IResolvable;
+  readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
@@ -2114,82 +2114,82 @@ export interface DialogflowCxFlowEventHandlersTriggerFulfillment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
   */
-  readonly conditionalCases?: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases[] | cdktf.IResolvable;
+  readonly conditionalCases?: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
   */
-  readonly messages?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable;
+  readonly messages?: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
   */
-  readonly setParameterActions?: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable;
+  readonly setParameterActions?: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentToTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_generative_fallback: cdktf.booleanToTerraform(struct!.enableGenerativeFallback),
-    return_partial_responses: cdktf.booleanToTerraform(struct!.returnPartialResponses),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    webhook: cdktf.stringToTerraform(struct!.webhook),
-    conditional_cases: cdktf.listMapper(dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToTerraform, true)(struct!.conditionalCases),
-    messages: cdktf.listMapper(dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
-    set_parameter_actions: cdktf.listMapper(dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToTerraform, true)(struct!.setParameterActions),
+    enable_generative_fallback: cdktn.booleanToTerraform(struct!.enableGenerativeFallback),
+    return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    webhook: cdktn.stringToTerraform(struct!.webhook),
+    conditional_cases: cdktn.listMapper(dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToTerraform, true)(struct!.conditionalCases),
+    messages: cdktn.listMapper(dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
+    set_parameter_actions: cdktn.listMapper(dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToTerraform, true)(struct!.setParameterActions),
   }
 }
 
 
 export function dialogflowCxFlowEventHandlersTriggerFulfillmentToHclTerraform(struct?: DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference | DialogflowCxFlowEventHandlersTriggerFulfillment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_generative_fallback: {
-      value: cdktf.booleanToHclTerraform(struct!.enableGenerativeFallback),
+      value: cdktn.booleanToHclTerraform(struct!.enableGenerativeFallback),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     return_partial_responses: {
-      value: cdktf.booleanToHclTerraform(struct!.returnPartialResponses),
+      value: cdktn.booleanToHclTerraform(struct!.returnPartialResponses),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook: {
-      value: cdktf.stringToHclTerraform(struct!.webhook),
+      value: cdktn.stringToHclTerraform(struct!.webhook),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditional_cases: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToHclTerraform, true)(struct!.conditionalCases),
+      value: cdktn.listMapperHcl(dialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesToHclTerraform, true)(struct!.conditionalCases),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesList",
     },
     messages: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToHclTerraform, true)(struct!.messages),
+      value: cdktn.listMapperHcl(dialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToHclTerraform, true)(struct!.messages),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList",
     },
     set_parameter_actions: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToHclTerraform, true)(struct!.setParameterActions),
+      value: cdktn.listMapperHcl(dialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsToHclTerraform, true)(struct!.setParameterActions),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActionsList",
@@ -2200,14 +2200,14 @@ export function dialogflowCxFlowEventHandlersTriggerFulfillmentToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2269,11 +2269,11 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference exte
   }
 
   // enable_generative_fallback - computed: false, optional: true, required: false
-  private _enableGenerativeFallback?: boolean | cdktf.IResolvable; 
+  private _enableGenerativeFallback?: boolean | cdktn.IResolvable; 
   public get enableGenerativeFallback() {
     return this.getBooleanAttribute('enable_generative_fallback');
   }
-  public set enableGenerativeFallback(value: boolean | cdktf.IResolvable) {
+  public set enableGenerativeFallback(value: boolean | cdktn.IResolvable) {
     this._enableGenerativeFallback = value;
   }
   public resetEnableGenerativeFallback() {
@@ -2285,11 +2285,11 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference exte
   }
 
   // return_partial_responses - computed: false, optional: true, required: false
-  private _returnPartialResponses?: boolean | cdktf.IResolvable; 
+  private _returnPartialResponses?: boolean | cdktn.IResolvable; 
   public get returnPartialResponses() {
     return this.getBooleanAttribute('return_partial_responses');
   }
-  public set returnPartialResponses(value: boolean | cdktf.IResolvable) {
+  public set returnPartialResponses(value: boolean | cdktn.IResolvable) {
     this._returnPartialResponses = value;
   }
   public resetReturnPartialResponses() {
@@ -2337,7 +2337,7 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference exte
   public get conditionalCases() {
     return this._conditionalCases;
   }
-  public putConditionalCases(value: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases[] | cdktf.IResolvable) {
+  public putConditionalCases(value: DialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCases[] | cdktn.IResolvable) {
     this._conditionalCases.internalValue = value;
   }
   public resetConditionalCases() {
@@ -2353,7 +2353,7 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference exte
   public get messages() {
     return this._messages;
   }
-  public putMessages(value: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable) {
+  public putMessages(value: DialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktn.IResolvable) {
     this._messages.internalValue = value;
   }
   public resetMessages() {
@@ -2369,7 +2369,7 @@ export class DialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference exte
   public get setParameterActions() {
     return this._setParameterActions;
   }
-  public putSetParameterActions(value: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable) {
+  public putSetParameterActions(value: DialogflowCxFlowEventHandlersTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable) {
     this._setParameterActions.internalValue = value;
   }
   public resetSetParameterActions() {
@@ -2409,40 +2409,40 @@ export interface DialogflowCxFlowEventHandlers {
   readonly triggerFulfillment?: DialogflowCxFlowEventHandlersTriggerFulfillment;
 }
 
-export function dialogflowCxFlowEventHandlersToTerraform(struct?: DialogflowCxFlowEventHandlers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersToTerraform(struct?: DialogflowCxFlowEventHandlers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event: cdktf.stringToTerraform(struct!.event),
-    target_flow: cdktf.stringToTerraform(struct!.targetFlow),
-    target_page: cdktf.stringToTerraform(struct!.targetPage),
+    event: cdktn.stringToTerraform(struct!.event),
+    target_flow: cdktn.stringToTerraform(struct!.targetFlow),
+    target_page: cdktn.stringToTerraform(struct!.targetPage),
     trigger_fulfillment: dialogflowCxFlowEventHandlersTriggerFulfillmentToTerraform(struct!.triggerFulfillment),
   }
 }
 
 
-export function dialogflowCxFlowEventHandlersToHclTerraform(struct?: DialogflowCxFlowEventHandlers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowEventHandlersToHclTerraform(struct?: DialogflowCxFlowEventHandlers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event: {
-      value: cdktf.stringToHclTerraform(struct!.event),
+      value: cdktn.stringToHclTerraform(struct!.event),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_flow: {
-      value: cdktf.stringToHclTerraform(struct!.targetFlow),
+      value: cdktn.stringToHclTerraform(struct!.targetFlow),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_page: {
-      value: cdktf.stringToHclTerraform(struct!.targetPage),
+      value: cdktn.stringToHclTerraform(struct!.targetPage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2459,9 +2459,9 @@ export function dialogflowCxFlowEventHandlersToHclTerraform(struct?: DialogflowC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowEventHandlersOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowEventHandlersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2469,11 +2469,11 @@ export class DialogflowCxFlowEventHandlersOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowEventHandlers | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowEventHandlers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2498,7 +2498,7 @@ export class DialogflowCxFlowEventHandlersOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowEventHandlers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowEventHandlers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2507,7 +2507,7 @@ export class DialogflowCxFlowEventHandlersOutputReference extends cdktf.ComplexO
       this._targetPage = undefined;
       this._triggerFulfillment.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2591,15 +2591,15 @@ export class DialogflowCxFlowEventHandlersOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DialogflowCxFlowEventHandlersList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowEventHandlers[] | cdktf.IResolvable
+export class DialogflowCxFlowEventHandlersList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowEventHandlers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2636,39 +2636,39 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections 
   readonly documentProcessingMode?: string;
 }
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_store: cdktf.stringToTerraform(struct!.dataStore),
-    data_store_type: cdktf.stringToTerraform(struct!.dataStoreType),
-    document_processing_mode: cdktf.stringToTerraform(struct!.documentProcessingMode),
+    data_store: cdktn.stringToTerraform(struct!.dataStore),
+    data_store_type: cdktn.stringToTerraform(struct!.dataStoreType),
+    document_processing_mode: cdktn.stringToTerraform(struct!.documentProcessingMode),
   }
 }
 
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_store: {
-      value: cdktf.stringToHclTerraform(struct!.dataStore),
+      value: cdktn.stringToHclTerraform(struct!.dataStore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_store_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataStoreType),
+      value: cdktn.stringToHclTerraform(struct!.dataStoreType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     document_processing_mode: {
-      value: cdktf.stringToHclTerraform(struct!.documentProcessingMode),
+      value: cdktn.stringToHclTerraform(struct!.documentProcessingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2679,9 +2679,9 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2689,11 +2689,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2714,7 +2714,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2722,7 +2722,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutpu
       this._dataStoreType = undefined;
       this._documentProcessingMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2784,15 +2784,15 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutpu
   }
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections[] | cdktf.IResolvable
+export class DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2809,7 +2809,7 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdv
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Endpoint timeout setting for matching dtmf input to regex.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.500s".
@@ -2839,52 +2839,52 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdv
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    endpointing_timeout_duration: cdktf.stringToTerraform(struct!.endpointingTimeoutDuration),
-    finish_digit: cdktf.stringToTerraform(struct!.finishDigit),
-    interdigit_timeout_duration: cdktf.stringToTerraform(struct!.interdigitTimeoutDuration),
-    max_digits: cdktf.numberToTerraform(struct!.maxDigits),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    endpointing_timeout_duration: cdktn.stringToTerraform(struct!.endpointingTimeoutDuration),
+    finish_digit: cdktn.stringToTerraform(struct!.finishDigit),
+    interdigit_timeout_duration: cdktn.stringToTerraform(struct!.interdigitTimeoutDuration),
+    max_digits: cdktn.numberToTerraform(struct!.maxDigits),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     endpointing_timeout_duration: {
-      value: cdktf.stringToHclTerraform(struct!.endpointingTimeoutDuration),
+      value: cdktn.stringToHclTerraform(struct!.endpointingTimeoutDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     finish_digit: {
-      value: cdktf.stringToHclTerraform(struct!.finishDigit),
+      value: cdktn.stringToHclTerraform(struct!.finishDigit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interdigit_timeout_duration: {
-      value: cdktf.stringToHclTerraform(struct!.interdigitTimeoutDuration),
+      value: cdktn.stringToHclTerraform(struct!.interdigitTimeoutDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_digits: {
-      value: cdktf.numberToHclTerraform(struct!.maxDigits),
+      value: cdktn.numberToHclTerraform(struct!.maxDigits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2895,14 +2895,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdva
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsDtmfSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2952,11 +2952,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvance
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -3037,54 +3037,54 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdv
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_consent_based_redaction DialogflowCxFlow#enable_consent_based_redaction}
   */
-  readonly enableConsentBasedRedaction?: boolean | cdktf.IResolvable;
+  readonly enableConsentBasedRedaction?: boolean | cdktn.IResolvable;
   /**
   * Enables DF Interaction logging.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_interaction_logging DialogflowCxFlow#enable_interaction_logging}
   */
-  readonly enableInteractionLogging?: boolean | cdktf.IResolvable;
+  readonly enableInteractionLogging?: boolean | cdktn.IResolvable;
   /**
   * Enables Google Cloud Logging.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_stackdriver_logging DialogflowCxFlow#enable_stackdriver_logging}
   */
-  readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
+  readonly enableStackdriverLogging?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_consent_based_redaction: cdktf.booleanToTerraform(struct!.enableConsentBasedRedaction),
-    enable_interaction_logging: cdktf.booleanToTerraform(struct!.enableInteractionLogging),
-    enable_stackdriver_logging: cdktf.booleanToTerraform(struct!.enableStackdriverLogging),
+    enable_consent_based_redaction: cdktn.booleanToTerraform(struct!.enableConsentBasedRedaction),
+    enable_interaction_logging: cdktn.booleanToTerraform(struct!.enableInteractionLogging),
+    enable_stackdriver_logging: cdktn.booleanToTerraform(struct!.enableStackdriverLogging),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_consent_based_redaction: {
-      value: cdktf.booleanToHclTerraform(struct!.enableConsentBasedRedaction),
+      value: cdktn.booleanToHclTerraform(struct!.enableConsentBasedRedaction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_interaction_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.enableInteractionLogging),
+      value: cdktn.booleanToHclTerraform(struct!.enableInteractionLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_stackdriver_logging: {
-      value: cdktf.booleanToHclTerraform(struct!.enableStackdriverLogging),
+      value: cdktn.booleanToHclTerraform(struct!.enableStackdriverLogging),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3095,14 +3095,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdva
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsLoggingSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3140,11 +3140,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvance
   }
 
   // enable_consent_based_redaction - computed: false, optional: true, required: false
-  private _enableConsentBasedRedaction?: boolean | cdktf.IResolvable; 
+  private _enableConsentBasedRedaction?: boolean | cdktn.IResolvable; 
   public get enableConsentBasedRedaction() {
     return this.getBooleanAttribute('enable_consent_based_redaction');
   }
-  public set enableConsentBasedRedaction(value: boolean | cdktf.IResolvable) {
+  public set enableConsentBasedRedaction(value: boolean | cdktn.IResolvable) {
     this._enableConsentBasedRedaction = value;
   }
   public resetEnableConsentBasedRedaction() {
@@ -3156,11 +3156,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvance
   }
 
   // enable_interaction_logging - computed: false, optional: true, required: false
-  private _enableInteractionLogging?: boolean | cdktf.IResolvable; 
+  private _enableInteractionLogging?: boolean | cdktn.IResolvable; 
   public get enableInteractionLogging() {
     return this.getBooleanAttribute('enable_interaction_logging');
   }
-  public set enableInteractionLogging(value: boolean | cdktf.IResolvable) {
+  public set enableInteractionLogging(value: boolean | cdktn.IResolvable) {
     this._enableInteractionLogging = value;
   }
   public resetEnableInteractionLogging() {
@@ -3172,11 +3172,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvance
   }
 
   // enable_stackdriver_logging - computed: false, optional: true, required: false
-  private _enableStackdriverLogging?: boolean | cdktf.IResolvable; 
+  private _enableStackdriverLogging?: boolean | cdktn.IResolvable; 
   public get enableStackdriverLogging() {
     return this.getBooleanAttribute('enable_stackdriver_logging');
   }
-  public set enableStackdriverLogging(value: boolean | cdktf.IResolvable) {
+  public set enableStackdriverLogging(value: boolean | cdktn.IResolvable) {
     this._enableStackdriverLogging = value;
   }
   public resetEnableStackdriverLogging() {
@@ -3213,49 +3213,49 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdv
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#use_timeout_based_endpointing DialogflowCxFlow#use_timeout_based_endpointing}
   */
-  readonly useTimeoutBasedEndpointing?: boolean | cdktf.IResolvable;
+  readonly useTimeoutBasedEndpointing?: boolean | cdktn.IResolvable;
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpointer_sensitivity: cdktf.numberToTerraform(struct!.endpointerSensitivity),
-    models: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.models),
-    no_speech_timeout: cdktf.stringToTerraform(struct!.noSpeechTimeout),
-    use_timeout_based_endpointing: cdktf.booleanToTerraform(struct!.useTimeoutBasedEndpointing),
+    endpointer_sensitivity: cdktn.numberToTerraform(struct!.endpointerSensitivity),
+    models: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.models),
+    no_speech_timeout: cdktn.stringToTerraform(struct!.noSpeechTimeout),
+    use_timeout_based_endpointing: cdktn.booleanToTerraform(struct!.useTimeoutBasedEndpointing),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpointer_sensitivity: {
-      value: cdktf.numberToHclTerraform(struct!.endpointerSensitivity),
+      value: cdktn.numberToHclTerraform(struct!.endpointerSensitivity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     models: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.models),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.models),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     no_speech_timeout: {
-      value: cdktf.stringToHclTerraform(struct!.noSpeechTimeout),
+      value: cdktn.stringToHclTerraform(struct!.noSpeechTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_timeout_based_endpointing: {
-      value: cdktf.booleanToHclTerraform(struct!.useTimeoutBasedEndpointing),
+      value: cdktn.booleanToHclTerraform(struct!.useTimeoutBasedEndpointing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3266,14 +3266,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdva
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsSpeechSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3365,11 +3365,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvance
   }
 
   // use_timeout_based_endpointing - computed: false, optional: true, required: false
-  private _useTimeoutBasedEndpointing?: boolean | cdktf.IResolvable; 
+  private _useTimeoutBasedEndpointing?: boolean | cdktn.IResolvable; 
   public get useTimeoutBasedEndpointing() {
     return this.getBooleanAttribute('use_timeout_based_endpointing');
   }
-  public set useTimeoutBasedEndpointing(value: boolean | cdktf.IResolvable) {
+  public set useTimeoutBasedEndpointing(value: boolean | cdktn.IResolvable) {
     this._useTimeoutBasedEndpointing = value;
   }
   public resetUseTimeoutBasedEndpointing() {
@@ -3402,8 +3402,8 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdv
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3415,8 +3415,8 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdva
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3444,14 +3444,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdva
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3546,25 +3546,25 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentCon
   readonly cases?: string;
 }
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cases: cdktf.stringToTerraform(struct!.cases),
+    cases: cdktn.stringToTerraform(struct!.cases),
   }
 }
 
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cases: {
-      value: cdktf.stringToHclTerraform(struct!.cases),
+      value: cdktn.stringToHclTerraform(struct!.cases),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3575,9 +3575,9 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentCond
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3585,11 +3585,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3602,13 +3602,13 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cases = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3636,15 +3636,15 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditi
   }
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases[] | cdktf.IResolvable
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3659,8 +3659,8 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteraction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3669,8 +3669,8 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteraction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3678,7 +3678,7 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return attrs;
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3687,7 +3687,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3707,14 +3707,14 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   }
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionList extends cdktf.ComplexList {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesEndInteractionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3729,8 +3729,8 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3739,8 +3739,8 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3748,7 +3748,7 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return attrs;
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3757,7 +3757,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3792,14 +3792,14 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   }
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsList extends cdktf.ComplexList {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioSegmentsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3814,8 +3814,8 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3824,8 +3824,8 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3833,7 +3833,7 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return attrs;
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3842,7 +3842,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3868,14 +3868,14 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   }
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioList extends cdktf.ComplexList {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesMixedAudioList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3896,24 +3896,24 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata: cdktf.stringToTerraform(struct!.metadata),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3924,14 +3924,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3976,8 +3976,8 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3986,8 +3986,8 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCard): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3995,14 +3995,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return attrs;
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4031,24 +4031,24 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata: cdktf.stringToTerraform(struct!.metadata),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoff): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4059,14 +4059,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4125,31 +4125,31 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ssml: cdktf.stringToTerraform(struct!.ssml),
-    text: cdktf.stringToTerraform(struct!.text),
+    ssml: cdktn.stringToTerraform(struct!.ssml),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ssml: {
-      value: cdktf.stringToHclTerraform(struct!.ssml),
+      value: cdktn.stringToHclTerraform(struct!.ssml),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4160,14 +4160,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputAudioTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4245,24 +4245,24 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audio_uri: cdktf.stringToTerraform(struct!.audioUri),
+    audio_uri: cdktn.stringToTerraform(struct!.audioUri),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audio_uri: {
-      value: cdktf.stringToHclTerraform(struct!.audioUri),
+      value: cdktn.stringToHclTerraform(struct!.audioUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4273,14 +4273,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesPlayAudioOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4333,24 +4333,24 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4361,14 +4361,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTelephonyTransferCallOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4417,24 +4417,24 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.text),
+    text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.text),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.text),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -4445,14 +4445,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4556,14 +4556,14 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMes
   readonly text?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesText;
 }
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel: cdktf.stringToTerraform(struct!.channel),
-    payload: cdktf.stringToTerraform(struct!.payload),
+    channel: cdktn.stringToTerraform(struct!.channel),
+    payload: cdktn.stringToTerraform(struct!.payload),
     conversation_success: dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesConversationSuccessToTerraform(struct!.conversationSuccess),
     knowledge_info_card: dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesKnowledgeInfoCardToTerraform(struct!.knowledgeInfoCard),
     live_agent_handoff: dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct!.liveAgentHandoff),
@@ -4575,20 +4575,20 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
 }
 
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel: {
-      value: cdktf.stringToHclTerraform(struct!.channel),
+      value: cdktn.stringToHclTerraform(struct!.channel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4641,9 +4641,9 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4651,11 +4651,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4700,7 +4700,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4714,7 +4714,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
       this._telephonyTransferCall.internalValue = undefined;
       this._text.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4890,15 +4890,15 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessage
   }
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages[] | cdktf.IResolvable
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4924,32 +4924,32 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSet
   readonly value?: string;
 }
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter: cdktf.stringToTerraform(struct!.parameter),
-    value: cdktf.stringToTerraform(struct!.value),
+    parameter: cdktn.stringToTerraform(struct!.parameter),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter: {
-      value: cdktf.stringToHclTerraform(struct!.parameter),
+      value: cdktn.stringToHclTerraform(struct!.parameter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4960,9 +4960,9 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4970,11 +4970,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetPara
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4991,14 +4991,14 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetPara
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameter = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5043,15 +5043,15 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetPara
   }
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5068,13 +5068,13 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enable_generative_fallback DialogflowCxFlow#enable_generative_fallback}
   */
-  readonly enableGenerativeFallback?: boolean | cdktf.IResolvable;
+  readonly enableGenerativeFallback?: boolean | cdktn.IResolvable;
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
   */
-  readonly returnPartialResponses?: boolean | cdktf.IResolvable;
+  readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
@@ -5098,65 +5098,65 @@ export interface DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
   */
-  readonly conditionalCases?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases[] | cdktf.IResolvable;
+  readonly conditionalCases?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
   */
-  readonly messages?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages[] | cdktf.IResolvable;
+  readonly messages?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
   */
-  readonly setParameterActions?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable;
+  readonly setParameterActions?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_generative_fallback: cdktf.booleanToTerraform(struct!.enableGenerativeFallback),
-    return_partial_responses: cdktf.booleanToTerraform(struct!.returnPartialResponses),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    webhook: cdktf.stringToTerraform(struct!.webhook),
+    enable_generative_fallback: cdktn.booleanToTerraform(struct!.enableGenerativeFallback),
+    return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    webhook: cdktn.stringToTerraform(struct!.webhook),
     advanced_settings: dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsToTerraform(struct!.advancedSettings),
-    conditional_cases: cdktf.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToTerraform, true)(struct!.conditionalCases),
-    messages: cdktf.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
-    set_parameter_actions: cdktf.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToTerraform, true)(struct!.setParameterActions),
+    conditional_cases: cdktn.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToTerraform, true)(struct!.conditionalCases),
+    messages: cdktn.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
+    set_parameter_actions: cdktn.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToTerraform, true)(struct!.setParameterActions),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputReference | DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_generative_fallback: {
-      value: cdktf.booleanToHclTerraform(struct!.enableGenerativeFallback),
+      value: cdktn.booleanToHclTerraform(struct!.enableGenerativeFallback),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     return_partial_responses: {
-      value: cdktf.booleanToHclTerraform(struct!.returnPartialResponses),
+      value: cdktn.booleanToHclTerraform(struct!.returnPartialResponses),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook: {
-      value: cdktf.stringToHclTerraform(struct!.webhook),
+      value: cdktn.stringToHclTerraform(struct!.webhook),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5168,19 +5168,19 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentToHc
       storageClassType: "DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentAdvancedSettingsList",
     },
     conditional_cases: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToHclTerraform, true)(struct!.conditionalCases),
+      value: cdktn.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesToHclTerraform, true)(struct!.conditionalCases),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCasesList",
     },
     messages: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToHclTerraform, true)(struct!.messages),
+      value: cdktn.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesToHclTerraform, true)(struct!.messages),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessagesList",
     },
     set_parameter_actions: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToHclTerraform, true)(struct!.setParameterActions),
+      value: cdktn.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsToHclTerraform, true)(struct!.setParameterActions),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActionsList",
@@ -5191,14 +5191,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5266,11 +5266,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputR
   }
 
   // enable_generative_fallback - computed: false, optional: true, required: false
-  private _enableGenerativeFallback?: boolean | cdktf.IResolvable; 
+  private _enableGenerativeFallback?: boolean | cdktn.IResolvable; 
   public get enableGenerativeFallback() {
     return this.getBooleanAttribute('enable_generative_fallback');
   }
-  public set enableGenerativeFallback(value: boolean | cdktf.IResolvable) {
+  public set enableGenerativeFallback(value: boolean | cdktn.IResolvable) {
     this._enableGenerativeFallback = value;
   }
   public resetEnableGenerativeFallback() {
@@ -5282,11 +5282,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputR
   }
 
   // return_partial_responses - computed: false, optional: true, required: false
-  private _returnPartialResponses?: boolean | cdktf.IResolvable; 
+  private _returnPartialResponses?: boolean | cdktn.IResolvable; 
   public get returnPartialResponses() {
     return this.getBooleanAttribute('return_partial_responses');
   }
-  public set returnPartialResponses(value: boolean | cdktf.IResolvable) {
+  public set returnPartialResponses(value: boolean | cdktn.IResolvable) {
     this._returnPartialResponses = value;
   }
   public resetReturnPartialResponses() {
@@ -5350,7 +5350,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputR
   public get conditionalCases() {
     return this._conditionalCases;
   }
-  public putConditionalCases(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases[] | cdktf.IResolvable) {
+  public putConditionalCases(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentConditionalCases[] | cdktn.IResolvable) {
     this._conditionalCases.internalValue = value;
   }
   public resetConditionalCases() {
@@ -5366,7 +5366,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputR
   public get messages() {
     return this._messages;
   }
-  public putMessages(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages[] | cdktf.IResolvable) {
+  public putMessages(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentMessages[] | cdktn.IResolvable) {
     this._messages.internalValue = value;
   }
   public resetMessages() {
@@ -5382,7 +5382,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentOutputR
   public get setParameterActions() {
     return this._setParameterActions;
   }
-  public putSetParameterActions(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable) {
+  public putSetParameterActions(value: DialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable) {
     this._setParameterActions.internalValue = value;
   }
   public resetSetParameterActions() {
@@ -5399,7 +5399,7 @@ export interface DialogflowCxFlowKnowledgeConnectorSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#enabled DialogflowCxFlow#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The target flow to transition to. Format: projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/flows/<FlowID>.
   * This field is part of a union field 'target': Only one of 'targetPage' or 'targetFlow' may be set.
@@ -5420,7 +5420,7 @@ export interface DialogflowCxFlowKnowledgeConnectorSettings {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#data_store_connections DialogflowCxFlow#data_store_connections}
   */
-  readonly dataStoreConnections?: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections[] | cdktf.IResolvable;
+  readonly dataStoreConnections?: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections[] | cdktn.IResolvable;
   /**
   * trigger_fulfillment block
   *
@@ -5430,46 +5430,46 @@ export interface DialogflowCxFlowKnowledgeConnectorSettings {
 }
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsToTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    target_flow: cdktf.stringToTerraform(struct!.targetFlow),
-    target_page: cdktf.stringToTerraform(struct!.targetPage),
-    data_store_connections: cdktf.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToTerraform, true)(struct!.dataStoreConnections),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    target_flow: cdktn.stringToTerraform(struct!.targetFlow),
+    target_page: cdktn.stringToTerraform(struct!.targetPage),
+    data_store_connections: cdktn.listMapper(dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToTerraform, true)(struct!.dataStoreConnections),
     trigger_fulfillment: dialogflowCxFlowKnowledgeConnectorSettingsTriggerFulfillmentToTerraform(struct!.triggerFulfillment),
   }
 }
 
 
 export function dialogflowCxFlowKnowledgeConnectorSettingsToHclTerraform(struct?: DialogflowCxFlowKnowledgeConnectorSettingsOutputReference | DialogflowCxFlowKnowledgeConnectorSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target_flow: {
-      value: cdktf.stringToHclTerraform(struct!.targetFlow),
+      value: cdktn.stringToHclTerraform(struct!.targetFlow),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_page: {
-      value: cdktf.stringToHclTerraform(struct!.targetPage),
+      value: cdktn.stringToHclTerraform(struct!.targetPage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_store_connections: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToHclTerraform, true)(struct!.dataStoreConnections),
+      value: cdktn.listMapperHcl(dialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsToHclTerraform, true)(struct!.dataStoreConnections),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsList",
@@ -5486,14 +5486,14 @@ export function dialogflowCxFlowKnowledgeConnectorSettingsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowKnowledgeConnectorSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowKnowledgeConnectorSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5543,11 +5543,11 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsOutputReference extends c
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -5595,7 +5595,7 @@ export class DialogflowCxFlowKnowledgeConnectorSettingsOutputReference extends c
   public get dataStoreConnections() {
     return this._dataStoreConnections;
   }
-  public putDataStoreConnections(value: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections[] | cdktf.IResolvable) {
+  public putDataStoreConnections(value: DialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnections[] | cdktn.IResolvable) {
     this._dataStoreConnections.internalValue = value;
   }
   public resetDataStoreConnections() {
@@ -5649,38 +5649,38 @@ export interface DialogflowCxFlowNluSettings {
 }
 
 export function dialogflowCxFlowNluSettingsToTerraform(struct?: DialogflowCxFlowNluSettingsOutputReference | DialogflowCxFlowNluSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classification_threshold: cdktf.numberToTerraform(struct!.classificationThreshold),
-    model_training_mode: cdktf.stringToTerraform(struct!.modelTrainingMode),
-    model_type: cdktf.stringToTerraform(struct!.modelType),
+    classification_threshold: cdktn.numberToTerraform(struct!.classificationThreshold),
+    model_training_mode: cdktn.stringToTerraform(struct!.modelTrainingMode),
+    model_type: cdktn.stringToTerraform(struct!.modelType),
   }
 }
 
 
 export function dialogflowCxFlowNluSettingsToHclTerraform(struct?: DialogflowCxFlowNluSettingsOutputReference | DialogflowCxFlowNluSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classification_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.classificationThreshold),
+      value: cdktn.numberToHclTerraform(struct!.classificationThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     model_training_mode: {
-      value: cdktf.stringToHclTerraform(struct!.modelTrainingMode),
+      value: cdktn.stringToHclTerraform(struct!.modelTrainingMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     model_type: {
-      value: cdktf.stringToHclTerraform(struct!.modelType),
+      value: cdktn.stringToHclTerraform(struct!.modelType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5691,14 +5691,14 @@ export function dialogflowCxFlowNluSettingsToHclTerraform(struct?: DialogflowCxF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowNluSettingsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowNluSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5798,39 +5798,39 @@ export interface DialogflowCxFlowTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxFlowTimeoutsToTerraform(struct?: DialogflowCxFlowTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTimeoutsToTerraform(struct?: DialogflowCxFlowTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxFlowTimeoutsToHclTerraform(struct?: DialogflowCxFlowTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTimeoutsToHclTerraform(struct?: DialogflowCxFlowTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5841,19 +5841,19 @@ export function dialogflowCxFlowTimeoutsToHclTerraform(struct?: DialogflowCxFlow
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxFlowTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5874,7 +5874,7 @@ export class DialogflowCxFlowTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5882,7 +5882,7 @@ export class DialogflowCxFlowTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5953,25 +5953,25 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCa
   readonly cases?: string;
 }
 
-export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cases: cdktf.stringToTerraform(struct!.cases),
+    cases: cdktn.stringToTerraform(struct!.cases),
   }
 }
 
 
-export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cases: {
-      value: cdktf.stringToHclTerraform(struct!.cases),
+      value: cdktn.stringToHclTerraform(struct!.cases),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5982,9 +5982,9 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5992,11 +5992,11 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6009,13 +6009,13 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cases = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6043,15 +6043,15 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesO
   }
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases[] | cdktf.IResolvable
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6072,24 +6072,24 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConve
 }
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata: cdktf.stringToTerraform(struct!.metadata),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
   }
 }
 
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6100,14 +6100,14 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConver
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6158,24 +6158,24 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveA
 }
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metadata: cdktf.stringToTerraform(struct!.metadata),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
   }
 }
 
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoff): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6186,14 +6186,14 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6250,31 +6250,31 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutpu
 }
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ssml: cdktf.stringToTerraform(struct!.ssml),
-    text: cdktf.stringToTerraform(struct!.text),
+    ssml: cdktn.stringToTerraform(struct!.ssml),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ssml: {
-      value: cdktf.stringToHclTerraform(struct!.ssml),
+      value: cdktn.stringToHclTerraform(struct!.ssml),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6285,14 +6285,14 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6370,24 +6370,24 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayA
 }
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    audio_uri: cdktf.stringToTerraform(struct!.audioUri),
+    audio_uri: cdktn.stringToTerraform(struct!.audioUri),
   }
 }
 
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudio): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     audio_uri: {
-      value: cdktf.stringToHclTerraform(struct!.audioUri),
+      value: cdktn.stringToHclTerraform(struct!.audioUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6398,14 +6398,14 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesPlayAudioOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6458,24 +6458,24 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelep
 }
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
   }
 }
 
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6486,14 +6486,14 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTeleph
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTelephonyTransferCallOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6541,24 +6541,24 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText 
 }
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.text),
+    text: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.text),
   }
 }
 
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     text: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.text),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.text),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -6569,14 +6569,14 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6673,14 +6673,14 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages {
   readonly text?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText;
 }
 
-export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel: cdktf.stringToTerraform(struct!.channel),
-    payload: cdktf.stringToTerraform(struct!.payload),
+    channel: cdktn.stringToTerraform(struct!.channel),
+    payload: cdktn.stringToTerraform(struct!.payload),
     conversation_success: dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesConversationSuccessToTerraform(struct!.conversationSuccess),
     live_agent_handoff: dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesLiveAgentHandoffToTerraform(struct!.liveAgentHandoff),
     output_audio_text: dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputAudioTextToTerraform(struct!.outputAudioText),
@@ -6691,20 +6691,20 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToTerr
 }
 
 
-export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel: {
-      value: cdktf.stringToHclTerraform(struct!.channel),
+      value: cdktn.stringToHclTerraform(struct!.channel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     payload: {
-      value: cdktf.stringToHclTerraform(struct!.payload),
+      value: cdktn.stringToHclTerraform(struct!.payload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6751,9 +6751,9 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6761,11 +6761,11 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6806,7 +6806,7 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6819,7 +6819,7 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputRef
       this._telephonyTransferCall.internalValue = undefined;
       this._text.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6966,15 +6966,15 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputRef
   }
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7000,32 +7000,32 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterA
   readonly value?: string;
 }
 
-export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter: cdktf.stringToTerraform(struct!.parameter),
-    value: cdktf.stringToTerraform(struct!.value),
+    parameter: cdktn.stringToTerraform(struct!.parameter),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter: {
-      value: cdktf.stringToHclTerraform(struct!.parameter),
+      value: cdktn.stringToHclTerraform(struct!.parameter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7036,9 +7036,9 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7046,11 +7046,11 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7067,14 +7067,14 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActio
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._parameter = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7119,15 +7119,15 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActio
   }
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7144,7 +7144,7 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#return_partial_responses DialogflowCxFlow#return_partial_responses}
   */
-  readonly returnPartialResponses?: boolean | cdktf.IResolvable;
+  readonly returnPartialResponses?: boolean | cdktn.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   *
@@ -7162,75 +7162,75 @@ export interface DialogflowCxFlowTransitionRoutesTriggerFulfillment {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#conditional_cases DialogflowCxFlow#conditional_cases}
   */
-  readonly conditionalCases?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases[] | cdktf.IResolvable;
+  readonly conditionalCases?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases[] | cdktn.IResolvable;
   /**
   * messages block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#messages DialogflowCxFlow#messages}
   */
-  readonly messages?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable;
+  readonly messages?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktn.IResolvable;
   /**
   * set_parameter_actions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#set_parameter_actions DialogflowCxFlow#set_parameter_actions}
   */
-  readonly setParameterActions?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable;
+  readonly setParameterActions?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable;
 }
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentToTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    return_partial_responses: cdktf.booleanToTerraform(struct!.returnPartialResponses),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    webhook: cdktf.stringToTerraform(struct!.webhook),
-    conditional_cases: cdktf.listMapper(dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToTerraform, true)(struct!.conditionalCases),
-    messages: cdktf.listMapper(dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
-    set_parameter_actions: cdktf.listMapper(dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToTerraform, true)(struct!.setParameterActions),
+    return_partial_responses: cdktn.booleanToTerraform(struct!.returnPartialResponses),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    webhook: cdktn.stringToTerraform(struct!.webhook),
+    conditional_cases: cdktn.listMapper(dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToTerraform, true)(struct!.conditionalCases),
+    messages: cdktn.listMapper(dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
+    set_parameter_actions: cdktn.listMapper(dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToTerraform, true)(struct!.setParameterActions),
   }
 }
 
 
 export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentToHclTerraform(struct?: DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference | DialogflowCxFlowTransitionRoutesTriggerFulfillment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     return_partial_responses: {
-      value: cdktf.booleanToHclTerraform(struct!.returnPartialResponses),
+      value: cdktn.booleanToHclTerraform(struct!.returnPartialResponses),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook: {
-      value: cdktf.stringToHclTerraform(struct!.webhook),
+      value: cdktn.stringToHclTerraform(struct!.webhook),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditional_cases: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToHclTerraform, true)(struct!.conditionalCases),
+      value: cdktn.listMapperHcl(dialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesToHclTerraform, true)(struct!.conditionalCases),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCasesList",
     },
     messages: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToHclTerraform, true)(struct!.messages),
+      value: cdktn.listMapperHcl(dialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesToHclTerraform, true)(struct!.messages),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList",
     },
     set_parameter_actions: {
-      value: cdktf.listMapperHcl(dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToHclTerraform, true)(struct!.setParameterActions),
+      value: cdktn.listMapperHcl(dialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsToHclTerraform, true)(struct!.setParameterActions),
       isBlock: true,
       type: "list",
       storageClassType: "DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActionsList",
@@ -7241,14 +7241,14 @@ export function dialogflowCxFlowTransitionRoutesTriggerFulfillmentToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7304,11 +7304,11 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference e
   }
 
   // return_partial_responses - computed: false, optional: true, required: false
-  private _returnPartialResponses?: boolean | cdktf.IResolvable; 
+  private _returnPartialResponses?: boolean | cdktn.IResolvable; 
   public get returnPartialResponses() {
     return this.getBooleanAttribute('return_partial_responses');
   }
-  public set returnPartialResponses(value: boolean | cdktf.IResolvable) {
+  public set returnPartialResponses(value: boolean | cdktn.IResolvable) {
     this._returnPartialResponses = value;
   }
   public resetReturnPartialResponses() {
@@ -7356,7 +7356,7 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference e
   public get conditionalCases() {
     return this._conditionalCases;
   }
-  public putConditionalCases(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases[] | cdktf.IResolvable) {
+  public putConditionalCases(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentConditionalCases[] | cdktn.IResolvable) {
     this._conditionalCases.internalValue = value;
   }
   public resetConditionalCases() {
@@ -7372,7 +7372,7 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference e
   public get messages() {
     return this._messages;
   }
-  public putMessages(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable) {
+  public putMessages(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktn.IResolvable) {
     this._messages.internalValue = value;
   }
   public resetMessages() {
@@ -7388,7 +7388,7 @@ export class DialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference e
   public get setParameterActions() {
     return this._setParameterActions;
   }
-  public putSetParameterActions(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions[] | cdktf.IResolvable) {
+  public putSetParameterActions(value: DialogflowCxFlowTransitionRoutesTriggerFulfillmentSetParameterActions[] | cdktn.IResolvable) {
     this._setParameterActions.internalValue = value;
   }
   public resetSetParameterActions() {
@@ -7436,47 +7436,47 @@ export interface DialogflowCxFlowTransitionRoutes {
   readonly triggerFulfillment?: DialogflowCxFlowTransitionRoutesTriggerFulfillment;
 }
 
-export function dialogflowCxFlowTransitionRoutesToTerraform(struct?: DialogflowCxFlowTransitionRoutes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesToTerraform(struct?: DialogflowCxFlowTransitionRoutes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition: cdktf.stringToTerraform(struct!.condition),
-    intent: cdktf.stringToTerraform(struct!.intent),
-    target_flow: cdktf.stringToTerraform(struct!.targetFlow),
-    target_page: cdktf.stringToTerraform(struct!.targetPage),
+    condition: cdktn.stringToTerraform(struct!.condition),
+    intent: cdktn.stringToTerraform(struct!.intent),
+    target_flow: cdktn.stringToTerraform(struct!.targetFlow),
+    target_page: cdktn.stringToTerraform(struct!.targetPage),
     trigger_fulfillment: dialogflowCxFlowTransitionRoutesTriggerFulfillmentToTerraform(struct!.triggerFulfillment),
   }
 }
 
 
-export function dialogflowCxFlowTransitionRoutesToHclTerraform(struct?: DialogflowCxFlowTransitionRoutes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxFlowTransitionRoutesToHclTerraform(struct?: DialogflowCxFlowTransitionRoutes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     intent: {
-      value: cdktf.stringToHclTerraform(struct!.intent),
+      value: cdktn.stringToHclTerraform(struct!.intent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_flow: {
-      value: cdktf.stringToHclTerraform(struct!.targetFlow),
+      value: cdktn.stringToHclTerraform(struct!.targetFlow),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_page: {
-      value: cdktf.stringToHclTerraform(struct!.targetPage),
+      value: cdktn.stringToHclTerraform(struct!.targetPage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7493,9 +7493,9 @@ export function dialogflowCxFlowTransitionRoutesToHclTerraform(struct?: Dialogfl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxFlowTransitionRoutesOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxFlowTransitionRoutesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7503,11 +7503,11 @@ export class DialogflowCxFlowTransitionRoutesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxFlowTransitionRoutes | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxFlowTransitionRoutes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7536,7 +7536,7 @@ export class DialogflowCxFlowTransitionRoutesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxFlowTransitionRoutes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxFlowTransitionRoutes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7546,7 +7546,7 @@ export class DialogflowCxFlowTransitionRoutesOutputReference extends cdktf.Compl
       this._targetPage = undefined;
       this._triggerFulfillment.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7647,15 +7647,15 @@ export class DialogflowCxFlowTransitionRoutesOutputReference extends cdktf.Compl
   }
 }
 
-export class DialogflowCxFlowTransitionRoutesList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable
+export class DialogflowCxFlowTransitionRoutesList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxFlowTransitionRoutes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7670,7 +7670,7 @@ export class DialogflowCxFlowTransitionRoutesList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow google_dialogflow_cx_flow}
 */
-export class DialogflowCxFlow extends cdktf.TerraformResource {
+export class DialogflowCxFlow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -7681,14 +7681,14 @@ export class DialogflowCxFlow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxFlow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxFlow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxFlow to import
   * @param importFromId The id of the existing DialogflowCxFlow that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_flow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxFlow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_flow", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_flow", importId: importFromId, provider });
       }
 
   // ===========
@@ -7783,11 +7783,11 @@ export class DialogflowCxFlow extends cdktf.TerraformResource {
   }
 
   // is_default_start_flow - computed: false, optional: true, required: false
-  private _isDefaultStartFlow?: boolean | cdktf.IResolvable; 
+  private _isDefaultStartFlow?: boolean | cdktn.IResolvable; 
   public get isDefaultStartFlow() {
     return this.getBooleanAttribute('is_default_start_flow');
   }
-  public set isDefaultStartFlow(value: boolean | cdktf.IResolvable) {
+  public set isDefaultStartFlow(value: boolean | cdktn.IResolvable) {
     this._isDefaultStartFlow = value;
   }
   public resetIsDefaultStartFlow() {
@@ -7872,7 +7872,7 @@ export class DialogflowCxFlow extends cdktf.TerraformResource {
   public get eventHandlers() {
     return this._eventHandlers;
   }
-  public putEventHandlers(value: DialogflowCxFlowEventHandlers[] | cdktf.IResolvable) {
+  public putEventHandlers(value: DialogflowCxFlowEventHandlers[] | cdktn.IResolvable) {
     this._eventHandlers.internalValue = value;
   }
   public resetEventHandlers() {
@@ -7936,7 +7936,7 @@ export class DialogflowCxFlow extends cdktf.TerraformResource {
   public get transitionRoutes() {
     return this._transitionRoutes;
   }
-  public putTransitionRoutes(value: DialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable) {
+  public putTransitionRoutes(value: DialogflowCxFlowTransitionRoutes[] | cdktn.IResolvable) {
     this._transitionRoutes.internalValue = value;
   }
   public resetTransitionRoutes() {
@@ -7953,62 +7953,62 @@ export class DialogflowCxFlow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      is_default_start_flow: cdktf.booleanToTerraform(this._isDefaultStartFlow),
-      language_code: cdktf.stringToTerraform(this._languageCode),
-      parent: cdktf.stringToTerraform(this._parent),
-      transition_route_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._transitionRouteGroups),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      is_default_start_flow: cdktn.booleanToTerraform(this._isDefaultStartFlow),
+      language_code: cdktn.stringToTerraform(this._languageCode),
+      parent: cdktn.stringToTerraform(this._parent),
+      transition_route_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._transitionRouteGroups),
       advanced_settings: dialogflowCxFlowAdvancedSettingsToTerraform(this._advancedSettings.internalValue),
-      event_handlers: cdktf.listMapper(dialogflowCxFlowEventHandlersToTerraform, true)(this._eventHandlers.internalValue),
+      event_handlers: cdktn.listMapper(dialogflowCxFlowEventHandlersToTerraform, true)(this._eventHandlers.internalValue),
       knowledge_connector_settings: dialogflowCxFlowKnowledgeConnectorSettingsToTerraform(this._knowledgeConnectorSettings.internalValue),
       nlu_settings: dialogflowCxFlowNluSettingsToTerraform(this._nluSettings.internalValue),
       timeouts: dialogflowCxFlowTimeoutsToTerraform(this._timeouts.internalValue),
-      transition_routes: cdktf.listMapper(dialogflowCxFlowTransitionRoutesToTerraform, true)(this._transitionRoutes.internalValue),
+      transition_routes: cdktn.listMapper(dialogflowCxFlowTransitionRoutesToTerraform, true)(this._transitionRoutes.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_default_start_flow: {
-        value: cdktf.booleanToHclTerraform(this._isDefaultStartFlow),
+        value: cdktn.booleanToHclTerraform(this._isDefaultStartFlow),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       language_code: {
-        value: cdktf.stringToHclTerraform(this._languageCode),
+        value: cdktn.stringToHclTerraform(this._languageCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       transition_route_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._transitionRouteGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._transitionRouteGroups),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
@@ -8020,7 +8020,7 @@ export class DialogflowCxFlow extends cdktf.TerraformResource {
         storageClassType: "DialogflowCxFlowAdvancedSettingsList",
       },
       event_handlers: {
-        value: cdktf.listMapperHcl(dialogflowCxFlowEventHandlersToHclTerraform, true)(this._eventHandlers.internalValue),
+        value: cdktn.listMapperHcl(dialogflowCxFlowEventHandlersToHclTerraform, true)(this._eventHandlers.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowCxFlowEventHandlersList",
@@ -8044,7 +8044,7 @@ export class DialogflowCxFlow extends cdktf.TerraformResource {
         storageClassType: "DialogflowCxFlowTimeouts",
       },
       transition_routes: {
-        value: cdktf.listMapperHcl(dialogflowCxFlowTransitionRoutesToHclTerraform, true)(this._transitionRoutes.internalValue),
+        value: cdktn.listMapperHcl(dialogflowCxFlowTransitionRoutesToHclTerraform, true)(this._transitionRoutes.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DialogflowCxFlowTransitionRoutesList",

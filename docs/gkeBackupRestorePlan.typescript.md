@@ -297,7 +297,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -432,7 +432,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a GkeBackupRestorePlan resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a GkeBackupRestorePlan resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -504,7 +504,7 @@ import { gkeBackupRestorePlan } from '@cdktn/provider-google'
 gkeBackupRestorePlan.GkeBackupRestorePlan.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a GkeBackupRestorePlan resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a GkeBackupRestorePlan resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.generateConfigForImport.parameter.scope"></a>
 
@@ -534,7 +534,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the GkeBackupRestorePlan to import is found.
 
@@ -545,24 +545,24 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.restoreConfig">restoreConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference">GkeBackupRestorePlanRestoreConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.stateReason">stateReason</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference">GkeBackupRestorePlanTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.backupPlanInput">backupPlanInput</a></code> | <code>string</code> | *No description.* |
@@ -574,7 +574,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.restoreConfigInput">restoreConfigInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig">GkeBackupRestorePlanRestoreConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.backupPlan">backupPlan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.cluster">cluster</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlan.property.description">description</a></code> | <code>string</code> | *No description.* |
@@ -604,7 +604,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -654,7 +654,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -664,7 +664,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -674,7 +674,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -694,7 +694,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -704,7 +704,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -714,7 +714,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -724,7 +724,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -734,7 +734,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -774,7 +774,7 @@ public readonly stateReason: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -894,7 +894,7 @@ public readonly restoreConfigInput: GkeBackupRestorePlanRestoreConfig;
 public readonly timeoutsInput: IResolvable | GkeBackupRestorePlanTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a>
 
 ---
 
@@ -1012,13 +1012,13 @@ const gkeBackupRestorePlanConfig: gkeBackupRestorePlan.GkeBackupRestorePlanConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.backupPlan">backupPlan</a></code> | <code>string</code> | A reference to the BackupPlan from which Backups may be used as the source for Restores created via this RestorePlan. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.cluster">cluster</a></code> | <code>string</code> | The source cluster from which Restores will be created via this RestorePlan. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanConfig.property.location">location</a></code> | <code>string</code> | The region of the Restore Plan. |
@@ -1038,7 +1038,7 @@ const gkeBackupRestorePlanConfig: gkeBackupRestorePlan.GkeBackupRestorePlanConfi
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1048,7 +1048,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1058,7 +1058,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1078,7 +1078,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1098,7 +1098,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1262,18 +1262,18 @@ const gkeBackupRestorePlanRestoreConfig: gkeBackupRestorePlan.GkeBackupRestorePl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.allNamespaces">allNamespaces</a></code> | <code>boolean \| cdktf.IResolvable</code> | If True, restore all namespaced resources in the Backup. Setting this field to False will result in an error. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.allNamespaces">allNamespaces</a></code> | <code>boolean \| cdktn.IResolvable</code> | If True, restore all namespaced resources in the Backup. Setting this field to False will result in an error. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.clusterResourceConflictPolicy">clusterResourceConflictPolicy</a></code> | <code>string</code> | Defines the behavior for handling the situation where cluster-scoped resources being restored already exist in the target cluster. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.clusterResourceRestoreScope">clusterResourceRestoreScope</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope</a></code> | cluster_resource_restore_scope block. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.excludedNamespaces">excludedNamespaces</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespaces">GkeBackupRestorePlanRestoreConfigExcludedNamespaces</a></code> | excluded_namespaces block. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.namespacedResourceRestoreMode">namespacedResourceRestoreMode</a></code> | <code>string</code> | Defines the behavior for handling the situation where sets of namespaced resources being restored already exist in the target cluster. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.noNamespaces">noNamespaces</a></code> | <code>boolean \| cdktf.IResolvable</code> | Do not restore any namespaced resources if set to "True". Specifying this field to "False" is not allowed. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.noNamespaces">noNamespaces</a></code> | <code>boolean \| cdktn.IResolvable</code> | Do not restore any namespaced resources if set to "True". Specifying this field to "False" is not allowed. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.restoreOrder">restoreOrder</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrder">GkeBackupRestorePlanRestoreConfigRestoreOrder</a></code> | restore_order block. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.selectedApplications">selectedApplications</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplications">GkeBackupRestorePlanRestoreConfigSelectedApplications</a></code> | selected_applications block. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.selectedNamespaces">selectedNamespaces</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespaces">GkeBackupRestorePlanRestoreConfigSelectedNamespaces</a></code> | selected_namespaces block. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.transformationRules">transformationRules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]</code> | transformation_rules block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.transformationRules">transformationRules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]</code> | transformation_rules block. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.volumeDataRestorePolicy">volumeDataRestorePolicy</a></code> | <code>string</code> | Specifies the mechanism to be used to restore volume data. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.volumeDataRestorePolicyBindings">volumeDataRestorePolicyBindings</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]</code> | volume_data_restore_policy_bindings block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig.property.volumeDataRestorePolicyBindings">volumeDataRestorePolicyBindings</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]</code> | volume_data_restore_policy_bindings block. |
 
 ---
 
@@ -1283,7 +1283,7 @@ const gkeBackupRestorePlanRestoreConfig: gkeBackupRestorePlan.GkeBackupRestorePl
 public readonly allNamespaces: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If True, restore all namespaced resources in the Backup. Setting this field to False will result in an error.
 
@@ -1363,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly noNamespaces: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Do not restore any namespaced resources if set to "True". Specifying this field to "False" is not allowed.
 
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly transformationRules: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
 
 transformation_rules block.
 
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly volumeDataRestorePolicyBindings: IResolvable | GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
 
 volume_data_restore_policy_bindings block.
 
@@ -1475,10 +1475,10 @@ const gkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope: gkeBackupRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.allGroupKinds">allGroupKinds</a></code> | <code>boolean \| cdktf.IResolvable</code> | If True, all valid cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.excludedGroupKinds">excludedGroupKinds</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]</code> | excluded_group_kinds block. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.noGroupKinds">noGroupKinds</a></code> | <code>boolean \| cdktf.IResolvable</code> | If True, no cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'. |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.selectedGroupKinds">selectedGroupKinds</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]</code> | selected_group_kinds block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.allGroupKinds">allGroupKinds</a></code> | <code>boolean \| cdktn.IResolvable</code> | If True, all valid cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.excludedGroupKinds">excludedGroupKinds</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]</code> | excluded_group_kinds block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.noGroupKinds">noGroupKinds</a></code> | <code>boolean \| cdktn.IResolvable</code> | If True, no cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope.property.selectedGroupKinds">selectedGroupKinds</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]</code> | selected_group_kinds block. |
 
 ---
 
@@ -1488,7 +1488,7 @@ const gkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope: gkeBackupRes
 public readonly allGroupKinds: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If True, all valid cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'.
 
@@ -1502,7 +1502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly excludedGroupKinds: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
 
 excluded_group_kinds block.
 
@@ -1516,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly noGroupKinds: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If True, no cluster-scoped resources will be restored. Mutually exclusive to any other field in 'clusterResourceRestoreScope'.
 
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly selectedGroupKinds: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
 
 selected_group_kinds block.
 
@@ -1678,7 +1678,7 @@ const gkeBackupRestorePlanRestoreConfigRestoreOrder: gkeBackupRestorePlan.GkeBac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrder.property.groupKindDependencies">groupKindDependencies</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]</code> | group_kind_dependencies block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrder.property.groupKindDependencies">groupKindDependencies</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]</code> | group_kind_dependencies block. |
 
 ---
 
@@ -1688,7 +1688,7 @@ const gkeBackupRestorePlanRestoreConfigRestoreOrder: gkeBackupRestorePlan.GkeBac
 public readonly groupKindDependencies: IResolvable | GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
 
 group_kind_dependencies block.
 
@@ -1851,7 +1851,7 @@ const gkeBackupRestorePlanRestoreConfigSelectedApplications: gkeBackupRestorePla
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplications.property.namespacedNames">namespacedNames</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]</code> | namespaced_names block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplications.property.namespacedNames">namespacedNames</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]</code> | namespaced_names block. |
 
 ---
 
@@ -1861,7 +1861,7 @@ const gkeBackupRestorePlanRestoreConfigSelectedApplications: gkeBackupRestorePla
 public readonly namespacedNames: IResolvable | GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
 
 namespaced_names block.
 
@@ -1962,7 +1962,7 @@ const gkeBackupRestorePlanRestoreConfigTransformationRules: gkeBackupRestorePlan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules.property.fieldActions">fieldActions</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]</code> | field_actions block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules.property.fieldActions">fieldActions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]</code> | field_actions block. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules.property.description">description</a></code> | <code>string</code> | The description is a user specified string description of the transformation rule. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules.property.resourceFilter">resourceFilter</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter</a></code> | resource_filter block. |
 
@@ -1974,7 +1974,7 @@ const gkeBackupRestorePlanRestoreConfigTransformationRules: gkeBackupRestorePlan
 public readonly fieldActions: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
 
 field_actions block.
 
@@ -2101,7 +2101,7 @@ const gkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter: gkeBac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter.property.groupKinds">groupKinds</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]</code> | group_kinds block. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter.property.groupKinds">groupKinds</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]</code> | group_kinds block. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter.property.jsonPath">jsonPath</a></code> | <code>string</code> | This is a JSONPath expression that matches specific fields of candidate resources and it operates as a filtering parameter (resources that are not matched with this expression will not be candidates for transformation). |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter.property.namespaces">namespaces</a></code> | <code>string[]</code> | (Filtering parameter) Any resource subject to transformation must be contained within one of the listed Kubernetes Namespace in the Backup. |
 
@@ -2113,7 +2113,7 @@ const gkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter: gkeBac
 public readonly groupKinds: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
 
 group_kinds block.
 
@@ -2322,7 +2322,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2330,7 +2330,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2396,7 +2396,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2431,7 +2431,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]</code> | *No description.* |
 
 ---
 
@@ -2465,7 +2465,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
 
 ---
 
@@ -2482,7 +2482,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2491,7 +2491,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2679,7 +2679,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2716,7 +2716,7 @@ public resetResourceKind(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.property.resourceKindInput">resourceKindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.property.resourceKind">resourceKind</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a></code> | *No description.* |
 
 ---
 
@@ -2790,7 +2790,7 @@ public readonly resourceKind: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>
 
 ---
 
@@ -2807,14 +2807,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2990,7 +2990,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3012,7 +3012,7 @@ public putExcludedGroupKinds(value: IResolvable | GkeBackupRestorePlanRestoreCon
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.putExcludedGroupKinds.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
 
 ---
 
@@ -3024,7 +3024,7 @@ public putSelectedGroupKinds(value: IResolvable | GkeBackupRestorePlanRestoreCon
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.putSelectedGroupKinds.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
 
 ---
 
@@ -3061,12 +3061,12 @@ public resetSelectedGroupKinds(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.excludedGroupKinds">excludedGroupKinds</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKindsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.selectedGroupKinds">selectedGroupKinds</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.allGroupKindsInput">allGroupKindsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.excludedGroupKindsInput">excludedGroupKindsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.noGroupKindsInput">noGroupKindsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.selectedGroupKindsInput">selectedGroupKindsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.allGroupKinds">allGroupKinds</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.noGroupKinds">noGroupKinds</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.allGroupKindsInput">allGroupKindsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.excludedGroupKindsInput">excludedGroupKindsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.noGroupKindsInput">noGroupKindsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.selectedGroupKindsInput">selectedGroupKindsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.allGroupKinds">allGroupKinds</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.noGroupKinds">noGroupKinds</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope</a></code> | *No description.* |
 
 ---
@@ -3121,7 +3121,7 @@ public readonly selectedGroupKinds: GkeBackupRestorePlanRestoreConfigClusterReso
 public readonly allGroupKindsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3131,7 +3131,7 @@ public readonly allGroupKindsInput: boolean | IResolvable;
 public readonly excludedGroupKindsInput: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeExcludedGroupKinds</a>[]
 
 ---
 
@@ -3141,7 +3141,7 @@ public readonly excludedGroupKindsInput: IResolvable | GkeBackupRestorePlanResto
 public readonly noGroupKindsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3151,7 +3151,7 @@ public readonly noGroupKindsInput: boolean | IResolvable;
 public readonly selectedGroupKindsInput: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
 
 ---
 
@@ -3161,7 +3161,7 @@ public readonly selectedGroupKindsInput: IResolvable | GkeBackupRestorePlanResto
 public readonly allGroupKinds: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3171,7 +3171,7 @@ public readonly allGroupKinds: boolean | IResolvable;
 public readonly noGroupKinds: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3198,7 +3198,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3206,7 +3206,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3272,7 +3272,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3307,7 +3307,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]</code> | *No description.* |
 
 ---
 
@@ -3341,7 +3341,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>[]
 
 ---
 
@@ -3358,7 +3358,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3367,7 +3367,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestore
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3555,7 +3555,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3592,7 +3592,7 @@ public resetResourceKind(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.property.resourceKindInput">resourceKindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.property.resourceKind">resourceKind</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a></code> | *No description.* |
 
 ---
 
@@ -3666,7 +3666,7 @@ public readonly resourceKind: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKinds</a>
 
 ---
 
@@ -3683,14 +3683,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespacesOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3860,7 +3860,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespacesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3954,14 +3954,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4150,7 +4150,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4232,7 +4232,7 @@ public putTransformationRules(value: IResolvable | GkeBackupRestorePlanRestoreCo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.putTransformationRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
 
 ---
 
@@ -4244,7 +4244,7 @@ public putVolumeDataRestorePolicyBindings(value: IResolvable | GkeBackupRestoreP
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.putVolumeDataRestorePolicyBindings.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
 
 ---
 
@@ -4334,22 +4334,22 @@ public resetVolumeDataRestorePolicyBindings(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.selectedNamespaces">selectedNamespaces</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference">GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.transformationRules">transformationRules</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList">GkeBackupRestorePlanRestoreConfigTransformationRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.volumeDataRestorePolicyBindings">volumeDataRestorePolicyBindings</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.allNamespacesInput">allNamespacesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.allNamespacesInput">allNamespacesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.clusterResourceConflictPolicyInput">clusterResourceConflictPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.clusterResourceRestoreScopeInput">clusterResourceRestoreScopeInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope">GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.excludedNamespacesInput">excludedNamespacesInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigExcludedNamespaces">GkeBackupRestorePlanRestoreConfigExcludedNamespaces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.namespacedResourceRestoreModeInput">namespacedResourceRestoreModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.noNamespacesInput">noNamespacesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.noNamespacesInput">noNamespacesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.restoreOrderInput">restoreOrderInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrder">GkeBackupRestorePlanRestoreConfigRestoreOrder</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.selectedApplicationsInput">selectedApplicationsInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplications">GkeBackupRestorePlanRestoreConfigSelectedApplications</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.selectedNamespacesInput">selectedNamespacesInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespaces">GkeBackupRestorePlanRestoreConfigSelectedNamespaces</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.transformationRulesInput">transformationRulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.volumeDataRestorePolicyBindingsInput">volumeDataRestorePolicyBindingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.transformationRulesInput">transformationRulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.volumeDataRestorePolicyBindingsInput">volumeDataRestorePolicyBindingsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.volumeDataRestorePolicyInput">volumeDataRestorePolicyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.allNamespaces">allNamespaces</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.allNamespaces">allNamespaces</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.clusterResourceConflictPolicy">clusterResourceConflictPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.namespacedResourceRestoreMode">namespacedResourceRestoreMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.noNamespaces">noNamespaces</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.noNamespaces">noNamespaces</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.volumeDataRestorePolicy">volumeDataRestorePolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfig">GkeBackupRestorePlanRestoreConfig</a></code> | *No description.* |
 
@@ -4455,7 +4455,7 @@ public readonly volumeDataRestorePolicyBindings: GkeBackupRestorePlanRestoreConf
 public readonly allNamespacesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4505,7 +4505,7 @@ public readonly namespacedResourceRestoreModeInput: string;
 public readonly noNamespacesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4545,7 +4545,7 @@ public readonly selectedNamespacesInput: GkeBackupRestorePlanRestoreConfigSelect
 public readonly transformationRulesInput: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
 
 ---
 
@@ -4555,7 +4555,7 @@ public readonly transformationRulesInput: IResolvable | GkeBackupRestorePlanRest
 public readonly volumeDataRestorePolicyBindingsInput: IResolvable | GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
 
 ---
 
@@ -4575,7 +4575,7 @@ public readonly volumeDataRestorePolicyInput: string;
 public readonly allNamespaces: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4605,7 +4605,7 @@ public readonly namespacedResourceRestoreMode: string;
 public readonly noNamespaces: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4642,7 +4642,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4650,7 +4650,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4716,7 +4716,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4751,7 +4751,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]</code> | *No description.* |
 
 ---
 
@@ -4785,7 +4785,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
 
 ---
 
@@ -4802,7 +4802,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4811,7 +4811,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4999,7 +4999,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5048,7 +5048,7 @@ public putSatisfying(value: GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKi
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.property.satisfying">satisfying</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.property.requiringInput">requiringInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiring</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.property.satisfyingInput">satisfyingInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfying</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a></code> | *No description.* |
 
 ---
 
@@ -5122,7 +5122,7 @@ public readonly satisfyingInput: GkeBackupRestorePlanRestoreConfigRestoreOrderGr
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>
 
 ---
 
@@ -5139,14 +5139,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5318,7 +5318,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesRequiringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5446,14 +5446,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindD
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5625,7 +5625,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesSatisfyingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5753,14 +5753,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5931,7 +5931,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5953,7 +5953,7 @@ public putGroupKindDependencies(value: IResolvable | GkeBackupRestorePlanRestore
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.putGroupKindDependencies.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
 
 ---
 
@@ -5965,7 +5965,7 @@ public putGroupKindDependencies(value: IResolvable | GkeBackupRestorePlanRestore
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.property.groupKindDependencies">groupKindDependencies</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependenciesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.property.groupKindDependenciesInput">groupKindDependenciesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.property.groupKindDependenciesInput">groupKindDependenciesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrder">GkeBackupRestorePlanRestoreConfigRestoreOrder</a></code> | *No description.* |
 
 ---
@@ -6010,7 +6010,7 @@ public readonly groupKindDependencies: GkeBackupRestorePlanRestoreConfigRestoreO
 public readonly groupKindDependenciesInput: IResolvable | GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies">GkeBackupRestorePlanRestoreConfigRestoreOrderGroupKindDependencies</a>[]
 
 ---
 
@@ -6037,7 +6037,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6045,7 +6045,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6111,7 +6111,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6146,7 +6146,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]</code> | *No description.* |
 
 ---
 
@@ -6180,7 +6180,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
 
 ---
 
@@ -6197,7 +6197,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6206,7 +6206,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6392,7 +6392,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6417,7 +6417,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a></code> | *No description.* |
 
 ---
 
@@ -6491,7 +6491,7 @@ public readonly namespace: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>
 
 ---
 
@@ -6508,14 +6508,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6686,7 +6686,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6708,7 +6708,7 @@ public putNamespacedNames(value: IResolvable | GkeBackupRestorePlanRestoreConfig
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.putNamespacedNames.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
 
 ---
 
@@ -6720,7 +6720,7 @@ public putNamespacedNames(value: IResolvable | GkeBackupRestorePlanRestoreConfig
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.property.namespacedNames">namespacedNames</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.property.namespacedNamesInput">namespacedNamesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.property.namespacedNamesInput">namespacedNamesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplications">GkeBackupRestorePlanRestoreConfigSelectedApplications</a></code> | *No description.* |
 
 ---
@@ -6765,7 +6765,7 @@ public readonly namespacedNames: GkeBackupRestorePlanRestoreConfigSelectedApplic
 public readonly namespacedNamesInput: IResolvable | GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames">GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNames</a>[]
 
 ---
 
@@ -6792,14 +6792,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6969,7 +6969,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7063,7 +7063,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFie
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7071,7 +7071,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFie
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7137,7 +7137,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7172,7 +7172,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]</code> | *No description.* |
 
 ---
 
@@ -7206,7 +7206,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
 
 ---
 
@@ -7223,7 +7223,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFie
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7232,7 +7232,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFie
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7421,7 +7421,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7468,7 +7468,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.property.op">op</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a></code> | *No description.* |
 
 ---
 
@@ -7582,7 +7582,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>
 
 ---
 
@@ -7599,7 +7599,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7607,7 +7607,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7673,7 +7673,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7708,7 +7708,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -7742,7 +7742,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>[]
 
 ---
 
@@ -7759,7 +7759,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7768,7 +7768,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7958,7 +7958,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7980,7 +7980,7 @@ public putFieldActions(value: IResolvable | GkeBackupRestorePlanRestoreConfigTra
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.putFieldActions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
 
 ---
 
@@ -8018,10 +8018,10 @@ public resetResourceFilter(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.fieldActions">fieldActions</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.resourceFilter">resourceFilter</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.fieldActionsInput">fieldActionsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.fieldActionsInput">fieldActionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.resourceFilterInput">resourceFilterInput</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a></code> | *No description.* |
 
 ---
 
@@ -8085,7 +8085,7 @@ public readonly descriptionInput: string;
 public readonly fieldActionsInput: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions">GkeBackupRestorePlanRestoreConfigTransformationRulesFieldActions</a>[]
 
 ---
 
@@ -8115,7 +8115,7 @@ public readonly description: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRules">GkeBackupRestorePlanRestoreConfigTransformationRules</a>
 
 ---
 
@@ -8132,7 +8132,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8140,7 +8140,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8206,7 +8206,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8241,7 +8241,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]</code> | *No description.* |
 
 ---
 
@@ -8275,7 +8275,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
 
 ---
 
@@ -8292,7 +8292,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8301,7 +8301,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8489,7 +8489,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8526,7 +8526,7 @@ public resetResourceKind(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.property.resourceKindInput">resourceKindInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.property.resourceGroup">resourceGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.property.resourceKind">resourceKind</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a></code> | *No description.* |
 
 ---
 
@@ -8600,7 +8600,7 @@ public readonly resourceKind: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>
 
 ---
 
@@ -8617,14 +8617,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8798,7 +8798,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8820,7 +8820,7 @@ public putGroupKinds(value: IResolvable | GkeBackupRestorePlanRestoreConfigTrans
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.putGroupKinds.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
 
 ---
 
@@ -8850,7 +8850,7 @@ public resetNamespaces(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.groupKinds">groupKinds</a></code> | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKindsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.groupKindsInput">groupKindsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.groupKindsInput">groupKindsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.jsonPathInput">jsonPathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.namespacesInput">namespacesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterOutputReference.property.jsonPath">jsonPath</a></code> | <code>string</code> | *No description.* |
@@ -8899,7 +8899,7 @@ public readonly groupKinds: GkeBackupRestorePlanRestoreConfigTransformationRules
 public readonly groupKindsInput: IResolvable | GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds">GkeBackupRestorePlanRestoreConfigTransformationRulesResourceFilterGroupKinds</a>[]
 
 ---
 
@@ -8966,7 +8966,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8974,7 +8974,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolic
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9040,7 +9040,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9075,7 +9075,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]</code> | *No description.* |
 
 ---
 
@@ -9109,7 +9109,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>[]
 
 ---
 
@@ -9126,7 +9126,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9135,7 +9135,7 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolic
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9321,7 +9321,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9346,7 +9346,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.property.volumeTypeInput">volumeTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.property.policy">policy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.property.volumeType">volumeType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a></code> | *No description.* |
 
 ---
 
@@ -9420,7 +9420,7 @@ public readonly volumeType: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings">GkeBackupRestorePlanRestoreConfigVolumeDataRestorePolicyBindings</a>
 
 ---
 
@@ -9437,14 +9437,14 @@ new gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9617,7 +9617,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9662,7 +9662,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -9756,7 +9756,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | GkeBackupRestorePlanTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeBackupRestorePlan.GkeBackupRestorePlanTimeouts">GkeBackupRestorePlanTimeouts</a>
 
 ---
 

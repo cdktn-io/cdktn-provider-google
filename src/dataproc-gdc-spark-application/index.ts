@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataprocGdcSparkApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface DataprocGdcSparkApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The annotations to associate with this application. Annotations may be used to store client information, but are not used by the server. 
   * 
@@ -166,59 +166,59 @@ export interface DataprocGdcSparkApplicationPysparkApplicationConfig {
 }
 
 export function dataprocGdcSparkApplicationPysparkApplicationConfigToTerraform(struct?: DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference | DataprocGdcSparkApplicationPysparkApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    main_python_file_uri: cdktf.stringToTerraform(struct!.mainPythonFileUri),
-    python_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pythonFileUris),
+    archive_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    main_python_file_uri: cdktn.stringToTerraform(struct!.mainPythonFileUri),
+    python_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pythonFileUris),
   }
 }
 
 
 export function dataprocGdcSparkApplicationPysparkApplicationConfigToHclTerraform(struct?: DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference | DataprocGdcSparkApplicationPysparkApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.archiveUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     main_python_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.mainPythonFileUri),
+      value: cdktn.stringToHclTerraform(struct!.mainPythonFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     python_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pythonFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pythonFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -229,14 +229,14 @@ export function dataprocGdcSparkApplicationPysparkApplicationConfigToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocGdcSparkApplicationPysparkApplicationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -424,59 +424,59 @@ export interface DataprocGdcSparkApplicationSparkApplicationConfig {
 }
 
 export function dataprocGdcSparkApplicationSparkApplicationConfigToTerraform(struct?: DataprocGdcSparkApplicationSparkApplicationConfigOutputReference | DataprocGdcSparkApplicationSparkApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    main_class: cdktf.stringToTerraform(struct!.mainClass),
-    main_jar_file_uri: cdktf.stringToTerraform(struct!.mainJarFileUri),
+    archive_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    main_class: cdktn.stringToTerraform(struct!.mainClass),
+    main_jar_file_uri: cdktn.stringToTerraform(struct!.mainJarFileUri),
   }
 }
 
 
 export function dataprocGdcSparkApplicationSparkApplicationConfigToHclTerraform(struct?: DataprocGdcSparkApplicationSparkApplicationConfigOutputReference | DataprocGdcSparkApplicationSparkApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.archiveUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     main_class: {
-      value: cdktf.stringToHclTerraform(struct!.mainClass),
+      value: cdktn.stringToHclTerraform(struct!.mainClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     main_jar_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.mainJarFileUri),
+      value: cdktn.stringToHclTerraform(struct!.mainJarFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -487,14 +487,14 @@ export function dataprocGdcSparkApplicationSparkApplicationConfigToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocGdcSparkApplicationSparkApplicationConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocGdcSparkApplicationSparkApplicationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -673,45 +673,45 @@ export interface DataprocGdcSparkApplicationSparkRApplicationConfig {
 }
 
 export function dataprocGdcSparkApplicationSparkRApplicationConfigToTerraform(struct?: DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference | DataprocGdcSparkApplicationSparkRApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
-    main_r_file_uri: cdktf.stringToTerraform(struct!.mainRFileUri),
+    archive_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.args),
+    file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileUris),
+    main_r_file_uri: cdktn.stringToTerraform(struct!.mainRFileUri),
   }
 }
 
 
 export function dataprocGdcSparkApplicationSparkRApplicationConfigToHclTerraform(struct?: DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference | DataprocGdcSparkApplicationSparkRApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.archiveUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     args: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.args),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.args),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     main_r_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.mainRFileUri),
+      value: cdktn.stringToHclTerraform(struct!.mainRFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -722,14 +722,14 @@ export function dataprocGdcSparkApplicationSparkRApplicationConfigToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocGdcSparkApplicationSparkRApplicationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -843,24 +843,24 @@ export interface DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListSt
 }
 
 export function dataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructToTerraform(struct?: DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference | DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queries),
+    queries: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queries),
   }
 }
 
 
 export function dataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructToHclTerraform(struct?: DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference | DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     queries: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queries),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queries),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -871,14 +871,14 @@ export function dataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference extends cdktf.ComplexObject {
+export class DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -944,39 +944,39 @@ export interface DataprocGdcSparkApplicationSparkSqlApplicationConfig {
 }
 
 export function dataprocGdcSparkApplicationSparkSqlApplicationConfigToTerraform(struct?: DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference | DataprocGdcSparkApplicationSparkSqlApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
-    query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
-    script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
+    jar_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarFileUris),
+    query_file_uri: cdktn.stringToTerraform(struct!.queryFileUri),
+    script_variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.scriptVariables),
     query_list: dataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStructToTerraform(struct!.queryList),
   }
 }
 
 
 export function dataprocGdcSparkApplicationSparkSqlApplicationConfigToHclTerraform(struct?: DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference | DataprocGdcSparkApplicationSparkSqlApplicationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jar_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     query_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.queryFileUri),
+      value: cdktn.stringToHclTerraform(struct!.queryFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scriptVariables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.scriptVariables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -993,14 +993,14 @@ export function dataprocGdcSparkApplicationSparkSqlApplicationConfigToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference extends cdktf.ComplexObject {
+export class DataprocGdcSparkApplicationSparkSqlApplicationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1122,39 +1122,39 @@ export interface DataprocGdcSparkApplicationTimeouts {
   readonly update?: string;
 }
 
-export function dataprocGdcSparkApplicationTimeoutsToTerraform(struct?: DataprocGdcSparkApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocGdcSparkApplicationTimeoutsToTerraform(struct?: DataprocGdcSparkApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataprocGdcSparkApplicationTimeoutsToHclTerraform(struct?: DataprocGdcSparkApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataprocGdcSparkApplicationTimeoutsToHclTerraform(struct?: DataprocGdcSparkApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1165,19 +1165,19 @@ export function dataprocGdcSparkApplicationTimeoutsToHclTerraform(struct?: Datap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataprocGdcSparkApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataprocGdcSparkApplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataprocGdcSparkApplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataprocGdcSparkApplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1198,7 +1198,7 @@ export class DataprocGdcSparkApplicationTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataprocGdcSparkApplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataprocGdcSparkApplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1206,7 +1206,7 @@ export class DataprocGdcSparkApplicationTimeoutsOutputReference extends cdktf.Co
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1271,7 +1271,7 @@ export class DataprocGdcSparkApplicationTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application}
 */
-export class DataprocGdcSparkApplication extends cdktf.TerraformResource {
+export class DataprocGdcSparkApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1282,14 +1282,14 @@ export class DataprocGdcSparkApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataprocGdcSparkApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataprocGdcSparkApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataprocGdcSparkApplication to import
   * @param importFromId The id of the existing DataprocGdcSparkApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_spark_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataprocGdcSparkApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_gdc_spark_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dataproc_gdc_spark_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -1413,13 +1413,13 @@ export class DataprocGdcSparkApplication extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1574,7 +1574,7 @@ export class DataprocGdcSparkApplication extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1691,19 +1691,19 @@ export class DataprocGdcSparkApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      application_environment: cdktf.stringToTerraform(this._applicationEnvironment),
-      dependency_images: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dependencyImages),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      project: cdktf.stringToTerraform(this._project),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
-      serviceinstance: cdktf.stringToTerraform(this._serviceinstance),
-      spark_application_id: cdktf.stringToTerraform(this._sparkApplicationId),
-      version: cdktf.stringToTerraform(this._version),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      application_environment: cdktn.stringToTerraform(this._applicationEnvironment),
+      dependency_images: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dependencyImages),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      project: cdktn.stringToTerraform(this._project),
+      properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
+      serviceinstance: cdktn.stringToTerraform(this._serviceinstance),
+      spark_application_id: cdktn.stringToTerraform(this._sparkApplicationId),
+      version: cdktn.stringToTerraform(this._version),
       pyspark_application_config: dataprocGdcSparkApplicationPysparkApplicationConfigToTerraform(this._pysparkApplicationConfig.internalValue),
       spark_application_config: dataprocGdcSparkApplicationSparkApplicationConfigToTerraform(this._sparkApplicationConfig.internalValue),
       spark_r_application_config: dataprocGdcSparkApplicationSparkRApplicationConfigToTerraform(this._sparkRApplicationConfig.internalValue),
@@ -1715,79 +1715,79 @@ export class DataprocGdcSparkApplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       application_environment: {
-        value: cdktf.stringToHclTerraform(this._applicationEnvironment),
+        value: cdktn.stringToHclTerraform(this._applicationEnvironment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dependency_images: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dependencyImages),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dependencyImages),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._properties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._properties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       serviceinstance: {
-        value: cdktf.stringToHclTerraform(this._serviceinstance),
+        value: cdktn.stringToHclTerraform(this._serviceinstance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spark_application_id: {
-        value: cdktf.stringToHclTerraform(this._sparkApplicationId),
+        value: cdktn.stringToHclTerraform(this._sparkApplicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

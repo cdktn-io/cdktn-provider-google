@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleCloudbuildTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleCloudbuildTriggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}
   *
@@ -41,8 +41,8 @@ export interface DataGoogleCloudbuildTriggerApprovalConfig {
 }
 
 export function dataGoogleCloudbuildTriggerApprovalConfigToTerraform(struct?: DataGoogleCloudbuildTriggerApprovalConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -51,8 +51,8 @@ export function dataGoogleCloudbuildTriggerApprovalConfigToTerraform(struct?: Da
 
 
 export function dataGoogleCloudbuildTriggerApprovalConfigToHclTerraform(struct?: DataGoogleCloudbuildTriggerApprovalConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -60,7 +60,7 @@ export function dataGoogleCloudbuildTriggerApprovalConfigToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerApprovalConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerApprovalConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -69,7 +69,7 @@ export class DataGoogleCloudbuildTriggerApprovalConfigOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -94,14 +94,14 @@ export class DataGoogleCloudbuildTriggerApprovalConfigOutputReference extends cd
   }
 }
 
-export class DataGoogleCloudbuildTriggerApprovalConfigList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerApprovalConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -116,8 +116,8 @@ export interface DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequ
 }
 
 export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestToTerraform(struct?: DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -126,8 +126,8 @@ export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullReque
 
 
 export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestToHclTerraform(struct?: DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -135,7 +135,7 @@ export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullReque
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -144,7 +144,7 @@ export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -179,14 +179,14 @@ export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestO
   }
 }
 
-export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -201,8 +201,8 @@ export interface DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPush {
 }
 
 export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushToTerraform(struct?: DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -211,8 +211,8 @@ export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushToTer
 
 
 export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushToHclTerraform(struct?: DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -220,7 +220,7 @@ export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushToHcl
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -229,7 +229,7 @@ export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -264,14 +264,14 @@ export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputRe
   }
 }
 
-export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPushList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -286,8 +286,8 @@ export interface DataGoogleCloudbuildTriggerBitbucketServerTriggerConfig {
 }
 
 export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigToTerraform(struct?: DataGoogleCloudbuildTriggerBitbucketServerTriggerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -296,8 +296,8 @@ export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigToTerrafo
 
 
 export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigToHclTerraform(struct?: DataGoogleCloudbuildTriggerBitbucketServerTriggerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -305,7 +305,7 @@ export function dataGoogleCloudbuildTriggerBitbucketServerTriggerConfigToHclTerr
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -314,7 +314,7 @@ export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -361,14 +361,14 @@ export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputRefere
   }
 }
 
-export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -383,8 +383,8 @@ export interface DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifacts {
 }
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsToTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -393,8 +393,8 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsToTerrafo
 
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -402,7 +402,7 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsToHclTerr
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -411,7 +411,7 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -456,14 +456,14 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsOutputRefere
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildArtifactsMavenArtifactsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -478,8 +478,8 @@ export interface DataGoogleCloudbuildTriggerBuildArtifactsNpmPackages {
 }
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesToTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsNpmPackages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -488,8 +488,8 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesToTerraform(
 
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsNpmPackages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -497,7 +497,7 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesToHclTerrafo
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -506,7 +506,7 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -536,14 +536,14 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesOutputReference
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildArtifactsNpmPackagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -558,8 +558,8 @@ export interface DataGoogleCloudbuildTriggerBuildArtifactsObjectsTiming {
 }
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingToTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsObjectsTiming): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -568,8 +568,8 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingToTerrafor
 
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsObjectsTiming): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -577,7 +577,7 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingToHclTerra
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -586,7 +586,7 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -616,14 +616,14 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingOutputReferen
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsTimingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -638,8 +638,8 @@ export interface DataGoogleCloudbuildTriggerBuildArtifactsObjects {
 }
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsToTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsObjects): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -648,8 +648,8 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsToTerraform(stru
 
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsObjects): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -657,7 +657,7 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsObjectsToHclTerraform(s
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -666,7 +666,7 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -702,14 +702,14 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsOutputReference ext
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildArtifactsObjectsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -724,8 +724,8 @@ export interface DataGoogleCloudbuildTriggerBuildArtifactsPythonPackages {
 }
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesToTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsPythonPackages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -734,8 +734,8 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesToTerrafo
 
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifactsPythonPackages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -743,7 +743,7 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesToHclTerr
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -752,7 +752,7 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -782,14 +782,14 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesOutputRefere
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildArtifactsPythonPackagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -804,8 +804,8 @@ export interface DataGoogleCloudbuildTriggerBuildArtifacts {
 }
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsToTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -814,8 +814,8 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsToTerraform(struct?: Da
 
 
 export function dataGoogleCloudbuildTriggerBuildArtifactsToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildArtifacts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -823,7 +823,7 @@ export function dataGoogleCloudbuildTriggerBuildArtifactsToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildArtifactsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -832,7 +832,7 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -881,14 +881,14 @@ export class DataGoogleCloudbuildTriggerBuildArtifactsOutputReference extends cd
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildArtifactsList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildArtifactsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -903,8 +903,8 @@ export interface DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManager {
 }
 
 export function dataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerToTerraform(struct?: DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManager): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -913,8 +913,8 @@ export function dataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerToT
 
 
 export function dataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManager): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -922,7 +922,7 @@ export function dataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerToH
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -931,7 +931,7 @@ export class DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -961,14 +961,14 @@ export class DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerOutput
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -983,8 +983,8 @@ export interface DataGoogleCloudbuildTriggerBuildAvailableSecrets {
 }
 
 export function dataGoogleCloudbuildTriggerBuildAvailableSecretsToTerraform(struct?: DataGoogleCloudbuildTriggerBuildAvailableSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -993,8 +993,8 @@ export function dataGoogleCloudbuildTriggerBuildAvailableSecretsToTerraform(stru
 
 
 export function dataGoogleCloudbuildTriggerBuildAvailableSecretsToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildAvailableSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1002,7 +1002,7 @@ export function dataGoogleCloudbuildTriggerBuildAvailableSecretsToHclTerraform(s
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildAvailableSecretsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildAvailableSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1011,7 +1011,7 @@ export class DataGoogleCloudbuildTriggerBuildAvailableSecretsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1037,14 +1037,14 @@ export class DataGoogleCloudbuildTriggerBuildAvailableSecretsOutputReference ext
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildAvailableSecretsList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildAvailableSecretsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1059,8 +1059,8 @@ export interface DataGoogleCloudbuildTriggerBuildOptionsVolumes {
 }
 
 export function dataGoogleCloudbuildTriggerBuildOptionsVolumesToTerraform(struct?: DataGoogleCloudbuildTriggerBuildOptionsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1069,8 +1069,8 @@ export function dataGoogleCloudbuildTriggerBuildOptionsVolumesToTerraform(struct
 
 
 export function dataGoogleCloudbuildTriggerBuildOptionsVolumesToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildOptionsVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1078,7 +1078,7 @@ export function dataGoogleCloudbuildTriggerBuildOptionsVolumesToHclTerraform(str
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildOptionsVolumesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildOptionsVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1087,7 +1087,7 @@ export class DataGoogleCloudbuildTriggerBuildOptionsVolumesOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1117,14 +1117,14 @@ export class DataGoogleCloudbuildTriggerBuildOptionsVolumesOutputReference exten
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildOptionsVolumesList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildOptionsVolumesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1139,8 +1139,8 @@ export interface DataGoogleCloudbuildTriggerBuildOptions {
 }
 
 export function dataGoogleCloudbuildTriggerBuildOptionsToTerraform(struct?: DataGoogleCloudbuildTriggerBuildOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1149,8 +1149,8 @@ export function dataGoogleCloudbuildTriggerBuildOptionsToTerraform(struct?: Data
 
 
 export function dataGoogleCloudbuildTriggerBuildOptionsToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1158,7 +1158,7 @@ export function dataGoogleCloudbuildTriggerBuildOptionsToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildOptionsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1167,7 +1167,7 @@ export class DataGoogleCloudbuildTriggerBuildOptionsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1248,14 +1248,14 @@ export class DataGoogleCloudbuildTriggerBuildOptionsOutputReference extends cdkt
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildOptionsList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1270,8 +1270,8 @@ export interface DataGoogleCloudbuildTriggerBuildSecret {
 }
 
 export function dataGoogleCloudbuildTriggerBuildSecretToTerraform(struct?: DataGoogleCloudbuildTriggerBuildSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1280,8 +1280,8 @@ export function dataGoogleCloudbuildTriggerBuildSecretToTerraform(struct?: DataG
 
 
 export function dataGoogleCloudbuildTriggerBuildSecretToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildSecret): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1289,7 +1289,7 @@ export function dataGoogleCloudbuildTriggerBuildSecretToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildSecretOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1298,7 +1298,7 @@ export class DataGoogleCloudbuildTriggerBuildSecretOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1323,20 +1323,20 @@ export class DataGoogleCloudbuildTriggerBuildSecretOutputReference extends cdktf
   }
 
   // secret_env - computed: true, optional: false, required: false
-  private _secretEnv = new cdktf.StringMap(this, "secret_env");
+  private _secretEnv = new cdktn.StringMap(this, "secret_env");
   public get secretEnv() {
     return this._secretEnv;
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildSecretList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildSecretList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1351,8 +1351,8 @@ export interface DataGoogleCloudbuildTriggerBuildSourceRepoSource {
 }
 
 export function dataGoogleCloudbuildTriggerBuildSourceRepoSourceToTerraform(struct?: DataGoogleCloudbuildTriggerBuildSourceRepoSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1361,8 +1361,8 @@ export function dataGoogleCloudbuildTriggerBuildSourceRepoSourceToTerraform(stru
 
 
 export function dataGoogleCloudbuildTriggerBuildSourceRepoSourceToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildSourceRepoSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1370,7 +1370,7 @@ export function dataGoogleCloudbuildTriggerBuildSourceRepoSourceToHclTerraform(s
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1379,7 +1379,7 @@ export class DataGoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1429,7 +1429,7 @@ export class DataGoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference ext
   }
 
   // substitutions - computed: true, optional: false, required: false
-  private _substitutions = new cdktf.StringMap(this, "substitutions");
+  private _substitutions = new cdktn.StringMap(this, "substitutions");
   public get substitutions() {
     return this._substitutions;
   }
@@ -1440,14 +1440,14 @@ export class DataGoogleCloudbuildTriggerBuildSourceRepoSourceOutputReference ext
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildSourceRepoSourceList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildSourceRepoSourceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1462,8 +1462,8 @@ export interface DataGoogleCloudbuildTriggerBuildSourceStorageSource {
 }
 
 export function dataGoogleCloudbuildTriggerBuildSourceStorageSourceToTerraform(struct?: DataGoogleCloudbuildTriggerBuildSourceStorageSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1472,8 +1472,8 @@ export function dataGoogleCloudbuildTriggerBuildSourceStorageSourceToTerraform(s
 
 
 export function dataGoogleCloudbuildTriggerBuildSourceStorageSourceToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildSourceStorageSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1481,7 +1481,7 @@ export function dataGoogleCloudbuildTriggerBuildSourceStorageSourceToHclTerrafor
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildSourceStorageSourceOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildSourceStorageSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1490,7 +1490,7 @@ export class DataGoogleCloudbuildTriggerBuildSourceStorageSourceOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1525,14 +1525,14 @@ export class DataGoogleCloudbuildTriggerBuildSourceStorageSourceOutputReference 
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildSourceStorageSourceList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildSourceStorageSourceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1547,8 +1547,8 @@ export interface DataGoogleCloudbuildTriggerBuildSource {
 }
 
 export function dataGoogleCloudbuildTriggerBuildSourceToTerraform(struct?: DataGoogleCloudbuildTriggerBuildSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1557,8 +1557,8 @@ export function dataGoogleCloudbuildTriggerBuildSourceToTerraform(struct?: DataG
 
 
 export function dataGoogleCloudbuildTriggerBuildSourceToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1566,7 +1566,7 @@ export function dataGoogleCloudbuildTriggerBuildSourceToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildSourceOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1575,7 +1575,7 @@ export class DataGoogleCloudbuildTriggerBuildSourceOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1607,14 +1607,14 @@ export class DataGoogleCloudbuildTriggerBuildSourceOutputReference extends cdktf
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildSourceList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildSourceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1629,8 +1629,8 @@ export interface DataGoogleCloudbuildTriggerBuildStepVolumes {
 }
 
 export function dataGoogleCloudbuildTriggerBuildStepVolumesToTerraform(struct?: DataGoogleCloudbuildTriggerBuildStepVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1639,8 +1639,8 @@ export function dataGoogleCloudbuildTriggerBuildStepVolumesToTerraform(struct?: 
 
 
 export function dataGoogleCloudbuildTriggerBuildStepVolumesToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildStepVolumes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1648,7 +1648,7 @@ export function dataGoogleCloudbuildTriggerBuildStepVolumesToHclTerraform(struct
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildStepVolumesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildStepVolumesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1657,7 +1657,7 @@ export class DataGoogleCloudbuildTriggerBuildStepVolumesOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1687,14 +1687,14 @@ export class DataGoogleCloudbuildTriggerBuildStepVolumesOutputReference extends 
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildStepVolumesList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildStepVolumesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1709,8 +1709,8 @@ export interface DataGoogleCloudbuildTriggerBuildStep {
 }
 
 export function dataGoogleCloudbuildTriggerBuildStepToTerraform(struct?: DataGoogleCloudbuildTriggerBuildStep): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1719,8 +1719,8 @@ export function dataGoogleCloudbuildTriggerBuildStepToTerraform(struct?: DataGoo
 
 
 export function dataGoogleCloudbuildTriggerBuildStepToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuildStep): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1728,7 +1728,7 @@ export function dataGoogleCloudbuildTriggerBuildStepToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildStepOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildStepOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1737,7 +1737,7 @@ export class DataGoogleCloudbuildTriggerBuildStepOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1828,14 +1828,14 @@ export class DataGoogleCloudbuildTriggerBuildStepOutputReference extends cdktf.C
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildStepList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildStepList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1850,8 +1850,8 @@ export interface DataGoogleCloudbuildTriggerBuild {
 }
 
 export function dataGoogleCloudbuildTriggerBuildToTerraform(struct?: DataGoogleCloudbuildTriggerBuild): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1860,8 +1860,8 @@ export function dataGoogleCloudbuildTriggerBuildToTerraform(struct?: DataGoogleC
 
 
 export function dataGoogleCloudbuildTriggerBuildToHclTerraform(struct?: DataGoogleCloudbuildTriggerBuild): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1869,7 +1869,7 @@ export function dataGoogleCloudbuildTriggerBuildToHclTerraform(struct?: DataGoog
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerBuildOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerBuildOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1878,7 +1878,7 @@ export class DataGoogleCloudbuildTriggerBuildOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1949,7 +1949,7 @@ export class DataGoogleCloudbuildTriggerBuildOutputReference extends cdktf.Compl
   }
 
   // substitutions - computed: true, optional: false, required: false
-  private _substitutions = new cdktf.StringMap(this, "substitutions");
+  private _substitutions = new cdktn.StringMap(this, "substitutions");
   public get substitutions() {
     return this._substitutions;
   }
@@ -1965,14 +1965,14 @@ export class DataGoogleCloudbuildTriggerBuildOutputReference extends cdktf.Compl
   }
 }
 
-export class DataGoogleCloudbuildTriggerBuildList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerBuildList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1987,8 +1987,8 @@ export interface DataGoogleCloudbuildTriggerGitFileSource {
 }
 
 export function dataGoogleCloudbuildTriggerGitFileSourceToTerraform(struct?: DataGoogleCloudbuildTriggerGitFileSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1997,8 +1997,8 @@ export function dataGoogleCloudbuildTriggerGitFileSourceToTerraform(struct?: Dat
 
 
 export function dataGoogleCloudbuildTriggerGitFileSourceToHclTerraform(struct?: DataGoogleCloudbuildTriggerGitFileSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2006,7 +2006,7 @@ export function dataGoogleCloudbuildTriggerGitFileSourceToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerGitFileSourceOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerGitFileSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2015,7 +2015,7 @@ export class DataGoogleCloudbuildTriggerGitFileSourceOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2070,14 +2070,14 @@ export class DataGoogleCloudbuildTriggerGitFileSourceOutputReference extends cdk
   }
 }
 
-export class DataGoogleCloudbuildTriggerGitFileSourceList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerGitFileSourceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2092,8 +2092,8 @@ export interface DataGoogleCloudbuildTriggerGithubPullRequest {
 }
 
 export function dataGoogleCloudbuildTriggerGithubPullRequestToTerraform(struct?: DataGoogleCloudbuildTriggerGithubPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2102,8 +2102,8 @@ export function dataGoogleCloudbuildTriggerGithubPullRequestToTerraform(struct?:
 
 
 export function dataGoogleCloudbuildTriggerGithubPullRequestToHclTerraform(struct?: DataGoogleCloudbuildTriggerGithubPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2111,7 +2111,7 @@ export function dataGoogleCloudbuildTriggerGithubPullRequestToHclTerraform(struc
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerGithubPullRequestOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerGithubPullRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2120,7 +2120,7 @@ export class DataGoogleCloudbuildTriggerGithubPullRequestOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2155,14 +2155,14 @@ export class DataGoogleCloudbuildTriggerGithubPullRequestOutputReference extends
   }
 }
 
-export class DataGoogleCloudbuildTriggerGithubPullRequestList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerGithubPullRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2177,8 +2177,8 @@ export interface DataGoogleCloudbuildTriggerGithubPush {
 }
 
 export function dataGoogleCloudbuildTriggerGithubPushToTerraform(struct?: DataGoogleCloudbuildTriggerGithubPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2187,8 +2187,8 @@ export function dataGoogleCloudbuildTriggerGithubPushToTerraform(struct?: DataGo
 
 
 export function dataGoogleCloudbuildTriggerGithubPushToHclTerraform(struct?: DataGoogleCloudbuildTriggerGithubPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2196,7 +2196,7 @@ export function dataGoogleCloudbuildTriggerGithubPushToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerGithubPushOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerGithubPushOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2205,7 +2205,7 @@ export class DataGoogleCloudbuildTriggerGithubPushOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2240,14 +2240,14 @@ export class DataGoogleCloudbuildTriggerGithubPushOutputReference extends cdktf.
   }
 }
 
-export class DataGoogleCloudbuildTriggerGithubPushList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerGithubPushList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2262,8 +2262,8 @@ export interface DataGoogleCloudbuildTriggerGithub {
 }
 
 export function dataGoogleCloudbuildTriggerGithubToTerraform(struct?: DataGoogleCloudbuildTriggerGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2272,8 +2272,8 @@ export function dataGoogleCloudbuildTriggerGithubToTerraform(struct?: DataGoogle
 
 
 export function dataGoogleCloudbuildTriggerGithubToHclTerraform(struct?: DataGoogleCloudbuildTriggerGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2281,7 +2281,7 @@ export function dataGoogleCloudbuildTriggerGithubToHclTerraform(struct?: DataGoo
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerGithubOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerGithubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2290,7 +2290,7 @@ export class DataGoogleCloudbuildTriggerGithubOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2337,14 +2337,14 @@ export class DataGoogleCloudbuildTriggerGithubOutputReference extends cdktf.Comp
   }
 }
 
-export class DataGoogleCloudbuildTriggerGithubList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerGithubList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2359,8 +2359,8 @@ export interface DataGoogleCloudbuildTriggerPubsubConfig {
 }
 
 export function dataGoogleCloudbuildTriggerPubsubConfigToTerraform(struct?: DataGoogleCloudbuildTriggerPubsubConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2369,8 +2369,8 @@ export function dataGoogleCloudbuildTriggerPubsubConfigToTerraform(struct?: Data
 
 
 export function dataGoogleCloudbuildTriggerPubsubConfigToHclTerraform(struct?: DataGoogleCloudbuildTriggerPubsubConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2378,7 +2378,7 @@ export function dataGoogleCloudbuildTriggerPubsubConfigToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerPubsubConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerPubsubConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2387,7 +2387,7 @@ export class DataGoogleCloudbuildTriggerPubsubConfigOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2427,14 +2427,14 @@ export class DataGoogleCloudbuildTriggerPubsubConfigOutputReference extends cdkt
   }
 }
 
-export class DataGoogleCloudbuildTriggerPubsubConfigList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerPubsubConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2449,8 +2449,8 @@ export interface DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequest {
 }
 
 export function dataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestToTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2459,8 +2459,8 @@ export function dataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestToTer
 
 
 export function dataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestToHclTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2468,7 +2468,7 @@ export function dataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestToHcl
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2477,7 +2477,7 @@ export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2512,14 +2512,14 @@ export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputRe
   }
 }
 
-export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2534,8 +2534,8 @@ export interface DataGoogleCloudbuildTriggerRepositoryEventConfigPush {
 }
 
 export function dataGoogleCloudbuildTriggerRepositoryEventConfigPushToTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfigPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2544,8 +2544,8 @@ export function dataGoogleCloudbuildTriggerRepositoryEventConfigPushToTerraform(
 
 
 export function dataGoogleCloudbuildTriggerRepositoryEventConfigPushToHclTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfigPush): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2553,7 +2553,7 @@ export function dataGoogleCloudbuildTriggerRepositoryEventConfigPushToHclTerrafo
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2562,7 +2562,7 @@ export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2597,14 +2597,14 @@ export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference
   }
 }
 
-export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2619,8 +2619,8 @@ export interface DataGoogleCloudbuildTriggerRepositoryEventConfig {
 }
 
 export function dataGoogleCloudbuildTriggerRepositoryEventConfigToTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2629,8 +2629,8 @@ export function dataGoogleCloudbuildTriggerRepositoryEventConfigToTerraform(stru
 
 
 export function dataGoogleCloudbuildTriggerRepositoryEventConfigToHclTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2638,7 +2638,7 @@ export function dataGoogleCloudbuildTriggerRepositoryEventConfigToHclTerraform(s
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerRepositoryEventConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2647,7 +2647,7 @@ export class DataGoogleCloudbuildTriggerRepositoryEventConfigOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2684,14 +2684,14 @@ export class DataGoogleCloudbuildTriggerRepositoryEventConfigOutputReference ext
   }
 }
 
-export class DataGoogleCloudbuildTriggerRepositoryEventConfigList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2706,8 +2706,8 @@ export interface DataGoogleCloudbuildTriggerSourceToBuild {
 }
 
 export function dataGoogleCloudbuildTriggerSourceToBuildToTerraform(struct?: DataGoogleCloudbuildTriggerSourceToBuild): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2716,8 +2716,8 @@ export function dataGoogleCloudbuildTriggerSourceToBuildToTerraform(struct?: Dat
 
 
 export function dataGoogleCloudbuildTriggerSourceToBuildToHclTerraform(struct?: DataGoogleCloudbuildTriggerSourceToBuild): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2725,7 +2725,7 @@ export function dataGoogleCloudbuildTriggerSourceToBuildToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerSourceToBuildOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerSourceToBuildOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2734,7 +2734,7 @@ export class DataGoogleCloudbuildTriggerSourceToBuildOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2784,14 +2784,14 @@ export class DataGoogleCloudbuildTriggerSourceToBuildOutputReference extends cdk
   }
 }
 
-export class DataGoogleCloudbuildTriggerSourceToBuildList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerSourceToBuildList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2806,8 +2806,8 @@ export interface DataGoogleCloudbuildTriggerTriggerTemplate {
 }
 
 export function dataGoogleCloudbuildTriggerTriggerTemplateToTerraform(struct?: DataGoogleCloudbuildTriggerTriggerTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2816,8 +2816,8 @@ export function dataGoogleCloudbuildTriggerTriggerTemplateToTerraform(struct?: D
 
 
 export function dataGoogleCloudbuildTriggerTriggerTemplateToHclTerraform(struct?: DataGoogleCloudbuildTriggerTriggerTemplate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2825,7 +2825,7 @@ export function dataGoogleCloudbuildTriggerTriggerTemplateToHclTerraform(struct?
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerTriggerTemplateOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerTriggerTemplateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2834,7 +2834,7 @@ export class DataGoogleCloudbuildTriggerTriggerTemplateOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2889,14 +2889,14 @@ export class DataGoogleCloudbuildTriggerTriggerTemplateOutputReference extends c
   }
 }
 
-export class DataGoogleCloudbuildTriggerTriggerTemplateList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerTriggerTemplateList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2911,8 +2911,8 @@ export interface DataGoogleCloudbuildTriggerWebhookConfig {
 }
 
 export function dataGoogleCloudbuildTriggerWebhookConfigToTerraform(struct?: DataGoogleCloudbuildTriggerWebhookConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2921,8 +2921,8 @@ export function dataGoogleCloudbuildTriggerWebhookConfigToTerraform(struct?: Dat
 
 
 export function dataGoogleCloudbuildTriggerWebhookConfigToHclTerraform(struct?: DataGoogleCloudbuildTriggerWebhookConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2930,7 +2930,7 @@ export function dataGoogleCloudbuildTriggerWebhookConfigToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataGoogleCloudbuildTriggerWebhookConfigOutputReference extends cdktf.ComplexObject {
+export class DataGoogleCloudbuildTriggerWebhookConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2939,7 +2939,7 @@ export class DataGoogleCloudbuildTriggerWebhookConfigOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2969,14 +2969,14 @@ export class DataGoogleCloudbuildTriggerWebhookConfigOutputReference extends cdk
   }
 }
 
-export class DataGoogleCloudbuildTriggerWebhookConfigList extends cdktf.ComplexList {
+export class DataGoogleCloudbuildTriggerWebhookConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2991,7 +2991,7 @@ export class DataGoogleCloudbuildTriggerWebhookConfigList extends cdktf.ComplexL
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger}
 */
-export class DataGoogleCloudbuildTrigger extends cdktf.TerraformDataSource {
+export class DataGoogleCloudbuildTrigger extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -3002,14 +3002,14 @@ export class DataGoogleCloudbuildTrigger extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleCloudbuildTrigger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleCloudbuildTrigger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudbuildTrigger to import
   * @param importFromId The id of the existing DataGoogleCloudbuildTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudbuildTrigger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuild_trigger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuild_trigger", importId: importFromId, provider });
       }
 
   // ===========
@@ -3193,7 +3193,7 @@ export class DataGoogleCloudbuildTrigger extends cdktf.TerraformDataSource {
   }
 
   // substitutions - computed: true, optional: false, required: false
-  private _substitutions = new cdktf.StringMap(this, "substitutions");
+  private _substitutions = new cdktn.StringMap(this, "substitutions");
   public get substitutions() {
     return this._substitutions;
   }
@@ -3234,35 +3234,35 @@ export class DataGoogleCloudbuildTrigger extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      trigger_id: cdktf.stringToTerraform(this._triggerId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      trigger_id: cdktn.stringToTerraform(this._triggerId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       trigger_id: {
-        value: cdktf.stringToHclTerraform(this._triggerId),
+        value: cdktn.stringToHclTerraform(this._triggerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

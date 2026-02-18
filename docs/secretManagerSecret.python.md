@@ -43,17 +43,17 @@ secretManagerSecret.SecretManagerSecret(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.replication">replication</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplication">SecretManagerSecretReplication</a></code> | replication block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.secretId">secret_id</a></code> | <code>str</code> | This must be unique within the project. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Custom metadata about the secret. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Terraform will be prevented from destroying the secret. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.expireTime">expire_time</a></code> | <code>str</code> | Timestamp in UTC when the Secret is scheduled to expire. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_secret#id SecretManagerSecret#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels assigned to this Secret. |
@@ -61,7 +61,7 @@ secretManagerSecret.SecretManagerSecret(
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.rotation">rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotation">SecretManagerSecretRotation</a></code> | rotation block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.topics">topics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | topics block. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.topics">topics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | topics block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.ttl">ttl</a></code> | <code>str</code> | The TTL for the Secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.versionAliases">version_aliases</a></code> | <code>typing.Mapping[str]</code> | Mapping from version alias to version name. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.versionDestroyTtl">version_destroy_ttl</a></code> | <code>str</code> | Secret Version TTL after destruction request. |
@@ -88,43 +88,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `deletion_protection`<sup>Optional</sup> <a name="deletion_protection" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.deletionProtection"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether Terraform will be prevented from destroying the secret.
 
@@ -280,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `topics`<sup>Optional</sup> <a name="topics" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.topics"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
 
 topics block.
 
@@ -623,7 +623,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -813,7 +813,7 @@ def put_topics(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.putTopics.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
 
 ---
 
@@ -902,7 +902,7 @@ def reset_version_destroy_ttl() -> None
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SecretManagerSecret resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a SecretManagerSecret resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -985,7 +985,7 @@ secretManagerSecret.SecretManagerSecret.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a SecretManagerSecret resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a SecretManagerSecret resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.generateConfigForImport.parameter.scope"></a>
 
@@ -1015,7 +1015,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the SecretManagerSecret to import is found.
 
@@ -1026,30 +1026,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.effectiveAnnotations">effective_annotations</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.effectiveAnnotations">effective_annotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.replication">replication</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference">SecretManagerSecretReplicationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.rotation">rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference">SecretManagerSecretRotationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference">SecretManagerSecretTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.topics">topics</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList">SecretManagerSecretTopicsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.annotationsInput">annotations_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.expireTimeInput">expire_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1058,13 +1058,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.rotationInput">rotation_input</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotation">SecretManagerSecretRotation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.secretIdInput">secret_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.topicsInput">topics_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.topicsInput">topics_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.ttlInput">ttl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.versionAliasesInput">version_aliases_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.versionDestroyTtlInput">version_destroy_ttl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.expireTime">expire_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1095,7 +1095,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1145,7 +1145,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1155,7 +1155,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1165,7 +1165,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1185,7 +1185,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1195,7 +1195,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1205,7 +1205,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1215,7 +1215,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1235,7 +1235,7 @@ create_time: str
 effective_annotations: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1245,7 +1245,7 @@ effective_annotations: StringMap
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1285,7 +1285,7 @@ rotation: SecretManagerSecretRotationOutputReference
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1325,7 +1325,7 @@ annotations_input: typing.Mapping[str]
 deletion_protection_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1415,7 +1415,7 @@ tags_input: typing.Mapping[str]
 timeouts_input: IResolvable | SecretManagerSecretTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a>
 
 ---
 
@@ -1425,7 +1425,7 @@ timeouts_input: IResolvable | SecretManagerSecretTimeouts
 topics_input: IResolvable | typing.List[SecretManagerSecretTopics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
 
 ---
 
@@ -1475,7 +1475,7 @@ annotations: typing.Mapping[str]
 deletion_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1626,17 +1626,17 @@ secretManagerSecret.SecretManagerSecretConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.replication">replication</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplication">SecretManagerSecretReplication</a></code> | replication block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.secretId">secret_id</a></code> | <code>str</code> | This must be unique within the project. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | Custom metadata about the secret. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether Terraform will be prevented from destroying the secret. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.expireTime">expire_time</a></code> | <code>str</code> | Timestamp in UTC when the Secret is scheduled to expire. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_secret#id SecretManagerSecret#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels assigned to this Secret. |
@@ -1644,7 +1644,7 @@ secretManagerSecret.SecretManagerSecretConfig(
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.rotation">rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotation">SecretManagerSecretRotation</a></code> | rotation block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.topics">topics</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | topics block. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.topics">topics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | topics block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.ttl">ttl</a></code> | <code>str</code> | The TTL for the Secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.versionAliases">version_aliases</a></code> | <code>typing.Mapping[str]</code> | Mapping from version alias to version name. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.versionDestroyTtl">version_destroy_ttl</a></code> | <code>str</code> | Secret Version TTL after destruction request. |
@@ -1657,7 +1657,7 @@ secretManagerSecret.SecretManagerSecretConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1667,7 +1667,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1677,7 +1677,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1687,7 +1687,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1697,7 +1697,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1707,7 +1707,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1717,7 +1717,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 deletion_protection: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether Terraform will be prevented from destroying the secret.
 
@@ -1921,7 +1921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 topics: IResolvable | typing.List[SecretManagerSecretTopics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
 
 topics block.
 
@@ -2121,7 +2121,7 @@ secretManagerSecret.SecretManagerSecretReplicationUserManaged(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManaged.property.replicas">replicas</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]</code> | replicas block. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManaged.property.replicas">replicas</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]</code> | replicas block. |
 
 ---
 
@@ -2131,7 +2131,7 @@ secretManagerSecret.SecretManagerSecretReplicationUserManaged(
 replicas: IResolvable | typing.List[SecretManagerSecretReplicationUserManagedReplicas]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
 
 replicas block.
 
@@ -2393,14 +2393,14 @@ secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2592,7 +2592,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2689,14 +2689,14 @@ secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2890,7 +2890,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3011,14 +3011,14 @@ secretManagerSecret.SecretManagerSecretReplicationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3214,7 +3214,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3256,7 +3256,7 @@ def put_user_managed(
 
 ###### `replicas`<sup>Required</sup> <a name="replicas" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference.putUserManaged.parameter.replicas"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
 
 replicas block.
 
@@ -3381,14 +3381,14 @@ secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3581,7 +3581,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3605,7 +3605,7 @@ def put_replicas(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.putReplicas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
 
 ---
 
@@ -3617,7 +3617,7 @@ def put_replicas(
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.property.replicas">replicas</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList">SecretManagerSecretReplicationUserManagedReplicasList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.property.replicasInput">replicas_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.property.replicasInput">replicas_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManaged">SecretManagerSecretReplicationUserManaged</a></code> | *No description.* |
 
 ---
@@ -3662,7 +3662,7 @@ replicas: SecretManagerSecretReplicationUserManagedReplicasList
 replicas_input: IResolvable | typing.List[SecretManagerSecretReplicationUserManagedReplicas]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
 
 ---
 
@@ -3692,14 +3692,14 @@ secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerMan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3891,7 +3891,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3989,7 +3989,7 @@ secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3997,7 +3997,7 @@ secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4067,7 +4067,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4104,7 +4104,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]</code> | *No description.* |
 
 ---
 
@@ -4138,7 +4138,7 @@ fqn: str
 internal_value: IResolvable | typing.List[SecretManagerSecretReplicationUserManagedReplicas]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>]
 
 ---
 
@@ -4160,7 +4160,7 @@ secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4169,7 +4169,7 @@ secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputRefer
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4379,7 +4379,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4428,7 +4428,7 @@ def reset_customer_managed_encryption() -> None
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.property.customerManagedEncryptionInput">customer_managed_encryption_input</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption">SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a></code> | *No description.* |
 
 ---
 
@@ -4502,7 +4502,7 @@ location: str
 internal_value: IResolvable | SecretManagerSecretReplicationUserManagedReplicas
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas">SecretManagerSecretReplicationUserManagedReplicas</a>
 
 ---
 
@@ -4522,14 +4522,14 @@ secretManagerSecret.SecretManagerSecretRotationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4723,7 +4723,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4854,14 +4854,14 @@ secretManagerSecret.SecretManagerSecretTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5056,7 +5056,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5101,7 +5101,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -5195,7 +5195,7 @@ update: str
 internal_value: IResolvable | SecretManagerSecretTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a>
 
 ---
 
@@ -5216,7 +5216,7 @@ secretManagerSecret.SecretManagerSecretTopicsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5224,7 +5224,7 @@ secretManagerSecret.SecretManagerSecretTopicsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5294,7 +5294,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5331,7 +5331,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | *No description.* |
 
 ---
 
@@ -5365,7 +5365,7 @@ fqn: str
 internal_value: IResolvable | typing.List[SecretManagerSecretTopics]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]
 
 ---
 
@@ -5387,7 +5387,7 @@ secretManagerSecret.SecretManagerSecretTopicsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5396,7 +5396,7 @@ secretManagerSecret.SecretManagerSecretTopicsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5604,7 +5604,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5627,7 +5627,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a></code> | *No description.* |
 
 ---
 
@@ -5681,7 +5681,7 @@ name: str
 internal_value: IResolvable | SecretManagerSecretTopics
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>
 
 ---
 

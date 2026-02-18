@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleStorageManagedFolderIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleStorageManagedFolderIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_managed_folder_iam_policy#bucket DataGoogleStorageManagedFolderIamPolicy#bucket}
   */
@@ -32,7 +32,7 @@ export interface DataGoogleStorageManagedFolderIamPolicyConfig extends cdktf.Ter
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_managed_folder_iam_policy google_storage_managed_folder_iam_policy}
 */
-export class DataGoogleStorageManagedFolderIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleStorageManagedFolderIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleStorageManagedFolderIamPolicy extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleStorageManagedFolderIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleStorageManagedFolderIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleStorageManagedFolderIamPolicy to import
   * @param importFromId The id of the existing DataGoogleStorageManagedFolderIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_managed_folder_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleStorageManagedFolderIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_managed_folder_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_managed_folder_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -147,28 +147,28 @@ export class DataGoogleStorageManagedFolderIamPolicy extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      id: cdktf.stringToTerraform(this._id),
-      managed_folder: cdktf.stringToTerraform(this._managedFolder),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      id: cdktn.stringToTerraform(this._id),
+      managed_folder: cdktn.stringToTerraform(this._managedFolder),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_folder: {
-        value: cdktf.stringToHclTerraform(this._managedFolder),
+        value: cdktn.stringToHclTerraform(this._managedFolder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

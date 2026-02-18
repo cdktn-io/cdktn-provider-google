@@ -41,23 +41,23 @@ bigtableAppProfile.BigtableAppProfile(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.appProfileId">app_profile_id</a></code> | <code>str</code> | The unique name of the app profile in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.dataBoostIsolationReadOnly">data_boost_isolation_read_only</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnly">BigtableAppProfileDataBoostIsolationReadOnly</a></code> | data_boost_isolation_read_only block. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.description">description</a></code> | <code>str</code> | Long form description of the use case for this app profile. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#id BigtableAppProfile#id}. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.ignoreWarnings">ignore_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, ignore safety checks when deleting/updating the app profile. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.ignoreWarnings">ignore_warnings</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, ignore safety checks when deleting/updating the app profile. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.instance">instance</a></code> | <code>str</code> | The name of the instance to create the app profile within. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.multiClusterRoutingClusterIds">multi_cluster_routing_cluster_ids</a></code> | <code>typing.List[str]</code> | The set of clusters to route to. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.multiClusterRoutingUseAny">multi_cluster_routing_use_any</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, read/write requests are routed to the nearest cluster in the instance, and will fail over to the nearest cluster that is available in the event of transient errors or delays. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.multiClusterRoutingUseAny">multi_cluster_routing_use_any</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, read/write requests are routed to the nearest cluster in the instance, and will fail over to the nearest cluster that is available in the event of transient errors or delays. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#project BigtableAppProfile#project}. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.rowAffinity">row_affinity</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be used with multi-cluster routing. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.rowAffinity">row_affinity</a></code> | <code>bool \| cdktn.IResolvable</code> | Must be used with multi-cluster routing. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.singleClusterRouting">single_cluster_routing</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting">BigtableAppProfileSingleClusterRouting</a></code> | single_cluster_routing block. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.standardIsolation">standard_isolation</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolation">BigtableAppProfileStandardIsolation</a></code> | standard_isolation block. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a></code> | timeouts block. |
@@ -84,43 +84,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignore_warnings`<sup>Optional</sup> <a name="ignore_warnings" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.ignoreWarnings"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, ignore safety checks when deleting/updating the app profile.
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `multi_cluster_routing_use_any`<sup>Optional</sup> <a name="multi_cluster_routing_use_any" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.multiClusterRoutingUseAny"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, read/write requests are routed to the nearest cluster in the instance, and will fail over to the nearest cluster that is available in the event of transient errors or delays.
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `row_affinity`<sup>Optional</sup> <a name="row_affinity" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.Initializer.parameter.rowAffinity"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Must be used with multi-cluster routing.
 
@@ -548,7 +548,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -670,7 +670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `allow_transactional_writes`<sup>Optional</sup> <a name="allow_transactional_writes" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.putSingleClusterRouting.parameter.allowTransactionalWrites"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, CheckAndMutateRow and ReadModifyWriteRow requests are allowed by this app profile.
 
@@ -811,7 +811,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BigtableAppProfile resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a BigtableAppProfile resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -894,7 +894,7 @@ bigtableAppProfile.BigtableAppProfile.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a BigtableAppProfile resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BigtableAppProfile resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.generateConfigForImport.parameter.scope"></a>
 
@@ -924,7 +924,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BigtableAppProfile to import is found.
 
@@ -935,19 +935,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.dataBoostIsolationReadOnly">data_boost_isolation_read_only</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference">BigtableAppProfileDataBoostIsolationReadOnlyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.singleClusterRouting">single_cluster_routing</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference">BigtableAppProfileSingleClusterRoutingOutputReference</a></code> | *No description.* |
@@ -957,24 +957,24 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.dataBoostIsolationReadOnlyInput">data_boost_isolation_read_only_input</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnly">BigtableAppProfileDataBoostIsolationReadOnly</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.ignoreWarningsInput">ignore_warnings_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.ignoreWarningsInput">ignore_warnings_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.multiClusterRoutingClusterIdsInput">multi_cluster_routing_cluster_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.multiClusterRoutingUseAnyInput">multi_cluster_routing_use_any_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.multiClusterRoutingUseAnyInput">multi_cluster_routing_use_any_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.rowAffinityInput">row_affinity_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.rowAffinityInput">row_affinity_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.singleClusterRoutingInput">single_cluster_routing_input</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting">BigtableAppProfileSingleClusterRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.standardIsolationInput">standard_isolation_input</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolation">BigtableAppProfileStandardIsolation</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.appProfileId">app_profile_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.ignoreWarnings">ignore_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.ignoreWarnings">ignore_warnings</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.instance">instance</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.multiClusterRoutingClusterIds">multi_cluster_routing_cluster_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.multiClusterRoutingUseAny">multi_cluster_routing_use_any</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.multiClusterRoutingUseAny">multi_cluster_routing_use_any</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.rowAffinity">row_affinity</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile.property.rowAffinity">row_affinity</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -996,7 +996,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1046,7 +1046,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1056,7 +1056,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1066,7 +1066,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1086,7 +1086,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1096,7 +1096,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1106,7 +1106,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1116,7 +1116,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1216,7 +1216,7 @@ id_input: str
 ignore_warnings_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1246,7 +1246,7 @@ multi_cluster_routing_cluster_ids_input: typing.List[str]
 multi_cluster_routing_use_any_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1266,7 +1266,7 @@ project_input: str
 row_affinity_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1296,7 +1296,7 @@ standard_isolation_input: BigtableAppProfileStandardIsolation
 timeouts_input: IResolvable | BigtableAppProfileTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a>
 
 ---
 
@@ -1336,7 +1336,7 @@ id: str
 ignore_warnings: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1366,7 +1366,7 @@ multi_cluster_routing_cluster_ids: typing.List[str]
 multi_cluster_routing_use_any: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1386,7 +1386,7 @@ project: str
 row_affinity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1445,23 +1445,23 @@ bigtableAppProfile.BigtableAppProfileConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.appProfileId">app_profile_id</a></code> | <code>str</code> | The unique name of the app profile in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.dataBoostIsolationReadOnly">data_boost_isolation_read_only</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnly">BigtableAppProfileDataBoostIsolationReadOnly</a></code> | data_boost_isolation_read_only block. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.description">description</a></code> | <code>str</code> | Long form description of the use case for this app profile. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#id BigtableAppProfile#id}. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.ignoreWarnings">ignore_warnings</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, ignore safety checks when deleting/updating the app profile. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.ignoreWarnings">ignore_warnings</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, ignore safety checks when deleting/updating the app profile. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.instance">instance</a></code> | <code>str</code> | The name of the instance to create the app profile within. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.multiClusterRoutingClusterIds">multi_cluster_routing_cluster_ids</a></code> | <code>typing.List[str]</code> | The set of clusters to route to. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.multiClusterRoutingUseAny">multi_cluster_routing_use_any</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, read/write requests are routed to the nearest cluster in the instance, and will fail over to the nearest cluster that is available in the event of transient errors or delays. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.multiClusterRoutingUseAny">multi_cluster_routing_use_any</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, read/write requests are routed to the nearest cluster in the instance, and will fail over to the nearest cluster that is available in the event of transient errors or delays. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_app_profile#project BigtableAppProfile#project}. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.rowAffinity">row_affinity</a></code> | <code>bool \| cdktf.IResolvable</code> | Must be used with multi-cluster routing. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.rowAffinity">row_affinity</a></code> | <code>bool \| cdktn.IResolvable</code> | Must be used with multi-cluster routing. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.singleClusterRouting">single_cluster_routing</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting">BigtableAppProfileSingleClusterRouting</a></code> | single_cluster_routing block. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.standardIsolation">standard_isolation</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolation">BigtableAppProfileStandardIsolation</a></code> | standard_isolation block. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a></code> | timeouts block. |
@@ -1474,7 +1474,7 @@ bigtableAppProfile.BigtableAppProfileConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1484,7 +1484,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1494,7 +1494,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1504,7 +1504,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1514,7 +1514,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1524,7 +1524,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1534,7 +1534,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1601,7 +1601,7 @@ If you experience problems setting this value it might not be settable. Please t
 ignore_warnings: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, ignore safety checks when deleting/updating the app profile.
 
@@ -1645,7 +1645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 multi_cluster_routing_use_any: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, read/write requests are routed to the nearest cluster in the instance, and will fail over to the nearest cluster that is available in the event of transient errors or delays.
 
@@ -1674,7 +1674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 row_affinity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Must be used with multi-cluster routing.
 
@@ -1778,7 +1778,7 @@ bigtableAppProfile.BigtableAppProfileSingleClusterRouting(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting.property.clusterId">cluster_id</a></code> | <code>str</code> | The cluster to which read/write requests should be routed. |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting.property.allowTransactionalWrites">allow_transactional_writes</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, CheckAndMutateRow and ReadModifyWriteRow requests are allowed by this app profile. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting.property.allowTransactionalWrites">allow_transactional_writes</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, CheckAndMutateRow and ReadModifyWriteRow requests are allowed by this app profile. |
 
 ---
 
@@ -1802,7 +1802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 allow_transactional_writes: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If true, CheckAndMutateRow and ReadModifyWriteRow requests are allowed by this app profile.
 
@@ -1923,14 +1923,14 @@ bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2122,7 +2122,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2219,14 +2219,14 @@ bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2419,7 +2419,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2446,9 +2446,9 @@ def reset_allow_transactional_writes() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.allowTransactionalWritesInput">allow_transactional_writes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.allowTransactionalWritesInput">allow_transactional_writes_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.clusterIdInput">cluster_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.allowTransactionalWrites">allow_transactional_writes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.allowTransactionalWrites">allow_transactional_writes</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.clusterId">cluster_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting">BigtableAppProfileSingleClusterRouting</a></code> | *No description.* |
 
@@ -2484,7 +2484,7 @@ fqn: str
 allow_transactional_writes_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2504,7 +2504,7 @@ cluster_id_input: str
 allow_transactional_writes: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2544,14 +2544,14 @@ bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2743,7 +2743,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2840,14 +2840,14 @@ bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3042,7 +3042,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3087,7 +3087,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3181,7 +3181,7 @@ update: str
 internal_value: IResolvable | BigtableAppProfileTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts">BigtableAppProfileTimeouts</a>
 
 ---
 

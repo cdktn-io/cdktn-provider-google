@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleClientConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleClientConfigConfig extends cdktn.TerraformMetaArguments {
 }
 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/client_config google_client_config}
 */
-export class DataGoogleClientConfig extends cdktf.TerraformDataSource {
+export class DataGoogleClientConfig extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -28,14 +28,14 @@ export class DataGoogleClientConfig extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleClientConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleClientConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleClientConfig to import
   * @param importFromId The id of the existing DataGoogleClientConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/client_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleClientConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_client_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_client_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -77,7 +77,7 @@ export class DataGoogleClientConfig extends cdktf.TerraformDataSource {
   }
 
   // default_labels - computed: true, optional: false, required: false
-  private _defaultLabels = new cdktf.StringMap(this, "default_labels");
+  private _defaultLabels = new cdktn.StringMap(this, "default_labels");
   public get defaultLabels() {
     return this._defaultLabels;
   }

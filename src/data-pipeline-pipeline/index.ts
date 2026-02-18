@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataPipelinePipelineConfig extends cdktf.TerraformMetaArguments {
+export interface DataPipelinePipelineConfig extends cdktn.TerraformMetaArguments {
   /**
   * The display name of the pipeline. It can contain only letters ([A-Za-z]), numbers ([0-9]), hyphens (-), and underscores (_).
   *
@@ -106,31 +106,31 @@ export interface DataPipelinePipelineScheduleInfo {
 }
 
 export function dataPipelinePipelineScheduleInfoToTerraform(struct?: DataPipelinePipelineScheduleInfoOutputReference | DataPipelinePipelineScheduleInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schedule: cdktf.stringToTerraform(struct!.schedule),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+    schedule: cdktn.stringToTerraform(struct!.schedule),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
   }
 }
 
 
 export function dataPipelinePipelineScheduleInfoToHclTerraform(struct?: DataPipelinePipelineScheduleInfoOutputReference | DataPipelinePipelineScheduleInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schedule: {
-      value: cdktf.stringToHclTerraform(struct!.schedule),
+      value: cdktn.stringToHclTerraform(struct!.schedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -141,14 +141,14 @@ export function dataPipelinePipelineScheduleInfoToHclTerraform(struct?: DataPipe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineScheduleInfoOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineScheduleInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -231,39 +231,39 @@ export interface DataPipelinePipelineTimeouts {
   readonly update?: string;
 }
 
-export function dataPipelinePipelineTimeoutsToTerraform(struct?: DataPipelinePipelineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataPipelinePipelineTimeoutsToTerraform(struct?: DataPipelinePipelineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataPipelinePipelineTimeoutsToHclTerraform(struct?: DataPipelinePipelineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataPipelinePipelineTimeoutsToHclTerraform(struct?: DataPipelinePipelineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -274,19 +274,19 @@ export function dataPipelinePipelineTimeoutsToHclTerraform(struct?: DataPipeline
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataPipelinePipelineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataPipelinePipelineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -307,7 +307,7 @@ export class DataPipelinePipelineTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataPipelinePipelineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataPipelinePipelineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -315,7 +315,7 @@ export class DataPipelinePipelineTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -396,7 +396,7 @@ export interface DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchPa
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#enable_streaming_engine DataPipelinePipeline#enable_streaming_engine}
   */
-  readonly enableStreamingEngine?: boolean | cdktf.IResolvable;
+  readonly enableStreamingEngine?: boolean | cdktn.IResolvable;
   /**
   * Set FlexRS goal for the job. https://cloud.google.com/dataflow/docs/guides/flexrs
   * https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/v1/projects.locations.pipelines#FlexResourceSchedulingGoal Possible values: ["FLEXRS_UNSPECIFIED", "FLEXRS_SPEED_OPTIMIZED", "FLEXRS_COST_OPTIMIZED"]
@@ -480,129 +480,129 @@ export interface DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchPa
 }
 
 export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentToTerraform(struct?: DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference | DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_experiments: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalExperiments),
-    additional_user_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.additionalUserLabels),
-    enable_streaming_engine: cdktf.booleanToTerraform(struct!.enableStreamingEngine),
-    flexrs_goal: cdktf.stringToTerraform(struct!.flexrsGoal),
-    ip_configuration: cdktf.stringToTerraform(struct!.ipConfiguration),
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    machine_type: cdktf.stringToTerraform(struct!.machineType),
-    max_workers: cdktf.numberToTerraform(struct!.maxWorkers),
-    network: cdktf.stringToTerraform(struct!.network),
-    num_workers: cdktf.numberToTerraform(struct!.numWorkers),
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
-    subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
-    temp_location: cdktf.stringToTerraform(struct!.tempLocation),
-    worker_region: cdktf.stringToTerraform(struct!.workerRegion),
-    worker_zone: cdktf.stringToTerraform(struct!.workerZone),
-    zone: cdktf.stringToTerraform(struct!.zone),
+    additional_experiments: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalExperiments),
+    additional_user_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.additionalUserLabels),
+    enable_streaming_engine: cdktn.booleanToTerraform(struct!.enableStreamingEngine),
+    flexrs_goal: cdktn.stringToTerraform(struct!.flexrsGoal),
+    ip_configuration: cdktn.stringToTerraform(struct!.ipConfiguration),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
+    max_workers: cdktn.numberToTerraform(struct!.maxWorkers),
+    network: cdktn.stringToTerraform(struct!.network),
+    num_workers: cdktn.numberToTerraform(struct!.numWorkers),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
+    subnetwork: cdktn.stringToTerraform(struct!.subnetwork),
+    temp_location: cdktn.stringToTerraform(struct!.tempLocation),
+    worker_region: cdktn.stringToTerraform(struct!.workerRegion),
+    worker_zone: cdktn.stringToTerraform(struct!.workerZone),
+    zone: cdktn.stringToTerraform(struct!.zone),
   }
 }
 
 
 export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentToHclTerraform(struct?: DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference | DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_experiments: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalExperiments),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalExperiments),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     additional_user_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.additionalUserLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.additionalUserLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     enable_streaming_engine: {
-      value: cdktf.booleanToHclTerraform(struct!.enableStreamingEngine),
+      value: cdktn.booleanToHclTerraform(struct!.enableStreamingEngine),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     flexrs_goal: {
-      value: cdktf.stringToHclTerraform(struct!.flexrsGoal),
+      value: cdktn.stringToHclTerraform(struct!.flexrsGoal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_configuration: {
-      value: cdktf.stringToHclTerraform(struct!.ipConfiguration),
+      value: cdktn.stringToHclTerraform(struct!.ipConfiguration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     machine_type: {
-      value: cdktf.stringToHclTerraform(struct!.machineType),
+      value: cdktn.stringToHclTerraform(struct!.machineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_workers: {
-      value: cdktf.numberToHclTerraform(struct!.maxWorkers),
+      value: cdktn.numberToHclTerraform(struct!.maxWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     num_workers: {
-      value: cdktf.numberToHclTerraform(struct!.numWorkers),
+      value: cdktn.numberToHclTerraform(struct!.numWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnetwork: {
-      value: cdktf.stringToHclTerraform(struct!.subnetwork),
+      value: cdktn.stringToHclTerraform(struct!.subnetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     temp_location: {
-      value: cdktf.stringToHclTerraform(struct!.tempLocation),
+      value: cdktn.stringToHclTerraform(struct!.tempLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     worker_region: {
-      value: cdktf.stringToHclTerraform(struct!.workerRegion),
+      value: cdktn.stringToHclTerraform(struct!.workerRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     worker_zone: {
-      value: cdktf.stringToHclTerraform(struct!.workerZone),
+      value: cdktn.stringToHclTerraform(struct!.workerZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone: {
-      value: cdktf.stringToHclTerraform(struct!.zone),
+      value: cdktn.stringToHclTerraform(struct!.zone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -613,14 +613,14 @@ export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchPar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -768,11 +768,11 @@ export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParame
   }
 
   // enable_streaming_engine - computed: false, optional: true, required: false
-  private _enableStreamingEngine?: boolean | cdktf.IResolvable; 
+  private _enableStreamingEngine?: boolean | cdktn.IResolvable; 
   public get enableStreamingEngine() {
     return this.getBooleanAttribute('enable_streaming_engine');
   }
-  public set enableStreamingEngine(value: boolean | cdktf.IResolvable) {
+  public set enableStreamingEngine(value: boolean | cdktn.IResolvable) {
     this._enableStreamingEngine = value;
   }
   public resetEnableStreamingEngine() {
@@ -1030,7 +1030,7 @@ export interface DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchPa
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#update DataPipelinePipeline#update}
   */
-  readonly update?: boolean | cdktf.IResolvable;
+  readonly update?: boolean | cdktn.IResolvable;
   /**
   * environment block
   *
@@ -1040,60 +1040,60 @@ export interface DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchPa
 }
 
 export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterToTerraform(struct?: DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference | DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_spec_gcs_path: cdktf.stringToTerraform(struct!.containerSpecGcsPath),
-    job_name: cdktf.stringToTerraform(struct!.jobName),
-    launch_options: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.launchOptions),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    transform_name_mappings: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.transformNameMappings),
-    update: cdktf.booleanToTerraform(struct!.update),
+    container_spec_gcs_path: cdktn.stringToTerraform(struct!.containerSpecGcsPath),
+    job_name: cdktn.stringToTerraform(struct!.jobName),
+    launch_options: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.launchOptions),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    transform_name_mappings: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.transformNameMappings),
+    update: cdktn.booleanToTerraform(struct!.update),
     environment: dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterEnvironmentToTerraform(struct!.environment),
   }
 }
 
 
 export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterToHclTerraform(struct?: DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference | DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_spec_gcs_path: {
-      value: cdktf.stringToHclTerraform(struct!.containerSpecGcsPath),
+      value: cdktn.stringToHclTerraform(struct!.containerSpecGcsPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     job_name: {
-      value: cdktf.stringToHclTerraform(struct!.jobName),
+      value: cdktn.stringToHclTerraform(struct!.jobName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     launch_options: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.launchOptions),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.launchOptions),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     transform_name_mappings: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.transformNameMappings),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.transformNameMappings),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     update: {
-      value: cdktf.booleanToHclTerraform(struct!.update),
+      value: cdktn.booleanToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1110,14 +1110,14 @@ export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchPar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1256,11 +1256,11 @@ export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParame
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: boolean | cdktf.IResolvable; 
+  private _update?: boolean | cdktn.IResolvable; 
   public get update() {
     return this.getBooleanAttribute('update');
   }
-  public set update(value: boolean | cdktf.IResolvable) {
+  public set update(value: boolean | cdktn.IResolvable) {
     this._update = value;
   }
   public resetUpdate() {
@@ -1305,7 +1305,7 @@ export interface DataPipelinePipelineWorkloadDataflowFlexTemplateRequest {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#validate_only DataPipelinePipeline#validate_only}
   */
-  readonly validateOnly?: boolean | cdktf.IResolvable;
+  readonly validateOnly?: boolean | cdktn.IResolvable;
   /**
   * launch_parameter block
   *
@@ -1315,39 +1315,39 @@ export interface DataPipelinePipelineWorkloadDataflowFlexTemplateRequest {
 }
 
 export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestToTerraform(struct?: DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference | DataPipelinePipelineWorkloadDataflowFlexTemplateRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    validate_only: cdktf.booleanToTerraform(struct!.validateOnly),
+    location: cdktn.stringToTerraform(struct!.location),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    validate_only: cdktn.booleanToTerraform(struct!.validateOnly),
     launch_parameter: dataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterToTerraform(struct!.launchParameter),
   }
 }
 
 
 export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestToHclTerraform(struct?: DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference | DataPipelinePipelineWorkloadDataflowFlexTemplateRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     validate_only: {
-      value: cdktf.booleanToHclTerraform(struct!.validateOnly),
+      value: cdktn.booleanToHclTerraform(struct!.validateOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1364,14 +1364,14 @@ export function dataPipelinePipelineWorkloadDataflowFlexTemplateRequestToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1441,11 +1441,11 @@ export class DataPipelinePipelineWorkloadDataflowFlexTemplateRequestOutputRefere
   }
 
   // validate_only - computed: false, optional: true, required: false
-  private _validateOnly?: boolean | cdktf.IResolvable; 
+  private _validateOnly?: boolean | cdktn.IResolvable; 
   public get validateOnly() {
     return this.getBooleanAttribute('validate_only');
   }
-  public set validateOnly(value: boolean | cdktf.IResolvable) {
+  public set validateOnly(value: boolean | cdktn.IResolvable) {
     this._validateOnly = value;
   }
   public resetValidateOnly() {
@@ -1489,13 +1489,13 @@ export interface DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunch
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#bypass_temp_dir_validation DataPipelinePipeline#bypass_temp_dir_validation}
   */
-  readonly bypassTempDirValidation?: boolean | cdktf.IResolvable;
+  readonly bypassTempDirValidation?: boolean | cdktn.IResolvable;
   /**
   * Whether to enable Streaming Engine for the job.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#enable_streaming_engine DataPipelinePipeline#enable_streaming_engine}
   */
-  readonly enableStreamingEngine?: boolean | cdktf.IResolvable;
+  readonly enableStreamingEngine?: boolean | cdktn.IResolvable;
   /**
   * Configuration for VM IPs.
   * https://cloud.google.com/dataflow/docs/reference/data-pipelines/rest/v1/projects.locations.pipelines#WorkerIPAddressConfiguration Possible values: ["WORKER_IP_UNSPECIFIED", "WORKER_IP_PUBLIC", "WORKER_IP_PRIVATE"]
@@ -1572,129 +1572,129 @@ export interface DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunch
 }
 
 export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentToTerraform(struct?: DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference | DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_experiments: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.additionalExperiments),
-    additional_user_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.additionalUserLabels),
-    bypass_temp_dir_validation: cdktf.booleanToTerraform(struct!.bypassTempDirValidation),
-    enable_streaming_engine: cdktf.booleanToTerraform(struct!.enableStreamingEngine),
-    ip_configuration: cdktf.stringToTerraform(struct!.ipConfiguration),
-    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
-    machine_type: cdktf.stringToTerraform(struct!.machineType),
-    max_workers: cdktf.numberToTerraform(struct!.maxWorkers),
-    network: cdktf.stringToTerraform(struct!.network),
-    num_workers: cdktf.numberToTerraform(struct!.numWorkers),
-    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
-    subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
-    temp_location: cdktf.stringToTerraform(struct!.tempLocation),
-    worker_region: cdktf.stringToTerraform(struct!.workerRegion),
-    worker_zone: cdktf.stringToTerraform(struct!.workerZone),
-    zone: cdktf.stringToTerraform(struct!.zone),
+    additional_experiments: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.additionalExperiments),
+    additional_user_labels: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.additionalUserLabels),
+    bypass_temp_dir_validation: cdktn.booleanToTerraform(struct!.bypassTempDirValidation),
+    enable_streaming_engine: cdktn.booleanToTerraform(struct!.enableStreamingEngine),
+    ip_configuration: cdktn.stringToTerraform(struct!.ipConfiguration),
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
+    max_workers: cdktn.numberToTerraform(struct!.maxWorkers),
+    network: cdktn.stringToTerraform(struct!.network),
+    num_workers: cdktn.numberToTerraform(struct!.numWorkers),
+    service_account_email: cdktn.stringToTerraform(struct!.serviceAccountEmail),
+    subnetwork: cdktn.stringToTerraform(struct!.subnetwork),
+    temp_location: cdktn.stringToTerraform(struct!.tempLocation),
+    worker_region: cdktn.stringToTerraform(struct!.workerRegion),
+    worker_zone: cdktn.stringToTerraform(struct!.workerZone),
+    zone: cdktn.stringToTerraform(struct!.zone),
   }
 }
 
 
 export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentToHclTerraform(struct?: DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference | DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_experiments: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.additionalExperiments),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.additionalExperiments),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     additional_user_labels: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.additionalUserLabels),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.additionalUserLabels),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     bypass_temp_dir_validation: {
-      value: cdktf.booleanToHclTerraform(struct!.bypassTempDirValidation),
+      value: cdktn.booleanToHclTerraform(struct!.bypassTempDirValidation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_streaming_engine: {
-      value: cdktf.booleanToHclTerraform(struct!.enableStreamingEngine),
+      value: cdktn.booleanToHclTerraform(struct!.enableStreamingEngine),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ip_configuration: {
-      value: cdktf.stringToHclTerraform(struct!.ipConfiguration),
+      value: cdktn.stringToHclTerraform(struct!.ipConfiguration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key_name: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKeyName),
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     machine_type: {
-      value: cdktf.stringToHclTerraform(struct!.machineType),
+      value: cdktn.stringToHclTerraform(struct!.machineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_workers: {
-      value: cdktf.numberToHclTerraform(struct!.maxWorkers),
+      value: cdktn.numberToHclTerraform(struct!.maxWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     num_workers: {
-      value: cdktf.numberToHclTerraform(struct!.numWorkers),
+      value: cdktn.numberToHclTerraform(struct!.numWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_account_email: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountEmail),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnetwork: {
-      value: cdktf.stringToHclTerraform(struct!.subnetwork),
+      value: cdktn.stringToHclTerraform(struct!.subnetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     temp_location: {
-      value: cdktf.stringToHclTerraform(struct!.tempLocation),
+      value: cdktn.stringToHclTerraform(struct!.tempLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     worker_region: {
-      value: cdktf.stringToHclTerraform(struct!.workerRegion),
+      value: cdktn.stringToHclTerraform(struct!.workerRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     worker_zone: {
-      value: cdktf.stringToHclTerraform(struct!.workerZone),
+      value: cdktn.stringToHclTerraform(struct!.workerZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone: {
-      value: cdktf.stringToHclTerraform(struct!.zone),
+      value: cdktn.stringToHclTerraform(struct!.zone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1705,14 +1705,14 @@ export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1860,11 +1860,11 @@ export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchPara
   }
 
   // bypass_temp_dir_validation - computed: false, optional: true, required: false
-  private _bypassTempDirValidation?: boolean | cdktf.IResolvable; 
+  private _bypassTempDirValidation?: boolean | cdktn.IResolvable; 
   public get bypassTempDirValidation() {
     return this.getBooleanAttribute('bypass_temp_dir_validation');
   }
-  public set bypassTempDirValidation(value: boolean | cdktf.IResolvable) {
+  public set bypassTempDirValidation(value: boolean | cdktn.IResolvable) {
     this._bypassTempDirValidation = value;
   }
   public resetBypassTempDirValidation() {
@@ -1876,11 +1876,11 @@ export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchPara
   }
 
   // enable_streaming_engine - computed: false, optional: true, required: false
-  private _enableStreamingEngine?: boolean | cdktf.IResolvable; 
+  private _enableStreamingEngine?: boolean | cdktn.IResolvable; 
   public get enableStreamingEngine() {
     return this.getBooleanAttribute('enable_streaming_engine');
   }
-  public set enableStreamingEngine(value: boolean | cdktf.IResolvable) {
+  public set enableStreamingEngine(value: boolean | cdktn.IResolvable) {
     this._enableStreamingEngine = value;
   }
   public resetEnableStreamingEngine() {
@@ -2109,7 +2109,7 @@ export interface DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunch
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#update DataPipelinePipeline#update}
   */
-  readonly update?: boolean | cdktf.IResolvable;
+  readonly update?: boolean | cdktn.IResolvable;
   /**
   * environment block
   *
@@ -2119,46 +2119,46 @@ export interface DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunch
 }
 
 export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersToTerraform(struct?: DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference | DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    job_name: cdktf.stringToTerraform(struct!.jobName),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    transform_name_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.transformNameMapping),
-    update: cdktf.booleanToTerraform(struct!.update),
+    job_name: cdktn.stringToTerraform(struct!.jobName),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    transform_name_mapping: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.transformNameMapping),
+    update: cdktn.booleanToTerraform(struct!.update),
     environment: dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironmentToTerraform(struct!.environment),
   }
 }
 
 
 export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersToHclTerraform(struct?: DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference | DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameters): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     job_name: {
-      value: cdktf.stringToHclTerraform(struct!.jobName),
+      value: cdktn.stringToHclTerraform(struct!.jobName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     transform_name_mapping: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.transformNameMapping),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.transformNameMapping),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     update: {
-      value: cdktf.booleanToHclTerraform(struct!.update),
+      value: cdktn.booleanToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2175,14 +2175,14 @@ export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2277,11 +2277,11 @@ export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchPara
   }
 
   // update - computed: false, optional: true, required: false
-  private _update?: boolean | cdktf.IResolvable; 
+  private _update?: boolean | cdktn.IResolvable; 
   public get update() {
     return this.getBooleanAttribute('update');
   }
-  public set update(value: boolean | cdktf.IResolvable) {
+  public set update(value: boolean | cdktn.IResolvable) {
     this._update = value;
   }
   public resetUpdate() {
@@ -2330,7 +2330,7 @@ export interface DataPipelinePipelineWorkloadDataflowLaunchTemplateRequest {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#validate_only DataPipelinePipeline#validate_only}
   */
-  readonly validateOnly?: boolean | cdktf.IResolvable;
+  readonly validateOnly?: boolean | cdktn.IResolvable;
   /**
   * launch_parameters block
   *
@@ -2340,46 +2340,46 @@ export interface DataPipelinePipelineWorkloadDataflowLaunchTemplateRequest {
 }
 
 export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestToTerraform(struct?: DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference | DataPipelinePipelineWorkloadDataflowLaunchTemplateRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gcs_path: cdktf.stringToTerraform(struct!.gcsPath),
-    location: cdktf.stringToTerraform(struct!.location),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    validate_only: cdktf.booleanToTerraform(struct!.validateOnly),
+    gcs_path: cdktn.stringToTerraform(struct!.gcsPath),
+    location: cdktn.stringToTerraform(struct!.location),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    validate_only: cdktn.booleanToTerraform(struct!.validateOnly),
     launch_parameters: dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersToTerraform(struct!.launchParameters),
   }
 }
 
 
 export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestToHclTerraform(struct?: DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference | DataPipelinePipelineWorkloadDataflowLaunchTemplateRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     gcs_path: {
-      value: cdktf.stringToHclTerraform(struct!.gcsPath),
+      value: cdktn.stringToHclTerraform(struct!.gcsPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     validate_only: {
-      value: cdktf.booleanToHclTerraform(struct!.validateOnly),
+      value: cdktn.booleanToHclTerraform(struct!.validateOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2396,14 +2396,14 @@ export function dataPipelinePipelineWorkloadDataflowLaunchTemplateRequestToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2498,11 +2498,11 @@ export class DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestOutputRefe
   }
 
   // validate_only - computed: false, optional: true, required: false
-  private _validateOnly?: boolean | cdktf.IResolvable; 
+  private _validateOnly?: boolean | cdktn.IResolvable; 
   public get validateOnly() {
     return this.getBooleanAttribute('validate_only');
   }
-  public set validateOnly(value: boolean | cdktf.IResolvable) {
+  public set validateOnly(value: boolean | cdktn.IResolvable) {
     this._validateOnly = value;
   }
   public resetValidateOnly() {
@@ -2545,8 +2545,8 @@ export interface DataPipelinePipelineWorkload {
 }
 
 export function dataPipelinePipelineWorkloadToTerraform(struct?: DataPipelinePipelineWorkloadOutputReference | DataPipelinePipelineWorkload): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2557,8 +2557,8 @@ export function dataPipelinePipelineWorkloadToTerraform(struct?: DataPipelinePip
 
 
 export function dataPipelinePipelineWorkloadToHclTerraform(struct?: DataPipelinePipelineWorkloadOutputReference | DataPipelinePipelineWorkload): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2580,14 +2580,14 @@ export function dataPipelinePipelineWorkloadToHclTerraform(struct?: DataPipeline
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataPipelinePipelineWorkloadOutputReference extends cdktf.ComplexObject {
+export class DataPipelinePipelineWorkloadOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2654,7 +2654,7 @@ export class DataPipelinePipelineWorkloadOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline google_data_pipeline_pipeline}
 */
-export class DataPipelinePipeline extends cdktf.TerraformResource {
+export class DataPipelinePipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2665,14 +2665,14 @@ export class DataPipelinePipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataPipelinePipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataPipelinePipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataPipelinePipeline to import
   * @param importFromId The id of the existing DataPipelinePipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_pipeline_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataPipelinePipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_data_pipeline_pipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_data_pipeline_pipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -2924,15 +2924,15 @@ export class DataPipelinePipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      pipeline_sources: cdktf.hashMapper(cdktf.stringToTerraform)(this._pipelineSources),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      scheduler_service_account_email: cdktf.stringToTerraform(this._schedulerServiceAccountEmail),
-      state: cdktf.stringToTerraform(this._state),
-      type: cdktf.stringToTerraform(this._type),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      pipeline_sources: cdktn.hashMapper(cdktn.stringToTerraform)(this._pipelineSources),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      scheduler_service_account_email: cdktn.stringToTerraform(this._schedulerServiceAccountEmail),
+      state: cdktn.stringToTerraform(this._state),
+      type: cdktn.stringToTerraform(this._type),
       schedule_info: dataPipelinePipelineScheduleInfoToTerraform(this._scheduleInfo.internalValue),
       timeouts: dataPipelinePipelineTimeoutsToTerraform(this._timeouts.internalValue),
       workload: dataPipelinePipelineWorkloadToTerraform(this._workload.internalValue),
@@ -2942,55 +2942,55 @@ export class DataPipelinePipeline extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline_sources: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._pipelineSources),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._pipelineSources),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scheduler_service_account_email: {
-        value: cdktf.stringToHclTerraform(this._schedulerServiceAccountEmail),
+        value: cdktn.stringToHclTerraform(this._schedulerServiceAccountEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

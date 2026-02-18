@@ -297,7 +297,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -379,7 +379,7 @@ public putPubsubConfigs(value: IResolvable | SourcerepoRepositoryPubsubConfigs[]
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.putPubsubConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
 
 ---
 
@@ -432,7 +432,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a SourcerepoRepository resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a SourcerepoRepository resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -504,7 +504,7 @@ import { sourcerepoRepository } from '@cdktn/provider-google'
 sourcerepoRepository.SourcerepoRepository.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a SourcerepoRepository resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a SourcerepoRepository resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.generateConfigForImport.parameter.scope"></a>
 
@@ -534,7 +534,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the SourcerepoRepository to import is found.
 
@@ -545,30 +545,30 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.pubsubConfigs">pubsubConfigs</a></code> | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList">SourcerepoRepositoryPubsubConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference">SourcerepoRepositoryTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.url">url</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.createIgnoreAlreadyExistsInput">createIgnoreAlreadyExistsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.createIgnoreAlreadyExistsInput">createIgnoreAlreadyExistsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.pubsubConfigsInput">pubsubConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.createIgnoreAlreadyExists">createIgnoreAlreadyExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.pubsubConfigsInput">pubsubConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.createIgnoreAlreadyExists">createIgnoreAlreadyExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepository.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -593,7 +593,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -643,7 +643,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -653,7 +653,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -663,7 +663,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -683,7 +683,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -693,7 +693,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -703,7 +703,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -713,7 +713,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -763,7 +763,7 @@ public readonly url: string;
 public readonly createIgnoreAlreadyExistsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -803,7 +803,7 @@ public readonly projectInput: string;
 public readonly pubsubConfigsInput: IResolvable | SourcerepoRepositoryPubsubConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
 
 ---
 
@@ -813,7 +813,7 @@ public readonly pubsubConfigsInput: IResolvable | SourcerepoRepositoryPubsubConf
 public readonly timeoutsInput: IResolvable | SourcerepoRepositoryTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a>
 
 ---
 
@@ -823,7 +823,7 @@ public readonly timeoutsInput: IResolvable | SourcerepoRepositoryTimeouts;
 public readonly createIgnoreAlreadyExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -891,18 +891,18 @@ const sourcerepoRepositoryConfig: sourcerepoRepository.SourcerepoRepositoryConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.name">name</a></code> | <code>string</code> | Resource name of the repository, of the form '{{repo}}'. The repo name may contain slashes. eg, 'name/with/slash'. |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.createIgnoreAlreadyExists">createIgnoreAlreadyExists</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, skip repository creation if a repository with the same name already exists. |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.createIgnoreAlreadyExists">createIgnoreAlreadyExists</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, skip repository creation if a repository with the same name already exists. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sourcerepo_repository#id SourcerepoRepository#id}. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sourcerepo_repository#project SourcerepoRepository#project}. |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.pubsubConfigs">pubsubConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]</code> | pubsub_configs block. |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.pubsubConfigs">pubsubConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]</code> | pubsub_configs block. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -913,7 +913,7 @@ const sourcerepoRepositoryConfig: sourcerepoRepository.SourcerepoRepositoryConfi
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -923,7 +923,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -933,7 +933,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -943,7 +943,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -953,7 +953,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -963,7 +963,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -973,7 +973,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly createIgnoreAlreadyExists: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, skip repository creation if a repository with the same name already exists.
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly pubsubConfigs: IResolvable | SourcerepoRepositoryPubsubConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
 
 pubsub_configs block.
 
@@ -1197,7 +1197,7 @@ new sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1205,7 +1205,7 @@ new sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1271,7 +1271,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1306,7 +1306,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -1340,7 +1340,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | SourcerepoRepositoryPubsubConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>[]
 
 ---
 
@@ -1357,7 +1357,7 @@ new sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1366,7 +1366,7 @@ new sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1553,7 +1553,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1586,7 +1586,7 @@ public resetServiceAccountEmail(): void
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.property.messageFormat">messageFormat</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.property.topic">topic</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a></code> | *No description.* |
 
 ---
 
@@ -1680,7 +1680,7 @@ public readonly topic: string;
 public readonly internalValue: IResolvable | SourcerepoRepositoryPubsubConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryPubsubConfigs">SourcerepoRepositoryPubsubConfigs</a>
 
 ---
 
@@ -1697,14 +1697,14 @@ new sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1877,7 +1877,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1922,7 +1922,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2016,7 +2016,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | SourcerepoRepositoryTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sourcerepoRepository.SourcerepoRepositoryTimeouts">SourcerepoRepositoryTimeouts</a>
 
 ---
 

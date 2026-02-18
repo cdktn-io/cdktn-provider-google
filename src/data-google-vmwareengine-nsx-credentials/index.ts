@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleVmwareengineNsxCredentialsConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleVmwareengineNsxCredentialsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_nsx_credentials#id DataGoogleVmwareengineNsxCredentials#id}
   *
@@ -32,7 +32,7 @@ export interface DataGoogleVmwareengineNsxCredentialsConfig extends cdktf.Terraf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_nsx_credentials google_vmwareengine_nsx_credentials}
 */
-export class DataGoogleVmwareengineNsxCredentials extends cdktf.TerraformDataSource {
+export class DataGoogleVmwareengineNsxCredentials extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -43,14 +43,14 @@ export class DataGoogleVmwareengineNsxCredentials extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleVmwareengineNsxCredentials resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleVmwareengineNsxCredentials resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVmwareengineNsxCredentials to import
   * @param importFromId The id of the existing DataGoogleVmwareengineNsxCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_nsx_credentials#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVmwareengineNsxCredentials to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_nsx_credentials", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_nsx_credentials", importId: importFromId, provider });
       }
 
   // ===========
@@ -133,21 +133,21 @@ export class DataGoogleVmwareengineNsxCredentials extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

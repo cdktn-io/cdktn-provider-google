@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FirestoreDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface FirestoreDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages.
   *
@@ -69,39 +69,39 @@ export interface FirestoreDocumentTimeouts {
   readonly update?: string;
 }
 
-export function firestoreDocumentTimeoutsToTerraform(struct?: FirestoreDocumentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function firestoreDocumentTimeoutsToTerraform(struct?: FirestoreDocumentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function firestoreDocumentTimeoutsToHclTerraform(struct?: FirestoreDocumentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function firestoreDocumentTimeoutsToHclTerraform(struct?: FirestoreDocumentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -112,19 +112,19 @@ export function firestoreDocumentTimeoutsToHclTerraform(struct?: FirestoreDocume
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FirestoreDocumentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FirestoreDocumentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FirestoreDocumentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FirestoreDocumentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -145,7 +145,7 @@ export class FirestoreDocumentTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FirestoreDocumentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FirestoreDocumentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class FirestoreDocumentTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -218,7 +218,7 @@ export class FirestoreDocumentTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_document google_firestore_document}
 */
-export class FirestoreDocument extends cdktf.TerraformResource {
+export class FirestoreDocument extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -229,14 +229,14 @@ export class FirestoreDocument extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FirestoreDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FirestoreDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FirestoreDocument to import
   * @param importFromId The id of the existing FirestoreDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FirestoreDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_firestore_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_firestore_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -408,12 +408,12 @@ export class FirestoreDocument extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      collection: cdktf.stringToTerraform(this._collection),
-      database: cdktf.stringToTerraform(this._database),
-      document_id: cdktf.stringToTerraform(this._documentId),
-      fields: cdktf.stringToTerraform(this._fields),
-      id: cdktf.stringToTerraform(this._id),
-      project: cdktf.stringToTerraform(this._project),
+      collection: cdktn.stringToTerraform(this._collection),
+      database: cdktn.stringToTerraform(this._database),
+      document_id: cdktn.stringToTerraform(this._documentId),
+      fields: cdktn.stringToTerraform(this._fields),
+      id: cdktn.stringToTerraform(this._id),
+      project: cdktn.stringToTerraform(this._project),
       timeouts: firestoreDocumentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -421,37 +421,37 @@ export class FirestoreDocument extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       collection: {
-        value: cdktf.stringToHclTerraform(this._collection),
+        value: cdktn.stringToHclTerraform(this._collection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_id: {
-        value: cdktf.stringToHclTerraform(this._documentId),
+        value: cdktn.stringToHclTerraform(this._documentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       fields: {
-        value: cdktf.stringToHclTerraform(this._fields),
+        value: cdktn.stringToHclTerraform(this._fields),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

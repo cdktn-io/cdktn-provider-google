@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageNotificationConfig extends cdktf.TerraformMetaArguments {
+export interface StorageNotificationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the bucket.
   *
@@ -60,7 +60,7 @@ export interface StorageNotificationConfig extends cdktf.TerraformMetaArguments 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification google_storage_notification}
 */
-export class StorageNotification extends cdktf.TerraformResource {
+export class StorageNotification extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class StorageNotification extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageNotification resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageNotification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageNotification to import
   * @param importFromId The id of the existing StorageNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageNotification to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_notification", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_notification", importId: importFromId, provider });
       }
 
   // ===========
@@ -153,7 +153,7 @@ export class StorageNotification extends cdktf.TerraformResource {
   // event_types - computed: false, optional: true, required: false
   private _eventTypes?: string[]; 
   public get eventTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('event_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('event_types'));
   }
   public set eventTypes(value: string[]) {
     this._eventTypes = value;
@@ -240,56 +240,56 @@ export class StorageNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bucket: cdktf.stringToTerraform(this._bucket),
-      custom_attributes: cdktf.hashMapper(cdktf.stringToTerraform)(this._customAttributes),
-      event_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventTypes),
-      id: cdktf.stringToTerraform(this._id),
-      object_name_prefix: cdktf.stringToTerraform(this._objectNamePrefix),
-      payload_format: cdktf.stringToTerraform(this._payloadFormat),
-      topic: cdktf.stringToTerraform(this._topic),
+      bucket: cdktn.stringToTerraform(this._bucket),
+      custom_attributes: cdktn.hashMapper(cdktn.stringToTerraform)(this._customAttributes),
+      event_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._eventTypes),
+      id: cdktn.stringToTerraform(this._id),
+      object_name_prefix: cdktn.stringToTerraform(this._objectNamePrefix),
+      payload_format: cdktn.stringToTerraform(this._payloadFormat),
+      topic: cdktn.stringToTerraform(this._topic),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bucket: {
-        value: cdktf.stringToHclTerraform(this._bucket),
+        value: cdktn.stringToHclTerraform(this._bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_attributes: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._customAttributes),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._customAttributes),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       event_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._eventTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._eventTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_name_prefix: {
-        value: cdktf.stringToHclTerraform(this._objectNamePrefix),
+        value: cdktn.stringToHclTerraform(this._objectNamePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       payload_format: {
-        value: cdktf.stringToHclTerraform(this._payloadFormat),
+        value: cdktn.stringToHclTerraform(this._payloadFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       topic: {
-        value: cdktf.stringToHclTerraform(this._topic),
+        value: cdktn.stringToHclTerraform(this._topic),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkSecurityGatewaySecurityPolicyRuleConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkSecurityGatewaySecurityPolicyRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * CEL expression for matching on L7/application level criteria.
   *
@@ -35,7 +35,7 @@ export interface NetworkSecurityGatewaySecurityPolicyRuleConfig extends cdktf.Te
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_gateway_security_policy_rule#enabled NetworkSecurityGatewaySecurityPolicyRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The name of the gatewat security policy this rule belongs to.
   *
@@ -84,7 +84,7 @@ export interface NetworkSecurityGatewaySecurityPolicyRuleConfig extends cdktf.Te
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_gateway_security_policy_rule#tls_inspection_enabled NetworkSecurityGatewaySecurityPolicyRule#tls_inspection_enabled}
   */
-  readonly tlsInspectionEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsInspectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -107,39 +107,39 @@ export interface NetworkSecurityGatewaySecurityPolicyRuleTimeouts {
   readonly update?: string;
 }
 
-export function networkSecurityGatewaySecurityPolicyRuleTimeoutsToTerraform(struct?: NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityGatewaySecurityPolicyRuleTimeoutsToTerraform(struct?: NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkSecurityGatewaySecurityPolicyRuleTimeoutsToHclTerraform(struct?: NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkSecurityGatewaySecurityPolicyRuleTimeoutsToHclTerraform(struct?: NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -150,19 +150,19 @@ export function networkSecurityGatewaySecurityPolicyRuleTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -183,7 +183,7 @@ export class NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkSecurityGatewaySecurityPolicyRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -191,7 +191,7 @@ export class NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference ext
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -256,7 +256,7 @@ export class NetworkSecurityGatewaySecurityPolicyRuleTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule}
 */
-export class NetworkSecurityGatewaySecurityPolicyRule extends cdktf.TerraformResource {
+export class NetworkSecurityGatewaySecurityPolicyRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -267,14 +267,14 @@ export class NetworkSecurityGatewaySecurityPolicyRule extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkSecurityGatewaySecurityPolicyRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkSecurityGatewaySecurityPolicyRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityGatewaySecurityPolicyRule to import
   * @param importFromId The id of the existing NetworkSecurityGatewaySecurityPolicyRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_gateway_security_policy_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityGatewaySecurityPolicyRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_gateway_security_policy_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_security_gateway_security_policy_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -374,11 +374,11 @@ export class NetworkSecurityGatewaySecurityPolicyRule extends cdktf.TerraformRes
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -489,11 +489,11 @@ export class NetworkSecurityGatewaySecurityPolicyRule extends cdktf.TerraformRes
   }
 
   // tls_inspection_enabled - computed: false, optional: true, required: false
-  private _tlsInspectionEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsInspectionEnabled?: boolean | cdktn.IResolvable; 
   public get tlsInspectionEnabled() {
     return this.getBooleanAttribute('tls_inspection_enabled');
   }
-  public set tlsInspectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsInspectionEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsInspectionEnabled = value;
   }
   public resetTlsInspectionEnabled() {
@@ -531,18 +531,18 @@ export class NetworkSecurityGatewaySecurityPolicyRule extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_matcher: cdktf.stringToTerraform(this._applicationMatcher),
-      basic_profile: cdktf.stringToTerraform(this._basicProfile),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      gateway_security_policy: cdktf.stringToTerraform(this._gatewaySecurityPolicy),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      project: cdktf.stringToTerraform(this._project),
-      session_matcher: cdktf.stringToTerraform(this._sessionMatcher),
-      tls_inspection_enabled: cdktf.booleanToTerraform(this._tlsInspectionEnabled),
+      application_matcher: cdktn.stringToTerraform(this._applicationMatcher),
+      basic_profile: cdktn.stringToTerraform(this._basicProfile),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      gateway_security_policy: cdktn.stringToTerraform(this._gatewaySecurityPolicy),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      project: cdktn.stringToTerraform(this._project),
+      session_matcher: cdktn.stringToTerraform(this._sessionMatcher),
+      tls_inspection_enabled: cdktn.booleanToTerraform(this._tlsInspectionEnabled),
       timeouts: networkSecurityGatewaySecurityPolicyRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -550,73 +550,73 @@ export class NetworkSecurityGatewaySecurityPolicyRule extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_matcher: {
-        value: cdktf.stringToHclTerraform(this._applicationMatcher),
+        value: cdktn.stringToHclTerraform(this._applicationMatcher),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       basic_profile: {
-        value: cdktf.stringToHclTerraform(this._basicProfile),
+        value: cdktn.stringToHclTerraform(this._basicProfile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       gateway_security_policy: {
-        value: cdktf.stringToHclTerraform(this._gatewaySecurityPolicy),
+        value: cdktn.stringToHclTerraform(this._gatewaySecurityPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_matcher: {
-        value: cdktf.stringToHclTerraform(this._sessionMatcher),
+        value: cdktn.stringToHclTerraform(this._sessionMatcher),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tls_inspection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tlsInspectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._tlsInspectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

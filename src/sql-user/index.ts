@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SqlUserConfig extends cdktf.TerraformMetaArguments {
+export interface SqlUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * The deletion policy for the user. Setting ABANDON allows the resource
   * 				to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they
@@ -95,8 +95,8 @@ export interface SqlUserSqlServerUserDetails {
 }
 
 export function sqlUserSqlServerUserDetailsToTerraform(struct?: SqlUserSqlServerUserDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -105,8 +105,8 @@ export function sqlUserSqlServerUserDetailsToTerraform(struct?: SqlUserSqlServer
 
 
 export function sqlUserSqlServerUserDetailsToHclTerraform(struct?: SqlUserSqlServerUserDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -114,7 +114,7 @@ export function sqlUserSqlServerUserDetailsToHclTerraform(struct?: SqlUserSqlSer
   return attrs;
 }
 
-export class SqlUserSqlServerUserDetailsOutputReference extends cdktf.ComplexObject {
+export class SqlUserSqlServerUserDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -123,7 +123,7 @@ export class SqlUserSqlServerUserDetailsOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -153,14 +153,14 @@ export class SqlUserSqlServerUserDetailsOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class SqlUserSqlServerUserDetailsList extends cdktf.ComplexList {
+export class SqlUserSqlServerUserDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -175,8 +175,8 @@ export interface SqlUserPasswordPolicyStatus {
 }
 
 export function sqlUserPasswordPolicyStatusToTerraform(struct?: SqlUserPasswordPolicyStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -185,8 +185,8 @@ export function sqlUserPasswordPolicyStatusToTerraform(struct?: SqlUserPasswordP
 
 
 export function sqlUserPasswordPolicyStatusToHclTerraform(struct?: SqlUserPasswordPolicyStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -194,7 +194,7 @@ export function sqlUserPasswordPolicyStatusToHclTerraform(struct?: SqlUserPasswo
   return attrs;
 }
 
-export class SqlUserPasswordPolicyStatusOutputReference extends cdktf.ComplexObject {
+export class SqlUserPasswordPolicyStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -203,7 +203,7 @@ export class SqlUserPasswordPolicyStatusOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -233,14 +233,14 @@ export class SqlUserPasswordPolicyStatusOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class SqlUserPasswordPolicyStatusList extends cdktf.ComplexList {
+export class SqlUserPasswordPolicyStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -263,13 +263,13 @@ export interface SqlUserPasswordPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#enable_failed_attempts_check SqlUser#enable_failed_attempts_check}
   */
-  readonly enableFailedAttemptsCheck?: boolean | cdktf.IResolvable;
+  readonly enableFailedAttemptsCheck?: boolean | cdktn.IResolvable;
   /**
   * If true, the user must specify the current password before changing the password. This flag is supported only for MySQL.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#enable_password_verification SqlUser#enable_password_verification}
   */
-  readonly enablePasswordVerification?: boolean | cdktf.IResolvable;
+  readonly enablePasswordVerification?: boolean | cdktn.IResolvable;
   /**
   * Password expiration duration with one week grace period.
   *
@@ -279,45 +279,45 @@ export interface SqlUserPasswordPolicy {
 }
 
 export function sqlUserPasswordPolicyToTerraform(struct?: SqlUserPasswordPolicyOutputReference | SqlUserPasswordPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_failed_attempts: cdktf.numberToTerraform(struct!.allowedFailedAttempts),
-    enable_failed_attempts_check: cdktf.booleanToTerraform(struct!.enableFailedAttemptsCheck),
-    enable_password_verification: cdktf.booleanToTerraform(struct!.enablePasswordVerification),
-    password_expiration_duration: cdktf.stringToTerraform(struct!.passwordExpirationDuration),
+    allowed_failed_attempts: cdktn.numberToTerraform(struct!.allowedFailedAttempts),
+    enable_failed_attempts_check: cdktn.booleanToTerraform(struct!.enableFailedAttemptsCheck),
+    enable_password_verification: cdktn.booleanToTerraform(struct!.enablePasswordVerification),
+    password_expiration_duration: cdktn.stringToTerraform(struct!.passwordExpirationDuration),
   }
 }
 
 
 export function sqlUserPasswordPolicyToHclTerraform(struct?: SqlUserPasswordPolicyOutputReference | SqlUserPasswordPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_failed_attempts: {
-      value: cdktf.numberToHclTerraform(struct!.allowedFailedAttempts),
+      value: cdktn.numberToHclTerraform(struct!.allowedFailedAttempts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enable_failed_attempts_check: {
-      value: cdktf.booleanToHclTerraform(struct!.enableFailedAttemptsCheck),
+      value: cdktn.booleanToHclTerraform(struct!.enableFailedAttemptsCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_password_verification: {
-      value: cdktf.booleanToHclTerraform(struct!.enablePasswordVerification),
+      value: cdktn.booleanToHclTerraform(struct!.enablePasswordVerification),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     password_expiration_duration: {
-      value: cdktf.stringToHclTerraform(struct!.passwordExpirationDuration),
+      value: cdktn.stringToHclTerraform(struct!.passwordExpirationDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -328,14 +328,14 @@ export function sqlUserPasswordPolicyToHclTerraform(struct?: SqlUserPasswordPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlUserPasswordPolicyOutputReference extends cdktf.ComplexObject {
+export class SqlUserPasswordPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -395,11 +395,11 @@ export class SqlUserPasswordPolicyOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_failed_attempts_check - computed: false, optional: true, required: false
-  private _enableFailedAttemptsCheck?: boolean | cdktf.IResolvable; 
+  private _enableFailedAttemptsCheck?: boolean | cdktn.IResolvable; 
   public get enableFailedAttemptsCheck() {
     return this.getBooleanAttribute('enable_failed_attempts_check');
   }
-  public set enableFailedAttemptsCheck(value: boolean | cdktf.IResolvable) {
+  public set enableFailedAttemptsCheck(value: boolean | cdktn.IResolvable) {
     this._enableFailedAttemptsCheck = value;
   }
   public resetEnableFailedAttemptsCheck() {
@@ -411,11 +411,11 @@ export class SqlUserPasswordPolicyOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_password_verification - computed: false, optional: true, required: false
-  private _enablePasswordVerification?: boolean | cdktf.IResolvable; 
+  private _enablePasswordVerification?: boolean | cdktn.IResolvable; 
   public get enablePasswordVerification() {
     return this.getBooleanAttribute('enable_password_verification');
   }
-  public set enablePasswordVerification(value: boolean | cdktf.IResolvable) {
+  public set enablePasswordVerification(value: boolean | cdktn.IResolvable) {
     this._enablePasswordVerification = value;
   }
   public resetEnablePasswordVerification() {
@@ -463,39 +463,39 @@ export interface SqlUserTimeouts {
   readonly update?: string;
 }
 
-export function sqlUserTimeoutsToTerraform(struct?: SqlUserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlUserTimeoutsToTerraform(struct?: SqlUserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sqlUserTimeoutsToHclTerraform(struct?: SqlUserTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sqlUserTimeoutsToHclTerraform(struct?: SqlUserTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -506,19 +506,19 @@ export function sqlUserTimeoutsToHclTerraform(struct?: SqlUserTimeouts | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SqlUserTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SqlUserTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SqlUserTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SqlUserTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -539,7 +539,7 @@ export class SqlUserTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SqlUserTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SqlUserTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -547,7 +547,7 @@ export class SqlUserTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -612,7 +612,7 @@ export class SqlUserTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user google_sql_user}
 */
-export class SqlUser extends cdktf.TerraformResource {
+export class SqlUser extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -623,14 +623,14 @@ export class SqlUser extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SqlUser resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SqlUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SqlUser to import
   * @param importFromId The id of the existing SqlUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SqlUser to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_sql_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_sql_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -876,16 +876,16 @@ export class SqlUser extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      host: cdktf.stringToTerraform(this._host),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      name: cdktf.stringToTerraform(this._name),
-      password: cdktf.stringToTerraform(this._password),
-      password_wo: cdktf.stringToTerraform(this._passwordWo),
-      password_wo_version: cdktf.numberToTerraform(this._passwordWoVersion),
-      project: cdktf.stringToTerraform(this._project),
-      type: cdktf.stringToTerraform(this._type),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      host: cdktn.stringToTerraform(this._host),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      name: cdktn.stringToTerraform(this._name),
+      password: cdktn.stringToTerraform(this._password),
+      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo_version: cdktn.numberToTerraform(this._passwordWoVersion),
+      project: cdktn.stringToTerraform(this._project),
+      type: cdktn.stringToTerraform(this._type),
       password_policy: sqlUserPasswordPolicyToTerraform(this._passwordPolicy.internalValue),
       timeouts: sqlUserTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -894,61 +894,61 @@ export class SqlUser extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktf.stringToHclTerraform(this._passwordWo),
+        value: cdktn.stringToHclTerraform(this._passwordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password_wo_version: {
-        value: cdktf.numberToHclTerraform(this._passwordWoVersion),
+        value: cdktn.numberToHclTerraform(this._passwordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -320,7 +320,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNat.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -414,7 +414,7 @@ public putNat64Subnetwork(value: IResolvable | ComputeRouterNatNat64Subnetwork[]
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNat.putNat64Subnetwork.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
 
 ---
 
@@ -426,7 +426,7 @@ public putRules(value: IResolvable | ComputeRouterNatRules[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNat.putRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
 
 ---
 
@@ -438,7 +438,7 @@ public putSubnetwork(value: IResolvable | ComputeRouterNatSubnetwork[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNat.putSubnetwork.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
 
 ---
 
@@ -611,7 +611,7 @@ public resetUdpIdleTimeoutSec(): void
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputeRouterNat resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ComputeRouterNat resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -683,7 +683,7 @@ import { computeRouterNat } from '@cdktn/provider-google'
 computeRouterNat.ComputeRouterNat.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ComputeRouterNat resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ComputeRouterNat resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNat.generateConfigForImport.parameter.scope"></a>
 
@@ -713,7 +713,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNat.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ComputeRouterNat to import is found.
 
@@ -724,19 +724,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.logConfig">logConfig</a></code> | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference">ComputeRouterNatLogConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.nat64Subnetwork">nat64Subnetwork</a></code> | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList">ComputeRouterNatNat64SubnetworkList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.rules">rules</a></code> | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList">ComputeRouterNatRulesList</a></code> | *No description.* |
@@ -744,8 +744,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference">ComputeRouterNatTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.autoNetworkTierInput">autoNetworkTierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.drainNatIpsInput">drainNatIpsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableDynamicPortAllocationInput">enableDynamicPortAllocationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableEndpointIndependentMappingInput">enableEndpointIndependentMappingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableDynamicPortAllocationInput">enableDynamicPortAllocationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableEndpointIndependentMappingInput">enableEndpointIndependentMappingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.endpointTypesInput">endpointTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.icmpIdleTimeoutSecInput">icmpIdleTimeoutSecInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -754,26 +754,26 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.maxPortsPerVmInput">maxPortsPerVmInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.minPortsPerVmInput">minPortsPerVmInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.nat64SubnetworkInput">nat64SubnetworkInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.nat64SubnetworkInput">nat64SubnetworkInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.natIpAllocateOptionInput">natIpAllocateOptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.natIpsInput">natIpsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.routerInput">routerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.rulesInput">rulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.rulesInput">rulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.sourceSubnetworkIpRangesToNat64Input">sourceSubnetworkIpRangesToNat64Input</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.sourceSubnetworkIpRangesToNatInput">sourceSubnetworkIpRangesToNatInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.subnetworkInput">subnetworkInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.subnetworkInput">subnetworkInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.tcpEstablishedIdleTimeoutSecInput">tcpEstablishedIdleTimeoutSecInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.tcpTimeWaitTimeoutSecInput">tcpTimeWaitTimeoutSecInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.tcpTransitoryIdleTimeoutSecInput">tcpTransitoryIdleTimeoutSecInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.udpIdleTimeoutSecInput">udpIdleTimeoutSecInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.autoNetworkTier">autoNetworkTier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.drainNatIps">drainNatIps</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableDynamicPortAllocation">enableDynamicPortAllocation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableEndpointIndependentMapping">enableEndpointIndependentMapping</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableDynamicPortAllocation">enableDynamicPortAllocation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.enableEndpointIndependentMapping">enableEndpointIndependentMapping</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.endpointTypes">endpointTypes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.icmpIdleTimeoutSec">icmpIdleTimeoutSec</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNat.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -814,7 +814,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -864,7 +864,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -874,7 +874,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -884,7 +884,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -904,7 +904,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -914,7 +914,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -924,7 +924,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -934,7 +934,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly drainNatIpsInput: string[];
 public readonly enableDynamicPortAllocationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly enableDynamicPortAllocationInput: boolean | IResolvable;
 public readonly enableEndpointIndependentMappingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1114,7 +1114,7 @@ public readonly nameInput: string;
 public readonly nat64SubnetworkInput: IResolvable | ComputeRouterNatNat64Subnetwork[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly routerInput: string;
 public readonly rulesInput: IResolvable | ComputeRouterNatRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
 
 ---
 
@@ -1204,7 +1204,7 @@ public readonly sourceSubnetworkIpRangesToNatInput: string;
 public readonly subnetworkInput: IResolvable | ComputeRouterNatSubnetwork[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
 
 ---
 
@@ -1244,7 +1244,7 @@ public readonly tcpTransitoryIdleTimeoutSecInput: number;
 public readonly timeoutsInput: IResolvable | ComputeRouterNatTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a>
 
 ---
 
@@ -1294,7 +1294,7 @@ public readonly drainNatIps: string[];
 public readonly enableDynamicPortAllocation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly enableDynamicPortAllocation: boolean | IResolvable;
 public readonly enableEndpointIndependentMapping: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1532,20 +1532,20 @@ const computeRouterNatConfig: computeRouterNat.ComputeRouterNatConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.name">name</a></code> | <code>string</code> | Name of the NAT service. The name must be 1-63 characters long and comply with RFC1035. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.router">router</a></code> | <code>string</code> | The name of the Cloud Router in which this NAT will be configured. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.sourceSubnetworkIpRangesToNat">sourceSubnetworkIpRangesToNat</a></code> | <code>string</code> | How NAT should be configured per Subnetwork. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.autoNetworkTier">autoNetworkTier</a></code> | <code>string</code> | The network tier to use when automatically reserving NAT IP addresses. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.drainNatIps">drainNatIps</a></code> | <code>string[]</code> | A list of URLs of the IP resources to be drained. |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.enableDynamicPortAllocation">enableDynamicPortAllocation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable Dynamic Port Allocation. |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.enableEndpointIndependentMapping">enableEndpointIndependentMapping</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable endpoint independent mapping. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs). |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.enableDynamicPortAllocation">enableDynamicPortAllocation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable Dynamic Port Allocation. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.enableEndpointIndependentMapping">enableEndpointIndependentMapping</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable endpoint independent mapping. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs). |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.endpointTypes">endpointTypes</a></code> | <code>string[]</code> | Specifies the endpoint Types supported by the NAT Gateway. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.icmpIdleTimeoutSec">icmpIdleTimeoutSec</a></code> | <code>number</code> | Timeout (in seconds) for ICMP connections. Defaults to 30s if not set. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_nat#id ComputeRouterNat#id}. |
@@ -1553,14 +1553,14 @@ const computeRouterNatConfig: computeRouterNat.ComputeRouterNatConfig = { ... }
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.logConfig">logConfig</a></code> | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfig">ComputeRouterNatLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.maxPortsPerVm">maxPortsPerVm</a></code> | <code>number</code> | Maximum number of ports allocated to a VM from this NAT. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.minPortsPerVm">minPortsPerVm</a></code> | <code>number</code> | Minimum number of ports allocated to a VM from this NAT. |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.nat64Subnetwork">nat64Subnetwork</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]</code> | nat64_subnetwork block. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.nat64Subnetwork">nat64Subnetwork</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]</code> | nat64_subnetwork block. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.natIpAllocateOption">natIpAllocateOption</a></code> | <code>string</code> | How external IPs should be allocated for this NAT. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.natIps">natIps</a></code> | <code>string[]</code> | Self-links of NAT IPs. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_router_nat#project ComputeRouterNat#project}. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.region">region</a></code> | <code>string</code> | Region where the router and NAT reside. |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.rules">rules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]</code> | rules block. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.sourceSubnetworkIpRangesToNat64">sourceSubnetworkIpRangesToNat64</a></code> | <code>string</code> | Specify the Nat option for NAT64, which can take one of the following values: ALL_IPV6_SUBNETWORKS: All of the IP ranges in every Subnetwork are allowed to Nat. |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.subnetwork">subnetwork</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]</code> | subnetwork block. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.subnetwork">subnetwork</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]</code> | subnetwork block. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.tcpEstablishedIdleTimeoutSec">tcpEstablishedIdleTimeoutSec</a></code> | <code>number</code> | Timeout (in seconds) for TCP established connections. Defaults to 1200s if not set. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.tcpTimeWaitTimeoutSec">tcpTimeWaitTimeoutSec</a></code> | <code>number</code> | Timeout (in seconds) for TCP connections that are in TIME_WAIT state. Defaults to 120s if not set. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatConfig.property.tcpTransitoryIdleTimeoutSec">tcpTransitoryIdleTimeoutSec</a></code> | <code>number</code> | Timeout (in seconds) for TCP transitory connections. Defaults to 30s if not set. |
@@ -1576,7 +1576,7 @@ const computeRouterNatConfig: computeRouterNat.ComputeRouterNatConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1586,7 +1586,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1596,7 +1596,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1606,7 +1606,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1626,7 +1626,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1636,7 +1636,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableDynamicPortAllocation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable Dynamic Port Allocation.
 
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableEndpointIndependentMapping: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable endpoint independent mapping. For more information see the [official documentation](https://cloud.google.com/nat/docs/overview#specs-rfcs).
 
@@ -1876,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nat64Subnetwork: IResolvable | ComputeRouterNatNat64Subnetwork[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
 
 nat64_subnetwork block.
 
@@ -1954,7 +1954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rules: IResolvable | ComputeRouterNatRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
 
 rules block.
 
@@ -1986,7 +1986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly subnetwork: IResolvable | ComputeRouterNatSubnetwork[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
 
 subnetwork block.
 
@@ -2096,7 +2096,7 @@ const computeRouterNatLogConfig: computeRouterNat.ComputeRouterNatLogConfig = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfig.property.enable">enable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether or not to export logs. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfig.property.enable">enable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether or not to export logs. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfig.property.filter">filter</a></code> | <code>string</code> | Specifies the desired filtering of logs on this NAT. Possible values: ["ERRORS_ONLY", "TRANSLATIONS_ONLY", "ALL"]. |
 
 ---
@@ -2107,7 +2107,7 @@ const computeRouterNatLogConfig: computeRouterNat.ComputeRouterNatLogConfig = { 
 public readonly enable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Indicates whether or not to export logs.
 
@@ -2478,14 +2478,14 @@ new computeRouterNat.ComputeRouterNatLogConfigOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2655,7 +2655,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2676,9 +2676,9 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.enableInput">enableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.enableInput">enableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.enable">enable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.enable">enable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.filter">filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatLogConfig">ComputeRouterNatLogConfig</a></code> | *No description.* |
 
@@ -2714,7 +2714,7 @@ public readonly fqn: string;
 public readonly enableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2734,7 +2734,7 @@ public readonly filterInput: string;
 public readonly enable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2771,7 +2771,7 @@ new computeRouterNat.ComputeRouterNatNat64SubnetworkList(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2779,7 +2779,7 @@ new computeRouterNat.ComputeRouterNatNat64SubnetworkList(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2845,7 +2845,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2880,7 +2880,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]</code> | *No description.* |
 
 ---
 
@@ -2914,7 +2914,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRouterNatNat64Subnetwork[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>[]
 
 ---
 
@@ -2931,7 +2931,7 @@ new computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2940,7 +2940,7 @@ new computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3126,7 +3126,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3149,7 +3149,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64SubnetworkOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a></code> | *No description.* |
 
 ---
 
@@ -3203,7 +3203,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | ComputeRouterNatNat64Subnetwork;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatNat64Subnetwork">ComputeRouterNatNat64Subnetwork</a>
 
 ---
 
@@ -3220,14 +3220,14 @@ new computeRouterNat.ComputeRouterNatRulesActionOutputReference(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3401,7 +3401,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3585,7 +3585,7 @@ new computeRouterNat.ComputeRouterNatRulesList(terraformResource: IInterpolating
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3593,7 +3593,7 @@ new computeRouterNat.ComputeRouterNatRulesList(terraformResource: IInterpolating
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3659,7 +3659,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3694,7 +3694,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -3728,7 +3728,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRouterNatRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>[]
 
 ---
 
@@ -3745,7 +3745,7 @@ new computeRouterNat.ComputeRouterNatRulesOutputReference(terraformResource: IIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3754,7 +3754,7 @@ new computeRouterNat.ComputeRouterNatRulesOutputReference(terraformResource: IIn
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3943,7 +3943,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3996,7 +3996,7 @@ public resetDescription(): void
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.property.match">match</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.property.ruleNumber">ruleNumber</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a></code> | *No description.* |
 
 ---
 
@@ -4110,7 +4110,7 @@ public readonly ruleNumber: number;
 public readonly internalValue: IResolvable | ComputeRouterNatRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatRules">ComputeRouterNatRules</a>
 
 ---
 
@@ -4127,7 +4127,7 @@ new computeRouterNat.ComputeRouterNatSubnetworkList(terraformResource: IInterpol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4135,7 +4135,7 @@ new computeRouterNat.ComputeRouterNatSubnetworkList(terraformResource: IInterpol
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4201,7 +4201,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4236,7 +4236,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]</code> | *No description.* |
 
 ---
 
@@ -4270,7 +4270,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ComputeRouterNatSubnetwork[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>[]
 
 ---
 
@@ -4287,7 +4287,7 @@ new computeRouterNat.ComputeRouterNatSubnetworkOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4296,7 +4296,7 @@ new computeRouterNat.ComputeRouterNatSubnetworkOutputReference(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4483,7 +4483,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4516,7 +4516,7 @@ public resetSecondaryIpRangeNames(): void
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.property.secondaryIpRangeNames">secondaryIpRangeNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.property.sourceIpRangesToNat">sourceIpRangesToNat</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetworkOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a></code> | *No description.* |
 
 ---
 
@@ -4610,7 +4610,7 @@ public readonly sourceIpRangesToNat: string[];
 public readonly internalValue: IResolvable | ComputeRouterNatSubnetwork;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatSubnetwork">ComputeRouterNatSubnetwork</a>
 
 ---
 
@@ -4627,14 +4627,14 @@ new computeRouterNat.ComputeRouterNatTimeoutsOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4807,7 +4807,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4852,7 +4852,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4946,7 +4946,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ComputeRouterNatTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeRouterNat.ComputeRouterNatTimeouts">ComputeRouterNatTimeouts</a>
 
 ---
 

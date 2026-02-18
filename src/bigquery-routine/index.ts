@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigqueryRoutineConfig extends cdktf.TerraformMetaArguments {
+export interface BigqueryRoutineConfig extends cdktn.TerraformMetaArguments {
   /**
   * If set to DATA_MASKING, the function is validated and made available as a masking function. For more information, see https://cloud.google.com/bigquery/docs/user-defined-functions#custom-mask Possible values: ["DATA_MASKING"]
   *
@@ -114,7 +114,7 @@ export interface BigqueryRoutineConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_routine#arguments BigqueryRoutine#arguments}
   */
-  readonly arguments?: BigqueryRoutineArguments[] | cdktf.IResolvable;
+  readonly arguments?: BigqueryRoutineArguments[] | cdktn.IResolvable;
   /**
   * remote_function_options block
   *
@@ -167,46 +167,46 @@ export interface BigqueryRoutineArguments {
   readonly name?: string;
 }
 
-export function bigqueryRoutineArgumentsToTerraform(struct?: BigqueryRoutineArguments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryRoutineArgumentsToTerraform(struct?: BigqueryRoutineArguments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    argument_kind: cdktf.stringToTerraform(struct!.argumentKind),
-    data_type: cdktf.stringToTerraform(struct!.dataType),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    name: cdktf.stringToTerraform(struct!.name),
+    argument_kind: cdktn.stringToTerraform(struct!.argumentKind),
+    data_type: cdktn.stringToTerraform(struct!.dataType),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function bigqueryRoutineArgumentsToHclTerraform(struct?: BigqueryRoutineArguments | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryRoutineArgumentsToHclTerraform(struct?: BigqueryRoutineArguments | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     argument_kind: {
-      value: cdktf.stringToHclTerraform(struct!.argumentKind),
+      value: cdktn.stringToHclTerraform(struct!.argumentKind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataType),
+      value: cdktn.stringToHclTerraform(struct!.dataType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -217,9 +217,9 @@ export function bigqueryRoutineArgumentsToHclTerraform(struct?: BigqueryRoutineA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryRoutineArgumentsOutputReference extends cdktf.ComplexObject {
+export class BigqueryRoutineArgumentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -227,11 +227,11 @@ export class BigqueryRoutineArgumentsOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BigqueryRoutineArguments | cdktf.IResolvable | undefined {
+  public get internalValue(): BigqueryRoutineArguments | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -256,7 +256,7 @@ export class BigqueryRoutineArgumentsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigqueryRoutineArguments | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigqueryRoutineArguments | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -265,7 +265,7 @@ export class BigqueryRoutineArgumentsOutputReference extends cdktf.ComplexObject
       this._mode = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -344,15 +344,15 @@ export class BigqueryRoutineArgumentsOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class BigqueryRoutineArgumentsList extends cdktf.ComplexList {
-  public internalValue? : BigqueryRoutineArguments[] | cdktf.IResolvable
+export class BigqueryRoutineArgumentsList extends cdktn.ComplexList {
+  public internalValue? : BigqueryRoutineArguments[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -400,45 +400,45 @@ export interface BigqueryRoutineRemoteFunctionOptions {
 }
 
 export function bigqueryRoutineRemoteFunctionOptionsToTerraform(struct?: BigqueryRoutineRemoteFunctionOptionsOutputReference | BigqueryRoutineRemoteFunctionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection: cdktf.stringToTerraform(struct!.connection),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    max_batching_rows: cdktf.stringToTerraform(struct!.maxBatchingRows),
-    user_defined_context: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.userDefinedContext),
+    connection: cdktn.stringToTerraform(struct!.connection),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    max_batching_rows: cdktn.stringToTerraform(struct!.maxBatchingRows),
+    user_defined_context: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.userDefinedContext),
   }
 }
 
 
 export function bigqueryRoutineRemoteFunctionOptionsToHclTerraform(struct?: BigqueryRoutineRemoteFunctionOptionsOutputReference | BigqueryRoutineRemoteFunctionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection: {
-      value: cdktf.stringToHclTerraform(struct!.connection),
+      value: cdktn.stringToHclTerraform(struct!.connection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_batching_rows: {
-      value: cdktf.stringToHclTerraform(struct!.maxBatchingRows),
+      value: cdktn.stringToHclTerraform(struct!.maxBatchingRows),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_defined_context: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.userDefinedContext),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.userDefinedContext),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -449,14 +449,14 @@ export function bigqueryRoutineRemoteFunctionOptionsToHclTerraform(struct?: Bigq
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryRoutineRemoteFunctionOptionsOutputReference extends cdktf.ComplexObject {
+export class BigqueryRoutineRemoteFunctionOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -633,87 +633,87 @@ export interface BigqueryRoutineSparkOptions {
 }
 
 export function bigqueryRoutineSparkOptionsToTerraform(struct?: BigqueryRoutineSparkOptionsOutputReference | BigqueryRoutineSparkOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
-    connection: cdktf.stringToTerraform(struct!.connection),
-    container_image: cdktf.stringToTerraform(struct!.containerImage),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
-    jar_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarUris),
-    main_class: cdktf.stringToTerraform(struct!.mainClass),
-    main_file_uri: cdktf.stringToTerraform(struct!.mainFileUri),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    py_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pyFileUris),
-    runtime_version: cdktf.stringToTerraform(struct!.runtimeVersion),
+    archive_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.archiveUris),
+    connection: cdktn.stringToTerraform(struct!.connection),
+    container_image: cdktn.stringToTerraform(struct!.containerImage),
+    file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileUris),
+    jar_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jarUris),
+    main_class: cdktn.stringToTerraform(struct!.mainClass),
+    main_file_uri: cdktn.stringToTerraform(struct!.mainFileUri),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    py_file_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pyFileUris),
+    runtime_version: cdktn.stringToTerraform(struct!.runtimeVersion),
   }
 }
 
 
 export function bigqueryRoutineSparkOptionsToHclTerraform(struct?: BigqueryRoutineSparkOptionsOutputReference | BigqueryRoutineSparkOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     archive_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.archiveUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.archiveUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connection: {
-      value: cdktf.stringToHclTerraform(struct!.connection),
+      value: cdktn.stringToHclTerraform(struct!.connection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container_image: {
-      value: cdktf.stringToHclTerraform(struct!.containerImage),
+      value: cdktn.stringToHclTerraform(struct!.containerImage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.fileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.fileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jar_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jarUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jarUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     main_class: {
-      value: cdktf.stringToHclTerraform(struct!.mainClass),
+      value: cdktn.stringToHclTerraform(struct!.mainClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     main_file_uri: {
-      value: cdktf.stringToHclTerraform(struct!.mainFileUri),
+      value: cdktn.stringToHclTerraform(struct!.mainFileUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     py_file_uris: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pyFileUris),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pyFileUris),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     runtime_version: {
-      value: cdktf.stringToHclTerraform(struct!.runtimeVersion),
+      value: cdktn.stringToHclTerraform(struct!.runtimeVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -724,14 +724,14 @@ export function bigqueryRoutineSparkOptionsToHclTerraform(struct?: BigqueryRouti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryRoutineSparkOptionsOutputReference extends cdktf.ComplexObject {
+export class BigqueryRoutineSparkOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -985,39 +985,39 @@ export interface BigqueryRoutineTimeouts {
   readonly update?: string;
 }
 
-export function bigqueryRoutineTimeoutsToTerraform(struct?: BigqueryRoutineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryRoutineTimeoutsToTerraform(struct?: BigqueryRoutineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bigqueryRoutineTimeoutsToHclTerraform(struct?: BigqueryRoutineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryRoutineTimeoutsToHclTerraform(struct?: BigqueryRoutineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1028,19 +1028,19 @@ export function bigqueryRoutineTimeoutsToHclTerraform(struct?: BigqueryRoutineTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryRoutineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigqueryRoutineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigqueryRoutineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigqueryRoutineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1061,7 +1061,7 @@ export class BigqueryRoutineTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigqueryRoutineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigqueryRoutineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1069,7 +1069,7 @@ export class BigqueryRoutineTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1134,7 +1134,7 @@ export class BigqueryRoutineTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_routine google_bigquery_routine}
 */
-export class BigqueryRoutine extends cdktf.TerraformResource {
+export class BigqueryRoutine extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1145,14 +1145,14 @@ export class BigqueryRoutine extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigqueryRoutine resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigqueryRoutine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryRoutine to import
   * @param importFromId The id of the existing BigqueryRoutine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_routine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryRoutine to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_routine", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_routine", importId: importFromId, provider });
       }
 
   // ===========
@@ -1433,7 +1433,7 @@ export class BigqueryRoutine extends cdktf.TerraformResource {
   public get arguments() {
     return this._arguments;
   }
-  public putArguments(value: BigqueryRoutineArguments[] | cdktf.IResolvable) {
+  public putArguments(value: BigqueryRoutineArguments[] | cdktn.IResolvable) {
     this._arguments.internalValue = value;
   }
   public resetArguments() {
@@ -1498,21 +1498,21 @@ export class BigqueryRoutine extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_governance_type: cdktf.stringToTerraform(this._dataGovernanceType),
-      dataset_id: cdktf.stringToTerraform(this._datasetId),
-      definition_body: cdktf.stringToTerraform(this._definitionBody),
-      description: cdktf.stringToTerraform(this._description),
-      determinism_level: cdktf.stringToTerraform(this._determinismLevel),
-      id: cdktf.stringToTerraform(this._id),
-      imported_libraries: cdktf.listMapper(cdktf.stringToTerraform, false)(this._importedLibraries),
-      language: cdktf.stringToTerraform(this._language),
-      project: cdktf.stringToTerraform(this._project),
-      return_table_type: cdktf.stringToTerraform(this._returnTableType),
-      return_type: cdktf.stringToTerraform(this._returnType),
-      routine_id: cdktf.stringToTerraform(this._routineId),
-      routine_type: cdktf.stringToTerraform(this._routineType),
-      security_mode: cdktf.stringToTerraform(this._securityMode),
-      arguments: cdktf.listMapper(bigqueryRoutineArgumentsToTerraform, true)(this._arguments.internalValue),
+      data_governance_type: cdktn.stringToTerraform(this._dataGovernanceType),
+      dataset_id: cdktn.stringToTerraform(this._datasetId),
+      definition_body: cdktn.stringToTerraform(this._definitionBody),
+      description: cdktn.stringToTerraform(this._description),
+      determinism_level: cdktn.stringToTerraform(this._determinismLevel),
+      id: cdktn.stringToTerraform(this._id),
+      imported_libraries: cdktn.listMapper(cdktn.stringToTerraform, false)(this._importedLibraries),
+      language: cdktn.stringToTerraform(this._language),
+      project: cdktn.stringToTerraform(this._project),
+      return_table_type: cdktn.stringToTerraform(this._returnTableType),
+      return_type: cdktn.stringToTerraform(this._returnType),
+      routine_id: cdktn.stringToTerraform(this._routineId),
+      routine_type: cdktn.stringToTerraform(this._routineType),
+      security_mode: cdktn.stringToTerraform(this._securityMode),
+      arguments: cdktn.listMapper(bigqueryRoutineArgumentsToTerraform, true)(this._arguments.internalValue),
       remote_function_options: bigqueryRoutineRemoteFunctionOptionsToTerraform(this._remoteFunctionOptions.internalValue),
       spark_options: bigqueryRoutineSparkOptionsToTerraform(this._sparkOptions.internalValue),
       timeouts: bigqueryRoutineTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1522,91 +1522,91 @@ export class BigqueryRoutine extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_governance_type: {
-        value: cdktf.stringToHclTerraform(this._dataGovernanceType),
+        value: cdktn.stringToHclTerraform(this._dataGovernanceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dataset_id: {
-        value: cdktf.stringToHclTerraform(this._datasetId),
+        value: cdktn.stringToHclTerraform(this._datasetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       definition_body: {
-        value: cdktf.stringToHclTerraform(this._definitionBody),
+        value: cdktn.stringToHclTerraform(this._definitionBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       determinism_level: {
-        value: cdktf.stringToHclTerraform(this._determinismLevel),
+        value: cdktn.stringToHclTerraform(this._determinismLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       imported_libraries: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._importedLibraries),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._importedLibraries),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       language: {
-        value: cdktf.stringToHclTerraform(this._language),
+        value: cdktn.stringToHclTerraform(this._language),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       return_table_type: {
-        value: cdktf.stringToHclTerraform(this._returnTableType),
+        value: cdktn.stringToHclTerraform(this._returnTableType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       return_type: {
-        value: cdktf.stringToHclTerraform(this._returnType),
+        value: cdktn.stringToHclTerraform(this._returnType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routine_id: {
-        value: cdktf.stringToHclTerraform(this._routineId),
+        value: cdktn.stringToHclTerraform(this._routineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routine_type: {
-        value: cdktf.stringToHclTerraform(this._routineType),
+        value: cdktn.stringToHclTerraform(this._routineType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_mode: {
-        value: cdktf.stringToHclTerraform(this._securityMode),
+        value: cdktn.stringToHclTerraform(this._securityMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       arguments: {
-        value: cdktf.listMapperHcl(bigqueryRoutineArgumentsToHclTerraform, true)(this._arguments.internalValue),
+        value: cdktn.listMapperHcl(bigqueryRoutineArgumentsToHclTerraform, true)(this._arguments.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "BigqueryRoutineArgumentsList",

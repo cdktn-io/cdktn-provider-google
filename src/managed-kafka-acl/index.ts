@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ManagedKafkaAclConfig extends cdktf.TerraformMetaArguments {
+export interface ManagedKafkaAclConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID to use for the acl, which will become the final component of the acl's name. The structure of 'aclId' defines the Resource Pattern (resource_type, resource_name, pattern_type) of the acl. 'aclId' is structured like one of the following:
   * For acls on the cluster: 'cluster'
@@ -50,7 +50,7 @@ export interface ManagedKafkaAclConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#acl_entries ManagedKafkaAcl#acl_entries}
   */
-  readonly aclEntries: ManagedKafkaAclAclEntries[] | cdktf.IResolvable;
+  readonly aclEntries: ManagedKafkaAclAclEntries[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -88,46 +88,46 @@ export interface ManagedKafkaAclAclEntries {
   readonly principal: string;
 }
 
-export function managedKafkaAclAclEntriesToTerraform(struct?: ManagedKafkaAclAclEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKafkaAclAclEntriesToTerraform(struct?: ManagedKafkaAclAclEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    operation: cdktf.stringToTerraform(struct!.operation),
-    permission_type: cdktf.stringToTerraform(struct!.permissionType),
-    principal: cdktf.stringToTerraform(struct!.principal),
+    host: cdktn.stringToTerraform(struct!.host),
+    operation: cdktn.stringToTerraform(struct!.operation),
+    permission_type: cdktn.stringToTerraform(struct!.permissionType),
+    principal: cdktn.stringToTerraform(struct!.principal),
   }
 }
 
 
-export function managedKafkaAclAclEntriesToHclTerraform(struct?: ManagedKafkaAclAclEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKafkaAclAclEntriesToHclTerraform(struct?: ManagedKafkaAclAclEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation: {
-      value: cdktf.stringToHclTerraform(struct!.operation),
+      value: cdktn.stringToHclTerraform(struct!.operation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission_type: {
-      value: cdktf.stringToHclTerraform(struct!.permissionType),
+      value: cdktn.stringToHclTerraform(struct!.permissionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal: {
-      value: cdktf.stringToHclTerraform(struct!.principal),
+      value: cdktn.stringToHclTerraform(struct!.principal),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,9 +138,9 @@ export function managedKafkaAclAclEntriesToHclTerraform(struct?: ManagedKafkaAcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedKafkaAclAclEntriesOutputReference extends cdktf.ComplexObject {
+export class ManagedKafkaAclAclEntriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -148,11 +148,11 @@ export class ManagedKafkaAclAclEntriesOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManagedKafkaAclAclEntries | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedKafkaAclAclEntries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -177,7 +177,7 @@ export class ManagedKafkaAclAclEntriesOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedKafkaAclAclEntries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedKafkaAclAclEntries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -186,7 +186,7 @@ export class ManagedKafkaAclAclEntriesOutputReference extends cdktf.ComplexObjec
       this._permissionType = undefined;
       this._principal = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,15 +259,15 @@ export class ManagedKafkaAclAclEntriesOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class ManagedKafkaAclAclEntriesList extends cdktf.ComplexList {
-  public internalValue? : ManagedKafkaAclAclEntries[] | cdktf.IResolvable
+export class ManagedKafkaAclAclEntriesList extends cdktn.ComplexList {
+  public internalValue? : ManagedKafkaAclAclEntries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,39 +293,39 @@ export interface ManagedKafkaAclTimeouts {
   readonly update?: string;
 }
 
-export function managedKafkaAclTimeoutsToTerraform(struct?: ManagedKafkaAclTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKafkaAclTimeoutsToTerraform(struct?: ManagedKafkaAclTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function managedKafkaAclTimeoutsToHclTerraform(struct?: ManagedKafkaAclTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKafkaAclTimeoutsToHclTerraform(struct?: ManagedKafkaAclTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -336,19 +336,19 @@ export function managedKafkaAclTimeoutsToHclTerraform(struct?: ManagedKafkaAclTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedKafkaAclTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ManagedKafkaAclTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ManagedKafkaAclTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedKafkaAclTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -369,7 +369,7 @@ export class ManagedKafkaAclTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedKafkaAclTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedKafkaAclTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -377,7 +377,7 @@ export class ManagedKafkaAclTimeoutsOutputReference extends cdktf.ComplexObject 
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -442,7 +442,7 @@ export class ManagedKafkaAclTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl google_managed_kafka_acl}
 */
-export class ManagedKafkaAcl extends cdktf.TerraformResource {
+export class ManagedKafkaAcl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -453,14 +453,14 @@ export class ManagedKafkaAcl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ManagedKafkaAcl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ManagedKafkaAcl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedKafkaAcl to import
   * @param importFromId The id of the existing ManagedKafkaAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedKafkaAcl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_managed_kafka_acl", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_managed_kafka_acl", importId: importFromId, provider });
       }
 
   // ===========
@@ -604,7 +604,7 @@ export class ManagedKafkaAcl extends cdktf.TerraformResource {
   public get aclEntries() {
     return this._aclEntries;
   }
-  public putAclEntries(value: ManagedKafkaAclAclEntries[] | cdktf.IResolvable) {
+  public putAclEntries(value: ManagedKafkaAclAclEntries[] | cdktn.IResolvable) {
     this._aclEntries.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -634,12 +634,12 @@ export class ManagedKafkaAcl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acl_id: cdktf.stringToTerraform(this._aclId),
-      cluster: cdktf.stringToTerraform(this._cluster),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      acl_entries: cdktf.listMapper(managedKafkaAclAclEntriesToTerraform, true)(this._aclEntries.internalValue),
+      acl_id: cdktn.stringToTerraform(this._aclId),
+      cluster: cdktn.stringToTerraform(this._cluster),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      acl_entries: cdktn.listMapper(managedKafkaAclAclEntriesToTerraform, true)(this._aclEntries.internalValue),
       timeouts: managedKafkaAclTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -647,37 +647,37 @@ export class ManagedKafkaAcl extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acl_id: {
-        value: cdktf.stringToHclTerraform(this._aclId),
+        value: cdktn.stringToHclTerraform(this._aclId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster: {
-        value: cdktf.stringToHclTerraform(this._cluster),
+        value: cdktn.stringToHclTerraform(this._cluster),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       acl_entries: {
-        value: cdktf.listMapperHcl(managedKafkaAclAclEntriesToHclTerraform, true)(this._aclEntries.internalValue),
+        value: cdktn.listMapperHcl(managedKafkaAclAclEntriesToHclTerraform, true)(this._aclEntries.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ManagedKafkaAclAclEntriesList",

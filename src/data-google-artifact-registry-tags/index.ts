@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleArtifactRegistryTagsConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleArtifactRegistryTagsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_tags#filter DataGoogleArtifactRegistryTags#filter}
   */
@@ -44,8 +44,8 @@ export interface DataGoogleArtifactRegistryTagsTags {
 }
 
 export function dataGoogleArtifactRegistryTagsTagsToTerraform(struct?: DataGoogleArtifactRegistryTagsTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -54,8 +54,8 @@ export function dataGoogleArtifactRegistryTagsTagsToTerraform(struct?: DataGoogl
 
 
 export function dataGoogleArtifactRegistryTagsTagsToHclTerraform(struct?: DataGoogleArtifactRegistryTagsTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -63,7 +63,7 @@ export function dataGoogleArtifactRegistryTagsTagsToHclTerraform(struct?: DataGo
   return attrs;
 }
 
-export class DataGoogleArtifactRegistryTagsTagsOutputReference extends cdktf.ComplexObject {
+export class DataGoogleArtifactRegistryTagsTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -72,7 +72,7 @@ export class DataGoogleArtifactRegistryTagsTagsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -102,14 +102,14 @@ export class DataGoogleArtifactRegistryTagsTagsOutputReference extends cdktf.Com
   }
 }
 
-export class DataGoogleArtifactRegistryTagsTagsList extends cdktf.ComplexList {
+export class DataGoogleArtifactRegistryTagsTagsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -124,7 +124,7 @@ export class DataGoogleArtifactRegistryTagsTagsList extends cdktf.ComplexList {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_tags google_artifact_registry_tags}
 */
-export class DataGoogleArtifactRegistryTags extends cdktf.TerraformDataSource {
+export class DataGoogleArtifactRegistryTags extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -135,14 +135,14 @@ export class DataGoogleArtifactRegistryTags extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleArtifactRegistryTags resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleArtifactRegistryTags resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleArtifactRegistryTags to import
   * @param importFromId The id of the existing DataGoogleArtifactRegistryTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleArtifactRegistryTags to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_tags", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_artifact_registry_tags", importId: importFromId, provider });
       }
 
   // ===========
@@ -283,49 +283,49 @@ export class DataGoogleArtifactRegistryTags extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter: cdktf.stringToTerraform(this._filter),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      package_name: cdktf.stringToTerraform(this._packageName),
-      project: cdktf.stringToTerraform(this._project),
-      repository_id: cdktf.stringToTerraform(this._repositoryId),
+      filter: cdktn.stringToTerraform(this._filter),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      package_name: cdktn.stringToTerraform(this._packageName),
+      project: cdktn.stringToTerraform(this._project),
+      repository_id: cdktn.stringToTerraform(this._repositoryId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filter: {
-        value: cdktf.stringToHclTerraform(this._filter),
+        value: cdktn.stringToHclTerraform(this._filter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       package_name: {
-        value: cdktf.stringToHclTerraform(this._packageName),
+        value: cdktn.stringToHclTerraform(this._packageName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_id: {
-        value: cdktf.stringToHclTerraform(this._repositoryId),
+        value: cdktn.stringToHclTerraform(this._repositoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

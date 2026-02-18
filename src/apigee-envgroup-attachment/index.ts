@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeEnvgroupAttachmentConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeEnvgroupAttachmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Apigee environment group associated with the Apigee environment,
   * in the format 'organizations/{{org_name}}/envgroups/{{envgroup_name}}'.
@@ -50,32 +50,32 @@ export interface ApigeeEnvgroupAttachmentTimeouts {
   readonly delete?: string;
 }
 
-export function apigeeEnvgroupAttachmentTimeoutsToTerraform(struct?: ApigeeEnvgroupAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeEnvgroupAttachmentTimeoutsToTerraform(struct?: ApigeeEnvgroupAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function apigeeEnvgroupAttachmentTimeoutsToHclTerraform(struct?: ApigeeEnvgroupAttachmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeEnvgroupAttachmentTimeoutsToHclTerraform(struct?: ApigeeEnvgroupAttachmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,19 +86,19 @@ export function apigeeEnvgroupAttachmentTimeoutsToHclTerraform(struct?: ApigeeEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeEnvgroupAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeEnvgroupAttachmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeEnvgroupAttachmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeEnvgroupAttachmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -115,14 +115,14 @@ export class ApigeeEnvgroupAttachmentTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeEnvgroupAttachmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeEnvgroupAttachmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -170,7 +170,7 @@ export class ApigeeEnvgroupAttachmentTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup_attachment google_apigee_envgroup_attachment}
 */
-export class ApigeeEnvgroupAttachment extends cdktf.TerraformResource {
+export class ApigeeEnvgroupAttachment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -181,14 +181,14 @@ export class ApigeeEnvgroupAttachment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeEnvgroupAttachment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeEnvgroupAttachment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeEnvgroupAttachment to import
   * @param importFromId The id of the existing ApigeeEnvgroupAttachment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup_attachment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeEnvgroupAttachment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_envgroup_attachment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_envgroup_attachment", importId: importFromId, provider });
       }
 
   // ===========
@@ -297,9 +297,9 @@ export class ApigeeEnvgroupAttachment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      envgroup_id: cdktf.stringToTerraform(this._envgroupId),
-      environment: cdktf.stringToTerraform(this._environment),
-      id: cdktf.stringToTerraform(this._id),
+      envgroup_id: cdktn.stringToTerraform(this._envgroupId),
+      environment: cdktn.stringToTerraform(this._environment),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: apigeeEnvgroupAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -307,19 +307,19 @@ export class ApigeeEnvgroupAttachment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       envgroup_id: {
-        value: cdktf.stringToHclTerraform(this._envgroupId),
+        value: cdktn.stringToHclTerraform(this._envgroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -300,7 +300,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -382,7 +382,7 @@ public putAllowlistedCertificates(value: IResolvable | CertificateManagerTrustCo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.putAllowlistedCertificates.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
 
 ---
 
@@ -406,7 +406,7 @@ public putTrustStores(value: IResolvable | CertificateManagerTrustConfigTrustSto
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.putTrustStores.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
 
 ---
 
@@ -459,7 +459,7 @@ public resetTrustStores(): void
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a CertificateManagerTrustConfig resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CertificateManagerTrustConfig resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -531,7 +531,7 @@ import { certificateManagerTrustConfig } from '@cdktn/provider-google'
 certificateManagerTrustConfig.CertificateManagerTrustConfig.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a CertificateManagerTrustConfig resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CertificateManagerTrustConfig resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.generateConfigForImport.parameter.scope"></a>
 
@@ -561,7 +561,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CertificateManagerTrustConfig to import is found.
 
@@ -572,35 +572,35 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.allowlistedCertificates">allowlistedCertificates</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList">CertificateManagerTrustConfigAllowlistedCertificatesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference">CertificateManagerTrustConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.trustStores">trustStores</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList">CertificateManagerTrustConfigTrustStoresList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.allowlistedCertificatesInput">allowlistedCertificatesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.allowlistedCertificatesInput">allowlistedCertificatesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.trustStoresInput">trustStoresInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.trustStoresInput">trustStoresInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -628,7 +628,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -678,7 +678,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -688,7 +688,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -698,7 +698,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -718,7 +718,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -728,7 +728,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -738,7 +738,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -748,7 +748,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -778,7 +778,7 @@ public readonly createTime: string;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -788,7 +788,7 @@ public readonly effectiveLabels: StringMap;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -828,7 +828,7 @@ public readonly updateTime: string;
 public readonly allowlistedCertificatesInput: IResolvable | CertificateManagerTrustConfigAllowlistedCertificates[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
 
 ---
 
@@ -898,7 +898,7 @@ public readonly projectInput: string;
 public readonly timeoutsInput: IResolvable | CertificateManagerTrustConfigTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a>
 
 ---
 
@@ -908,7 +908,7 @@ public readonly timeoutsInput: IResolvable | CertificateManagerTrustConfigTimeou
 public readonly trustStoresInput: IResolvable | CertificateManagerTrustConfigTrustStores[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
 
 ---
 
@@ -1040,22 +1040,22 @@ const certificateManagerTrustConfigConfig: certificateManagerTrustConfig.Certifi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.location">location</a></code> | <code>string</code> | The trust config location. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.name">name</a></code> | <code>string</code> | A user-defined name of the trust config. Trust config names must be unique globally. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.allowlistedCertificates">allowlistedCertificates</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]</code> | allowlisted_certificates block. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.allowlistedCertificates">allowlistedCertificates</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]</code> | allowlisted_certificates block. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.description">description</a></code> | <code>string</code> | One or more paragraphs of text description of a trust config. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config#id CertificateManagerTrustConfig#id}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Set of label tags associated with the trust config. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/certificate_manager_trust_config#project CertificateManagerTrustConfig#project}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.trustStores">trustStores</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]</code> | trust_stores block. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.trustStores">trustStores</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]</code> | trust_stores block. |
 
 ---
 
@@ -1065,7 +1065,7 @@ const certificateManagerTrustConfigConfig: certificateManagerTrustConfig.Certifi
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1075,7 +1075,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowlistedCertificates: IResolvable | CertificateManagerTrustConfigAllowlistedCertificates[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
 
 allowlisted_certificates block.
 
@@ -1249,7 +1249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly trustStores: IResolvable | CertificateManagerTrustConfigTrustStores[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
 
 trust_stores block.
 
@@ -1327,8 +1327,8 @@ const certificateManagerTrustConfigTrustStores: certificateManagerTrustConfig.Ce
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores.property.intermediateCas">intermediateCas</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]</code> | intermediate_cas block. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores.property.trustAnchors">trustAnchors</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]</code> | trust_anchors block. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores.property.intermediateCas">intermediateCas</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]</code> | intermediate_cas block. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores.property.trustAnchors">trustAnchors</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]</code> | trust_anchors block. |
 
 ---
 
@@ -1338,7 +1338,7 @@ const certificateManagerTrustConfigTrustStores: certificateManagerTrustConfig.Ce
 public readonly intermediateCas: IResolvable | CertificateManagerTrustConfigTrustStoresIntermediateCas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
 
 intermediate_cas block.
 
@@ -1352,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly trustAnchors: IResolvable | CertificateManagerTrustConfigTrustStoresTrustAnchors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
 
 trust_anchors block.
 
@@ -1440,7 +1440,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1448,7 +1448,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertif
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1514,7 +1514,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1549,7 +1549,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]</code> | *No description.* |
 
 ---
 
@@ -1583,7 +1583,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigAllowlistedCertificates[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>[]
 
 ---
 
@@ -1600,7 +1600,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertif
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1609,7 +1609,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertif
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1795,7 +1795,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1818,7 +1818,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.property.pemCertificateInput">pemCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.property.pemCertificate">pemCertificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a></code> | *No description.* |
 
 ---
 
@@ -1872,7 +1872,7 @@ public readonly pemCertificate: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigAllowlistedCertificates;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates">CertificateManagerTrustConfigAllowlistedCertificates</a>
 
 ---
 
@@ -1889,14 +1889,14 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2069,7 +2069,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2114,7 +2114,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2208,7 +2208,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a>
 
 ---
 
@@ -2225,7 +2225,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresInterm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2233,7 +2233,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresInterm
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2299,7 +2299,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2334,7 +2334,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]</code> | *No description.* |
 
 ---
 
@@ -2368,7 +2368,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigTrustStoresIntermediateCas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
 
 ---
 
@@ -2385,7 +2385,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresInterm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2394,7 +2394,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresInterm
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2581,7 +2581,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2610,7 +2610,7 @@ public resetPemCertificate(): void
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.property.pemCertificateInput">pemCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.property.pemCertificate">pemCertificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a></code> | *No description.* |
 
 ---
 
@@ -2664,7 +2664,7 @@ public readonly pemCertificate: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigTrustStoresIntermediateCas;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>
 
 ---
 
@@ -2681,7 +2681,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2689,7 +2689,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2755,7 +2755,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2790,7 +2790,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]</code> | *No description.* |
 
 ---
 
@@ -2824,7 +2824,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigTrustStores[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>[]
 
 ---
 
@@ -2841,7 +2841,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2850,7 +2850,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3040,7 +3040,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3062,7 +3062,7 @@ public putIntermediateCas(value: IResolvable | CertificateManagerTrustConfigTrus
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.putIntermediateCas.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
 
 ---
 
@@ -3074,7 +3074,7 @@ public putTrustAnchors(value: IResolvable | CertificateManagerTrustConfigTrustSt
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.putTrustAnchors.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
 
 ---
 
@@ -3099,9 +3099,9 @@ public resetTrustAnchors(): void
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.intermediateCas">intermediateCas</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList">CertificateManagerTrustConfigTrustStoresIntermediateCasList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.trustAnchors">trustAnchors</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList">CertificateManagerTrustConfigTrustStoresTrustAnchorsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.intermediateCasInput">intermediateCasInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.trustAnchorsInput">trustAnchorsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.intermediateCasInput">intermediateCasInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.trustAnchorsInput">trustAnchorsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a></code> | *No description.* |
 
 ---
 
@@ -3155,7 +3155,7 @@ public readonly trustAnchors: CertificateManagerTrustConfigTrustStoresTrustAncho
 public readonly intermediateCasInput: IResolvable | CertificateManagerTrustConfigTrustStoresIntermediateCas[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas">CertificateManagerTrustConfigTrustStoresIntermediateCas</a>[]
 
 ---
 
@@ -3165,7 +3165,7 @@ public readonly intermediateCasInput: IResolvable | CertificateManagerTrustConfi
 public readonly trustAnchorsInput: IResolvable | CertificateManagerTrustConfigTrustStoresTrustAnchors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
 
 ---
 
@@ -3175,7 +3175,7 @@ public readonly trustAnchorsInput: IResolvable | CertificateManagerTrustConfigTr
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigTrustStores;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores">CertificateManagerTrustConfigTrustStores</a>
 
 ---
 
@@ -3192,7 +3192,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3200,7 +3200,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustA
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3266,7 +3266,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3301,7 +3301,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]</code> | *No description.* |
 
 ---
 
@@ -3335,7 +3335,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigTrustStoresTrustAnchors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>[]
 
 ---
 
@@ -3352,7 +3352,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3361,7 +3361,7 @@ new certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustA
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3548,7 +3548,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3577,7 +3577,7 @@ public resetPemCertificate(): void
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.property.pemCertificateInput">pemCertificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.property.pemCertificate">pemCertificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a></code> | *No description.* |
 
 ---
 
@@ -3631,7 +3631,7 @@ public readonly pemCertificate: string;
 public readonly internalValue: IResolvable | CertificateManagerTrustConfigTrustStoresTrustAnchors;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors">CertificateManagerTrustConfigTrustStoresTrustAnchors</a>
 
 ---
 

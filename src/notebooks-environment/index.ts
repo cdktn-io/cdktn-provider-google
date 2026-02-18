@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotebooksEnvironmentConfig extends cdktf.TerraformMetaArguments {
+export interface NotebooksEnvironmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * A brief description of this environment.
   *
@@ -91,31 +91,31 @@ export interface NotebooksEnvironmentContainerImage {
 }
 
 export function notebooksEnvironmentContainerImageToTerraform(struct?: NotebooksEnvironmentContainerImageOutputReference | NotebooksEnvironmentContainerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository: cdktf.stringToTerraform(struct!.repository),
-    tag: cdktf.stringToTerraform(struct!.tag),
+    repository: cdktn.stringToTerraform(struct!.repository),
+    tag: cdktn.stringToTerraform(struct!.tag),
   }
 }
 
 
 export function notebooksEnvironmentContainerImageToHclTerraform(struct?: NotebooksEnvironmentContainerImageOutputReference | NotebooksEnvironmentContainerImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     repository: {
-      value: cdktf.stringToHclTerraform(struct!.repository),
+      value: cdktn.stringToHclTerraform(struct!.repository),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function notebooksEnvironmentContainerImageToHclTerraform(struct?: Notebo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksEnvironmentContainerImageOutputReference extends cdktf.ComplexObject {
+export class NotebooksEnvironmentContainerImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -208,39 +208,39 @@ export interface NotebooksEnvironmentTimeouts {
   readonly update?: string;
 }
 
-export function notebooksEnvironmentTimeoutsToTerraform(struct?: NotebooksEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notebooksEnvironmentTimeoutsToTerraform(struct?: NotebooksEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function notebooksEnvironmentTimeoutsToHclTerraform(struct?: NotebooksEnvironmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notebooksEnvironmentTimeoutsToHclTerraform(struct?: NotebooksEnvironmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,19 +251,19 @@ export function notebooksEnvironmentTimeoutsToHclTerraform(struct?: NotebooksEnv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NotebooksEnvironmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NotebooksEnvironmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NotebooksEnvironmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -284,7 +284,7 @@ export class NotebooksEnvironmentTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotebooksEnvironmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotebooksEnvironmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -292,7 +292,7 @@ export class NotebooksEnvironmentTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -376,38 +376,38 @@ export interface NotebooksEnvironmentVmImage {
 }
 
 export function notebooksEnvironmentVmImageToTerraform(struct?: NotebooksEnvironmentVmImageOutputReference | NotebooksEnvironmentVmImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image_family: cdktf.stringToTerraform(struct!.imageFamily),
-    image_name: cdktf.stringToTerraform(struct!.imageName),
-    project: cdktf.stringToTerraform(struct!.project),
+    image_family: cdktn.stringToTerraform(struct!.imageFamily),
+    image_name: cdktn.stringToTerraform(struct!.imageName),
+    project: cdktn.stringToTerraform(struct!.project),
   }
 }
 
 
 export function notebooksEnvironmentVmImageToHclTerraform(struct?: NotebooksEnvironmentVmImageOutputReference | NotebooksEnvironmentVmImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image_family: {
-      value: cdktf.stringToHclTerraform(struct!.imageFamily),
+      value: cdktn.stringToHclTerraform(struct!.imageFamily),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     image_name: {
-      value: cdktf.stringToHclTerraform(struct!.imageName),
+      value: cdktn.stringToHclTerraform(struct!.imageName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project: {
-      value: cdktf.stringToHclTerraform(struct!.project),
+      value: cdktn.stringToHclTerraform(struct!.project),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -418,14 +418,14 @@ export function notebooksEnvironmentVmImageToHclTerraform(struct?: NotebooksEnvi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotebooksEnvironmentVmImageOutputReference extends cdktf.ComplexObject {
+export class NotebooksEnvironmentVmImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -511,7 +511,7 @@ export class NotebooksEnvironmentVmImageOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_environment google_notebooks_environment}
 */
-export class NotebooksEnvironment extends cdktf.TerraformResource {
+export class NotebooksEnvironment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -522,14 +522,14 @@ export class NotebooksEnvironment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotebooksEnvironment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotebooksEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotebooksEnvironment to import
   * @param importFromId The id of the existing NotebooksEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/notebooks_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotebooksEnvironment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_notebooks_environment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_notebooks_environment", importId: importFromId, provider });
       }
 
   // ===========
@@ -740,13 +740,13 @@ export class NotebooksEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      post_startup_script: cdktf.stringToTerraform(this._postStartupScript),
-      project: cdktf.stringToTerraform(this._project),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      post_startup_script: cdktn.stringToTerraform(this._postStartupScript),
+      project: cdktn.stringToTerraform(this._project),
       container_image: notebooksEnvironmentContainerImageToTerraform(this._containerImage.internalValue),
       timeouts: notebooksEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
       vm_image: notebooksEnvironmentVmImageToTerraform(this._vmImage.internalValue),
@@ -756,43 +756,43 @@ export class NotebooksEnvironment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       post_startup_script: {
-        value: cdktf.stringToHclTerraform(this._postStartupScript),
+        value: cdktn.stringToHclTerraform(this._postStartupScript),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

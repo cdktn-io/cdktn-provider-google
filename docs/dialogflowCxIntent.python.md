@@ -41,26 +41,26 @@ dialogflowCxIntent.DialogflowCxIntent(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The human-readable name of the intent, unique within the agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.description">description</a></code> | <code>str</code> | Human readable description for better understanding an intent like its scope, content, result etc. Maximum character limit: 140 characters. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isDefaultNegativeIntent">is_default_negative_intent</a></code> | <code>bool \| cdktf.IResolvable</code> | Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#negative) for an agent. When you create an agent, a Default Negative Intent is created automatically. The Default Negative Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isDefaultWelcomeIntent">is_default_welcome_intent</a></code> | <code>bool \| cdktf.IResolvable</code> | Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isFallback">is_fallback</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether this is a fallback intent. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isDefaultNegativeIntent">is_default_negative_intent</a></code> | <code>bool \| cdktn.IResolvable</code> | Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#negative) for an agent. When you create an agent, a Default Negative Intent is created automatically. The Default Negative Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isDefaultWelcomeIntent">is_default_welcome_intent</a></code> | <code>bool \| cdktn.IResolvable</code> | Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isFallback">is_fallback</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether this is a fallback intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The key/value metadata to label an intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.languageCode">language_code</a></code> | <code>str</code> | The language of the following fields in intent: Intent.training_phrases.parts.text If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.parameters">parameters</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | parameters block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.parameters">parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | parameters block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.parent">parent</a></code> | <code>str</code> | The agent to create an intent for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority of this intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.trainingPhrases">training_phrases</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | training_phrases block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.trainingPhrases">training_phrases</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | training_phrases block. |
 
 ---
 
@@ -84,43 +84,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `is_default_negative_intent`<sup>Optional</sup> <a name="is_default_negative_intent" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isDefaultNegativeIntent"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#negative) for an agent. When you create an agent, a Default Negative Intent is created automatically. The Default Negative Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources.
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `is_default_welcome_intent`<sup>Optional</sup> <a name="is_default_welcome_intent" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isDefaultWelcomeIntent"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources.
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `is_fallback`<sup>Optional</sup> <a name="is_fallback" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.isFallback"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether this is a fallback intent.
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.parameters"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
 
 parameters block.
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `training_phrases`<sup>Optional</sup> <a name="training_phrases" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.Initializer.parameter.trainingPhrases"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
 
 training_phrases block.
 
@@ -561,7 +561,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -654,7 +654,7 @@ def put_parameters(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.putParameters.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
 
 ---
 
@@ -702,7 +702,7 @@ def put_training_phrases(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.putTrainingPhrases.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
 
 ---
 
@@ -785,7 +785,7 @@ def reset_training_phrases() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DialogflowCxIntent resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DialogflowCxIntent resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -868,7 +868,7 @@ dialogflowCxIntent.DialogflowCxIntent.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DialogflowCxIntent resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DialogflowCxIntent resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.generateConfigForImport.parameter.scope"></a>
 
@@ -898,7 +898,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DialogflowCxIntent to import is found.
 
@@ -909,44 +909,44 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.parameters">parameters</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList">DialogflowCxIntentParametersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference">DialogflowCxIntentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.trainingPhrases">training_phrases</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList">DialogflowCxIntentTrainingPhrasesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultNegativeIntentInput">is_default_negative_intent_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultWelcomeIntentInput">is_default_welcome_intent_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isFallbackInput">is_fallback_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultNegativeIntentInput">is_default_negative_intent_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultWelcomeIntentInput">is_default_welcome_intent_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isFallbackInput">is_fallback_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.languageCodeInput">language_code_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.parametersInput">parameters_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.parametersInput">parameters_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.trainingPhrasesInput">training_phrases_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.trainingPhrasesInput">training_phrases_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultNegativeIntent">is_default_negative_intent</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultWelcomeIntent">is_default_welcome_intent</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isFallback">is_fallback</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultNegativeIntent">is_default_negative_intent</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isDefaultWelcomeIntent">is_default_welcome_intent</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.isFallback">is_fallback</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.languageCode">language_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntent.property.parent">parent</a></code> | <code>str</code> | *No description.* |
@@ -972,7 +972,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1022,7 +1022,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1032,7 +1032,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1042,7 +1042,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1062,7 +1062,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1072,7 +1072,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1082,7 +1082,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1092,7 +1092,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1102,7 +1102,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1132,7 +1132,7 @@ parameters: DialogflowCxIntentParametersList
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1192,7 +1192,7 @@ id_input: str
 is_default_negative_intent_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1202,7 +1202,7 @@ is_default_negative_intent_input: bool | IResolvable
 is_default_welcome_intent_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1212,7 +1212,7 @@ is_default_welcome_intent_input: bool | IResolvable
 is_fallback_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1242,7 +1242,7 @@ language_code_input: str
 parameters_input: IResolvable | typing.List[DialogflowCxIntentParameters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
 
 ---
 
@@ -1272,7 +1272,7 @@ priority_input: typing.Union[int, float]
 timeouts_input: IResolvable | DialogflowCxIntentTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a>
 
 ---
 
@@ -1282,7 +1282,7 @@ timeouts_input: IResolvable | DialogflowCxIntentTimeouts
 training_phrases_input: IResolvable | typing.List[DialogflowCxIntentTrainingPhrases]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
 
 ---
 
@@ -1322,7 +1322,7 @@ id: str
 is_default_negative_intent: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1332,7 +1332,7 @@ is_default_negative_intent: bool | IResolvable
 is_default_welcome_intent: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1342,7 +1342,7 @@ is_default_welcome_intent: bool | IResolvable
 is_fallback: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1441,26 +1441,26 @@ dialogflowCxIntent.DialogflowCxIntentConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.displayName">display_name</a></code> | <code>str</code> | The human-readable name of the intent, unique within the agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.description">description</a></code> | <code>str</code> | Human readable description for better understanding an intent like its scope, content, result etc. Maximum character limit: 140 characters. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_intent#id DialogflowCxIntent#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isDefaultNegativeIntent">is_default_negative_intent</a></code> | <code>bool \| cdktf.IResolvable</code> | Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#negative) for an agent. When you create an agent, a Default Negative Intent is created automatically. The Default Negative Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isDefaultWelcomeIntent">is_default_welcome_intent</a></code> | <code>bool \| cdktf.IResolvable</code> | Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isFallback">is_fallback</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether this is a fallback intent. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isDefaultNegativeIntent">is_default_negative_intent</a></code> | <code>bool \| cdktn.IResolvable</code> | Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#negative) for an agent. When you create an agent, a Default Negative Intent is created automatically. The Default Negative Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isDefaultWelcomeIntent">is_default_welcome_intent</a></code> | <code>bool \| cdktn.IResolvable</code> | Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.isFallback">is_fallback</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether this is a fallback intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The key/value metadata to label an intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.languageCode">language_code</a></code> | <code>str</code> | The language of the following fields in intent: Intent.training_phrases.parts.text If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.parameters">parameters</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | parameters block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.parameters">parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | parameters block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.parent">parent</a></code> | <code>str</code> | The agent to create an intent for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority of this intent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.trainingPhrases">training_phrases</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | training_phrases block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentConfig.property.trainingPhrases">training_phrases</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | training_phrases block. |
 
 ---
 
@@ -1470,7 +1470,7 @@ dialogflowCxIntent.DialogflowCxIntentConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1480,7 +1480,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1490,7 +1490,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1500,7 +1500,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1510,7 +1510,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1520,7 +1520,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1530,7 +1530,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1583,7 +1583,7 @@ If you experience problems setting this value it might not be settable. Please t
 is_default_negative_intent: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Marks this as the [Default Negative Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#negative) for an agent. When you create an agent, a Default Negative Intent is created automatically. The Default Negative Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources.
 
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 is_default_welcome_intent: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Marks this as the [Default Welcome Intent](https://cloud.google.com/dialogflow/cx/docs/concept/intent#welcome) for an agent. When you create an agent, a Default Welcome Intent is created automatically. The Default Welcome Intent cannot be deleted; deleting the 'google_dialogflow_cx_intent' resource does nothing to the underlying GCP resources.
 
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 is_fallback: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether this is a fallback intent.
 
@@ -1668,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 parameters: IResolvable | typing.List[DialogflowCxIntentParameters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
 
 parameters block.
 
@@ -1728,7 +1728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 training_phrases: IResolvable | typing.List[DialogflowCxIntentTrainingPhrases]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
 
 training_phrases block.
 
@@ -1757,8 +1757,8 @@ dialogflowCxIntent.DialogflowCxIntentParameters(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters.property.entityType">entity_type</a></code> | <code>str</code> | The entity type of the parameter. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters.property.id">id</a></code> | <code>str</code> | The unique identifier of the parameter. This field is used by training phrases to annotate their parts. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters.property.isList">is_list</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the parameter represents a list of values. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters.property.redact">redact</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether the parameter content should be redacted in log. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters.property.isList">is_list</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the parameter represents a list of values. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters.property.redact">redact</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the parameter content should be redacted in log. |
 
 ---
 
@@ -1801,7 +1801,7 @@ If you experience problems setting this value it might not be settable. Please t
 is_list: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether the parameter represents a list of values.
 
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 redact: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether the parameter content should be redacted in log.
 
@@ -1903,7 +1903,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrases(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases.property.parts">parts</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]</code> | parts block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases.property.parts">parts</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]</code> | parts block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases.property.repeatCount">repeat_count</a></code> | <code>typing.Union[int, float]</code> | Indicates how many times this example was added to the intent. |
 
 ---
@@ -1914,7 +1914,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrases(
 parts: IResolvable | typing.List[DialogflowCxIntentTrainingPhrasesParts]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
 
 parts block.
 
@@ -2006,7 +2006,7 @@ dialogflowCxIntent.DialogflowCxIntentParametersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2014,7 +2014,7 @@ dialogflowCxIntent.DialogflowCxIntentParametersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2084,7 +2084,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2121,7 +2121,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]</code> | *No description.* |
 
 ---
 
@@ -2155,7 +2155,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DialogflowCxIntentParameters]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>]
 
 ---
 
@@ -2177,7 +2177,7 @@ dialogflowCxIntent.DialogflowCxIntentParametersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2186,7 +2186,7 @@ dialogflowCxIntent.DialogflowCxIntentParametersOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2396,7 +2396,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2431,13 +2431,13 @@ def reset_redact() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.entityTypeInput">entity_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.isListInput">is_list_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.redactInput">redact_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.isListInput">is_list_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.redactInput">redact_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.entityType">entity_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.isList">is_list</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.redact">redact</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.isList">is_list</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.redact">redact</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParametersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a></code> | *No description.* |
 
 ---
 
@@ -2491,7 +2491,7 @@ id_input: str
 is_list_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2501,7 +2501,7 @@ is_list_input: bool | IResolvable
 redact_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2531,7 +2531,7 @@ id: str
 is_list: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2541,7 +2541,7 @@ is_list: bool | IResolvable
 redact: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2551,7 +2551,7 @@ redact: bool | IResolvable
 internal_value: IResolvable | DialogflowCxIntentParameters
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentParameters">DialogflowCxIntentParameters</a>
 
 ---
 
@@ -2571,14 +2571,14 @@ dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2773,7 +2773,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2818,7 +2818,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2912,7 +2912,7 @@ update: str
 internal_value: IResolvable | DialogflowCxIntentTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTimeouts">DialogflowCxIntentTimeouts</a>
 
 ---
 
@@ -2933,7 +2933,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2941,7 +2941,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3011,7 +3011,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3048,7 +3048,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]</code> | *No description.* |
 
 ---
 
@@ -3082,7 +3082,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DialogflowCxIntentTrainingPhrases]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>]
 
 ---
 
@@ -3104,7 +3104,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3113,7 +3113,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3323,7 +3323,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3347,7 +3347,7 @@ def put_parts(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.putParts.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
 
 ---
 
@@ -3366,10 +3366,10 @@ def reset_repeat_count() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.parts">parts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList">DialogflowCxIntentTrainingPhrasesPartsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.partsInput">parts_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.partsInput">parts_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.repeatCountInput">repeat_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.repeatCount">repeat_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a></code> | *No description.* |
 
 ---
 
@@ -3423,7 +3423,7 @@ parts: DialogflowCxIntentTrainingPhrasesPartsList
 parts_input: IResolvable | typing.List[DialogflowCxIntentTrainingPhrasesParts]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
 
 ---
 
@@ -3453,7 +3453,7 @@ repeat_count: typing.Union[int, float]
 internal_value: IResolvable | DialogflowCxIntentTrainingPhrases
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrases">DialogflowCxIntentTrainingPhrases</a>
 
 ---
 
@@ -3474,7 +3474,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3482,7 +3482,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3552,7 +3552,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3589,7 +3589,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]</code> | *No description.* |
 
 ---
 
@@ -3623,7 +3623,7 @@ fqn: str
 internal_value: IResolvable | typing.List[DialogflowCxIntentTrainingPhrasesParts]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>]
 
 ---
 
@@ -3645,7 +3645,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3654,7 +3654,7 @@ dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3863,7 +3863,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3894,7 +3894,7 @@ def reset_parameter_id() -> None
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.property.parameterId">parameter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesPartsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a></code> | *No description.* |
 
 ---
 
@@ -3968,7 +3968,7 @@ text: str
 internal_value: IResolvable | DialogflowCxIntentTrainingPhrasesParts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowCxIntent.DialogflowCxIntentTrainingPhrasesParts">DialogflowCxIntentTrainingPhrasesParts</a>
 
 ---
 

@@ -35,13 +35,13 @@ transcoderJob.TranscoderJob(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the transcoding job resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA">TranscoderJobConfigA</a></code> | config block. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/transcoder_job#id TranscoderJob#id}. |
@@ -72,43 +72,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.transcoderJob.TranscoderJob.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -464,7 +464,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.transcoderJob.TranscoderJob.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -566,7 +566,7 @@ def put_config(
 
 ###### `ad_breaks`<sup>Optional</sup> <a name="ad_breaks" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.adBreaks"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
 
 ad_breaks block.
 
@@ -576,7 +576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `edit_list`<sup>Optional</sup> <a name="edit_list" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.editList"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
 
 edit_list block.
 
@@ -586,7 +586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `elementary_streams`<sup>Optional</sup> <a name="elementary_streams" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.elementaryStreams"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
 
 elementary_streams block.
 
@@ -596,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `encryptions`<sup>Optional</sup> <a name="encryptions" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.encryptions"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
 
 encryptions block.
 
@@ -606,7 +606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `inputs`<sup>Optional</sup> <a name="inputs" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.inputs"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
 
 inputs block.
 
@@ -616,7 +616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `manifests`<sup>Optional</sup> <a name="manifests" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.manifests"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
 
 manifests block.
 
@@ -626,7 +626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `mux_streams`<sup>Optional</sup> <a name="mux_streams" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.muxStreams"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
 
 mux_streams block.
 
@@ -646,7 +646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `overlays`<sup>Optional</sup> <a name="overlays" id="@cdktn/provider-google.transcoderJob.TranscoderJob.putConfig.parameter.overlays"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
 
 overlays block.
 
@@ -741,7 +741,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a TranscoderJob resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a TranscoderJob resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -824,7 +824,7 @@ transcoderJob.TranscoderJob.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a TranscoderJob resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a TranscoderJob resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.transcoderJob.TranscoderJob.generateConfigForImport.parameter.scope"></a>
 
@@ -854,7 +854,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.transcoderJob.TranscoderJob.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the TranscoderJob to import is found.
 
@@ -865,27 +865,27 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference">TranscoderJobConfigAOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.endTime">end_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.startTime">start_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference">TranscoderJobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.configInput">config_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA">TranscoderJobConfigA</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -893,7 +893,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.templateIdInput">template_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJob.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -920,7 +920,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -970,7 +970,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -980,7 +980,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -990,7 +990,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1010,7 +1010,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1020,7 +1020,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1030,7 +1030,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1040,7 +1040,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1070,7 +1070,7 @@ create_time: str
 effective_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1120,7 +1120,7 @@ state: str
 terraform_labels: StringMap
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1200,7 +1200,7 @@ template_id_input: str
 timeouts_input: IResolvable | TranscoderJobTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a>
 
 ---
 
@@ -1303,13 +1303,13 @@ transcoderJob.TranscoderJobConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.location">location</a></code> | <code>str</code> | The location of the transcoding job resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA">TranscoderJobConfigA</a></code> | config block. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/transcoder_job#id TranscoderJob#id}. |
@@ -1326,7 +1326,7 @@ transcoderJob.TranscoderJobConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1336,7 +1336,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1346,7 +1346,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1356,7 +1356,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1366,7 +1366,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1376,7 +1376,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1386,7 +1386,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1515,15 +1515,15 @@ transcoderJob.TranscoderJobConfigA(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.adBreaks">ad_breaks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]</code> | ad_breaks block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.editList">edit_list</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]</code> | edit_list block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.elementaryStreams">elementary_streams</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]</code> | elementary_streams block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.encryptions">encryptions</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]</code> | encryptions block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.inputs">inputs</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]</code> | inputs block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.manifests">manifests</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]</code> | manifests block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.muxStreams">mux_streams</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]</code> | mux_streams block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.adBreaks">ad_breaks</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]</code> | ad_breaks block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.editList">edit_list</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]</code> | edit_list block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.elementaryStreams">elementary_streams</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]</code> | elementary_streams block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.encryptions">encryptions</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]</code> | encryptions block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.inputs">inputs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]</code> | inputs block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.manifests">manifests</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]</code> | manifests block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.muxStreams">mux_streams</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]</code> | mux_streams block. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.output">output</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutput">TranscoderJobConfigOutput</a></code> | output block. |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.overlays">overlays</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]</code> | overlays block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.overlays">overlays</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]</code> | overlays block. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA.property.pubsubDestination">pubsub_destination</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestination">TranscoderJobConfigPubsubDestination</a></code> | pubsub_destination block. |
 
 ---
@@ -1534,7 +1534,7 @@ transcoderJob.TranscoderJobConfigA(
 ad_breaks: IResolvable | typing.List[TranscoderJobConfigAdBreaks]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
 
 ad_breaks block.
 
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 edit_list: IResolvable | typing.List[TranscoderJobConfigEditListStruct]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
 
 edit_list block.
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 elementary_streams: IResolvable | typing.List[TranscoderJobConfigElementaryStreams]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
 
 elementary_streams block.
 
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 encryptions: IResolvable | typing.List[TranscoderJobConfigEncryptions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
 
 encryptions block.
 
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 inputs: IResolvable | typing.List[TranscoderJobConfigInputs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
 
 inputs block.
 
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 manifests: IResolvable | typing.List[TranscoderJobConfigManifests]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
 
 manifests block.
 
@@ -1618,7 +1618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 mux_streams: IResolvable | typing.List[TranscoderJobConfigMuxStreams]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
 
 mux_streams block.
 
@@ -1646,7 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 overlays: IResolvable | typing.List[TranscoderJobConfigOverlays]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
 
 overlays block.
 
@@ -2897,7 +2897,7 @@ transcoderJob.TranscoderJobConfigOverlays(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays.property.animations">animations</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]</code> | animations block. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays.property.animations">animations</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]</code> | animations block. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays.property.image">image</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImage">TranscoderJobConfigOverlaysImage</a></code> | image block. |
 
 ---
@@ -2908,7 +2908,7 @@ transcoderJob.TranscoderJobConfigOverlays(
 animations: IResolvable | typing.List[TranscoderJobConfigOverlaysAnimations]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
 
 animations block.
 
@@ -3246,7 +3246,7 @@ transcoderJob.TranscoderJobConfigAdBreaksList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3254,7 +3254,7 @@ transcoderJob.TranscoderJobConfigAdBreaksList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3324,7 +3324,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3361,7 +3361,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]</code> | *No description.* |
 
 ---
 
@@ -3395,7 +3395,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigAdBreaks]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
 
 ---
 
@@ -3417,7 +3417,7 @@ transcoderJob.TranscoderJobConfigAdBreaksOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3426,7 +3426,7 @@ transcoderJob.TranscoderJobConfigAdBreaksOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3635,7 +3635,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3664,7 +3664,7 @@ def reset_start_time_offset() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.property.startTimeOffsetInput">start_time_offset_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.property.startTimeOffset">start_time_offset</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a></code> | *No description.* |
 
 ---
 
@@ -3718,7 +3718,7 @@ start_time_offset: str
 internal_value: IResolvable | TranscoderJobConfigAdBreaks
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>
 
 ---
 
@@ -3738,14 +3738,14 @@ transcoderJob.TranscoderJobConfigAOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3957,7 +3957,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3981,7 +3981,7 @@ def put_ad_breaks(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putAdBreaks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
 
 ---
 
@@ -3995,7 +3995,7 @@ def put_edit_list(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putEditList.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
 
 ---
 
@@ -4009,7 +4009,7 @@ def put_elementary_streams(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putElementaryStreams.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
 
 ---
 
@@ -4023,7 +4023,7 @@ def put_encryptions(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putEncryptions.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
 
 ---
 
@@ -4037,7 +4037,7 @@ def put_inputs(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putInputs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
 
 ---
 
@@ -4051,7 +4051,7 @@ def put_manifests(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putManifests.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
 
 ---
 
@@ -4065,7 +4065,7 @@ def put_mux_streams(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putMuxStreams.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
 
 ---
 
@@ -4097,7 +4097,7 @@ def put_overlays(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.putOverlays.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
 
 ---
 
@@ -4196,15 +4196,15 @@ def reset_pubsub_destination() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.output">output</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutputOutputReference">TranscoderJobConfigOutputOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.overlays">overlays</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList">TranscoderJobConfigOverlaysList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.pubsubDestination">pubsub_destination</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestinationOutputReference">TranscoderJobConfigPubsubDestinationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.adBreaksInput">ad_breaks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.editListInput">edit_list_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.elementaryStreamsInput">elementary_streams_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.encryptionsInput">encryptions_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.inputsInput">inputs_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.manifestsInput">manifests_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.muxStreamsInput">mux_streams_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.adBreaksInput">ad_breaks_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.editListInput">edit_list_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.elementaryStreamsInput">elementary_streams_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.encryptionsInput">encryptions_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.inputsInput">inputs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.manifestsInput">manifests_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.muxStreamsInput">mux_streams_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.outputInput">output_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutput">TranscoderJobConfigOutput</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.overlaysInput">overlays_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.overlaysInput">overlays_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.pubsubDestinationInput">pubsub_destination_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestination">TranscoderJobConfigPubsubDestination</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigA">TranscoderJobConfigA</a></code> | *No description.* |
 
@@ -4340,7 +4340,7 @@ pubsub_destination: TranscoderJobConfigPubsubDestinationOutputReference
 ad_breaks_input: IResolvable | typing.List[TranscoderJobConfigAdBreaks]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigAdBreaks">TranscoderJobConfigAdBreaks</a>]
 
 ---
 
@@ -4350,7 +4350,7 @@ ad_breaks_input: IResolvable | typing.List[TranscoderJobConfigAdBreaks]
 edit_list_input: IResolvable | typing.List[TranscoderJobConfigEditListStruct]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
 
 ---
 
@@ -4360,7 +4360,7 @@ edit_list_input: IResolvable | typing.List[TranscoderJobConfigEditListStruct]
 elementary_streams_input: IResolvable | typing.List[TranscoderJobConfigElementaryStreams]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
 
 ---
 
@@ -4370,7 +4370,7 @@ elementary_streams_input: IResolvable | typing.List[TranscoderJobConfigElementar
 encryptions_input: IResolvable | typing.List[TranscoderJobConfigEncryptions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
 
 ---
 
@@ -4380,7 +4380,7 @@ encryptions_input: IResolvable | typing.List[TranscoderJobConfigEncryptions]
 inputs_input: IResolvable | typing.List[TranscoderJobConfigInputs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
 
 ---
 
@@ -4390,7 +4390,7 @@ inputs_input: IResolvable | typing.List[TranscoderJobConfigInputs]
 manifests_input: IResolvable | typing.List[TranscoderJobConfigManifests]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
 
 ---
 
@@ -4400,7 +4400,7 @@ manifests_input: IResolvable | typing.List[TranscoderJobConfigManifests]
 mux_streams_input: IResolvable | typing.List[TranscoderJobConfigMuxStreams]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
 
 ---
 
@@ -4420,7 +4420,7 @@ output_input: TranscoderJobConfigOutput
 overlays_input: IResolvable | typing.List[TranscoderJobConfigOverlays]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
 
 ---
 
@@ -4461,7 +4461,7 @@ transcoderJob.TranscoderJobConfigEditListStructList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4469,7 +4469,7 @@ transcoderJob.TranscoderJobConfigEditListStructList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4539,7 +4539,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4576,7 +4576,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]</code> | *No description.* |
 
 ---
 
@@ -4610,7 +4610,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigEditListStruct]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>]
 
 ---
 
@@ -4632,7 +4632,7 @@ transcoderJob.TranscoderJobConfigEditListStructOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4641,7 +4641,7 @@ transcoderJob.TranscoderJobConfigEditListStructOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4852,7 +4852,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4897,7 +4897,7 @@ def reset_start_time_offset() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.property.inputs">inputs</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.property.startTimeOffset">start_time_offset</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStructOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a></code> | *No description.* |
 
 ---
 
@@ -4991,7 +4991,7 @@ start_time_offset: str
 internal_value: IResolvable | TranscoderJobConfigEditListStruct
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEditListStruct">TranscoderJobConfigEditListStruct</a>
 
 ---
 
@@ -5011,14 +5011,14 @@ transcoderJob.TranscoderJobConfigElementaryStreamsAudioStreamOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsAudioStreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsAudioStreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsAudioStreamOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsAudioStreamOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5214,7 +5214,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsAudioStreamOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5424,7 +5424,7 @@ transcoderJob.TranscoderJobConfigElementaryStreamsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5432,7 +5432,7 @@ transcoderJob.TranscoderJobConfigElementaryStreamsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5502,7 +5502,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5539,7 +5539,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]</code> | *No description.* |
 
 ---
 
@@ -5573,7 +5573,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigElementaryStreams]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>]
 
 ---
 
@@ -5595,7 +5595,7 @@ transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5604,7 +5604,7 @@ transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5817,7 +5817,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5942,7 +5942,7 @@ def reset_video_stream() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.property.keyInput">key_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.property.videoStreamInput">video_stream_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStream">TranscoderJobConfigElementaryStreamsVideoStream</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a></code> | *No description.* |
 
 ---
 
@@ -6036,7 +6036,7 @@ key: str
 internal_value: IResolvable | TranscoderJobConfigElementaryStreams
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreams">TranscoderJobConfigElementaryStreams</a>
 
 ---
 
@@ -6056,14 +6056,14 @@ transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6255,7 +6255,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264HlgOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6330,14 +6330,14 @@ transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264OutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6544,7 +6544,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7039,14 +7039,14 @@ transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7238,7 +7238,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamH264SdrOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7313,14 +7313,14 @@ transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7514,7 +7514,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsVideoStreamOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7789,14 +7789,14 @@ transcoderJob.TranscoderJobConfigEncryptionsAes128OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsAes128OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsAes128OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsAes128OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsAes128OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7988,7 +7988,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsAes128OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8063,14 +8063,14 @@ transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsClearkeyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsClearkeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsClearkeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsClearkeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsClearkeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8262,7 +8262,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsClearkeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8337,14 +8337,14 @@ transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsFairplayOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsFairplayOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsFairplayOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsFairplayOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsFairplayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8536,7 +8536,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsFairplayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8611,14 +8611,14 @@ transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8818,7 +8818,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9029,14 +9029,14 @@ transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9228,7 +9228,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9303,14 +9303,14 @@ transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9502,7 +9502,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsDrmSystemsWidevineOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9578,7 +9578,7 @@ transcoderJob.TranscoderJobConfigEncryptionsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9586,7 +9586,7 @@ transcoderJob.TranscoderJobConfigEncryptionsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9656,7 +9656,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9693,7 +9693,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]</code> | *No description.* |
 
 ---
 
@@ -9727,7 +9727,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigEncryptions]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>]
 
 ---
 
@@ -9747,14 +9747,14 @@ transcoderJob.TranscoderJobConfigEncryptionsMpegCencOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsMpegCencOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsMpegCencOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsMpegCencOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsMpegCencOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9946,7 +9946,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsMpegCencOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10045,7 +10045,7 @@ transcoderJob.TranscoderJobConfigEncryptionsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10054,7 +10054,7 @@ transcoderJob.TranscoderJobConfigEncryptionsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10272,7 +10272,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10434,7 +10434,7 @@ def reset_secret_manager_key_source() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.property.sampleAesInput">sample_aes_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSampleAes">TranscoderJobConfigEncryptionsSampleAes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.property.secretManagerKeySourceInput">secret_manager_key_source_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSecretManagerKeySource">TranscoderJobConfigEncryptionsSecretManagerKeySource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a></code> | *No description.* |
 
 ---
 
@@ -10588,7 +10588,7 @@ id: str
 internal_value: IResolvable | TranscoderJobConfigEncryptions
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptions">TranscoderJobConfigEncryptions</a>
 
 ---
 
@@ -10608,14 +10608,14 @@ transcoderJob.TranscoderJobConfigEncryptionsSampleAesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSampleAesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSampleAesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSampleAesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSampleAesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10807,7 +10807,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSampleAesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10882,14 +10882,14 @@ transcoderJob.TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11081,7 +11081,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigEncryptionsSecretManagerKeySourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11179,7 +11179,7 @@ transcoderJob.TranscoderJobConfigInputsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11187,7 +11187,7 @@ transcoderJob.TranscoderJobConfigInputsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11257,7 +11257,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11294,7 +11294,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]</code> | *No description.* |
 
 ---
 
@@ -11328,7 +11328,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigInputs]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>]
 
 ---
 
@@ -11350,7 +11350,7 @@ transcoderJob.TranscoderJobConfigInputsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11359,7 +11359,7 @@ transcoderJob.TranscoderJobConfigInputsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11569,7 +11569,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11606,7 +11606,7 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.property.uriInput">uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.property.uri">uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a></code> | *No description.* |
 
 ---
 
@@ -11680,7 +11680,7 @@ uri: str
 internal_value: IResolvable | TranscoderJobConfigInputs
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigInputs">TranscoderJobConfigInputs</a>
 
 ---
 
@@ -11701,7 +11701,7 @@ transcoderJob.TranscoderJobConfigManifestsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11709,7 +11709,7 @@ transcoderJob.TranscoderJobConfigManifestsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11779,7 +11779,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11816,7 +11816,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]</code> | *No description.* |
 
 ---
 
@@ -11850,7 +11850,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigManifests]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>]
 
 ---
 
@@ -11872,7 +11872,7 @@ transcoderJob.TranscoderJobConfigManifestsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11881,7 +11881,7 @@ transcoderJob.TranscoderJobConfigManifestsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12092,7 +12092,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12137,7 +12137,7 @@ def reset_type() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.property.fileName">file_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.property.muxStreams">mux_streams</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifestsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a></code> | *No description.* |
 
 ---
 
@@ -12231,7 +12231,7 @@ type: str
 internal_value: IResolvable | TranscoderJobConfigManifests
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigManifests">TranscoderJobConfigManifests</a>
 
 ---
 
@@ -12252,7 +12252,7 @@ transcoderJob.TranscoderJobConfigMuxStreamsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12260,7 +12260,7 @@ transcoderJob.TranscoderJobConfigMuxStreamsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12330,7 +12330,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12367,7 +12367,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]</code> | *No description.* |
 
 ---
 
@@ -12401,7 +12401,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigMuxStreams]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>]
 
 ---
 
@@ -12423,7 +12423,7 @@ transcoderJob.TranscoderJobConfigMuxStreamsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12432,7 +12432,7 @@ transcoderJob.TranscoderJobConfigMuxStreamsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12647,7 +12647,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12734,7 +12734,7 @@ def reset_segment_settings() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.property.encryptionId">encryption_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.property.fileName">file_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a></code> | *No description.* |
 
 ---
 
@@ -12888,7 +12888,7 @@ key: str
 internal_value: IResolvable | TranscoderJobConfigMuxStreams
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreams">TranscoderJobConfigMuxStreams</a>
 
 ---
 
@@ -12908,14 +12908,14 @@ transcoderJob.TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13108,7 +13108,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigMuxStreamsSegmentSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13211,14 +13211,14 @@ transcoderJob.TranscoderJobConfigOutputOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutputOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutputOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutputOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13411,7 +13411,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOutputOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13514,14 +13514,14 @@ transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13717,7 +13717,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13927,14 +13927,14 @@ transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14128,7 +14128,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeXyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14260,7 +14260,7 @@ transcoderJob.TranscoderJobConfigOverlaysAnimationsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14268,7 +14268,7 @@ transcoderJob.TranscoderJobConfigOverlaysAnimationsList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14338,7 +14338,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14375,7 +14375,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]</code> | *No description.* |
 
 ---
 
@@ -14409,7 +14409,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigOverlaysAnimations]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
 
 ---
 
@@ -14431,7 +14431,7 @@ transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14440,7 +14440,7 @@ transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14650,7 +14650,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14734,7 +14734,7 @@ def reset_animation_fade() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.property.animationFade">animation_fade</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference">TranscoderJobConfigOverlaysAnimationsAnimationFadeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.property.animationFadeInput">animation_fade_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsAnimationFade">TranscoderJobConfigOverlaysAnimationsAnimationFade</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a></code> | *No description.* |
 
 ---
 
@@ -14788,7 +14788,7 @@ animation_fade_input: TranscoderJobConfigOverlaysAnimationsAnimationFade
 internal_value: IResolvable | TranscoderJobConfigOverlaysAnimations
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>
 
 ---
 
@@ -14808,14 +14808,14 @@ transcoderJob.TranscoderJobConfigOverlaysImageOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15007,7 +15007,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15105,7 +15105,7 @@ transcoderJob.TranscoderJobConfigOverlaysList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15113,7 +15113,7 @@ transcoderJob.TranscoderJobConfigOverlaysList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15183,7 +15183,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15220,7 +15220,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]</code> | *No description.* |
 
 ---
 
@@ -15254,7 +15254,7 @@ fqn: str
 internal_value: IResolvable | typing.List[TranscoderJobConfigOverlays]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>]
 
 ---
 
@@ -15276,7 +15276,7 @@ transcoderJob.TranscoderJobConfigOverlaysOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15285,7 +15285,7 @@ transcoderJob.TranscoderJobConfigOverlaysOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15497,7 +15497,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15521,7 +15521,7 @@ def put_animations(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.putAnimations.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
 
 ---
 
@@ -15564,9 +15564,9 @@ def reset_image() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.animations">animations</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimationsList">TranscoderJobConfigOverlaysAnimationsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.image">image</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImageOutputReference">TranscoderJobConfigOverlaysImageOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.animationsInput">animations_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.animationsInput">animations_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.imageInput">image_input</a></code> | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysImage">TranscoderJobConfigOverlaysImage</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a></code> | *No description.* |
 
 ---
 
@@ -15620,7 +15620,7 @@ image: TranscoderJobConfigOverlaysImageOutputReference
 animations_input: IResolvable | typing.List[TranscoderJobConfigOverlaysAnimations]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlaysAnimations">TranscoderJobConfigOverlaysAnimations</a>]
 
 ---
 
@@ -15640,7 +15640,7 @@ image_input: TranscoderJobConfigOverlaysImage
 internal_value: IResolvable | TranscoderJobConfigOverlays
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigOverlays">TranscoderJobConfigOverlays</a>
 
 ---
 
@@ -15660,14 +15660,14 @@ transcoderJob.TranscoderJobConfigPubsubDestinationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestinationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestinationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestinationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15860,7 +15860,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobConfigPubsubDestinationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15963,14 +15963,14 @@ transcoderJob.TranscoderJobTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16165,7 +16165,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16210,7 +16210,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -16304,7 +16304,7 @@ update: str
 internal_value: IResolvable | TranscoderJobTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.transcoderJob.TranscoderJobTimeouts">TranscoderJobTimeouts</a>
 
 ---
 

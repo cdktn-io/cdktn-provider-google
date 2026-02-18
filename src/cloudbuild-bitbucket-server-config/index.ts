@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudbuildBitbucketServerConfigConfig extends cdktf.TerraformMetaArguments {
+export interface CloudbuildBitbucketServerConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Immutable. API Key that will be attached to webhook. Once this field has been set, it cannot be changed.
   * Changing this field will result in deleting/ recreating the resource.
@@ -75,7 +75,7 @@ export interface CloudbuildBitbucketServerConfigConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuild_bitbucket_server_config#connected_repositories CloudbuildBitbucketServerConfig#connected_repositories}
   */
-  readonly connectedRepositories?: CloudbuildBitbucketServerConfigConnectedRepositories[] | cdktf.IResolvable;
+  readonly connectedRepositories?: CloudbuildBitbucketServerConfigConnectedRepositories[] | cdktn.IResolvable;
   /**
   * secrets block
   *
@@ -104,32 +104,32 @@ export interface CloudbuildBitbucketServerConfigConnectedRepositories {
   readonly repoSlug: string;
 }
 
-export function cloudbuildBitbucketServerConfigConnectedRepositoriesToTerraform(struct?: CloudbuildBitbucketServerConfigConnectedRepositories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildBitbucketServerConfigConnectedRepositoriesToTerraform(struct?: CloudbuildBitbucketServerConfigConnectedRepositories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    project_key: cdktf.stringToTerraform(struct!.projectKey),
-    repo_slug: cdktf.stringToTerraform(struct!.repoSlug),
+    project_key: cdktn.stringToTerraform(struct!.projectKey),
+    repo_slug: cdktn.stringToTerraform(struct!.repoSlug),
   }
 }
 
 
-export function cloudbuildBitbucketServerConfigConnectedRepositoriesToHclTerraform(struct?: CloudbuildBitbucketServerConfigConnectedRepositories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildBitbucketServerConfigConnectedRepositoriesToHclTerraform(struct?: CloudbuildBitbucketServerConfigConnectedRepositories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     project_key: {
-      value: cdktf.stringToHclTerraform(struct!.projectKey),
+      value: cdktn.stringToHclTerraform(struct!.projectKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo_slug: {
-      value: cdktf.stringToHclTerraform(struct!.repoSlug),
+      value: cdktn.stringToHclTerraform(struct!.repoSlug),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -140,9 +140,9 @@ export function cloudbuildBitbucketServerConfigConnectedRepositoriesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference extends cdktf.ComplexObject {
+export class CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -150,11 +150,11 @@ export class CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudbuildBitbucketServerConfigConnectedRepositories | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudbuildBitbucketServerConfigConnectedRepositories | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -171,14 +171,14 @@ export class CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudbuildBitbucketServerConfigConnectedRepositories | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudbuildBitbucketServerConfigConnectedRepositories | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._projectKey = undefined;
       this._repoSlug = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -217,15 +217,15 @@ export class CloudbuildBitbucketServerConfigConnectedRepositoriesOutputReference
   }
 }
 
-export class CloudbuildBitbucketServerConfigConnectedRepositoriesList extends cdktf.ComplexList {
-  public internalValue? : CloudbuildBitbucketServerConfigConnectedRepositories[] | cdktf.IResolvable
+export class CloudbuildBitbucketServerConfigConnectedRepositoriesList extends cdktn.ComplexList {
+  public internalValue? : CloudbuildBitbucketServerConfigConnectedRepositories[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -259,38 +259,38 @@ export interface CloudbuildBitbucketServerConfigSecrets {
 }
 
 export function cloudbuildBitbucketServerConfigSecretsToTerraform(struct?: CloudbuildBitbucketServerConfigSecretsOutputReference | CloudbuildBitbucketServerConfigSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_access_token_version_name: cdktf.stringToTerraform(struct!.adminAccessTokenVersionName),
-    read_access_token_version_name: cdktf.stringToTerraform(struct!.readAccessTokenVersionName),
-    webhook_secret_version_name: cdktf.stringToTerraform(struct!.webhookSecretVersionName),
+    admin_access_token_version_name: cdktn.stringToTerraform(struct!.adminAccessTokenVersionName),
+    read_access_token_version_name: cdktn.stringToTerraform(struct!.readAccessTokenVersionName),
+    webhook_secret_version_name: cdktn.stringToTerraform(struct!.webhookSecretVersionName),
   }
 }
 
 
 export function cloudbuildBitbucketServerConfigSecretsToHclTerraform(struct?: CloudbuildBitbucketServerConfigSecretsOutputReference | CloudbuildBitbucketServerConfigSecrets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_access_token_version_name: {
-      value: cdktf.stringToHclTerraform(struct!.adminAccessTokenVersionName),
+      value: cdktn.stringToHclTerraform(struct!.adminAccessTokenVersionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_access_token_version_name: {
-      value: cdktf.stringToHclTerraform(struct!.readAccessTokenVersionName),
+      value: cdktn.stringToHclTerraform(struct!.readAccessTokenVersionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook_secret_version_name: {
-      value: cdktf.stringToHclTerraform(struct!.webhookSecretVersionName),
+      value: cdktn.stringToHclTerraform(struct!.webhookSecretVersionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -301,14 +301,14 @@ export function cloudbuildBitbucketServerConfigSecretsToHclTerraform(struct?: Cl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudbuildBitbucketServerConfigSecretsOutputReference extends cdktf.ComplexObject {
+export class CloudbuildBitbucketServerConfigSecretsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -399,39 +399,39 @@ export interface CloudbuildBitbucketServerConfigTimeouts {
   readonly update?: string;
 }
 
-export function cloudbuildBitbucketServerConfigTimeoutsToTerraform(struct?: CloudbuildBitbucketServerConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildBitbucketServerConfigTimeoutsToTerraform(struct?: CloudbuildBitbucketServerConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudbuildBitbucketServerConfigTimeoutsToHclTerraform(struct?: CloudbuildBitbucketServerConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildBitbucketServerConfigTimeoutsToHclTerraform(struct?: CloudbuildBitbucketServerConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -442,19 +442,19 @@ export function cloudbuildBitbucketServerConfigTimeoutsToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudbuildBitbucketServerConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudbuildBitbucketServerConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudbuildBitbucketServerConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudbuildBitbucketServerConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -475,7 +475,7 @@ export class CloudbuildBitbucketServerConfigTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudbuildBitbucketServerConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudbuildBitbucketServerConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -483,7 +483,7 @@ export class CloudbuildBitbucketServerConfigTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -548,7 +548,7 @@ export class CloudbuildBitbucketServerConfigTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuild_bitbucket_server_config google_cloudbuild_bitbucket_server_config}
 */
-export class CloudbuildBitbucketServerConfig extends cdktf.TerraformResource {
+export class CloudbuildBitbucketServerConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -559,14 +559,14 @@ export class CloudbuildBitbucketServerConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudbuildBitbucketServerConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudbuildBitbucketServerConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudbuildBitbucketServerConfig to import
   * @param importFromId The id of the existing CloudbuildBitbucketServerConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuild_bitbucket_server_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudbuildBitbucketServerConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuild_bitbucket_server_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuild_bitbucket_server_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -758,7 +758,7 @@ export class CloudbuildBitbucketServerConfig extends cdktf.TerraformResource {
   public get connectedRepositories() {
     return this._connectedRepositories;
   }
-  public putConnectedRepositories(value: CloudbuildBitbucketServerConfigConnectedRepositories[] | cdktf.IResolvable) {
+  public putConnectedRepositories(value: CloudbuildBitbucketServerConfigConnectedRepositories[] | cdktn.IResolvable) {
     this._connectedRepositories.internalValue = value;
   }
   public resetConnectedRepositories() {
@@ -804,16 +804,16 @@ export class CloudbuildBitbucketServerConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      config_id: cdktf.stringToTerraform(this._configId),
-      host_uri: cdktf.stringToTerraform(this._hostUri),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      peered_network: cdktf.stringToTerraform(this._peeredNetwork),
-      project: cdktf.stringToTerraform(this._project),
-      ssl_ca: cdktf.stringToTerraform(this._sslCa),
-      username: cdktf.stringToTerraform(this._username),
-      connected_repositories: cdktf.listMapper(cloudbuildBitbucketServerConfigConnectedRepositoriesToTerraform, true)(this._connectedRepositories.internalValue),
+      api_key: cdktn.stringToTerraform(this._apiKey),
+      config_id: cdktn.stringToTerraform(this._configId),
+      host_uri: cdktn.stringToTerraform(this._hostUri),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      peered_network: cdktn.stringToTerraform(this._peeredNetwork),
+      project: cdktn.stringToTerraform(this._project),
+      ssl_ca: cdktn.stringToTerraform(this._sslCa),
+      username: cdktn.stringToTerraform(this._username),
+      connected_repositories: cdktn.listMapper(cloudbuildBitbucketServerConfigConnectedRepositoriesToTerraform, true)(this._connectedRepositories.internalValue),
       secrets: cloudbuildBitbucketServerConfigSecretsToTerraform(this._secrets.internalValue),
       timeouts: cloudbuildBitbucketServerConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -822,61 +822,61 @@ export class CloudbuildBitbucketServerConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key: {
-        value: cdktf.stringToHclTerraform(this._apiKey),
+        value: cdktn.stringToHclTerraform(this._apiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       config_id: {
-        value: cdktf.stringToHclTerraform(this._configId),
+        value: cdktn.stringToHclTerraform(this._configId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_uri: {
-        value: cdktf.stringToHclTerraform(this._hostUri),
+        value: cdktn.stringToHclTerraform(this._hostUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peered_network: {
-        value: cdktf.stringToHclTerraform(this._peeredNetwork),
+        value: cdktn.stringToHclTerraform(this._peeredNetwork),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssl_ca: {
-        value: cdktf.stringToHclTerraform(this._sslCa),
+        value: cdktn.stringToHclTerraform(this._sslCa),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connected_repositories: {
-        value: cdktf.listMapperHcl(cloudbuildBitbucketServerConfigConnectedRepositoriesToHclTerraform, true)(this._connectedRepositories.internalValue),
+        value: cdktn.listMapperHcl(cloudbuildBitbucketServerConfigConnectedRepositoriesToHclTerraform, true)(this._connectedRepositories.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CloudbuildBitbucketServerConfigConnectedRepositoriesList",

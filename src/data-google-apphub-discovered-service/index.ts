@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleApphubDiscoveredServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleApphubDiscoveredServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/apphub_discovered_service#id DataGoogleApphubDiscoveredService#id}
   *
@@ -36,8 +36,8 @@ export interface DataGoogleApphubDiscoveredServiceServiceProperties {
 }
 
 export function dataGoogleApphubDiscoveredServiceServicePropertiesToTerraform(struct?: DataGoogleApphubDiscoveredServiceServiceProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataGoogleApphubDiscoveredServiceServicePropertiesToTerraform(st
 
 
 export function dataGoogleApphubDiscoveredServiceServicePropertiesToHclTerraform(struct?: DataGoogleApphubDiscoveredServiceServiceProperties): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,7 +55,7 @@ export function dataGoogleApphubDiscoveredServiceServicePropertiesToHclTerraform
   return attrs;
 }
 
-export class DataGoogleApphubDiscoveredServiceServicePropertiesOutputReference extends cdktf.ComplexObject {
+export class DataGoogleApphubDiscoveredServiceServicePropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -64,7 +64,7 @@ export class DataGoogleApphubDiscoveredServiceServicePropertiesOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -99,14 +99,14 @@ export class DataGoogleApphubDiscoveredServiceServicePropertiesOutputReference e
   }
 }
 
-export class DataGoogleApphubDiscoveredServiceServicePropertiesList extends cdktf.ComplexList {
+export class DataGoogleApphubDiscoveredServiceServicePropertiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -121,8 +121,8 @@ export interface DataGoogleApphubDiscoveredServiceServiceReference {
 }
 
 export function dataGoogleApphubDiscoveredServiceServiceReferenceToTerraform(struct?: DataGoogleApphubDiscoveredServiceServiceReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -131,8 +131,8 @@ export function dataGoogleApphubDiscoveredServiceServiceReferenceToTerraform(str
 
 
 export function dataGoogleApphubDiscoveredServiceServiceReferenceToHclTerraform(struct?: DataGoogleApphubDiscoveredServiceServiceReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -140,7 +140,7 @@ export function dataGoogleApphubDiscoveredServiceServiceReferenceToHclTerraform(
   return attrs;
 }
 
-export class DataGoogleApphubDiscoveredServiceServiceReferenceOutputReference extends cdktf.ComplexObject {
+export class DataGoogleApphubDiscoveredServiceServiceReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -149,7 +149,7 @@ export class DataGoogleApphubDiscoveredServiceServiceReferenceOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -179,14 +179,14 @@ export class DataGoogleApphubDiscoveredServiceServiceReferenceOutputReference ex
   }
 }
 
-export class DataGoogleApphubDiscoveredServiceServiceReferenceList extends cdktf.ComplexList {
+export class DataGoogleApphubDiscoveredServiceServiceReferenceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -201,7 +201,7 @@ export class DataGoogleApphubDiscoveredServiceServiceReferenceList extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/apphub_discovered_service google_apphub_discovered_service}
 */
-export class DataGoogleApphubDiscoveredService extends cdktf.TerraformDataSource {
+export class DataGoogleApphubDiscoveredService extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -212,14 +212,14 @@ export class DataGoogleApphubDiscoveredService extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleApphubDiscoveredService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleApphubDiscoveredService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleApphubDiscoveredService to import
   * @param importFromId The id of the existing DataGoogleApphubDiscoveredService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/apphub_discovered_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleApphubDiscoveredService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apphub_discovered_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apphub_discovered_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -340,35 +340,35 @@ export class DataGoogleApphubDiscoveredService extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      service_uri: cdktf.stringToTerraform(this._serviceUri),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      service_uri: cdktn.stringToTerraform(this._serviceUri),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_uri: {
-        value: cdktf.stringToHclTerraform(this._serviceUri),
+        value: cdktn.stringToHclTerraform(this._serviceUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

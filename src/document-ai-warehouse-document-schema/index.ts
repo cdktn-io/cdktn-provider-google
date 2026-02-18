@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DocumentAiWarehouseDocumentSchemaConfig extends cdktf.TerraformMetaArguments {
+export interface DocumentAiWarehouseDocumentSchemaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name of the schema given by the user.
   *
@@ -23,7 +23,7 @@ export interface DocumentAiWarehouseDocumentSchemaConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#document_is_folder DocumentAiWarehouseDocumentSchema#document_is_folder}
   */
-  readonly documentIsFolder?: boolean | cdktf.IResolvable;
+  readonly documentIsFolder?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#id DocumentAiWarehouseDocumentSchema#id}
   *
@@ -48,7 +48,7 @@ export interface DocumentAiWarehouseDocumentSchemaConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#property_definitions DocumentAiWarehouseDocumentSchema#property_definitions}
   */
-  readonly propertyDefinitions: DocumentAiWarehouseDocumentSchemaPropertyDefinitions[] | cdktf.IResolvable;
+  readonly propertyDefinitions: DocumentAiWarehouseDocumentSchemaPropertyDefinitions[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -60,8 +60,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTyp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeType
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,14 +79,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeType
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -117,35 +117,35 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOpt
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#validation_check_disabled DocumentAiWarehouseDocumentSchema#validation_check_disabled}
   */
-  readonly validationCheckDisabled?: boolean | cdktf.IResolvable;
+  readonly validationCheckDisabled?: boolean | cdktn.IResolvable;
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    possible_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.possibleValues),
-    validation_check_disabled: cdktf.booleanToTerraform(struct!.validationCheckDisabled),
+    possible_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.possibleValues),
+    validation_check_disabled: cdktn.booleanToTerraform(struct!.validationCheckDisabled),
   }
 }
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     possible_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.possibleValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.possibleValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     validation_check_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.validationCheckDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.validationCheckDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -156,14 +156,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOpti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -208,11 +208,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptions
   }
 
   // validation_check_disabled - computed: false, optional: true, required: false
-  private _validationCheckDisabled?: boolean | cdktf.IResolvable; 
+  private _validationCheckDisabled?: boolean | cdktn.IResolvable; 
   public get validationCheckDisabled() {
     return this.getBooleanAttribute('validation_check_disabled');
   }
-  public set validationCheckDisabled(value: boolean | cdktf.IResolvable) {
+  public set validationCheckDisabled(value: boolean | cdktn.IResolvable) {
     this._validationCheckDisabled = value;
   }
   public resetValidationCheckDisabled() {
@@ -227,8 +227,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -237,8 +237,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOpt
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -246,14 +246,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOpt
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -276,8 +276,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerType
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -286,8 +286,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeO
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -295,14 +295,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeO
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -325,8 +325,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOpti
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -335,8 +335,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptio
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -344,14 +344,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptio
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -374,8 +374,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -384,8 +384,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -393,14 +393,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -431,35 +431,35 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#validation_check_disabled DocumentAiWarehouseDocumentSchema#validation_check_disabled}
   */
-  readonly validationCheckDisabled?: boolean | cdktf.IResolvable;
+  readonly validationCheckDisabled?: boolean | cdktn.IResolvable;
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    possible_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.possibleValues),
-    validation_check_disabled: cdktf.booleanToTerraform(struct!.validationCheckDisabled),
+    possible_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.possibleValues),
+    validation_check_disabled: cdktn.booleanToTerraform(struct!.validationCheckDisabled),
   }
 }
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     possible_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.possibleValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.possibleValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     validation_check_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.validationCheckDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.validationCheckDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -470,14 +470,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -522,11 +522,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 
   // validation_check_disabled - computed: false, optional: true, required: false
-  private _validationCheckDisabled?: boolean | cdktf.IResolvable; 
+  private _validationCheckDisabled?: boolean | cdktn.IResolvable; 
   public get validationCheckDisabled() {
     return this.getBooleanAttribute('validation_check_disabled');
   }
-  public set validationCheckDisabled(value: boolean | cdktf.IResolvable) {
+  public set validationCheckDisabled(value: boolean | cdktn.IResolvable) {
     this._validationCheckDisabled = value;
   }
   public resetValidationCheckDisabled() {
@@ -541,8 +541,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -551,8 +551,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -560,14 +560,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -590,8 +590,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -600,8 +600,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -609,14 +609,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -639,8 +639,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -649,8 +649,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -658,14 +658,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -699,32 +699,32 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
   readonly processorType?: string;
 }
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    processor_type: cdktf.stringToTerraform(struct!.processorType),
+    name: cdktn.stringToTerraform(struct!.name),
+    processor_type: cdktn.stringToTerraform(struct!.processorType),
   }
 }
 
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     processor_type: {
-      value: cdktf.stringToHclTerraform(struct!.processorType),
+      value: cdktn.stringToHclTerraform(struct!.processorType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -735,9 +735,9 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -745,11 +745,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktf.IResolvable | undefined {
+  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -766,14 +766,14 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._processorType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -818,15 +818,15 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesList extends cdktf.ComplexList {
-  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources[] | cdktf.IResolvable
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesList extends cdktn.ComplexList {
+  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -841,8 +841,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -851,8 +851,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -860,14 +860,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -890,8 +890,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -900,8 +900,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -909,14 +909,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -947,31 +947,31 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_filterable DocumentAiWarehouseDocumentSchema#is_filterable}
   */
-  readonly isFilterable?: boolean | cdktf.IResolvable;
+  readonly isFilterable?: boolean | cdktn.IResolvable;
   /**
   * Whether the property is user supplied metadata.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_metadata DocumentAiWarehouseDocumentSchema#is_metadata}
   */
-  readonly isMetadata?: boolean | cdktf.IResolvable;
+  readonly isMetadata?: boolean | cdktn.IResolvable;
   /**
   * Whether the property can have multiple values.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_repeatable DocumentAiWarehouseDocumentSchema#is_repeatable}
   */
-  readonly isRepeatable?: boolean | cdktf.IResolvable;
+  readonly isRepeatable?: boolean | cdktn.IResolvable;
   /**
   * Whether the property is mandatory.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_required DocumentAiWarehouseDocumentSchema#is_required}
   */
-  readonly isRequired?: boolean | cdktf.IResolvable;
+  readonly isRequired?: boolean | cdktn.IResolvable;
   /**
   * Indicates that the property should be included in a global search.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_searchable DocumentAiWarehouseDocumentSchema#is_searchable}
   */
-  readonly isSearchable?: boolean | cdktf.IResolvable;
+  readonly isSearchable?: boolean | cdktn.IResolvable;
   /**
   * The name of the metadata property.
   *
@@ -1019,7 +1019,7 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#schema_sources DocumentAiWarehouseDocumentSchema#schema_sources}
   */
-  readonly schemaSources?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources[] | cdktf.IResolvable;
+  readonly schemaSources?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources[] | cdktn.IResolvable;
   /**
   * text_type_options block
   *
@@ -1034,82 +1034,82 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
   readonly timestampTypeOptions?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptions;
 }
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    is_filterable: cdktf.booleanToTerraform(struct!.isFilterable),
-    is_metadata: cdktf.booleanToTerraform(struct!.isMetadata),
-    is_repeatable: cdktf.booleanToTerraform(struct!.isRepeatable),
-    is_required: cdktf.booleanToTerraform(struct!.isRequired),
-    is_searchable: cdktf.booleanToTerraform(struct!.isSearchable),
-    name: cdktf.stringToTerraform(struct!.name),
-    retrieval_importance: cdktf.stringToTerraform(struct!.retrievalImportance),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    is_filterable: cdktn.booleanToTerraform(struct!.isFilterable),
+    is_metadata: cdktn.booleanToTerraform(struct!.isMetadata),
+    is_repeatable: cdktn.booleanToTerraform(struct!.isRepeatable),
+    is_required: cdktn.booleanToTerraform(struct!.isRequired),
+    is_searchable: cdktn.booleanToTerraform(struct!.isSearchable),
+    name: cdktn.stringToTerraform(struct!.name),
+    retrieval_importance: cdktn.stringToTerraform(struct!.retrievalImportance),
     date_time_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsDateTimeTypeOptionsToTerraform(struct!.dateTimeTypeOptions),
     enum_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsEnumTypeOptionsToTerraform(struct!.enumTypeOptions),
     float_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsFloatTypeOptionsToTerraform(struct!.floatTypeOptions),
     integer_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsIntegerTypeOptionsToTerraform(struct!.integerTypeOptions),
     map_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsToTerraform(struct!.mapTypeOptions),
-    schema_sources: cdktf.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToTerraform, true)(struct!.schemaSources),
+    schema_sources: cdktn.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToTerraform, true)(struct!.schemaSources),
     text_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTextTypeOptionsToTerraform(struct!.textTypeOptions),
     timestamp_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsTimestampTypeOptionsToTerraform(struct!.timestampTypeOptions),
   }
 }
 
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_filterable: {
-      value: cdktf.booleanToHclTerraform(struct!.isFilterable),
+      value: cdktn.booleanToHclTerraform(struct!.isFilterable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_metadata: {
-      value: cdktf.booleanToHclTerraform(struct!.isMetadata),
+      value: cdktn.booleanToHclTerraform(struct!.isMetadata),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_repeatable: {
-      value: cdktf.booleanToHclTerraform(struct!.isRepeatable),
+      value: cdktn.booleanToHclTerraform(struct!.isRepeatable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_required: {
-      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      value: cdktn.booleanToHclTerraform(struct!.isRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_searchable: {
-      value: cdktf.booleanToHclTerraform(struct!.isSearchable),
+      value: cdktn.booleanToHclTerraform(struct!.isSearchable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retrieval_importance: {
-      value: cdktf.stringToHclTerraform(struct!.retrievalImportance),
+      value: cdktn.stringToHclTerraform(struct!.retrievalImportance),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1145,7 +1145,7 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
       storageClassType: "DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsMapTypeOptionsList",
     },
     schema_sources: {
-      value: cdktf.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToHclTerraform, true)(struct!.schemaSources),
+      value: cdktn.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesToHclTerraform, true)(struct!.schemaSources),
       isBlock: true,
       type: "list",
       storageClassType: "DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSourcesList",
@@ -1168,9 +1168,9 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1178,11 +1178,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktf.IResolvable | undefined {
+  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1255,7 +1255,7 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1276,7 +1276,7 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
       this._textTypeOptions.internalValue = undefined;
       this._timestampTypeOptions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1319,11 +1319,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 
   // is_filterable - computed: false, optional: true, required: false
-  private _isFilterable?: boolean | cdktf.IResolvable; 
+  private _isFilterable?: boolean | cdktn.IResolvable; 
   public get isFilterable() {
     return this.getBooleanAttribute('is_filterable');
   }
-  public set isFilterable(value: boolean | cdktf.IResolvable) {
+  public set isFilterable(value: boolean | cdktn.IResolvable) {
     this._isFilterable = value;
   }
   public resetIsFilterable() {
@@ -1335,11 +1335,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 
   // is_metadata - computed: false, optional: true, required: false
-  private _isMetadata?: boolean | cdktf.IResolvable; 
+  private _isMetadata?: boolean | cdktn.IResolvable; 
   public get isMetadata() {
     return this.getBooleanAttribute('is_metadata');
   }
-  public set isMetadata(value: boolean | cdktf.IResolvable) {
+  public set isMetadata(value: boolean | cdktn.IResolvable) {
     this._isMetadata = value;
   }
   public resetIsMetadata() {
@@ -1351,11 +1351,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 
   // is_repeatable - computed: false, optional: true, required: false
-  private _isRepeatable?: boolean | cdktf.IResolvable; 
+  private _isRepeatable?: boolean | cdktn.IResolvable; 
   public get isRepeatable() {
     return this.getBooleanAttribute('is_repeatable');
   }
-  public set isRepeatable(value: boolean | cdktf.IResolvable) {
+  public set isRepeatable(value: boolean | cdktn.IResolvable) {
     this._isRepeatable = value;
   }
   public resetIsRepeatable() {
@@ -1367,11 +1367,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 
   // is_required - computed: false, optional: true, required: false
-  private _isRequired?: boolean | cdktf.IResolvable; 
+  private _isRequired?: boolean | cdktn.IResolvable; 
   public get isRequired() {
     return this.getBooleanAttribute('is_required');
   }
-  public set isRequired(value: boolean | cdktf.IResolvable) {
+  public set isRequired(value: boolean | cdktn.IResolvable) {
     this._isRequired = value;
   }
   public resetIsRequired() {
@@ -1383,11 +1383,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 
   // is_searchable - computed: false, optional: true, required: false
-  private _isSearchable?: boolean | cdktf.IResolvable; 
+  private _isSearchable?: boolean | cdktn.IResolvable; 
   public get isSearchable() {
     return this.getBooleanAttribute('is_searchable');
   }
-  public set isSearchable(value: boolean | cdktf.IResolvable) {
+  public set isSearchable(value: boolean | cdktn.IResolvable) {
     this._isSearchable = value;
   }
   public resetIsSearchable() {
@@ -1512,7 +1512,7 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   public get schemaSources() {
     return this._schemaSources;
   }
-  public putSchemaSources(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources[] | cdktf.IResolvable) {
+  public putSchemaSources(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsSchemaSources[] | cdktn.IResolvable) {
     this._schemaSources.internalValue = value;
   }
   public resetSchemaSources() {
@@ -1556,15 +1556,15 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   }
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsList extends cdktf.ComplexList {
-  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions[] | cdktf.IResolvable
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsList extends cdktn.ComplexList {
+  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1581,28 +1581,28 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTyp
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#property_definitions DocumentAiWarehouseDocumentSchema#property_definitions}
   */
-  readonly propertyDefinitions: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions[] | cdktf.IResolvable;
+  readonly propertyDefinitions: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions[] | cdktn.IResolvable;
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    property_definitions: cdktf.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToTerraform, true)(struct!.propertyDefinitions),
+    property_definitions: cdktn.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToTerraform, true)(struct!.propertyDefinitions),
   }
 }
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     property_definitions: {
-      value: cdktf.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToHclTerraform, true)(struct!.propertyDefinitions),
+      value: cdktn.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsToHclTerraform, true)(struct!.propertyDefinitions),
       isBlock: true,
       type: "list",
       storageClassType: "DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitionsList",
@@ -1613,14 +1613,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyType
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1650,7 +1650,7 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOpt
   public get propertyDefinitions() {
     return this._propertyDefinitions;
   }
-  public putPropertyDefinitions(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions[] | cdktf.IResolvable) {
+  public putPropertyDefinitions(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsPropertyDefinitions[] | cdktn.IResolvable) {
     this._propertyDefinitions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1673,32 +1673,32 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourc
   readonly processorType?: string;
 }
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    processor_type: cdktf.stringToTerraform(struct!.processorType),
+    name: cdktn.stringToTerraform(struct!.name),
+    processor_type: cdktn.stringToTerraform(struct!.processorType),
   }
 }
 
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     processor_type: {
-      value: cdktf.stringToHclTerraform(struct!.processorType),
+      value: cdktn.stringToHclTerraform(struct!.processorType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1709,9 +1709,9 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSource
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1719,11 +1719,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktf.IResolvable | undefined {
+  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1740,14 +1740,14 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._processorType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1792,15 +1792,15 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesOu
   }
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList extends cdktf.ComplexList {
-  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources[] | cdktf.IResolvable
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList extends cdktn.ComplexList {
+  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1815,8 +1815,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOpt
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1825,8 +1825,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOpti
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1834,14 +1834,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOpti
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1864,8 +1864,8 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTy
 }
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1874,8 +1874,8 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTyp
 
 
 export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference | DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1883,14 +1883,14 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTyp
   return attrs;
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1921,31 +1921,31 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_filterable DocumentAiWarehouseDocumentSchema#is_filterable}
   */
-  readonly isFilterable?: boolean | cdktf.IResolvable;
+  readonly isFilterable?: boolean | cdktn.IResolvable;
   /**
   * Whether the property is user supplied metadata.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_metadata DocumentAiWarehouseDocumentSchema#is_metadata}
   */
-  readonly isMetadata?: boolean | cdktf.IResolvable;
+  readonly isMetadata?: boolean | cdktn.IResolvable;
   /**
   * Whether the property can have multiple values.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_repeatable DocumentAiWarehouseDocumentSchema#is_repeatable}
   */
-  readonly isRepeatable?: boolean | cdktf.IResolvable;
+  readonly isRepeatable?: boolean | cdktn.IResolvable;
   /**
   * Whether the property is mandatory.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_required DocumentAiWarehouseDocumentSchema#is_required}
   */
-  readonly isRequired?: boolean | cdktf.IResolvable;
+  readonly isRequired?: boolean | cdktn.IResolvable;
   /**
   * Indicates that the property should be included in a global search.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#is_searchable DocumentAiWarehouseDocumentSchema#is_searchable}
   */
-  readonly isSearchable?: boolean | cdktf.IResolvable;
+  readonly isSearchable?: boolean | cdktn.IResolvable;
   /**
   * The name of the metadata property.
   *
@@ -1999,7 +1999,7 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitions {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#schema_sources DocumentAiWarehouseDocumentSchema#schema_sources}
   */
-  readonly schemaSources?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources[] | cdktf.IResolvable;
+  readonly schemaSources?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources[] | cdktn.IResolvable;
   /**
   * text_type_options block
   *
@@ -2014,83 +2014,83 @@ export interface DocumentAiWarehouseDocumentSchemaPropertyDefinitions {
   readonly timestampTypeOptions?: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptions;
 }
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    is_filterable: cdktf.booleanToTerraform(struct!.isFilterable),
-    is_metadata: cdktf.booleanToTerraform(struct!.isMetadata),
-    is_repeatable: cdktf.booleanToTerraform(struct!.isRepeatable),
-    is_required: cdktf.booleanToTerraform(struct!.isRequired),
-    is_searchable: cdktf.booleanToTerraform(struct!.isSearchable),
-    name: cdktf.stringToTerraform(struct!.name),
-    retrieval_importance: cdktf.stringToTerraform(struct!.retrievalImportance),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    is_filterable: cdktn.booleanToTerraform(struct!.isFilterable),
+    is_metadata: cdktn.booleanToTerraform(struct!.isMetadata),
+    is_repeatable: cdktn.booleanToTerraform(struct!.isRepeatable),
+    is_required: cdktn.booleanToTerraform(struct!.isRequired),
+    is_searchable: cdktn.booleanToTerraform(struct!.isSearchable),
+    name: cdktn.stringToTerraform(struct!.name),
+    retrieval_importance: cdktn.stringToTerraform(struct!.retrievalImportance),
     date_time_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsDateTimeTypeOptionsToTerraform(struct!.dateTimeTypeOptions),
     enum_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsEnumTypeOptionsToTerraform(struct!.enumTypeOptions),
     float_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsFloatTypeOptionsToTerraform(struct!.floatTypeOptions),
     integer_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsIntegerTypeOptionsToTerraform(struct!.integerTypeOptions),
     map_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsMapTypeOptionsToTerraform(struct!.mapTypeOptions),
     property_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsToTerraform(struct!.propertyTypeOptions),
-    schema_sources: cdktf.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToTerraform, true)(struct!.schemaSources),
+    schema_sources: cdktn.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToTerraform, true)(struct!.schemaSources),
     text_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsTextTypeOptionsToTerraform(struct!.textTypeOptions),
     timestamp_type_options: documentAiWarehouseDocumentSchemaPropertyDefinitionsTimestampTypeOptionsToTerraform(struct!.timestampTypeOptions),
   }
 }
 
 
-export function documentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_filterable: {
-      value: cdktf.booleanToHclTerraform(struct!.isFilterable),
+      value: cdktn.booleanToHclTerraform(struct!.isFilterable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_metadata: {
-      value: cdktf.booleanToHclTerraform(struct!.isMetadata),
+      value: cdktn.booleanToHclTerraform(struct!.isMetadata),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_repeatable: {
-      value: cdktf.booleanToHclTerraform(struct!.isRepeatable),
+      value: cdktn.booleanToHclTerraform(struct!.isRepeatable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_required: {
-      value: cdktf.booleanToHclTerraform(struct!.isRequired),
+      value: cdktn.booleanToHclTerraform(struct!.isRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_searchable: {
-      value: cdktf.booleanToHclTerraform(struct!.isSearchable),
+      value: cdktn.booleanToHclTerraform(struct!.isSearchable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retrieval_importance: {
-      value: cdktf.stringToHclTerraform(struct!.retrievalImportance),
+      value: cdktn.stringToHclTerraform(struct!.retrievalImportance),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2132,7 +2132,7 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerrafo
       storageClassType: "DocumentAiWarehouseDocumentSchemaPropertyDefinitionsPropertyTypeOptionsList",
     },
     schema_sources: {
-      value: cdktf.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToHclTerraform, true)(struct!.schemaSources),
+      value: cdktn.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesToHclTerraform, true)(struct!.schemaSources),
       isBlock: true,
       type: "list",
       storageClassType: "DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSourcesList",
@@ -2155,9 +2155,9 @@ export function documentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2165,11 +2165,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktf.IResolvable | undefined {
+  public get internalValue(): DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2246,7 +2246,7 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2268,7 +2268,7 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
       this._textTypeOptions.internalValue = undefined;
       this._timestampTypeOptions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2312,11 +2312,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   }
 
   // is_filterable - computed: false, optional: true, required: false
-  private _isFilterable?: boolean | cdktf.IResolvable; 
+  private _isFilterable?: boolean | cdktn.IResolvable; 
   public get isFilterable() {
     return this.getBooleanAttribute('is_filterable');
   }
-  public set isFilterable(value: boolean | cdktf.IResolvable) {
+  public set isFilterable(value: boolean | cdktn.IResolvable) {
     this._isFilterable = value;
   }
   public resetIsFilterable() {
@@ -2328,11 +2328,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   }
 
   // is_metadata - computed: false, optional: true, required: false
-  private _isMetadata?: boolean | cdktf.IResolvable; 
+  private _isMetadata?: boolean | cdktn.IResolvable; 
   public get isMetadata() {
     return this.getBooleanAttribute('is_metadata');
   }
-  public set isMetadata(value: boolean | cdktf.IResolvable) {
+  public set isMetadata(value: boolean | cdktn.IResolvable) {
     this._isMetadata = value;
   }
   public resetIsMetadata() {
@@ -2344,11 +2344,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   }
 
   // is_repeatable - computed: false, optional: true, required: false
-  private _isRepeatable?: boolean | cdktf.IResolvable; 
+  private _isRepeatable?: boolean | cdktn.IResolvable; 
   public get isRepeatable() {
     return this.getBooleanAttribute('is_repeatable');
   }
-  public set isRepeatable(value: boolean | cdktf.IResolvable) {
+  public set isRepeatable(value: boolean | cdktn.IResolvable) {
     this._isRepeatable = value;
   }
   public resetIsRepeatable() {
@@ -2360,11 +2360,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   }
 
   // is_required - computed: false, optional: true, required: false
-  private _isRequired?: boolean | cdktf.IResolvable; 
+  private _isRequired?: boolean | cdktn.IResolvable; 
   public get isRequired() {
     return this.getBooleanAttribute('is_required');
   }
-  public set isRequired(value: boolean | cdktf.IResolvable) {
+  public set isRequired(value: boolean | cdktn.IResolvable) {
     this._isRequired = value;
   }
   public resetIsRequired() {
@@ -2376,11 +2376,11 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   }
 
   // is_searchable - computed: false, optional: true, required: false
-  private _isSearchable?: boolean | cdktf.IResolvable; 
+  private _isSearchable?: boolean | cdktn.IResolvable; 
   public get isSearchable() {
     return this.getBooleanAttribute('is_searchable');
   }
-  public set isSearchable(value: boolean | cdktf.IResolvable) {
+  public set isSearchable(value: boolean | cdktn.IResolvable) {
     this._isSearchable = value;
   }
   public resetIsSearchable() {
@@ -2521,7 +2521,7 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   public get schemaSources() {
     return this._schemaSources;
   }
-  public putSchemaSources(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources[] | cdktf.IResolvable) {
+  public putSchemaSources(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitionsSchemaSources[] | cdktn.IResolvable) {
     this._schemaSources.internalValue = value;
   }
   public resetSchemaSources() {
@@ -2565,15 +2565,15 @@ export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsOutputReference
   }
 }
 
-export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsList extends cdktf.ComplexList {
-  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitions[] | cdktf.IResolvable
+export class DocumentAiWarehouseDocumentSchemaPropertyDefinitionsList extends cdktn.ComplexList {
+  public internalValue? : DocumentAiWarehouseDocumentSchemaPropertyDefinitions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2595,32 +2595,32 @@ export interface DocumentAiWarehouseDocumentSchemaTimeouts {
   readonly delete?: string;
 }
 
-export function documentAiWarehouseDocumentSchemaTimeoutsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaTimeoutsToTerraform(struct?: DocumentAiWarehouseDocumentSchemaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function documentAiWarehouseDocumentSchemaTimeoutsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function documentAiWarehouseDocumentSchemaTimeoutsToHclTerraform(struct?: DocumentAiWarehouseDocumentSchemaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2631,19 +2631,19 @@ export function documentAiWarehouseDocumentSchemaTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DocumentAiWarehouseDocumentSchemaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DocumentAiWarehouseDocumentSchemaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2660,14 +2660,14 @@ export class DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DocumentAiWarehouseDocumentSchemaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DocumentAiWarehouseDocumentSchemaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2715,7 +2715,7 @@ export class DocumentAiWarehouseDocumentSchemaTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}
 */
-export class DocumentAiWarehouseDocumentSchema extends cdktf.TerraformResource {
+export class DocumentAiWarehouseDocumentSchema extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2726,14 +2726,14 @@ export class DocumentAiWarehouseDocumentSchema extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DocumentAiWarehouseDocumentSchema resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DocumentAiWarehouseDocumentSchema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DocumentAiWarehouseDocumentSchema to import
   * @param importFromId The id of the existing DocumentAiWarehouseDocumentSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/document_ai_warehouse_document_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DocumentAiWarehouseDocumentSchema to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_document_ai_warehouse_document_schema", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_document_ai_warehouse_document_schema", importId: importFromId, provider });
       }
 
   // ===========
@@ -2790,11 +2790,11 @@ export class DocumentAiWarehouseDocumentSchema extends cdktf.TerraformResource {
   }
 
   // document_is_folder - computed: false, optional: true, required: false
-  private _documentIsFolder?: boolean | cdktf.IResolvable; 
+  private _documentIsFolder?: boolean | cdktn.IResolvable; 
   public get documentIsFolder() {
     return this.getBooleanAttribute('document_is_folder');
   }
-  public set documentIsFolder(value: boolean | cdktf.IResolvable) {
+  public set documentIsFolder(value: boolean | cdktn.IResolvable) {
     this._documentIsFolder = value;
   }
   public resetDocumentIsFolder() {
@@ -2857,7 +2857,7 @@ export class DocumentAiWarehouseDocumentSchema extends cdktf.TerraformResource {
   public get propertyDefinitions() {
     return this._propertyDefinitions;
   }
-  public putPropertyDefinitions(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitions[] | cdktf.IResolvable) {
+  public putPropertyDefinitions(value: DocumentAiWarehouseDocumentSchemaPropertyDefinitions[] | cdktn.IResolvable) {
     this._propertyDefinitions.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2887,12 +2887,12 @@ export class DocumentAiWarehouseDocumentSchema extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      document_is_folder: cdktf.booleanToTerraform(this._documentIsFolder),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project_number: cdktf.stringToTerraform(this._projectNumber),
-      property_definitions: cdktf.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsToTerraform, true)(this._propertyDefinitions.internalValue),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      document_is_folder: cdktn.booleanToTerraform(this._documentIsFolder),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project_number: cdktn.stringToTerraform(this._projectNumber),
+      property_definitions: cdktn.listMapper(documentAiWarehouseDocumentSchemaPropertyDefinitionsToTerraform, true)(this._propertyDefinitions.internalValue),
       timeouts: documentAiWarehouseDocumentSchemaTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2900,37 +2900,37 @@ export class DocumentAiWarehouseDocumentSchema extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       document_is_folder: {
-        value: cdktf.booleanToHclTerraform(this._documentIsFolder),
+        value: cdktn.booleanToHclTerraform(this._documentIsFolder),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_number: {
-        value: cdktf.stringToHclTerraform(this._projectNumber),
+        value: cdktn.stringToHclTerraform(this._projectNumber),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       property_definitions: {
-        value: cdktf.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerraform, true)(this._propertyDefinitions.internalValue),
+        value: cdktn.listMapperHcl(documentAiWarehouseDocumentSchemaPropertyDefinitionsToHclTerraform, true)(this._propertyDefinitions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DocumentAiWarehouseDocumentSchemaPropertyDefinitionsList",

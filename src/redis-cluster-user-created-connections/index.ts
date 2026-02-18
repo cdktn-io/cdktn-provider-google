@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedisClusterUserCreatedConnectionsConfig extends cdktf.TerraformMetaArguments {
+export interface RedisClusterUserCreatedConnectionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster_user_created_connections#id RedisClusterUserCreatedConnections#id}
   *
@@ -40,7 +40,7 @@ export interface RedisClusterUserCreatedConnectionsConfig extends cdktf.Terrafor
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster_user_created_connections#cluster_endpoints RedisClusterUserCreatedConnections#cluster_endpoints}
   */
-  readonly clusterEndpoints?: RedisClusterUserCreatedConnectionsClusterEndpoints[] | cdktf.IResolvable;
+  readonly clusterEndpoints?: RedisClusterUserCreatedConnectionsClusterEndpoints[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -92,59 +92,59 @@ export interface RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPs
 }
 
 export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionToTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference | RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    forwarding_rule: cdktf.stringToTerraform(struct!.forwardingRule),
-    network: cdktf.stringToTerraform(struct!.network),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    psc_connection_id: cdktf.stringToTerraform(struct!.pscConnectionId),
-    service_attachment: cdktf.stringToTerraform(struct!.serviceAttachment),
+    address: cdktn.stringToTerraform(struct!.address),
+    forwarding_rule: cdktn.stringToTerraform(struct!.forwardingRule),
+    network: cdktn.stringToTerraform(struct!.network),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    psc_connection_id: cdktn.stringToTerraform(struct!.pscConnectionId),
+    service_attachment: cdktn.stringToTerraform(struct!.serviceAttachment),
   }
 }
 
 
 export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionToHclTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference | RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     forwarding_rule: {
-      value: cdktf.stringToHclTerraform(struct!.forwardingRule),
+      value: cdktn.stringToHclTerraform(struct!.forwardingRule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     psc_connection_id: {
-      value: cdktf.stringToHclTerraform(struct!.pscConnectionId),
+      value: cdktn.stringToHclTerraform(struct!.pscConnectionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_attachment: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAttachment),
+      value: cdktn.stringToHclTerraform(struct!.serviceAttachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -155,14 +155,14 @@ export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsPsc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference extends cdktf.ComplexObject {
+export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -317,9 +317,9 @@ export interface RedisClusterUserCreatedConnectionsClusterEndpointsConnections {
   readonly pscConnection?: RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection;
 }
 
-export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -328,9 +328,9 @@ export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToT
 }
 
 
-export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToHclTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToHclTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -346,9 +346,9 @@ export function redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -356,11 +356,11 @@ export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -373,13 +373,13 @@ export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisClusterUserCreatedConnectionsClusterEndpointsConnections | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._pscConnection.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -407,15 +407,15 @@ export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsOutput
   }
 }
 
-export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList extends cdktf.ComplexList {
-  public internalValue? : RedisClusterUserCreatedConnectionsClusterEndpointsConnections[] | cdktf.IResolvable
+export class RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList extends cdktn.ComplexList {
+  public internalValue? : RedisClusterUserCreatedConnectionsClusterEndpointsConnections[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -432,28 +432,28 @@ export interface RedisClusterUserCreatedConnectionsClusterEndpoints {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster_user_created_connections#connections RedisClusterUserCreatedConnections#connections}
   */
-  readonly connections?: RedisClusterUserCreatedConnectionsClusterEndpointsConnections[] | cdktf.IResolvable;
+  readonly connections?: RedisClusterUserCreatedConnectionsClusterEndpointsConnections[] | cdktn.IResolvable;
 }
 
-export function redisClusterUserCreatedConnectionsClusterEndpointsToTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterUserCreatedConnectionsClusterEndpointsToTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connections: cdktf.listMapper(redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToTerraform, true)(struct!.connections),
+    connections: cdktn.listMapper(redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToTerraform, true)(struct!.connections),
   }
 }
 
 
-export function redisClusterUserCreatedConnectionsClusterEndpointsToHclTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterUserCreatedConnectionsClusterEndpointsToHclTerraform(struct?: RedisClusterUserCreatedConnectionsClusterEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connections: {
-      value: cdktf.listMapperHcl(redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToHclTerraform, true)(struct!.connections),
+      value: cdktn.listMapperHcl(redisClusterUserCreatedConnectionsClusterEndpointsConnectionsToHclTerraform, true)(struct!.connections),
       isBlock: true,
       type: "list",
       storageClassType: "RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsList",
@@ -464,9 +464,9 @@ export function redisClusterUserCreatedConnectionsClusterEndpointsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -474,11 +474,11 @@ export class RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RedisClusterUserCreatedConnectionsClusterEndpoints | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisClusterUserCreatedConnectionsClusterEndpoints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -491,13 +491,13 @@ export class RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisClusterUserCreatedConnectionsClusterEndpoints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisClusterUserCreatedConnectionsClusterEndpoints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._connections.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -513,7 +513,7 @@ export class RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference e
   public get connections() {
     return this._connections;
   }
-  public putConnections(value: RedisClusterUserCreatedConnectionsClusterEndpointsConnections[] | cdktf.IResolvable) {
+  public putConnections(value: RedisClusterUserCreatedConnectionsClusterEndpointsConnections[] | cdktn.IResolvable) {
     this._connections.internalValue = value;
   }
   public resetConnections() {
@@ -525,15 +525,15 @@ export class RedisClusterUserCreatedConnectionsClusterEndpointsOutputReference e
   }
 }
 
-export class RedisClusterUserCreatedConnectionsClusterEndpointsList extends cdktf.ComplexList {
-  public internalValue? : RedisClusterUserCreatedConnectionsClusterEndpoints[] | cdktf.IResolvable
+export class RedisClusterUserCreatedConnectionsClusterEndpointsList extends cdktn.ComplexList {
+  public internalValue? : RedisClusterUserCreatedConnectionsClusterEndpoints[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -559,39 +559,39 @@ export interface RedisClusterUserCreatedConnectionsTimeouts {
   readonly update?: string;
 }
 
-export function redisClusterUserCreatedConnectionsTimeoutsToTerraform(struct?: RedisClusterUserCreatedConnectionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterUserCreatedConnectionsTimeoutsToTerraform(struct?: RedisClusterUserCreatedConnectionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function redisClusterUserCreatedConnectionsTimeoutsToHclTerraform(struct?: RedisClusterUserCreatedConnectionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redisClusterUserCreatedConnectionsTimeoutsToHclTerraform(struct?: RedisClusterUserCreatedConnectionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -602,19 +602,19 @@ export function redisClusterUserCreatedConnectionsTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedisClusterUserCreatedConnectionsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedisClusterUserCreatedConnectionsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedisClusterUserCreatedConnectionsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedisClusterUserCreatedConnectionsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -635,7 +635,7 @@ export class RedisClusterUserCreatedConnectionsTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedisClusterUserCreatedConnectionsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedisClusterUserCreatedConnectionsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -643,7 +643,7 @@ export class RedisClusterUserCreatedConnectionsTimeoutsOutputReference extends c
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -708,7 +708,7 @@ export class RedisClusterUserCreatedConnectionsTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster_user_created_connections google_redis_cluster_user_created_connections}
 */
-export class RedisClusterUserCreatedConnections extends cdktf.TerraformResource {
+export class RedisClusterUserCreatedConnections extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -719,14 +719,14 @@ export class RedisClusterUserCreatedConnections extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedisClusterUserCreatedConnections resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedisClusterUserCreatedConnections resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedisClusterUserCreatedConnections to import
   * @param importFromId The id of the existing RedisClusterUserCreatedConnections that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/redis_cluster_user_created_connections#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedisClusterUserCreatedConnections to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_redis_cluster_user_created_connections", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_redis_cluster_user_created_connections", importId: importFromId, provider });
       }
 
   // ===========
@@ -831,7 +831,7 @@ export class RedisClusterUserCreatedConnections extends cdktf.TerraformResource 
   public get clusterEndpoints() {
     return this._clusterEndpoints;
   }
-  public putClusterEndpoints(value: RedisClusterUserCreatedConnectionsClusterEndpoints[] | cdktf.IResolvable) {
+  public putClusterEndpoints(value: RedisClusterUserCreatedConnectionsClusterEndpoints[] | cdktn.IResolvable) {
     this._clusterEndpoints.internalValue = value;
   }
   public resetClusterEndpoints() {
@@ -864,11 +864,11 @@ export class RedisClusterUserCreatedConnections extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      region: cdktf.stringToTerraform(this._region),
-      cluster_endpoints: cdktf.listMapper(redisClusterUserCreatedConnectionsClusterEndpointsToTerraform, true)(this._clusterEndpoints.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      region: cdktn.stringToTerraform(this._region),
+      cluster_endpoints: cdktn.listMapper(redisClusterUserCreatedConnectionsClusterEndpointsToTerraform, true)(this._clusterEndpoints.internalValue),
       timeouts: redisClusterUserCreatedConnectionsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -876,31 +876,31 @@ export class RedisClusterUserCreatedConnections extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_endpoints: {
-        value: cdktf.listMapperHcl(redisClusterUserCreatedConnectionsClusterEndpointsToHclTerraform, true)(this._clusterEndpoints.internalValue),
+        value: cdktn.listMapperHcl(redisClusterUserCreatedConnectionsClusterEndpointsToHclTerraform, true)(this._clusterEndpoints.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RedisClusterUserCreatedConnectionsClusterEndpointsList",

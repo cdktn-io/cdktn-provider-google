@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BillingSubaccountConfig extends cdktf.TerraformMetaArguments {
+export interface BillingSubaccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#deletion_policy BillingSubaccount#deletion_policy}
   */
@@ -36,7 +36,7 @@ export interface BillingSubaccountConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount google_billing_subaccount}
 */
-export class BillingSubaccount extends cdktf.TerraformResource {
+export class BillingSubaccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -47,14 +47,14 @@ export class BillingSubaccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BillingSubaccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BillingSubaccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BillingSubaccount to import
   * @param importFromId The id of the existing BillingSubaccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BillingSubaccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_subaccount", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_subaccount", importId: importFromId, provider });
       }
 
   // ===========
@@ -173,35 +173,35 @@ export class BillingSubaccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      master_billing_account: cdktf.stringToTerraform(this._masterBillingAccount),
+      deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      master_billing_account: cdktn.stringToTerraform(this._masterBillingAccount),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deletion_policy: {
-        value: cdktf.stringToHclTerraform(this._deletionPolicy),
+        value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       master_billing_account: {
-        value: cdktf.stringToHclTerraform(this._masterBillingAccount),
+        value: cdktn.stringToHclTerraform(this._masterBillingAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

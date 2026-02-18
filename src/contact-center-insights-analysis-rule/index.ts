@@ -7,18 +7,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ContactCenterInsightsAnalysisRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ContactCenterInsightsAnalysisRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * If true, apply this rule to conversations. Otherwise, this rule is
   * inactive and saved as a draft.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#active ContactCenterInsightsAnalysisRule#active}
   */
-  readonly active?: boolean | cdktf.IResolvable;
+  readonly active?: boolean | cdktn.IResolvable;
   /**
   * Percentage of conversations that we should apply this analysis setting
   * automatically, between [0, 1]. For example, 0.1 means 10%. Conversations
@@ -84,24 +84,24 @@ export interface ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScore
 }
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStructToTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStructOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    qa_scorecard_revisions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.qaScorecardRevisions),
+    qa_scorecard_revisions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.qaScorecardRevisions),
   }
 }
 
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStructToHclTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStructOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStruct): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     qa_scorecard_revisions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.qaScorecardRevisions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.qaScorecardRevisions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -112,14 +112,14 @@ export function contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStructOutputReference extends cdktf.ComplexObject {
+export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigScorecardListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -170,8 +170,8 @@ export interface ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfig {
 }
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigToTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -181,8 +181,8 @@ export function contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigToTerr
 
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigToHclTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -198,14 +198,14 @@ export function contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference extends cdktf.ComplexObject {
+export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -268,31 +268,31 @@ export interface ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarization
 }
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigToTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    conversation_profile: cdktf.stringToTerraform(struct!.conversationProfile),
-    summarization_model: cdktf.stringToTerraform(struct!.summarizationModel),
+    conversation_profile: cdktn.stringToTerraform(struct!.conversationProfile),
+    summarization_model: cdktn.stringToTerraform(struct!.summarizationModel),
   }
 }
 
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigToHclTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     conversation_profile: {
-      value: cdktf.stringToHclTerraform(struct!.conversationProfile),
+      value: cdktn.stringToHclTerraform(struct!.conversationProfile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     summarization_model: {
-      value: cdktf.stringToHclTerraform(struct!.summarizationModel),
+      value: cdktn.stringToHclTerraform(struct!.summarizationModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -303,14 +303,14 @@ export function contactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigOutputReference extends cdktf.ComplexObject {
+export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -399,56 +399,56 @@ export interface ContactCenterInsightsAnalysisRuleAnnotatorSelector {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_entity_annotator ContactCenterInsightsAnalysisRule#run_entity_annotator}
   */
-  readonly runEntityAnnotator?: boolean | cdktf.IResolvable;
+  readonly runEntityAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the intent annotator.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_intent_annotator ContactCenterInsightsAnalysisRule#run_intent_annotator}
   */
-  readonly runIntentAnnotator?: boolean | cdktf.IResolvable;
+  readonly runIntentAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the interruption annotator.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_interruption_annotator ContactCenterInsightsAnalysisRule#run_interruption_annotator}
   */
-  readonly runInterruptionAnnotator?: boolean | cdktf.IResolvable;
+  readonly runInterruptionAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the issue model annotator. A model should have already been
   * deployed for this to take effect.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_issue_model_annotator ContactCenterInsightsAnalysisRule#run_issue_model_annotator}
   */
-  readonly runIssueModelAnnotator?: boolean | cdktf.IResolvable;
+  readonly runIssueModelAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the active phrase matcher annotator(s).
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_phrase_matcher_annotator ContactCenterInsightsAnalysisRule#run_phrase_matcher_annotator}
   */
-  readonly runPhraseMatcherAnnotator?: boolean | cdktf.IResolvable;
+  readonly runPhraseMatcherAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the QA annotator.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_qa_annotator ContactCenterInsightsAnalysisRule#run_qa_annotator}
   */
-  readonly runQaAnnotator?: boolean | cdktf.IResolvable;
+  readonly runQaAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the sentiment annotator.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_sentiment_annotator ContactCenterInsightsAnalysisRule#run_sentiment_annotator}
   */
-  readonly runSentimentAnnotator?: boolean | cdktf.IResolvable;
+  readonly runSentimentAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the silence annotator.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_silence_annotator ContactCenterInsightsAnalysisRule#run_silence_annotator}
   */
-  readonly runSilenceAnnotator?: boolean | cdktf.IResolvable;
+  readonly runSilenceAnnotator?: boolean | cdktn.IResolvable;
   /**
   * Whether to run the summarization annotator.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#run_summarization_annotator ContactCenterInsightsAnalysisRule#run_summarization_annotator}
   */
-  readonly runSummarizationAnnotator?: boolean | cdktf.IResolvable;
+  readonly runSummarizationAnnotator?: boolean | cdktn.IResolvable;
   /**
   * qa_config block
   *
@@ -464,22 +464,22 @@ export interface ContactCenterInsightsAnalysisRuleAnnotatorSelector {
 }
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorToTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    issue_models: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.issueModels),
-    phrase_matchers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.phraseMatchers),
-    run_entity_annotator: cdktf.booleanToTerraform(struct!.runEntityAnnotator),
-    run_intent_annotator: cdktf.booleanToTerraform(struct!.runIntentAnnotator),
-    run_interruption_annotator: cdktf.booleanToTerraform(struct!.runInterruptionAnnotator),
-    run_issue_model_annotator: cdktf.booleanToTerraform(struct!.runIssueModelAnnotator),
-    run_phrase_matcher_annotator: cdktf.booleanToTerraform(struct!.runPhraseMatcherAnnotator),
-    run_qa_annotator: cdktf.booleanToTerraform(struct!.runQaAnnotator),
-    run_sentiment_annotator: cdktf.booleanToTerraform(struct!.runSentimentAnnotator),
-    run_silence_annotator: cdktf.booleanToTerraform(struct!.runSilenceAnnotator),
-    run_summarization_annotator: cdktf.booleanToTerraform(struct!.runSummarizationAnnotator),
+    issue_models: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.issueModels),
+    phrase_matchers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.phraseMatchers),
+    run_entity_annotator: cdktn.booleanToTerraform(struct!.runEntityAnnotator),
+    run_intent_annotator: cdktn.booleanToTerraform(struct!.runIntentAnnotator),
+    run_interruption_annotator: cdktn.booleanToTerraform(struct!.runInterruptionAnnotator),
+    run_issue_model_annotator: cdktn.booleanToTerraform(struct!.runIssueModelAnnotator),
+    run_phrase_matcher_annotator: cdktn.booleanToTerraform(struct!.runPhraseMatcherAnnotator),
+    run_qa_annotator: cdktn.booleanToTerraform(struct!.runQaAnnotator),
+    run_sentiment_annotator: cdktn.booleanToTerraform(struct!.runSentimentAnnotator),
+    run_silence_annotator: cdktn.booleanToTerraform(struct!.runSilenceAnnotator),
+    run_summarization_annotator: cdktn.booleanToTerraform(struct!.runSummarizationAnnotator),
     qa_config: contactCenterInsightsAnalysisRuleAnnotatorSelectorQaConfigToTerraform(struct!.qaConfig),
     summarization_config: contactCenterInsightsAnalysisRuleAnnotatorSelectorSummarizationConfigToTerraform(struct!.summarizationConfig),
   }
@@ -487,73 +487,73 @@ export function contactCenterInsightsAnalysisRuleAnnotatorSelectorToTerraform(st
 
 
 export function contactCenterInsightsAnalysisRuleAnnotatorSelectorToHclTerraform(struct?: ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference | ContactCenterInsightsAnalysisRuleAnnotatorSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     issue_models: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.issueModels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.issueModels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     phrase_matchers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.phraseMatchers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.phraseMatchers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     run_entity_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runEntityAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runEntityAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_intent_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runIntentAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runIntentAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_interruption_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runInterruptionAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runInterruptionAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_issue_model_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runIssueModelAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runIssueModelAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_phrase_matcher_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runPhraseMatcherAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runPhraseMatcherAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_qa_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runQaAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runQaAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_sentiment_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runSentimentAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runSentimentAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_silence_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runSilenceAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runSilenceAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     run_summarization_annotator: {
-      value: cdktf.booleanToHclTerraform(struct!.runSummarizationAnnotator),
+      value: cdktn.booleanToHclTerraform(struct!.runSummarizationAnnotator),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -576,14 +576,14 @@ export function contactCenterInsightsAnalysisRuleAnnotatorSelectorToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference extends cdktf.ComplexObject {
+export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -713,11 +713,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_entity_annotator - computed: false, optional: true, required: false
-  private _runEntityAnnotator?: boolean | cdktf.IResolvable; 
+  private _runEntityAnnotator?: boolean | cdktn.IResolvable; 
   public get runEntityAnnotator() {
     return this.getBooleanAttribute('run_entity_annotator');
   }
-  public set runEntityAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runEntityAnnotator(value: boolean | cdktn.IResolvable) {
     this._runEntityAnnotator = value;
   }
   public resetRunEntityAnnotator() {
@@ -729,11 +729,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_intent_annotator - computed: false, optional: true, required: false
-  private _runIntentAnnotator?: boolean | cdktf.IResolvable; 
+  private _runIntentAnnotator?: boolean | cdktn.IResolvable; 
   public get runIntentAnnotator() {
     return this.getBooleanAttribute('run_intent_annotator');
   }
-  public set runIntentAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runIntentAnnotator(value: boolean | cdktn.IResolvable) {
     this._runIntentAnnotator = value;
   }
   public resetRunIntentAnnotator() {
@@ -745,11 +745,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_interruption_annotator - computed: false, optional: true, required: false
-  private _runInterruptionAnnotator?: boolean | cdktf.IResolvable; 
+  private _runInterruptionAnnotator?: boolean | cdktn.IResolvable; 
   public get runInterruptionAnnotator() {
     return this.getBooleanAttribute('run_interruption_annotator');
   }
-  public set runInterruptionAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runInterruptionAnnotator(value: boolean | cdktn.IResolvable) {
     this._runInterruptionAnnotator = value;
   }
   public resetRunInterruptionAnnotator() {
@@ -761,11 +761,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_issue_model_annotator - computed: false, optional: true, required: false
-  private _runIssueModelAnnotator?: boolean | cdktf.IResolvable; 
+  private _runIssueModelAnnotator?: boolean | cdktn.IResolvable; 
   public get runIssueModelAnnotator() {
     return this.getBooleanAttribute('run_issue_model_annotator');
   }
-  public set runIssueModelAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runIssueModelAnnotator(value: boolean | cdktn.IResolvable) {
     this._runIssueModelAnnotator = value;
   }
   public resetRunIssueModelAnnotator() {
@@ -777,11 +777,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_phrase_matcher_annotator - computed: false, optional: true, required: false
-  private _runPhraseMatcherAnnotator?: boolean | cdktf.IResolvable; 
+  private _runPhraseMatcherAnnotator?: boolean | cdktn.IResolvable; 
   public get runPhraseMatcherAnnotator() {
     return this.getBooleanAttribute('run_phrase_matcher_annotator');
   }
-  public set runPhraseMatcherAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runPhraseMatcherAnnotator(value: boolean | cdktn.IResolvable) {
     this._runPhraseMatcherAnnotator = value;
   }
   public resetRunPhraseMatcherAnnotator() {
@@ -793,11 +793,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_qa_annotator - computed: false, optional: true, required: false
-  private _runQaAnnotator?: boolean | cdktf.IResolvable; 
+  private _runQaAnnotator?: boolean | cdktn.IResolvable; 
   public get runQaAnnotator() {
     return this.getBooleanAttribute('run_qa_annotator');
   }
-  public set runQaAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runQaAnnotator(value: boolean | cdktn.IResolvable) {
     this._runQaAnnotator = value;
   }
   public resetRunQaAnnotator() {
@@ -809,11 +809,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_sentiment_annotator - computed: false, optional: true, required: false
-  private _runSentimentAnnotator?: boolean | cdktf.IResolvable; 
+  private _runSentimentAnnotator?: boolean | cdktn.IResolvable; 
   public get runSentimentAnnotator() {
     return this.getBooleanAttribute('run_sentiment_annotator');
   }
-  public set runSentimentAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runSentimentAnnotator(value: boolean | cdktn.IResolvable) {
     this._runSentimentAnnotator = value;
   }
   public resetRunSentimentAnnotator() {
@@ -825,11 +825,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_silence_annotator - computed: false, optional: true, required: false
-  private _runSilenceAnnotator?: boolean | cdktf.IResolvable; 
+  private _runSilenceAnnotator?: boolean | cdktn.IResolvable; 
   public get runSilenceAnnotator() {
     return this.getBooleanAttribute('run_silence_annotator');
   }
-  public set runSilenceAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runSilenceAnnotator(value: boolean | cdktn.IResolvable) {
     this._runSilenceAnnotator = value;
   }
   public resetRunSilenceAnnotator() {
@@ -841,11 +841,11 @@ export class ContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference e
   }
 
   // run_summarization_annotator - computed: false, optional: true, required: false
-  private _runSummarizationAnnotator?: boolean | cdktf.IResolvable; 
+  private _runSummarizationAnnotator?: boolean | cdktn.IResolvable; 
   public get runSummarizationAnnotator() {
     return this.getBooleanAttribute('run_summarization_annotator');
   }
-  public set runSummarizationAnnotator(value: boolean | cdktf.IResolvable) {
+  public set runSummarizationAnnotator(value: boolean | cdktn.IResolvable) {
     this._runSummarizationAnnotator = value;
   }
   public resetRunSummarizationAnnotator() {
@@ -903,39 +903,39 @@ export interface ContactCenterInsightsAnalysisRuleTimeouts {
   readonly update?: string;
 }
 
-export function contactCenterInsightsAnalysisRuleTimeoutsToTerraform(struct?: ContactCenterInsightsAnalysisRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function contactCenterInsightsAnalysisRuleTimeoutsToTerraform(struct?: ContactCenterInsightsAnalysisRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function contactCenterInsightsAnalysisRuleTimeoutsToHclTerraform(struct?: ContactCenterInsightsAnalysisRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function contactCenterInsightsAnalysisRuleTimeoutsToHclTerraform(struct?: ContactCenterInsightsAnalysisRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -946,19 +946,19 @@ export function contactCenterInsightsAnalysisRuleTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ContactCenterInsightsAnalysisRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ContactCenterInsightsAnalysisRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ContactCenterInsightsAnalysisRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ContactCenterInsightsAnalysisRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -979,7 +979,7 @@ export class ContactCenterInsightsAnalysisRuleTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ContactCenterInsightsAnalysisRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ContactCenterInsightsAnalysisRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -987,7 +987,7 @@ export class ContactCenterInsightsAnalysisRuleTimeoutsOutputReference extends cd
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1052,7 +1052,7 @@ export class ContactCenterInsightsAnalysisRuleTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule google_contact_center_insights_analysis_rule}
 */
-export class ContactCenterInsightsAnalysisRule extends cdktf.TerraformResource {
+export class ContactCenterInsightsAnalysisRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1063,14 +1063,14 @@ export class ContactCenterInsightsAnalysisRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ContactCenterInsightsAnalysisRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ContactCenterInsightsAnalysisRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContactCenterInsightsAnalysisRule to import
   * @param importFromId The id of the existing ContactCenterInsightsAnalysisRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/contact_center_insights_analysis_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContactCenterInsightsAnalysisRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_contact_center_insights_analysis_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_contact_center_insights_analysis_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -1116,11 +1116,11 @@ export class ContactCenterInsightsAnalysisRule extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -1277,13 +1277,13 @@ export class ContactCenterInsightsAnalysisRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: cdktf.booleanToTerraform(this._active),
-      analysis_percentage: cdktf.numberToTerraform(this._analysisPercentage),
-      conversation_filter: cdktf.stringToTerraform(this._conversationFilter),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
+      active: cdktn.booleanToTerraform(this._active),
+      analysis_percentage: cdktn.numberToTerraform(this._analysisPercentage),
+      conversation_filter: cdktn.stringToTerraform(this._conversationFilter),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
       annotator_selector: contactCenterInsightsAnalysisRuleAnnotatorSelectorToTerraform(this._annotatorSelector.internalValue),
       timeouts: contactCenterInsightsAnalysisRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1292,43 +1292,43 @@ export class ContactCenterInsightsAnalysisRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       analysis_percentage: {
-        value: cdktf.numberToHclTerraform(this._analysisPercentage),
+        value: cdktn.numberToHclTerraform(this._analysisPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       conversation_filter: {
-        value: cdktf.stringToHclTerraform(this._conversationFilter),
+        value: cdktn.stringToHclTerraform(this._conversationFilter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleBillingAccountIamPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleBillingAccountIamPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account_iam_policy#billing_account_id DataGoogleBillingAccountIamPolicy#billing_account_id}
   */
@@ -28,7 +28,7 @@ export interface DataGoogleBillingAccountIamPolicyConfig extends cdktf.Terraform
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account_iam_policy google_billing_account_iam_policy}
 */
-export class DataGoogleBillingAccountIamPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleBillingAccountIamPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -39,14 +39,14 @@ export class DataGoogleBillingAccountIamPolicy extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleBillingAccountIamPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleBillingAccountIamPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBillingAccountIamPolicy to import
   * @param importFromId The id of the existing DataGoogleBillingAccountIamPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/billing_account_iam_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBillingAccountIamPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_account_iam_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_billing_account_iam_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -129,21 +129,21 @@ export class DataGoogleBillingAccountIamPolicy extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_account_id: cdktf.stringToTerraform(this._billingAccountId),
-      id: cdktf.stringToTerraform(this._id),
+      billing_account_id: cdktn.stringToTerraform(this._billingAccountId),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_account_id: {
-        value: cdktf.stringToHclTerraform(this._billingAccountId),
+        value: cdktn.stringToHclTerraform(this._billingAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

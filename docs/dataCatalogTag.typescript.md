@@ -296,7 +296,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -378,7 +378,7 @@ public putFields(value: IResolvable | DataCatalogTagFields[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.putFields.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
 
 ---
 
@@ -425,7 +425,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataCatalogTag resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DataCatalogTag resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -497,7 +497,7 @@ import { dataCatalogTag } from '@cdktn/provider-google'
 dataCatalogTag.DataCatalogTag.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DataCatalogTag resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataCatalogTag resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.generateConfigForImport.parameter.scope"></a>
 
@@ -527,7 +527,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTag.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataCatalogTag to import is found.
 
@@ -538,29 +538,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.fields">fields</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList">DataCatalogTagFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.templateDisplayname">templateDisplayname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference">DataCatalogTagTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.columnInput">columnInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.fieldsInput">fieldsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.fieldsInput">fieldsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.templateInput">templateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.column">column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTag.property.parent">parent</a></code> | <code>string</code> | *No description.* |
@@ -586,7 +586,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -636,7 +636,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -646,7 +646,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -656,7 +656,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -676,7 +676,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -686,7 +686,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -696,7 +696,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -706,7 +706,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -766,7 +766,7 @@ public readonly columnInput: string;
 public readonly fieldsInput: IResolvable | DataCatalogTagFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
 
 ---
 
@@ -806,7 +806,7 @@ public readonly templateInput: string;
 public readonly timeoutsInput: IResolvable | DataCatalogTagTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a>
 
 ---
 
@@ -884,14 +884,14 @@ const dataCatalogTagConfig: dataCatalogTag.DataCatalogTagConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.fields">fields</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]</code> | fields block. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.fields">fields</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]</code> | fields block. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.template">template</a></code> | <code>string</code> | The resource name of the tag template that this tag uses. Example: projects/{project_id}/locations/{location}/tagTemplates/{tagTemplateId} This field cannot be modified after creation. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.column">column</a></code> | <code>string</code> | Resources like Entry can have schemas associated with them. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_tag#id DataCatalogTag#id}. |
@@ -906,7 +906,7 @@ const dataCatalogTagConfig: dataCatalogTag.DataCatalogTagConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -916,7 +916,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -926,7 +926,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -936,7 +936,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -946,7 +946,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -956,7 +956,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -966,7 +966,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -976,7 +976,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 public readonly fields: IResolvable | DataCatalogTagFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
 
 fields block.
 
@@ -1079,7 +1079,7 @@ const dataCatalogTagFields: dataCatalogTag.DataCatalogTagFields = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.fieldName">fieldName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/data_catalog_tag#field_name DataCatalogTag#field_name}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.boolValue">boolValue</a></code> | <code>boolean \| cdktf.IResolvable</code> | Holds the value for a tag field with boolean type. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.boolValue">boolValue</a></code> | <code>boolean \| cdktn.IResolvable</code> | Holds the value for a tag field with boolean type. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.doubleValue">doubleValue</a></code> | <code>number</code> | Holds the value for a tag field with double type. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.enumValue">enumValue</a></code> | <code>string</code> | The display name of the enum value. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields.property.stringValue">stringValue</a></code> | <code>string</code> | Holds the value for a tag field with string type. |
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly boolValue: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Holds the value for a tag field with boolean type.
 
@@ -1239,7 +1239,7 @@ new dataCatalogTag.DataCatalogTagFieldsList(terraformResource: IInterpolatingPar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1247,7 +1247,7 @@ new dataCatalogTag.DataCatalogTagFieldsList(terraformResource: IInterpolatingPar
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1313,7 +1313,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1348,7 +1348,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]</code> | *No description.* |
 
 ---
 
@@ -1382,7 +1382,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | DataCatalogTagFields[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>[]
 
 ---
 
@@ -1399,7 +1399,7 @@ new dataCatalogTag.DataCatalogTagFieldsOutputReference(terraformResource: IInter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1408,7 +1408,7 @@ new dataCatalogTag.DataCatalogTagFieldsOutputReference(terraformResource: IInter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1599,7 +1599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1652,19 +1652,19 @@ public resetTimestampValue(): void
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.order">order</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.boolValueInput">boolValueInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.boolValueInput">boolValueInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.doubleValueInput">doubleValueInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.enumValueInput">enumValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.fieldNameInput">fieldNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.stringValueInput">stringValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.timestampValueInput">timestampValueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.boolValue">boolValue</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.boolValue">boolValue</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.doubleValue">doubleValue</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.enumValue">enumValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.fieldName">fieldName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.stringValue">stringValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.timestampValue">timestampValue</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFieldsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a></code> | *No description.* |
 
 ---
 
@@ -1718,7 +1718,7 @@ public readonly order: number;
 public readonly boolValueInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1778,7 +1778,7 @@ public readonly timestampValueInput: string;
 public readonly boolValue: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1838,7 +1838,7 @@ public readonly timestampValue: string;
 public readonly internalValue: IResolvable | DataCatalogTagFields;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagFields">DataCatalogTagFields</a>
 
 ---
 
@@ -1855,14 +1855,14 @@ new dataCatalogTag.DataCatalogTagTimeoutsOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2035,7 +2035,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2080,7 +2080,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2174,7 +2174,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | DataCatalogTagTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataCatalogTag.DataCatalogTagTimeouts">DataCatalogTagTimeouts</a>
 
 ---
 

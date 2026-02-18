@@ -39,18 +39,18 @@ bigtableTable.BigtableTable(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.instanceName">instance_name</a></code> | <code>str</code> | The name of the Bigtable instance. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.automatedBackupPolicy">automated_backup_policy</a></code> | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicy">BigtableTableAutomatedBackupPolicy</a></code> | automated_backup_policy block. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.changeStreamRetention">change_stream_retention</a></code> | <code>str</code> | Duration to retain change stream data for the table. |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.columnFamily">column_family</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | column_family block. |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.columnFamily">column_family</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | column_family block. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>str</code> | A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table#id BigtableTable#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
@@ -80,43 +80,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `column_family`<sup>Optional</sup> <a name="column_family" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer.parameter.columnFamily"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
 
 column_family block.
 
@@ -530,7 +530,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableTable.BigtableTable.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -652,7 +652,7 @@ def put_column_family(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigtableTable.BigtableTable.putColumnFamily.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
 
 ---
 
@@ -742,7 +742,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BigtableTable resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a BigtableTable resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -825,7 +825,7 @@ bigtableTable.BigtableTable.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a BigtableTable resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BigtableTable resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigtableTable.BigtableTable.generateConfigForImport.parameter.scope"></a>
 
@@ -855,7 +855,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigtableTable.BigtableTable.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BigtableTable to import is found.
 
@@ -866,25 +866,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.automatedBackupPolicy">automated_backup_policy</a></code> | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference">BigtableTableAutomatedBackupPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.columnFamily">column_family</a></code> | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList">BigtableTableColumnFamilyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference">BigtableTableTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.automatedBackupPolicyInput">automated_backup_policy_input</a></code> | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicy">BigtableTableAutomatedBackupPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.changeStreamRetentionInput">change_stream_retention_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.columnFamilyInput">column_family_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.columnFamilyInput">column_family_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.instanceNameInput">instance_name_input</a></code> | <code>str</code> | *No description.* |
@@ -892,7 +892,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.rowKeySchemaInput">row_key_schema_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.splitKeysInput">split_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.changeStreamRetention">change_stream_retention</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.deletionProtection">deletion_protection</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTable.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -922,7 +922,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -972,7 +972,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -982,7 +982,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -992,7 +992,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1012,7 +1012,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1022,7 +1022,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1032,7 +1032,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1042,7 +1042,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1102,7 +1102,7 @@ change_stream_retention_input: str
 column_family_input: IResolvable | typing.List[BigtableTableColumnFamily]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
 
 ---
 
@@ -1182,7 +1182,7 @@ split_keys_input: typing.List[str]
 timeouts_input: IResolvable | BigtableTableTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a>
 
 ---
 
@@ -1419,18 +1419,18 @@ bigtableTable.BigtableTableConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.instanceName">instance_name</a></code> | <code>str</code> | The name of the Bigtable instance. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.name">name</a></code> | <code>str</code> | The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.automatedBackupPolicy">automated_backup_policy</a></code> | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicy">BigtableTableAutomatedBackupPolicy</a></code> | automated_backup_policy block. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.changeStreamRetention">change_stream_retention</a></code> | <code>str</code> | Duration to retain change stream data for the table. |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.columnFamily">column_family</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | column_family block. |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.columnFamily">column_family</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | column_family block. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.deletionProtection">deletion_protection</a></code> | <code>str</code> | A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table#id BigtableTable#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
@@ -1446,7 +1446,7 @@ bigtableTable.BigtableTableConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1456,7 +1456,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1466,7 +1466,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1476,7 +1476,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1486,7 +1486,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1496,7 +1496,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1506,7 +1506,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1574,7 +1574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 column_family: IResolvable | typing.List[BigtableTableColumnFamily]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
 
 column_family block.
 
@@ -1743,14 +1743,14 @@ bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1944,7 +1944,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2076,7 +2076,7 @@ bigtableTable.BigtableTableColumnFamilyList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2084,7 +2084,7 @@ bigtableTable.BigtableTableColumnFamilyList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2154,7 +2154,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2191,7 +2191,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]</code> | *No description.* |
 
 ---
 
@@ -2225,7 +2225,7 @@ fqn: str
 internal_value: IResolvable | typing.List[BigtableTableColumnFamily]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>]
 
 ---
 
@@ -2247,7 +2247,7 @@ bigtableTable.BigtableTableColumnFamilyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2256,7 +2256,7 @@ bigtableTable.BigtableTableColumnFamilyOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2465,7 +2465,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2496,7 +2496,7 @@ def reset_type() -> None
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.property.family">family</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a></code> | *No description.* |
 
 ---
 
@@ -2570,7 +2570,7 @@ type: str
 internal_value: IResolvable | BigtableTableColumnFamily
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily">BigtableTableColumnFamily</a>
 
 ---
 
@@ -2590,14 +2590,14 @@ bigtableTable.BigtableTableTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2791,7 +2791,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2828,7 +2828,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2902,7 +2902,7 @@ update: str
 internal_value: IResolvable | BigtableTableTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.bigtableTable.BigtableTableTimeouts">BigtableTableTimeouts</a>
 
 ---
 

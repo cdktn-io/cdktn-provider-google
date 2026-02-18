@@ -34,16 +34,16 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembership(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.group">group</a></code> | <code>str</code> | The name of the Group to create this membership in. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.roles">roles</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | roles block. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, skip group member creation if a membership with the same name already exists. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.roles">roles</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | roles block. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, skip group member creation if a membership with the same name already exists. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.preferredMemberKey">preferred_member_key</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKey">CloudIdentityGroupMembershipPreferredMemberKey</a></code> | preferred_member_key block. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | timeouts block. |
@@ -70,43 +70,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `roles`<sup>Required</sup> <a name="roles" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.roles"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
 
 roles block.
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `create_ignore_already_exists`<sup>Optional</sup> <a name="create_ignore_already_exists" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.Initializer.parameter.createIgnoreAlreadyExists"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, skip group member creation if a membership with the same name already exists.
 
@@ -452,7 +452,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -592,7 +592,7 @@ def put_roles(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.putRoles.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
 
 ---
 
@@ -661,7 +661,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a CloudIdentityGroupMembership resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a CloudIdentityGroupMembership resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -744,7 +744,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembership.generate_config_for_im
 )
 ```
 
-Generates CDKTF code for importing a CloudIdentityGroupMembership resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a CloudIdentityGroupMembership resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.generateConfigForImport.parameter.scope"></a>
 
@@ -774,7 +774,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the CloudIdentityGroupMembership to import is found.
 
@@ -785,19 +785,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.preferredMemberKey">preferred_member_key</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKeyOutputReference">CloudIdentityGroupMembershipPreferredMemberKeyOutputReference</a></code> | *No description.* |
@@ -805,13 +805,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference">CloudIdentityGroupMembershipTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.createIgnoreAlreadyExistsInput">create_ignore_already_exists_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.createIgnoreAlreadyExistsInput">create_ignore_already_exists_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.groupInput">group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.preferredMemberKeyInput">preferred_member_key_input</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKey">CloudIdentityGroupMembershipPreferredMemberKey</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.rolesInput">roles_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.rolesInput">roles_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.group">group</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembership.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -835,7 +835,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -885,7 +885,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -895,7 +895,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -905,7 +905,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -925,7 +925,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -935,7 +935,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -945,7 +945,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -955,7 +955,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1035,7 +1035,7 @@ update_time: str
 create_ignore_already_exists_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1075,7 +1075,7 @@ preferred_member_key_input: CloudIdentityGroupMembershipPreferredMemberKey
 roles_input: IResolvable | typing.List[CloudIdentityGroupMembershipRoles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
 
 ---
 
@@ -1085,7 +1085,7 @@ roles_input: IResolvable | typing.List[CloudIdentityGroupMembershipRoles]
 timeouts_input: IResolvable | CloudIdentityGroupMembershipTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a>
 
 ---
 
@@ -1095,7 +1095,7 @@ timeouts_input: IResolvable | CloudIdentityGroupMembershipTimeouts
 create_ignore_already_exists: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1167,16 +1167,16 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.group">group</a></code> | <code>str</code> | The name of the Group to create this membership in. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.roles">roles</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | roles block. |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, skip group member creation if a membership with the same name already exists. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.roles">roles</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | roles block. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.createIgnoreAlreadyExists">create_ignore_already_exists</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, skip group member creation if a membership with the same name already exists. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_identity_group_membership#id CloudIdentityGroupMembership#id}. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.preferredMemberKey">preferred_member_key</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKey">CloudIdentityGroupMembershipPreferredMemberKey</a></code> | preferred_member_key block. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | timeouts block. |
@@ -1189,7 +1189,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1199,7 +1199,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1209,7 +1209,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1219,7 +1219,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1229,7 +1229,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1239,7 +1239,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1249,7 +1249,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 roles: IResolvable | typing.List[CloudIdentityGroupMembershipRoles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
 
 roles block.
 
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 create_ignore_already_exists: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, skip group member creation if a membership with the same name already exists.
 
@@ -1574,14 +1574,14 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKeyOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKeyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKeyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1774,7 +1774,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipPreferredMemberKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1899,14 +1899,14 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesExpiryDetailOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesExpiryDetailOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesExpiryDetailOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesExpiryDetailOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesExpiryDetailOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2098,7 +2098,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesExpiryDetailOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2196,7 +2196,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2204,7 +2204,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2274,7 +2274,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2311,7 +2311,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]</code> | *No description.* |
 
 ---
 
@@ -2345,7 +2345,7 @@ fqn: str
 internal_value: IResolvable | typing.List[CloudIdentityGroupMembershipRoles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>]
 
 ---
 
@@ -2367,7 +2367,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2376,7 +2376,7 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2586,7 +2586,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2640,7 +2640,7 @@ def reset_expiry_detail() -> None
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.property.expiryDetailInput">expiry_detail_input</a></code> | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesExpiryDetail">CloudIdentityGroupMembershipRolesExpiryDetail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRolesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a></code> | *No description.* |
 
 ---
 
@@ -2714,7 +2714,7 @@ name: str
 internal_value: IResolvable | CloudIdentityGroupMembershipRoles
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipRoles">CloudIdentityGroupMembershipRoles</a>
 
 ---
 
@@ -2734,14 +2734,14 @@ cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2936,7 +2936,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2981,7 +2981,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3075,7 +3075,7 @@ update: str
 internal_value: IResolvable | CloudIdentityGroupMembershipTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cloudIdentityGroupMembership.CloudIdentityGroupMembershipTimeouts">CloudIdentityGroupMembershipTimeouts</a>
 
 ---
 

@@ -51,33 +51,33 @@ appEngineStandardAppVersion.AppEngineStandardAppVersion(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.deployment">deployment</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment">AppEngineStandardAppVersionDeployment</a></code> | deployment block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.entrypoint">entrypoint</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypoint">AppEngineStandardAppVersionEntrypoint</a></code> | entrypoint block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.runtime">runtime</a></code> | <code>str</code> | Desired runtime. Example python27. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.service">service</a></code> | <code>str</code> | AppEngine service resource. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.appEngineApis">app_engine_apis</a></code> | <code>bool \| cdktf.IResolvable</code> | Allows App Engine second generation runtimes to access the legacy bundled services. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.appEngineApis">app_engine_apis</a></code> | <code>bool \| cdktn.IResolvable</code> | Allows App Engine second generation runtimes to access the legacy bundled services. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.automaticScaling">automatic_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScaling">AppEngineStandardAppVersionAutomaticScaling</a></code> | automatic_scaling block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.basicScaling">basic_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScaling">AppEngineStandardAppVersionBasicScaling</a></code> | basic_scaling block. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.deleteServiceOnDestroy">delete_service_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', the service will be deleted if it is the last version. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.deleteServiceOnDestroy">delete_service_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', the service will be deleted if it is the last version. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.envVariables">env_variables</a></code> | <code>typing.Mapping[str]</code> | Environment variables available to the application. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.handlers">handlers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | handlers block. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.handlers">handlers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | handlers block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.inboundServices">inbound_services</a></code> | <code>typing.List[str]</code> | A list of the types of messages that this application is able to receive. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.instanceClass">instance_class</a></code> | <code>str</code> | Instance class that is used to run this version. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.libraries">libraries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | libraries block. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.libraries">libraries</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | libraries block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.manualScaling">manual_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScaling">AppEngineStandardAppVersionManualScaling</a></code> | manual_scaling block. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.noopOnDestroy">noop_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', the application version will not be deleted. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.noopOnDestroy">noop_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', the application version will not be deleted. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.runtimeApiVersion">runtime_api_version</a></code> | <code>str</code> | The version of the API in the given runtime environment. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.serviceAccount">service_account</a></code> | <code>str</code> | The identity that the deployed version will run as. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.threadsafe">threadsafe</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether multiple requests can be dispatched to this version at once. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.threadsafe">threadsafe</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether multiple requests can be dispatched to this version at once. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.versionId">version_id</a></code> | <code>str</code> | Relative name of the version within the service. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.vpcAccessConnector">vpc_access_connector</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector">AppEngineStandardAppVersionVpcAccessConnector</a></code> | vpc_access_connector block. |
@@ -104,43 +104,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `app_engine_apis`<sup>Optional</sup> <a name="app_engine_apis" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.appEngineApis"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allows App Engine second generation runtimes to access the legacy bundled services.
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `delete_service_on_destroy`<sup>Optional</sup> <a name="delete_service_on_destroy" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.deleteServiceOnDestroy"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to 'true', the service will be deleted if it is the last version.
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `handlers`<sup>Optional</sup> <a name="handlers" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.handlers"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
 
 handlers block.
 
@@ -284,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `libraries`<sup>Optional</sup> <a name="libraries" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.libraries"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
 
 libraries block.
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `noop_on_destroy`<sup>Optional</sup> <a name="noop_on_destroy" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.noopOnDestroy"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to 'true', the application version will not be deleted.
 
@@ -347,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `threadsafe`<sup>Optional</sup> <a name="threadsafe" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.Initializer.parameter.threadsafe"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether multiple requests can be dispatched to this version at once.
 
@@ -687,7 +687,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -893,7 +893,7 @@ def put_deployment(
 
 ###### `files`<sup>Optional</sup> <a name="files" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putDeployment.parameter.files"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
 
 files block.
 
@@ -939,7 +939,7 @@ def put_handlers(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putHandlers.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
 
 ---
 
@@ -953,7 +953,7 @@ def put_libraries(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.putLibraries.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
 
 ---
 
@@ -1162,7 +1162,7 @@ def reset_vpc_access_connector() -> None
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AppEngineStandardAppVersion resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a AppEngineStandardAppVersion resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1245,7 +1245,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersion.generate_config_for_impo
 )
 ```
 
-Generates CDKTF code for importing a AppEngineStandardAppVersion resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AppEngineStandardAppVersion resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.generateConfigForImport.parameter.scope"></a>
 
@@ -1275,7 +1275,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AppEngineStandardAppVersion to import is found.
 
@@ -1286,19 +1286,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.automaticScaling">automatic_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputReference">AppEngineStandardAppVersionAutomaticScalingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.basicScaling">basic_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference">AppEngineStandardAppVersionBasicScalingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.deployment">deployment</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference">AppEngineStandardAppVersionDeploymentOutputReference</a></code> | *No description.* |
@@ -1309,42 +1309,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference">AppEngineStandardAppVersionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccessConnector">vpc_access_connector</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference">AppEngineStandardAppVersionVpcAccessConnectorOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineApisInput">app_engine_apis_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineApisInput">app_engine_apis_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.automaticScalingInput">automatic_scaling_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScaling">AppEngineStandardAppVersionAutomaticScaling</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.basicScalingInput">basic_scaling_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScaling">AppEngineStandardAppVersionBasicScaling</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.deleteServiceOnDestroyInput">delete_service_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.deleteServiceOnDestroyInput">delete_service_on_destroy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.deploymentInput">deployment_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment">AppEngineStandardAppVersionDeployment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.entrypointInput">entrypoint_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypoint">AppEngineStandardAppVersionEntrypoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.envVariablesInput">env_variables_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.handlersInput">handlers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.handlersInput">handlers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.inboundServicesInput">inbound_services_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.instanceClassInput">instance_class_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.librariesInput">libraries_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.librariesInput">libraries_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.manualScalingInput">manual_scaling_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScaling">AppEngineStandardAppVersionManualScaling</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.noopOnDestroyInput">noop_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.noopOnDestroyInput">noop_on_destroy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.runtimeApiVersionInput">runtime_api_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.runtimeInput">runtime_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.serviceAccountInput">service_account_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.threadsafeInput">threadsafe_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.threadsafeInput">threadsafe_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.versionIdInput">version_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.vpcAccessConnectorInput">vpc_access_connector_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector">AppEngineStandardAppVersionVpcAccessConnector</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineApis">app_engine_apis</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.deleteServiceOnDestroy">delete_service_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.appEngineApis">app_engine_apis</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.deleteServiceOnDestroy">delete_service_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.envVariables">env_variables</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.inboundServices">inbound_services</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.instanceClass">instance_class</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.noopOnDestroy">noop_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.noopOnDestroy">noop_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.runtime">runtime</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.runtimeApiVersion">runtime_api_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.service">service</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.threadsafe">threadsafe</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.threadsafe">threadsafe</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersion.property.versionId">version_id</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1367,7 +1367,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1417,7 +1417,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1427,7 +1427,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1437,7 +1437,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1457,7 +1457,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1467,7 +1467,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1477,7 +1477,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1487,7 +1487,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1597,7 +1597,7 @@ vpc_access_connector: AppEngineStandardAppVersionVpcAccessConnectorOutputReferen
 app_engine_apis_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1627,7 +1627,7 @@ basic_scaling_input: AppEngineStandardAppVersionBasicScaling
 delete_service_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1667,7 +1667,7 @@ env_variables_input: typing.Mapping[str]
 handlers_input: IResolvable | typing.List[AppEngineStandardAppVersionHandlers]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
 
 ---
 
@@ -1707,7 +1707,7 @@ instance_class_input: str
 libraries_input: IResolvable | typing.List[AppEngineStandardAppVersionLibraries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
 
 ---
 
@@ -1727,7 +1727,7 @@ manual_scaling_input: AppEngineStandardAppVersionManualScaling
 noop_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1787,7 +1787,7 @@ service_input: str
 threadsafe_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1797,7 +1797,7 @@ threadsafe_input: bool | IResolvable
 timeouts_input: IResolvable | AppEngineStandardAppVersionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a>
 
 ---
 
@@ -1827,7 +1827,7 @@ vpc_access_connector_input: AppEngineStandardAppVersionVpcAccessConnector
 app_engine_apis: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1837,7 +1837,7 @@ app_engine_apis: bool | IResolvable
 delete_service_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1887,7 +1887,7 @@ instance_class: str
 noop_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1947,7 +1947,7 @@ service_account: str
 threadsafe: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2288,33 +2288,33 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.deployment">deployment</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment">AppEngineStandardAppVersionDeployment</a></code> | deployment block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.entrypoint">entrypoint</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypoint">AppEngineStandardAppVersionEntrypoint</a></code> | entrypoint block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.runtime">runtime</a></code> | <code>str</code> | Desired runtime. Example python27. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.service">service</a></code> | <code>str</code> | AppEngine service resource. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.appEngineApis">app_engine_apis</a></code> | <code>bool \| cdktf.IResolvable</code> | Allows App Engine second generation runtimes to access the legacy bundled services. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.appEngineApis">app_engine_apis</a></code> | <code>bool \| cdktn.IResolvable</code> | Allows App Engine second generation runtimes to access the legacy bundled services. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.automaticScaling">automatic_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScaling">AppEngineStandardAppVersionAutomaticScaling</a></code> | automatic_scaling block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.basicScaling">basic_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScaling">AppEngineStandardAppVersionBasicScaling</a></code> | basic_scaling block. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.deleteServiceOnDestroy">delete_service_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', the service will be deleted if it is the last version. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.deleteServiceOnDestroy">delete_service_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', the service will be deleted if it is the last version. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.envVariables">env_variables</a></code> | <code>typing.Mapping[str]</code> | Environment variables available to the application. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.handlers">handlers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | handlers block. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.handlers">handlers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | handlers block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#id AppEngineStandardAppVersion#id}. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.inboundServices">inbound_services</a></code> | <code>typing.List[str]</code> | A list of the types of messages that this application is able to receive. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.instanceClass">instance_class</a></code> | <code>str</code> | Instance class that is used to run this version. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.libraries">libraries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | libraries block. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.libraries">libraries</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | libraries block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.manualScaling">manual_scaling</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScaling">AppEngineStandardAppVersionManualScaling</a></code> | manual_scaling block. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.noopOnDestroy">noop_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', the application version will not be deleted. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.noopOnDestroy">noop_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', the application version will not be deleted. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_standard_app_version#project AppEngineStandardAppVersion#project}. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.runtimeApiVersion">runtime_api_version</a></code> | <code>str</code> | The version of the API in the given runtime environment. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.serviceAccount">service_account</a></code> | <code>str</code> | The identity that the deployed version will run as. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.threadsafe">threadsafe</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether multiple requests can be dispatched to this version at once. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.threadsafe">threadsafe</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether multiple requests can be dispatched to this version at once. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.versionId">version_id</a></code> | <code>str</code> | Relative name of the version within the service. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionConfig.property.vpcAccessConnector">vpc_access_connector</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnector">AppEngineStandardAppVersionVpcAccessConnector</a></code> | vpc_access_connector block. |
@@ -2327,7 +2327,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2337,7 +2337,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2347,7 +2347,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2357,7 +2357,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2367,7 +2367,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2377,7 +2377,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2387,7 +2387,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2453,7 +2453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 app_engine_apis: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allows App Engine second generation runtimes to access the legacy bundled services.
 
@@ -2495,7 +2495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 delete_service_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to 'true', the service will be deleted if it is the last version.
 
@@ -2523,7 +2523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 handlers: IResolvable | typing.List[AppEngineStandardAppVersionHandlers]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
 
 handlers block.
 
@@ -2587,7 +2587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 libraries: IResolvable | typing.List[AppEngineStandardAppVersionLibraries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
 
 libraries block.
 
@@ -2615,7 +2615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 noop_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to 'true', the application version will not be deleted.
 
@@ -2674,7 +2674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 threadsafe: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether multiple requests can be dispatched to this version at once.
 
@@ -2743,7 +2743,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment.property.files">files</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]</code> | files block. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment.property.files">files</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]</code> | files block. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment.property.zip">zip</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZip">AppEngineStandardAppVersionDeploymentZip</a></code> | zip block. |
 
 ---
@@ -2754,7 +2754,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment(
 files: IResolvable | typing.List[AppEngineStandardAppVersionDeploymentFiles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
 
 files block.
 
@@ -3113,12 +3113,12 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.applicationReadable">application_readable</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether files should also be uploaded as code data. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.applicationReadable">application_readable</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether files should also be uploaded as code data. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.expiration">expiration</a></code> | <code>str</code> | Time a static file served by this handler should be cached by web proxies and browsers. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.httpHeaders">http_headers</a></code> | <code>typing.Mapping[str]</code> | HTTP headers to use for all responses from these URLs. An object containing a list of "key:value" value pairs.". |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.mimeType">mime_type</a></code> | <code>str</code> | MIME type used to serve all files served by this handler. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.path">path</a></code> | <code>str</code> | Path to the static files matched by the URL pattern, from the application root directory. |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.requireMatchingFile">require_matching_file</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether this handler should match the request if the file referenced by the handler does not exist. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.requireMatchingFile">require_matching_file</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this handler should match the request if the file referenced by the handler does not exist. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles.property.uploadPathRegex">upload_path_regex</a></code> | <code>str</code> | Regular expression that matches the file paths for all files that should be referenced by this handler. |
 
 ---
@@ -3129,7 +3129,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles(
 application_readable: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether files should also be uploaded as code data.
 
@@ -3209,7 +3209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 require_matching_file: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this handler should match the request if the file referenced by the handler does not exist.
 
@@ -3445,14 +3445,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3651,7 +3651,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3951,14 +3951,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4154,7 +4154,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionAutomaticScalingStandardSchedulerSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4341,14 +4341,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4541,7 +4541,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionBasicScalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4667,7 +4667,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4675,7 +4675,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4745,7 +4745,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4782,7 +4782,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]</code> | *No description.* |
 
 ---
 
@@ -4816,7 +4816,7 @@ fqn: str
 internal_value: IResolvable | typing.List[AppEngineStandardAppVersionDeploymentFiles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
 
 ---
 
@@ -4838,7 +4838,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4847,7 +4847,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputRefe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5056,7 +5056,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5089,7 +5089,7 @@ def reset_sha1_sum() -> None
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.property.sha1Sum">sha1_sum</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.property.sourceUrl">source_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a></code> | *No description.* |
 
 ---
 
@@ -5183,7 +5183,7 @@ source_url: str
 internal_value: IResolvable | AppEngineStandardAppVersionDeploymentFiles
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>
 
 ---
 
@@ -5203,14 +5203,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5406,7 +5406,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5430,7 +5430,7 @@ def put_files(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.putFiles.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
 
 ---
 
@@ -5484,7 +5484,7 @@ def reset_zip() -> None
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.property.files">files</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFilesList">AppEngineStandardAppVersionDeploymentFilesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.property.zip">zip</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputReference">AppEngineStandardAppVersionDeploymentZipOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.property.filesInput">files_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.property.filesInput">files_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.property.zipInput">zip_input</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZip">AppEngineStandardAppVersionDeploymentZip</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeployment">AppEngineStandardAppVersionDeployment</a></code> | *No description.* |
 
@@ -5540,7 +5540,7 @@ zip: AppEngineStandardAppVersionDeploymentZipOutputReference
 files_input: IResolvable | typing.List[AppEngineStandardAppVersionDeploymentFiles]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentFiles">AppEngineStandardAppVersionDeploymentFiles</a>]
 
 ---
 
@@ -5580,14 +5580,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5780,7 +5780,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionDeploymentZipOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5905,14 +5905,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypointOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypointOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypointOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypointOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypointOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6104,7 +6104,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionEntrypointOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6202,7 +6202,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6210,7 +6210,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6280,7 +6280,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6317,7 +6317,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]</code> | *No description.* |
 
 ---
 
@@ -6351,7 +6351,7 @@ fqn: str
 internal_value: IResolvable | typing.List[AppEngineStandardAppVersionHandlers]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>]
 
 ---
 
@@ -6373,7 +6373,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6382,7 +6382,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6599,7 +6599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6647,7 +6647,7 @@ def put_static_files(
 
 ###### `application_readable`<sup>Optional</sup> <a name="application_readable" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.putStaticFiles.parameter.applicationReadable"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether files should also be uploaded as code data.
 
@@ -6707,7 +6707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `require_matching_file`<sup>Optional</sup> <a name="require_matching_file" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.putStaticFiles.parameter.requireMatchingFile"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether this handler should match the request if the file referenced by the handler does not exist.
 
@@ -6788,7 +6788,7 @@ def reset_url_regex() -> None
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.property.redirectHttpResponseCode">redirect_http_response_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.property.securityLevel">security_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.property.urlRegex">url_regex</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a></code> | *No description.* |
 
 ---
 
@@ -6962,7 +6962,7 @@ url_regex: str
 internal_value: IResolvable | AppEngineStandardAppVersionHandlers
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlers">AppEngineStandardAppVersionHandlers</a>
 
 ---
 
@@ -6982,14 +6982,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7181,7 +7181,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersScriptOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7278,14 +7278,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7484,7 +7484,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7547,19 +7547,19 @@ def reset_upload_path_regex() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.applicationReadableInput">application_readable_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.applicationReadableInput">application_readable_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.expirationInput">expiration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.httpHeadersInput">http_headers_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.mimeTypeInput">mime_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.requireMatchingFileInput">require_matching_file_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.requireMatchingFileInput">require_matching_file_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.uploadPathRegexInput">upload_path_regex_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.applicationReadable">application_readable</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.applicationReadable">application_readable</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.expiration">expiration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.httpHeaders">http_headers</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.mimeType">mime_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.requireMatchingFile">require_matching_file</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.requireMatchingFile">require_matching_file</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.uploadPathRegex">upload_path_regex</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFilesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionHandlersStaticFiles">AppEngineStandardAppVersionHandlersStaticFiles</a></code> | *No description.* |
 
@@ -7595,7 +7595,7 @@ fqn: str
 application_readable_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7645,7 +7645,7 @@ path_input: str
 require_matching_file_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7665,7 +7665,7 @@ upload_path_regex_input: str
 application_readable: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7715,7 +7715,7 @@ path: str
 require_matching_file: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -7756,7 +7756,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7764,7 +7764,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7834,7 +7834,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7871,7 +7871,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]</code> | *No description.* |
 
 ---
 
@@ -7905,7 +7905,7 @@ fqn: str
 internal_value: IResolvable | typing.List[AppEngineStandardAppVersionLibraries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>]
 
 ---
 
@@ -7927,7 +7927,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7936,7 +7936,7 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8146,7 +8146,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8183,7 +8183,7 @@ def reset_version() -> None
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.property.version">version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibrariesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a></code> | *No description.* |
 
 ---
 
@@ -8257,7 +8257,7 @@ version: str
 internal_value: IResolvable | AppEngineStandardAppVersionLibraries
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionLibraries">AppEngineStandardAppVersionLibraries</a>
 
 ---
 
@@ -8277,14 +8277,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8476,7 +8476,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionManualScalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8573,14 +8573,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8775,7 +8775,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8820,7 +8820,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -8914,7 +8914,7 @@ update: str
 internal_value: IResolvable | AppEngineStandardAppVersionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionTimeouts">AppEngineStandardAppVersionTimeouts</a>
 
 ---
 
@@ -8934,14 +8934,14 @@ appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9134,7 +9134,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.appEngineStandardAppVersion.AppEngineStandardAppVersionVpcAccessConnectorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

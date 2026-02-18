@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkServicesGrpcRouteConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkServicesGrpcRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * A free-text description of the resource. Max length 1024 characters.
   *
@@ -73,7 +73,7 @@ export interface NetworkServicesGrpcRouteConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_grpc_route#rules NetworkServicesGrpcRoute#rules}
   */
-  readonly rules: NetworkServicesGrpcRouteRules[] | cdktf.IResolvable;
+  readonly rules: NetworkServicesGrpcRouteRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -96,32 +96,32 @@ export interface NetworkServicesGrpcRouteRulesActionDestinations {
   readonly weight?: number;
 }
 
-export function networkServicesGrpcRouteRulesActionDestinationsToTerraform(struct?: NetworkServicesGrpcRouteRulesActionDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesActionDestinationsToTerraform(struct?: NetworkServicesGrpcRouteRulesActionDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
-export function networkServicesGrpcRouteRulesActionDestinationsToHclTerraform(struct?: NetworkServicesGrpcRouteRulesActionDestinations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesActionDestinationsToHclTerraform(struct?: NetworkServicesGrpcRouteRulesActionDestinations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -132,9 +132,9 @@ export function networkServicesGrpcRouteRulesActionDestinationsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesActionDestinationsOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesActionDestinationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -142,11 +142,11 @@ export class NetworkServicesGrpcRouteRulesActionDestinationsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesGrpcRouteRulesActionDestinations | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesGrpcRouteRulesActionDestinations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -163,14 +163,14 @@ export class NetworkServicesGrpcRouteRulesActionDestinationsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesGrpcRouteRulesActionDestinations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesGrpcRouteRulesActionDestinations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._serviceName = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -215,15 +215,15 @@ export class NetworkServicesGrpcRouteRulesActionDestinationsOutputReference exte
   }
 }
 
-export class NetworkServicesGrpcRouteRulesActionDestinationsList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesGrpcRouteRulesActionDestinations[] | cdktf.IResolvable
+export class NetworkServicesGrpcRouteRulesActionDestinationsList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesGrpcRouteRulesActionDestinations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -250,31 +250,31 @@ export interface NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort {
 }
 
 export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortToTerraform(struct?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference | NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    http_status: cdktf.numberToTerraform(struct!.httpStatus),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    http_status: cdktn.numberToTerraform(struct!.httpStatus),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
   }
 }
 
 
 export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortToHclTerraform(struct?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference | NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     http_status: {
-      value: cdktf.numberToHclTerraform(struct!.httpStatus),
+      value: cdktn.numberToHclTerraform(struct!.httpStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -285,14 +285,14 @@ export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyAbortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -371,31 +371,31 @@ export interface NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay {
 }
 
 export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayToTerraform(struct?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference | NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fixed_delay: cdktf.stringToTerraform(struct!.fixedDelay),
-    percentage: cdktf.numberToTerraform(struct!.percentage),
+    fixed_delay: cdktn.stringToTerraform(struct!.fixedDelay),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
   }
 }
 
 
 export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayToHclTerraform(struct?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference | NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fixed_delay: {
-      value: cdktf.stringToHclTerraform(struct!.fixedDelay),
+      value: cdktn.stringToHclTerraform(struct!.fixedDelay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -406,14 +406,14 @@ export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyDelayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -492,8 +492,8 @@ export interface NetworkServicesGrpcRouteRulesActionFaultInjectionPolicy {
 }
 
 export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyToTerraform(struct?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference | NetworkServicesGrpcRouteRulesActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -504,8 +504,8 @@ export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyToTerrafo
 
 
 export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyToHclTerraform(struct?: NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference | NetworkServicesGrpcRouteRulesActionFaultInjectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -527,14 +527,14 @@ export function networkServicesGrpcRouteRulesActionFaultInjectionPolicyToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesActionFaultInjectionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -613,31 +613,31 @@ export interface NetworkServicesGrpcRouteRulesActionRetryPolicy {
 }
 
 export function networkServicesGrpcRouteRulesActionRetryPolicyToTerraform(struct?: NetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference | NetworkServicesGrpcRouteRulesActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    num_retries: cdktf.numberToTerraform(struct!.numRetries),
-    retry_conditions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.retryConditions),
+    num_retries: cdktn.numberToTerraform(struct!.numRetries),
+    retry_conditions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.retryConditions),
   }
 }
 
 
 export function networkServicesGrpcRouteRulesActionRetryPolicyToHclTerraform(struct?: NetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference | NetworkServicesGrpcRouteRulesActionRetryPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     num_retries: {
-      value: cdktf.numberToHclTerraform(struct!.numRetries),
+      value: cdktn.numberToHclTerraform(struct!.numRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_conditions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.retryConditions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.retryConditions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -648,14 +648,14 @@ export function networkServicesGrpcRouteRulesActionRetryPolicyToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesActionRetryPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -730,7 +730,7 @@ export interface NetworkServicesGrpcRouteRulesAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_grpc_route#destinations NetworkServicesGrpcRoute#destinations}
   */
-  readonly destinations?: NetworkServicesGrpcRouteRulesActionDestinations[] | cdktf.IResolvable;
+  readonly destinations?: NetworkServicesGrpcRouteRulesActionDestinations[] | cdktn.IResolvable;
   /**
   * fault_injection_policy block
   *
@@ -746,13 +746,13 @@ export interface NetworkServicesGrpcRouteRulesAction {
 }
 
 export function networkServicesGrpcRouteRulesActionToTerraform(struct?: NetworkServicesGrpcRouteRulesActionOutputReference | NetworkServicesGrpcRouteRulesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    timeout: cdktf.stringToTerraform(struct!.timeout),
-    destinations: cdktf.listMapper(networkServicesGrpcRouteRulesActionDestinationsToTerraform, true)(struct!.destinations),
+    timeout: cdktn.stringToTerraform(struct!.timeout),
+    destinations: cdktn.listMapper(networkServicesGrpcRouteRulesActionDestinationsToTerraform, true)(struct!.destinations),
     fault_injection_policy: networkServicesGrpcRouteRulesActionFaultInjectionPolicyToTerraform(struct!.faultInjectionPolicy),
     retry_policy: networkServicesGrpcRouteRulesActionRetryPolicyToTerraform(struct!.retryPolicy),
   }
@@ -760,19 +760,19 @@ export function networkServicesGrpcRouteRulesActionToTerraform(struct?: NetworkS
 
 
 export function networkServicesGrpcRouteRulesActionToHclTerraform(struct?: NetworkServicesGrpcRouteRulesActionOutputReference | NetworkServicesGrpcRouteRulesAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     timeout: {
-      value: cdktf.stringToHclTerraform(struct!.timeout),
+      value: cdktn.stringToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destinations: {
-      value: cdktf.listMapperHcl(networkServicesGrpcRouteRulesActionDestinationsToHclTerraform, true)(struct!.destinations),
+      value: cdktn.listMapperHcl(networkServicesGrpcRouteRulesActionDestinationsToHclTerraform, true)(struct!.destinations),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkServicesGrpcRouteRulesActionDestinationsList",
@@ -795,14 +795,14 @@ export function networkServicesGrpcRouteRulesActionToHclTerraform(struct?: Netwo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesActionOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -866,7 +866,7 @@ export class NetworkServicesGrpcRouteRulesActionOutputReference extends cdktf.Co
   public get destinations() {
     return this._destinations;
   }
-  public putDestinations(value: NetworkServicesGrpcRouteRulesActionDestinations[] | cdktf.IResolvable) {
+  public putDestinations(value: NetworkServicesGrpcRouteRulesActionDestinations[] | cdktn.IResolvable) {
     this._destinations.internalValue = value;
   }
   public resetDestinations() {
@@ -930,39 +930,39 @@ export interface NetworkServicesGrpcRouteRulesMatchesHeaders {
   readonly value: string;
 }
 
-export function networkServicesGrpcRouteRulesMatchesHeadersToTerraform(struct?: NetworkServicesGrpcRouteRulesMatchesHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesMatchesHeadersToTerraform(struct?: NetworkServicesGrpcRouteRulesMatchesHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function networkServicesGrpcRouteRulesMatchesHeadersToHclTerraform(struct?: NetworkServicesGrpcRouteRulesMatchesHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesMatchesHeadersToHclTerraform(struct?: NetworkServicesGrpcRouteRulesMatchesHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -973,9 +973,9 @@ export function networkServicesGrpcRouteRulesMatchesHeadersToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesMatchesHeadersOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesMatchesHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -983,11 +983,11 @@ export class NetworkServicesGrpcRouteRulesMatchesHeadersOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesGrpcRouteRulesMatchesHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesGrpcRouteRulesMatchesHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1008,7 +1008,7 @@ export class NetworkServicesGrpcRouteRulesMatchesHeadersOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesGrpcRouteRulesMatchesHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesGrpcRouteRulesMatchesHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1016,7 +1016,7 @@ export class NetworkServicesGrpcRouteRulesMatchesHeadersOutputReference extends 
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1072,15 +1072,15 @@ export class NetworkServicesGrpcRouteRulesMatchesHeadersOutputReference extends 
   }
 }
 
-export class NetworkServicesGrpcRouteRulesMatchesHeadersList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesGrpcRouteRulesMatchesHeaders[] | cdktf.IResolvable
+export class NetworkServicesGrpcRouteRulesMatchesHeadersList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesGrpcRouteRulesMatchesHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1097,7 +1097,7 @@ export interface NetworkServicesGrpcRouteRulesMatchesMethod {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_grpc_route#case_sensitive NetworkServicesGrpcRoute#case_sensitive}
   */
-  readonly caseSensitive?: boolean | cdktf.IResolvable;
+  readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
   * Required. Name of the method to match against.
   *
@@ -1113,38 +1113,38 @@ export interface NetworkServicesGrpcRouteRulesMatchesMethod {
 }
 
 export function networkServicesGrpcRouteRulesMatchesMethodToTerraform(struct?: NetworkServicesGrpcRouteRulesMatchesMethodOutputReference | NetworkServicesGrpcRouteRulesMatchesMethod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    case_sensitive: cdktf.booleanToTerraform(struct!.caseSensitive),
-    grpc_method: cdktf.stringToTerraform(struct!.grpcMethod),
-    grpc_service: cdktf.stringToTerraform(struct!.grpcService),
+    case_sensitive: cdktn.booleanToTerraform(struct!.caseSensitive),
+    grpc_method: cdktn.stringToTerraform(struct!.grpcMethod),
+    grpc_service: cdktn.stringToTerraform(struct!.grpcService),
   }
 }
 
 
 export function networkServicesGrpcRouteRulesMatchesMethodToHclTerraform(struct?: NetworkServicesGrpcRouteRulesMatchesMethodOutputReference | NetworkServicesGrpcRouteRulesMatchesMethod): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     case_sensitive: {
-      value: cdktf.booleanToHclTerraform(struct!.caseSensitive),
+      value: cdktn.booleanToHclTerraform(struct!.caseSensitive),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     grpc_method: {
-      value: cdktf.stringToHclTerraform(struct!.grpcMethod),
+      value: cdktn.stringToHclTerraform(struct!.grpcMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     grpc_service: {
-      value: cdktf.stringToHclTerraform(struct!.grpcService),
+      value: cdktn.stringToHclTerraform(struct!.grpcService),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1155,14 +1155,14 @@ export function networkServicesGrpcRouteRulesMatchesMethodToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesMatchesMethodOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesMatchesMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1200,11 +1200,11 @@ export class NetworkServicesGrpcRouteRulesMatchesMethodOutputReference extends c
   }
 
   // case_sensitive - computed: false, optional: true, required: false
-  private _caseSensitive?: boolean | cdktf.IResolvable; 
+  private _caseSensitive?: boolean | cdktn.IResolvable; 
   public get caseSensitive() {
     return this.getBooleanAttribute('case_sensitive');
   }
-  public set caseSensitive(value: boolean | cdktf.IResolvable) {
+  public set caseSensitive(value: boolean | cdktn.IResolvable) {
     this._caseSensitive = value;
   }
   public resetCaseSensitive() {
@@ -1247,7 +1247,7 @@ export interface NetworkServicesGrpcRouteRulesMatches {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_grpc_route#headers NetworkServicesGrpcRoute#headers}
   */
-  readonly headers?: NetworkServicesGrpcRouteRulesMatchesHeaders[] | cdktf.IResolvable;
+  readonly headers?: NetworkServicesGrpcRouteRulesMatchesHeaders[] | cdktn.IResolvable;
   /**
   * method block
   *
@@ -1256,26 +1256,26 @@ export interface NetworkServicesGrpcRouteRulesMatches {
   readonly method?: NetworkServicesGrpcRouteRulesMatchesMethod;
 }
 
-export function networkServicesGrpcRouteRulesMatchesToTerraform(struct?: NetworkServicesGrpcRouteRulesMatches | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesMatchesToTerraform(struct?: NetworkServicesGrpcRouteRulesMatches | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    headers: cdktf.listMapper(networkServicesGrpcRouteRulesMatchesHeadersToTerraform, true)(struct!.headers),
+    headers: cdktn.listMapper(networkServicesGrpcRouteRulesMatchesHeadersToTerraform, true)(struct!.headers),
     method: networkServicesGrpcRouteRulesMatchesMethodToTerraform(struct!.method),
   }
 }
 
 
-export function networkServicesGrpcRouteRulesMatchesToHclTerraform(struct?: NetworkServicesGrpcRouteRulesMatches | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesMatchesToHclTerraform(struct?: NetworkServicesGrpcRouteRulesMatches | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     headers: {
-      value: cdktf.listMapperHcl(networkServicesGrpcRouteRulesMatchesHeadersToHclTerraform, true)(struct!.headers),
+      value: cdktn.listMapperHcl(networkServicesGrpcRouteRulesMatchesHeadersToHclTerraform, true)(struct!.headers),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkServicesGrpcRouteRulesMatchesHeadersList",
@@ -1292,9 +1292,9 @@ export function networkServicesGrpcRouteRulesMatchesToHclTerraform(struct?: Netw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesMatchesOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesMatchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1302,11 +1302,11 @@ export class NetworkServicesGrpcRouteRulesMatchesOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesGrpcRouteRulesMatches | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesGrpcRouteRulesMatches | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1323,14 +1323,14 @@ export class NetworkServicesGrpcRouteRulesMatchesOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesGrpcRouteRulesMatches | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesGrpcRouteRulesMatches | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._headers.internalValue = undefined;
       this._method.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1347,7 +1347,7 @@ export class NetworkServicesGrpcRouteRulesMatchesOutputReference extends cdktf.C
   public get headers() {
     return this._headers;
   }
-  public putHeaders(value: NetworkServicesGrpcRouteRulesMatchesHeaders[] | cdktf.IResolvable) {
+  public putHeaders(value: NetworkServicesGrpcRouteRulesMatchesHeaders[] | cdktn.IResolvable) {
     this._headers.internalValue = value;
   }
   public resetHeaders() {
@@ -1375,15 +1375,15 @@ export class NetworkServicesGrpcRouteRulesMatchesOutputReference extends cdktf.C
   }
 }
 
-export class NetworkServicesGrpcRouteRulesMatchesList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesGrpcRouteRulesMatches[] | cdktf.IResolvable
+export class NetworkServicesGrpcRouteRulesMatchesList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesGrpcRouteRulesMatches[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1406,24 +1406,24 @@ export interface NetworkServicesGrpcRouteRules {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_grpc_route#matches NetworkServicesGrpcRoute#matches}
   */
-  readonly matches?: NetworkServicesGrpcRouteRulesMatches[] | cdktf.IResolvable;
+  readonly matches?: NetworkServicesGrpcRouteRulesMatches[] | cdktn.IResolvable;
 }
 
-export function networkServicesGrpcRouteRulesToTerraform(struct?: NetworkServicesGrpcRouteRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesToTerraform(struct?: NetworkServicesGrpcRouteRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     action: networkServicesGrpcRouteRulesActionToTerraform(struct!.action),
-    matches: cdktf.listMapper(networkServicesGrpcRouteRulesMatchesToTerraform, true)(struct!.matches),
+    matches: cdktn.listMapper(networkServicesGrpcRouteRulesMatchesToTerraform, true)(struct!.matches),
   }
 }
 
 
-export function networkServicesGrpcRouteRulesToHclTerraform(struct?: NetworkServicesGrpcRouteRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteRulesToHclTerraform(struct?: NetworkServicesGrpcRouteRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1434,7 +1434,7 @@ export function networkServicesGrpcRouteRulesToHclTerraform(struct?: NetworkServ
       storageClassType: "NetworkServicesGrpcRouteRulesActionList",
     },
     matches: {
-      value: cdktf.listMapperHcl(networkServicesGrpcRouteRulesMatchesToHclTerraform, true)(struct!.matches),
+      value: cdktn.listMapperHcl(networkServicesGrpcRouteRulesMatchesToHclTerraform, true)(struct!.matches),
       isBlock: true,
       type: "list",
       storageClassType: "NetworkServicesGrpcRouteRulesMatchesList",
@@ -1445,9 +1445,9 @@ export function networkServicesGrpcRouteRulesToHclTerraform(struct?: NetworkServ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteRulesOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1455,11 +1455,11 @@ export class NetworkServicesGrpcRouteRulesOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkServicesGrpcRouteRules | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesGrpcRouteRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1476,14 +1476,14 @@ export class NetworkServicesGrpcRouteRulesOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesGrpcRouteRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesGrpcRouteRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action.internalValue = undefined;
       this._matches.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1516,7 +1516,7 @@ export class NetworkServicesGrpcRouteRulesOutputReference extends cdktf.ComplexO
   public get matches() {
     return this._matches;
   }
-  public putMatches(value: NetworkServicesGrpcRouteRulesMatches[] | cdktf.IResolvable) {
+  public putMatches(value: NetworkServicesGrpcRouteRulesMatches[] | cdktn.IResolvable) {
     this._matches.internalValue = value;
   }
   public resetMatches() {
@@ -1528,15 +1528,15 @@ export class NetworkServicesGrpcRouteRulesOutputReference extends cdktf.ComplexO
   }
 }
 
-export class NetworkServicesGrpcRouteRulesList extends cdktf.ComplexList {
-  public internalValue? : NetworkServicesGrpcRouteRules[] | cdktf.IResolvable
+export class NetworkServicesGrpcRouteRulesList extends cdktn.ComplexList {
+  public internalValue? : NetworkServicesGrpcRouteRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1562,39 +1562,39 @@ export interface NetworkServicesGrpcRouteTimeouts {
   readonly update?: string;
 }
 
-export function networkServicesGrpcRouteTimeoutsToTerraform(struct?: NetworkServicesGrpcRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteTimeoutsToTerraform(struct?: NetworkServicesGrpcRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkServicesGrpcRouteTimeoutsToHclTerraform(struct?: NetworkServicesGrpcRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkServicesGrpcRouteTimeoutsToHclTerraform(struct?: NetworkServicesGrpcRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1605,19 +1605,19 @@ export function networkServicesGrpcRouteTimeoutsToHclTerraform(struct?: NetworkS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkServicesGrpcRouteTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkServicesGrpcRouteTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkServicesGrpcRouteTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkServicesGrpcRouteTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1638,7 +1638,7 @@ export class NetworkServicesGrpcRouteTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkServicesGrpcRouteTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkServicesGrpcRouteTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1646,7 +1646,7 @@ export class NetworkServicesGrpcRouteTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1711,7 +1711,7 @@ export class NetworkServicesGrpcRouteTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_grpc_route google_network_services_grpc_route}
 */
-export class NetworkServicesGrpcRoute extends cdktf.TerraformResource {
+export class NetworkServicesGrpcRoute extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1722,14 +1722,14 @@ export class NetworkServicesGrpcRoute extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkServicesGrpcRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkServicesGrpcRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesGrpcRoute to import
   * @param importFromId The id of the existing NetworkServicesGrpcRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_grpc_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesGrpcRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_grpc_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_network_services_grpc_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -1798,7 +1798,7 @@ export class NetworkServicesGrpcRoute extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -1931,7 +1931,7 @@ export class NetworkServicesGrpcRoute extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -1946,7 +1946,7 @@ export class NetworkServicesGrpcRoute extends cdktf.TerraformResource {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: NetworkServicesGrpcRouteRules[] | cdktf.IResolvable) {
+  public putRules(value: NetworkServicesGrpcRouteRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1976,16 +1976,16 @@ export class NetworkServicesGrpcRoute extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      gateways: cdktf.listMapper(cdktf.stringToTerraform, false)(this._gateways),
-      hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostnames),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      meshes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._meshes),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
-      rules: cdktf.listMapper(networkServicesGrpcRouteRulesToTerraform, true)(this._rules.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      gateways: cdktn.listMapper(cdktn.stringToTerraform, false)(this._gateways),
+      hostnames: cdktn.listMapper(cdktn.stringToTerraform, false)(this._hostnames),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      meshes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._meshes),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
+      rules: cdktn.listMapper(networkServicesGrpcRouteRulesToTerraform, true)(this._rules.internalValue),
       timeouts: networkServicesGrpcRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1993,61 +1993,61 @@ export class NetworkServicesGrpcRoute extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateways: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._gateways),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._gateways),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       hostnames: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostnames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._hostnames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       meshes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._meshes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._meshes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rules: {
-        value: cdktf.listMapperHcl(networkServicesGrpcRouteRulesToHclTerraform, true)(this._rules.internalValue),
+        value: cdktn.listMapperHcl(networkServicesGrpcRouteRulesToHclTerraform, true)(this._rules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkServicesGrpcRouteRulesList",

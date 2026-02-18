@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DiscoveryEngineDataStoreConfig extends cdktf.TerraformMetaArguments {
+export interface DiscoveryEngineDataStoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * The content config of the data store. Possible values: ["NO_CONTENT", "CONTENT_REQUIRED", "PUBLIC_WEBSITE"]
   *
@@ -25,7 +25,7 @@ export interface DiscoveryEngineDataStoreConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#create_advanced_site_search DiscoveryEngineDataStore#create_advanced_site_search}
   */
-  readonly createAdvancedSiteSearch?: boolean | cdktf.IResolvable;
+  readonly createAdvancedSiteSearch?: boolean | cdktn.IResolvable;
   /**
   * The unique id of the data store.
   *
@@ -85,7 +85,7 @@ export interface DiscoveryEngineDataStoreConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#skip_default_schema_creation DiscoveryEngineDataStore#skip_default_schema_creation}
   */
-  readonly skipDefaultSchemaCreation?: boolean | cdktf.IResolvable;
+  readonly skipDefaultSchemaCreation?: boolean | cdktn.IResolvable;
   /**
   * The solutions that the data store enrolls. Possible values: ["SOLUTION_TYPE_RECOMMENDATION", "SOLUTION_TYPE_SEARCH", "SOLUTION_TYPE_CHAT", "SOLUTION_TYPE_GENERATIVE_CHAT"]
   *
@@ -117,41 +117,41 @@ export interface DiscoveryEngineDataStoreAdvancedSiteSearchConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#disable_automatic_refresh DiscoveryEngineDataStore#disable_automatic_refresh}
   */
-  readonly disableAutomaticRefresh?: boolean | cdktf.IResolvable;
+  readonly disableAutomaticRefresh?: boolean | cdktn.IResolvable;
   /**
   * If set true, initial indexing is disabled for the DataStore.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#disable_initial_index DiscoveryEngineDataStore#disable_initial_index}
   */
-  readonly disableInitialIndex?: boolean | cdktf.IResolvable;
+  readonly disableInitialIndex?: boolean | cdktn.IResolvable;
 }
 
 export function discoveryEngineDataStoreAdvancedSiteSearchConfigToTerraform(struct?: DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference | DiscoveryEngineDataStoreAdvancedSiteSearchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_automatic_refresh: cdktf.booleanToTerraform(struct!.disableAutomaticRefresh),
-    disable_initial_index: cdktf.booleanToTerraform(struct!.disableInitialIndex),
+    disable_automatic_refresh: cdktn.booleanToTerraform(struct!.disableAutomaticRefresh),
+    disable_initial_index: cdktn.booleanToTerraform(struct!.disableInitialIndex),
   }
 }
 
 
 export function discoveryEngineDataStoreAdvancedSiteSearchConfigToHclTerraform(struct?: DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference | DiscoveryEngineDataStoreAdvancedSiteSearchConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_automatic_refresh: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomaticRefresh),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomaticRefresh),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_initial_index: {
-      value: cdktf.booleanToHclTerraform(struct!.disableInitialIndex),
+      value: cdktn.booleanToHclTerraform(struct!.disableInitialIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -162,14 +162,14 @@ export function discoveryEngineDataStoreAdvancedSiteSearchConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -201,11 +201,11 @@ export class DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference ext
   }
 
   // disable_automatic_refresh - computed: false, optional: true, required: false
-  private _disableAutomaticRefresh?: boolean | cdktf.IResolvable; 
+  private _disableAutomaticRefresh?: boolean | cdktn.IResolvable; 
   public get disableAutomaticRefresh() {
     return this.getBooleanAttribute('disable_automatic_refresh');
   }
-  public set disableAutomaticRefresh(value: boolean | cdktf.IResolvable) {
+  public set disableAutomaticRefresh(value: boolean | cdktn.IResolvable) {
     this._disableAutomaticRefresh = value;
   }
   public resetDisableAutomaticRefresh() {
@@ -217,11 +217,11 @@ export class DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference ext
   }
 
   // disable_initial_index - computed: false, optional: true, required: false
-  private _disableInitialIndex?: boolean | cdktf.IResolvable; 
+  private _disableInitialIndex?: boolean | cdktn.IResolvable; 
   public get disableInitialIndex() {
     return this.getBooleanAttribute('disable_initial_index');
   }
-  public set disableInitialIndex(value: boolean | cdktf.IResolvable) {
+  public set disableInitialIndex(value: boolean | cdktn.IResolvable) {
     this._disableInitialIndex = value;
   }
   public resetDisableInitialIndex() {
@@ -246,35 +246,35 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigL
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#include_ancestor_headings DiscoveryEngineDataStore#include_ancestor_headings}
   */
-  readonly includeAncestorHeadings?: boolean | cdktf.IResolvable;
+  readonly includeAncestorHeadings?: boolean | cdktn.IResolvable;
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    chunk_size: cdktf.numberToTerraform(struct!.chunkSize),
-    include_ancestor_headings: cdktf.booleanToTerraform(struct!.includeAncestorHeadings),
+    chunk_size: cdktn.numberToTerraform(struct!.chunkSize),
+    include_ancestor_headings: cdktn.booleanToTerraform(struct!.includeAncestorHeadings),
   }
 }
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     chunk_size: {
-      value: cdktf.numberToHclTerraform(struct!.chunkSize),
+      value: cdktn.numberToHclTerraform(struct!.chunkSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     include_ancestor_headings: {
-      value: cdktf.booleanToHclTerraform(struct!.includeAncestorHeadings),
+      value: cdktn.booleanToHclTerraform(struct!.includeAncestorHeadings),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -285,14 +285,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -340,11 +340,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayou
   }
 
   // include_ancestor_headings - computed: false, optional: true, required: false
-  private _includeAncestorHeadings?: boolean | cdktf.IResolvable; 
+  private _includeAncestorHeadings?: boolean | cdktn.IResolvable; 
   public get includeAncestorHeadings() {
     return this.getBooleanAttribute('include_ancestor_headings');
   }
-  public set includeAncestorHeadings(value: boolean | cdktf.IResolvable) {
+  public set includeAncestorHeadings(value: boolean | cdktn.IResolvable) {
     this._includeAncestorHeadings = value;
   }
   public resetIncludeAncestorHeadings() {
@@ -365,8 +365,8 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig 
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -376,8 +376,8 @@ export function discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigTo
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -393,14 +393,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -445,8 +445,8 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingC
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -455,8 +455,8 @@ export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingCo
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -464,14 +464,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingCo
   return attrs;
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -496,13 +496,13 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#enable_image_annotation DiscoveryEngineDataStore#enable_image_annotation}
   */
-  readonly enableImageAnnotation?: boolean | cdktf.IResolvable;
+  readonly enableImageAnnotation?: boolean | cdktn.IResolvable;
   /**
   * If true, the LLM based annotation is added to the table during parsing.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#enable_table_annotation DiscoveryEngineDataStore#enable_table_annotation}
   */
-  readonly enableTableAnnotation?: boolean | cdktf.IResolvable;
+  readonly enableTableAnnotation?: boolean | cdktn.IResolvable;
   /**
   * List of HTML classes to exclude from the parsed content.
   *
@@ -530,59 +530,59 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingC
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_image_annotation: cdktf.booleanToTerraform(struct!.enableImageAnnotation),
-    enable_table_annotation: cdktf.booleanToTerraform(struct!.enableTableAnnotation),
-    exclude_html_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeHtmlClasses),
-    exclude_html_elements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeHtmlElements),
-    exclude_html_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeHtmlIds),
-    structured_content_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.structuredContentTypes),
+    enable_image_annotation: cdktn.booleanToTerraform(struct!.enableImageAnnotation),
+    enable_table_annotation: cdktn.booleanToTerraform(struct!.enableTableAnnotation),
+    exclude_html_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeHtmlClasses),
+    exclude_html_elements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeHtmlElements),
+    exclude_html_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeHtmlIds),
+    structured_content_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.structuredContentTypes),
   }
 }
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_image_annotation: {
-      value: cdktf.booleanToHclTerraform(struct!.enableImageAnnotation),
+      value: cdktn.booleanToHclTerraform(struct!.enableImageAnnotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_table_annotation: {
-      value: cdktf.booleanToHclTerraform(struct!.enableTableAnnotation),
+      value: cdktn.booleanToHclTerraform(struct!.enableTableAnnotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     exclude_html_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeHtmlClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeHtmlClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exclude_html_elements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeHtmlElements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeHtmlElements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exclude_html_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeHtmlIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeHtmlIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     structured_content_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.structuredContentTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.structuredContentTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -593,14 +593,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -656,11 +656,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfi
   }
 
   // enable_image_annotation - computed: false, optional: true, required: false
-  private _enableImageAnnotation?: boolean | cdktf.IResolvable; 
+  private _enableImageAnnotation?: boolean | cdktn.IResolvable; 
   public get enableImageAnnotation() {
     return this.getBooleanAttribute('enable_image_annotation');
   }
-  public set enableImageAnnotation(value: boolean | cdktf.IResolvable) {
+  public set enableImageAnnotation(value: boolean | cdktn.IResolvable) {
     this._enableImageAnnotation = value;
   }
   public resetEnableImageAnnotation() {
@@ -672,11 +672,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfi
   }
 
   // enable_table_annotation - computed: false, optional: true, required: false
-  private _enableTableAnnotation?: boolean | cdktf.IResolvable; 
+  private _enableTableAnnotation?: boolean | cdktn.IResolvable; 
   public get enableTableAnnotation() {
     return this.getBooleanAttribute('enable_table_annotation');
   }
-  public set enableTableAnnotation(value: boolean | cdktf.IResolvable) {
+  public set enableTableAnnotation(value: boolean | cdktn.IResolvable) {
     this._enableTableAnnotation = value;
   }
   public resetEnableTableAnnotation() {
@@ -757,28 +757,28 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#use_native_text DiscoveryEngineDataStore#use_native_text}
   */
-  readonly useNativeText?: boolean | cdktf.IResolvable;
+  readonly useNativeText?: boolean | cdktn.IResolvable;
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    use_native_text: cdktf.booleanToTerraform(struct!.useNativeText),
+    use_native_text: cdktn.booleanToTerraform(struct!.useNativeText),
   }
 }
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     use_native_text: {
-      value: cdktf.booleanToHclTerraform(struct!.useNativeText),
+      value: cdktn.booleanToHclTerraform(struct!.useNativeText),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -789,14 +789,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -822,11 +822,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfi
   }
 
   // use_native_text - computed: false, optional: true, required: false
-  private _useNativeText?: boolean | cdktf.IResolvable; 
+  private _useNativeText?: boolean | cdktn.IResolvable; 
   public get useNativeText() {
     return this.getBooleanAttribute('use_native_text');
   }
-  public set useNativeText(value: boolean | cdktf.IResolvable) {
+  public set useNativeText(value: boolean | cdktn.IResolvable) {
     this._useNativeText = value;
   }
   public resetUseNativeText() {
@@ -859,8 +859,8 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingC
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -872,8 +872,8 @@ export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingCo
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -901,14 +901,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -997,8 +997,8 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOv
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1007,8 +1007,8 @@ export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOve
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1016,14 +1016,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOve
   return attrs;
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1048,13 +1048,13 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOv
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#enable_image_annotation DiscoveryEngineDataStore#enable_image_annotation}
   */
-  readonly enableImageAnnotation?: boolean | cdktf.IResolvable;
+  readonly enableImageAnnotation?: boolean | cdktn.IResolvable;
   /**
   * If true, the LLM based annotation is added to the table during parsing.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#enable_table_annotation DiscoveryEngineDataStore#enable_table_annotation}
   */
-  readonly enableTableAnnotation?: boolean | cdktf.IResolvable;
+  readonly enableTableAnnotation?: boolean | cdktn.IResolvable;
   /**
   * List of HTML classes to exclude from the parsed content.
   *
@@ -1082,59 +1082,59 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOv
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_image_annotation: cdktf.booleanToTerraform(struct!.enableImageAnnotation),
-    enable_table_annotation: cdktf.booleanToTerraform(struct!.enableTableAnnotation),
-    exclude_html_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeHtmlClasses),
-    exclude_html_elements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeHtmlElements),
-    exclude_html_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeHtmlIds),
-    structured_content_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.structuredContentTypes),
+    enable_image_annotation: cdktn.booleanToTerraform(struct!.enableImageAnnotation),
+    enable_table_annotation: cdktn.booleanToTerraform(struct!.enableTableAnnotation),
+    exclude_html_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeHtmlClasses),
+    exclude_html_elements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeHtmlElements),
+    exclude_html_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeHtmlIds),
+    structured_content_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.structuredContentTypes),
   }
 }
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_image_annotation: {
-      value: cdktf.booleanToHclTerraform(struct!.enableImageAnnotation),
+      value: cdktn.booleanToHclTerraform(struct!.enableImageAnnotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_table_annotation: {
-      value: cdktf.booleanToHclTerraform(struct!.enableTableAnnotation),
+      value: cdktn.booleanToHclTerraform(struct!.enableTableAnnotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     exclude_html_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeHtmlClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeHtmlClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exclude_html_elements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeHtmlElements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeHtmlElements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exclude_html_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeHtmlIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeHtmlIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     structured_content_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.structuredContentTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.structuredContentTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1145,14 +1145,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1208,11 +1208,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverri
   }
 
   // enable_image_annotation - computed: false, optional: true, required: false
-  private _enableImageAnnotation?: boolean | cdktf.IResolvable; 
+  private _enableImageAnnotation?: boolean | cdktn.IResolvable; 
   public get enableImageAnnotation() {
     return this.getBooleanAttribute('enable_image_annotation');
   }
-  public set enableImageAnnotation(value: boolean | cdktf.IResolvable) {
+  public set enableImageAnnotation(value: boolean | cdktn.IResolvable) {
     this._enableImageAnnotation = value;
   }
   public resetEnableImageAnnotation() {
@@ -1224,11 +1224,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverri
   }
 
   // enable_table_annotation - computed: false, optional: true, required: false
-  private _enableTableAnnotation?: boolean | cdktf.IResolvable; 
+  private _enableTableAnnotation?: boolean | cdktn.IResolvable; 
   public get enableTableAnnotation() {
     return this.getBooleanAttribute('enable_table_annotation');
   }
-  public set enableTableAnnotation(value: boolean | cdktf.IResolvable) {
+  public set enableTableAnnotation(value: boolean | cdktn.IResolvable) {
     this._enableTableAnnotation = value;
   }
   public resetEnableTableAnnotation() {
@@ -1309,28 +1309,28 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOv
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#use_native_text DiscoveryEngineDataStore#use_native_text}
   */
-  readonly useNativeText?: boolean | cdktf.IResolvable;
+  readonly useNativeText?: boolean | cdktn.IResolvable;
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    use_native_text: cdktf.booleanToTerraform(struct!.useNativeText),
+    use_native_text: cdktn.booleanToTerraform(struct!.useNativeText),
   }
 }
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     use_native_text: {
-      value: cdktf.booleanToHclTerraform(struct!.useNativeText),
+      value: cdktn.booleanToHclTerraform(struct!.useNativeText),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1341,14 +1341,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1374,11 +1374,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverri
   }
 
   // use_native_text - computed: false, optional: true, required: false
-  private _useNativeText?: boolean | cdktf.IResolvable; 
+  private _useNativeText?: boolean | cdktn.IResolvable; 
   public get useNativeText() {
     return this.getBooleanAttribute('use_native_text');
   }
-  public set useNativeText(value: boolean | cdktf.IResolvable) {
+  public set useNativeText(value: boolean | cdktn.IResolvable) {
     this._useNativeText = value;
   }
   public resetUseNativeText() {
@@ -1414,13 +1414,13 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOv
   readonly ocrParsingConfig?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig;
 }
 
-export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_type: cdktf.stringToTerraform(struct!.fileType),
+    file_type: cdktn.stringToTerraform(struct!.fileType),
     digital_parsing_config: discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigToTerraform(struct!.digitalParsingConfig),
     layout_parsing_config: discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigToTerraform(struct!.layoutParsingConfig),
     ocr_parsing_config: discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigToTerraform(struct!.ocrParsingConfig),
@@ -1428,14 +1428,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOve
 }
 
 
-export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_type: {
-      value: cdktf.stringToHclTerraform(struct!.fileType),
+      value: cdktn.stringToHclTerraform(struct!.fileType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1464,9 +1464,9 @@ export function discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOve
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1474,11 +1474,11 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverri
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1503,7 +1503,7 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverri
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1512,7 +1512,7 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverri
       this._layoutParsingConfig.internalValue = undefined;
       this._ocrParsingConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1588,15 +1588,15 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverri
   }
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList extends cdktf.ComplexList {
-  public internalValue? : DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktf.IResolvable
+export class DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList extends cdktn.ComplexList {
+  public internalValue? : DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1625,25 +1625,25 @@ export interface DiscoveryEngineDataStoreDocumentProcessingConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#parsing_config_overrides DiscoveryEngineDataStore#parsing_config_overrides}
   */
-  readonly parsingConfigOverrides?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktf.IResolvable;
+  readonly parsingConfigOverrides?: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktn.IResolvable;
 }
 
 export function discoveryEngineDataStoreDocumentProcessingConfigToTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     chunking_config: discoveryEngineDataStoreDocumentProcessingConfigChunkingConfigToTerraform(struct!.chunkingConfig),
     default_parsing_config: discoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigToTerraform(struct!.defaultParsingConfig),
-    parsing_config_overrides: cdktf.listMapper(discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToTerraform, true)(struct!.parsingConfigOverrides),
+    parsing_config_overrides: cdktn.listMapper(discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToTerraform, true)(struct!.parsingConfigOverrides),
   }
 }
 
 
 export function discoveryEngineDataStoreDocumentProcessingConfigToHclTerraform(struct?: DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference | DiscoveryEngineDataStoreDocumentProcessingConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1660,7 +1660,7 @@ export function discoveryEngineDataStoreDocumentProcessingConfigToHclTerraform(s
       storageClassType: "DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigList",
     },
     parsing_config_overrides: {
-      value: cdktf.listMapperHcl(discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToHclTerraform, true)(struct!.parsingConfigOverrides),
+      value: cdktn.listMapperHcl(discoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesToHclTerraform, true)(struct!.parsingConfigOverrides),
       isBlock: true,
       type: "set",
       storageClassType: "DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList",
@@ -1671,14 +1671,14 @@ export function discoveryEngineDataStoreDocumentProcessingConfigToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1757,7 +1757,7 @@ export class DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference ext
   public get parsingConfigOverrides() {
     return this._parsingConfigOverrides;
   }
-  public putParsingConfigOverrides(value: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktf.IResolvable) {
+  public putParsingConfigOverrides(value: DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides[] | cdktn.IResolvable) {
     this._parsingConfigOverrides.internalValue = value;
   }
   public resetParsingConfigOverrides() {
@@ -1783,39 +1783,39 @@ export interface DiscoveryEngineDataStoreTimeouts {
   readonly update?: string;
 }
 
-export function discoveryEngineDataStoreTimeoutsToTerraform(struct?: DiscoveryEngineDataStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineDataStoreTimeoutsToTerraform(struct?: DiscoveryEngineDataStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function discoveryEngineDataStoreTimeoutsToHclTerraform(struct?: DiscoveryEngineDataStoreTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function discoveryEngineDataStoreTimeoutsToHclTerraform(struct?: DiscoveryEngineDataStoreTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1826,19 +1826,19 @@ export function discoveryEngineDataStoreTimeoutsToHclTerraform(struct?: Discover
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DiscoveryEngineDataStoreTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DiscoveryEngineDataStoreTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DiscoveryEngineDataStoreTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DiscoveryEngineDataStoreTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1859,7 +1859,7 @@ export class DiscoveryEngineDataStoreTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DiscoveryEngineDataStoreTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DiscoveryEngineDataStoreTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1867,7 +1867,7 @@ export class DiscoveryEngineDataStoreTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1932,7 +1932,7 @@ export class DiscoveryEngineDataStoreTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store google_discovery_engine_data_store}
 */
-export class DiscoveryEngineDataStore extends cdktf.TerraformResource {
+export class DiscoveryEngineDataStore extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1943,14 +1943,14 @@ export class DiscoveryEngineDataStore extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DiscoveryEngineDataStore resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DiscoveryEngineDataStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DiscoveryEngineDataStore to import
   * @param importFromId The id of the existing DiscoveryEngineDataStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/discovery_engine_data_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DiscoveryEngineDataStore to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_discovery_engine_data_store", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_discovery_engine_data_store", importId: importFromId, provider });
       }
 
   // ===========
@@ -2014,11 +2014,11 @@ export class DiscoveryEngineDataStore extends cdktf.TerraformResource {
   }
 
   // create_advanced_site_search - computed: false, optional: true, required: false
-  private _createAdvancedSiteSearch?: boolean | cdktf.IResolvable; 
+  private _createAdvancedSiteSearch?: boolean | cdktn.IResolvable; 
   public get createAdvancedSiteSearch() {
     return this.getBooleanAttribute('create_advanced_site_search');
   }
-  public set createAdvancedSiteSearch(value: boolean | cdktf.IResolvable) {
+  public set createAdvancedSiteSearch(value: boolean | cdktn.IResolvable) {
     this._createAdvancedSiteSearch = value;
   }
   public resetCreateAdvancedSiteSearch() {
@@ -2145,11 +2145,11 @@ export class DiscoveryEngineDataStore extends cdktf.TerraformResource {
   }
 
   // skip_default_schema_creation - computed: false, optional: true, required: false
-  private _skipDefaultSchemaCreation?: boolean | cdktf.IResolvable; 
+  private _skipDefaultSchemaCreation?: boolean | cdktn.IResolvable; 
   public get skipDefaultSchemaCreation() {
     return this.getBooleanAttribute('skip_default_schema_creation');
   }
-  public set skipDefaultSchemaCreation(value: boolean | cdktf.IResolvable) {
+  public set skipDefaultSchemaCreation(value: boolean | cdktn.IResolvable) {
     this._skipDefaultSchemaCreation = value;
   }
   public resetSkipDefaultSchemaCreation() {
@@ -2230,17 +2230,17 @@ export class DiscoveryEngineDataStore extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      content_config: cdktf.stringToTerraform(this._contentConfig),
-      create_advanced_site_search: cdktf.booleanToTerraform(this._createAdvancedSiteSearch),
-      data_store_id: cdktf.stringToTerraform(this._dataStoreId),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      industry_vertical: cdktf.stringToTerraform(this._industryVertical),
-      kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      skip_default_schema_creation: cdktf.booleanToTerraform(this._skipDefaultSchemaCreation),
-      solution_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._solutionTypes),
+      content_config: cdktn.stringToTerraform(this._contentConfig),
+      create_advanced_site_search: cdktn.booleanToTerraform(this._createAdvancedSiteSearch),
+      data_store_id: cdktn.stringToTerraform(this._dataStoreId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      industry_vertical: cdktn.stringToTerraform(this._industryVertical),
+      kms_key_name: cdktn.stringToTerraform(this._kmsKeyName),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      skip_default_schema_creation: cdktn.booleanToTerraform(this._skipDefaultSchemaCreation),
+      solution_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._solutionTypes),
       advanced_site_search_config: discoveryEngineDataStoreAdvancedSiteSearchConfigToTerraform(this._advancedSiteSearchConfig.internalValue),
       document_processing_config: discoveryEngineDataStoreDocumentProcessingConfigToTerraform(this._documentProcessingConfig.internalValue),
       timeouts: discoveryEngineDataStoreTimeoutsToTerraform(this._timeouts.internalValue),
@@ -2250,67 +2250,67 @@ export class DiscoveryEngineDataStore extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       content_config: {
-        value: cdktf.stringToHclTerraform(this._contentConfig),
+        value: cdktn.stringToHclTerraform(this._contentConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_advanced_site_search: {
-        value: cdktf.booleanToHclTerraform(this._createAdvancedSiteSearch),
+        value: cdktn.booleanToHclTerraform(this._createAdvancedSiteSearch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       data_store_id: {
-        value: cdktf.stringToHclTerraform(this._dataStoreId),
+        value: cdktn.stringToHclTerraform(this._dataStoreId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       industry_vertical: {
-        value: cdktf.stringToHclTerraform(this._industryVertical),
+        value: cdktn.stringToHclTerraform(this._industryVertical),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kms_key_name: {
-        value: cdktf.stringToHclTerraform(this._kmsKeyName),
+        value: cdktn.stringToHclTerraform(this._kmsKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_default_schema_creation: {
-        value: cdktf.booleanToHclTerraform(this._skipDefaultSchemaCreation),
+        value: cdktn.booleanToHclTerraform(this._skipDefaultSchemaCreation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       solution_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._solutionTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._solutionTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

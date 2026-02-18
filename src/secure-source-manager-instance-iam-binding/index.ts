@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecureSourceManagerInstanceIamBindingConfig extends cdktf.TerraformMetaArguments {
+export interface SecureSourceManagerInstanceIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secure_source_manager_instance_iam_binding#id SecureSourceManagerInstanceIamBinding#id}
   *
@@ -62,38 +62,38 @@ export interface SecureSourceManagerInstanceIamBindingCondition {
 }
 
 export function secureSourceManagerInstanceIamBindingConditionToTerraform(struct?: SecureSourceManagerInstanceIamBindingConditionOutputReference | SecureSourceManagerInstanceIamBindingCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    title: cdktf.stringToTerraform(struct!.title),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function secureSourceManagerInstanceIamBindingConditionToHclTerraform(struct?: SecureSourceManagerInstanceIamBindingConditionOutputReference | SecureSourceManagerInstanceIamBindingCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,14 +104,14 @@ export function secureSourceManagerInstanceIamBindingConditionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecureSourceManagerInstanceIamBindingConditionOutputReference extends cdktf.ComplexObject {
+export class SecureSourceManagerInstanceIamBindingConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -194,7 +194,7 @@ export class SecureSourceManagerInstanceIamBindingConditionOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secure_source_manager_instance_iam_binding google_secure_source_manager_instance_iam_binding}
 */
-export class SecureSourceManagerInstanceIamBinding extends cdktf.TerraformResource {
+export class SecureSourceManagerInstanceIamBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -205,14 +205,14 @@ export class SecureSourceManagerInstanceIamBinding extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecureSourceManagerInstanceIamBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecureSourceManagerInstanceIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecureSourceManagerInstanceIamBinding to import
   * @param importFromId The id of the existing SecureSourceManagerInstanceIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secure_source_manager_instance_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecureSourceManagerInstanceIamBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_secure_source_manager_instance_iam_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_secure_source_manager_instance_iam_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -308,7 +308,7 @@ export class SecureSourceManagerInstanceIamBinding extends cdktf.TerraformResour
   // members - computed: false, optional: false, required: true
   private _members?: string[]; 
   public get members() {
-    return cdktf.Fn.tolist(this.getListAttribute('members'));
+    return cdktn.Fn.tolist(this.getListAttribute('members'));
   }
   public set members(value: string[]) {
     this._members = value;
@@ -369,12 +369,12 @@ export class SecureSourceManagerInstanceIamBinding extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      location: cdktf.stringToTerraform(this._location),
-      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
-      project: cdktf.stringToTerraform(this._project),
-      role: cdktf.stringToTerraform(this._role),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      location: cdktn.stringToTerraform(this._location),
+      members: cdktn.listMapper(cdktn.stringToTerraform, false)(this._members),
+      project: cdktn.stringToTerraform(this._project),
+      role: cdktn.stringToTerraform(this._role),
       condition: secureSourceManagerInstanceIamBindingConditionToTerraform(this._condition.internalValue),
     };
   }
@@ -382,37 +382,37 @@ export class SecureSourceManagerInstanceIamBinding extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       members: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._members),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._members),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

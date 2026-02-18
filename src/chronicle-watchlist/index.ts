@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChronicleWatchlistConfig extends cdktf.TerraformMetaArguments {
+export interface ChronicleWatchlistConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optional. Description of the watchlist.
   *
@@ -89,8 +89,8 @@ export interface ChronicleWatchlistEntityCount {
 }
 
 export function chronicleWatchlistEntityCountToTerraform(struct?: ChronicleWatchlistEntityCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -99,8 +99,8 @@ export function chronicleWatchlistEntityCountToTerraform(struct?: ChronicleWatch
 
 
 export function chronicleWatchlistEntityCountToHclTerraform(struct?: ChronicleWatchlistEntityCount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -108,7 +108,7 @@ export function chronicleWatchlistEntityCountToHclTerraform(struct?: ChronicleWa
   return attrs;
 }
 
-export class ChronicleWatchlistEntityCountOutputReference extends cdktf.ComplexObject {
+export class ChronicleWatchlistEntityCountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -117,7 +117,7 @@ export class ChronicleWatchlistEntityCountOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -147,14 +147,14 @@ export class ChronicleWatchlistEntityCountOutputReference extends cdktf.ComplexO
   }
 }
 
-export class ChronicleWatchlistEntityCountList extends cdktf.ComplexList {
+export class ChronicleWatchlistEntityCountList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -169,8 +169,8 @@ export interface ChronicleWatchlistEntityPopulationMechanismManual {
 }
 
 export function chronicleWatchlistEntityPopulationMechanismManualToTerraform(struct?: ChronicleWatchlistEntityPopulationMechanismManualOutputReference | ChronicleWatchlistEntityPopulationMechanismManual): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -179,8 +179,8 @@ export function chronicleWatchlistEntityPopulationMechanismManualToTerraform(str
 
 
 export function chronicleWatchlistEntityPopulationMechanismManualToHclTerraform(struct?: ChronicleWatchlistEntityPopulationMechanismManualOutputReference | ChronicleWatchlistEntityPopulationMechanismManual): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -188,14 +188,14 @@ export function chronicleWatchlistEntityPopulationMechanismManualToHclTerraform(
   return attrs;
 }
 
-export class ChronicleWatchlistEntityPopulationMechanismManualOutputReference extends cdktf.ComplexObject {
+export class ChronicleWatchlistEntityPopulationMechanismManualOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -224,8 +224,8 @@ export interface ChronicleWatchlistEntityPopulationMechanism {
 }
 
 export function chronicleWatchlistEntityPopulationMechanismToTerraform(struct?: ChronicleWatchlistEntityPopulationMechanismOutputReference | ChronicleWatchlistEntityPopulationMechanism): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -235,8 +235,8 @@ export function chronicleWatchlistEntityPopulationMechanismToTerraform(struct?: 
 
 
 export function chronicleWatchlistEntityPopulationMechanismToHclTerraform(struct?: ChronicleWatchlistEntityPopulationMechanismOutputReference | ChronicleWatchlistEntityPopulationMechanism): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -252,14 +252,14 @@ export function chronicleWatchlistEntityPopulationMechanismToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleWatchlistEntityPopulationMechanismOutputReference extends cdktf.ComplexObject {
+export class ChronicleWatchlistEntityPopulationMechanismOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -315,39 +315,39 @@ export interface ChronicleWatchlistTimeouts {
   readonly update?: string;
 }
 
-export function chronicleWatchlistTimeoutsToTerraform(struct?: ChronicleWatchlistTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleWatchlistTimeoutsToTerraform(struct?: ChronicleWatchlistTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function chronicleWatchlistTimeoutsToHclTerraform(struct?: ChronicleWatchlistTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chronicleWatchlistTimeoutsToHclTerraform(struct?: ChronicleWatchlistTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -358,19 +358,19 @@ export function chronicleWatchlistTimeoutsToHclTerraform(struct?: ChronicleWatch
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleWatchlistTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChronicleWatchlistTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChronicleWatchlistTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChronicleWatchlistTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -391,7 +391,7 @@ export class ChronicleWatchlistTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChronicleWatchlistTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChronicleWatchlistTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -399,7 +399,7 @@ export class ChronicleWatchlistTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -466,28 +466,28 @@ export interface ChronicleWatchlistWatchlistUserPreferences {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
   */
-  readonly pinned?: boolean | cdktf.IResolvable;
+  readonly pinned?: boolean | cdktn.IResolvable;
 }
 
 export function chronicleWatchlistWatchlistUserPreferencesToTerraform(struct?: ChronicleWatchlistWatchlistUserPreferencesOutputReference | ChronicleWatchlistWatchlistUserPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pinned: cdktf.booleanToTerraform(struct!.pinned),
+    pinned: cdktn.booleanToTerraform(struct!.pinned),
   }
 }
 
 
 export function chronicleWatchlistWatchlistUserPreferencesToHclTerraform(struct?: ChronicleWatchlistWatchlistUserPreferencesOutputReference | ChronicleWatchlistWatchlistUserPreferences): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     pinned: {
-      value: cdktf.booleanToHclTerraform(struct!.pinned),
+      value: cdktn.booleanToHclTerraform(struct!.pinned),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -498,14 +498,14 @@ export function chronicleWatchlistWatchlistUserPreferencesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChronicleWatchlistWatchlistUserPreferencesOutputReference extends cdktf.ComplexObject {
+export class ChronicleWatchlistWatchlistUserPreferencesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -531,11 +531,11 @@ export class ChronicleWatchlistWatchlistUserPreferencesOutputReference extends c
   }
 
   // pinned - computed: false, optional: true, required: false
-  private _pinned?: boolean | cdktf.IResolvable; 
+  private _pinned?: boolean | cdktn.IResolvable; 
   public get pinned() {
     return this.getBooleanAttribute('pinned');
   }
-  public set pinned(value: boolean | cdktf.IResolvable) {
+  public set pinned(value: boolean | cdktn.IResolvable) {
     this._pinned = value;
   }
   public resetPinned() {
@@ -550,7 +550,7 @@ export class ChronicleWatchlistWatchlistUserPreferencesOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_watchlist google_chronicle_watchlist}
 */
-export class ChronicleWatchlist extends cdktf.TerraformResource {
+export class ChronicleWatchlist extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -561,14 +561,14 @@ export class ChronicleWatchlist extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChronicleWatchlist resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChronicleWatchlist resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleWatchlist to import
   * @param importFromId The id of the existing ChronicleWatchlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_watchlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleWatchlist to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_watchlist", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_chronicle_watchlist", importId: importFromId, provider });
       }
 
   // ===========
@@ -806,14 +806,14 @@ export class ChronicleWatchlist extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      instance: cdktf.stringToTerraform(this._instance),
-      location: cdktf.stringToTerraform(this._location),
-      multiplying_factor: cdktf.numberToTerraform(this._multiplyingFactor),
-      project: cdktf.stringToTerraform(this._project),
-      watchlist_id: cdktf.stringToTerraform(this._watchlistId),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      instance: cdktn.stringToTerraform(this._instance),
+      location: cdktn.stringToTerraform(this._location),
+      multiplying_factor: cdktn.numberToTerraform(this._multiplyingFactor),
+      project: cdktn.stringToTerraform(this._project),
+      watchlist_id: cdktn.stringToTerraform(this._watchlistId),
       entity_population_mechanism: chronicleWatchlistEntityPopulationMechanismToTerraform(this._entityPopulationMechanism.internalValue),
       timeouts: chronicleWatchlistTimeoutsToTerraform(this._timeouts.internalValue),
       watchlist_user_preferences: chronicleWatchlistWatchlistUserPreferencesToTerraform(this._watchlistUserPreferences.internalValue),
@@ -823,49 +823,49 @@ export class ChronicleWatchlist extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance: {
-        value: cdktf.stringToHclTerraform(this._instance),
+        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multiplying_factor: {
-        value: cdktf.numberToHclTerraform(this._multiplyingFactor),
+        value: cdktn.numberToHclTerraform(this._multiplyingFactor),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       watchlist_id: {
-        value: cdktf.stringToHclTerraform(this._watchlistId),
+        value: cdktn.stringToHclTerraform(this._watchlistId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

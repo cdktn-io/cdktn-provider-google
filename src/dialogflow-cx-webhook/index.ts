@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DialogflowCxWebhookConfig extends cdktf.TerraformMetaArguments {
+export interface DialogflowCxWebhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the webhook is disabled.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#disabled DialogflowCxWebhook#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * The human-readable name of the webhook, unique within the agent.
   *
@@ -29,13 +29,13 @@ export interface DialogflowCxWebhookConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#enable_spell_correction DialogflowCxWebhook#enable_spell_correction}
   */
-  readonly enableSpellCorrection?: boolean | cdktf.IResolvable;
+  readonly enableSpellCorrection?: boolean | cdktn.IResolvable;
   /**
   * Deprecated. Determines whether this agent should log conversation queries.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#enable_stackdriver_logging DialogflowCxWebhook#enable_stackdriver_logging}
   */
-  readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
+  readonly enableStackdriverLogging?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#id DialogflowCxWebhook#id}
   *
@@ -121,52 +121,52 @@ export interface DialogflowCxWebhookGenericWebServiceOauthConfig {
 }
 
 export function dialogflowCxWebhookGenericWebServiceOauthConfigToTerraform(struct?: DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference | DialogflowCxWebhookGenericWebServiceOauthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
-    secret_version_for_client_secret: cdktf.stringToTerraform(struct!.secretVersionForClientSecret),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
+    secret_version_for_client_secret: cdktn.stringToTerraform(struct!.secretVersionForClientSecret),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
   }
 }
 
 
 export function dialogflowCxWebhookGenericWebServiceOauthConfigToHclTerraform(struct?: DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference | DialogflowCxWebhookGenericWebServiceOauthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     secret_version_for_client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersionForClientSecret),
+      value: cdktn.stringToHclTerraform(struct!.secretVersionForClientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -177,14 +177,14 @@ export function dialogflowCxWebhookGenericWebServiceOauthConfigToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -321,32 +321,32 @@ export interface DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHea
   readonly secretVersion: string;
 }
 
-export function dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToTerraform(struct?: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToTerraform(struct?: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    key: cdktn.stringToTerraform(struct!.key),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
-export function dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform(struct?: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform(struct?: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -357,9 +357,9 @@ export function dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHead
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -367,11 +367,11 @@ export class DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -388,14 +388,14 @@ export class DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._secretVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -434,15 +434,15 @@ export class DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders
   }
 }
 
-export class DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable
+export class DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -537,86 +537,86 @@ export interface DialogflowCxWebhookGenericWebService {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_versions_for_request_headers DialogflowCxWebhook#secret_versions_for_request_headers}
   */
-  readonly secretVersionsForRequestHeaders?: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable;
+  readonly secretVersionsForRequestHeaders?: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktn.IResolvable;
 }
 
 export function dialogflowCxWebhookGenericWebServiceToTerraform(struct?: DialogflowCxWebhookGenericWebServiceOutputReference | DialogflowCxWebhookGenericWebService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_ca_certs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedCaCerts),
-    http_method: cdktf.stringToTerraform(struct!.httpMethod),
-    parameter_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameterMapping),
-    request_body: cdktf.stringToTerraform(struct!.requestBody),
-    request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestHeaders),
-    secret_version_for_username_password: cdktf.stringToTerraform(struct!.secretVersionForUsernamePassword),
-    service_agent_auth: cdktf.stringToTerraform(struct!.serviceAgentAuth),
-    uri: cdktf.stringToTerraform(struct!.uri),
-    webhook_type: cdktf.stringToTerraform(struct!.webhookType),
+    allowed_ca_certs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedCaCerts),
+    http_method: cdktn.stringToTerraform(struct!.httpMethod),
+    parameter_mapping: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameterMapping),
+    request_body: cdktn.stringToTerraform(struct!.requestBody),
+    request_headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requestHeaders),
+    secret_version_for_username_password: cdktn.stringToTerraform(struct!.secretVersionForUsernamePassword),
+    service_agent_auth: cdktn.stringToTerraform(struct!.serviceAgentAuth),
+    uri: cdktn.stringToTerraform(struct!.uri),
+    webhook_type: cdktn.stringToTerraform(struct!.webhookType),
     oauth_config: dialogflowCxWebhookGenericWebServiceOauthConfigToTerraform(struct!.oauthConfig),
-    secret_versions_for_request_headers: cdktf.listMapper(dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToTerraform, true)(struct!.secretVersionsForRequestHeaders),
+    secret_versions_for_request_headers: cdktn.listMapper(dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToTerraform, true)(struct!.secretVersionsForRequestHeaders),
   }
 }
 
 
 export function dialogflowCxWebhookGenericWebServiceToHclTerraform(struct?: DialogflowCxWebhookGenericWebServiceOutputReference | DialogflowCxWebhookGenericWebService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_ca_certs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedCaCerts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedCaCerts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     http_method: {
-      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      value: cdktn.stringToHclTerraform(struct!.httpMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_mapping: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameterMapping),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameterMapping),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     request_body: {
-      value: cdktf.stringToHclTerraform(struct!.requestBody),
+      value: cdktn.stringToHclTerraform(struct!.requestBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request_headers: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requestHeaders),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     secret_version_for_username_password: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersionForUsernamePassword),
+      value: cdktn.stringToHclTerraform(struct!.secretVersionForUsernamePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_agent_auth: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAgentAuth),
+      value: cdktn.stringToHclTerraform(struct!.serviceAgentAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook_type: {
-      value: cdktf.stringToHclTerraform(struct!.webhookType),
+      value: cdktn.stringToHclTerraform(struct!.webhookType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -628,7 +628,7 @@ export function dialogflowCxWebhookGenericWebServiceToHclTerraform(struct?: Dial
       storageClassType: "DialogflowCxWebhookGenericWebServiceOauthConfigList",
     },
     secret_versions_for_request_headers: {
-      value: cdktf.listMapperHcl(dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform, true)(struct!.secretVersionsForRequestHeaders),
+      value: cdktn.listMapperHcl(dialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform, true)(struct!.secretVersionsForRequestHeaders),
       isBlock: true,
       type: "set",
       storageClassType: "DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList",
@@ -639,14 +639,14 @@ export function dialogflowCxWebhookGenericWebServiceToHclTerraform(struct?: Dial
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookGenericWebServiceOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookGenericWebServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -893,7 +893,7 @@ export class DialogflowCxWebhookGenericWebServiceOutputReference extends cdktf.C
   public get secretVersionsForRequestHeaders() {
     return this._secretVersionsForRequestHeaders;
   }
-  public putSecretVersionsForRequestHeaders(value: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable) {
+  public putSecretVersionsForRequestHeaders(value: DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders[] | cdktn.IResolvable) {
     this._secretVersionsForRequestHeaders.internalValue = value;
   }
   public resetSecretVersionsForRequestHeaders() {
@@ -944,52 +944,52 @@ export interface DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig
 }
 
 export function dialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigToTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference | DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
-    secret_version_for_client_secret: cdktf.stringToTerraform(struct!.secretVersionForClientSecret),
-    token_endpoint: cdktf.stringToTerraform(struct!.tokenEndpoint),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scopes),
+    secret_version_for_client_secret: cdktn.stringToTerraform(struct!.secretVersionForClientSecret),
+    token_endpoint: cdktn.stringToTerraform(struct!.tokenEndpoint),
   }
 }
 
 
 export function dialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigToHclTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference | DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scopes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scopes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scopes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     secret_version_for_client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersionForClientSecret),
+      value: cdktn.stringToHclTerraform(struct!.secretVersionForClientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.tokenEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.tokenEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1000,14 +1000,14 @@ export function dialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1144,32 +1144,32 @@ export interface DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersi
   readonly secretVersion: string;
 }
 
-export function dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    key: cdktn.stringToTerraform(struct!.key),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
-export function dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1180,9 +1180,9 @@ export function dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1190,11 +1190,11 @@ export class DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsF
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1211,14 +1211,14 @@ export class DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsF
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._secretVersion = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1257,15 +1257,15 @@ export class DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsF
   }
 }
 
-export class DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList extends cdktf.ComplexList {
-  public internalValue? : DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable
+export class DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList extends cdktn.ComplexList {
+  public internalValue? : DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1360,86 +1360,86 @@ export interface DialogflowCxWebhookServiceDirectoryGenericWebService {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_versions_for_request_headers DialogflowCxWebhook#secret_versions_for_request_headers}
   */
-  readonly secretVersionsForRequestHeaders?: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable;
+  readonly secretVersionsForRequestHeaders?: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktn.IResolvable;
 }
 
 export function dialogflowCxWebhookServiceDirectoryGenericWebServiceToTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference | DialogflowCxWebhookServiceDirectoryGenericWebService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_ca_certs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedCaCerts),
-    http_method: cdktf.stringToTerraform(struct!.httpMethod),
-    parameter_mapping: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameterMapping),
-    request_body: cdktf.stringToTerraform(struct!.requestBody),
-    request_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.requestHeaders),
-    secret_version_for_username_password: cdktf.stringToTerraform(struct!.secretVersionForUsernamePassword),
-    service_agent_auth: cdktf.stringToTerraform(struct!.serviceAgentAuth),
-    uri: cdktf.stringToTerraform(struct!.uri),
-    webhook_type: cdktf.stringToTerraform(struct!.webhookType),
+    allowed_ca_certs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedCaCerts),
+    http_method: cdktn.stringToTerraform(struct!.httpMethod),
+    parameter_mapping: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameterMapping),
+    request_body: cdktn.stringToTerraform(struct!.requestBody),
+    request_headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.requestHeaders),
+    secret_version_for_username_password: cdktn.stringToTerraform(struct!.secretVersionForUsernamePassword),
+    service_agent_auth: cdktn.stringToTerraform(struct!.serviceAgentAuth),
+    uri: cdktn.stringToTerraform(struct!.uri),
+    webhook_type: cdktn.stringToTerraform(struct!.webhookType),
     oauth_config: dialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigToTerraform(struct!.oauthConfig),
-    secret_versions_for_request_headers: cdktf.listMapper(dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToTerraform, true)(struct!.secretVersionsForRequestHeaders),
+    secret_versions_for_request_headers: cdktn.listMapper(dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToTerraform, true)(struct!.secretVersionsForRequestHeaders),
   }
 }
 
 
 export function dialogflowCxWebhookServiceDirectoryGenericWebServiceToHclTerraform(struct?: DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference | DialogflowCxWebhookServiceDirectoryGenericWebService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_ca_certs: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedCaCerts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedCaCerts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     http_method: {
-      value: cdktf.stringToHclTerraform(struct!.httpMethod),
+      value: cdktn.stringToHclTerraform(struct!.httpMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameter_mapping: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameterMapping),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameterMapping),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     request_body: {
-      value: cdktf.stringToHclTerraform(struct!.requestBody),
+      value: cdktn.stringToHclTerraform(struct!.requestBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request_headers: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.requestHeaders),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.requestHeaders),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     secret_version_for_username_password: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersionForUsernamePassword),
+      value: cdktn.stringToHclTerraform(struct!.secretVersionForUsernamePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_agent_auth: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAgentAuth),
+      value: cdktn.stringToHclTerraform(struct!.serviceAgentAuth),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook_type: {
-      value: cdktf.stringToHclTerraform(struct!.webhookType),
+      value: cdktn.stringToHclTerraform(struct!.webhookType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1451,7 +1451,7 @@ export function dialogflowCxWebhookServiceDirectoryGenericWebServiceToHclTerrafo
       storageClassType: "DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigList",
     },
     secret_versions_for_request_headers: {
-      value: cdktf.listMapperHcl(dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform, true)(struct!.secretVersionsForRequestHeaders),
+      value: cdktn.listMapperHcl(dialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersToHclTerraform, true)(struct!.secretVersionsForRequestHeaders),
       isBlock: true,
       type: "set",
       storageClassType: "DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList",
@@ -1462,14 +1462,14 @@ export function dialogflowCxWebhookServiceDirectoryGenericWebServiceToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1716,7 +1716,7 @@ export class DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference
   public get secretVersionsForRequestHeaders() {
     return this._secretVersionsForRequestHeaders;
   }
-  public putSecretVersionsForRequestHeaders(value: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktf.IResolvable) {
+  public putSecretVersionsForRequestHeaders(value: DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders[] | cdktn.IResolvable) {
     this._secretVersionsForRequestHeaders.internalValue = value;
   }
   public resetSecretVersionsForRequestHeaders() {
@@ -1743,25 +1743,25 @@ export interface DialogflowCxWebhookServiceDirectory {
 }
 
 export function dialogflowCxWebhookServiceDirectoryToTerraform(struct?: DialogflowCxWebhookServiceDirectoryOutputReference | DialogflowCxWebhookServiceDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    service: cdktf.stringToTerraform(struct!.service),
+    service: cdktn.stringToTerraform(struct!.service),
     generic_web_service: dialogflowCxWebhookServiceDirectoryGenericWebServiceToTerraform(struct!.genericWebService),
   }
 }
 
 
 export function dialogflowCxWebhookServiceDirectoryToHclTerraform(struct?: DialogflowCxWebhookServiceDirectoryOutputReference | DialogflowCxWebhookServiceDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1778,14 +1778,14 @@ export function dialogflowCxWebhookServiceDirectoryToHclTerraform(struct?: Dialo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookServiceDirectoryOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookServiceDirectoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1860,39 +1860,39 @@ export interface DialogflowCxWebhookTimeouts {
   readonly update?: string;
 }
 
-export function dialogflowCxWebhookTimeoutsToTerraform(struct?: DialogflowCxWebhookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxWebhookTimeoutsToTerraform(struct?: DialogflowCxWebhookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dialogflowCxWebhookTimeoutsToHclTerraform(struct?: DialogflowCxWebhookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dialogflowCxWebhookTimeoutsToHclTerraform(struct?: DialogflowCxWebhookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1903,19 +1903,19 @@ export function dialogflowCxWebhookTimeoutsToHclTerraform(struct?: DialogflowCxW
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DialogflowCxWebhookTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DialogflowCxWebhookTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DialogflowCxWebhookTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DialogflowCxWebhookTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1936,7 +1936,7 @@ export class DialogflowCxWebhookTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DialogflowCxWebhookTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DialogflowCxWebhookTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1944,7 +1944,7 @@ export class DialogflowCxWebhookTimeoutsOutputReference extends cdktf.ComplexObj
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2009,7 +2009,7 @@ export class DialogflowCxWebhookTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook google_dialogflow_cx_webhook}
 */
-export class DialogflowCxWebhook extends cdktf.TerraformResource {
+export class DialogflowCxWebhook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2020,14 +2020,14 @@ export class DialogflowCxWebhook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DialogflowCxWebhook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DialogflowCxWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowCxWebhook to import
   * @param importFromId The id of the existing DialogflowCxWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowCxWebhook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_webhook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_dialogflow_cx_webhook", importId: importFromId, provider });
       }
 
   // ===========
@@ -2075,11 +2075,11 @@ export class DialogflowCxWebhook extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -2104,11 +2104,11 @@ export class DialogflowCxWebhook extends cdktf.TerraformResource {
   }
 
   // enable_spell_correction - computed: false, optional: true, required: false
-  private _enableSpellCorrection?: boolean | cdktf.IResolvable; 
+  private _enableSpellCorrection?: boolean | cdktn.IResolvable; 
   public get enableSpellCorrection() {
     return this.getBooleanAttribute('enable_spell_correction');
   }
-  public set enableSpellCorrection(value: boolean | cdktf.IResolvable) {
+  public set enableSpellCorrection(value: boolean | cdktn.IResolvable) {
     this._enableSpellCorrection = value;
   }
   public resetEnableSpellCorrection() {
@@ -2120,11 +2120,11 @@ export class DialogflowCxWebhook extends cdktf.TerraformResource {
   }
 
   // enable_stackdriver_logging - computed: false, optional: true, required: false
-  private _enableStackdriverLogging?: boolean | cdktf.IResolvable; 
+  private _enableStackdriverLogging?: boolean | cdktn.IResolvable; 
   public get enableStackdriverLogging() {
     return this.getBooleanAttribute('enable_stackdriver_logging');
   }
-  public set enableStackdriverLogging(value: boolean | cdktf.IResolvable) {
+  public set enableStackdriverLogging(value: boolean | cdktn.IResolvable) {
     this._enableStackdriverLogging = value;
   }
   public resetEnableStackdriverLogging() {
@@ -2263,14 +2263,14 @@ export class DialogflowCxWebhook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enable_spell_correction: cdktf.booleanToTerraform(this._enableSpellCorrection),
-      enable_stackdriver_logging: cdktf.booleanToTerraform(this._enableStackdriverLogging),
-      id: cdktf.stringToTerraform(this._id),
-      parent: cdktf.stringToTerraform(this._parent),
-      security_settings: cdktf.stringToTerraform(this._securitySettings),
-      timeout: cdktf.stringToTerraform(this._timeout),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enable_spell_correction: cdktn.booleanToTerraform(this._enableSpellCorrection),
+      enable_stackdriver_logging: cdktn.booleanToTerraform(this._enableStackdriverLogging),
+      id: cdktn.stringToTerraform(this._id),
+      parent: cdktn.stringToTerraform(this._parent),
+      security_settings: cdktn.stringToTerraform(this._securitySettings),
+      timeout: cdktn.stringToTerraform(this._timeout),
       generic_web_service: dialogflowCxWebhookGenericWebServiceToTerraform(this._genericWebService.internalValue),
       service_directory: dialogflowCxWebhookServiceDirectoryToTerraform(this._serviceDirectory.internalValue),
       timeouts: dialogflowCxWebhookTimeoutsToTerraform(this._timeouts.internalValue),
@@ -2280,49 +2280,49 @@ export class DialogflowCxWebhook extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_spell_correction: {
-        value: cdktf.booleanToHclTerraform(this._enableSpellCorrection),
+        value: cdktn.booleanToHclTerraform(this._enableSpellCorrection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_stackdriver_logging: {
-        value: cdktf.booleanToHclTerraform(this._enableStackdriverLogging),
+        value: cdktn.booleanToHclTerraform(this._enableStackdriverLogging),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_settings: {
-        value: cdktf.stringToHclTerraform(this._securitySettings),
+        value: cdktn.stringToHclTerraform(this._securitySettings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timeout: {
-        value: cdktf.stringToHclTerraform(this._timeout),
+        value: cdktn.stringToHclTerraform(this._timeout),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

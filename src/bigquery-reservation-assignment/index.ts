@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BigqueryReservationAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface BigqueryReservationAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456.
   *
@@ -65,32 +65,32 @@ export interface BigqueryReservationAssignmentTimeouts {
   readonly delete?: string;
 }
 
-export function bigqueryReservationAssignmentTimeoutsToTerraform(struct?: BigqueryReservationAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryReservationAssignmentTimeoutsToTerraform(struct?: BigqueryReservationAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
   }
 }
 
 
-export function bigqueryReservationAssignmentTimeoutsToHclTerraform(struct?: BigqueryReservationAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bigqueryReservationAssignmentTimeoutsToHclTerraform(struct?: BigqueryReservationAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,19 +101,19 @@ export function bigqueryReservationAssignmentTimeoutsToHclTerraform(struct?: Big
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BigqueryReservationAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BigqueryReservationAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BigqueryReservationAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BigqueryReservationAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,14 +130,14 @@ export class BigqueryReservationAssignmentTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BigqueryReservationAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BigqueryReservationAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -185,7 +185,7 @@ export class BigqueryReservationAssignmentTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}
 */
-export class BigqueryReservationAssignment extends cdktf.TerraformResource {
+export class BigqueryReservationAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -196,14 +196,14 @@ export class BigqueryReservationAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BigqueryReservationAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BigqueryReservationAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigqueryReservationAssignment to import
   * @param importFromId The id of the existing BigqueryReservationAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigqueryReservationAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_reservation_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_bigquery_reservation_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -365,12 +365,12 @@ export class BigqueryReservationAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assignee: cdktf.stringToTerraform(this._assignee),
-      id: cdktf.stringToTerraform(this._id),
-      job_type: cdktf.stringToTerraform(this._jobType),
-      location: cdktf.stringToTerraform(this._location),
-      project: cdktf.stringToTerraform(this._project),
-      reservation: cdktf.stringToTerraform(this._reservation),
+      assignee: cdktn.stringToTerraform(this._assignee),
+      id: cdktn.stringToTerraform(this._id),
+      job_type: cdktn.stringToTerraform(this._jobType),
+      location: cdktn.stringToTerraform(this._location),
+      project: cdktn.stringToTerraform(this._project),
+      reservation: cdktn.stringToTerraform(this._reservation),
       timeouts: bigqueryReservationAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -378,37 +378,37 @@ export class BigqueryReservationAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assignee: {
-        value: cdktf.stringToHclTerraform(this._assignee),
+        value: cdktn.stringToHclTerraform(this._assignee),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_type: {
-        value: cdktf.stringToHclTerraform(this._jobType),
+        value: cdktn.stringToHclTerraform(this._jobType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reservation: {
-        value: cdktf.stringToHclTerraform(this._reservation),
+        value: cdktn.stringToHclTerraform(this._reservation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

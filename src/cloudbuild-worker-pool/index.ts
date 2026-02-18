@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudbuildWorkerPoolConfig extends cdktf.TerraformMetaArguments {
+export interface CloudbuildWorkerPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * User specified annotations. See https://google.aip.dev/128#annotations for more details such as format and size limitations.
   * 
@@ -93,31 +93,31 @@ export interface CloudbuildWorkerPoolNetworkConfig {
 }
 
 export function cloudbuildWorkerPoolNetworkConfigToTerraform(struct?: CloudbuildWorkerPoolNetworkConfigOutputReference | CloudbuildWorkerPoolNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    peered_network: cdktf.stringToTerraform(struct!.peeredNetwork),
-    peered_network_ip_range: cdktf.stringToTerraform(struct!.peeredNetworkIpRange),
+    peered_network: cdktn.stringToTerraform(struct!.peeredNetwork),
+    peered_network_ip_range: cdktn.stringToTerraform(struct!.peeredNetworkIpRange),
   }
 }
 
 
 export function cloudbuildWorkerPoolNetworkConfigToHclTerraform(struct?: CloudbuildWorkerPoolNetworkConfigOutputReference | CloudbuildWorkerPoolNetworkConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     peered_network: {
-      value: cdktf.stringToHclTerraform(struct!.peeredNetwork),
+      value: cdktn.stringToHclTerraform(struct!.peeredNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     peered_network_ip_range: {
-      value: cdktf.stringToHclTerraform(struct!.peeredNetworkIpRange),
+      value: cdktn.stringToHclTerraform(struct!.peeredNetworkIpRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -128,14 +128,14 @@ export function cloudbuildWorkerPoolNetworkConfigToHclTerraform(struct?: Cloudbu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudbuildWorkerPoolNetworkConfigOutputReference extends cdktf.ComplexObject {
+export class CloudbuildWorkerPoolNetworkConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -207,35 +207,35 @@ export interface CloudbuildWorkerPoolPrivateServiceConnect {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuild_worker_pool#route_all_traffic CloudbuildWorkerPool#route_all_traffic}
   */
-  readonly routeAllTraffic?: boolean | cdktf.IResolvable;
+  readonly routeAllTraffic?: boolean | cdktn.IResolvable;
 }
 
 export function cloudbuildWorkerPoolPrivateServiceConnectToTerraform(struct?: CloudbuildWorkerPoolPrivateServiceConnectOutputReference | CloudbuildWorkerPoolPrivateServiceConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network_attachment: cdktf.stringToTerraform(struct!.networkAttachment),
-    route_all_traffic: cdktf.booleanToTerraform(struct!.routeAllTraffic),
+    network_attachment: cdktn.stringToTerraform(struct!.networkAttachment),
+    route_all_traffic: cdktn.booleanToTerraform(struct!.routeAllTraffic),
   }
 }
 
 
 export function cloudbuildWorkerPoolPrivateServiceConnectToHclTerraform(struct?: CloudbuildWorkerPoolPrivateServiceConnectOutputReference | CloudbuildWorkerPoolPrivateServiceConnect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network_attachment: {
-      value: cdktf.stringToHclTerraform(struct!.networkAttachment),
+      value: cdktn.stringToHclTerraform(struct!.networkAttachment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     route_all_traffic: {
-      value: cdktf.booleanToHclTerraform(struct!.routeAllTraffic),
+      value: cdktn.booleanToHclTerraform(struct!.routeAllTraffic),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -246,14 +246,14 @@ export function cloudbuildWorkerPoolPrivateServiceConnectToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudbuildWorkerPoolPrivateServiceConnectOutputReference extends cdktf.ComplexObject {
+export class CloudbuildWorkerPoolPrivateServiceConnectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -298,11 +298,11 @@ export class CloudbuildWorkerPoolPrivateServiceConnectOutputReference extends cd
   }
 
   // route_all_traffic - computed: false, optional: true, required: false
-  private _routeAllTraffic?: boolean | cdktf.IResolvable; 
+  private _routeAllTraffic?: boolean | cdktn.IResolvable; 
   public get routeAllTraffic() {
     return this.getBooleanAttribute('route_all_traffic');
   }
-  public set routeAllTraffic(value: boolean | cdktf.IResolvable) {
+  public set routeAllTraffic(value: boolean | cdktn.IResolvable) {
     this._routeAllTraffic = value;
   }
   public resetRouteAllTraffic() {
@@ -328,39 +328,39 @@ export interface CloudbuildWorkerPoolTimeouts {
   readonly update?: string;
 }
 
-export function cloudbuildWorkerPoolTimeoutsToTerraform(struct?: CloudbuildWorkerPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildWorkerPoolTimeoutsToTerraform(struct?: CloudbuildWorkerPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cloudbuildWorkerPoolTimeoutsToHclTerraform(struct?: CloudbuildWorkerPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudbuildWorkerPoolTimeoutsToHclTerraform(struct?: CloudbuildWorkerPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -371,19 +371,19 @@ export function cloudbuildWorkerPoolTimeoutsToHclTerraform(struct?: CloudbuildWo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudbuildWorkerPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CloudbuildWorkerPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CloudbuildWorkerPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudbuildWorkerPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -404,7 +404,7 @@ export class CloudbuildWorkerPoolTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudbuildWorkerPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudbuildWorkerPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -412,7 +412,7 @@ export class CloudbuildWorkerPoolTimeoutsOutputReference extends cdktf.ComplexOb
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -491,42 +491,42 @@ export interface CloudbuildWorkerPoolWorkerConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuild_worker_pool#no_external_ip CloudbuildWorkerPool#no_external_ip}
   */
-  readonly noExternalIp?: boolean | cdktf.IResolvable;
+  readonly noExternalIp?: boolean | cdktn.IResolvable;
 }
 
 export function cloudbuildWorkerPoolWorkerConfigToTerraform(struct?: CloudbuildWorkerPoolWorkerConfigOutputReference | CloudbuildWorkerPoolWorkerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
-    machine_type: cdktf.stringToTerraform(struct!.machineType),
-    no_external_ip: cdktf.booleanToTerraform(struct!.noExternalIp),
+    disk_size_gb: cdktn.numberToTerraform(struct!.diskSizeGb),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
+    no_external_ip: cdktn.booleanToTerraform(struct!.noExternalIp),
   }
 }
 
 
 export function cloudbuildWorkerPoolWorkerConfigToHclTerraform(struct?: CloudbuildWorkerPoolWorkerConfigOutputReference | CloudbuildWorkerPoolWorkerConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.numberToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     machine_type: {
-      value: cdktf.stringToHclTerraform(struct!.machineType),
+      value: cdktn.stringToHclTerraform(struct!.machineType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     no_external_ip: {
-      value: cdktf.booleanToHclTerraform(struct!.noExternalIp),
+      value: cdktn.booleanToHclTerraform(struct!.noExternalIp),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -537,14 +537,14 @@ export function cloudbuildWorkerPoolWorkerConfigToHclTerraform(struct?: Cloudbui
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudbuildWorkerPoolWorkerConfigOutputReference extends cdktf.ComplexObject {
+export class CloudbuildWorkerPoolWorkerConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -614,11 +614,11 @@ export class CloudbuildWorkerPoolWorkerConfigOutputReference extends cdktf.Compl
   }
 
   // no_external_ip - computed: true, optional: true, required: false
-  private _noExternalIp?: boolean | cdktf.IResolvable; 
+  private _noExternalIp?: boolean | cdktn.IResolvable; 
   public get noExternalIp() {
     return this.getBooleanAttribute('no_external_ip');
   }
-  public set noExternalIp(value: boolean | cdktf.IResolvable) {
+  public set noExternalIp(value: boolean | cdktn.IResolvable) {
     this._noExternalIp = value;
   }
   public resetNoExternalIp() {
@@ -633,7 +633,7 @@ export class CloudbuildWorkerPoolWorkerConfigOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuild_worker_pool google_cloudbuild_worker_pool}
 */
-export class CloudbuildWorkerPool extends cdktf.TerraformResource {
+export class CloudbuildWorkerPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -644,14 +644,14 @@ export class CloudbuildWorkerPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudbuildWorkerPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudbuildWorkerPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudbuildWorkerPool to import
   * @param importFromId The id of the existing CloudbuildWorkerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuild_worker_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudbuildWorkerPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuild_worker_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_cloudbuild_worker_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -740,7 +740,7 @@ export class CloudbuildWorkerPool extends cdktf.TerraformResource {
   }
 
   // effective_annotations - computed: true, optional: false, required: false
-  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  private _effectiveAnnotations = new cdktn.StringMap(this, "effective_annotations");
   public get effectiveAnnotations() {
     return this._effectiveAnnotations;
   }
@@ -888,12 +888,12 @@ export class CloudbuildWorkerPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._annotations),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
       network_config: cloudbuildWorkerPoolNetworkConfigToTerraform(this._networkConfig.internalValue),
       private_service_connect: cloudbuildWorkerPoolPrivateServiceConnectToTerraform(this._privateServiceConnect.internalValue),
       timeouts: cloudbuildWorkerPoolTimeoutsToTerraform(this._timeouts.internalValue),
@@ -904,37 +904,37 @@ export class CloudbuildWorkerPool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._annotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

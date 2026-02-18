@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleProjectConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleProjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#id DataGoogleProject#id}
   *
@@ -30,7 +30,7 @@ export interface DataGoogleProjectConfig extends cdktf.TerraformMetaArguments {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project google_project}
 */
-export class DataGoogleProject extends cdktf.TerraformDataSource {
+export class DataGoogleProject extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -41,14 +41,14 @@ export class DataGoogleProject extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleProject resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleProject to import
   * @param importFromId The id of the existing DataGoogleProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleProject to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_project", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_project", importId: importFromId, provider });
       }
 
   // ===========
@@ -102,7 +102,7 @@ export class DataGoogleProject extends cdktf.TerraformDataSource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
@@ -129,7 +129,7 @@ export class DataGoogleProject extends cdktf.TerraformDataSource {
   }
 
   // labels - computed: true, optional: false, required: false
-  private _labels = new cdktf.StringMap(this, "labels");
+  private _labels = new cdktn.StringMap(this, "labels");
   public get labels() {
     return this._labels;
   }
@@ -166,13 +166,13 @@ export class DataGoogleProject extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -183,21 +183,21 @@ export class DataGoogleProject extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      project_id: cdktf.stringToTerraform(this._projectId),
+      id: cdktn.stringToTerraform(this._id),
+      project_id: cdktn.stringToTerraform(this._projectId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

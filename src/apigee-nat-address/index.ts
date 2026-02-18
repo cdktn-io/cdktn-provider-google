@@ -7,17 +7,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeNatAddressConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeNatAddressConfig extends cdktn.TerraformMetaArguments {
   /**
   * Flag that specifies whether the reserved NAT address should be activate.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_nat_address#activate ApigeeNatAddress#activate}
   */
-  readonly activate?: boolean | cdktf.IResolvable;
+  readonly activate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_nat_address#id ApigeeNatAddress#id}
   *
@@ -60,39 +60,39 @@ export interface ApigeeNatAddressTimeouts {
   readonly update?: string;
 }
 
-export function apigeeNatAddressTimeoutsToTerraform(struct?: ApigeeNatAddressTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeNatAddressTimeoutsToTerraform(struct?: ApigeeNatAddressTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigeeNatAddressTimeoutsToHclTerraform(struct?: ApigeeNatAddressTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeNatAddressTimeoutsToHclTerraform(struct?: ApigeeNatAddressTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function apigeeNatAddressTimeoutsToHclTerraform(struct?: ApigeeNatAddress
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeNatAddressTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeNatAddressTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeNatAddressTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeNatAddressTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -136,7 +136,7 @@ export class ApigeeNatAddressTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeNatAddressTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeNatAddressTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -144,7 +144,7 @@ export class ApigeeNatAddressTimeoutsOutputReference extends cdktf.ComplexObject
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -209,7 +209,7 @@ export class ApigeeNatAddressTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_nat_address google_apigee_nat_address}
 */
-export class ApigeeNatAddress extends cdktf.TerraformResource {
+export class ApigeeNatAddress extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -220,14 +220,14 @@ export class ApigeeNatAddress extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeNatAddress resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeNatAddress resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeNatAddress to import
   * @param importFromId The id of the existing ApigeeNatAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_nat_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeNatAddress to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_nat_address", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_nat_address", importId: importFromId, provider });
       }
 
   // ===========
@@ -269,11 +269,11 @@ export class ApigeeNatAddress extends cdktf.TerraformResource {
   // ==========
 
   // activate - computed: false, optional: true, required: false
-  private _activate?: boolean | cdktf.IResolvable; 
+  private _activate?: boolean | cdktn.IResolvable; 
   public get activate() {
     return this.getBooleanAttribute('activate');
   }
-  public set activate(value: boolean | cdktf.IResolvable) {
+  public set activate(value: boolean | cdktn.IResolvable) {
     this._activate = value;
   }
   public resetActivate() {
@@ -358,10 +358,10 @@ export class ApigeeNatAddress extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activate: cdktf.booleanToTerraform(this._activate),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      name: cdktf.stringToTerraform(this._name),
+      activate: cdktn.booleanToTerraform(this._activate),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: apigeeNatAddressTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -369,25 +369,25 @@ export class ApigeeNatAddress extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       activate: {
-        value: cdktf.booleanToHclTerraform(this._activate),
+        value: cdktn.booleanToHclTerraform(this._activate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

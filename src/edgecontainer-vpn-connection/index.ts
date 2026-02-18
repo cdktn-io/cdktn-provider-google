@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EdgecontainerVpnConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface EdgecontainerVpnConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The canonical Cluster name to connect to. It is in the form of projects/{project}/locations/{location}/clusters/{cluster}.
   *
@@ -23,7 +23,7 @@ export interface EdgecontainerVpnConnectionConfig extends cdktf.TerraformMetaArg
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/edgecontainer_vpn_connection#enable_high_availability EdgecontainerVpnConnection#enable_high_availability}
   */
-  readonly enableHighAvailability?: boolean | cdktf.IResolvable;
+  readonly enableHighAvailability?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/edgecontainer_vpn_connection#id EdgecontainerVpnConnection#id}
   *
@@ -92,8 +92,8 @@ export interface EdgecontainerVpnConnectionDetailsCloudRouter {
 }
 
 export function edgecontainerVpnConnectionDetailsCloudRouterToTerraform(struct?: EdgecontainerVpnConnectionDetailsCloudRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -102,8 +102,8 @@ export function edgecontainerVpnConnectionDetailsCloudRouterToTerraform(struct?:
 
 
 export function edgecontainerVpnConnectionDetailsCloudRouterToHclTerraform(struct?: EdgecontainerVpnConnectionDetailsCloudRouter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -111,7 +111,7 @@ export function edgecontainerVpnConnectionDetailsCloudRouterToHclTerraform(struc
   return attrs;
 }
 
-export class EdgecontainerVpnConnectionDetailsCloudRouterOutputReference extends cdktf.ComplexObject {
+export class EdgecontainerVpnConnectionDetailsCloudRouterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -120,7 +120,7 @@ export class EdgecontainerVpnConnectionDetailsCloudRouterOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -145,14 +145,14 @@ export class EdgecontainerVpnConnectionDetailsCloudRouterOutputReference extends
   }
 }
 
-export class EdgecontainerVpnConnectionDetailsCloudRouterList extends cdktf.ComplexList {
+export class EdgecontainerVpnConnectionDetailsCloudRouterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -167,8 +167,8 @@ export interface EdgecontainerVpnConnectionDetailsCloudVpns {
 }
 
 export function edgecontainerVpnConnectionDetailsCloudVpnsToTerraform(struct?: EdgecontainerVpnConnectionDetailsCloudVpns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -177,8 +177,8 @@ export function edgecontainerVpnConnectionDetailsCloudVpnsToTerraform(struct?: E
 
 
 export function edgecontainerVpnConnectionDetailsCloudVpnsToHclTerraform(struct?: EdgecontainerVpnConnectionDetailsCloudVpns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -186,7 +186,7 @@ export function edgecontainerVpnConnectionDetailsCloudVpnsToHclTerraform(struct?
   return attrs;
 }
 
-export class EdgecontainerVpnConnectionDetailsCloudVpnsOutputReference extends cdktf.ComplexObject {
+export class EdgecontainerVpnConnectionDetailsCloudVpnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -195,7 +195,7 @@ export class EdgecontainerVpnConnectionDetailsCloudVpnsOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -220,14 +220,14 @@ export class EdgecontainerVpnConnectionDetailsCloudVpnsOutputReference extends c
   }
 }
 
-export class EdgecontainerVpnConnectionDetailsCloudVpnsList extends cdktf.ComplexList {
+export class EdgecontainerVpnConnectionDetailsCloudVpnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -242,8 +242,8 @@ export interface EdgecontainerVpnConnectionDetails {
 }
 
 export function edgecontainerVpnConnectionDetailsToTerraform(struct?: EdgecontainerVpnConnectionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -252,8 +252,8 @@ export function edgecontainerVpnConnectionDetailsToTerraform(struct?: Edgecontai
 
 
 export function edgecontainerVpnConnectionDetailsToHclTerraform(struct?: EdgecontainerVpnConnectionDetails): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -261,7 +261,7 @@ export function edgecontainerVpnConnectionDetailsToHclTerraform(struct?: Edgecon
   return attrs;
 }
 
-export class EdgecontainerVpnConnectionDetailsOutputReference extends cdktf.ComplexObject {
+export class EdgecontainerVpnConnectionDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -270,7 +270,7 @@ export class EdgecontainerVpnConnectionDetailsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -312,14 +312,14 @@ export class EdgecontainerVpnConnectionDetailsOutputReference extends cdktf.Comp
   }
 }
 
-export class EdgecontainerVpnConnectionDetailsList extends cdktf.ComplexList {
+export class EdgecontainerVpnConnectionDetailsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -345,39 +345,39 @@ export interface EdgecontainerVpnConnectionTimeouts {
   readonly update?: string;
 }
 
-export function edgecontainerVpnConnectionTimeoutsToTerraform(struct?: EdgecontainerVpnConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function edgecontainerVpnConnectionTimeoutsToTerraform(struct?: EdgecontainerVpnConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function edgecontainerVpnConnectionTimeoutsToHclTerraform(struct?: EdgecontainerVpnConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function edgecontainerVpnConnectionTimeoutsToHclTerraform(struct?: EdgecontainerVpnConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -388,19 +388,19 @@ export function edgecontainerVpnConnectionTimeoutsToHclTerraform(struct?: Edgeco
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EdgecontainerVpnConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class EdgecontainerVpnConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): EdgecontainerVpnConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): EdgecontainerVpnConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -421,7 +421,7 @@ export class EdgecontainerVpnConnectionTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EdgecontainerVpnConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EdgecontainerVpnConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -429,7 +429,7 @@ export class EdgecontainerVpnConnectionTimeoutsOutputReference extends cdktf.Com
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -500,24 +500,24 @@ export interface EdgecontainerVpnConnectionVpcProject {
 }
 
 export function edgecontainerVpnConnectionVpcProjectToTerraform(struct?: EdgecontainerVpnConnectionVpcProjectOutputReference | EdgecontainerVpnConnectionVpcProject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
 export function edgecontainerVpnConnectionVpcProjectToHclTerraform(struct?: EdgecontainerVpnConnectionVpcProjectOutputReference | EdgecontainerVpnConnectionVpcProject): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -528,14 +528,14 @@ export function edgecontainerVpnConnectionVpcProjectToHclTerraform(struct?: Edge
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EdgecontainerVpnConnectionVpcProjectOutputReference extends cdktf.ComplexObject {
+export class EdgecontainerVpnConnectionVpcProjectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -580,7 +580,7 @@ export class EdgecontainerVpnConnectionVpcProjectOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/edgecontainer_vpn_connection google_edgecontainer_vpn_connection}
 */
-export class EdgecontainerVpnConnection extends cdktf.TerraformResource {
+export class EdgecontainerVpnConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -591,14 +591,14 @@ export class EdgecontainerVpnConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EdgecontainerVpnConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EdgecontainerVpnConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EdgecontainerVpnConnection to import
   * @param importFromId The id of the existing EdgecontainerVpnConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/edgecontainer_vpn_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EdgecontainerVpnConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_edgecontainer_vpn_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_edgecontainer_vpn_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -671,17 +671,17 @@ export class EdgecontainerVpnConnection extends cdktf.TerraformResource {
   }
 
   // effective_labels - computed: true, optional: false, required: false
-  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
   }
 
   // enable_high_availability - computed: true, optional: true, required: false
-  private _enableHighAvailability?: boolean | cdktf.IResolvable; 
+  private _enableHighAvailability?: boolean | cdktn.IResolvable; 
   public get enableHighAvailability() {
     return this.getBooleanAttribute('enable_high_availability');
   }
-  public set enableHighAvailability(value: boolean | cdktf.IResolvable) {
+  public set enableHighAvailability(value: boolean | cdktn.IResolvable) {
     this._enableHighAvailability = value;
   }
   public resetEnableHighAvailability() {
@@ -799,7 +799,7 @@ export class EdgecontainerVpnConnection extends cdktf.TerraformResource {
   }
 
   // terraform_labels - computed: true, optional: false, required: false
-  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
   public get terraformLabels() {
     return this._terraformLabels;
   }
@@ -863,16 +863,16 @@ export class EdgecontainerVpnConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster: cdktf.stringToTerraform(this._cluster),
-      enable_high_availability: cdktf.booleanToTerraform(this._enableHighAvailability),
-      id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      nat_gateway_ip: cdktf.stringToTerraform(this._natGatewayIp),
-      project: cdktf.stringToTerraform(this._project),
-      router: cdktf.stringToTerraform(this._router),
-      vpc: cdktf.stringToTerraform(this._vpc),
+      cluster: cdktn.stringToTerraform(this._cluster),
+      enable_high_availability: cdktn.booleanToTerraform(this._enableHighAvailability),
+      id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      nat_gateway_ip: cdktn.stringToTerraform(this._natGatewayIp),
+      project: cdktn.stringToTerraform(this._project),
+      router: cdktn.stringToTerraform(this._router),
+      vpc: cdktn.stringToTerraform(this._vpc),
       timeouts: edgecontainerVpnConnectionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_project: edgecontainerVpnConnectionVpcProjectToTerraform(this._vpcProject.internalValue),
     };
@@ -881,61 +881,61 @@ export class EdgecontainerVpnConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster: {
-        value: cdktf.stringToHclTerraform(this._cluster),
+        value: cdktn.stringToHclTerraform(this._cluster),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_high_availability: {
-        value: cdktf.booleanToHclTerraform(this._enableHighAvailability),
+        value: cdktn.booleanToHclTerraform(this._enableHighAvailability),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nat_gateway_ip: {
-        value: cdktf.stringToHclTerraform(this._natGatewayIp),
+        value: cdktn.stringToHclTerraform(this._natGatewayIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router: {
-        value: cdktf.stringToHclTerraform(this._router),
+        value: cdktn.stringToHclTerraform(this._router),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vpc: {
-        value: cdktf.stringToHclTerraform(this._vpc),
+        value: cdktn.stringToHclTerraform(this._vpc),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

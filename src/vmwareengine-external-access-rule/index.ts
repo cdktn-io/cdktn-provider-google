@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VmwareengineExternalAccessRuleConfig extends cdktf.TerraformMetaArguments {
+export interface VmwareengineExternalAccessRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The action that the external access rule performs. Possible values: ["ALLOW", "DENY"]
   *
@@ -74,13 +74,13 @@ export interface VmwareengineExternalAccessRuleConfig extends cdktf.TerraformMet
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_external_access_rule#destination_ip_ranges VmwareengineExternalAccessRule#destination_ip_ranges}
   */
-  readonly destinationIpRanges: VmwareengineExternalAccessRuleDestinationIpRanges[] | cdktf.IResolvable;
+  readonly destinationIpRanges: VmwareengineExternalAccessRuleDestinationIpRanges[] | cdktn.IResolvable;
   /**
   * source_ip_ranges block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_external_access_rule#source_ip_ranges VmwareengineExternalAccessRule#source_ip_ranges}
   */
-  readonly sourceIpRanges: VmwareengineExternalAccessRuleSourceIpRanges[] | cdktf.IResolvable;
+  readonly sourceIpRanges: VmwareengineExternalAccessRuleSourceIpRanges[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -103,32 +103,32 @@ export interface VmwareengineExternalAccessRuleDestinationIpRanges {
   readonly ipAddressRange?: string;
 }
 
-export function vmwareengineExternalAccessRuleDestinationIpRangesToTerraform(struct?: VmwareengineExternalAccessRuleDestinationIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineExternalAccessRuleDestinationIpRangesToTerraform(struct?: VmwareengineExternalAccessRuleDestinationIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_address: cdktf.stringToTerraform(struct!.externalAddress),
-    ip_address_range: cdktf.stringToTerraform(struct!.ipAddressRange),
+    external_address: cdktn.stringToTerraform(struct!.externalAddress),
+    ip_address_range: cdktn.stringToTerraform(struct!.ipAddressRange),
   }
 }
 
 
-export function vmwareengineExternalAccessRuleDestinationIpRangesToHclTerraform(struct?: VmwareengineExternalAccessRuleDestinationIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineExternalAccessRuleDestinationIpRangesToHclTerraform(struct?: VmwareengineExternalAccessRuleDestinationIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_address: {
-      value: cdktf.stringToHclTerraform(struct!.externalAddress),
+      value: cdktn.stringToHclTerraform(struct!.externalAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_address_range: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddressRange),
+      value: cdktn.stringToHclTerraform(struct!.ipAddressRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,9 +139,9 @@ export function vmwareengineExternalAccessRuleDestinationIpRangesToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VmwareengineExternalAccessRuleDestinationIpRangesOutputReference extends cdktf.ComplexObject {
+export class VmwareengineExternalAccessRuleDestinationIpRangesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -149,11 +149,11 @@ export class VmwareengineExternalAccessRuleDestinationIpRangesOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VmwareengineExternalAccessRuleDestinationIpRanges | cdktf.IResolvable | undefined {
+  public get internalValue(): VmwareengineExternalAccessRuleDestinationIpRanges | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -170,14 +170,14 @@ export class VmwareengineExternalAccessRuleDestinationIpRangesOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VmwareengineExternalAccessRuleDestinationIpRanges | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VmwareengineExternalAccessRuleDestinationIpRanges | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._externalAddress = undefined;
       this._ipAddressRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,15 +222,15 @@ export class VmwareengineExternalAccessRuleDestinationIpRangesOutputReference ex
   }
 }
 
-export class VmwareengineExternalAccessRuleDestinationIpRangesList extends cdktf.ComplexList {
-  public internalValue? : VmwareengineExternalAccessRuleDestinationIpRanges[] | cdktf.IResolvable
+export class VmwareengineExternalAccessRuleDestinationIpRangesList extends cdktn.ComplexList {
+  public internalValue? : VmwareengineExternalAccessRuleDestinationIpRanges[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -256,32 +256,32 @@ export interface VmwareengineExternalAccessRuleSourceIpRanges {
   readonly ipAddressRange?: string;
 }
 
-export function vmwareengineExternalAccessRuleSourceIpRangesToTerraform(struct?: VmwareengineExternalAccessRuleSourceIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineExternalAccessRuleSourceIpRangesToTerraform(struct?: VmwareengineExternalAccessRuleSourceIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    ip_address_range: cdktf.stringToTerraform(struct!.ipAddressRange),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    ip_address_range: cdktn.stringToTerraform(struct!.ipAddressRange),
   }
 }
 
 
-export function vmwareengineExternalAccessRuleSourceIpRangesToHclTerraform(struct?: VmwareengineExternalAccessRuleSourceIpRanges | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineExternalAccessRuleSourceIpRangesToHclTerraform(struct?: VmwareengineExternalAccessRuleSourceIpRanges | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_address_range: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddressRange),
+      value: cdktn.stringToHclTerraform(struct!.ipAddressRange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -292,9 +292,9 @@ export function vmwareengineExternalAccessRuleSourceIpRangesToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VmwareengineExternalAccessRuleSourceIpRangesOutputReference extends cdktf.ComplexObject {
+export class VmwareengineExternalAccessRuleSourceIpRangesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -302,11 +302,11 @@ export class VmwareengineExternalAccessRuleSourceIpRangesOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): VmwareengineExternalAccessRuleSourceIpRanges | cdktf.IResolvable | undefined {
+  public get internalValue(): VmwareengineExternalAccessRuleSourceIpRanges | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -323,14 +323,14 @@ export class VmwareengineExternalAccessRuleSourceIpRangesOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VmwareengineExternalAccessRuleSourceIpRanges | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VmwareengineExternalAccessRuleSourceIpRanges | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ipAddress = undefined;
       this._ipAddressRange = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -375,15 +375,15 @@ export class VmwareengineExternalAccessRuleSourceIpRangesOutputReference extends
   }
 }
 
-export class VmwareengineExternalAccessRuleSourceIpRangesList extends cdktf.ComplexList {
-  public internalValue? : VmwareengineExternalAccessRuleSourceIpRanges[] | cdktf.IResolvable
+export class VmwareengineExternalAccessRuleSourceIpRangesList extends cdktn.ComplexList {
+  public internalValue? : VmwareengineExternalAccessRuleSourceIpRanges[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -409,39 +409,39 @@ export interface VmwareengineExternalAccessRuleTimeouts {
   readonly update?: string;
 }
 
-export function vmwareengineExternalAccessRuleTimeoutsToTerraform(struct?: VmwareengineExternalAccessRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineExternalAccessRuleTimeoutsToTerraform(struct?: VmwareengineExternalAccessRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function vmwareengineExternalAccessRuleTimeoutsToHclTerraform(struct?: VmwareengineExternalAccessRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareengineExternalAccessRuleTimeoutsToHclTerraform(struct?: VmwareengineExternalAccessRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -452,19 +452,19 @@ export function vmwareengineExternalAccessRuleTimeoutsToHclTerraform(struct?: Vm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VmwareengineExternalAccessRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VmwareengineExternalAccessRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VmwareengineExternalAccessRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VmwareengineExternalAccessRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -485,7 +485,7 @@ export class VmwareengineExternalAccessRuleTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VmwareengineExternalAccessRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VmwareengineExternalAccessRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -493,7 +493,7 @@ export class VmwareengineExternalAccessRuleTimeoutsOutputReference extends cdktf
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -558,7 +558,7 @@ export class VmwareengineExternalAccessRuleTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule}
 */
-export class VmwareengineExternalAccessRule extends cdktf.TerraformResource {
+export class VmwareengineExternalAccessRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -569,14 +569,14 @@ export class VmwareengineExternalAccessRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VmwareengineExternalAccessRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VmwareengineExternalAccessRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VmwareengineExternalAccessRule to import
   * @param importFromId The id of the existing VmwareengineExternalAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_external_access_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VmwareengineExternalAccessRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_external_access_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_external_access_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -772,7 +772,7 @@ export class VmwareengineExternalAccessRule extends cdktf.TerraformResource {
   public get destinationIpRanges() {
     return this._destinationIpRanges;
   }
-  public putDestinationIpRanges(value: VmwareengineExternalAccessRuleDestinationIpRanges[] | cdktf.IResolvable) {
+  public putDestinationIpRanges(value: VmwareengineExternalAccessRuleDestinationIpRanges[] | cdktn.IResolvable) {
     this._destinationIpRanges.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -785,7 +785,7 @@ export class VmwareengineExternalAccessRule extends cdktf.TerraformResource {
   public get sourceIpRanges() {
     return this._sourceIpRanges;
   }
-  public putSourceIpRanges(value: VmwareengineExternalAccessRuleSourceIpRanges[] | cdktf.IResolvable) {
+  public putSourceIpRanges(value: VmwareengineExternalAccessRuleSourceIpRanges[] | cdktn.IResolvable) {
     this._sourceIpRanges.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -815,17 +815,17 @@ export class VmwareengineExternalAccessRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      description: cdktf.stringToTerraform(this._description),
-      destination_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._destinationPorts),
-      id: cdktf.stringToTerraform(this._id),
-      ip_protocol: cdktf.stringToTerraform(this._ipProtocol),
-      name: cdktf.stringToTerraform(this._name),
-      parent: cdktf.stringToTerraform(this._parent),
-      priority: cdktf.numberToTerraform(this._priority),
-      source_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sourcePorts),
-      destination_ip_ranges: cdktf.listMapper(vmwareengineExternalAccessRuleDestinationIpRangesToTerraform, true)(this._destinationIpRanges.internalValue),
-      source_ip_ranges: cdktf.listMapper(vmwareengineExternalAccessRuleSourceIpRangesToTerraform, true)(this._sourceIpRanges.internalValue),
+      action: cdktn.stringToTerraform(this._action),
+      description: cdktn.stringToTerraform(this._description),
+      destination_ports: cdktn.listMapper(cdktn.stringToTerraform, false)(this._destinationPorts),
+      id: cdktn.stringToTerraform(this._id),
+      ip_protocol: cdktn.stringToTerraform(this._ipProtocol),
+      name: cdktn.stringToTerraform(this._name),
+      parent: cdktn.stringToTerraform(this._parent),
+      priority: cdktn.numberToTerraform(this._priority),
+      source_ports: cdktn.listMapper(cdktn.stringToTerraform, false)(this._sourcePorts),
+      destination_ip_ranges: cdktn.listMapper(vmwareengineExternalAccessRuleDestinationIpRangesToTerraform, true)(this._destinationIpRanges.internalValue),
+      source_ip_ranges: cdktn.listMapper(vmwareengineExternalAccessRuleSourceIpRangesToTerraform, true)(this._sourceIpRanges.internalValue),
       timeouts: vmwareengineExternalAccessRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -833,67 +833,67 @@ export class VmwareengineExternalAccessRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_ports: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._destinationPorts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._destinationPorts),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_protocol: {
-        value: cdktf.stringToHclTerraform(this._ipProtocol),
+        value: cdktn.stringToHclTerraform(this._ipProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       source_ports: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._sourcePorts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._sourcePorts),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       destination_ip_ranges: {
-        value: cdktf.listMapperHcl(vmwareengineExternalAccessRuleDestinationIpRangesToHclTerraform, true)(this._destinationIpRanges.internalValue),
+        value: cdktn.listMapperHcl(vmwareengineExternalAccessRuleDestinationIpRangesToHclTerraform, true)(this._destinationIpRanges.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VmwareengineExternalAccessRuleDestinationIpRangesList",
       },
       source_ip_ranges: {
-        value: cdktf.listMapperHcl(vmwareengineExternalAccessRuleSourceIpRangesToHclTerraform, true)(this._sourceIpRanges.internalValue),
+        value: cdktn.listMapperHcl(vmwareengineExternalAccessRuleSourceIpRangesToHclTerraform, true)(this._sourceIpRanges.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VmwareengineExternalAccessRuleSourceIpRangesList",

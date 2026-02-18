@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApigeeTargetServerConfig extends cdktf.TerraformMetaArguments {
+export interface ApigeeTargetServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable description of this TargetServer.
   *
@@ -43,7 +43,7 @@ export interface ApigeeTargetServerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server#is_enabled ApigeeTargetServer#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * The resource id of this reference. Values must match the regular expression [\w\s-.]+.
   *
@@ -87,35 +87,35 @@ export interface ApigeeTargetServerSSlInfoCommonName {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server#wildcard_match ApigeeTargetServer#wildcard_match}
   */
-  readonly wildcardMatch?: boolean | cdktf.IResolvable;
+  readonly wildcardMatch?: boolean | cdktn.IResolvable;
 }
 
 export function apigeeTargetServerSSlInfoCommonNameToTerraform(struct?: ApigeeTargetServerSSlInfoCommonNameOutputReference | ApigeeTargetServerSSlInfoCommonName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    value: cdktf.stringToTerraform(struct!.value),
-    wildcard_match: cdktf.booleanToTerraform(struct!.wildcardMatch),
+    value: cdktn.stringToTerraform(struct!.value),
+    wildcard_match: cdktn.booleanToTerraform(struct!.wildcardMatch),
   }
 }
 
 
 export function apigeeTargetServerSSlInfoCommonNameToHclTerraform(struct?: ApigeeTargetServerSSlInfoCommonNameOutputReference | ApigeeTargetServerSSlInfoCommonName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     wildcard_match: {
-      value: cdktf.booleanToHclTerraform(struct!.wildcardMatch),
+      value: cdktn.booleanToHclTerraform(struct!.wildcardMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -126,14 +126,14 @@ export function apigeeTargetServerSSlInfoCommonNameToHclTerraform(struct?: Apige
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeTargetServerSSlInfoCommonNameOutputReference extends cdktf.ComplexObject {
+export class ApigeeTargetServerSSlInfoCommonNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -181,11 +181,11 @@ export class ApigeeTargetServerSSlInfoCommonNameOutputReference extends cdktf.Co
   }
 
   // wildcard_match - computed: false, optional: true, required: false
-  private _wildcardMatch?: boolean | cdktf.IResolvable; 
+  private _wildcardMatch?: boolean | cdktn.IResolvable; 
   public get wildcardMatch() {
     return this.getBooleanAttribute('wildcard_match');
   }
-  public set wildcardMatch(value: boolean | cdktf.IResolvable) {
+  public set wildcardMatch(value: boolean | cdktn.IResolvable) {
     this._wildcardMatch = value;
   }
   public resetWildcardMatch() {
@@ -208,25 +208,25 @@ export interface ApigeeTargetServerSSlInfo {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server#client_auth_enabled ApigeeTargetServer#client_auth_enabled}
   */
-  readonly clientAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly clientAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Enables TLS. If false, neither one-way nor two-way TLS will be enabled.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server#enabled ApigeeTargetServer#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * If true, TLS is strictly enforced.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server#enforce ApigeeTargetServer#enforce}
   */
-  readonly enforce?: boolean | cdktf.IResolvable;
+  readonly enforce?: boolean | cdktn.IResolvable;
   /**
   * If true, Edge ignores TLS certificate errors. Valid when configuring TLS for target servers and target endpoints, and when configuring virtual hosts that use 2-way TLS. When used with a target endpoint/target server, if the backend system uses SNI and returns a cert with a subject Distinguished Name (DN) that does not match the hostname, there is no way to ignore the error and the connection fails.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server#ignore_validation_errors ApigeeTargetServer#ignore_validation_errors}
   */
-  readonly ignoreValidationErrors?: boolean | cdktf.IResolvable;
+  readonly ignoreValidationErrors?: boolean | cdktn.IResolvable;
   /**
   * Required if clientAuthEnabled is true. The resource ID for the alias containing the private key and cert.
   *
@@ -260,81 +260,81 @@ export interface ApigeeTargetServerSSlInfo {
 }
 
 export function apigeeTargetServerSSlInfoToTerraform(struct?: ApigeeTargetServerSSlInfoOutputReference | ApigeeTargetServerSSlInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ciphers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ciphers),
-    client_auth_enabled: cdktf.booleanToTerraform(struct!.clientAuthEnabled),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    enforce: cdktf.booleanToTerraform(struct!.enforce),
-    ignore_validation_errors: cdktf.booleanToTerraform(struct!.ignoreValidationErrors),
-    key_alias: cdktf.stringToTerraform(struct!.keyAlias),
-    key_store: cdktf.stringToTerraform(struct!.keyStore),
-    protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocols),
-    trust_store: cdktf.stringToTerraform(struct!.trustStore),
+    ciphers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ciphers),
+    client_auth_enabled: cdktn.booleanToTerraform(struct!.clientAuthEnabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    enforce: cdktn.booleanToTerraform(struct!.enforce),
+    ignore_validation_errors: cdktn.booleanToTerraform(struct!.ignoreValidationErrors),
+    key_alias: cdktn.stringToTerraform(struct!.keyAlias),
+    key_store: cdktn.stringToTerraform(struct!.keyStore),
+    protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.protocols),
+    trust_store: cdktn.stringToTerraform(struct!.trustStore),
     common_name: apigeeTargetServerSSlInfoCommonNameToTerraform(struct!.commonName),
   }
 }
 
 
 export function apigeeTargetServerSSlInfoToHclTerraform(struct?: ApigeeTargetServerSSlInfoOutputReference | ApigeeTargetServerSSlInfo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ciphers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ciphers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ciphers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     client_auth_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.clientAuthEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.clientAuthEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enforce: {
-      value: cdktf.booleanToHclTerraform(struct!.enforce),
+      value: cdktn.booleanToHclTerraform(struct!.enforce),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ignore_validation_errors: {
-      value: cdktf.booleanToHclTerraform(struct!.ignoreValidationErrors),
+      value: cdktn.booleanToHclTerraform(struct!.ignoreValidationErrors),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     key_alias: {
-      value: cdktf.stringToHclTerraform(struct!.keyAlias),
+      value: cdktn.stringToHclTerraform(struct!.keyAlias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_store: {
-      value: cdktf.stringToHclTerraform(struct!.keyStore),
+      value: cdktn.stringToHclTerraform(struct!.keyStore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocols: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocols),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.protocols),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     trust_store: {
-      value: cdktf.stringToHclTerraform(struct!.trustStore),
+      value: cdktn.stringToHclTerraform(struct!.trustStore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -351,14 +351,14 @@ export function apigeeTargetServerSSlInfoToHclTerraform(struct?: ApigeeTargetSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeTargetServerSSlInfoOutputReference extends cdktf.ComplexObject {
+export class ApigeeTargetServerSSlInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -454,11 +454,11 @@ export class ApigeeTargetServerSSlInfoOutputReference extends cdktf.ComplexObjec
   }
 
   // client_auth_enabled - computed: false, optional: true, required: false
-  private _clientAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _clientAuthEnabled?: boolean | cdktn.IResolvable; 
   public get clientAuthEnabled() {
     return this.getBooleanAttribute('client_auth_enabled');
   }
-  public set clientAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set clientAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._clientAuthEnabled = value;
   }
   public resetClientAuthEnabled() {
@@ -470,11 +470,11 @@ export class ApigeeTargetServerSSlInfoOutputReference extends cdktf.ComplexObjec
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -483,11 +483,11 @@ export class ApigeeTargetServerSSlInfoOutputReference extends cdktf.ComplexObjec
   }
 
   // enforce - computed: false, optional: true, required: false
-  private _enforce?: boolean | cdktf.IResolvable; 
+  private _enforce?: boolean | cdktn.IResolvable; 
   public get enforce() {
     return this.getBooleanAttribute('enforce');
   }
-  public set enforce(value: boolean | cdktf.IResolvable) {
+  public set enforce(value: boolean | cdktn.IResolvable) {
     this._enforce = value;
   }
   public resetEnforce() {
@@ -499,11 +499,11 @@ export class ApigeeTargetServerSSlInfoOutputReference extends cdktf.ComplexObjec
   }
 
   // ignore_validation_errors - computed: false, optional: true, required: false
-  private _ignoreValidationErrors?: boolean | cdktf.IResolvable; 
+  private _ignoreValidationErrors?: boolean | cdktn.IResolvable; 
   public get ignoreValidationErrors() {
     return this.getBooleanAttribute('ignore_validation_errors');
   }
-  public set ignoreValidationErrors(value: boolean | cdktf.IResolvable) {
+  public set ignoreValidationErrors(value: boolean | cdktn.IResolvable) {
     this._ignoreValidationErrors = value;
   }
   public resetIgnoreValidationErrors() {
@@ -609,39 +609,39 @@ export interface ApigeeTargetServerTimeouts {
   readonly update?: string;
 }
 
-export function apigeeTargetServerTimeoutsToTerraform(struct?: ApigeeTargetServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeTargetServerTimeoutsToTerraform(struct?: ApigeeTargetServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apigeeTargetServerTimeoutsToHclTerraform(struct?: ApigeeTargetServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apigeeTargetServerTimeoutsToHclTerraform(struct?: ApigeeTargetServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -652,19 +652,19 @@ export function apigeeTargetServerTimeoutsToHclTerraform(struct?: ApigeeTargetSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApigeeTargetServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApigeeTargetServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApigeeTargetServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApigeeTargetServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -685,7 +685,7 @@ export class ApigeeTargetServerTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeTargetServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApigeeTargetServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -693,7 +693,7 @@ export class ApigeeTargetServerTimeoutsOutputReference extends cdktf.ComplexObje
       this._delete = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -758,7 +758,7 @@ export class ApigeeTargetServerTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server google_apigee_target_server}
 */
-export class ApigeeTargetServer extends cdktf.TerraformResource {
+export class ApigeeTargetServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -769,14 +769,14 @@ export class ApigeeTargetServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApigeeTargetServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApigeeTargetServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeTargetServer to import
   * @param importFromId The id of the existing ApigeeTargetServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_target_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeTargetServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_target_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_apigee_target_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -881,11 +881,11 @@ export class ApigeeTargetServer extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -976,14 +976,14 @@ export class ApigeeTargetServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      env_id: cdktf.stringToTerraform(this._envId),
-      host: cdktf.stringToTerraform(this._host),
-      id: cdktf.stringToTerraform(this._id),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      port: cdktf.numberToTerraform(this._port),
-      protocol: cdktf.stringToTerraform(this._protocol),
+      description: cdktn.stringToTerraform(this._description),
+      env_id: cdktn.stringToTerraform(this._envId),
+      host: cdktn.stringToTerraform(this._host),
+      id: cdktn.stringToTerraform(this._id),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      port: cdktn.numberToTerraform(this._port),
+      protocol: cdktn.stringToTerraform(this._protocol),
       s_sl_info: apigeeTargetServerSSlInfoToTerraform(this._sSlInfo.internalValue),
       timeouts: apigeeTargetServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -992,49 +992,49 @@ export class ApigeeTargetServer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       env_id: {
-        value: cdktf.stringToHclTerraform(this._envId),
+        value: cdktn.stringToHclTerraform(this._envId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

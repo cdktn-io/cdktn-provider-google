@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGoogleVmwareengineNetworkPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataGoogleVmwareengineNetworkPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_network_policy#id DataGoogleVmwareengineNetworkPolicy#id}
   *
@@ -42,8 +42,8 @@ export interface DataGoogleVmwareengineNetworkPolicyExternalIp {
 }
 
 export function dataGoogleVmwareengineNetworkPolicyExternalIpToTerraform(struct?: DataGoogleVmwareengineNetworkPolicyExternalIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataGoogleVmwareengineNetworkPolicyExternalIpToTerraform(struct?
 
 
 export function dataGoogleVmwareengineNetworkPolicyExternalIpToHclTerraform(struct?: DataGoogleVmwareengineNetworkPolicyExternalIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataGoogleVmwareengineNetworkPolicyExternalIpToHclTerraform(stru
   return attrs;
 }
 
-export class DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +100,14 @@ export class DataGoogleVmwareengineNetworkPolicyExternalIpOutputReference extend
   }
 }
 
-export class DataGoogleVmwareengineNetworkPolicyExternalIpList extends cdktf.ComplexList {
+export class DataGoogleVmwareengineNetworkPolicyExternalIpList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -122,8 +122,8 @@ export interface DataGoogleVmwareengineNetworkPolicyInternetAccess {
 }
 
 export function dataGoogleVmwareengineNetworkPolicyInternetAccessToTerraform(struct?: DataGoogleVmwareengineNetworkPolicyInternetAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -132,8 +132,8 @@ export function dataGoogleVmwareengineNetworkPolicyInternetAccessToTerraform(str
 
 
 export function dataGoogleVmwareengineNetworkPolicyInternetAccessToHclTerraform(struct?: DataGoogleVmwareengineNetworkPolicyInternetAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -141,7 +141,7 @@ export function dataGoogleVmwareengineNetworkPolicyInternetAccessToHclTerraform(
   return attrs;
 }
 
-export class DataGoogleVmwareengineNetworkPolicyInternetAccessOutputReference extends cdktf.ComplexObject {
+export class DataGoogleVmwareengineNetworkPolicyInternetAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -150,7 +150,7 @@ export class DataGoogleVmwareengineNetworkPolicyInternetAccessOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -180,14 +180,14 @@ export class DataGoogleVmwareengineNetworkPolicyInternetAccessOutputReference ex
   }
 }
 
-export class DataGoogleVmwareengineNetworkPolicyInternetAccessList extends cdktf.ComplexList {
+export class DataGoogleVmwareengineNetworkPolicyInternetAccessList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -202,7 +202,7 @@ export class DataGoogleVmwareengineNetworkPolicyInternetAccessList extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_network_policy google_vmwareengine_network_policy}
 */
-export class DataGoogleVmwareengineNetworkPolicy extends cdktf.TerraformDataSource {
+export class DataGoogleVmwareengineNetworkPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -213,14 +213,14 @@ export class DataGoogleVmwareengineNetworkPolicy extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGoogleVmwareengineNetworkPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGoogleVmwareengineNetworkPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVmwareengineNetworkPolicy to import
   * @param importFromId The id of the existing DataGoogleVmwareengineNetworkPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_network_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVmwareengineNetworkPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_network_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_vmwareengine_network_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -371,35 +371,35 @@ export class DataGoogleVmwareengineNetworkPolicy extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      project: cdktf.stringToTerraform(this._project),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      project: cdktn.stringToTerraform(this._project),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

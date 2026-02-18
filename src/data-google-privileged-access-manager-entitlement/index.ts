@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataGooglePrivilegedAccessManagerEntitlementConfig extends cdktf.TerraformMetaArguments {
+export interface DataGooglePrivilegedAccessManagerEntitlementConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID to use for this Entitlement. This will become the last part of the resource name.
   * This value should be 4-63 characters, and valid characters are "[a-z]", "[0-9]", and "-". The first character should be from [a-z].
@@ -44,8 +44,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificat
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -54,8 +54,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementAdditionalNotificati
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -63,7 +63,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementAdditionalNotificati
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -72,7 +72,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationT
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -93,23 +93,23 @@ export class DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationT
 
   // admin_email_recipients - computed: true, optional: false, required: false
   public get adminEmailRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('admin_email_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('admin_email_recipients'));
   }
 
   // requester_email_recipients - computed: true, optional: false, required: false
   public get requesterEmailRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('requester_email_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('requester_email_recipients'));
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -124,8 +124,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowMan
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -134,8 +134,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApprovers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -143,7 +143,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -152,7 +152,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -173,18 +173,18 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualA
 
   // principals - computed: true, optional: false, required: false
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsApproversList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -199,8 +199,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowMan
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -209,8 +209,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsSteps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -218,7 +218,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -227,7 +227,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -253,7 +253,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualA
 
   // approver_email_recipients - computed: true, optional: false, required: false
   public get approverEmailRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('approver_email_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('approver_email_recipients'));
   }
 
   // approvers - computed: true, optional: false, required: false
@@ -263,14 +263,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualA
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsStepsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -285,8 +285,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowMan
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -295,8 +295,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -304,7 +304,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManu
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -313,7 +313,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -344,14 +344,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualA
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovalsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -366,8 +366,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflow {
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -376,8 +376,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowToTe
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -385,7 +385,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowToHc
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -394,7 +394,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -420,14 +420,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowOutputR
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementApprovalWorkflowList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -442,8 +442,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementEligibleUsers {
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementEligibleUsersToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementEligibleUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -452,8 +452,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementEligibleUsersToTerra
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementEligibleUsersToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementEligibleUsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -461,7 +461,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementEligibleUsersToHclTe
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementEligibleUsersOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementEligibleUsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -470,7 +470,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementEligibleUsersOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -491,18 +491,18 @@ export class DataGooglePrivilegedAccessManagerEntitlementEligibleUsersOutputRefe
 
   // principals - computed: true, optional: false, required: false
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementEligibleUsersList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementEligibleUsersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -517,8 +517,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcp
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -527,8 +527,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpI
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -536,7 +536,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpI
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -545,7 +545,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -575,14 +575,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamA
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessRoleBindingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -597,8 +597,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcp
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -607,8 +607,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpI
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -616,7 +616,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpI
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -625,7 +625,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -661,14 +661,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamA
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessGcpIamAccessList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -683,8 +683,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccess {
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -693,8 +693,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessToTe
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -702,7 +702,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessToHc
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -711,7 +711,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -737,14 +737,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessOutputR
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementPrivilegedAccessList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -759,8 +759,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementRequesterJustificat
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -769,8 +769,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -778,7 +778,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -787,7 +787,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -807,14 +807,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigNotMandatoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -829,8 +829,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementRequesterJustificat
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -839,8 +839,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructured): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -848,7 +848,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -857,7 +857,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -877,14 +877,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -899,8 +899,8 @@ export interface DataGooglePrivilegedAccessManagerEntitlementRequesterJustificat
 }
 
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigToTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -909,8 +909,8 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
 
 
 export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigToHclTerraform(struct?: DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -918,7 +918,7 @@ export function dataGooglePrivilegedAccessManagerEntitlementRequesterJustificati
   return attrs;
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference extends cdktf.ComplexObject {
+export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -927,7 +927,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -959,14 +959,14 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
   }
 }
 
-export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigList extends cdktf.ComplexList {
+export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -981,7 +981,7 @@ export class DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationC
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/privileged_access_manager_entitlement google_privileged_access_manager_entitlement}
 */
-export class DataGooglePrivilegedAccessManagerEntitlement extends cdktf.TerraformDataSource {
+export class DataGooglePrivilegedAccessManagerEntitlement extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -992,14 +992,14 @@ export class DataGooglePrivilegedAccessManagerEntitlement extends cdktf.Terrafor
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataGooglePrivilegedAccessManagerEntitlement resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataGooglePrivilegedAccessManagerEntitlement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePrivilegedAccessManagerEntitlement to import
   * @param importFromId The id of the existing DataGooglePrivilegedAccessManagerEntitlement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/privileged_access_manager_entitlement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePrivilegedAccessManagerEntitlement to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "google_privileged_access_manager_entitlement", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_privileged_access_manager_entitlement", importId: importFromId, provider });
       }
 
   // ===========
@@ -1169,35 +1169,35 @@ export class DataGooglePrivilegedAccessManagerEntitlement extends cdktf.Terrafor
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      entitlement_id: cdktf.stringToTerraform(this._entitlementId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      parent: cdktf.stringToTerraform(this._parent),
+      entitlement_id: cdktn.stringToTerraform(this._entitlementId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      parent: cdktn.stringToTerraform(this._parent),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       entitlement_id: {
-        value: cdktf.stringToHclTerraform(this._entitlementId),
+        value: cdktn.stringToHclTerraform(this._entitlementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent: {
-        value: cdktf.stringToHclTerraform(this._parent),
+        value: cdktn.stringToHclTerraform(this._parent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

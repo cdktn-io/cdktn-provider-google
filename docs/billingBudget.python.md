@@ -37,13 +37,13 @@ billingBudget.BillingBudget(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.amount">amount</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmount">BillingBudgetAmount</a></code> | amount block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.billingAccount">billing_account</a></code> | <code>str</code> | ID of the billing account to set a budget on. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.allUpdatesRule">all_updates_rule</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule">BillingBudgetAllUpdatesRule</a></code> | all_updates_rule block. |
@@ -51,7 +51,7 @@ billingBudget.BillingBudget(
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User data for display name in UI. Must be <= 60 chars. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget#id BillingBudget#id}. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.ownershipScope">ownership_scope</a></code> | <code>str</code> | The ownership scope of the budget. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.thresholdRules">threshold_rules</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | threshold_rules block. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.thresholdRules">threshold_rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | threshold_rules block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -76,43 +76,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `threshold_rules`<sup>Optional</sup> <a name="threshold_rules" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.thresholdRules"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
 
 threshold_rules block.
 
@@ -494,7 +494,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.billingBudget.BillingBudget.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -591,7 +591,7 @@ def put_all_updates_rule(
 
 ###### `disable_default_iam_recipients`<sup>Optional</sup> <a name="disable_default_iam_recipients" id="@cdktn/provider-google.billingBudget.BillingBudget.putAllUpdatesRule.parameter.disableDefaultIamRecipients"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Boolean.
 
@@ -606,7 +606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enable_project_level_recipients`<sup>Optional</sup> <a name="enable_project_level_recipients" id="@cdktn/provider-google.billingBudget.BillingBudget.putAllUpdatesRule.parameter.enableProjectLevelRecipients"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When set to true, and when the budget has a single project configured, notifications will be sent to project level recipients of that project.
 
@@ -662,7 +662,7 @@ def put_amount(
 
 ###### `last_period_amount`<sup>Optional</sup> <a name="last_period_amount" id="@cdktn/provider-google.billingBudget.BillingBudget.putAmount.parameter.lastPeriodAmount"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Configures a budget amount that is automatically set to 100% of last period's spend.
 
@@ -829,7 +829,7 @@ def put_threshold_rules(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.billingBudget.BillingBudget.putThresholdRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
 
 ---
 
@@ -916,7 +916,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BillingBudget resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a BillingBudget resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -999,7 +999,7 @@ billingBudget.BillingBudget.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a BillingBudget resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a BillingBudget resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.billingBudget.BillingBudget.generateConfigForImport.parameter.scope"></a>
 
@@ -1029,7 +1029,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.billingBudget.BillingBudget.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the BillingBudget to import is found.
 
@@ -1040,19 +1040,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.allUpdatesRule">all_updates_rule</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference">BillingBudgetAllUpdatesRuleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.amount">amount</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference">BillingBudgetAmountOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.budgetFilter">budget_filter</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference">BillingBudgetBudgetFilterOutputReference</a></code> | *No description.* |
@@ -1066,8 +1066,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.ownershipScopeInput">ownership_scope_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.thresholdRulesInput">threshold_rules_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.thresholdRulesInput">threshold_rules_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.billingAccount">billing_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -1093,7 +1093,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1143,7 +1143,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1153,7 +1153,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1163,7 +1163,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1183,7 +1183,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1193,7 +1193,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1203,7 +1203,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1213,7 +1213,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1353,7 +1353,7 @@ ownership_scope_input: str
 threshold_rules_input: IResolvable | typing.List[BillingBudgetThresholdRules]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
 
 ---
 
@@ -1363,7 +1363,7 @@ threshold_rules_input: IResolvable | typing.List[BillingBudgetThresholdRules]
 timeouts_input: IResolvable | BillingBudgetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a>
 
 ---
 
@@ -1447,8 +1447,8 @@ billingBudget.BillingBudgetAllUpdatesRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule.property.disableDefaultIamRecipients">disable_default_iam_recipients</a></code> | <code>bool \| cdktf.IResolvable</code> | Boolean. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule.property.enableProjectLevelRecipients">enable_project_level_recipients</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to true, and when the budget has a single project configured, notifications will be sent to project level recipients of that project. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule.property.disableDefaultIamRecipients">disable_default_iam_recipients</a></code> | <code>bool \| cdktn.IResolvable</code> | Boolean. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule.property.enableProjectLevelRecipients">enable_project_level_recipients</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, and when the budget has a single project configured, notifications will be sent to project level recipients of that project. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule.property.monitoringNotificationChannels">monitoring_notification_channels</a></code> | <code>typing.List[str]</code> | The full resource name of a monitoring notification channel in the form projects/{project_id}/notificationChannels/{channel_id}. A maximum of 5 channels are allowed. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule.property.pubsubTopic">pubsub_topic</a></code> | <code>str</code> | The name of the Cloud Pub/Sub topic where budget related messages will be published, in the form projects/{project_id}/topics/{topic_id}. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule.property.schemaVersion">schema_version</a></code> | <code>str</code> | The schema version of the notification. Only "1.0" is accepted. It represents the JSON schema as defined in https://cloud.google.com/billing/docs/how-to/budgets#notification_format. |
@@ -1461,7 +1461,7 @@ billingBudget.BillingBudgetAllUpdatesRule(
 disable_default_iam_recipients: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Boolean.
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enable_project_level_recipients: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When set to true, and when the budget has a single project configured, notifications will be sent to project level recipients of that project.
 
@@ -1554,7 +1554,7 @@ billingBudget.BillingBudgetAmount(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmount.property.lastPeriodAmount">last_period_amount</a></code> | <code>bool \| cdktf.IResolvable</code> | Configures a budget amount that is automatically set to 100% of last period's spend. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmount.property.lastPeriodAmount">last_period_amount</a></code> | <code>bool \| cdktn.IResolvable</code> | Configures a budget amount that is automatically set to 100% of last period's spend. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmount.property.specifiedAmount">specified_amount</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmount">BillingBudgetAmountSpecifiedAmount</a></code> | specified_amount block. |
 
 ---
@@ -1565,7 +1565,7 @@ billingBudget.BillingBudgetAmount(
 last_period_amount: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Configures a budget amount that is automatically set to 100% of last period's spend.
 
@@ -2068,13 +2068,13 @@ billingBudget.BillingBudgetConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.amount">amount</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmount">BillingBudgetAmount</a></code> | amount block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.billingAccount">billing_account</a></code> | <code>str</code> | ID of the billing account to set a budget on. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.allUpdatesRule">all_updates_rule</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule">BillingBudgetAllUpdatesRule</a></code> | all_updates_rule block. |
@@ -2082,7 +2082,7 @@ billingBudget.BillingBudgetConfig(
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.displayName">display_name</a></code> | <code>str</code> | User data for display name in UI. Must be <= 60 chars. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_budget#id BillingBudget#id}. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.ownershipScope">ownership_scope</a></code> | <code>str</code> | The ownership scope of the budget. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.thresholdRules">threshold_rules</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | threshold_rules block. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.thresholdRules">threshold_rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | threshold_rules block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -2093,7 +2093,7 @@ billingBudget.BillingBudgetConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2103,7 +2103,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2113,7 +2113,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2123,7 +2123,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2133,7 +2133,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2143,7 +2143,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2153,7 +2153,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2265,7 +2265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 threshold_rules: IResolvable | typing.List[BillingBudgetThresholdRules]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
 
 threshold_rules block.
 
@@ -2417,14 +2417,14 @@ billingBudget.BillingBudgetAllUpdatesRuleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2621,7 +2621,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2672,13 +2672,13 @@ def reset_schema_version() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.disableDefaultIamRecipientsInput">disable_default_iam_recipients_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.enableProjectLevelRecipientsInput">enable_project_level_recipients_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.disableDefaultIamRecipientsInput">disable_default_iam_recipients_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.enableProjectLevelRecipientsInput">enable_project_level_recipients_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.monitoringNotificationChannelsInput">monitoring_notification_channels_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.pubsubTopicInput">pubsub_topic_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.schemaVersionInput">schema_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.disableDefaultIamRecipients">disable_default_iam_recipients</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.enableProjectLevelRecipients">enable_project_level_recipients</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.disableDefaultIamRecipients">disable_default_iam_recipients</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.enableProjectLevelRecipients">enable_project_level_recipients</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.monitoringNotificationChannels">monitoring_notification_channels</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.pubsubTopic">pubsub_topic</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRuleOutputReference.property.schemaVersion">schema_version</a></code> | <code>str</code> | *No description.* |
@@ -2716,7 +2716,7 @@ fqn: str
 disable_default_iam_recipients_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2726,7 +2726,7 @@ disable_default_iam_recipients_input: bool | IResolvable
 enable_project_level_recipients_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2766,7 +2766,7 @@ schema_version_input: str
 disable_default_iam_recipients: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2776,7 +2776,7 @@ disable_default_iam_recipients: bool | IResolvable
 enable_project_level_recipients: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2836,14 +2836,14 @@ billingBudget.BillingBudgetAmountOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3038,7 +3038,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3119,9 +3119,9 @@ def reset_specified_amount() -> None
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.specifiedAmount">specified_amount</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference">BillingBudgetAmountSpecifiedAmountOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.lastPeriodAmountInput">last_period_amount_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.lastPeriodAmountInput">last_period_amount_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.specifiedAmountInput">specified_amount_input</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmount">BillingBudgetAmountSpecifiedAmount</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.lastPeriodAmount">last_period_amount</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.lastPeriodAmount">last_period_amount</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmount">BillingBudgetAmount</a></code> | *No description.* |
 
 ---
@@ -3166,7 +3166,7 @@ specified_amount: BillingBudgetAmountSpecifiedAmountOutputReference
 last_period_amount_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3186,7 +3186,7 @@ specified_amount_input: BillingBudgetAmountSpecifiedAmount
 last_period_amount: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3216,14 +3216,14 @@ billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3418,7 +3418,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetAmountSpecifiedAmountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3577,14 +3577,14 @@ billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3776,7 +3776,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodEndDateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3917,14 +3917,14 @@ billingBudget.BillingBudgetBudgetFilterCustomPeriodOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4119,7 +4119,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4324,14 +4324,14 @@ billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4523,7 +4523,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterCustomPeriodStartDateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4664,14 +4664,14 @@ billingBudget.BillingBudgetBudgetFilterOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4873,7 +4873,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5230,7 +5230,7 @@ billingBudget.BillingBudgetThresholdRulesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5238,7 +5238,7 @@ billingBudget.BillingBudgetThresholdRulesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5308,7 +5308,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5345,7 +5345,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]</code> | *No description.* |
 
 ---
 
@@ -5379,7 +5379,7 @@ fqn: str
 internal_value: IResolvable | typing.List[BillingBudgetThresholdRules]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>]
 
 ---
 
@@ -5401,7 +5401,7 @@ billingBudget.BillingBudgetThresholdRulesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5410,7 +5410,7 @@ billingBudget.BillingBudgetThresholdRulesOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5619,7 +5619,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5650,7 +5650,7 @@ def reset_spend_basis() -> None
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.property.thresholdPercentInput">threshold_percent_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.property.spendBasis">spend_basis</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.property.thresholdPercent">threshold_percent</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRulesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a></code> | *No description.* |
 
 ---
 
@@ -5724,7 +5724,7 @@ threshold_percent: typing.Union[int, float]
 internal_value: IResolvable | BillingBudgetThresholdRules
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>
 
 ---
 
@@ -5744,14 +5744,14 @@ billingBudget.BillingBudgetTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5946,7 +5946,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5991,7 +5991,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -6085,7 +6085,7 @@ update: str
 internal_value: IResolvable | BillingBudgetTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a>
 
 ---
 
